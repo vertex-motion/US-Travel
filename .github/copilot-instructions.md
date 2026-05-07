@@ -1,1 +1,1 @@
-1. Commit changes after changes are done.
+1. Commit changes after all modifications have been finalized and reviewed.
