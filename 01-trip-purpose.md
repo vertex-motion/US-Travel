@@ -4,10 +4,10 @@
 
 Describe who is traveling, including ages, interests, travel experience, mobility needs, food preferences, and anything that affects daily pace.
 
-- Traveler 1:
-- Traveler 2:
-- Traveler 3:
-- Traveler 4:
+- Alexey, 39
+- Ana, 39
+- Dasha, 13
+- Vita, 3
 
 ## Why We Are Taking This Trip
 
