@@ -1,6 +1,8 @@
 # Codex Instructions
 
-1. Commit changes after all modifications have been finalized and reviewed.
+## Commit Workflow
+
+- Commit changes after all modifications have been finalized and reviewed.
 
 ## Technical Documentation Guidance
 
@@ -30,14 +32,3 @@ agent instructions, runbooks, and implementation notes.
    scope boundaries, and keep each instruction close to the workflow it governs.
 10. Review before committing. Verify that the document is accurate, concise, and
     free of filler.
-
-References for style decisions:
-
-- Google Developer Documentation Style Guide:
-  https://developers.google.com/style
-- Google prescriptive documentation guidance:
-  https://developers.google.com/style/prescriptive-documentation
-- Microsoft step-by-step instruction guidance:
-  https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions
-- Diataxis reference documentation guidance:
-  https://diataxis.qubitpi.org/en/latest/reference/
