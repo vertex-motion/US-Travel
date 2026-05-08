@@ -4,13 +4,13 @@
 
 Use existing repository structure first. If no structure exists beyond the source intent document, create only the files needed for the current request:
 
-- `02-route-options.md`: candidate routes, tradeoffs, and recommendation.
-- `03-daily-itinerary.md`: day-by-day plan with timing, drive time, walking load, meals, and backup options.
-- `04-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
-- `05-budget.md`: estimated costs by category with low/target/high ranges and source notes.
-- `06-booking-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
-- `07-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
-- `08-disregarded-options.md`: options considered and rejected, with reasons and reconsideration triggers.
+- `02-current-plan-options.md`: route, activity, lodging, and logistics options included in the working plan or retained as fallbacks.
+- `03-disregarded-options.md`: options considered and rejected, with reasons and reconsideration triggers.
+- `04-daily-itinerary.md`: day-by-day plan with timing, drive time, walking load, meals, and backup options.
+- `05-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
+- `06-budget.md`: estimated costs by category with low/target/high ranges and source notes.
+- `07-booking-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
+- `08-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
 
 Do not create all files automatically. Add a document when it reduces complexity or preserves useful planning state.
 Add a `Sources` section to any file that contains researched facts, estimates, rules, or availability-sensitive recommendations.
@@ -35,25 +35,18 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 - Open questions:
 ```
 
-## Route Option Template
+## Current Plan Options Template
 
 ```markdown
-## Option A: [Route Name]
+## Included Options
 
-| Segment | Base | Nights | Key sights | Approx. transfer | Notes |
-| --- | --- | ---: | --- | --- | --- |
+| Option in the plan | Why it remains included | Where it appears |
+| --- | --- | --- |
 
-### Best For
+## Retained Alternatives
 
-- 
-
-### Tradeoffs
-
-- 
-
-### Verification Needed
-
-- 
+| Option kept available | Why it remains in the plan set | Decision trigger |
+| --- | --- | --- |
 ```
 
 ## Daily Itinerary Template
@@ -117,5 +110,6 @@ Use this table for routes, attractions, logistics, lodging approaches, or bookin
 - Outdoor-heavy days include weather, daylight, closure, and backup considerations.
 - Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
+- Current plan options include a clear inclusion reason and a pointer to the detailed planning file.
 - Open questions are written as decisions the traveler can answer, not vague reminders.
 - Disregarded options include a clear rejection reason and a trigger for reconsideration.
