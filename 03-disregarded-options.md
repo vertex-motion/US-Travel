@@ -42,7 +42,7 @@ Record options that were considered and not included in the working July 2026 pl
 
 ## Not Disregarded
 
-- The no-Yosemite route in `02-route-options.md` remains a fallback. It is not the recommended route, but it should stay available if Yosemite lodging, fees, heat, or crowds make the park a poor fit.
+- The no-Yosemite route in `02-current-plan-options.md` remains a fallback. It is not the recommended route, but it should stay available if Yosemite lodging, fees, heat, or crowds make the park a poor fit.
 - San Diego remains an extension candidate. It is disregarded only for the current 20-day Sydney-to-Sydney plan.
 
 ## Sources
@@ -50,7 +50,7 @@ Record options that were considered and not included in the working July 2026 pl
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | The trip source intent prioritizes West Coast travel, slow pace, landmarks, and everyday US experiences. | Repository trip purpose | [01-trip-purpose.md](/workspaces/US-Travel/01-trip-purpose.md) | 2026-05-08 | Current |
-| The recommended route and route tradeoffs set the 17-night California plan and identify San Diego as an extension candidate. | Repository route options | [02-route-options.md](/workspaces/US-Travel/02-route-options.md) | 2026-05-08 | Current |
+| The current plan options set the 17-night California plan and identify San Diego as an extension candidate. | Repository current plan options | [02-current-plan-options.md](/workspaces/US-Travel/02-current-plan-options.md) | 2026-05-08 | Current |
 | Warner Bros. Studio Tour excludes children under 5. | Warner Bros. Studio Tour Hollywood | [FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |
 | Disneyland requires dated ticket/reservation planning and is therefore a full-day commitment, not a casual add-on. | Disneyland Resort | [Theme park reservation system](https://disneyland.disney.go.com/experience-updates/park-reservations/) | 2026-05-08 | Current |
 | Universal Studios Hollywood has attraction rider requirements that make the park less cleanly toddler-friendly than the current LA museum/beach plan. | Universal Studios Hollywood | [Rider guide](https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf) | 2026-05-08 | Current |

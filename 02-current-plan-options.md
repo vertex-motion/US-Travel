@@ -1,4 +1,4 @@
-# Route Options
+# Current Plan Options
 
 ## Planning Brief
 
@@ -14,9 +14,9 @@
 - Budget posture: Luxury lodging, comfortable logistics, avoid wasteful itinerary complexity.
 - Hard constraints: Avoid plans that require intensive driving, frequent hotel changes, or long theme-park days.
 - Assumptions: The family can enter the US under ESTA if eligible. Flights will be booked as Sydney-San Francisco and Los Angeles-Sydney, or a comparable open-jaw route.
-- Open questions: Decide whether San Diego is worth extending the trip or dropping another region.
+- Open questions: Confirm exact dates, Yosemite lodging, Los Angeles base, and whether any extension is worth the added friction.
 
-## Option A: San Francisco, Yosemite, Coast, and Los Angeles
+## Selected Route
 
 **Recommendation:** Use this route for the first version of the trip.
 
@@ -29,63 +29,40 @@
 | Riviera-style coast | Santa Barbara / Montecito | 2 | Waterfront, courthouse, mission, beach rhythm | 2-2.5 hours | Keeps the drive to Los Angeles comfortable. |
 | Departure city | Los Angeles / Santa Monica | 3 | Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods | 1.5-2.5 hours to LA | Depart LAX late on Day 18 to arrive Sydney on Day 20. |
 
-### Best For
+## Included Options
 
-- A first-time West Coast trip that feels iconic without becoming a checklist.
-- Family travel with one toddler and one teen.
-- The stated 20-day Sydney-to-Sydney duration.
-- Avoiding theme-park-heavy or nightlife-heavy days.
+| Option in the plan | Why it remains included | Where it appears |
+| --- | --- | --- |
+| Open-jaw flights: Sydney to San Francisco, Los Angeles to Sydney | This avoids backtracking and matches the north-to-south California route. | Arrival and departure structure in `04-daily-itinerary.md`. |
+| Five San Francisco nights at the start | This protects jet-lag recovery, keeps July 4 local, and allows Golden Gate, Alcatraz, neighborhoods, and Muir Woods without rushing. | Days 1-5 in `04-daily-itinerary.md`. |
+| Car-free San Francisco stay | It avoids city parking, post-flight driving, and unnecessary urban car logistics. | Transport plan in `05-lodging-transport.md`. |
+| Muir Woods day trip | It gives the family a redwood experience without adding a separate northern California base. | Day 5 in `04-daily-itinerary.md`. |
+| Three Yosemite nights | Yosemite is the strongest national park moment in the current West Coast plan and gives the family more than a drive-through visit. | Days 6-8 in `04-daily-itinerary.md`. |
+| Monterey / Carmel base | It supports Monterey Bay Aquarium, Pacific Grove, Carmel, and a flexible Big Sur day without another immediate hotel change. | Days 9-11 in `04-daily-itinerary.md`. |
+| Big Sur as a day trip from Monterey/Carmel | This keeps the scenic coast in the plan while allowing Caltrans road conditions to decide the exact southern limit. | Day 11 in `04-daily-itinerary.md`. |
+| Central Coast midpoint night | It protects the slow pace by avoiding a long Monterey-to-Santa Barbara coastal transfer. | Day 12 in `04-daily-itinerary.md`. |
+| Santa Barbara / Montecito pause | It gives the route a soft coastal rest before Los Angeles and fits the 5-star lodging preference better than many midpoint towns. | Days 13-14 in `04-daily-itinerary.md`. |
+| Three Los Angeles nights | It gives the family a first-time LA sample without turning the end of the trip into theme-park logistics. | Days 15-17 in `04-daily-itinerary.md`. |
+| Getty Center, Academy Museum area, and Griffith Observatory | These are recognizable LA experiences that fit a family day better than a full theme-park commitment. | Days 15-17 in `04-daily-itinerary.md`. |
+| One non-5-star midpoint stay if needed | It is a controlled compromise that protects daily pacing more than a strict hotel-category rule would. | Lodging strategy in `05-lodging-transport.md`. |
 
-### Tradeoffs
+## Retained Alternatives
 
-- San Diego is omitted. Add it only by extending the trip or removing another region.
-- Yosemite-to-Monterey is the one transfer that exceeds the preferred 2-4 hour drive range.
-- The Cambria / San Luis Obispo stop may not meet a strict 5-star lodging standard, but it protects the route.
+| Option kept available | Why it remains in the plan set | Decision trigger |
+| --- | --- | --- |
+| No-Yosemite route | It preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot for the family. | Use if July 6-9 Yosemite lodging or conditions are poor. |
+| San Diego extension | It is not in the 20-day working route, but it remains a valid extension because San Diego Zoo and La Jolla would fit the family well. | Use only if the family extends the trip or removes another region. |
+| Santa Monica, Beverly Hills, or West Hollywood as LA base | Each base supports a different version of LA: beach ease, classic luxury, or central access. | Choose after hotel quotes and room configuration checks. |
+| Mariposa Grove or Glacier Point on Yosemite Day 8 | Both are worthwhile, but road, shuttle, heat, and lodging location should decide the final choice. | Choose during the week-of Yosemite conditions check. |
+| Hearst Castle on the midpoint day | It fits the Central Coast transfer if tour timing and road conditions cooperate. | Book only if the Day 12 route remains comfortable. |
 
-### Verification Needed
+## Known Tradeoffs
 
 - Re-check Highway 1 status the week before travel; current Caltrans data already shows one-way controlled traffic north of Big Sur.
 - Re-check Yosemite reservation rules before booking flights and again 30 days before arrival.
 - Quote open-jaw flights once exact dates are approved.
-
-## Option B: Add San Diego, Keep the Coast
-
-| Segment | Base | Nights | Key sights | Approx. transfer | Notes |
-| --- | --- | ---: | --- | --- | --- |
-| San Francisco | San Francisco | 4 | Golden Gate, Alcatraz, neighborhoods | Fly SYD-SFO | One less Bay Area day. |
-| Yosemite | Yosemite | 2 | Yosemite Valley | 4-5 hours | Tighter and less restful. |
-| Monterey / Carmel | Monterey / Carmel | 2 | Aquarium, coastal scenery | 4.5-5.5 hours | Big Sur becomes a shorter pass-through or half-day. |
-| Santa Barbara | Santa Barbara | 2 | Beach and town | 4-5 hours with stops | Long coastal transfer if no midpoint night. |
-| Los Angeles | Los Angeles | 3 | Getty, Griffith, museums, beach | 1.5-2.5 hours | Same as Option A. |
-| San Diego | San Diego | 2 | San Diego Zoo, Balboa Park, La Jolla | 2-3 hours each way | Adds a strong family day but creates more driving. |
-
-### Best For
-
-- Families who strongly want San Diego Zoo or a gentler beach-city finish.
-
-### Tradeoffs
-
-- The route becomes rushed inside a 20-day Sydney-to-Sydney window.
-- Departing from LAX after San Diego adds a risky final transfer unless the family sleeps near LAX the final night.
-- A better San Diego version needs a July 21 Sydney arrival or a dropped region.
-
-## Option C: No Yosemite, More Coast and City Time
-
-| Segment | Base | Nights | Key sights | Approx. transfer | Notes |
-| --- | --- | ---: | --- | --- | --- |
-| San Francisco | San Francisco | 5 | Golden Gate, Alcatraz, Muir Woods | Fly SYD-SFO | Easy city start. |
-| Monterey / Carmel | Monterey / Carmel | 4 | Aquarium, Big Sur, Pacific Grove | 2.5-3 hours | Softer driving rhythm. |
-| Santa Barbara | Santa Barbara | 3 | Waterfront, mission, local life | 4-5 hours if by coast | Add Cambria if needed. |
-| Los Angeles | Los Angeles | 5 | Getty, Griffith, Academy Museum, beaches | 1.5-2.5 hours | More everyday-life time. |
-
-### Best For
-
-- A lower-stress route if Yosemite lodging is unavailable or July heat/crowds feel wrong.
-
-### Tradeoffs
-
-- The trip loses the strongest national park moment.
-- It becomes more urban and coastal, less varied.
+- Accept that Yosemite-to-Monterey is the one transfer above the preferred 2-4 hour range.
+- Accept that the Central Coast midpoint may be a lodging-quality compromise.
 
 ## Sources
 
