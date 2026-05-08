@@ -1,0 +1,1681 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>California Family Trip Dashboard</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQJdGp0XUgMP6EI6ObFcZR7R4U+0Hc=" crossorigin="">
+  <style>
+    :root {
+      --paper: #f7f5ef;
+      --ink: #172126;
+      --muted: #607079;
+      --line: rgba(23, 33, 38, 0.14);
+      --panel: #ffffff;
+      --panel-soft: #fbfaf6;
+      --forest: #23624d;
+      --ocean: #0b6f8d;
+      --sun: #d88a22;
+      --rose: #b85c5c;
+      --grape: #604c8d;
+      --shadow: 0 18px 50px rgba(23, 33, 38, 0.12);
+      --radius: 8px;
+      --max: 1220px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--ocean);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button,
+    summary {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    .shell {
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: var(--ink);
+      color: #fff;
+      border-bottom: 6px solid var(--sun);
+      display: grid;
+      align-items: end;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      display: none;
+    }
+
+    .hero-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 42px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.78rem;
+      font-weight: 760;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 2px;
+      background: var(--sun);
+      display: block;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 18px 0 16px;
+      font-size: clamp(3rem, 8vw, 6.9rem);
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      margin: 0;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 920px;
+      margin-top: 34px;
+    }
+
+    .hero-stat {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(18px);
+      padding: 16px;
+      border-radius: var(--radius);
+      min-height: 96px;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: clamp(1.45rem, 3vw, 2.25rem);
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .hero-stat span {
+      color: rgba(255, 255, 255, 0.77);
+      font-size: 0.92rem;
+    }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 245, 239, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+    }
+
+    .brand strong {
+      font-size: 0.95rem;
+      line-height: 1.15;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      padding-bottom: 2px;
+    }
+
+    .tab-button,
+    .filter-button,
+    .text-button {
+      min-height: 38px;
+      border-radius: var(--radius);
+      padding: 8px 13px;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .tab-button:hover,
+    .filter-button:hover,
+    .text-button:hover {
+      background: rgba(23, 33, 38, 0.06);
+    }
+
+    .tab-button[aria-selected="true"],
+    .filter-button.active {
+      color: #fff;
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    main {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 22px auto 80px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .view {
+      display: none;
+      animation: fade 0.22s ease-out;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid.two {
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel.flat {
+      box-shadow: none;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 22px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: clamp(1.25rem, 2vw, 1.8rem);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .panel-kicker {
+      color: var(--muted);
+      margin: 6px 0 0;
+      font-size: 0.94rem;
+    }
+
+    .panel-body {
+      padding: 22px;
+    }
+
+    #map {
+      height: min(68vh, 640px);
+      min-height: 440px;
+      width: 100%;
+      background: #dfe6df;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .map-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel-soft);
+    }
+
+    .route-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
+      background: var(--panel);
+    }
+
+    .route-chip {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      text-align: left;
+      padding: 12px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel-soft);
+      min-height: 104px;
+    }
+
+    .route-chip.active {
+      outline: 3px solid rgba(11, 111, 141, 0.24);
+      border-color: rgba(11, 111, 141, 0.55);
+      background: #f2fbfd;
+    }
+
+    .route-chip strong {
+      font-size: 0.98rem;
+    }
+
+    .route-chip span {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      min-height: 104px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.45rem;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .tag-row,
+    .filters {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      padding: 4px 10px;
+      color: var(--muted);
+      background: var(--panel-soft);
+      font-size: 0.82rem;
+      font-weight: 680;
+    }
+
+    .tag.good {
+      color: #175f43;
+      background: #edf8f2;
+      border-color: #bfe1cf;
+    }
+
+    .tag.warn {
+      color: #8a5010;
+      background: #fff6e7;
+      border-color: #f0cf92;
+    }
+
+    .tag.stop {
+      color: #944545;
+      background: #fff0f0;
+      border-color: #e7b6b6;
+    }
+
+    .tag.info {
+      color: #205b87;
+      background: #edf6ff;
+      border-color: #bad9ef;
+    }
+
+    .list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(23, 33, 38, 0.08);
+    }
+
+    .list li:last-child {
+      border-bottom: 0;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      margin-top: 7px;
+      flex: 0 0 auto;
+      background: var(--forest);
+    }
+
+    .dot.ocean {
+      background: var(--ocean);
+    }
+
+    .dot.sun {
+      background: var(--sun);
+    }
+
+    .dot.rose {
+      background: var(--rose);
+    }
+
+    .day-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 18px 0 14px;
+    }
+
+    .day-count {
+      color: var(--muted);
+      font-size: 0.92rem;
+      white-space: nowrap;
+    }
+
+    .day-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    details.day-card,
+    details.expand-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 22px rgba(23, 33, 38, 0.06);
+    }
+
+    details[open] {
+      box-shadow: 0 14px 34px rgba(23, 33, 38, 0.1);
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .day-summary {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+    }
+
+    .day-number {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--ink);
+      font-weight: 800;
+    }
+
+    .day-summary h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+
+    .day-summary p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .day-region {
+      min-width: 104px;
+      text-align: right;
+    }
+
+    .day-body {
+      border-top: 1px solid var(--line);
+      padding: 0 16px 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .detail {
+      padding: 12px;
+      border: 1px solid rgba(23, 33, 38, 0.1);
+      border-radius: var(--radius);
+      background: var(--panel-soft);
+      min-height: 84px;
+    }
+
+    .detail strong {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .detail span {
+      display: block;
+      font-size: 0.94rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 760px;
+      font-size: 0.92rem;
+    }
+
+    th,
+    td {
+      padding: 12px 13px;
+      text-align: left;
+      border-bottom: 1px solid rgba(23, 33, 38, 0.1);
+      vertical-align: top;
+    }
+
+    th {
+      background: #edf0ec;
+      color: #314047;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .mini-table {
+      min-width: 0;
+    }
+
+    .mini-table th,
+    .mini-table td {
+      padding: 10px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(320px, 0.62fr);
+      gap: 16px;
+    }
+
+    .budget-bars {
+      display: grid;
+      gap: 13px;
+    }
+
+    .budget-row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .budget-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .budget-head span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: right;
+    }
+
+    .bar {
+      height: 13px;
+      border-radius: 999px;
+      background: #e6e4dc;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--forest), var(--ocean), var(--sun));
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .task-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 14px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .task-card h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .task-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .task-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .expand-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .expand-summary h3 {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .expand-summary span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .expand-body {
+      border-top: 1px solid var(--line);
+      padding: 16px;
+    }
+
+    .source-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .source-group h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+    }
+
+    .leaflet-popup-content-wrapper {
+      border-radius: var(--radius);
+    }
+
+    .popup-title {
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .popup-meta {
+      color: #607079;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+    }
+
+    .footer {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 0 auto 42px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 1020px) {
+      .grid.two,
+      .grid.three,
+      .split,
+      .summary-strip,
+      .route-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      main {
+        margin-top: 18px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .hero-inner {
+        padding: 42px 0 34px;
+      }
+
+      .hero-stats,
+      .summary-strip,
+      .grid.two,
+      .grid.three,
+      .split,
+      .route-list,
+      .day-grid,
+      .detail-grid,
+      .check-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .tabs {
+        width: 100%;
+      }
+
+      .panel-header,
+      .day-toolbar,
+      .budget-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-summary {
+        grid-template-columns: auto minmax(0, 1fr);
+      }
+
+      .day-region {
+        grid-column: 1 / -1;
+        text-align: left;
+      }
+
+      #map {
+        min-height: 360px;
+        height: 52vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">July 1-20, 2026</div>
+        <h1>California Family Trip</h1>
+        <p class="hero-copy">A first United States trip for Alexey, Ana, Dasha, and Vita: San Francisco, Yosemite, the Pacific coast, Santa Barbara, and Los Angeles at a slow family pace.</p>
+        <div class="hero-stats" aria-label="Trip summary">
+          <div class="hero-stat"><strong>20</strong><span>days Sydney to Sydney</span></div>
+          <div class="hero-stat"><strong>17</strong><span>US hotel nights</span></div>
+          <div class="hero-stat"><strong>6</strong><span>California bases</span></div>
+          <div class="hero-stat"><strong>1</strong><span>accepted long transfer</span></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sticky-nav" aria-label="Dashboard sections">
+      <div class="nav-inner">
+        <div class="brand">
+          <strong>Trip Dashboard</strong>
+          <span>Source: planning files 01-08</span>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab-button" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="itinerary">Itinerary</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="lodging">Lodging</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="budget">Budget</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Booking</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="decisions">Decisions</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="view active" id="overview" role="tabpanel">
+        <div class="summary-strip">
+          <div class="metric"><strong>Slow</strong><span>One main sightseeing stop per day where practical.</span></div>
+          <div class="metric"><strong>2-4h</strong><span>Target daily driving range, with one longer transfer accepted.</span></div>
+          <div class="metric"><strong>15km</strong><span>Walking tolerance, with pram-friendly routing for Vita.</span></div>
+          <div class="metric"><strong>5 star</strong><span>Preferred lodging level, with one midpoint compromise allowed.</span></div>
+          <div class="metric"><strong>No car</strong><span>San Francisco stay remains car-free until Day 6.</span></div>
+        </div>
+
+        <div class="panel">
+          <div id="map" aria-label="Interactive California trip map"></div>
+          <div class="map-tools" id="mapTools"></div>
+          <div class="route-list" id="routeList"></div>
+        </div>
+
+        <div class="grid two" style="margin-top: 16px;">
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Traveler Intent</h2>
+                <p class="panel-kicker">Canonical source: 01-trip-purpose.md</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <ul class="list">
+                <li><span class="dot"></span><span>First trip to the United States, with a West Coast focus because the East Coast flight would be too long.</span></li>
+                <li><span class="dot ocean"></span><span>Famous landmarks and recognizable places matter, alongside everyday experiences that feel like US life.</span></li>
+                <li><span class="dot sun"></span><span>The family currently lives in Sydney and will travel with a pram for Vita.</span></li>
+                <li><span class="dot rose"></span><span>Planning principles favor realistic days, rest time, and avoiding stops added only because they are famous.</span></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Selected Route</h2>
+                <p class="panel-kicker">Canonical source: 02-current-plan-options.md</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="table-wrap">
+                <table class="mini-table">
+                  <thead>
+                    <tr><th>Base</th><th>Nights</th><th>Key sights</th></tr>
+                  </thead>
+                  <tbody id="selectedRouteRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="itinerary" role="tabpanel">
+        <section class="panel flat">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">20-Day Itinerary</h2>
+              <p class="panel-kicker">Working window: July 1-20, 2026. Source: 04-daily-itinerary.md</p>
+            </div>
+            <button class="text-button" type="button" id="toggleDays">Open all days</button>
+          </div>
+          <div class="panel-body">
+            <div class="day-toolbar">
+              <div class="filters" id="dayFilters"></div>
+              <div class="day-count" id="dayCount"></div>
+            </div>
+            <div class="day-grid" id="dayGrid"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="lodging" role="tabpanel">
+        <div class="split">
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Lodging Strategy</h2>
+                <p class="panel-kicker">Canonical source: 05-lodging-transport.md</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <ul class="list" id="lodgingStrategy"></ul>
+              <div class="table-wrap" style="margin-top: 16px;">
+                <table>
+                  <thead>
+                    <tr><th>Base</th><th>Nights</th><th>Recommended area</th><th>Why it fits</th><th>Watch-outs</th></tr>
+                  </thead>
+                  <tbody id="baseRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Transport Plan</h2>
+                <p class="panel-kicker">Open-jaw route and car timing</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <ol class="list" id="transportPlan"></ol>
+              <div class="tag-row" style="margin-top: 16px;">
+                <span class="tag info">SFO arrival transfer</span>
+                <span class="tag good">Car-free San Francisco</span>
+                <span class="tag warn">SFO city pickup to LAX return quote needed</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Hotel Shortlist</h2>
+              <p class="panel-kicker">Needs live family-room and rate quotes before booking.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Base</th><th>First checks</th><th>Why check first</th><th>Status</th></tr>
+                </thead>
+                <tbody id="hotelRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="budget" role="tabpanel">
+        <div class="split">
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Planning Range</h2>
+                <p class="panel-kicker">Canonical source: 06-budget.md. Amounts are USD unless noted.</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="budget-bars" id="budgetBars"></div>
+            </div>
+          </section>
+
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Cost Controls</h2>
+                <p class="panel-kicker">Quality-preserving constraints from the budget plan.</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <ul class="list" id="costControls"></ul>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Attraction Cost Anchors</h2>
+              <p class="panel-kicker">Planning anchors only; exact costs and booking windows need current checks.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Item</th><th>Family planning note</th><th>Current anchor</th></tr></thead>
+                <tbody id="attractionRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Quote Tasks</h2>
+              <p class="panel-kicker">Rebuild the budget with actual quotes before nonrefundable deposits.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul class="list" id="quoteTasks"></ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="booking" role="tabpanel">
+        <section class="panel flat">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Booking Checklist</h2>
+              <p class="panel-kicker">Canonical source: 07-booking-checklist.md</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="check-grid" id="bookingTasks"></div>
+          </div>
+        </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Timed Tickets and Pre-Departure Checks</h2>
+              <p class="panel-kicker">Track calendar-sensitive reservations and route checks.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="grid two">
+              <div class="table-wrap">
+                <table class="mini-table">
+                  <thead><tr><th>Task</th><th>Target timing</th><th>Status</th></tr></thead>
+                  <tbody id="timedRows"></tbody>
+                </table>
+              </div>
+              <div class="table-wrap">
+                <table class="mini-table">
+                  <thead><tr><th>Check</th><th>When</th><th>Required action</th></tr></thead>
+                  <tbody id="preDepartureRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Do Not Book</h2>
+              <p class="panel-kicker">Guardrails from the current booking checklist.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul class="list" id="doNotBook"></ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="decisions" role="tabpanel">
+        <div class="grid two">
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Open Questions</h2>
+                <p class="panel-kicker">Canonical source: 08-open-questions.md</p>
+              </div>
+            </div>
+            <div class="panel-body" id="openQuestions"></div>
+          </section>
+
+          <section class="panel flat">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Retained Alternatives</h2>
+                <p class="panel-kicker">Kept available if constraints change.</p>
+              </div>
+            </div>
+            <div class="panel-body" id="retainedAlternatives"></div>
+          </section>
+        </div>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Disregarded Options</h2>
+              <p class="panel-kicker">Canonical source: 03-disregarded-options.md</p>
+            </div>
+          </div>
+          <div class="panel-body" id="disregardedOptions"></div>
+        </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Research Gaps and Current Assumptions</h2>
+              <p class="panel-kicker">Canonical source: 08-open-questions.md</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="grid two">
+              <ul class="list" id="researchGaps"></ul>
+              <ul class="list" id="currentAssumptions"></ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="sources" role="tabpanel">
+        <section class="panel flat">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Sources</h2>
+              <p class="panel-kicker">Grouped by the planning file where each supported fact lives.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="source-grid" id="sourceGrid"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Static HTML dashboard generated from the repository planning documents. Volatile travel facts retain their existing source dates and status labels.
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    const tripData = {
+      selectedRoute: [
+        { base: "San Francisco", nights: 5, sights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods", transfer: "Fly SYD-SFO", notes: "No car until leaving San Francisco. Avoid July 4 driving." },
+        { base: "Yosemite Valley or Fish Camp", nights: 3, sights: "Yosemite Valley, Glacier Point or Mariposa Grove", transfer: "4-5 hours from San Francisco", notes: "Book lodging early. No day-use reservation is currently required for July 2026, but nonresident fees apply." },
+        { base: "Monterey / Carmel", nights: 3, sights: "Monterey Bay Aquarium, Pacific Grove, Big Sur day trip", transfer: "4.5-5.5 hours from Yosemite", notes: "This is the longest transfer. Break for lunch in the Central Valley or Mariposa." },
+        { base: "Cambria / San Luis Obispo", nights: 1, sights: "Hearst Castle, coastal road break", transfer: "2.5-3 hours from Monterey", notes: "Use this as a pacing stop because Monterey-Santa Barbara by coast is long." },
+        { base: "Santa Barbara / Montecito", nights: 2, sights: "Waterfront, courthouse, mission, beach rhythm", transfer: "2-2.5 hours", notes: "Keeps the drive to Los Angeles comfortable." },
+        { base: "Los Angeles / Santa Monica", nights: 3, sights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods", transfer: "1.5-2.5 hours to LA", notes: "Depart LAX late on Day 18 to arrive Sydney on Day 20." }
+      ],
+      mapStops: [
+        { id: "sfo", type: "airport", name: "SFO", label: "Arrival airport", dates: "Day 1", nights: "", coords: [37.6213, -122.3790], highlights: "Preferred arrival gateway for Sydney-San Francisco.", transfer: "Fly SYD-SFO." },
+        { id: "sf", type: "base", name: "San Francisco", label: "Arrival and Bay Area", dates: "July 1-6", nights: "5 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods.", transfer: "No car until leaving San Francisco." },
+        { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 6-9", nights: "3 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, Glacier Point or Mariposa Grove.", transfer: "4-5 hours from San Francisco." },
+        { id: "monterey", type: "base", name: "Monterey / Carmel", label: "Central Coast North", dates: "July 9-12", nights: "3 nights", coords: [36.5552, -121.9233], highlights: "Aquarium, Pacific Grove, Carmel, Big Sur day trip.", transfer: "4.5-5.5 hours from Yosemite." },
+        { id: "cambria", type: "base", name: "Cambria / SLO", label: "Central Coast Midpoint", dates: "July 12-13", nights: "1 night", coords: [35.5641, -121.0808], highlights: "Hearst Castle and coastal pacing stop.", transfer: "2.5-3.5 hours before local stops if Highway 1 is open." },
+        { id: "santabarbara", type: "base", name: "Santa Barbara / Montecito", label: "Riviera-style coast", dates: "July 13-15", nights: "2 nights", coords: [34.4208, -119.6982], highlights: "Waterfront, courthouse, mission, beach rhythm.", transfer: "2-2.5 hours from the Central Coast." },
+        { id: "la", type: "base", name: "Los Angeles / Santa Monica", label: "Departure city", dates: "July 15-18", nights: "3 nights", coords: [34.0195, -118.4912], highlights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods.", transfer: "1.5-2.5 hours from Santa Barbara before LA traffic variation." },
+        { id: "lax", type: "airport", name: "LAX", label: "Departure airport", dates: "Day 18", nights: "", coords: [33.9416, -118.4085], highlights: "Preferred return gateway for Los Angeles-Sydney.", transfer: "Return car at LAX on departure day." }
+      ],
+      days: [
+        { day: 1, date: "Wednesday, July 1", title: "Arrive San Francisco", region: "San Francisco", sleep: "San Francisco", morning: "Fly Sydney to San Francisco.", lunch: "In flight or arrival-dependent.", afternoon: "Clear immigration, transfer by car service or taxi to hotel, unpack.", dinner: "Easy local dinner near the hotel.", driving: "None after arrival except airport transfer.", walking: "Keep light.", reservations: "Airport transfer if arriving with significant luggage and pram.", backup: "If arrival is delayed, skip dinner booking and eat near the hotel." },
+        { day: 2, date: "Thursday, July 2", title: "Golden Gate and Presidio", region: "San Francisco", sleep: "San Francisco", morning: "Golden Gate Bridge viewpoints from Crissy Field or the Presidio.", lunch: "Marina, Presidio, or Fort Mason area.", afternoon: "Palace of Fine Arts and neighborhood walk.", dinner: "North Beach or Hayes Valley.", driving: "None; use taxis/rideshare/transit.", walking: "Moderate and pram-friendly if routes stay near waterfront paths.", reservations: "None required.", backup: "Exploratorium if fog, wind, or jet lag makes outdoor time hard." },
+        { day: 3, date: "Friday, July 3", title: "Alcatraz and Ferry Building", region: "San Francisco", sleep: "San Francisco", morning: "Alcatraz Island day tour.", lunch: "Ferry Building.", afternoon: "Embarcadero, cable car if queues are manageable, or North Beach.", dinner: "Early dinner near hotel.", driving: "None.", walking: "Moderate.", reservations: "Book the official Alcatraz ferry as soon as tickets open.", backup: "Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable." },
+        { day: 4, date: "Saturday, July 4", title: "San Francisco Local Day", region: "San Francisco", sleep: "San Francisco", morning: "Slow start after jet lag. Choose Golden Gate Park, the California Academy of Sciences, or a neighborhood farmers market.", lunch: "Inner Sunset, Haight, or Ferry Building area depending on the morning choice.", afternoon: "Rest at hotel. Avoid long transfers on Independence Day.", dinner: "Early casual dinner.", driving: "None.", walking: "Light to moderate.", reservations: "Buy museum tickets if choosing California Academy of Sciences.", backup: "Hotel pool/spa time or indoor museum time." },
+        { day: 5, date: "Sunday, July 5", title: "Muir Woods and Sausalito", region: "San Francisco", sleep: "San Francisco", morning: "Muir Woods with a reserved parking or shuttle slot.", lunch: "Mill Valley or Sausalito.", afternoon: "Sausalito waterfront, then return to San Francisco.", dinner: "San Francisco.", driving: "1.5-2.5 hours total depending on traffic and parking plan.", walking: "Light to moderate on accessible redwood boardwalks.", reservations: "Muir Woods parking or shuttle reservation is required.", backup: "Lands End, Presidio Tunnel Tops, or Golden Gate Park if Muir Woods reservations are poor." },
+        { day: 6, date: "Monday, July 6", title: "San Francisco to Yosemite", region: "Yosemite", sleep: "Yosemite Valley, Fish Camp, or another Yosemite-area base.", morning: "Pick up rental car and leave San Francisco after breakfast.", lunch: "Oakdale, Mariposa, or route-dependent stop.", afternoon: "Arrive, check in, take a short Yosemite Valley orientation walk if time allows.", dinner: "Hotel or lodge restaurant.", driving: "4-5 hours before stops.", walking: "Light.", reservations: "Yosemite-area lodging must be booked early.", backup: "If traffic is severe, skip Yosemite Valley sightseeing and settle in." },
+        { day: 7, date: "Tuesday, July 7", title: "Yosemite Valley", region: "Yosemite", sleep: "Yosemite area.", morning: "Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints.", lunch: "Yosemite Valley.", afternoon: "Lower Yosemite Fall, meadows, or shuttle-based loop.", dinner: "Lodge or hotel.", driving: "Minimal if staying in the valley; more if staying outside the park.", walking: "Moderate and adjustable.", reservations: "None for trails; dining may require advance planning.", backup: "Use the free valley shuttle and shorter paved routes if it is hot." },
+        { day: 8, date: "Wednesday, July 8", title: "Mariposa Grove or Glacier Point", region: "Yosemite", sleep: "Yosemite area.", morning: "Choose Mariposa Grove if the shuttle is operating and heat is manageable.", lunch: "Wawona, hotel, or packed lunch.", afternoon: "Glacier Point if open and practical, or rest day near the hotel.", dinner: "Hotel.", driving: "1-3 hours depending on base and route.", walking: "Light to moderate.", reservations: "Check road and shuttle status before committing.", backup: "Yosemite Valley scenic loop, visitor center, and hotel rest." },
+        { day: 9, date: "Thursday, July 9", title: "Yosemite to Monterey / Carmel", region: "Monterey / Carmel", sleep: "Monterey, Carmel, or Carmel Valley.", morning: "Depart Yosemite after breakfast.", lunch: "Route stop in the Central Valley or around Gilroy.", afternoon: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk.", dinner: "Carmel or Monterey.", driving: "4.5-5.5 hours before breaks.", walking: "Light.", reservations: "Dinner reservation if choosing a popular Carmel restaurant.", backup: "If the drive runs long, skip sunset stops and settle in." },
+        { day: 10, date: "Friday, July 10", title: "Monterey Bay Aquarium", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", morning: "Monterey Bay Aquarium.", lunch: "Cannery Row, Pacific Grove, or hotel.", afternoon: "Pacific Grove coastal walk, Dennis the Menace Playground, or rest.", dinner: "Carmel or Monterey.", driving: "Minimal.", walking: "Moderate.", reservations: "Buy aquarium tickets ahead once 2026 ticketing is open.", backup: "If aquarium crowds are heavy, go at opening and move the playground/rest time earlier." },
+        { day: 11, date: "Saturday, July 11", title: "Big Sur Day Trip", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", morning: "Drive south to Big Sur viewpoints.", lunch: "Big Sur or return toward Carmel depending on traffic.", afternoon: "Bixby Bridge viewpoint, Pfeiffer Big Sur area, or Point Lobos if reservations/parking work.", dinner: "Carmel.", driving: "2-4 hours total depending on how far south the family goes.", walking: "Light to moderate.", reservations: "None for a simple scenic drive; check state park parking rules if adding hikes.", backup: "17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
+        { day: 12, date: "Sunday, July 12", title: "Monterey to Cambria / San Luis Obispo", region: "Central Coast", sleep: "Cambria, San Luis Obispo, or Paso Robles area.", morning: "Coastal drive south if Highway 1 is open.", lunch: "Cambria, San Simeon, or Paso Robles depending on route.", afternoon: "Hearst Castle tour if tickets and timing work.", dinner: "Cambria or San Luis Obispo.", driving: "2.5-3.5 hours before local stops if Highway 1 is open; longer if rerouted.", walking: "Light to moderate.", reservations: "Hearst Castle tour tickets open about 60 days in advance.", backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails." },
+        { day: 13, date: "Monday, July 13", title: "Central Coast to Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Slow departure.", lunch: "Los Olivos, Solvang, or Santa Ynez Valley.", afternoon: "Arrive Santa Barbara and check in.", dinner: "Santa Barbara waterfront or Montecito.", driving: "2-2.5 hours before stops.", walking: "Light.", reservations: "None required.", backup: "If the family wants fewer stops, drive directly and make Santa Barbara the main experience." },
+        { day: 14, date: "Tuesday, July 14", title: "Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Santa Barbara County Courthouse and downtown.", lunch: "State Street or Funk Zone.", afternoon: "Beach, pier, hotel pool, or Old Mission Santa Barbara.", dinner: "Santa Barbara.", driving: "Minimal.", walking: "Light to moderate.", reservations: "None unless choosing a specific dinner.", backup: "Keep the day almost entirely resort-based if the family needs a rest reset." },
+        { day: 15, date: "Wednesday, July 15", title: "Santa Barbara to Los Angeles", region: "Los Angeles", sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", morning: "Drive to Los Angeles after breakfast.", lunch: "Santa Monica or Brentwood.", afternoon: "Getty Center.", dinner: "Santa Monica, Brentwood, or hotel.", driving: "1.5-2.5 hours before LA traffic variation.", walking: "Moderate.", reservations: "Reserve Getty parking/timed-entry if the museum requires it for the chosen date.", backup: "If traffic is poor, go straight to the hotel and shift Getty to Day 16." },
+        { day: 16, date: "Thursday, July 16", title: "LA Museums and Everyday City Life", region: "Los Angeles", sleep: "Los Angeles.", morning: "Academy Museum of Motion Pictures or La Brea / LACMA area.", lunch: "Original Farmers Market or Beverly Grove.", afternoon: "Rest, Rodeo Drive walk, or neighborhood time.", dinner: "Beverly Hills, West Hollywood, or Santa Monica.", driving: "1-2 hours total depending on hotel base.", walking: "Light to moderate.", reservations: "Academy Museum tickets if visiting.", backup: "Petersen Automotive Museum, The Grove, or hotel pool." },
+        { day: 17, date: "Friday, July 17", title: "Griffith Observatory and Hollywood Viewpoints", region: "Los Angeles", sleep: "Los Angeles.", morning: "Griffith Observatory / Hollywood Sign viewpoints.", lunch: "Los Feliz, Silver Lake, or Hollywood area.", afternoon: "Rest or beach time.", dinner: "Final LA dinner.", driving: "1.5-3 hours depending on traffic.", walking: "Light to moderate.", reservations: "None for observatory grounds; planetarium shows require tickets and age rules should be checked.", backup: "Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead." },
+        { day: 18, date: "Saturday, July 18", title: "Depart Los Angeles", region: "Los Angeles", sleep: "Overnight flight.", morning: "Pack slowly. Avoid major sightseeing.", lunch: "Near hotel.", afternoon: "Depart for LAX with a large traffic buffer.", dinner: "Airport or lounge.", driving: "30-90 minutes to LAX depending on hotel location and traffic.", walking: "Light.", reservations: "International flight and car return.", backup: "If the flight leaves very late, reserve late checkout or a day room." },
+        { day: 19, date: "Sunday, July 19", title: "In Transit", region: "Transit", sleep: "In flight.", morning: "Cross the Pacific.", lunch: "In flight.", afternoon: "Cross the date line.", dinner: "In flight.", driving: "None.", walking: "None.", reservations: "None.", backup: "None." },
+        { day: 20, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", sleep: "Home.", morning: "Arrive Sydney.", lunch: "Home.", afternoon: "Recovery day.", dinner: "Home.", driving: "Airport transfer only.", walking: "Light.", reservations: "Airport transfer if needed.", backup: "None." }
+      ],
+      lodgingStrategy: [
+        "Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.",
+        "Use 5-star hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles.",
+        "Accept one boutique or 4-star comfort stop around Cambria, Paso Robles, or San Luis Obispo if the family chooses the paced coastal route.",
+        "Prefer suites, connecting rooms, or confirmed occupancy for two adults, one teen, and one three-year-old.",
+        "Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking."
+      ],
+      bases: [
+        { base: "San Francisco", nights: 5, area: "Nob Hill, Embarcadero, Union Square edge, or SoMa near transit", fit: "No-car start, easy airport transfer, access to Alcatraz and waterfront", watch: "Avoid car parking here; city hotel rooms may be small for four." },
+        { base: "Yosemite", nights: 3, area: "Yosemite Valley first; Fish Camp / Tenaya area second", fit: "Staying inside or near the park reduces daily driving", watch: "True luxury inventory is limited and sells out early." },
+        { base: "Monterey / Carmel", nights: 3, area: "Carmel-by-the-Sea, Carmel Valley, Pebble Beach, or Monterey waterfront", fit: "Aquarium, Pacific Grove, Big Sur day trip", watch: "Beach-area parking and summer rates can be difficult." },
+        { base: "Cambria / SLO / Paso Robles", nights: 1, area: "Cambria, San Luis Obispo, or Paso Robles", fit: "Breaks the coastal drive and supports Hearst Castle", watch: "May not match strict 5-star preference." },
+        { base: "Santa Barbara / Montecito", nights: 2, area: "Montecito beach or central Santa Barbara", fit: "Strong luxury lodging, relaxed family pacing", watch: "High July rates and minimum-stay rules are possible." },
+        { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, or West Hollywood", fit: "Good access to Getty, Griffith, museums, beach, and LAX", watch: "LA traffic makes base choice important." }
+      ],
+      hotels: [
+        { base: "San Francisco", checks: "Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco", why: "Strong service level and central logistics", status: "Needs live family-room and rate quote" },
+        { base: "Yosemite", checks: "The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite", why: "Park access matters more than brand category", status: "Needs immediate availability check" },
+        { base: "Monterey / Carmel", checks: "Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa", why: "Family-friendly space and coastal access", status: "Needs live family-room and rate quote" },
+        { base: "Central Coast midpoint", checks: "Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns", why: "Pacing stop, not destination luxury", status: "Needs live quote; accept lower star rating if needed" },
+        { base: "Santa Barbara / Montecito", checks: "Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara", why: "Best fit for 5-star coastal rest", status: "Needs live family-room and rate quote" },
+        { base: "Los Angeles", checks: "Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills", why: "Choose based on beach vs. classic LA vs. museum access", status: "Needs live family-room and rate quote" }
+      ],
+      transportPlan: [
+        "Fly Sydney to San Francisco.",
+        "Stay car-free in San Francisco for the first five nights.",
+        "Pick up a rental car on Day 6 when leaving San Francisco.",
+        "Use the car for Yosemite, the Central Coast, Santa Barbara, and Los Angeles.",
+        "Return the car at LAX on departure day.",
+        "Fly Los Angeles to Sydney late on Day 18 if the July 1-20 window is fixed."
+      ],
+      budget: [
+        { category: "International flights", low: "AU$8,600", target: "AU$14,000", high: "AU$35,000+", basis: "United search result showed Sydney-San Francisco July round trips from about AU$2,159 per person; exact open-jaw fare must be quoted.", weight: 40 },
+        { category: "Lodging, 17 nights", low: "$24,000", target: "$38,000", high: "$65,000+", basis: "Luxury-family allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live hotel quotes.", weight: 82 },
+        { category: "Rental car, fuel, parking, tolls", low: "$2,000", target: "$3,500", high: "$6,000", basis: "SUV rental, one-way drop, hotel valet parking, fuel, and buffers; needs live quote.", weight: 48 },
+        { category: "Attractions and tours", low: "$600", target: "$1,000", high: "$1,600", basis: "Includes Alcatraz, Muir Woods, aquarium, Hearst Castle, museums, and parking.", weight: 22 },
+        { category: "Food", low: "$4,500", target: "$6,500", high: "$10,000", basis: "$265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, and mixed dinners.", weight: 58 },
+        { category: "Airport transfers and local transit", low: "$500", target: "$1,000", high: "$1,800", basis: "SFO transfer, taxis/rideshare in SF and LA, luggage-friendly transfers.", weight: 20 },
+        { category: "Travel insurance, mobile data, documents", low: "$600", target: "$1,200", high: "$2,500", basis: "Needs family policy quote and phone plan choice.", weight: 24 },
+        { category: "Buffer", low: "$3,000", target: "$5,000", high: "$10,000", basis: "Use a larger buffer because luxury lodging and holiday-week pricing are volatile.", weight: 52 }
+      ],
+      attractions: [
+        { item: "Alcatraz day tour", note: "Two adults, one youth, one child under 5", anchor: "$143.85" },
+        { item: "Muir Woods", note: "Two adult entrance fees plus one standard parking reservation; children under 16 free", anchor: "$39.50" },
+        { item: "Monterey Bay Aquarium", note: "Two adults plus one youth; Vita is outside the adult/youth paid bands", anchor: "$180+" },
+        { item: "Hearst Castle", note: "Two adults, one child age 5-12 band does not apply to Vita; tour choice can change cost", anchor: "$70+" },
+        { item: "Getty Center", note: "Admission is free but timed-entry reservation and parking apply", anchor: "$25 parking, less after 3pm" },
+        { item: "Academy Museum", note: "Two adults; children 17 and under free for museum admission", anchor: "$50 before parking or add-ons" }
+      ],
+      costControls: [
+        "Keep San Francisco car-free to avoid parking charges and city driving.",
+        "Book Yosemite lodging first; a poor location creates more driving and less park time.",
+        "Use one Central Coast midpoint night rather than forcing a long coastal transfer.",
+        "Choose one Los Angeles base and avoid cross-city sightseeing on the same day.",
+        "Treat San Diego as an extension, not a free add-on."
+      ],
+      quoteTasks: [
+        "Quote flights for July 1 departure from Sydney and July 18 or July 19 departure from Los Angeles.",
+        "Quote Yosemite lodging immediately for July 6-9.",
+        "Quote San Francisco and Los Angeles family-room configurations before committing to exact dates.",
+        "Quote rental car SFO city pickup to LAX return for July 6-18.",
+        "Rebuild the budget with actual booking quotes before paying nonrefundable deposits."
+      ],
+      bookingTasks: [
+        { task: "Confirm final trip dates", when: "Now", owner: "Alexey / Ana", notes: "Decide July 1-20 Sydney-to-Sydney or extend to July 21 for one extra US night.", status: "Open" },
+        { task: "Check ESTA eligibility for all travelers", when: "Now", owner: "Alexey / Ana", notes: "Do this before paying nonrefundable bookings.", status: "Open" },
+        { task: "Quote flights", when: "Now", owner: "Alexey / Ana", notes: "Price SYD-SFO and LAX-SYD, plus one-day date shifts.", status: "Open" },
+        { task: "Hold or book Yosemite lodging", when: "Now", owner: "Alexey / Ana", notes: "This is the hardest lodging constraint.", status: "Open" },
+        { task: "Quote family-room lodging in SF and LA", when: "Now", owner: "Alexey / Ana", notes: "These anchor the budget and room configuration.", status: "Open" },
+        { task: "Quote rental car", when: "After flights are held", owner: "Alexey / Ana", notes: "SFO city pickup on July 6, LAX return on July 18.", status: "Open" }
+      ],
+      timedTickets: [
+        { task: "Alcatraz day tour", timing: "As soon as July 2026 tickets open", notes: "Use official Alcatraz City Cruises only.", status: "Open" },
+        { task: "Muir Woods parking or shuttle", timing: "As soon as plan is fixed", notes: "Reservation is required before arrival.", status: "Open" },
+        { task: "Monterey Bay Aquarium", timing: "When July 2026 tickets are available", notes: "Prefer opening-time entry.", status: "Open" },
+        { task: "Hearst Castle", timing: "About 60 days before July 12", notes: "Choose tour time that fits the transfer day.", status: "Open" },
+        { task: "Getty Center", timing: "When July 2026 calendar is available", notes: "Check parking and any timed-entry rules.", status: "Open" },
+        { task: "Academy Museum", timing: "When July 2026 calendar is available", notes: "Keep as flexible LA museum day.", status: "Open" }
+      ],
+      preDeparture: [
+        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Day 11", action: "Use Caltrans before driving south of Monterey." },
+        { check: "Yosemite entry and fee rules", when: "Before flights, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment." },
+        { check: "Yosemite road and shuttle status", when: "Week of arrival", action: "Decide Mariposa Grove vs. Glacier Point vs. valley rest day." },
+        { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 4 local and avoid car-dependent plans." },
+        { check: "LA traffic and airport timing", when: "Day before departure", action: "Confirm car-return route and departure buffer." }
+      ],
+      doNotBook: [
+        "Do not book Warner Bros. Studio Tour for this trip unless Vita is not attending. Children under 5 are not allowed.",
+        "Do not add San Diego unless the family extends the return date or removes another region.",
+        "Do not make nonrefundable hotel bookings until room occupancy for four people is confirmed in writing."
+      ],
+      openQuestions: [
+        { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and whether San Diego can fit.", default: "Use July 1-20 for the first quote round." },
+        { question: "Is the family willing to arrive Sydney on July 21 instead of July 20?", why: "One extra night makes San Diego or a softer Yosemite-to-coast transfer easier.", default: "Extend only if San Diego is a must." },
+        { question: "Is Yosemite a must-do?", why: "Yosemite drives the hardest lodging and transfer constraints.", default: "Keep Yosemite unless lodging is unavailable or very poor value." },
+        { question: "Is strict 5-star lodging required every night?", why: "The Central Coast pacing stop may not have true 5-star options.", default: "Allow one high-quality non-5-star midpoint stay." },
+        { question: "Does the family want a theme park day?", why: "Disneyland or Universal would consume a full LA day and add crowd/height constraints.", default: "Skip theme parks on this first plan." },
+        { question: "Should the plan optimize for beach base or classic-city base in LA?", why: "Santa Monica lowers beach friction; Beverly Hills improves classic LA service and dining; West Hollywood improves central access.", default: "Choose Santa Monica if Vita's beach/pool time matters most." },
+        { question: "Will the family bring or rent Vita's child seat?", why: "It affects airport transfers and rental car pickup.", default: "Bring a known seat if airline and rental logistics allow." }
+      ],
+      researchGaps: [
+        "Exact open-jaw airfare for SYD-SFO and LAX-SYD.",
+        "Exact family-room lodging availability and cancellation terms.",
+        "Yosemite lodging availability for July 6-9.",
+        "Rental car quote for SFO pickup and LAX return.",
+        "Confirm whether the rental company requires an International Driving Permit with Australian licenses.",
+        "Current Highway 1 status for the Monterey-Big Sur-Hearst Castle plan.",
+        "July 2026 attraction calendars once ticket windows open."
+      ],
+      currentAssumptions: [
+        "The family wants a recognizable West Coast first trip more than a completionist route.",
+        "The family prefers less driving and fewer hotel changes over adding San Diego.",
+        "A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.",
+        "The budget can support luxury lodging, but exact room configuration will decide the real cost."
+      ],
+      retainedAlternatives: [
+        { option: "No-Yosemite route", why: "Preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot.", trigger: "Use if July 6-9 Yosemite lodging or conditions are poor." },
+        { option: "San Diego extension", why: "Zoo and La Jolla would fit the family well but do not fit the 20-day working route.", trigger: "Use only if the family extends the trip or removes another region." },
+        { option: "Santa Monica, Beverly Hills, or West Hollywood as LA base", why: "Each base supports a different version of LA.", trigger: "Choose after hotel quotes and room configuration checks." },
+        { option: "Mariposa Grove or Glacier Point on Yosemite Day 8", why: "Both are worthwhile.", trigger: "Let road, shuttle, heat, and lodging location decide." },
+        { option: "Hearst Castle on the midpoint day", why: "It fits the Central Coast transfer if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
+      ],
+      disregardedOptions: [
+        { option: "San Diego inside the 20-day plan", why: "It adds another base and more driving after Los Angeles.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, or Santa Barbara." },
+        { option: "Las Vegas", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
+        { option: "Grand Canyon", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
+        { option: "Pacific Northwest", why: "Seattle, Portland, and Olympic Peninsula sit too far north for the current California route.", reconsider: "The family chooses a San Francisco-to-Seattle route." },
+        { option: "Lake Tahoe", why: "It adds a mountain detour without improving the first-time landmark mix as much as Yosemite.", reconsider: "Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base." },
+        { option: "Napa or Sonoma overnight", why: "More adult-oriented and adds a base before Yosemite.", reconsider: "The adults want a luxury resort pause and remove Muir Woods or one San Francisco day." },
+        { option: "Disneyland Resort", why: "It would consume at least one full LA-area day and shift the trip toward theme parks.", reconsider: "Disney becomes a must-do and the family drops an LA museum/beach day." },
+        { option: "Universal Studios Hollywood", why: "Full-day theme-park commitment with attraction height and intensity constraints for a three-year-old.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
+        { option: "Warner Bros. Studio Tour Hollywood", why: "Children under 5 are not permitted, so Vita cannot attend.", reconsider: "Vita is not attending that activity or the trip is repeated when she is older." },
+        { option: "Pick up rental car on San Francisco arrival", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
+        { option: "Drive Monterey to Santa Barbara in one coastal day", why: "Makes the coast feel like a transfer rather than an experience.", reconsider: "The family drops Hearst Castle and accepts a longer drive." }
+      ],
+      sourceGroups: [
+        {
+          title: "01 Trip Purpose",
+          rows: [
+            { fact: "Traveler intent, family details, pace, and planning principles.", source: "Repository trip purpose", url: "01-trip-purpose.md", accessed: "2026-05-08", status: "Current" }
+          ]
+        },
+        {
+          title: "02 Current Plan Options",
+          rows: [
+            { fact: "Australian citizens may use the Visa Waiver Program/ESTA when eligible.", source: "US Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html", accessed: "2026-05-08", status: "Current" },
+            { fact: "Sydney-San Francisco nonstop air service exists and is a plausible open-jaw gateway.", source: "San Francisco International Airport", url: "https://www.flysfo.com/nonstop", accessed: "2026-05-08", status: "Current" },
+            { fact: "Los Angeles-Sydney nonstop service exists and is a plausible return gateway.", source: "FlightsFrom", url: "https://www.flightsfrom.com/LAX-SYD", accessed: "2026-05-08", status: "Current; compare direct airline quotes" },
+            { fact: "Yosemite does not currently require a reservation for park entry in July 2026; lodging or campground reservations are separate.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
+            { fact: "Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 for maintenance.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-08", status: "Current; re-check before travel" }
+          ]
+        },
+        {
+          title: "04 Daily Itinerary",
+          rows: [
+            { fact: "Alcatraz tickets should be booked through the NPS-authorized ferry concessioner.", source: "National Park Service / Alcatraz City Cruises", url: "https://www.nps.gov/alca/planyourvisit/fees.htm", accessed: "2026-05-08", status: "Current" },
+            { fact: "Muir Woods requires parking or shuttle reservations before arrival.", source: "National Park Service", url: "https://www.nps.gov/muwo/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
+            { fact: "Monterey Bay Aquarium is a ticketed, high-demand family attraction.", source: "Monterey Bay Aquarium", url: "https://www.montereybayaquarium.org/visit/tickets", accessed: "2026-05-08", status: "Current" },
+            { fact: "Hearst Castle tours are ticketed and should be reserved once the booking window opens.", source: "California State Parks", url: "https://hearstcastle.org/tour-hearst-castle/", accessed: "2026-05-08", status: "Current" },
+            { fact: "Getty Center, Academy Museum, and Griffith Observatory logistics should be checked for selected dates.", source: "Getty / Academy Museum / Griffith Observatory", url: "https://www.getty.edu/visit/center/", accessed: "2026-05-08", status: "Current" }
+          ]
+        },
+        {
+          title: "05 Lodging and Transport",
+          rows: [
+            { fact: "Yosemite lodging inside the park should be checked first because location materially reduces daily driving.", source: "Yosemite Hospitality", url: "https://www.travelyosemite.com/lodging/the-ahwahnee/", accessed: "2026-05-08", status: "Needs live availability quote" },
+            { fact: "Tenaya at Yosemite is a practical luxury-leaning fallback near the south entrance.", source: "Tenaya at Yosemite", url: "https://www.visittenaya.com/", accessed: "2026-05-08", status: "Needs live availability quote" },
+            { fact: "Rosewood Miramar Beach is a suitable luxury Santa Barbara / Montecito candidate.", source: "Rosewood Hotels", url: "https://www.rosewoodhotels.com/en/miramar-beach-montecito", accessed: "2026-05-08", status: "Needs live availability quote" },
+            { fact: "Santa Monica Proper and The Beverly Hills Hotel are suitable Los Angeles candidates.", source: "Proper Hotels / Dorchester Collection", url: "https://www.properhotel.com/santa-monica/", accessed: "2026-05-08", status: "Needs live availability quote" }
+          ]
+        },
+        {
+          title: "06 Budget",
+          rows: [
+            { fact: "United fare page supplied a planning anchor for Sydney-San Francisco, but exact itinerary needs a direct airline quote.", source: "United Airlines", url: "https://www.united.com/en-au/flights-from-sydney-to-san-francisco", accessed: "2026-05-08", status: "Needs exact open-jaw quote" },
+            { fact: "Getty Center admission is free but timed-entry reservation and parking apply.", source: "J. Paul Getty Trust", url: "https://www.getty.edu/visit/center/", accessed: "2026-05-08", status: "Current" },
+            { fact: "Academy Museum child/adult ticketing supports the family attraction allowance.", source: "Academy Museum of Motion Pictures", url: "https://www.academymuseum.org/en/visit?icid=homepage-carousel2-a-night-at-the-academy-museum-may-2022", accessed: "2026-05-08", status: "Current" }
+          ]
+        },
+        {
+          title: "07 Booking Checklist and 08 Open Questions",
+          rows: [
+            { fact: "ESTA/Visa Waiver eligibility must be checked before nonrefundable booking.", source: "US Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html", accessed: "2026-05-08", status: "Current" },
+            { fact: "Yosemite reservation rules should be checked repeatedly because park entry systems can change.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
+            { fact: "Highway 1 needs current verification before the coastal route is treated as fixed.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-08", status: "Current; re-check before travel" },
+            { fact: "Warner Bros. Studio Tour does not allow children under 5.", source: "Warner Bros. Studio Tour Hollywood", url: "https://www.wbstudiotour.com/faq/", accessed: "2026-05-08", status: "Current" }
+          ]
+        }
+      ]
+    };
+
+    const $ = (selector, root = document) => root.querySelector(selector);
+    const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+    const escapeHtml = (value) => String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+    const statusTag = (status) => {
+      const lower = String(status).toLowerCase();
+      let type = "info";
+      if (lower.includes("open") || lower.includes("needs") || lower.includes("re-check")) type = "warn";
+      if (lower.includes("do not") || lower.includes("unavailable")) type = "stop";
+      if (lower.includes("current") && !lower.includes("needs") && !lower.includes("re-check")) type = "good";
+      return `<span class="tag ${type}">${escapeHtml(status)}</span>`;
+    };
+
+    function renderSelectedRoute() {
+      $("#selectedRouteRows").innerHTML = tripData.selectedRoute.map((row) => `
+        <tr>
+          <td><strong>${escapeHtml(row.base)}</strong><br><span class="tag">${escapeHtml(row.transfer)}</span></td>
+          <td>${row.nights}</td>
+          <td>${escapeHtml(row.sights)}<br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td>
+        </tr>
+      `).join("");
+    }
+
+    function renderLists() {
+      $("#lodgingStrategy").innerHTML = tripData.lodgingStrategy.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#transportPlan").innerHTML = tripData.transportPlan.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#costControls").innerHTML = tripData.costControls.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#quoteTasks").innerHTML = tripData.quoteTasks.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#researchGaps").innerHTML = tripData.researchGaps.map((item, index) => `<li><span class="dot ${["sun", "ocean", "", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      $("#currentAssumptions").innerHTML = tripData.currentAssumptions.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+    }
+
+    function renderTables() {
+      $("#baseRows").innerHTML = tripData.bases.map((row) => `
+        <tr><td><strong>${escapeHtml(row.base)}</strong></td><td>${row.nights}</td><td>${escapeHtml(row.area)}</td><td>${escapeHtml(row.fit)}</td><td>${escapeHtml(row.watch)}</td></tr>
+      `).join("");
+      $("#hotelRows").innerHTML = tripData.hotels.map((row) => `
+        <tr><td><strong>${escapeHtml(row.base)}</strong></td><td>${escapeHtml(row.checks)}</td><td>${escapeHtml(row.why)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+      $("#attractionRows").innerHTML = tripData.attractions.map((row) => `
+        <tr><td><strong>${escapeHtml(row.item)}</strong></td><td>${escapeHtml(row.note)}</td><td>${escapeHtml(row.anchor)}</td></tr>
+      `).join("");
+      $("#timedRows").innerHTML = tripData.timedTickets.map((row) => `
+        <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+      $("#preDepartureRows").innerHTML = tripData.preDeparture.map((row) => `
+        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td></tr>
+      `).join("");
+    }
+
+    function renderDays(filter = "All") {
+      const days = filter === "All" ? tripData.days : tripData.days.filter((day) => day.region === filter);
+      $("#dayCount").textContent = `${days.length} day${days.length === 1 ? "" : "s"}`;
+      $("#dayGrid").innerHTML = days.map((day) => `
+        <details class="day-card" data-region="${escapeHtml(day.region)}">
+          <summary class="day-summary">
+            <span class="day-number">${day.day}</span>
+            <span>
+              <h3>${escapeHtml(day.title)}</h3>
+              <p>${escapeHtml(day.date)} - Sleep: ${escapeHtml(day.sleep)}</p>
+            </span>
+            <span class="day-region">${statusTag(day.region)}</span>
+          </summary>
+          <div class="day-body">
+            <div class="detail-grid">
+              <div class="detail"><strong>Morning</strong><span>${escapeHtml(day.morning)}</span></div>
+              <div class="detail"><strong>Lunch</strong><span>${escapeHtml(day.lunch)}</span></div>
+              <div class="detail"><strong>Afternoon</strong><span>${escapeHtml(day.afternoon)}</span></div>
+              <div class="detail"><strong>Dinner</strong><span>${escapeHtml(day.dinner)}</span></div>
+              <div class="detail"><strong>Driving</strong><span>${escapeHtml(day.driving)}</span></div>
+              <div class="detail"><strong>Walking</strong><span>${escapeHtml(day.walking)}</span></div>
+              <div class="detail"><strong>Reservations</strong><span>${escapeHtml(day.reservations)}</span></div>
+            </div>
+            <div class="detail"><strong>Backup plan</strong><span>${escapeHtml(day.backup)}</span></div>
+          </div>
+        </details>
+      `).join("");
+    }
+
+    function renderDayFilters() {
+      const regions = ["All", ...new Set(tripData.days.map((day) => day.region))];
+      $("#dayFilters").innerHTML = regions.map((region) => `<button class="filter-button ${region === "All" ? "active" : ""}" type="button" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("");
+      $("#dayFilters").addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        $$("#dayFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
+        renderDays(button.dataset.region);
+      });
+    }
+
+    function renderBudget() {
+      $("#budgetBars").innerHTML = tripData.budget.map((row) => `
+        <div class="budget-row">
+          <div class="budget-head">
+            <strong>${escapeHtml(row.category)}</strong>
+            <span>Low ${escapeHtml(row.low)} / Target ${escapeHtml(row.target)} / High ${escapeHtml(row.high)}</span>
+          </div>
+          <div class="bar" aria-hidden="true"><div class="bar-fill" style="width: ${row.weight}%;"></div></div>
+          <span style="color: var(--muted); font-size: 0.9rem;">${escapeHtml(row.basis)}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderBooking() {
+      $("#bookingTasks").innerHTML = tripData.bookingTasks.map((task) => `
+        <article class="task-card">
+          <div class="task-meta"><h3>${escapeHtml(task.task)}</h3>${statusTag(task.status)}</div>
+          <p><strong>When:</strong> ${escapeHtml(task.when)}<br><strong>Owner:</strong> ${escapeHtml(task.owner)}</p>
+          <p>${escapeHtml(task.notes)}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderDecisionCards(target, rows, columns) {
+      $(target).innerHTML = rows.map((row, index) => `
+        <details class="expand-card" ${index === 0 ? "open" : ""}>
+          <summary class="expand-summary">
+            <h3>${escapeHtml(row.question || row.option)}</h3>
+            <span>${escapeHtml(row.default || row.trigger || row.reconsider || "")}</span>
+          </summary>
+          <div class="expand-body">
+            ${columns.map((column) => `<p><strong>${escapeHtml(column.label)}:</strong> ${escapeHtml(row[column.key])}</p>`).join("")}
+          </div>
+        </details>
+      `).join("");
+    }
+
+    function renderSources() {
+      $("#sourceGrid").innerHTML = tripData.sourceGroups.map((group) => `
+        <section class="source-group">
+          <h3>${escapeHtml(group.title)}</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Fact or decision supported</th><th>Source</th><th>Accessed</th><th>Status</th></tr></thead>
+              <tbody>
+                ${group.rows.map((row) => `
+                  <tr>
+                    <td>${escapeHtml(row.fact)}</td>
+                    <td><a href="${escapeHtml(row.url)}">${escapeHtml(row.source)}</a></td>
+                    <td>${escapeHtml(row.accessed)}</td>
+                    <td>${statusTag(row.status)}</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      `).join("");
+    }
+
+    function renderMap() {
+      const tools = $("#mapTools");
+      const routeList = $("#routeList");
+      tools.innerHTML = tripData.mapStops.map((stop) => `<button class="filter-button" type="button" data-stop="${stop.id}">${escapeHtml(stop.name)}</button>`).join("");
+      routeList.innerHTML = tripData.mapStops.filter((stop) => stop.type === "base").map((stop) => `
+        <button type="button" class="route-chip" data-stop="${stop.id}">
+          <strong>${escapeHtml(stop.name)}</strong>
+          <span>${escapeHtml(stop.dates)} - ${escapeHtml(stop.nights)}</span>
+          <span>${escapeHtml(stop.highlights)}</span>
+        </button>
+      `).join("");
+
+      if (!window.L) {
+        $("#map").innerHTML = '<div style="padding: 24px;">Map library unavailable.</div>';
+        return;
+      }
+
+      const map = L.map("map", { scrollWheelZoom: false }).setView([36.45, -120.35], 6);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: "&copy; OpenStreetMap contributors"
+      }).addTo(map);
+
+      const routeLine = L.polyline(tripData.mapStops.map((stop) => stop.coords), {
+        color: "#0b6f8d",
+        weight: 5,
+        opacity: 0.88,
+        lineJoin: "round"
+      }).addTo(map);
+
+      map.fitBounds(routeLine.getBounds(), { padding: [28, 28] });
+
+      const markers = new Map();
+      const defaultIcon = L.divIcon({
+        className: "trip-marker",
+        html: '<span style="display:block;width:18px;height:18px;border-radius:999px;background:#0b6f8d;border:3px solid #fff;box-shadow:0 4px 14px rgba(23,33,38,.3);"></span>',
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+      const airportIcon = L.divIcon({
+        className: "trip-marker",
+        html: '<span style="display:block;width:18px;height:18px;border-radius:4px;background:#d88a22;border:3px solid #fff;box-shadow:0 4px 14px rgba(23,33,38,.3);"></span>',
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+
+      tripData.mapStops.forEach((stop) => {
+        const marker = L.marker(stop.coords, { icon: stop.type === "airport" ? airportIcon : defaultIcon }).addTo(map);
+        marker.bindPopup(`
+          <div class="popup-title">${escapeHtml(stop.name)}</div>
+          <div class="popup-meta">${escapeHtml(stop.label)}<br>${escapeHtml(stop.dates)} ${stop.nights ? "- " + escapeHtml(stop.nights) : ""}</div>
+          <div>${escapeHtml(stop.highlights)}</div>
+          <div style="margin-top: 6px;"><strong>Transfer:</strong> ${escapeHtml(stop.transfer)}</div>
+        `);
+        marker.on("click", () => activateStop(stop.id));
+        markers.set(stop.id, marker);
+      });
+
+      function activateStop(id) {
+        $$(".route-chip, #mapTools .filter-button").forEach((button) => button.classList.toggle("active", button.dataset.stop === id));
+        const marker = markers.get(id);
+        if (marker) {
+          map.flyTo(marker.getLatLng(), id === "yosemite" ? 8 : 9, { duration: 0.5 });
+          marker.openPopup();
+        }
+      }
+
+      tools.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (button) activateStop(button.dataset.stop);
+      });
+      routeList.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (button) activateStop(button.dataset.stop);
+      });
+    }
+
+    function wireTabs() {
+      const tabs = $$(".tab-button");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+          $$(".view").forEach((view) => view.classList.toggle("active", view.id === tab.dataset.tab));
+          if (tab.dataset.tab === "overview" && window.dispatchEvent) {
+            window.dispatchEvent(new Event("resize"));
+          }
+        });
+      });
+    }
+
+    function wireDayToggle() {
+      $("#toggleDays").addEventListener("click", () => {
+        const cards = $$("#dayGrid details");
+        const shouldOpen = cards.some((card) => !card.open);
+        cards.forEach((card) => {
+          card.open = shouldOpen;
+        });
+        $("#toggleDays").textContent = shouldOpen ? "Close all days" : "Open all days";
+      });
+    }
+
+    function boot() {
+      renderSelectedRoute();
+      renderLists();
+      renderTables();
+      renderDayFilters();
+      renderDays();
+      renderBudget();
+      renderBooking();
+      renderDecisionCards("#openQuestions", tripData.openQuestions, [
+        { label: "Why it matters", key: "why" },
+        { label: "Recommended default", key: "default" }
+      ]);
+      renderDecisionCards("#retainedAlternatives", tripData.retainedAlternatives, [
+        { label: "Why it remains", key: "why" },
+        { label: "Decision trigger", key: "trigger" }
+      ]);
+      renderDecisionCards("#disregardedOptions", tripData.disregardedOptions, [
+        { label: "Why it was disregarded", key: "why" },
+        { label: "Reconsider if", key: "reconsider" }
+      ]);
+      renderSources();
+      renderMap();
+      wireTabs();
+      wireDayToggle();
+    }
+
+    boot();
+  </script>
+</body>
+</html>
