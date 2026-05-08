@@ -38,6 +38,7 @@ This is the family's first trip to explore the United States, with a particular 
 **Purpose:** Capture preferred dates, flexibility, seasonal considerations, and anything that affects when to visit specific places.
 
 - The family plans to travel in early July 2026.
+- Trip duration: 20 days including flights.
 - Dates and route can be flexible to get lower prices, better views, or include worthwhile places.
 
 ## Travel Style
