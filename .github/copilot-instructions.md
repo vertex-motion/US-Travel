@@ -1,1 +1,1 @@
-1. Commit changes after all modifications have been finalized and reviewed.
+Follow the repository instructions in `AGENTS.md`.
