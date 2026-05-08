@@ -2,19 +2,13 @@
 
 ## Planning Brief
 
-- Travelers: Alexey, Ana, Dasha (13), and Vita (3).
-- Trip dates: Working assumption is July 1-20, 2026, Sydney-to-Sydney, with 17 US hotel nights.
-- Primary goals: First US trip, West Coast landmarks, everyday local experiences, and a slow family pace.
-- Must-see themes: San Francisco, Yosemite, Pacific coast, Los Angeles, recognizable US city and nature icons.
-- Pace: One primary activity per day. Add a second stop only when adjacent.
-- Driving tolerance: Target 2-4 hours on transfer days. Allow one longer transfer only when the route gain is worth it.
-- Walking tolerance: Up to 15 km, but pram-friendly routing matters for Vita.
-- Lodging preference: 5-star where practical. Use one non-luxury comfort stop only if it protects the driving pace.
-- Food preferences: No stated restrictions.
-- Budget posture: Luxury lodging, comfortable logistics, avoid wasteful itinerary complexity.
-- Hard constraints: Avoid plans that require intensive driving, frequent hotel changes, or long theme-park days.
+- Canonical traveler intent and pace constraints live in `01-trip-purpose.md`.
+- Working window: July 1-20, 2026, Sydney-to-Sydney, with 17 US hotel nights.
+- Route theme: San Francisco, Yosemite, Pacific coast, Los Angeles, and recognizable US city and nature icons.
+- Planning posture: Luxury lodging and comfortable logistics, with one non-luxury comfort stop allowed if it protects the driving pace.
+- Route constraint: Target 2-4 hours on transfer days. Accept one longer transfer only when the route gain is worth it.
 - Assumptions: The family can enter the US under ESTA if eligible. Flights will be booked as Sydney-San Francisco and Los Angeles-Sydney, or a comparable open-jaw route.
-- Open questions: Confirm exact dates, Yosemite lodging, Los Angeles base, and whether any extension is worth the added friction.
+- Open decisions remain tracked in `08-open-questions.md`.
 
 ## Selected Route
 

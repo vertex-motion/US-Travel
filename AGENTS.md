@@ -4,6 +4,15 @@
 
 - Commit changes after all modifications have been finalized and reviewed.
 
+## Duplication Review
+
+- Before editing planning files, check nearby documents for the same fact, decision, task, or instruction.
+- Keep one canonical home for stable traveler intent, route decisions, rejected options, budgets, booking tasks, and open questions.
+- Link or refer to the canonical file instead of restating the same material in another file.
+- Keep necessary repetition when it supports use of the file on its own. This includes daily itinerary fields, status tables, and source rows required to keep researched facts traceable in the same file.
+- Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
+- When repetition remains intentional, make each instance serve a distinct purpose, such as summary, action checklist, rationale, or source evidence.
+
 ## Technical Documentation Guidance
 
 Use these rules when writing or updating technical documents, including skills, agent instructions, runbooks, and implementation notes.
