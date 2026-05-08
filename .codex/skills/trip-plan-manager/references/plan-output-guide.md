@@ -12,6 +12,7 @@ Use existing repository structure first. If no structure exists beyond the sourc
 - `07-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
 
 Do not create all files automatically. Add a document when it reduces complexity or preserves useful planning state.
+Add a `Sources` section to any file that contains researched facts, estimates, rules, or availability-sensitive recommendations.
 
 ## Planning Brief Template
 
@@ -71,6 +72,18 @@ Do not create all files automatically. Add a document when it reduces complexity
 - Source notes:
 ```
 
+## Sources Template
+
+```markdown
+## Sources
+
+| Fact or decision supported | Source | Original page | Accessed | Status |
+| --- | --- | --- | --- | --- |
+|  |  | [Page title](https://example.com) | YYYY-MM-DD | Current / Needs current verification |
+```
+
+Use one `Sources` section per planning file. Keep links close to the file they support so future updates can refresh the same source record.
+
 ## Budget Template
 
 ```markdown
@@ -91,5 +104,6 @@ Do not create all files automatically. Add a document when it reduces complexity
 - Transfer days include realistic packing, checkout, parking, meals, and arrival time.
 - Luxury lodging recommendations consider both property quality and route convenience.
 - Outdoor-heavy days include weather, daylight, closure, and backup considerations.
-- Source-sensitive facts include links and an access date.
+- Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
+- Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
 - Open questions are written as decisions the traveler can answer, not vague reminders.

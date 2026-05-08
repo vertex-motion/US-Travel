@@ -22,13 +22,15 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 3. Research volatile facts before using them.
    - Verify current prices, opening hours, ticket rules, closures, road conditions, timed-entry requirements, hotel availability, flights, transit, legal/visa rules, and safety guidance.
    - Prefer official sources for parks, attractions, airports, government rules, and venue hours. Use reputable aggregators for comparison shopping only when official sources are insufficient.
-   - Record source links and the access date in the relevant planning document.
+   - Add the original source page link, source name, and access date next to the fact or in the document's `Sources` section.
+   - Keep source links in the same file as the facts they support. Do not rely on chat history or browser history as the record.
    - If browsing is unavailable, mark affected facts as `Needs current verification`.
 
 4. Create or update the plan documents.
    - Follow existing repo naming if present; otherwise use numbered Markdown files at the repo root.
    - Keep `01-trip-purpose.md` as source intent. Add later documents for route options, daily itinerary, lodging/transport, budget, and booking tasks as needed.
    - Use the output patterns in `references/plan-output-guide.md` when drafting new planning documents.
+   - When editing existing documents, preserve valid source links. Update the access date when re-checking a source, replace dead or stale links with the current original page, and keep obsolete links only when they explain a prior decision.
 
 5. Review the plan as a system.
    - Check that daily pacing matches driving and walking tolerance.
@@ -45,6 +47,8 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 - Use bullets for assumptions, risks, and rationale.
 - Keep recommendations specific enough to act on: dates or day numbers, locations, estimated durations, booking windows, and decision owners when known.
 - Do not invent exact costs, hours, drive times, hotel availability, or legal requirements without current verification.
+- Link each researched recommendation, estimate, or constraint to its original source page. Use stable official pages when available, not search result pages or unsourced snippets.
+- Maintain a `Sources` section in each planning file that contains researched facts. Include source name, URL, access date, supported fact, and status when the source needs re-checking.
 - Keep family preferences and constraints visible in the plan instead of burying them in prose.
 
 ## Resources
