@@ -37,7 +37,7 @@ This is the family's first trip to explore the United States, with a particular 
 
 **Purpose:** Capture preferred dates, flexibility, seasonal considerations, and anything that affects when to visit specific places.
 
-- The family plans to travel in early July.
+- The family plans to travel in early July 2026.
 - Dates and route can be flexible to get lower prices, better views, or include worthwhile places.
 
 ## Travel Style
@@ -45,9 +45,9 @@ This is the family's first trip to explore the United States, with a particular 
 **Purpose:** Describe the preferred pace and rhythm of the trip.
 
 - Pace: Slow, ideally one sightseeing stop per day. Two smaller sights can fit into one day if they are adjacent.
-- Driving tolerance:
-- Walking tolerance:
-- Hotel preferences:
+- Driving tolerance: 2-4 hours a day
+- Walking tolerance: 15km
+- Hotel preferences: 5 star
 - Food preferences:
 - Budget style:
 
