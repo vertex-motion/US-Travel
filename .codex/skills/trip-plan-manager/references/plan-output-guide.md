@@ -10,6 +10,7 @@ Use existing repository structure first. If no structure exists beyond the sourc
 - `05-budget.md`: estimated costs by category with low/target/high ranges and source notes.
 - `06-booking-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
 - `07-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
+- `08-disregarded-options.md`: options considered and rejected, with reasons and reconsideration triggers.
 
 Do not create all files automatically. Add a document when it reduces complexity or preserves useful planning state.
 Add a `Sources` section to any file that contains researched facts, estimates, rules, or availability-sensitive recommendations.
@@ -84,6 +85,16 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 
 Use one `Sources` section per planning file. Keep links close to the file they support so future updates can refresh the same source record.
 
+## Disregarded Options Template
+
+```markdown
+| Considered option | Why it was disregarded | Reconsider if |
+| --- | --- | --- |
+|  |  |  |
+```
+
+Use this table for routes, attractions, logistics, lodging approaches, or booking ideas that were meaningfully considered and rejected. Tie each reason to traveler constraints, current research, route quality, budget posture, or explicit assumptions.
+
 ## Budget Template
 
 ```markdown
@@ -107,3 +118,4 @@ Use one `Sources` section per planning file. Keep links close to the file they s
 - Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
 - Open questions are written as decisions the traveler can answer, not vague reminders.
+- Disregarded options include a clear rejection reason and a trigger for reconsideration.

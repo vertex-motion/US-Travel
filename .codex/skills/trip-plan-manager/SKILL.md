@@ -28,7 +28,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 
 4. Create or update the plan documents.
    - Follow existing repo naming if present; otherwise use numbered Markdown files at the repo root.
-   - Keep `01-trip-purpose.md` as source intent. Add later documents for route options, daily itinerary, lodging/transport, budget, and booking tasks as needed.
+   - Keep `01-trip-purpose.md` as source intent. Add later documents for route options, daily itinerary, lodging/transport, budget, booking tasks, and disregarded options as needed.
    - Use the output patterns in `references/plan-output-guide.md` when drafting new planning documents.
    - When editing existing documents, preserve valid source links. Update the access date when re-checking a source, replace dead or stale links with the current original page, and keep obsolete links only when they explain a prior decision.
 
@@ -36,6 +36,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
    - Check that daily pacing matches driving and walking tolerance.
    - Avoid one-way routing mistakes, unrealistic transfer days, hidden ticket constraints, and plans that require being in two places at once.
    - Make tradeoffs explicit when optimizing for luxury, scenery, lower cost, fewer hotel changes, or slower pace.
+   - Record rejected routes, attractions, logistics, or lodging approaches when they were meaningfully considered or researched.
 
 6. Finish with a concise status.
    - Summarize changed files, key planning decisions, unresolved questions, and any facts that still need live verification.
@@ -50,6 +51,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 - Link each researched recommendation, estimate, or constraint to its original source page. Use stable official pages when available, not search result pages or unsourced snippets.
 - Maintain a `Sources` section in each planning file that contains researched facts. Include source name, URL, access date, supported fact, and status when the source needs re-checking.
 - Keep family preferences and constraints visible in the plan instead of burying them in prose.
+- For each disregarded option, state what was considered, why it was rejected, and what constraint change would justify reconsidering it.
 
 ## Resources
 
