@@ -38,9 +38,10 @@ This is the family's first trip to explore the United States, with a particular 
 - Pace: Slow, ideally one sightseeing stop per day. Two smaller sights can fit into one day if they are adjacent.
 - Driving tolerance: 3-4 hours in the car during a local sightseeing day; 10-12 hours only when moving to another city.
 - Walking tolerance: 15km
-- Hotel preferences: 5 star
+- Hotel preferences: 5-star or luxury-leaning hotels at a tolerable total price; do not default to the most expensive property.
+- Room requirement: Prefer one confirmed room or suite that fits all four travelers. Two rooms are too expensive and should be a fallback only if no acceptable one-room option exists.
 - Food preferences:
-- Budget style:
+- Budget style: Value-conscious luxury, with total lodging cost and room configuration treated as key constraints.
 
 ## Planning Principles
 
