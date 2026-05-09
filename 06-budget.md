@@ -4,14 +4,14 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The largest budget risk is lodging. July is peak season in Yosemite, the California coast, and Santa Barbara. Family room configuration can cost more than a standard room.
+The largest budget risk is lodging. July is peak season in Yosemite, the California coast, and Santa Barbara. The target is value-conscious luxury, not the most expensive 5-star option. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
 ## Planning Range
 
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | AU$8,600 | AU$14,000 | AU$35,000+ | United search result showed Sydney-San Francisco July round trips from about AU$2,159 per person; exact open-jaw SYD-SFO / LAX-SYD fare must be quoted. |
-| Lodging, 17 nights | $24,000 | $38,000 | $65,000+ | Luxury-family allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live hotel quotes. |
+| Lodging, 17 nights | $24,000 | $38,000 | $65,000+ | Value-conscious luxury allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live one-room hotel quotes. |
 | Rental car, fuel, parking, tolls | $2,000 | $3,500 | $6,000 | SUV rental, one-way drop, hotel valet parking, fuel, and buffers; needs live quote. |
 | Attractions and tours | $600 | $1,000 | $1,600 | Includes Alcatraz, Muir Woods, Monterey Bay Aquarium, Hearst Castle, museums, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, and mixed dinners. |
@@ -34,6 +34,7 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 
 - Keep San Francisco car-free to avoid parking charges and city driving.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
+- Prioritize hotels that can confirm one room or suite for all four travelers before comparing higher-priced 5-star brands.
 - Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.
 - Choose one Los Angeles base and avoid cross-city sightseeing on the same day.
 - Treat San Diego as an extension, not a free add-on.
@@ -42,7 +43,7 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 
 1. Quote flights for July 1 departure from Sydney and July 18 or July 19 departure from Los Angeles.
 2. Quote Yosemite lodging immediately for July 6-9.
-3. Quote San Francisco and Los Angeles family-room configurations before committing to exact dates.
+3. Quote one-room family configurations in each base before committing to exact dates or hotel brands.
 4. Quote rental car SFO city pickup to LAX return for July 6-18.
 5. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 

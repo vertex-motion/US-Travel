@@ -3,9 +3,10 @@
 ## Lodging Strategy
 
 - Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
-- Use 5-star hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles.
+- Use 5-star or luxury-leaning hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles, but do not default to the most expensive property.
+- Treat a confirmed single room or suite for two adults, one teen, and one three-year-old as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
 - Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.
-- Prefer suites, connecting rooms, or confirmed occupancy for two adults, one teen, and one three-year-old.
+- Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
 - Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking.
 
 ## Recommended Bases
@@ -22,12 +23,12 @@
 
 | Base | First checks | Why check first | Status |
 | --- | --- | --- | --- |
-| San Francisco | Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco | Strong service level and central logistics | Needs live family-room and rate quote |
-| Yosemite | The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite | Park access matters more than brand category | Needs immediate availability check |
-| Monterey / Carmel | Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa | Family-friendly space and coastal access | Needs live family-room and rate quote |
+| San Francisco | Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco | Strong service level and central logistics | Needs live one-room family occupancy and rate quote |
+| Yosemite | The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite | Park access matters more than brand category | Needs immediate one-room availability check |
+| Monterey / Carmel | Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa | Family-friendly space and coastal access | Needs live one-room family occupancy and rate quote |
 | Fallback Central Coast midpoint | Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns | Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full | Quote only if needed |
-| Santa Barbara / Montecito | Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara | Best fit for 5-star coastal rest | Needs live family-room and rate quote |
-| Los Angeles | Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills | Choose based on beach vs. classic LA vs. museum access | Needs live family-room and rate quote |
+| Santa Barbara / Montecito | Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara | Best fit for 5-star coastal rest if total price is tolerable | Needs live one-room family occupancy and rate quote |
+| Los Angeles | Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills | Choose based on beach vs. classic LA vs. museum access and total stay cost | Needs live one-room family occupancy and rate quote |
 
 ## Transport Plan
 

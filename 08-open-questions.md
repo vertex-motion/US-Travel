@@ -15,7 +15,7 @@
 ## Research Gaps To Close After Date Approval
 
 - Exact open-jaw airfare for SYD-SFO and LAX-SYD.
-- Exact family-room lodging availability and cancellation terms.
+- Exact one-room family lodging availability, total stay price, and cancellation terms.
 - Yosemite lodging availability for July 6-9.
 - Rental car quote for SFO pickup and LAX return.
 - Confirm whether the rental company requires an International Driving Permit with Australian licenses.
@@ -27,7 +27,7 @@
 - The family wants a recognizable West Coast first trip more than a completionist route.
 - The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego inside the 20-day plan.
 - A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.
-- The budget can support luxury lodging, but exact room configuration will decide the real cost.
+- The budget can support value-conscious luxury lodging, but exact one-room availability will decide the real cost.
 
 ## Sources
 

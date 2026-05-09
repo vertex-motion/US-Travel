@@ -852,7 +852,7 @@
           <div class="metric"><strong>Slow</strong><span>One main sightseeing stop per day where practical.</span></div>
           <div class="metric"><strong>3-4h</strong><span>Local sightseeing day car time; 10-12h only for intercity moves.</span></div>
           <div class="metric"><strong>15km</strong><span>Walking tolerance, with pram-friendly routing for Vita.</span></div>
-          <div class="metric"><strong>5 star</strong><span>Preferred lodging level; midpoint stop stays fallback only.</span></div>
+          <div class="metric"><strong>5 star</strong><span>Value-conscious lodging; one room for four is required.</span></div>
           <div class="metric"><strong>No car</strong><span>San Francisco stay remains car-free until Day 6.</span></div>
         </div>
 
@@ -875,7 +875,7 @@
                 <li><span class="dot"></span><span>First trip to the United States, with a West Coast focus because the East Coast flight would be too long.</span></li>
                 <li><span class="dot ocean"></span><span>Famous landmarks and recognizable places matter, alongside everyday experiences that feel like US life.</span></li>
                 <li><span class="dot sun"></span><span>The family currently lives in Sydney and will travel with a pram for Vita.</span></li>
-                <li><span class="dot rose"></span><span>Planning principles favor realistic days, rest time, and avoiding stops added only because they are famous.</span></li>
+                <li><span class="dot rose"></span><span>Planning principles favor realistic days, rest time, value-conscious 5-star lodging, and one room or suite for all four travelers.</span></li>
               </ul>
             </div>
           </section>
@@ -964,7 +964,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Hotel Shortlist</h2>
-              <p class="panel-kicker">Needs live family-room and rate quotes before booking.</p>
+              <p class="panel-kicker">Needs live one-room family occupancy and rate quotes before booking.</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1200,9 +1200,10 @@
       ],
       lodgingStrategy: [
         "Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.",
-        "Use 5-star hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles.",
+        "Use 5-star or luxury-leaning hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles, but do not default to the most expensive property.",
+        "Treat a confirmed single room or suite for two adults, one teen, and one three-year-old as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.",
         "Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.",
-        "Prefer suites, connecting rooms, or confirmed occupancy for two adults, one teen, and one three-year-old.",
+        "Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.",
         "Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking."
       ],
       bases: [
@@ -1213,12 +1214,12 @@
         { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, or West Hollywood", fit: "Good access to Getty, Griffith, museums, beach, and LAX", watch: "LA traffic makes base choice important." }
       ],
       hotels: [
-        { base: "San Francisco", checks: "Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco", why: "Strong service level and central logistics", status: "Needs live family-room and rate quote" },
-        { base: "Yosemite", checks: "The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite", why: "Park access matters more than brand category", status: "Needs immediate availability check" },
-        { base: "Monterey / Carmel", checks: "Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa", why: "Family-friendly space and coastal access", status: "Needs live family-room and rate quote" },
+        { base: "San Francisco", checks: "Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco", why: "Strong service level and central logistics", status: "Needs live one-room family occupancy and rate quote" },
+        { base: "Yosemite", checks: "The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite", why: "Park access matters more than brand category", status: "Needs immediate one-room availability check" },
+        { base: "Monterey / Carmel", checks: "Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa", why: "Family-friendly space and coastal access", status: "Needs live one-room family occupancy and rate quote" },
         { base: "Fallback Central Coast midpoint", checks: "Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns", why: "Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full", status: "Quote only if needed" },
-        { base: "Santa Barbara / Montecito", checks: "Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara", why: "Best fit for 5-star coastal rest", status: "Needs live family-room and rate quote" },
-        { base: "Los Angeles", checks: "Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills", why: "Choose based on beach vs. classic LA vs. museum access", status: "Needs live family-room and rate quote" }
+        { base: "Santa Barbara / Montecito", checks: "Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara", why: "Best fit for 5-star coastal rest if total price is tolerable", status: "Needs live one-room family occupancy and rate quote" },
+        { base: "Los Angeles", checks: "Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills", why: "Choose based on beach vs. classic LA vs. museum access and total stay cost", status: "Needs live one-room family occupancy and rate quote" }
       ],
       transportPlan: [
         "Fly Sydney to San Francisco.",
@@ -1230,7 +1231,7 @@
       ],
       budget: [
         { category: "International flights", low: "AU$8,600", target: "AU$14,000", high: "AU$35,000+", basis: "United search result showed Sydney-San Francisco July round trips from about AU$2,159 per person; exact open-jaw fare must be quoted.", weight: 40 },
-        { category: "Lodging, 17 nights", low: "$24,000", target: "$38,000", high: "$65,000+", basis: "Luxury-family allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live hotel quotes.", weight: 82 },
+        { category: "Lodging, 17 nights", low: "$24,000", target: "$38,000", high: "$65,000+", basis: "Value-conscious luxury allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live one-room hotel quotes.", weight: 82 },
         { category: "Rental car, fuel, parking, tolls", low: "$2,000", target: "$3,500", high: "$6,000", basis: "SUV rental, one-way drop, hotel valet parking, fuel, and buffers; needs live quote.", weight: 48 },
         { category: "Attractions and tours", low: "$600", target: "$1,000", high: "$1,600", basis: "Includes Alcatraz, Muir Woods, aquarium, Hearst Castle, museums, and parking.", weight: 22 },
         { category: "Food", low: "$4,500", target: "$6,500", high: "$10,000", basis: "$265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, and mixed dinners.", weight: 58 },
@@ -1249,6 +1250,7 @@
       costControls: [
         "Keep San Francisco car-free to avoid parking charges and city driving.",
         "Book Yosemite lodging first; a poor location creates more driving and less park time.",
+        "Prioritize hotels that can confirm one room or suite for all four travelers before comparing higher-priced 5-star brands.",
         "Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.",
         "Choose one Los Angeles base and avoid cross-city sightseeing on the same day.",
         "Treat San Diego as an extension, not a free add-on."
@@ -1256,7 +1258,7 @@
       quoteTasks: [
         "Quote flights for July 1 departure from Sydney and July 18 or July 19 departure from Los Angeles.",
         "Quote Yosemite lodging immediately for July 6-9.",
-        "Quote San Francisco and Los Angeles family-room configurations before committing to exact dates.",
+        "Quote one-room family configurations in each base before committing to exact dates or hotel brands.",
         "Quote rental car SFO city pickup to LAX return for July 6-18.",
         "Rebuild the budget with actual booking quotes before paying nonrefundable deposits."
       ],
@@ -1265,7 +1267,7 @@
         { task: "Check ESTA eligibility for all travelers", when: "Now", owner: "Alexey / Ana", notes: "Do this before paying nonrefundable bookings.", status: "Open" },
         { task: "Quote flights", when: "Now", owner: "Alexey / Ana", notes: "Price SYD-SFO and LAX-SYD, plus one-day date shifts.", status: "Open" },
         { task: "Hold or book Yosemite lodging", when: "Now", owner: "Alexey / Ana", notes: "This is the hardest lodging constraint.", status: "Open" },
-        { task: "Quote family-room lodging in SF and LA", when: "Now", owner: "Alexey / Ana", notes: "These anchor the budget and room configuration.", status: "Open" },
+        { task: "Quote one-room family lodging in each base", when: "Now", owner: "Alexey / Ana", notes: "Confirm one room or suite for all four before comparing 5-star brands.", status: "Open" },
         { task: "Quote rental car", when: "After flights are held", owner: "Alexey / Ana", notes: "SFO city pickup on July 6, LAX return on July 18.", status: "Open" }
       ],
       timedTickets: [
@@ -1286,7 +1288,9 @@
       doNotBook: [
         "Do not book Warner Bros. Studio Tour for this trip unless Vita is not attending. Children under 5 are not allowed.",
         "Do not add San Diego unless the family extends the return date or removes another region.",
-        "Do not make nonrefundable hotel bookings until room occupancy for four people is confirmed in writing."
+        "Do not book the most expensive 5-star property unless its location, room setup, and total stay cost clearly justify it.",
+        "Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.",
+        "Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing."
       ],
       openQuestions: [
         { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and whether San Diego can fit.", default: "Use July 1-20 for the first quote round." },
@@ -1299,7 +1303,7 @@
       ],
       researchGaps: [
         "Exact open-jaw airfare for SYD-SFO and LAX-SYD.",
-        "Exact family-room lodging availability and cancellation terms.",
+        "Exact one-room family lodging availability, total stay price, and cancellation terms.",
         "Yosemite lodging availability for July 6-9.",
         "Rental car quote for SFO pickup and LAX return.",
         "Confirm whether the rental company requires an International Driving Permit with Australian licenses.",
@@ -1310,12 +1314,12 @@
         "The family wants a recognizable West Coast first trip more than a completionist route.",
         "The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego inside the 20-day plan.",
         "A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.",
-        "The budget can support luxury lodging, but exact room configuration will decide the real cost."
+        "The budget can support value-conscious luxury lodging, but exact one-room availability will decide the real cost."
       ],
       retainedAlternatives: [
         { option: "No-Yosemite route", why: "Preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot.", trigger: "Use if July 6-9 Yosemite lodging or conditions are poor." },
         { option: "San Diego extension", why: "Zoo and La Jolla would fit the family well but do not fit the 20-day working route.", trigger: "Use only if the family extends the trip or removes another region." },
-        { option: "Santa Monica, Beverly Hills, or West Hollywood as LA base", why: "Each base supports a different version of LA.", trigger: "Choose after hotel quotes and room configuration checks." },
+        { option: "Santa Monica, Beverly Hills, or West Hollywood as LA base", why: "Each base supports a different version of LA.", trigger: "Choose after one-room hotel quotes and total stay cost checks." },
         { option: "Mariposa Grove or Glacier Point on Yosemite Day 8", why: "Both are worthwhile.", trigger: "Let road, shuttle, heat, and lodging location decide." },
         { option: "Central Coast midpoint night", why: "Useful if Highway 1 conditions, Hearst Castle timing, or family energy make the direct Monterey-to-Santa Barbara transfer too much.", trigger: "Add only if it solves a live logistics problem." },
         { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
