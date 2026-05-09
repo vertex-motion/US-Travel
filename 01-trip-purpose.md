@@ -36,7 +36,7 @@ This is the family's first trip to explore the United States, with a particular 
 ## Travel Style
 
 - Pace: Slow, ideally one sightseeing stop per day. Two smaller sights can fit into one day if they are adjacent.
-- Driving tolerance: 2-4 hours a day
+- Driving tolerance: 3-4 hours in the car during a local sightseeing day; 10-12 hours only when moving to another city.
 - Walking tolerance: 15km
 - Hotel preferences: 5 star
 - Food preferences:
