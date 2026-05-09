@@ -4,7 +4,7 @@
 
 - Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
 - Use 5-star hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles.
-- Accept one boutique or 4-star comfort stop around Cambria, Paso Robles, or San Luis Obispo if the family chooses the paced coastal route.
+- Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.
 - Prefer suites, connecting rooms, or confirmed occupancy for two adults, one teen, and one three-year-old.
 - Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking.
 
@@ -15,8 +15,7 @@
 | San Francisco | 5 | Nob Hill, Embarcadero, Union Square edge, or SoMa near transit | No-car start, easy airport transfer, access to Alcatraz and waterfront | Avoid car parking here; city hotel rooms may be small for four. |
 | Yosemite | 3 | Yosemite Valley first; Fish Camp / Tenaya area second | Staying inside or near the park reduces daily driving | True luxury inventory is limited and sells out early. |
 | Monterey / Carmel | 3 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, or Monterey waterfront | Aquarium, Pacific Grove, Big Sur day trip | Beach-area parking and summer rates can be difficult. |
-| Cambria / SLO / Paso Robles | 1 | Cambria, San Luis Obispo, or Paso Robles | Breaks the coastal drive and supports Hearst Castle | May not match strict 5-star preference. |
-| Santa Barbara / Montecito | 2 | Montecito beach or central Santa Barbara | Strong luxury lodging, relaxed family pacing | High July rates and minimum-stay rules are possible. |
+| Santa Barbara / Montecito | 3 | Montecito beach or central Santa Barbara | Strong luxury lodging, relaxed family pacing after the longer coastal transfer | High July rates and minimum-stay rules are possible. |
 | Los Angeles | 3 | Santa Monica, Beverly Hills, or West Hollywood | Good access to Getty, Griffith, museums, beach, and LAX | LA traffic makes base choice important. |
 
 ## Hotel Shortlist
@@ -26,7 +25,7 @@
 | San Francisco | Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco | Strong service level and central logistics | Needs live family-room and rate quote |
 | Yosemite | The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite | Park access matters more than brand category | Needs immediate availability check |
 | Monterey / Carmel | Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa | Family-friendly space and coastal access | Needs live family-room and rate quote |
-| Central Coast midpoint | Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns | Pacing stop, not destination luxury | Needs live quote; accept lower star rating if needed |
+| Fallback Central Coast midpoint | Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns | Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full | Quote only if needed |
 | Santa Barbara / Montecito | Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara | Best fit for 5-star coastal rest | Needs live family-room and rate quote |
 | Los Angeles | Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills | Choose based on beach vs. classic LA vs. museum access | Needs live family-room and rate quote |
 

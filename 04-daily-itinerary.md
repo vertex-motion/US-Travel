@@ -119,7 +119,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Walking: Light.
 - Reservations: Dinner reservation if choosing a popular Carmel restaurant.
 - Backup plan: If the drive runs long, skip sunset stops and settle in.
-- Source notes: This is the one longer transfer accepted to preserve Yosemite and the coast inside 17 US nights.
+- Source notes: This is a normal intercity transfer under the updated driving tolerance.
 
 ## Day 10: Friday, July 10 - Monterey Bay Aquarium
 
@@ -146,36 +146,37 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026. Re-check conditions the week before and morning of travel.
 
-## Day 12: Sunday, July 12 - Monterey to Cambria / San Luis Obispo
-
-- Sleep: Cambria, San Luis Obispo, or Paso Robles area.
-- Morning: Coastal drive south if Highway 1 is open.
-- Lunch: Cambria, San Simeon, or Paso Robles depending on route.
-- Afternoon: Hearst Castle tour if tickets and timing work.
-- Dinner: Cambria or San Luis Obispo.
-- Driving: 2.5-3.5 hours before local stops if Highway 1 is open; longer if rerouted.
-- Walking: Light to moderate.
-- Reservations: Hearst Castle tour tickets open about 60 days in advance.
-- Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails.
-
-## Day 13: Monday, July 13 - Central Coast to Santa Barbara
+## Day 12: Sunday, July 12 - Monterey to Santa Barbara
 
 - Sleep: Santa Barbara or Montecito.
-- Morning: Slow departure.
-- Lunch: Los Olivos, Solvang, or Santa Ynez Valley.
-- Afternoon: Arrive Santa Barbara and check in.
+- Morning: Leave Monterey / Carmel after breakfast. Use the coastal drive south if Highway 1 is open and timing works.
+- Lunch: Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic.
+- Afternoon: Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in.
+- Dinner: Santa Barbara or Montecito.
+- Driving: Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.
+- Walking: Light to moderate.
+- Reservations: Hearst Castle tour tickets open about 60 days in advance.
+- Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive.
+- Source notes: This city-to-city move uses the updated 10-12 hour intercity driving tolerance. Caltrans currently reports Highway 1 controls north of Big Sur and near Jamala Road in Santa Barbara County, so keep the evening unstructured.
+
+## Day 13: Monday, July 13 - Santa Barbara Recovery Day
+
+- Sleep: Santa Barbara or Montecito.
+- Morning: Slow start, beach, hotel pool, or waterfront walk.
+- Lunch: State Street, Funk Zone, or hotel.
+- Afternoon: Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest.
 - Dinner: Santa Barbara waterfront or Montecito.
-- Driving: 2-2.5 hours before stops.
+- Driving: Minimal.
 - Walking: Light.
 - Reservations: None required.
-- Backup plan: If the family wants fewer stops, drive directly and make Santa Barbara the main experience.
+- Backup plan: Keep the day almost entirely resort-based if the Day 12 transfer was tiring.
 
 ## Day 14: Tuesday, July 14 - Santa Barbara
 
 - Sleep: Santa Barbara or Montecito.
-- Morning: Santa Barbara County Courthouse and downtown.
+- Morning: Choose the Santa Barbara County Courthouse, Old Mission Santa Barbara, or a beach morning if not done on Day 13.
 - Lunch: State Street or Funk Zone.
-- Afternoon: Beach, pier, hotel pool, or Old Mission Santa Barbara.
+- Afternoon: Beach, pier, hotel pool, or Montecito time.
 - Dinner: Santa Barbara.
 - Driving: Minimal.
 - Walking: Light to moderate.
@@ -263,7 +264,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mariposa Grove shuttle and seasonal road access must be checked before planning the grove day. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-08 | Current |
-| Highway 1 through Big Sur requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-08 | Current; re-check before travel |
+| Highway 1 through Big Sur and toward Santa Barbara requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
 | Monterey Bay Aquarium is a ticketed, high-demand family attraction. | Monterey Bay Aquarium | [Tickets](https://www.montereybayaquarium.org/visit/tickets) | 2026-05-08 | Current |
 | Hearst Castle tours are ticketed and should be reserved once the booking window opens. | California State Parks | [Hearst Castle tours](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
 | The Getty Center is a practical LA museum stop with parking logistics to confirm. | J. Paul Getty Trust | [Visit the Getty Center](https://www.getty.edu/visit/center/) | 2026-05-08 | Current |

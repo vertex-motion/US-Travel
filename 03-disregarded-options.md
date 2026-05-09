@@ -8,7 +8,7 @@ Record options that were considered and not included in the working July 2026 pl
 
 | Considered option | Why it was disregarded | Reconsider if |
 | --- | --- | --- |
-| San Diego inside the 20-day plan | It adds another base and more driving after Los Angeles. The current 20-day Sydney-to-Sydney window already has one long Yosemite-to-Monterey transfer and 17 US hotel nights. | The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, or Santa Barbara. |
+| San Diego inside the 20-day plan | It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day. | The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day. |
 | Las Vegas | It is a major inland detour from the West Coast route and does not match the slow coastal/national-park-first plan. July heat would also make toddler-friendly outdoor time harder. | The family wants a city-resort extension and is willing to drop part of the coast. |
 | Grand Canyon | It would turn the trip into a Southwest road trip, not a West Coast route. Adding it would create long desert transfers and more hotel changes. | The family replaces the California coast with a dedicated Southwest itinerary. |
 | Pacific Northwest: Seattle, Portland, or Olympic Peninsula | These places fit a West Coast theme but sit too far north for the current California route. Adding them would require flights or a much longer one-way drive. | The family chooses a San Francisco-to-Seattle route instead of Los Angeles. |
@@ -34,8 +34,7 @@ Record options that were considered and not included in the working July 2026 pl
 | Considered option | Why it was disregarded | Reconsider if |
 | --- | --- | --- |
 | Pick up rental car on San Francisco arrival | It adds city parking cost, post-flight driving, and unnecessary stress. San Francisco days work better without a car. | The hotel offers included parking and the family wants to self-drive Muir Woods. |
-| Drive Monterey to Santa Barbara in one coastal day | It would make the coast feel like a transfer rather than an experience, especially with Highway 1 traffic controls and toddler breaks. | The family drops Hearst Castle and accepts a longer drive. |
-| Skip the Central Coast midpoint night | It preserves a 5-star-only lodging standard better, but it weakens the slow-pace rule and makes the coastal leg long. | Strict 5-star lodging matters more than pacing. |
+| Keep a default Central Coast midpoint night | The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara. | Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive. |
 | Add more one-night stops | It can reduce individual drive times but increases packing friction and hotel churn. | A specific transfer becomes too long after live quotes and road checks. |
 | Book Yosemite outside the park by default | It may improve hotel quality, but it increases daily driving and reduces park time. | Inside-park lodging is unavailable or poor value. |
 | Depart from San Francisco instead of Los Angeles | It would require backtracking or a loop, reducing time on the coast and in Los Angeles. | Flight pricing is dramatically better from San Francisco. |
@@ -43,18 +42,19 @@ Record options that were considered and not included in the working July 2026 pl
 ## Not Disregarded
 
 - The no-Yosemite route in `02-current-plan-options.md` remains a fallback. It is not the recommended route, but it should stay available if Yosemite lodging, fees, heat, or crowds make the park a poor fit.
+- A Central Coast midpoint night remains a logistics fallback. It is disregarded only as a default stop.
 - San Diego remains an extension candidate. It is disregarded only for the current 20-day Sydney-to-Sydney plan.
 
 ## Sources
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
-| The trip source intent prioritizes West Coast travel, slow pace, landmarks, and everyday US experiences. | Repository trip purpose | [01-trip-purpose.md](/workspaces/US-Travel/01-trip-purpose.md) | 2026-05-08 | Current |
-| The current plan options set the 17-night California plan and identify San Diego as an extension candidate. | Repository current plan options | [02-current-plan-options.md](/workspaces/US-Travel/02-current-plan-options.md) | 2026-05-08 | Current |
+| The trip source intent prioritizes West Coast travel, slow pace, landmarks, everyday US experiences, and the updated driving tolerance. | Repository trip purpose | [01-trip-purpose.md](/workspaces/US-Travel/01-trip-purpose.md) | 2026-05-09 | Current |
+| The current plan options set the 17-night California plan and identify San Diego as an extension candidate. | Repository current plan options | [02-current-plan-options.md](/workspaces/US-Travel/02-current-plan-options.md) | 2026-05-09 | Current |
 | Warner Bros. Studio Tour excludes children under 5. | Warner Bros. Studio Tour Hollywood | [FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |
 | Disneyland requires dated ticket/reservation planning and is therefore a full-day commitment, not a casual add-on. | Disneyland Resort | [Theme park reservation system](https://disneyland.disney.go.com/experience-updates/park-reservations/) | 2026-05-08 | Current |
 | Universal Studios Hollywood has attraction rider requirements that make the park less cleanly toddler-friendly than the current LA museum/beach plan. | Universal Studios Hollywood | [Rider guide](https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf) | 2026-05-08 | Current |
 | Death Valley summer heat creates a poor July fit for family outdoor time. | National Park Service | [Death Valley safety](https://www.nps.gov/deva/planyourvisit/safety.htm) | 2026-05-08 | Current |
 | Joshua Tree summer heat and seasonal safety constraints reduce its fit for this July family route. | National Park Service | [Visiting Joshua Tree in summer](https://home.nps.gov/jotr/planyourvisit/summer.htm) | 2026-05-08 | Current |
-| Highway 1 currently needs extra caution because Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-08 | Current; re-check before travel |
+| Highway 1 currently needs extra caution because Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
 | Yosemite remains conditional because 2026 entry rules, fee rules, lodging, and congestion management matter to the route. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) and [Yosemite fees](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
