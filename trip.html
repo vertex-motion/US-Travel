@@ -850,9 +850,9 @@
       <section class="view active" id="overview" role="tabpanel">
         <div class="summary-strip">
           <div class="metric"><strong>Slow</strong><span>One main sightseeing stop per day where practical.</span></div>
-          <div class="metric"><strong>2-4h</strong><span>Target daily driving range, with one longer transfer accepted.</span></div>
+          <div class="metric"><strong>3-4h</strong><span>Local sightseeing day car time; 10-12h only for intercity moves.</span></div>
           <div class="metric"><strong>15km</strong><span>Walking tolerance, with pram-friendly routing for Vita.</span></div>
-          <div class="metric"><strong>5 star</strong><span>Preferred lodging level, with one midpoint compromise allowed.</span></div>
+          <div class="metric"><strong>5 star</strong><span>Preferred lodging level; midpoint stop stays fallback only.</span></div>
           <div class="metric"><strong>No car</strong><span>San Francisco stay remains car-free until Day 6.</span></div>
         </div>
 
@@ -1163,9 +1163,8 @@
       selectedRoute: [
         { base: "San Francisco", nights: 5, sights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods", transfer: "Fly SYD-SFO", notes: "No car until leaving San Francisco. Avoid July 4 driving." },
         { base: "Yosemite Valley or Fish Camp", nights: 3, sights: "Yosemite Valley, Glacier Point or Mariposa Grove", transfer: "4-5 hours from San Francisco", notes: "Book lodging early. No day-use reservation is currently required for July 2026, but nonresident fees apply." },
-        { base: "Monterey / Carmel", nights: 3, sights: "Monterey Bay Aquarium, Pacific Grove, Big Sur day trip", transfer: "4.5-5.5 hours from Yosemite", notes: "This is the longest transfer. Break for lunch in the Central Valley or Mariposa." },
-        { base: "Cambria / San Luis Obispo", nights: 1, sights: "Hearst Castle, coastal road break", transfer: "2.5-3 hours from Monterey", notes: "Use this as a pacing stop because Monterey-Santa Barbara by coast is long." },
-        { base: "Santa Barbara / Montecito", nights: 2, sights: "Waterfront, courthouse, mission, beach rhythm", transfer: "2-2.5 hours", notes: "Keeps the drive to Los Angeles comfortable." },
+        { base: "Monterey / Carmel", nights: 3, sights: "Monterey Bay Aquarium, Pacific Grove, Big Sur day trip", transfer: "4.5-5.5 hours from Yosemite", notes: "Break for lunch in the Central Valley or Mariposa." },
+        { base: "Santa Barbara / Montecito", nights: 3, sights: "Hearst Castle en route if timing works, waterfront, courthouse, mission, beach rhythm", transfer: "Full intercity transfer from Monterey/Carmel", notes: "Use the new driving tolerance to skip a one-night midpoint and gain a deeper Santa Barbara stay." },
         { base: "Los Angeles / Santa Monica", nights: 3, sights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods", transfer: "1.5-2.5 hours to LA", notes: "Depart LAX late on Day 18 to arrive Sydney on Day 20." }
       ],
       mapStops: [
@@ -1173,8 +1172,7 @@
         { id: "sf", type: "base", name: "San Francisco", label: "Arrival and Bay Area", dates: "July 1-6", nights: "5 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods.", transfer: "No car until leaving San Francisco." },
         { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 6-9", nights: "3 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, Glacier Point or Mariposa Grove.", transfer: "4-5 hours from San Francisco." },
         { id: "monterey", type: "base", name: "Monterey / Carmel", label: "Central Coast North", dates: "July 9-12", nights: "3 nights", coords: [36.5552, -121.9233], highlights: "Aquarium, Pacific Grove, Carmel, Big Sur day trip.", transfer: "4.5-5.5 hours from Yosemite." },
-        { id: "cambria", type: "base", name: "Cambria / SLO", label: "Central Coast Midpoint", dates: "July 12-13", nights: "1 night", coords: [35.5641, -121.0808], highlights: "Hearst Castle and coastal pacing stop.", transfer: "2.5-3.5 hours before local stops if Highway 1 is open." },
-        { id: "santabarbara", type: "base", name: "Santa Barbara / Montecito", label: "Riviera-style coast", dates: "July 13-15", nights: "2 nights", coords: [34.4208, -119.6982], highlights: "Waterfront, courthouse, mission, beach rhythm.", transfer: "2-2.5 hours from the Central Coast." },
+        { id: "santabarbara", type: "base", name: "Santa Barbara / Montecito", label: "Riviera-style coast", dates: "July 12-15", nights: "3 nights", coords: [34.4208, -119.6982], highlights: "Hearst Castle en route if timing works, waterfront, courthouse, mission, beach rhythm.", transfer: "Full intercity transfer from Monterey/Carmel." },
         { id: "la", type: "base", name: "Los Angeles / Santa Monica", label: "Departure city", dates: "July 15-18", nights: "3 nights", coords: [34.0195, -118.4912], highlights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods.", transfer: "1.5-2.5 hours from Santa Barbara before LA traffic variation." },
         { id: "lax", type: "airport", name: "LAX", label: "Departure airport", dates: "Day 18", nights: "", coords: [33.9416, -118.4085], highlights: "Preferred return gateway for Los Angeles-Sydney.", transfer: "Return car at LAX on departure day." }
       ],
@@ -1190,9 +1188,9 @@
         { day: 9, date: "Thursday, July 9", title: "Yosemite to Monterey / Carmel", region: "Monterey / Carmel", sleep: "Monterey, Carmel, or Carmel Valley.", morning: "Depart Yosemite after breakfast.", lunch: "Route stop in the Central Valley or around Gilroy.", afternoon: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk.", dinner: "Carmel or Monterey.", driving: "4.5-5.5 hours before breaks.", walking: "Light.", reservations: "Dinner reservation if choosing a popular Carmel restaurant.", backup: "If the drive runs long, skip sunset stops and settle in." },
         { day: 10, date: "Friday, July 10", title: "Monterey Bay Aquarium", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", morning: "Monterey Bay Aquarium.", lunch: "Cannery Row, Pacific Grove, or hotel.", afternoon: "Pacific Grove coastal walk, Dennis the Menace Playground, or rest.", dinner: "Carmel or Monterey.", driving: "Minimal.", walking: "Moderate.", reservations: "Buy aquarium tickets ahead once 2026 ticketing is open.", backup: "If aquarium crowds are heavy, go at opening and move the playground/rest time earlier." },
         { day: 11, date: "Saturday, July 11", title: "Big Sur Day Trip", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", morning: "Drive south to Big Sur viewpoints.", lunch: "Big Sur or return toward Carmel depending on traffic.", afternoon: "Bixby Bridge viewpoint, Pfeiffer Big Sur area, or Point Lobos if reservations/parking work.", dinner: "Carmel.", driving: "2-4 hours total depending on how far south the family goes.", walking: "Light to moderate.", reservations: "None for a simple scenic drive; check state park parking rules if adding hikes.", backup: "17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
-        { day: 12, date: "Sunday, July 12", title: "Monterey to Cambria / San Luis Obispo", region: "Central Coast", sleep: "Cambria, San Luis Obispo, or Paso Robles area.", morning: "Coastal drive south if Highway 1 is open.", lunch: "Cambria, San Simeon, or Paso Robles depending on route.", afternoon: "Hearst Castle tour if tickets and timing work.", dinner: "Cambria or San Luis Obispo.", driving: "2.5-3.5 hours before local stops if Highway 1 is open; longer if rerouted.", walking: "Light to moderate.", reservations: "Hearst Castle tour tickets open about 60 days in advance.", backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails." },
-        { day: 13, date: "Monday, July 13", title: "Central Coast to Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Slow departure.", lunch: "Los Olivos, Solvang, or Santa Ynez Valley.", afternoon: "Arrive Santa Barbara and check in.", dinner: "Santa Barbara waterfront or Montecito.", driving: "2-2.5 hours before stops.", walking: "Light.", reservations: "None required.", backup: "If the family wants fewer stops, drive directly and make Santa Barbara the main experience." },
-        { day: 14, date: "Tuesday, July 14", title: "Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Santa Barbara County Courthouse and downtown.", lunch: "State Street or Funk Zone.", afternoon: "Beach, pier, hotel pool, or Old Mission Santa Barbara.", dinner: "Santa Barbara.", driving: "Minimal.", walking: "Light to moderate.", reservations: "None unless choosing a specific dinner.", backup: "Keep the day almost entirely resort-based if the family needs a rest reset." },
+        { day: 12, date: "Sunday, July 12", title: "Monterey to Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Leave Monterey / Carmel after breakfast. Use the coastal drive south if Highway 1 is open and timing works.", lunch: "Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic.", afternoon: "Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in.", dinner: "Santa Barbara or Montecito.", driving: "Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.", walking: "Light to moderate.", reservations: "Hearst Castle tour tickets open about 60 days in advance.", backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive." },
+        { day: 13, date: "Monday, July 13", title: "Santa Barbara Recovery Day", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Slow start, beach, hotel pool, or waterfront walk.", lunch: "State Street, Funk Zone, or hotel.", afternoon: "Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest.", dinner: "Santa Barbara waterfront or Montecito.", driving: "Minimal.", walking: "Light.", reservations: "None required.", backup: "Keep the day almost entirely resort-based if the Day 12 transfer was tiring." },
+        { day: 14, date: "Tuesday, July 14", title: "Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", morning: "Choose the Santa Barbara County Courthouse, Old Mission Santa Barbara, or a beach morning if not done on Day 13.", lunch: "State Street or Funk Zone.", afternoon: "Beach, pier, hotel pool, or Montecito time.", dinner: "Santa Barbara.", driving: "Minimal.", walking: "Light to moderate.", reservations: "None unless choosing a specific dinner.", backup: "Keep the day almost entirely resort-based if the family needs a rest reset." },
         { day: 15, date: "Wednesday, July 15", title: "Santa Barbara to Los Angeles", region: "Los Angeles", sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", morning: "Drive to Los Angeles after breakfast.", lunch: "Santa Monica or Brentwood.", afternoon: "Getty Center.", dinner: "Santa Monica, Brentwood, or hotel.", driving: "1.5-2.5 hours before LA traffic variation.", walking: "Moderate.", reservations: "Reserve Getty parking/timed-entry if the museum requires it for the chosen date.", backup: "If traffic is poor, go straight to the hotel and shift Getty to Day 16." },
         { day: 16, date: "Thursday, July 16", title: "LA Museums and Everyday City Life", region: "Los Angeles", sleep: "Los Angeles.", morning: "Academy Museum of Motion Pictures or La Brea / LACMA area.", lunch: "Original Farmers Market or Beverly Grove.", afternoon: "Rest, Rodeo Drive walk, or neighborhood time.", dinner: "Beverly Hills, West Hollywood, or Santa Monica.", driving: "1-2 hours total depending on hotel base.", walking: "Light to moderate.", reservations: "Academy Museum tickets if visiting.", backup: "Petersen Automotive Museum, The Grove, or hotel pool." },
         { day: 17, date: "Friday, July 17", title: "Griffith Observatory and Hollywood Viewpoints", region: "Los Angeles", sleep: "Los Angeles.", morning: "Griffith Observatory / Hollywood Sign viewpoints.", lunch: "Los Feliz, Silver Lake, or Hollywood area.", afternoon: "Rest or beach time.", dinner: "Final LA dinner.", driving: "1.5-3 hours depending on traffic.", walking: "Light to moderate.", reservations: "None for observatory grounds; planetarium shows require tickets and age rules should be checked.", backup: "Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead." },
@@ -1203,7 +1201,7 @@
       lodgingStrategy: [
         "Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.",
         "Use 5-star hotels for San Francisco, Yosemite-area if available, Monterey/Carmel, Santa Barbara/Montecito, and Los Angeles.",
-        "Accept one boutique or 4-star comfort stop around Cambria, Paso Robles, or San Luis Obispo if the family chooses the paced coastal route.",
+        "Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.",
         "Prefer suites, connecting rooms, or confirmed occupancy for two adults, one teen, and one three-year-old.",
         "Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking."
       ],
@@ -1211,15 +1209,14 @@
         { base: "San Francisco", nights: 5, area: "Nob Hill, Embarcadero, Union Square edge, or SoMa near transit", fit: "No-car start, easy airport transfer, access to Alcatraz and waterfront", watch: "Avoid car parking here; city hotel rooms may be small for four." },
         { base: "Yosemite", nights: 3, area: "Yosemite Valley first; Fish Camp / Tenaya area second", fit: "Staying inside or near the park reduces daily driving", watch: "True luxury inventory is limited and sells out early." },
         { base: "Monterey / Carmel", nights: 3, area: "Carmel-by-the-Sea, Carmel Valley, Pebble Beach, or Monterey waterfront", fit: "Aquarium, Pacific Grove, Big Sur day trip", watch: "Beach-area parking and summer rates can be difficult." },
-        { base: "Cambria / SLO / Paso Robles", nights: 1, area: "Cambria, San Luis Obispo, or Paso Robles", fit: "Breaks the coastal drive and supports Hearst Castle", watch: "May not match strict 5-star preference." },
-        { base: "Santa Barbara / Montecito", nights: 2, area: "Montecito beach or central Santa Barbara", fit: "Strong luxury lodging, relaxed family pacing", watch: "High July rates and minimum-stay rules are possible." },
+        { base: "Santa Barbara / Montecito", nights: 3, area: "Montecito beach or central Santa Barbara", fit: "Strong luxury lodging, relaxed family pacing after the longer coastal transfer", watch: "High July rates and minimum-stay rules are possible." },
         { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, or West Hollywood", fit: "Good access to Getty, Griffith, museums, beach, and LAX", watch: "LA traffic makes base choice important." }
       ],
       hotels: [
         { base: "San Francisco", checks: "Four Seasons Hotel San Francisco, The Ritz-Carlton San Francisco, 1 Hotel San Francisco", why: "Strong service level and central logistics", status: "Needs live family-room and rate quote" },
         { base: "Yosemite", checks: "The Ahwahnee, Yosemite Valley Lodge, Tenaya at Yosemite", why: "Park access matters more than brand category", status: "Needs immediate availability check" },
         { base: "Monterey / Carmel", checks: "Carmel Valley Ranch, The Lodge at Pebble Beach, Bernardus Lodge and Spa", why: "Family-friendly space and coastal access", status: "Needs live family-room and rate quote" },
-        { base: "Central Coast midpoint", checks: "Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns", why: "Pacing stop, not destination luxury", status: "Needs live quote; accept lower star rating if needed" },
+        { base: "Fallback Central Coast midpoint", checks: "Hotel San Luis Obispo, White Water Cambria, Paso Robles luxury inns", why: "Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full", status: "Quote only if needed" },
         { base: "Santa Barbara / Montecito", checks: "Rosewood Miramar Beach, El Encanto, The Ritz-Carlton Bacara", why: "Best fit for 5-star coastal rest", status: "Needs live family-room and rate quote" },
         { base: "Los Angeles", checks: "Santa Monica Proper, The Beverly Hills Hotel, Fairmont Miramar, Waldorf Astoria Beverly Hills", why: "Choose based on beach vs. classic LA vs. museum access", status: "Needs live family-room and rate quote" }
       ],
@@ -1252,7 +1249,7 @@
       costControls: [
         "Keep San Francisco car-free to avoid parking charges and city driving.",
         "Book Yosemite lodging first; a poor location creates more driving and less park time.",
-        "Use one Central Coast midpoint night rather than forcing a long coastal transfer.",
+        "Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.",
         "Choose one Los Angeles base and avoid cross-city sightseeing on the same day.",
         "Treat San Diego as an extension, not a free add-on."
       ],
@@ -1275,12 +1272,12 @@
         { task: "Alcatraz day tour", timing: "As soon as July 2026 tickets open", notes: "Use official Alcatraz City Cruises only.", status: "Open" },
         { task: "Muir Woods parking or shuttle", timing: "As soon as plan is fixed", notes: "Reservation is required before arrival.", status: "Open" },
         { task: "Monterey Bay Aquarium", timing: "When July 2026 tickets are available", notes: "Prefer opening-time entry.", status: "Open" },
-        { task: "Hearst Castle", timing: "About 60 days before July 12", notes: "Choose tour time that fits the transfer day.", status: "Open" },
+        { task: "Hearst Castle", timing: "About 60 days before July 12", notes: "Choose tour time only if it fits the longer Monterey-to-Santa Barbara transfer day.", status: "Open" },
         { task: "Getty Center", timing: "When July 2026 calendar is available", notes: "Check parking and any timed-entry rules.", status: "Open" },
         { task: "Academy Museum", timing: "When July 2026 calendar is available", notes: "Keep as flexible LA museum day.", status: "Open" }
       ],
       preDeparture: [
-        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Day 11", action: "Use Caltrans before driving south of Monterey." },
+        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 11-12", action: "Use Caltrans before the Big Sur day trip and the Monterey-to-Santa Barbara transfer." },
         { check: "Yosemite entry and fee rules", when: "Before flights, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment." },
         { check: "Yosemite road and shuttle status", when: "Week of arrival", action: "Decide Mariposa Grove vs. Glacier Point vs. valley rest day." },
         { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 4 local and avoid car-dependent plans." },
@@ -1293,9 +1290,9 @@
       ],
       openQuestions: [
         { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and whether San Diego can fit.", default: "Use July 1-20 for the first quote round." },
-        { question: "Is the family willing to arrive Sydney on July 21 instead of July 20?", why: "One extra night makes San Diego or a softer Yosemite-to-coast transfer easier.", default: "Extend only if San Diego is a must." },
+        { question: "Is the family willing to arrive Sydney on July 21 instead of July 20?", why: "One extra night makes San Diego or more recovery time easier, but the new driving tolerance means it is not needed just to soften transfers.", default: "Extend only if San Diego is a must." },
         { question: "Is Yosemite a must-do?", why: "Yosemite drives the hardest lodging and transfer constraints.", default: "Keep Yosemite unless lodging is unavailable or very poor value." },
-        { question: "Is strict 5-star lodging required every night?", why: "The Central Coast pacing stop may not have true 5-star options.", default: "Allow one high-quality non-5-star midpoint stay." },
+        { question: "Should the Central Coast midpoint remain a fallback only?", why: "The selected route now skips the one-night midpoint, but road conditions or Hearst Castle timing may still make it useful.", default: "Keep it as a contingency, not the default route." },
         { question: "Does the family want a theme park day?", why: "Disneyland or Universal would consume a full LA day and add crowd/height constraints.", default: "Skip theme parks on this first plan." },
         { question: "Should the plan optimize for beach base or classic-city base in LA?", why: "Santa Monica lowers beach friction; Beverly Hills improves classic LA service and dining; West Hollywood improves central access.", default: "Choose Santa Monica if Vita's beach/pool time matters most." },
         { question: "Will the family bring or rent Vita's child seat?", why: "It affects airport transfers and rental car pickup.", default: "Bring a known seat if airline and rental logistics allow." }
@@ -1311,7 +1308,7 @@
       ],
       currentAssumptions: [
         "The family wants a recognizable West Coast first trip more than a completionist route.",
-        "The family prefers less driving and fewer hotel changes over adding San Diego.",
+        "The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego inside the 20-day plan.",
         "A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.",
         "The budget can support luxury lodging, but exact room configuration will decide the real cost."
       ],
@@ -1320,10 +1317,11 @@
         { option: "San Diego extension", why: "Zoo and La Jolla would fit the family well but do not fit the 20-day working route.", trigger: "Use only if the family extends the trip or removes another region." },
         { option: "Santa Monica, Beverly Hills, or West Hollywood as LA base", why: "Each base supports a different version of LA.", trigger: "Choose after hotel quotes and room configuration checks." },
         { option: "Mariposa Grove or Glacier Point on Yosemite Day 8", why: "Both are worthwhile.", trigger: "Let road, shuttle, heat, and lodging location decide." },
-        { option: "Hearst Castle on the midpoint day", why: "It fits the Central Coast transfer if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
+        { option: "Central Coast midpoint night", why: "Useful if Highway 1 conditions, Hearst Castle timing, or family energy make the direct Monterey-to-Santa Barbara transfer too much.", trigger: "Add only if it solves a live logistics problem." },
+        { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
       ],
       disregardedOptions: [
-        { option: "San Diego inside the 20-day plan", why: "It adds another base and more driving after Los Angeles.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, or Santa Barbara." },
+        { option: "San Diego inside the 20-day plan", why: "It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day." },
         { option: "Las Vegas", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
         { option: "Grand Canyon", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
         { option: "Pacific Northwest", why: "Seattle, Portland, and Olympic Peninsula sit too far north for the current California route.", reconsider: "The family chooses a San Francisco-to-Seattle route." },
@@ -1333,13 +1331,13 @@
         { option: "Universal Studios Hollywood", why: "Full-day theme-park commitment with attraction height and intensity constraints for a three-year-old.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
         { option: "Warner Bros. Studio Tour Hollywood", why: "Children under 5 are not permitted, so Vita cannot attend.", reconsider: "Vita is not attending that activity or the trip is repeated when she is older." },
         { option: "Pick up rental car on San Francisco arrival", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
-        { option: "Drive Monterey to Santa Barbara in one coastal day", why: "Makes the coast feel like a transfer rather than an experience.", reconsider: "The family drops Hearst Castle and accepts a longer drive." }
+        { option: "Keep a default Central Coast midpoint night", why: "The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara.", reconsider: "Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive." }
       ],
       sourceGroups: [
         {
           title: "01 Trip Purpose",
           rows: [
-            { fact: "Traveler intent, family details, pace, and planning principles.", source: "Repository trip purpose", url: "01-trip-purpose.md", accessed: "2026-05-08", status: "Current" }
+            { fact: "Traveler intent, family details, pace, updated driving tolerance, and planning principles.", source: "Repository trip purpose", url: "01-trip-purpose.md", accessed: "2026-05-09", status: "Current" }
           ]
         },
         {
@@ -1349,7 +1347,7 @@
             { fact: "Sydney-San Francisco nonstop air service exists and is a plausible open-jaw gateway.", source: "San Francisco International Airport", url: "https://www.flysfo.com/nonstop", accessed: "2026-05-08", status: "Current" },
             { fact: "Los Angeles-Sydney nonstop service exists and is a plausible return gateway.", source: "FlightsFrom", url: "https://www.flightsfrom.com/LAX-SYD", accessed: "2026-05-08", status: "Current; compare direct airline quotes" },
             { fact: "Yosemite does not currently require a reservation for park entry in July 2026; lodging or campground reservations are separate.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 for maintenance.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-08", status: "Current; re-check before travel" }
+            { fact: "Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-09", status: "Current; re-check before travel" }
           ]
         },
         {
@@ -1384,7 +1382,7 @@
           rows: [
             { fact: "ESTA/Visa Waiver eligibility must be checked before nonrefundable booking.", source: "US Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html", accessed: "2026-05-08", status: "Current" },
             { fact: "Yosemite reservation rules should be checked repeatedly because park entry systems can change.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Highway 1 needs current verification before the coastal route is treated as fixed.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-08", status: "Current; re-check before travel" },
+            { fact: "Highway 1 needs current verification before the coastal route is treated as fixed.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-09", status: "Current; re-check before travel" },
             { fact: "Warner Bros. Studio Tour does not allow children under 5.", source: "Warner Bros. Studio Tour Hollywood", url: "https://www.wbstudiotour.com/faq/", accessed: "2026-05-08", status: "Current" }
           ]
         }

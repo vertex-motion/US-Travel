@@ -34,7 +34,7 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 
 - Keep San Francisco car-free to avoid parking charges and city driving.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
-- Use one Central Coast midpoint night rather than forcing a long coastal transfer.
+- Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.
 - Choose one Los Angeles base and avoid cross-city sightseeing on the same day.
 - Treat San Diego as an extension, not a free add-on.
 

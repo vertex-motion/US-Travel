@@ -18,7 +18,7 @@
 | Alcatraz day tour | As soon as July 2026 tickets open | Use official Alcatraz City Cruises only. | Open |
 | Muir Woods parking or shuttle | As soon as plan is fixed | Reservation is required before arrival. | Open |
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
-| Hearst Castle | About 60 days before July 12 | Choose tour time that fits the transfer day. | Open |
+| Hearst Castle | About 60 days before July 12 | Choose tour time only if it fits the longer Monterey-to-Santa Barbara transfer day. | Open |
 | Getty Center | When July 2026 calendar is available | Check parking and any timed-entry rules. | Open |
 | Academy Museum | When July 2026 calendar is available | Keep as flexible LA museum day. | Open |
 
@@ -26,7 +26,7 @@
 
 | Check | When | Required action |
 | --- | --- | --- |
-| Highway 1 / Big Sur status | 7 days before and morning of Day 11 | Use Caltrans before driving south of Monterey. |
+| Highway 1 / Big Sur status | 7 days before and morning of Days 11-12 | Use Caltrans before the Big Sur day trip and the Monterey-to-Santa Barbara transfer. |
 | Yosemite entry and fee rules | Before flights, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
 | Yosemite road and shuttle status | Week of arrival | Decide Mariposa Grove vs. Glacier Point vs. valley rest day. |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 4 local and avoid car-dependent plans. |
@@ -46,6 +46,6 @@
 | Alcatraz ferry tickets must use the authorized concessioner. | National Park Service | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Muir Woods parking or shuttle reservation is required. | National Park Service | [Muir Woods reservations](https://www.nps.gov/muwo/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite reservation rules should be checked repeatedly because park entry systems can change. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
-| Highway 1 should be checked through Caltrans before the Big Sur and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-08 | Current; re-check before travel |
+| Highway 1 should be checked through Caltrans before the Big Sur and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
 | Hearst Castle tour tickets are time-sensitive and route-dependent. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
 | Warner Bros. Studio Tour does not allow children under 5. | Warner Bros. Studio Tour Hollywood | [FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |
