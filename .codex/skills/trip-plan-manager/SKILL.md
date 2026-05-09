@@ -12,7 +12,8 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 ## Workflow
 
 1. Read repository instructions and existing travel notes before editing.
-   - Start with `AGENTS.md`, then read numbered trip documents such as `01-trip-purpose.md`.
+   - Start with `AGENTS.md`, then read `metadata/repository-structure.md`.
+   - Use the metadata file to choose which numbered trip documents to read or update.
    - Preserve existing user edits. If a file is already modified, treat its content as intentional unless the user says otherwise.
 
 2. Build a planning brief.
@@ -56,4 +57,5 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 
 ## Resources
 
+- `metadata/repository-structure.md`: short map of canonical planning files and their intent. Read it every time before editing trip files.
 - `references/plan-output-guide.md`: document set, templates, quality checks, and planning heuristics for trip-plan creation.
