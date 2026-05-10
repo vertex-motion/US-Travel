@@ -13,6 +13,17 @@
 - Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
 - When repetition remains intentional, make each instance serve a distinct purpose, such as summary, action checklist, rationale, or source evidence.
 
+## Trip Change Impact Review
+
+- When the user adds a trip fact, preference, constraint, booking, task, or decision, check how it affects the rest of the trip plan.
+- Review affected itinerary days, route choices, lodging, transport, budget, booking checklist, disregarded options, and open questions.
+- In chat, present proposed follow-up changes as a table before making changes the user did not explicitly request.
+- Use this table format:
+
+| Affected area | Impact | Proposed change | User decision needed |
+| --- | --- | --- | --- |
+| `<file or trip area>` | `<what the new input changes>` | `<specific update to make>` | `<yes/no or choice>` |
+
 ## Technical Documentation Guidance
 
 Use these rules when writing or updating technical documents, including skills, agent instructions, runbooks, and implementation notes.
