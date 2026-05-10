@@ -4,20 +4,20 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The largest budget risk is lodging. July is peak season in Yosemite, the California coast, and Santa Barbara. The target is value-conscious luxury, not the most expensive 5-star option. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
+The largest budget risk is lodging. July is peak season in Yosemite, the California coast, and Santa Barbara. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
 ## Planning Range
 
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | AU$8,600 | AU$14,000 | AU$35,000+ | United search result showed Sydney-San Francisco July round trips from about AU$2,159 per person; exact open-jaw SYD-SFO / LAX-SYD fare must be quoted. |
-| Lodging, 17 nights | $24,000 | $38,000 | $65,000+ | Value-conscious luxury allowance across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; needs live one-room hotel quotes. |
+| Lodging, 17 nights | $3,400 | $3,825 | $4,250 | $200-$250 per night across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | $2,000 | $3,500 | $6,000 | SUV rental, one-way drop, hotel valet parking, fuel, and buffers; needs live quote. |
 | Attractions and tours | $600 | $1,000 | $1,600 | Includes Alcatraz, Muir Woods, Monterey Bay Aquarium, Hearst Castle, museums, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $1,800 | SFO transfer, taxis/rideshare in SF and LA, luggage-friendly transfers. |
 | Travel insurance, mobile data, documents | $600 | $1,200 | $2,500 | Needs family policy quote and phone plan choice. |
-| Buffer | $3,000 | $5,000 | $10,000 | Use a larger buffer because luxury lodging and holiday-week pricing are volatile. |
+| Buffer | $3,000 | $5,000 | $10,000 | Keep a separate buffer because July lodging, parking, and holiday-week pricing are volatile; do not use the buffer to exceed the hotel cap without approval. |
 
 ## Attraction Cost Anchors
 
@@ -34,7 +34,7 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 
 - Keep San Francisco car-free to avoid parking charges and city driving.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
-- Prioritize hotels that can confirm one room or suite for all four travelers before comparing higher-priced 5-star brands.
+- Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
 - Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.
 - Choose one Los Angeles base and avoid cross-city sightseeing on the same day.
 - Treat San Diego as an extension, not a free add-on.
@@ -43,7 +43,7 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 
 1. Quote flights for July 1 departure from Sydney and July 18 or July 19 departure from Los Angeles.
 2. Quote Yosemite lodging immediately for July 6-9.
-3. Quote one-room family configurations in each base before committing to exact dates or hotel brands.
+3. Quote one-room family configurations in each base within the USD $200-$250 nightly target before committing to exact dates or hotel brands.
 4. Quote rental car SFO city pickup to LAX return for July 6-18.
 5. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 

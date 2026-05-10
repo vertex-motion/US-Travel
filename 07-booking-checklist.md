@@ -8,7 +8,7 @@
 | Check ESTA eligibility for all travelers | Now | Alexey / Ana | Do this before paying nonrefundable bookings. | Open |
 | Quote flights | Now | Alexey / Ana | Price SYD-SFO and LAX-SYD, plus one-day date shifts. | Open |
 | Hold or book Yosemite lodging | Now | Alexey / Ana | This is the hardest lodging constraint. | Open |
-| Quote one-room family lodging in each base | Now | Alexey / Ana | Confirm one room or suite for all four before comparing 5-star brands. | Open |
+| Quote one-room family lodging in each base | Now | Alexey / Ana | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
 | Quote rental car | After flights are held | Alexey / Ana | SFO city pickup on July 6, LAX return on July 18. | Open |
 
 ## Timed Tickets and Reservations
@@ -36,7 +36,7 @@
 
 - Do not book Warner Bros. Studio Tour for this trip unless Vita is not attending. Children under 5 are not allowed.
 - Do not add San Diego unless the family extends the return date or removes another region.
-- Do not book the most expensive 5-star property unless its location, room setup, and total stay cost clearly justify it.
+- Do not book any hotel above USD $250 per night unless the family explicitly approves the exception.
 - Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.
 - Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.
 

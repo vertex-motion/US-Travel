@@ -13,7 +13,7 @@ Record options that were considered and not included in the working July 2026 pl
 | Grand Canyon | It would turn the trip into a Southwest road trip, not a West Coast route. Adding it would create long desert transfers and more hotel changes. | The family replaces the California coast with a dedicated Southwest itinerary. |
 | Pacific Northwest: Seattle, Portland, or Olympic Peninsula | These places fit a West Coast theme but sit too far north for the current California route. Adding them would require flights or a much longer one-way drive. | The family chooses a San Francisco-to-Seattle route instead of Los Angeles. |
 | Lake Tahoe | It adds a mountain detour without improving the first-time US landmark mix as much as Yosemite. It also competes with the slow pace and creates extra transfer complexity. | Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base. |
-| Napa or Sonoma overnight | Wine-country lodging and dining would be more adult-oriented than family-essential. It would also add a base before Yosemite. | The adults want a luxury resort pause and are willing to remove Muir Woods or one San Francisco day. |
+| Napa or Sonoma overnight | Wine-country lodging and dining would be more adult-oriented than family-essential. It would also add a base before Yosemite. | The adults want a resort pause, accept a likely hotel-cap exception, and are willing to remove Muir Woods or one San Francisco day. |
 | East Coast add-on | The source intent already says the East Coast flight distance is too long for this trip. Adding it would also break the West Coast focus. | The family plans a separate US trip. |
 
 ## Attractions and Experiences

@@ -5,7 +5,7 @@
 - Canonical traveler intent and pace constraints live in `01-trip-purpose.md`.
 - Working window: July 1-20, 2026, Sydney-to-Sydney, with 17 US hotel nights.
 - Route theme: San Francisco, Yosemite, Pacific coast, Los Angeles, and recognizable US city and nature icons.
-- Planning posture: Value-conscious luxury lodging and comfortable logistics, with fewer hotel changes unless a midpoint stop clearly improves the route.
+- Planning posture: Value-conscious family lodging capped at USD $250 per night and comfortable logistics, with fewer hotel changes unless a midpoint stop clearly improves the route.
 - Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
 - Assumptions: The family can enter the US under ESTA if eligible. Flights will be booked as Sydney-San Francisco and Los Angeles-Sydney, or a comparable open-jaw route.
 - Open decisions remain tracked in `08-open-questions.md`.
@@ -34,7 +34,7 @@
 | Monterey / Carmel base | It supports Monterey Bay Aquarium, Pacific Grove, Carmel, and a flexible Big Sur day without another immediate hotel change. | Days 9-11 in `04-daily-itinerary.md`. |
 | Big Sur as a day trip from Monterey/Carmel | This keeps the scenic coast in the plan while allowing Caltrans road conditions to decide the exact southern limit. | Day 11 in `04-daily-itinerary.md`. |
 | Direct Monterey / Carmel to Santa Barbara transfer | The new driving tolerance allows a full intercity transfer day, so the route can avoid a one-night midpoint hotel. | Day 12 in `04-daily-itinerary.md`. |
-| Three-night Santa Barbara / Montecito pause | It gives the route a soft coastal rest before Los Angeles and fits the luxury-leaning lodging preference better than many midpoint towns. | Days 12-14 in `04-daily-itinerary.md`. |
+| Three-night Santa Barbara / Montecito pause | It gives the route a soft coastal rest before Los Angeles and keeps the plan from adding a one-night midpoint hotel. | Days 12-14 in `04-daily-itinerary.md`. |
 | Three Los Angeles nights | It gives the family a first-time LA sample without turning the end of the trip into theme-park logistics. | Days 15-17 in `04-daily-itinerary.md`. |
 | Getty Center, Academy Museum area, and Griffith Observatory | These are recognizable LA experiences that fit a family day better than a full theme-park commitment. | Days 15-17 in `04-daily-itinerary.md`. |
 
@@ -44,7 +44,7 @@
 | --- | --- | --- |
 | No-Yosemite route | It preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot for the family. | Use if July 6-9 Yosemite lodging or conditions are poor. |
 | San Diego extension | It is not in the 20-day working route, but it remains a valid extension because San Diego Zoo and La Jolla would fit the family well. | Use only if the family extends the trip or removes another region. |
-| Santa Monica, Beverly Hills, or West Hollywood as LA base | Each base supports a different version of LA: beach ease, classic luxury, or central access. | Choose after one-room hotel quotes and total stay cost checks. |
+| Santa Monica, Beverly Hills, or West Hollywood as LA base | Each base supports a different version of LA: beach ease, classic city access, or central access. | Choose after one-room hotel quotes and $250/night cap checks. |
 | Mariposa Grove or Glacier Point on Yosemite Day 8 | Both are worthwhile, but road, shuttle, heat, and lodging location should decide the final choice. | Choose during the week-of Yosemite conditions check. |
 | Central Coast midpoint night | It remains a useful contingency if Highway 1 conditions, Hearst Castle timing, or family energy make the direct Monterey-to-Santa Barbara transfer too much. | Add only if it solves a live logistics problem. |
 | Hearst Castle on the transfer day | It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate. | Book only if the Day 12 route remains comfortable. |
@@ -54,7 +54,7 @@
 - Re-check Highway 1 status the week before travel; current Caltrans data already shows one-way controls north of Big Sur and near Jamala Road in Santa Barbara County.
 - Re-check Yosemite reservation rules before booking flights and again 30 days before arrival.
 - Quote open-jaw flights once exact dates are approved.
-- Treat a confirmed one-room or suite setup for all four travelers as a lodging requirement before choosing a hotel brand.
+- Treat a confirmed one-room or suite setup for all four travelers and a USD $200-$250 nightly rate as lodging requirements before choosing a hotel brand.
 - Treat Monterey-to-Santa Barbara as a full intercity transfer day, not a local sightseeing day.
 - Keep Day 13 light so the family recovers after the longer coastal move.
 - Add a Cambria, San Luis Obispo, or Paso Robles night only if live road checks or tour times make the direct transfer unattractive.
