@@ -9,13 +9,13 @@
 | Is Yosemite a must-do? | Yosemite drives the hardest lodging and transfer constraints. | Keep Yosemite unless lodging is unavailable or very poor value. |
 | Should the Central Coast midpoint remain a fallback only? | The selected route now skips the one-night midpoint, but road conditions or Hearst Castle timing may still make it useful. | Keep it as a contingency, not the default route. |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full LA day and add crowd/height constraints. | Skip theme parks on this first plan. |
-| Should the plan optimize for beach base or classic-city base in LA? | Santa Monica lowers beach friction; Beverly Hills improves classic LA service and dining; West Hollywood improves central access. | Choose Santa Monica if Vita's beach/pool time matters most. |
+| Should the plan optimize for beach base or classic-city base in LA? | Santa Monica lowers beach friction; Beverly Hills improves classic LA neighborhood access; West Hollywood improves central access. | Choose Santa Monica if Vita's beach/pool time matters most. |
 | Will the family bring or rent Vita's child seat? | It affects airport transfers and rental car pickup. | Bring a known seat if airline and rental logistics allow. |
 
 ## Research Gaps To Close After Date Approval
 
 - Exact open-jaw airfare for SYD-SFO and LAX-SYD.
-- Exact one-room family lodging availability, total stay price, and cancellation terms.
+- Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms.
 - Yosemite lodging availability for July 6-9.
 - Rental car quote for SFO pickup and LAX return.
 - Confirm whether the rental company requires an International Driving Permit with Australian licenses.
@@ -27,7 +27,7 @@
 - The family wants a recognizable West Coast first trip more than a completionist route.
 - The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego inside the 20-day plan.
 - A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.
-- The budget can support value-conscious luxury lodging, but exact one-room availability will decide the real cost.
+- The hotel budget target is USD $200-$250 per night, with no booking above $250 per night unless the family explicitly approves it.
 
 ## Sources
 
