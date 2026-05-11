@@ -5,7 +5,7 @@
 Use existing repository structure first. If no structure exists beyond the source intent document, create only the files needed for the current request:
 
 - `02-current-plan-options.md`: route, activity, lodging, and logistics options included in the working plan or retained as fallbacks.
-- `03-disregarded-options.md`: options considered and rejected, with reasons and reconsideration triggers.
+- `03-potential-options.md`: options considered or researched but parked outside the working plan, with reasons and reconsideration triggers.
 - `04-daily-itinerary.md`: day-by-day plan with timing, drive time, walking load, meals, and backup options.
 - `05-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
 - `06-budget.md`: estimated costs by category with low/target/high ranges and source notes.
@@ -78,10 +78,10 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 
 Use one `Sources` section per planning file. Keep links close to the file they support so future updates can refresh the same source record.
 
-## Disregarded Options Template
+## Potential Options Template
 
 ```markdown
-| Considered option | Why it was disregarded | Reconsider if |
+| Potential option | Current fit / tradeoff | Reconsider if |
 | --- | --- | --- |
 |  |  |  |
 ```
@@ -112,4 +112,4 @@ Use this table for routes, attractions, logistics, lodging approaches, or bookin
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
 - Current plan options include a clear inclusion reason and a pointer to the detailed planning file.
 - Open questions are written as decisions the traveler can answer, not vague reminders.
-- Disregarded options include a clear rejection reason and a trigger for reconsideration.
+- Potential options include a clear reason they are outside the working plan and a trigger for reconsideration.
