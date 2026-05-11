@@ -1,12 +1,12 @@
-# Disregarded Options
+# Potential Options
 
 ## Purpose
 
-Record options that were considered and not included in the working July 2026 plan. Use this file to avoid re-opening settled ideas unless a constraint changes.
+Record options that were considered or researched but are not part of the working July 2026 plan. Use this file as a parking lot for ideas that could become useful if dates, budget, pacing, lodging, road conditions, or family priorities change.
 
 ## Route and Region Options
 
-| Considered option | Why it was disregarded | Reconsider if |
+| Potential option | Current fit / tradeoff | Reconsider if |
 | --- | --- | --- |
 | San Diego inside the 20-day plan | It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day. | The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day. |
 | Las Vegas | It is a major inland detour from the West Coast route and does not match the slow coastal/national-park-first plan. July heat would also make toddler-friendly outdoor time harder. | The family wants a city-resort extension and is willing to drop part of the coast. |
@@ -18,7 +18,7 @@ Record options that were considered and not included in the working July 2026 pl
 
 ## Attractions and Experiences
 
-| Considered option | Why it was disregarded | Reconsider if |
+| Potential option | Current fit / tradeoff | Reconsider if |
 | --- | --- | --- |
 | Disneyland Resort | It would consume at least one full Los Angeles-area day, increase July crowd exposure, and shift the trip toward theme parks rather than first-time US landmarks and local life. | The family names Disney as a must-do and accepts dropping an LA museum/beach day. |
 | Universal Studios Hollywood | It is a full-day theme-park commitment with attraction height and intensity constraints for a three-year-old. | The family specifically wants a theme-park day and is comfortable splitting activities by age. |
@@ -31,9 +31,9 @@ Record options that were considered and not included in the working July 2026 pl
 
 ## Dad-Focused Adventure Ideas
 
-These were researched as possible car, speed, zipline, and action experiences for Alexey. They are not in the working plan because the user asked to keep them in disregarded options, and because most would require replacing a calmer family sightseeing block.
+These were researched as possible car, speed, zipline, and action experiences for Alexey. They are not in the working plan because most would require replacing a calmer family sightseeing block, but they remain useful candidates if the family decides to prioritize an adult-focused or split-family adventure.
 
-| Considered option | Why it was disregarded | Reconsider if |
+| Potential option | Current fit / tradeoff | Reconsider if |
 | --- | --- | --- |
 | Porsche Experience Center Los Angeles in Carson | Strongest "dad car" fit near the route, with real Porsche driving experiences, simulators, and public dining. It is adult-centered, requires a licensed driver age 21+ for the main drive experience, and would consume a valuable LA half-day. | Alexey wants a solo or adult-only driving session and the family is willing to drop Getty, Academy Museum, Griffith, or beach time. |
 | K1 Speed indoor karting in the Bay Area or LA area | Easy speed fix with multiple California locations, including South San Francisco, Santa Clara, Burbank, Culver City, Thousand Oaks, and Torrance. It is more of an urban backup than a first-time US landmark, adult and junior races do not mix, and Vita is too small. | The family needs a weather or jet-lag backup and Alexey/Dasha want a short racing block near the hotel. |
@@ -45,11 +45,11 @@ These were researched as possible car, speed, zipline, and action experiences fo
 | Santa Barbara / Channel Islands kayaking or sea-cave tour | Adventure value is high, but Channel Islands kayaking starts at age 5 and the island version adds ferry timing, ocean conditions, and a near full-day commitment. Vita cannot participate under current age rules. | One parent stays with Vita, or the trip is repeated when Vita is old enough for the activity. |
 | Catalina Island Zip Line Eco Tour | Big adrenaline payoff near the LA region, with five ziplines and ocean views. It requires a Catalina day trip or overnight, has age/height/weight limits, and is too much to add inside the current three-night LA finish. | The family adds a Catalina overnight or replaces an LA museum/Hollywood day with a full island day. |
 | Skydive Perris wind tunnel or tandem skydiving | The wind tunnel is family-possible from age 3+, and tandem skydiving is a true dad adrenaline option. Perris is still a long inland detour from the LA coast/museum plan and would make the final trip days less relaxed. | Alexey wants a dedicated action day and the family accepts replacing an LA sightseeing day with an inland adventure. |
-| Six Flags Magic Mountain thrill-coaster day | It is the obvious LA-area high-intensity ride option, but it is still a full theme-park day with height, heat, queue, and toddler tradeoffs. It duplicates the broader reason Disneyland and Universal are already disregarded. | The family explicitly chooses thrill rides over the current LA museum, beach, and viewpoint plan. |
+| Six Flags Magic Mountain thrill-coaster day | It is the obvious LA-area high-intensity ride option, but it is still a full theme-park day with height, heat, queue, and toddler tradeoffs. It duplicates the broader reason Disneyland and Universal are already outside the working plan. | The family explicitly chooses thrill rides over the current LA museum, beach, and viewpoint plan. |
 
 ## Logistics and Pacing Ideas
 
-| Considered option | Why it was disregarded | Reconsider if |
+| Potential option | Current fit / tradeoff | Reconsider if |
 | --- | --- | --- |
 | Pick up rental car on San Francisco arrival | It adds city parking cost, post-flight driving, and unnecessary stress. San Francisco days work better without a car. | The hotel offers included parking and the family wants to self-drive Muir Woods. |
 | Keep a default Central Coast midpoint night | The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara. | Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive. |
@@ -57,11 +57,11 @@ These were researched as possible car, speed, zipline, and action experiences fo
 | Book Yosemite outside the park by default | It may improve hotel quality, but it increases daily driving and reduces park time. | Inside-park lodging is unavailable or poor value. |
 | Depart from San Francisco instead of Los Angeles | It would require backtracking or a loop, reducing time on the coast and in Los Angeles. | Flight pricing is dramatically better from San Francisco. |
 
-## Not Disregarded
+## Still Available Elsewhere
 
 - The no-Yosemite route in `02-current-plan-options.md` remains a fallback. It is not the recommended route, but it should stay available if Yosemite lodging, fees, heat, or crowds make the park a poor fit.
-- A Central Coast midpoint night remains a logistics fallback. It is disregarded only as a default stop.
-- San Diego remains an extension candidate. It is disregarded only for the current 20-day Sydney-to-Sydney plan.
+- A Central Coast midpoint night remains a logistics fallback. It is only parked here as a default stop.
+- San Diego remains an extension candidate. It is only parked here for the current 20-day Sydney-to-Sydney plan.
 
 ## Sources
 

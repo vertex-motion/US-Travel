@@ -29,7 +29,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 
 4. Create or update the plan documents.
    - Follow existing repo naming if present; otherwise use numbered Markdown files at the repo root.
-   - Keep `01-trip-purpose.md` as source intent. Add later documents for current plan options, disregarded options, daily itinerary, lodging/transport, budget, booking tasks, and open questions as needed.
+   - Keep `01-trip-purpose.md` as source intent. Add later documents for current plan options, potential options, daily itinerary, lodging/transport, budget, booking tasks, and open questions as needed.
    - When trip data changes, update `trip.html` in the same change so the presentation view stays current. Keep the Markdown files as the planning source of truth.
    - Use the output patterns in `references/plan-output-guide.md` when drafting new planning documents.
    - When editing existing documents, preserve valid source links. Update the access date when re-checking a source, replace dead or stale links with the current original page, and keep obsolete links only when they explain a prior decision.
@@ -54,7 +54,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 - Maintain a `Sources` section in each planning file that contains researched facts. Include source name, URL, access date, supported fact, and status when the source needs re-checking.
 - Keep family preferences and constraints visible in the plan instead of burying them in prose.
 - For each current plan option, state why it remains included or retained as a fallback, and point to the file where it is planned in detail.
-- For each disregarded option, state what was considered, why it was rejected, and what constraint change would justify reconsidering it.
+- For each potential option, state what was considered, why it is outside the working plan, and what constraint change would justify reconsidering it.
 
 ## Resources
 

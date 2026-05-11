@@ -1147,11 +1147,11 @@
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Disregarded Options</h2>
-              <p class="panel-kicker">Canonical source: 03-disregarded-options.md</p>
+              <h2 class="panel-title">Potential Options</h2>
+              <p class="panel-kicker">Canonical source: 03-potential-options.md</p>
             </div>
           </div>
-          <div class="panel-body" id="disregardedOptions"></div>
+          <div class="panel-body" id="potentialOptions"></div>
         </section>
 
         <section class="panel flat" style="margin-top: 16px;">
@@ -1357,7 +1357,7 @@
         { option: "Central Coast midpoint night", why: "Useful if Highway 1 conditions, Hearst Castle timing, or family energy make the direct Monterey-to-Santa Barbara transfer too much.", trigger: "Add only if it solves a live logistics problem." },
         { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
       ],
-      disregardedOptions: [
+      potentialOptions: [
         { option: "San Diego inside the 20-day plan", why: "It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day." },
         { option: "Las Vegas", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
         { option: "Grand Canyon", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
@@ -1398,7 +1398,7 @@
           ]
         },
         {
-          title: "03 Disregarded Options",
+          title: "03 Potential Options",
           rows: [
             { fact: "Porsche Experience Center Los Angeles drive experiences require a valid license and minimum age of 21 for the main drive experience.", source: "Porsche Experience Center Los Angeles", url: "https://www.porschedriving.com/los-angeles/faq/", accessed: "2026-05-10", status: "Current" },
             { fact: "K1 Speed has multiple California locations near the route and separates junior and adult racing by height bands.", source: "K1 Speed", url: "https://www.k1speed.com/race-now.html", accessed: "2026-05-10", status: "Current" },
@@ -1723,8 +1723,8 @@
         { label: "Why it remains", key: "why" },
         { label: "Decision trigger", key: "trigger" }
       ]);
-      renderDecisionCards("#disregardedOptions", tripData.disregardedOptions, [
-        { label: "Why it was disregarded", key: "why" },
+      renderDecisionCards("#potentialOptions", tripData.potentialOptions, [
+        { label: "Current fit / tradeoff", key: "why" },
         { label: "Reconsider if", key: "reconsider" }
       ]);
       renderSources();
