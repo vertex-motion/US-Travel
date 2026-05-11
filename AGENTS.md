@@ -5,6 +5,13 @@
 - Commit changes after all modifications have been finalized and reviewed.
 - Sync committed changes to GitHub after each successful commit.
 
+## Public Repository Privacy
+
+- Treat this repository as public.
+- Do not add personal data, private contact details, identifying document numbers, account numbers, booking references, payment details, exact home addresses, or private family details.
+- Use placeholders or broad descriptions when a plan requires sensitive context.
+- If existing personal data is discovered, flag it in chat and ask before editing or removing it unless the user explicitly requests cleanup.
+
 ## Duplication Review
 
 - Before editing planning files, check nearby documents for the same fact, decision, task, or instruction.
