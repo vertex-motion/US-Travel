@@ -874,6 +874,7 @@
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="budget">Budget</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Booking</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="decisions">Decisions</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="potential">Potential Options</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
         </div>
       </div>
@@ -1147,16 +1148,6 @@
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Potential Options</h2>
-              <p class="panel-kicker">Canonical source: 03-potential-options.md</p>
-            </div>
-          </div>
-          <div class="panel-body" id="potentialOptions"></div>
-        </section>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
               <h2 class="panel-title">Research Gaps and Current Assumptions</h2>
               <p class="panel-kicker">Canonical source: 08-open-questions.md</p>
             </div>
@@ -1165,6 +1156,25 @@
             <div class="grid two">
               <ul class="list" id="researchGaps"></ul>
               <ul class="list" id="currentAssumptions"></ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="potential" role="tabpanel">
+        <section class="panel flat">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Potential Options</h2>
+              <p class="panel-kicker">Canonical source: 03-potential-options.md. Names link to the best available source or planning section.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Name</th><th>Current fit / tradeoff</th><th>Reconsider if</th></tr></thead>
+                <tbody id="potentialOptions"></tbody>
+              </table>
             </div>
           </div>
         </section>
@@ -1358,27 +1368,27 @@
         { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
       ],
       potentialOptions: [
-        { option: "San Diego inside the 20-day plan", why: "It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day." },
-        { option: "Las Vegas", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
-        { option: "Grand Canyon", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
-        { option: "Pacific Northwest", why: "Seattle, Portland, and Olympic Peninsula sit too far north for the current California route.", reconsider: "The family chooses a San Francisco-to-Seattle route." },
-        { option: "Lake Tahoe", why: "It adds a mountain detour without improving the first-time landmark mix as much as Yosemite.", reconsider: "Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base." },
-        { option: "Napa or Sonoma overnight", why: "More adult-oriented and adds a base before Yosemite.", reconsider: "The adults want a resort pause, accept a likely hotel-cap exception, and remove Muir Woods or one San Francisco day." },
-        { option: "Disneyland Resort", why: "It would consume at least one full LA-area day and shift the trip toward theme parks.", reconsider: "Disney becomes a must-do and the family drops an LA museum/beach day." },
-        { option: "Universal Studios Hollywood", why: "Full-day theme-park commitment with attraction height and intensity constraints for a three-year-old.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
-        { option: "Warner Bros. Studio Tour Hollywood", why: "Children under 5 are not permitted, so Vita cannot attend.", reconsider: "Vita is not attending that activity or the trip is repeated when she is older." },
-        { option: "Porsche Experience Center Los Angeles", why: "Best dad car fit near the route, but adult-centered, license/age-gated, and would consume a valuable LA half-day.", reconsider: "Alexey wants a solo or adult-only driving session and the family drops an LA museum, viewpoint, or beach block." },
-        { option: "K1 Speed indoor karting", why: "Short speed fix near SF or LA, but adult and junior races do not mix and Vita is too small.", reconsider: "The family wants a weather or jet-lag backup near the hotel." },
-        { option: "Laguna Seca race event during Monterey dates", why: "MotoAmerica overlaps the Monterey stay, but it competes with the aquarium, Big Sur, and transfer pacing.", reconsider: "Live motorsport matters more than the current Monterey sightseeing plan." },
-        { option: "Mount Hermon redwood zipline / ropes", why: "Fun canopy activity near Santa Cruz, but age/height/weight rules exclude Vita and it adds a fixed stop to a nature-heavy route.", reconsider: "The family wants a Dasha-plus-adult split activity and accepts reduced Monterey or Big Sur time." },
-        { option: "Margarita Adventures zipline", why: "Could work near Paso Robles on the transfer route, but it makes Day 12 more reservation-dependent and less restful.", reconsider: "The family skips Hearst Castle and chooses an action stop on the US-101 route." },
-        { option: "Yosemite Mountaineering School climbing lesson", why: "Iconic dad adventure, but it would replace one of only two full Yosemite sightseeing days and likely split the family.", reconsider: "Guided climbing becomes a must-do." },
-        { option: "Channel Islands / Santa Barbara kayaking", why: "High adventure value, but Channel Islands kayaking starts at age 5 and adds ferry timing.", reconsider: "One parent stays with Vita or the trip repeats when she is older." },
-        { option: "Catalina Island Zip Line Eco Tour", why: "Big LA-region adrenaline payoff, but it requires a Catalina day trip or overnight and has age/height/weight limits.", reconsider: "The family adds Catalina or replaces an LA day with a full island day." },
-        { option: "Skydive Perris wind tunnel or tandem skydiving", why: "Real adrenaline option, but Perris is an inland detour from the LA coast/museum plan.", reconsider: "Alexey wants a dedicated action day and the family replaces an LA sightseeing day." },
-        { option: "Six Flags Magic Mountain", why: "Obvious thrill-coaster option, but still a full theme-park day with heat, queue, and toddler tradeoffs.", reconsider: "The family explicitly chooses thrill rides over the current LA plan." },
-        { option: "Pick up rental car on San Francisco arrival", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
-        { option: "Keep a default Central Coast midpoint night", why: "The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara.", reconsider: "Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive." }
+        { option: "San Diego inside the 20-day plan", link: "03-potential-options.md#route-and-region-options", why: "It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day." },
+        { option: "Las Vegas", link: "03-potential-options.md#route-and-region-options", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
+        { option: "Grand Canyon", link: "03-potential-options.md#route-and-region-options", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
+        { option: "Pacific Northwest", link: "03-potential-options.md#route-and-region-options", why: "Seattle, Portland, and Olympic Peninsula sit too far north for the current California route.", reconsider: "The family chooses a San Francisco-to-Seattle route." },
+        { option: "Lake Tahoe", link: "03-potential-options.md#route-and-region-options", why: "It adds a mountain detour without improving the first-time landmark mix as much as Yosemite.", reconsider: "Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base." },
+        { option: "Napa or Sonoma overnight", link: "03-potential-options.md#route-and-region-options", why: "More adult-oriented and adds a base before Yosemite.", reconsider: "The adults want a resort pause, accept a likely hotel-cap exception, and remove Muir Woods or one San Francisco day." },
+        { option: "Disneyland Resort", link: "https://disneyland.disney.go.com/experience-updates/park-reservations/", why: "It would consume at least one full LA-area day and shift the trip toward theme parks.", reconsider: "Disney becomes a must-do and the family drops an LA museum/beach day." },
+        { option: "Universal Studios Hollywood", link: "https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf", why: "Full-day theme-park commitment with attraction height and intensity constraints for a three-year-old.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
+        { option: "Warner Bros. Studio Tour Hollywood", link: "https://www.wbstudiotour.com/faq/", why: "Children under 5 are not permitted, so Vita cannot attend.", reconsider: "Vita is not attending that activity or the trip is repeated when she is older." },
+        { option: "Porsche Experience Center Los Angeles", link: "https://www.porschedriving.com/los-angeles/faq/", why: "Best dad car fit near the route, but adult-centered, license/age-gated, and would consume a valuable LA half-day.", reconsider: "Alexey wants a solo or adult-only driving session and the family drops an LA museum, viewpoint, or beach block." },
+        { option: "K1 Speed indoor karting", link: "https://www.k1speed.com/race-now.html", why: "Short speed fix near SF or LA, but adult and junior races do not mix and Vita is too small.", reconsider: "The family wants a weather or jet-lag backup near the hotel." },
+        { option: "Laguna Seca race event during Monterey dates", link: "https://weathertechraceway.com/pages/season-events", why: "MotoAmerica overlaps the Monterey stay, but it competes with the aquarium, Big Sur, and transfer pacing.", reconsider: "Live motorsport matters more than the current Monterey sightseeing plan." },
+        { option: "Mount Hermon redwood zipline / ropes", link: "https://mounthermonadventures.com/saa", why: "Fun canopy activity near Santa Cruz, but age/height/weight rules exclude Vita and it adds a fixed stop to a nature-heavy route.", reconsider: "The family wants a Dasha-plus-adult split activity and accepts reduced Monterey or Big Sur time." },
+        { option: "Margarita Adventures zipline", link: "https://www.margarita-adventures.com/everyday-adventure/", why: "Could work near Paso Robles on the transfer route, but it makes Day 12 more reservation-dependent and less restful.", reconsider: "The family skips Hearst Castle and chooses an action stop on the US-101 route." },
+        { option: "Yosemite Mountaineering School climbing lesson", link: "https://www.yosemite.com/things-to-do/adventure-activities/yosemite-mountaineering-school-guide-service/", why: "Iconic dad adventure, but it would replace one of only two full Yosemite sightseeing days and likely split the family.", reconsider: "Guided climbing becomes a must-do." },
+        { option: "Channel Islands / Santa Barbara kayaking", link: "https://www.sbadventureco.com/faqs/", why: "High adventure value, but Channel Islands kayaking starts at age 5 and adds ferry timing.", reconsider: "One parent stays with Vita or the trip repeats when she is older." },
+        { option: "Catalina Island Zip Line Eco Tour", link: "https://www.catalinatours.com/tour/zip-line-eco-tour/", why: "Big LA-region adrenaline payoff, but it requires a Catalina day trip or overnight and has age/height/weight limits.", reconsider: "The family adds Catalina or replaces an LA day with a full island day." },
+        { option: "Skydive Perris wind tunnel or tandem skydiving", link: "https://skydiveperris.com/", why: "Real adrenaline option, but Perris is an inland detour from the LA coast/museum plan.", reconsider: "Alexey wants a dedicated action day and the family replaces an LA sightseeing day." },
+        { option: "Six Flags Magic Mountain", link: "https://www.sixflags.com/magicmountain/attractions", why: "Obvious thrill-coaster option, but still a full theme-park day with heat, queue, and toddler tradeoffs.", reconsider: "The family explicitly chooses thrill rides over the current LA plan." },
+        { option: "Pick up rental car on San Francisco arrival", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
+        { option: "Keep a default Central Coast midpoint night", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara.", reconsider: "Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive." }
       ],
       sourceGroups: [
         {
@@ -1583,6 +1593,16 @@
       `).join("");
     }
 
+    function renderPotentialOptions() {
+      $("#potentialOptions").innerHTML = tripData.potentialOptions.map((row) => `
+        <tr>
+          <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
+          <td>${escapeHtml(row.why)}</td>
+          <td>${escapeHtml(row.reconsider)}</td>
+        </tr>
+      `).join("");
+    }
+
     function renderSources() {
       $("#sourceGrid").innerHTML = tripData.sourceGroups.map((group) => `
         <section class="source-group">
@@ -1723,10 +1743,7 @@
         { label: "Why it remains", key: "why" },
         { label: "Decision trigger", key: "trigger" }
       ]);
-      renderDecisionCards("#potentialOptions", tripData.potentialOptions, [
-        { label: "Current fit / tradeoff", key: "why" },
-        { label: "Reconsider if", key: "reconsider" }
-      ]);
+      renderPotentialOptions();
       renderSources();
       renderMap();
       wireTabs();
