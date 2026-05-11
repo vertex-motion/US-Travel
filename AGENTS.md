@@ -3,6 +3,7 @@
 ## Commit Workflow
 
 - Commit changes after all modifications have been finalized and reviewed.
+- Sync committed changes to GitHub after each successful commit.
 
 ## Duplication Review
 
