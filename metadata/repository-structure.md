@@ -10,4 +10,4 @@ Use these files as the canonical homes for planning state:
 - `06-budget.md`: category estimates, assumptions, ranges, and cost sources.
 - `07-booking-checklist.md`: reservations, timed-entry tasks, documents, deadlines, and verification work.
 - `08-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions that need confirmation.
-- `trip.html`: generated or presentation-oriented trip view; keep planning truth in the Markdown files above.
+- `index.html`: generated or presentation-oriented trip view; keep planning truth in the Markdown files above.
