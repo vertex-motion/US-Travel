@@ -542,45 +542,195 @@
 
     .day-body {
       border-top: 1px solid var(--line);
-      padding: 0 16px 16px;
+      padding: 16px;
       display: grid;
-      gap: 12px;
+      gap: 16px;
     }
 
-    .detail-grid {
+    .day-filter-stack {
       display: grid;
-      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
       gap: 10px;
     }
 
-    .detail {
-      padding: 12px;
-      border: 1px solid rgba(23, 33, 38, 0.1);
-      border-radius: var(--radius);
-      background: var(--panel-soft);
-      min-height: 84px;
-    }
-
-    .detail strong {
-      display: block;
+    .filter-label {
+      min-width: 58px;
       font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--muted);
-      margin-bottom: 5px;
+      font-weight: 760;
     }
 
-    .detail span {
+    .day-summary-main {
+      min-width: 0;
+    }
+
+    .day-summary-tags {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .day-type {
+      color: #fff;
+      background: var(--ocean);
+      border-color: var(--ocean);
+    }
+
+    .day-card[data-type="Transfer"] .day-type,
+    .day-card[data-type="Departure"] .day-type,
+    .day-card[data-type="Transit"] .day-type {
+      background: var(--sun);
+      border-color: var(--sun);
+    }
+
+    .day-card[data-type="Arrival"] .day-type {
+      background: var(--grape);
+      border-color: var(--grape);
+    }
+
+    .day-card[data-type="Flexible"] .day-type,
+    .day-card[data-type="Recovery"] .day-type {
+      background: var(--forest);
+      border-color: var(--forest);
+    }
+
+    .day-meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .day-meta-strip .tag {
+      align-items: flex-start;
+      max-width: 100%;
+      white-space: normal;
+      text-align: left;
+    }
+
+    .day-lead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .day-focus {
+      display: grid;
+      gap: 12px;
+    }
+
+    .section-label {
       display: block;
-      font-size: 0.94rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
     }
 
-    .visit-detail {
+    .focus-text {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 720;
+      line-height: 1.35;
+    }
+
+    .place-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .place-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      min-height: 0;
+      padding-top: 8px;
+      border-top: 1px solid rgba(23, 33, 38, 0.08);
+    }
+
+    .place-row:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .place-row strong {
+      display: block;
+      line-height: 1.25;
+    }
+
+    .place-role {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .logistics-list {
+      display: grid;
+      gap: 8px;
+      border-left: 3px solid rgba(11, 111, 141, 0.28);
+      padding-left: 14px;
+    }
+
+    .logistics-item {
+      display: grid;
+      gap: 2px;
+    }
+
+    .logistics-item strong {
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .logistics-item span {
+      font-size: 0.92rem;
+    }
+
+    .day-flow {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .flow-item {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(23, 33, 38, 0.08);
+    }
+
+    .flow-item:last-child {
+      border-bottom: 0;
+    }
+
+    .flow-time {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .flow-text {
+      margin: 0;
+    }
+
+    .day-backup {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      color: var(--muted);
     }
 
     .place-button {
@@ -803,7 +953,7 @@
       .split,
       .route-list,
       .day-grid,
-      .detail-grid,
+      .day-lead,
       .check-grid {
         grid-template-columns: 1fr;
       }
@@ -833,9 +983,17 @@
         text-align: left;
       }
 
-      .visit-detail {
+      .day-summary-tags,
+      .filter-row,
+      .place-row {
         align-items: flex-start;
         flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .flow-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
       }
 
       #map {
@@ -969,7 +1127,16 @@
           </div>
           <div class="panel-body">
             <div class="day-toolbar">
-              <div class="filters" id="dayFilters"></div>
+              <div class="day-filter-stack" aria-label="Itinerary filters">
+                <div class="filter-row">
+                  <span class="filter-label">Region</span>
+                  <div class="filters" id="dayRegionFilters"></div>
+                </div>
+                <div class="filter-row">
+                  <span class="filter-label">Type</span>
+                  <div class="filters" id="dayTypeFilters"></div>
+                </div>
+              </div>
               <div class="day-count" id="dayCount"></div>
             </div>
             <div class="day-grid" id="dayGrid"></div>
@@ -1223,27 +1390,536 @@
         { id: "la", type: "base", name: "Los Angeles / Santa Monica", label: "Departure city", dates: "July 15-18", nights: "3 nights", coords: [34.0195, -118.4912], highlights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods.", transfer: "1.5-2.5 hours from Santa Barbara before LA traffic variation." },
         { id: "lax", type: "airport", name: "LAX", label: "Departure airport", dates: "Day 18", nights: "", coords: [33.9416, -118.4085], highlights: "Preferred return gateway for Los Angeles-Sydney.", transfer: "Return car at LAX on departure day." }
       ],
+      // Keep itinerary data structured so activities, meals, transfers, and logistics can render with different weight.
       days: [
-        { day: 1, date: "Wednesday, July 1", title: "Arrive San Francisco", region: "San Francisco", sleep: "San Francisco", place: "San Francisco International Airport", morning: "Fly Sydney to San Francisco.", lunch: "In flight or arrival-dependent.", afternoon: "Clear immigration, transfer by car service or taxi to hotel, unpack.", dinner: "Easy local dinner near the hotel.", driving: "None after arrival except airport transfer.", walking: "Keep light.", reservations: "Airport transfer if arriving with significant luggage and pram.", backup: "If arrival is delayed, skip dinner booking and eat near the hotel." },
-        { day: 2, date: "Thursday, July 2", title: "Golden Gate and Presidio", region: "San Francisco", sleep: "San Francisco", place: "Golden Gate Bridge", morning: "Golden Gate Bridge viewpoints from Crissy Field or the Presidio.", lunch: "Marina, Presidio, or Fort Mason area.", afternoon: "Palace of Fine Arts and neighborhood walk.", dinner: "North Beach or Hayes Valley.", driving: "None; use taxis/rideshare/transit.", walking: "Moderate and pram-friendly if routes stay near waterfront paths.", reservations: "None required.", backup: "Exploratorium if fog, wind, or jet lag makes outdoor time hard." },
-        { day: 3, date: "Friday, July 3", title: "Alcatraz and Ferry Building", region: "San Francisco", sleep: "San Francisco", place: "Alcatraz Island", morning: "Alcatraz Island day tour.", lunch: "Ferry Building.", afternoon: "Embarcadero, cable car if queues are manageable, or North Beach.", dinner: "Early dinner near hotel.", driving: "None.", walking: "Moderate.", reservations: "Book the official Alcatraz ferry as soon as tickets open.", backup: "Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable." },
-        { day: 4, date: "Saturday, July 4", title: "San Francisco Local Day", region: "San Francisco", sleep: "San Francisco", place: "Golden Gate Park", morning: "Slow start after jet lag. Choose Golden Gate Park, the California Academy of Sciences, or a neighborhood farmers market.", lunch: "Inner Sunset, Haight, or Ferry Building area depending on the morning choice.", afternoon: "Rest at hotel. Avoid long transfers on Independence Day.", dinner: "Early casual dinner.", driving: "None.", walking: "Light to moderate.", reservations: "Buy museum tickets if choosing California Academy of Sciences.", backup: "Hotel pool/spa time or indoor museum time." },
-        { day: 5, date: "Sunday, July 5", title: "Muir Woods and Sausalito", region: "San Francisco", sleep: "San Francisco", place: "Muir Woods National Monument", morning: "Muir Woods with a reserved parking or shuttle slot.", lunch: "Mill Valley or Sausalito.", afternoon: "Sausalito waterfront, then return to San Francisco.", dinner: "San Francisco.", driving: "1.5-2.5 hours total depending on traffic and parking plan.", walking: "Light to moderate on accessible redwood boardwalks.", reservations: "Muir Woods parking or shuttle reservation is required.", backup: "Lands End, Presidio Tunnel Tops, or Golden Gate Park if Muir Woods reservations are poor." },
-        { day: 6, date: "Monday, July 6", title: "San Francisco to Yosemite", region: "Yosemite", sleep: "Yosemite Valley, Fish Camp, or another Yosemite-area base.", place: "Yosemite Valley", morning: "Pick up rental car and leave San Francisco after breakfast.", lunch: "Oakdale, Mariposa, or route-dependent stop.", afternoon: "Arrive, check in, take a short Yosemite Valley orientation walk if time allows.", dinner: "Hotel or lodge restaurant.", driving: "4-5 hours before stops.", walking: "Light.", reservations: "Yosemite-area lodging must be booked early.", backup: "If traffic is severe, skip Yosemite Valley sightseeing and settle in." },
-        { day: 7, date: "Tuesday, July 7", title: "Yosemite Valley", region: "Yosemite", sleep: "Yosemite area.", place: "Tunnel View Yosemite", morning: "Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints.", lunch: "Yosemite Valley.", afternoon: "Lower Yosemite Fall, meadows, or shuttle-based loop.", dinner: "Lodge or hotel.", driving: "Minimal if staying in the valley; more if staying outside the park.", walking: "Moderate and adjustable.", reservations: "None for trails; dining may require advance planning.", backup: "Use the free valley shuttle and shorter paved routes if it is hot." },
-        { day: 8, date: "Wednesday, July 8", title: "Mariposa Grove or Glacier Point", region: "Yosemite", sleep: "Yosemite area.", place: "Mariposa Grove of Giant Sequoias", morning: "Choose Mariposa Grove if the shuttle is operating and heat is manageable.", lunch: "Wawona, hotel, or packed lunch.", afternoon: "Glacier Point if open and practical, or rest day near the hotel.", dinner: "Hotel.", driving: "1-3 hours depending on base and route.", walking: "Light to moderate.", reservations: "Check road and shuttle status before committing.", backup: "Yosemite Valley scenic loop, visitor center, and hotel rest." },
-        { day: 9, date: "Thursday, July 9", title: "Yosemite to Monterey / Carmel", region: "Monterey / Carmel", sleep: "Monterey, Carmel, or Carmel Valley.", place: "Carmel Beach", morning: "Depart Yosemite after breakfast.", lunch: "Route stop in the Central Valley or around Gilroy.", afternoon: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk.", dinner: "Carmel or Monterey.", driving: "4.5-5.5 hours before breaks.", walking: "Light.", reservations: "Dinner reservation if choosing a popular Carmel restaurant.", backup: "If the drive runs long, skip sunset stops and settle in." },
-        { day: 10, date: "Friday, July 10", title: "Monterey Bay Aquarium", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", place: "Monterey Bay Aquarium", morning: "Monterey Bay Aquarium.", lunch: "Cannery Row, Pacific Grove, or hotel.", afternoon: "Pacific Grove coastal walk, Dennis the Menace Playground, or rest.", dinner: "Carmel or Monterey.", driving: "Minimal.", walking: "Moderate.", reservations: "Buy aquarium tickets ahead once 2026 ticketing is open.", backup: "If aquarium crowds are heavy, go at opening and move the playground/rest time earlier." },
-        { day: 11, date: "Saturday, July 11", title: "Big Sur Day Trip", region: "Monterey / Carmel", sleep: "Monterey / Carmel.", place: "Big Sur California", morning: "Drive south to Big Sur viewpoints.", lunch: "Big Sur or return toward Carmel depending on traffic.", afternoon: "Bixby Bridge viewpoint, Pfeiffer Big Sur area, or Point Lobos if reservations/parking work.", dinner: "Carmel.", driving: "2-4 hours total depending on how far south the family goes.", walking: "Light to moderate.", reservations: "None for a simple scenic drive; check state park parking rules if adding hikes.", backup: "17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
-        { day: 12, date: "Sunday, July 12", title: "Monterey to Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", place: "Hearst Castle", morning: "Leave Monterey / Carmel after breakfast. Use the coastal drive south if Highway 1 is open and timing works.", lunch: "Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic.", afternoon: "Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in.", dinner: "Santa Barbara or Montecito.", driving: "Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.", walking: "Light to moderate.", reservations: "Hearst Castle tour tickets open about 60 days in advance.", backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive." },
-        { day: 13, date: "Monday, July 13", title: "Santa Barbara Recovery Day", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", place: "Santa Barbara Waterfront", morning: "Slow start, beach, hotel pool, or waterfront walk.", lunch: "State Street, Funk Zone, or hotel.", afternoon: "Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest.", dinner: "Santa Barbara waterfront or Montecito.", driving: "Minimal.", walking: "Light.", reservations: "None required.", backup: "Keep the day almost entirely resort-based if the Day 12 transfer was tiring." },
-        { day: 14, date: "Tuesday, July 14", title: "Santa Barbara", region: "Santa Barbara", sleep: "Santa Barbara or Montecito.", place: "Santa Barbara County Courthouse", morning: "Choose the Santa Barbara County Courthouse, Old Mission Santa Barbara, or a beach morning if not done on Day 13.", lunch: "State Street or Funk Zone.", afternoon: "Beach, pier, hotel pool, or Montecito time.", dinner: "Santa Barbara.", driving: "Minimal.", walking: "Light to moderate.", reservations: "None unless choosing a specific dinner.", backup: "Keep the day almost entirely resort-based if the family needs a rest reset." },
-        { day: 15, date: "Wednesday, July 15", title: "Santa Barbara to Los Angeles", region: "Los Angeles", sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", place: "Getty Center", morning: "Drive to Los Angeles after breakfast.", lunch: "Santa Monica or Brentwood.", afternoon: "Getty Center.", dinner: "Santa Monica, Brentwood, or hotel.", driving: "1.5-2.5 hours before LA traffic variation.", walking: "Moderate.", reservations: "Reserve Getty parking/timed-entry if the museum requires it for the chosen date.", backup: "If traffic is poor, go straight to the hotel and shift Getty to Day 16." },
-        { day: 16, date: "Thursday, July 16", title: "LA Museums and Everyday City Life", region: "Los Angeles", sleep: "Los Angeles.", place: "Academy Museum of Motion Pictures", morning: "Academy Museum of Motion Pictures or La Brea / LACMA area.", lunch: "Original Farmers Market or Beverly Grove.", afternoon: "Rest, Rodeo Drive walk, or neighborhood time.", dinner: "Beverly Hills, West Hollywood, or Santa Monica.", driving: "1-2 hours total depending on hotel base.", walking: "Light to moderate.", reservations: "Academy Museum tickets if visiting.", backup: "Petersen Automotive Museum, The Grove, or hotel pool." },
-        { day: 17, date: "Friday, July 17", title: "Griffith Observatory and Hollywood Viewpoints", region: "Los Angeles", sleep: "Los Angeles.", place: "Griffith Observatory", morning: "Griffith Observatory / Hollywood Sign viewpoints.", lunch: "Los Feliz, Silver Lake, or Hollywood area.", afternoon: "Rest or beach time.", dinner: "Final LA dinner.", driving: "1.5-3 hours depending on traffic.", walking: "Light to moderate.", reservations: "None for observatory grounds; planetarium shows require tickets and age rules should be checked.", backup: "Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead." },
-        { day: 18, date: "Saturday, July 18", title: "Depart Los Angeles", region: "Los Angeles", sleep: "Overnight flight.", place: "Los Angeles International Airport", morning: "Pack slowly. Avoid major sightseeing.", lunch: "Near hotel.", afternoon: "Depart for LAX with a large traffic buffer.", dinner: "Airport or lounge.", driving: "30-90 minutes to LAX depending on hotel location and traffic.", walking: "Light.", reservations: "International flight and car return.", backup: "If the flight leaves very late, reserve late checkout or a day room." },
-        { day: 19, date: "Sunday, July 19", title: "In Transit", region: "Transit", sleep: "In flight.", morning: "Cross the Pacific.", lunch: "In flight.", afternoon: "Cross the date line.", dinner: "In flight.", driving: "None.", walking: "None.", reservations: "None.", backup: "None." },
-        { day: 20, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", sleep: "Home.", place: "Sydney Airport", morning: "Arrive Sydney.", lunch: "Home.", afternoon: "Recovery day.", dinner: "Home.", driving: "Airport transfer only.", walking: "Light.", reservations: "Airport transfer if needed.", backup: "None." }
+        {
+          day: 1,
+          date: "Wednesday, July 1",
+          title: "Arrive San Francisco",
+          region: "San Francisco",
+          dayType: "Arrival",
+          sleep: "San Francisco",
+          summary: "Land, clear immigration, and keep the first evening easy.",
+          focus: "Use the day to arrive well and settle into the San Francisco base.",
+          places: [{ name: "San Francisco International Airport", role: "Arrival gateway" }],
+          flow: [
+            { slot: "Morning", kind: "travel", text: "Fly Sydney to San Francisco." },
+            { slot: "Lunch", kind: "meal", text: "In flight or arrival-dependent." },
+            { slot: "Afternoon", kind: "logistics", text: "Clear immigration, transfer by car service or taxi to hotel, unpack." },
+            { slot: "Dinner", kind: "meal", text: "Easy local dinner near the hotel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "San Francisco", tone: "info" },
+            { label: "Driving", value: "None after arrival except airport transfer.", tone: "good" },
+            { label: "Walking", value: "Keep light.", tone: "good" },
+            { label: "Reservation", value: "Airport transfer if arriving with significant luggage and pram.", tone: "warn" }
+          ],
+          backup: "If arrival is delayed, skip dinner booking and eat near the hotel."
+        },
+        {
+          day: 2,
+          date: "Thursday, July 2",
+          title: "Golden Gate and Presidio",
+          region: "San Francisco",
+          dayType: "Sightseeing",
+          sleep: "San Francisco",
+          summary: "Classic San Francisco views without adding car logistics.",
+          focus: "Make the Golden Gate Bridge and Presidio the main experience, then keep the afternoon adjacent and flexible.",
+          places: [
+            { name: "Golden Gate Bridge", role: "Primary" },
+            { name: "Palace of Fine Arts", role: "Secondary" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Golden Gate Bridge viewpoints from Crissy Field or the Presidio." },
+            { slot: "Lunch", kind: "meal", text: "Marina, Presidio, or Fort Mason area." },
+            { slot: "Afternoon", kind: "secondary", text: "Palace of Fine Arts and neighborhood walk." },
+            { slot: "Dinner", kind: "meal", text: "North Beach or Hayes Valley." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "San Francisco", tone: "info" },
+            { label: "Driving", value: "None; use taxis/rideshare/transit.", tone: "good" },
+            { label: "Walking", value: "Moderate and pram-friendly if routes stay near waterfront paths.", tone: "info" },
+            { label: "Reservation", value: "None required.", tone: "good" }
+          ],
+          backup: "Exploratorium if fog, wind, or jet lag makes outdoor time hard."
+        },
+        {
+          day: 3,
+          date: "Friday, July 3",
+          title: "Alcatraz and Ferry Building",
+          region: "San Francisco",
+          dayType: "Sightseeing",
+          sleep: "San Francisco",
+          summary: "Ticketed landmark day with waterfront time afterward.",
+          focus: "Anchor the day around Alcatraz, then use the Ferry Building and Embarcadero as low-friction follow-ons.",
+          places: [
+            { name: "Alcatraz Island", role: "Primary" },
+            { name: "Ferry Building", role: "Lunch / secondary" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Alcatraz Island day tour." },
+            { slot: "Lunch", kind: "meal", text: "Ferry Building." },
+            { slot: "Afternoon", kind: "secondary", text: "Embarcadero, cable car if queues are manageable, or North Beach." },
+            { slot: "Dinner", kind: "meal", text: "Early dinner near hotel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "San Francisco", tone: "info" },
+            { label: "Driving", value: "None.", tone: "good" },
+            { label: "Walking", value: "Moderate.", tone: "info" },
+            { label: "Reservation", value: "Book the official Alcatraz ferry as soon as tickets open.", tone: "warn" }
+          ],
+          backup: "Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable."
+        },
+        {
+          day: 4,
+          date: "Saturday, July 4",
+          title: "San Francisco Local Day",
+          region: "San Francisco",
+          dayType: "Flexible",
+          sleep: "San Francisco",
+          summary: "Holiday-local day designed around jet lag, crowds, and energy.",
+          focus: "Choose one nearby activity and protect rest time on Independence Day.",
+          places: [
+            { name: "Golden Gate Park", role: "Primary option" },
+            { name: "California Academy of Sciences", role: "Indoor option" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "optional", text: "Slow start after jet lag. Choose Golden Gate Park, the California Academy of Sciences, or a neighborhood farmers market." },
+            { slot: "Lunch", kind: "meal", text: "Inner Sunset, Haight, or Ferry Building area depending on the morning choice." },
+            { slot: "Afternoon", kind: "rest", text: "Rest at hotel. Avoid long transfers on Independence Day." },
+            { slot: "Dinner", kind: "meal", text: "Early casual dinner." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "San Francisco", tone: "info" },
+            { label: "Driving", value: "None.", tone: "good" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "Buy museum tickets if choosing California Academy of Sciences.", tone: "warn" }
+          ],
+          backup: "Hotel pool/spa time or indoor museum time."
+        },
+        {
+          day: 5,
+          date: "Sunday, July 5",
+          title: "Muir Woods and Sausalito",
+          region: "San Francisco",
+          dayType: "Sightseeing",
+          sleep: "San Francisco",
+          summary: "Redwoods first, then a waterfront afternoon.",
+          focus: "Use Muir Woods as the core nature moment and make Sausalito the lighter second half.",
+          places: [
+            { name: "Muir Woods National Monument", role: "Primary" },
+            { name: "Sausalito", role: "Secondary" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Muir Woods with a reserved parking or shuttle slot." },
+            { slot: "Lunch", kind: "meal", text: "Mill Valley or Sausalito." },
+            { slot: "Afternoon", kind: "secondary", text: "Sausalito waterfront, then return to San Francisco." },
+            { slot: "Dinner", kind: "meal", text: "San Francisco." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "San Francisco", tone: "info" },
+            { label: "Driving", value: "1.5-2.5 hours total depending on traffic and parking plan.", tone: "info" },
+            { label: "Walking", value: "Light to moderate on accessible redwood boardwalks.", tone: "info" },
+            { label: "Reservation", value: "Muir Woods parking or shuttle reservation is required.", tone: "warn" }
+          ],
+          backup: "Lands End, Presidio Tunnel Tops, or Golden Gate Park if Muir Woods reservations are poor."
+        },
+        {
+          day: 6,
+          date: "Monday, July 6",
+          title: "San Francisco to Yosemite",
+          region: "Yosemite",
+          dayType: "Transfer",
+          sleep: "Yosemite Valley, Fish Camp, or another Yosemite-area base.",
+          summary: "Move bases; any Yosemite walk is a bonus.",
+          focus: "Treat this as a transfer day. The win is arriving calmly at the Yosemite-area lodging.",
+          places: [{ name: "Yosemite Valley", role: "Optional orientation" }],
+          flow: [
+            { slot: "Morning", kind: "transfer", text: "Pick up rental car and leave San Francisco after breakfast." },
+            { slot: "Lunch", kind: "meal", text: "Oakdale, Mariposa, or route-dependent stop." },
+            { slot: "Afternoon", kind: "logistics", text: "Arrive, check in, take a short Yosemite Valley orientation walk if time allows." },
+            { slot: "Dinner", kind: "meal", text: "Hotel or lodge restaurant." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Yosemite Valley, Fish Camp, or another Yosemite-area base.", tone: "info" },
+            { label: "Driving", value: "4-5 hours before stops.", tone: "warn" },
+            { label: "Walking", value: "Light.", tone: "good" },
+            { label: "Reservation", value: "Yosemite-area lodging must be booked early.", tone: "warn" }
+          ],
+          backup: "If traffic is severe, skip Yosemite Valley sightseeing and settle in."
+        },
+        {
+          day: 7,
+          date: "Tuesday, July 7",
+          title: "Yosemite Valley",
+          region: "Yosemite",
+          dayType: "Sightseeing",
+          sleep: "Yosemite area.",
+          summary: "Main Yosemite Valley sightseeing day.",
+          focus: "Prioritize the iconic valley viewpoints, then adjust the afternoon based on heat and family energy.",
+          places: [
+            { name: "Tunnel View Yosemite", role: "Primary" },
+            { name: "Bridalveil Fall", role: "Secondary" },
+            { name: "Lower Yosemite Fall", role: "Optional afternoon" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints." },
+            { slot: "Lunch", kind: "meal", text: "Yosemite Valley." },
+            { slot: "Afternoon", kind: "secondary", text: "Lower Yosemite Fall, meadows, or shuttle-based loop." },
+            { slot: "Dinner", kind: "meal", text: "Lodge or hotel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Yosemite area.", tone: "info" },
+            { label: "Driving", value: "Minimal if staying in the valley; more if staying outside the park.", tone: "info" },
+            { label: "Walking", value: "Moderate and adjustable.", tone: "info" },
+            { label: "Reservation", value: "None for trails; dining may require advance planning.", tone: "info" }
+          ],
+          backup: "Use the free valley shuttle and shorter paved routes if it is hot."
+        },
+        {
+          day: 8,
+          date: "Wednesday, July 8",
+          title: "Mariposa Grove or Glacier Point",
+          region: "Yosemite",
+          dayType: "Flexible",
+          sleep: "Yosemite area.",
+          summary: "Conditions-based Yosemite choice.",
+          focus: "Choose one larger Yosemite outing only after road, shuttle, lodging location, and heat checks.",
+          places: [
+            { name: "Mariposa Grove of Giant Sequoias", role: "Primary option" },
+            { name: "Glacier Point", role: "Alternate option" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "optional", text: "Choose Mariposa Grove if the shuttle is operating and heat is manageable." },
+            { slot: "Lunch", kind: "meal", text: "Wawona, hotel, or packed lunch." },
+            { slot: "Afternoon", kind: "optional", text: "Glacier Point if open and practical, or rest day near the hotel." },
+            { slot: "Dinner", kind: "meal", text: "Hotel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Yosemite area.", tone: "info" },
+            { label: "Driving", value: "1-3 hours depending on base and route.", tone: "info" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "Check road and shuttle status before committing.", tone: "warn" }
+          ],
+          backup: "Yosemite Valley scenic loop, visitor center, and hotel rest."
+        },
+        {
+          day: 9,
+          date: "Thursday, July 9",
+          title: "Yosemite to Monterey / Carmel",
+          region: "Monterey / Carmel",
+          dayType: "Transfer",
+          sleep: "Monterey, Carmel, or Carmel Valley.",
+          summary: "Transfer to the coast; beach time only if the drive lands well.",
+          focus: "Use the day to move from Yosemite to the Monterey/Carmel base without squeezing in major sightseeing.",
+          places: [{ name: "Carmel Beach", role: "Optional arrival walk" }],
+          flow: [
+            { slot: "Morning", kind: "transfer", text: "Depart Yosemite after breakfast." },
+            { slot: "Lunch", kind: "meal", text: "Route stop in the Central Valley or around Gilroy." },
+            { slot: "Afternoon", kind: "logistics", text: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk." },
+            { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Monterey, Carmel, or Carmel Valley.", tone: "info" },
+            { label: "Driving", value: "4.5-5.5 hours before breaks.", tone: "warn" },
+            { label: "Walking", value: "Light.", tone: "good" },
+            { label: "Reservation", value: "Dinner reservation if choosing a popular Carmel restaurant.", tone: "info" }
+          ],
+          backup: "If the drive runs long, skip sunset stops and settle in."
+        },
+        {
+          day: 10,
+          date: "Friday, July 10",
+          title: "Monterey Bay Aquarium",
+          region: "Monterey / Carmel",
+          dayType: "Sightseeing",
+          sleep: "Monterey / Carmel.",
+          summary: "Aquarium anchor day with an adjustable coastal afternoon.",
+          focus: "Make Monterey Bay Aquarium the main event, then keep the afternoon easy and child-friendly.",
+          places: [
+            { name: "Monterey Bay Aquarium", role: "Primary" },
+            { name: "Pacific Grove", role: "Secondary" },
+            { name: "Dennis the Menace Playground", role: "Child-friendly option" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Monterey Bay Aquarium." },
+            { slot: "Lunch", kind: "meal", text: "Cannery Row, Pacific Grove, or hotel." },
+            { slot: "Afternoon", kind: "secondary", text: "Pacific Grove coastal walk, Dennis the Menace Playground, or rest." },
+            { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Monterey / Carmel.", tone: "info" },
+            { label: "Driving", value: "Minimal.", tone: "good" },
+            { label: "Walking", value: "Moderate.", tone: "info" },
+            { label: "Reservation", value: "Buy aquarium tickets ahead once 2026 ticketing is open.", tone: "warn" }
+          ],
+          backup: "If aquarium crowds are heavy, go at opening and move the playground/rest time earlier."
+        },
+        {
+          day: 11,
+          date: "Saturday, July 11",
+          title: "Big Sur Day Trip",
+          region: "Monterey / Carmel",
+          dayType: "Sightseeing",
+          sleep: "Monterey / Carmel.",
+          summary: "Scenic drive day whose exact reach depends on Highway 1 conditions.",
+          focus: "Treat Big Sur as the core experience, with turnaround points decided by traffic, road status, and family energy.",
+          places: [
+            { name: "Big Sur California", role: "Primary scenic area" },
+            { name: "Bixby Bridge", role: "Viewpoint" },
+            { name: "Point Lobos", role: "Optional stop" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Drive south to Big Sur viewpoints." },
+            { slot: "Lunch", kind: "meal", text: "Big Sur or return toward Carmel depending on traffic." },
+            { slot: "Afternoon", kind: "secondary", text: "Bixby Bridge viewpoint, Pfeiffer Big Sur area, or Point Lobos if reservations/parking work." },
+            { slot: "Dinner", kind: "meal", text: "Carmel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Monterey / Carmel.", tone: "info" },
+            { label: "Driving", value: "2-4 hours total depending on how far south the family goes.", tone: "warn" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "None for a simple scenic drive; check state park parking rules if adding hikes.", tone: "info" }
+          ],
+          backup: "17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor."
+        },
+        {
+          day: 12,
+          date: "Sunday, July 12",
+          title: "Monterey to Santa Barbara",
+          region: "Santa Barbara",
+          dayType: "Transfer",
+          sleep: "Santa Barbara or Montecito.",
+          summary: "Full intercity transfer; Hearst Castle is optional, not the point of the day.",
+          focus: "Protect the long coastal move. Add Hearst Castle only if road conditions and tour timing keep the day comfortable.",
+          places: [
+            { name: "Hearst Castle", role: "Optional ticketed stop" },
+            { name: "Santa Barbara", role: "Destination base" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "transfer", text: "Leave Monterey / Carmel after breakfast. Use the coastal drive south if Highway 1 is open and timing works." },
+            { slot: "Lunch", kind: "meal", text: "Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic." },
+            { slot: "Afternoon", kind: "optional", text: "Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in." },
+            { slot: "Dinner", kind: "meal", text: "Santa Barbara or Montecito." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
+            { label: "Driving", value: "Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.", tone: "warn" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "Hearst Castle tour tickets open about 60 days in advance.", tone: "warn" }
+          ],
+          backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive."
+        },
+        {
+          day: 13,
+          date: "Monday, July 13",
+          title: "Santa Barbara Recovery Day",
+          region: "Santa Barbara",
+          dayType: "Recovery",
+          sleep: "Santa Barbara or Montecito.",
+          summary: "Soft landing after the long coastal transfer.",
+          focus: "Keep the day restorative, with sightseeing treated as optional if Day 12 was tiring.",
+          places: [
+            { name: "Santa Barbara Waterfront", role: "Primary easy option" },
+            { name: "Santa Barbara County Courthouse", role: "Optional short visit" },
+            { name: "Old Mission Santa Barbara", role: "Optional short visit" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "rest", text: "Slow start, beach, hotel pool, or waterfront walk." },
+            { slot: "Lunch", kind: "meal", text: "State Street, Funk Zone, or hotel." },
+            { slot: "Afternoon", kind: "optional", text: "Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest." },
+            { slot: "Dinner", kind: "meal", text: "Santa Barbara waterfront or Montecito." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
+            { label: "Driving", value: "Minimal.", tone: "good" },
+            { label: "Walking", value: "Light.", tone: "good" },
+            { label: "Reservation", value: "None required.", tone: "good" }
+          ],
+          backup: "Keep the day almost entirely resort-based if the Day 12 transfer was tiring."
+        },
+        {
+          day: 14,
+          date: "Tuesday, July 14",
+          title: "Santa Barbara",
+          region: "Santa Barbara",
+          dayType: "Flexible",
+          sleep: "Santa Barbara or Montecito.",
+          summary: "Choose one Santa Barbara sight, then keep the day coastal and easy.",
+          focus: "Use this as the main Santa Barbara local day without over-programming it.",
+          places: [
+            { name: "Santa Barbara County Courthouse", role: "Primary option" },
+            { name: "Old Mission Santa Barbara", role: "Alternate option" },
+            { name: "Stearns Wharf", role: "Waterfront option" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "optional", text: "Choose the Santa Barbara County Courthouse, Old Mission Santa Barbara, or a beach morning if not done on Day 13." },
+            { slot: "Lunch", kind: "meal", text: "State Street or Funk Zone." },
+            { slot: "Afternoon", kind: "rest", text: "Beach, pier, hotel pool, or Montecito time." },
+            { slot: "Dinner", kind: "meal", text: "Santa Barbara." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
+            { label: "Driving", value: "Minimal.", tone: "good" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "None unless choosing a specific dinner.", tone: "good" }
+          ],
+          backup: "Keep the day almost entirely resort-based if the family needs a rest reset."
+        },
+        {
+          day: 15,
+          date: "Wednesday, July 15",
+          title: "Santa Barbara to Los Angeles",
+          region: "Los Angeles",
+          dayType: "Transfer",
+          sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.",
+          summary: "Move to LA; Getty works only if traffic cooperates.",
+          focus: "Make the base transfer work first. Getty Center is the planned attraction if arrival timing stays comfortable.",
+          places: [
+            { name: "Getty Center", role: "Primary if timing works" },
+            { name: "Santa Monica", role: "Lunch / base option" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "transfer", text: "Drive to Los Angeles after breakfast." },
+            { slot: "Lunch", kind: "meal", text: "Santa Monica or Brentwood." },
+            { slot: "Afternoon", kind: "core", text: "Getty Center." },
+            { slot: "Dinner", kind: "meal", text: "Santa Monica, Brentwood, or hotel." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", tone: "info" },
+            { label: "Driving", value: "1.5-2.5 hours before LA traffic variation.", tone: "warn" },
+            { label: "Walking", value: "Moderate.", tone: "info" },
+            { label: "Reservation", value: "Reserve Getty parking/timed-entry if the museum requires it for the chosen date.", tone: "warn" }
+          ],
+          backup: "If traffic is poor, go straight to the hotel and shift Getty to Day 16."
+        },
+        {
+          day: 16,
+          date: "Thursday, July 16",
+          title: "LA Museums and Everyday City Life",
+          region: "Los Angeles",
+          dayType: "Sightseeing",
+          sleep: "Los Angeles.",
+          summary: "Museum anchor with everyday LA neighborhoods around it.",
+          focus: "Use one museum area as the anchor, then keep the afternoon flexible for rest or a neighborhood walk.",
+          places: [
+            { name: "Academy Museum of Motion Pictures", role: "Primary option" },
+            { name: "Original Farmers Market", role: "Lunch option" },
+            { name: "Rodeo Drive", role: "Optional walk" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Academy Museum of Motion Pictures or La Brea / LACMA area." },
+            { slot: "Lunch", kind: "meal", text: "Original Farmers Market or Beverly Grove." },
+            { slot: "Afternoon", kind: "rest", text: "Rest, Rodeo Drive walk, or neighborhood time." },
+            { slot: "Dinner", kind: "meal", text: "Beverly Hills, West Hollywood, or Santa Monica." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Los Angeles.", tone: "info" },
+            { label: "Driving", value: "1-2 hours total depending on hotel base.", tone: "info" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "Academy Museum tickets if visiting.", tone: "warn" }
+          ],
+          backup: "Petersen Automotive Museum, The Grove, or hotel pool."
+        },
+        {
+          day: 17,
+          date: "Friday, July 17",
+          title: "Griffith Observatory and Hollywood Viewpoints",
+          region: "Los Angeles",
+          dayType: "Sightseeing",
+          sleep: "Los Angeles.",
+          summary: "Recognizable LA viewpoint day before the final dinner.",
+          focus: "Make Griffith and the Hollywood views the main LA icon, then avoid overloading the final full day.",
+          places: [
+            { name: "Griffith Observatory", role: "Primary" },
+            { name: "Hollywood Sign", role: "Viewpoint" }
+          ],
+          flow: [
+            { slot: "Morning", kind: "core", text: "Griffith Observatory / Hollywood Sign viewpoints." },
+            { slot: "Lunch", kind: "meal", text: "Los Feliz, Silver Lake, or Hollywood area." },
+            { slot: "Afternoon", kind: "rest", text: "Rest or beach time." },
+            { slot: "Dinner", kind: "meal", text: "Final LA dinner." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Los Angeles.", tone: "info" },
+            { label: "Driving", value: "1.5-3 hours depending on traffic.", tone: "warn" },
+            { label: "Walking", value: "Light to moderate.", tone: "info" },
+            { label: "Reservation", value: "None for observatory grounds; planetarium shows require tickets and age rules should be checked.", tone: "info" }
+          ],
+          backup: "Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead."
+        },
+        {
+          day: 18,
+          date: "Saturday, July 18",
+          title: "Depart Los Angeles",
+          region: "Los Angeles",
+          dayType: "Departure",
+          sleep: "Overnight flight.",
+          summary: "Protect packing, car return, and LAX buffer.",
+          focus: "Avoid meaningful sightseeing and make the outbound flight logistics calm.",
+          places: [{ name: "Los Angeles International Airport", role: "Departure airport" }],
+          flow: [
+            { slot: "Morning", kind: "logistics", text: "Pack slowly. Avoid major sightseeing." },
+            { slot: "Lunch", kind: "meal", text: "Near hotel." },
+            { slot: "Afternoon", kind: "transfer", text: "Depart for LAX with a large traffic buffer." },
+            { slot: "Dinner", kind: "meal", text: "Airport or lounge." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Overnight flight.", tone: "info" },
+            { label: "Driving", value: "30-90 minutes to LAX depending on hotel location and traffic.", tone: "warn" },
+            { label: "Walking", value: "Light.", tone: "good" },
+            { label: "Reservation", value: "International flight and car return.", tone: "warn" }
+          ],
+          backup: "If the flight leaves very late, reserve late checkout or a day room."
+        },
+        {
+          day: 19,
+          date: "Sunday, July 19",
+          title: "In Transit",
+          region: "Transit",
+          dayType: "Transit",
+          sleep: "In flight.",
+          summary: "Pacific crossing and date-line day.",
+          focus: "This is a flight day only.",
+          places: [],
+          flow: [
+            { slot: "Morning", kind: "travel", text: "Cross the Pacific." },
+            { slot: "Lunch", kind: "meal", text: "In flight." },
+            { slot: "Afternoon", kind: "travel", text: "Cross the date line." },
+            { slot: "Dinner", kind: "meal", text: "In flight." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "In flight.", tone: "info" },
+            { label: "Driving", value: "None.", tone: "good" },
+            { label: "Walking", value: "None.", tone: "good" },
+            { label: "Reservation", value: "None.", tone: "good" }
+          ],
+          backup: "None."
+        },
+        {
+          day: 20,
+          date: "Monday, July 20",
+          title: "Arrive Sydney",
+          region: "Transit",
+          dayType: "Arrival",
+          sleep: "Home.",
+          summary: "Arrive home and recover.",
+          focus: "Keep the post-flight day empty except for getting home and resetting.",
+          places: [{ name: "Sydney Airport", role: "Arrival airport" }],
+          flow: [
+            { slot: "Morning", kind: "travel", text: "Arrive Sydney." },
+            { slot: "Lunch", kind: "meal", text: "Home." },
+            { slot: "Afternoon", kind: "rest", text: "Recovery day." },
+            { slot: "Dinner", kind: "meal", text: "Home." }
+          ],
+          logistics: [
+            { label: "Sleep", value: "Home.", tone: "info" },
+            { label: "Driving", value: "Airport transfer only.", tone: "info" },
+            { label: "Walking", value: "Light.", tone: "good" },
+            { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }
+          ],
+          backup: "None."
+        }
       ],
       lodgingStrategy: [
         "Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.",
@@ -1478,6 +2154,9 @@
       return `<span class="tag ${type}">${escapeHtml(status)}</span>`;
     };
 
+    const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
+    const dayFilterState = { region: "All", type: "All" };
+
     function renderSelectedRoute() {
       $("#selectedRouteRows").innerHTML = tripData.selectedRoute.map((row) => `
         <tr>
@@ -1516,34 +2195,87 @@
       `).join("");
     }
 
-    function renderDays(filter = "All") {
-      const days = filter === "All" ? tripData.days : tripData.days.filter((day) => day.region === filter);
+    function renderPlaceRows(places = []) {
+      if (!places.length) return "";
+      return `
+        <div class="place-list">
+          ${places.map((place) => `
+            <div class="place-row">
+              <span>
+                <strong>${escapeHtml(place.name)}</strong>
+                <span class="place-role">${escapeHtml(place.role)}</span>
+              </span>
+              ${place.map === false ? "" : `<a class="place-button" href="${escapeHtml(mapSearchUrl(place.query || place.name))}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(place.name)} in Google Maps">View place</a>`}
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function renderFlow(flow = []) {
+      return flow.map((item) => `
+        <div class="flow-item" data-kind="${escapeHtml(item.kind || "")}">
+          <div class="flow-time">${escapeHtml(item.slot)}</div>
+          <p class="flow-text">${escapeHtml(item.text)}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderLogistics(logistics = []) {
+      return logistics.map((item) => `
+        <div class="logistics-item">
+          <strong>${escapeHtml(item.label)}</strong>
+          <span>${escapeHtml(item.value)}</span>
+        </div>
+      `).join("");
+    }
+
+    function filteredDays() {
+      return tripData.days.filter((day) => {
+        const regionMatch = dayFilterState.region === "All" || day.region === dayFilterState.region;
+        const typeMatch = dayFilterState.type === "All" || day.dayType === dayFilterState.type;
+        return regionMatch && typeMatch;
+      });
+    }
+
+    function renderDays() {
+      const days = filteredDays();
       $("#dayCount").textContent = `${days.length} day${days.length === 1 ? "" : "s"}`;
+      $("#toggleDays").textContent = "Open all days";
       $("#dayGrid").innerHTML = days.map((day) => `
-        <details class="day-card" data-region="${escapeHtml(day.region)}">
+        <details class="day-card" data-region="${escapeHtml(day.region)}" data-type="${escapeHtml(day.dayType)}">
           <summary class="day-summary">
             <span class="day-number">${day.day}</span>
-            <span>
+            <span class="day-summary-main">
               <h3>${escapeHtml(day.title)}</h3>
-              <p>${escapeHtml(day.date)} - Sleep: ${escapeHtml(day.sleep)}</p>
+              <p>${escapeHtml(day.date)} - ${escapeHtml(day.summary)}</p>
             </span>
-            <span class="day-region">${statusTag(day.region)}</span>
+            <span class="day-summary-tags">
+              <span class="tag day-type">${escapeHtml(day.dayType)}</span>
+              <span class="day-region">${statusTag(day.region)}</span>
+            </span>
           </summary>
           <div class="day-body">
-            ${day.place ? `<div class="detail visit-detail">
-              <span><strong>Primary place</strong><span>${escapeHtml(day.place)}</span></span>
-              <a class="place-button" href="${escapeHtml(mapSearchUrl(day.place))}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(day.place)} in Google Maps">View place</a>
-            </div>` : ""}
-            <div class="detail-grid">
-              <div class="detail"><strong>Morning</strong><span>${escapeHtml(day.morning)}</span></div>
-              <div class="detail"><strong>Lunch</strong><span>${escapeHtml(day.lunch)}</span></div>
-              <div class="detail"><strong>Afternoon</strong><span>${escapeHtml(day.afternoon)}</span></div>
-              <div class="detail"><strong>Dinner</strong><span>${escapeHtml(day.dinner)}</span></div>
-              <div class="detail"><strong>Driving</strong><span>${escapeHtml(day.driving)}</span></div>
-              <div class="detail"><strong>Walking</strong><span>${escapeHtml(day.walking)}</span></div>
-              <div class="detail"><strong>Reservations</strong><span>${escapeHtml(day.reservations)}</span></div>
+            <div class="day-meta-strip">
+              ${(day.logistics || []).map((item) => `<span class="tag ${toneClass(item.tone)}">${escapeHtml(item.label)}: ${escapeHtml(item.value)}</span>`).join("")}
             </div>
-            <div class="detail"><strong>Backup plan</strong><span>${escapeHtml(day.backup)}</span></div>
+            <div class="day-lead">
+              <div class="day-focus">
+                <div>
+                  <span class="section-label">Core experience</span>
+                  <p class="focus-text">${escapeHtml(day.focus)}</p>
+                </div>
+                ${renderPlaceRows(day.places)}
+              </div>
+              <aside class="logistics-list" aria-label="Day logistics">
+                ${renderLogistics(day.logistics)}
+              </aside>
+            </div>
+            <div>
+              <span class="section-label">Day flow</span>
+              <div class="day-flow">${renderFlow(day.flow)}</div>
+            </div>
+            <div class="day-backup"><strong>Backup plan:</strong> ${escapeHtml(day.backup)}</div>
           </div>
         </details>
       `).join("");
@@ -1551,12 +2283,22 @@
 
     function renderDayFilters() {
       const regions = ["All", ...new Set(tripData.days.map((day) => day.region))];
-      $("#dayFilters").innerHTML = regions.map((region) => `<button class="filter-button ${region === "All" ? "active" : ""}" type="button" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("");
-      $("#dayFilters").addEventListener("click", (event) => {
+      const types = ["All", ...new Set(tripData.days.map((day) => day.dayType))];
+      $("#dayRegionFilters").innerHTML = regions.map((region) => `<button class="filter-button ${region === dayFilterState.region ? "active" : ""}" type="button" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("");
+      $("#dayTypeFilters").innerHTML = types.map((type) => `<button class="filter-button ${type === dayFilterState.type ? "active" : ""}" type="button" data-type="${escapeHtml(type)}">${escapeHtml(type)}</button>`).join("");
+      $("#dayRegionFilters").addEventListener("click", (event) => {
         const button = event.target.closest("button");
         if (!button) return;
-        $$("#dayFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
-        renderDays(button.dataset.region);
+        dayFilterState.region = button.dataset.region;
+        $$("#dayRegionFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
+        renderDays();
+      });
+      $("#dayTypeFilters").addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        dayFilterState.type = button.dataset.type;
+        $$("#dayTypeFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
+        renderDays();
       });
     }
 
