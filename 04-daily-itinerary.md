@@ -270,4 +270,4 @@ Use July 1-20, 2026 as the planning window. This assumes:
 | The Getty Center is a practical LA museum stop with parking logistics to confirm. | J. Paul Getty Trust | [Visit the Getty Center](https://www.getty.edu/visit/center/) | 2026-05-08 | Current |
 | Academy Museum tickets and hours should be checked for the selected date. | Academy Museum of Motion Pictures | [Visit](https://www.academymuseum.org/en/visit) | 2026-05-08 | Current |
 | Griffith Observatory grounds are a practical family viewpoint; check hours and planetarium rules. | Griffith Observatory | [Plan your visit](https://griffithobservatory.org/visit/) | 2026-05-08 | Current |
-| Warner Bros. Studio Tour is unsuitable for Vita because children under 5 are not allowed. | Warner Bros. Studio Tour Hollywood | [Accessibility and FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |
+| Warner Bros. Studio Tour is unsuitable for the younger child because children under 5 are not allowed. | Warner Bros. Studio Tour Hollywood | [Accessibility and FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |

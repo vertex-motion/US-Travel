@@ -34,7 +34,7 @@
 
 ## Do Not Book
 
-- Do not book Warner Bros. Studio Tour for this trip unless Vita is not attending. Children under 5 are not allowed.
+- Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.
 - Do not add San Diego unless the family extends the return date or removes another region.
 - Do not book any hotel above USD $250 per night unless the family explicitly approves the exception.
 - Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.

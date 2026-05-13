@@ -7,11 +7,11 @@ Use this file as the canonical source for traveler intent, constraints, and pref
 - Alexey, 39
 - Ana, 39
 - Dasha, 13
-- Vita, 3
+- Younger child, 2
 
 1. Alexey and Ana have traveled extensively in Europe and Asia, but this will be their first trip to the United States.
 2. The family currently lives in Sydney, Australia.
-3. No specific mobility needs, but the family will have a pram for Vita.
+3. No specific mobility needs, but the family will have a pram for the younger child.
 4. No specific food preferences.
 
 ## Why We Are Taking This Trip
