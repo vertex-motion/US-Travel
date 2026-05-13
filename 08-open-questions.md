@@ -9,8 +9,8 @@
 | Is Yosemite a must-do? | Yosemite drives the hardest lodging and transfer constraints. | Keep Yosemite unless lodging is unavailable or very poor value. |
 | Should the Central Coast midpoint remain a fallback only? | The selected route now skips the one-night midpoint, but road conditions or Hearst Castle timing may still make it useful. | Keep it as a contingency, not the default route. |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full LA day and add crowd/height constraints. | Skip theme parks on this first plan. |
-| Should the plan optimize for beach base or classic-city base in LA? | Santa Monica lowers beach friction; Beverly Hills improves classic LA neighborhood access; West Hollywood improves central access. | Choose Santa Monica if Vita's beach/pool time matters most. |
-| Will the family bring or rent Vita's child seat? | It affects airport transfers and rental car pickup. | Bring a known seat if airline and rental logistics allow. |
+| Should the plan optimize for beach base or classic-city base in LA? | Santa Monica lowers beach friction; Beverly Hills improves classic LA neighborhood access; West Hollywood improves central access. | Choose Santa Monica if the younger child's beach/pool time matters most. |
+| Will the family bring or rent the younger child's child seat? | It affects airport transfers and rental car pickup. | Bring a known seat if airline and rental logistics allow. |
 
 ## Research Gaps To Close After Date Approval
 

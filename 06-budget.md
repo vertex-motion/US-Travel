@@ -25,8 +25,8 @@ The largest budget risk is lodging. July is peak season in Yosemite, the Califor
 | --- | --- | ---: |
 | Alcatraz day tour | Two adults, one youth, one child under 5 | $143.85 |
 | Muir Woods | Two adult entrance fees plus one standard parking reservation; children under 16 free | $39.50 |
-| Monterey Bay Aquarium | Two adults plus one youth; Vita is outside the adult/youth paid bands | $180+ |
-| Hearst Castle | Two adults, one child age 5-12 band does not apply to Vita; tour choice can change cost | $70+ |
+| Monterey Bay Aquarium | Two adults plus one youth; the younger child is outside the adult/youth paid bands | $180+ |
+| Hearst Castle | Two adults, one child age 5-12 band does not apply to the younger child; tour choice can change cost | $70+ |
 | Getty Center | Admission is free but timed-entry reservation and parking apply | $25 parking, less after 3pm |
 | Academy Museum | Two adults; children 17 and under free for museum admission | $50 before parking or add-ons |
 

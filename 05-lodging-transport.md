@@ -4,7 +4,7 @@
 
 - Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
 - Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
-- Treat a confirmed single room or suite for two adults, one teen, and one three-year-old as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
+- Treat a confirmed single room or suite for two adults, one teen, and one two-year-old as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
 - Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
 - Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking.
@@ -42,7 +42,7 @@
 ## Rental Car Requirements
 
 - Book a midsize or full-size SUV with luggage space for four passengers, pram, and long-haul luggage.
-- Confirm child seat requirements for Vita before pickup. Bring or rent an approved seat.
+- Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat.
 - Confirm whether the rental company requires an International Driving Permit for an Australian license.
 - Add a second authorized driver if both adults may drive.
 - Avoid one-way drop-off surprises by pricing SFO city pickup to LAX airport return before booking.
