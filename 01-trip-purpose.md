@@ -6,7 +6,7 @@ Use this file as the canonical source for traveler intent, constraints, and pref
 
 - Alexey, 39
 - Ana, 39
-- Dasha, 13
+- 13-year-old teen
 - Younger child, 2
 
 1. Alexey and Ana have traveled extensively in Europe and Asia, but this will be their first trip to the United States.
@@ -21,6 +21,7 @@ This is the family's first trip to explore the United States, with a particular 
 ## What We Want To See
 
 - Famous landmarks and recognizable West Coast places.
+- Las Vegas as a primary stop, not only a parked or optional detour.
 - Everyday experiences that help the family blend a little into US life, not only visit tourist sights.
 
 ## What We Do Not Want To See

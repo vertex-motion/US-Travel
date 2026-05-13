@@ -1009,7 +1009,7 @@
       <div class="hero-inner">
         <div class="eyebrow">July 1-20, 2026</div>
         <h1>West Coast + Las Vegas Family Trip</h1>
-        <p class="hero-copy">A first United States trip for Alexey, Ana, Dasha, and the younger child: San Francisco, Yosemite, the Pacific coast, Los Angeles, and a Las Vegas city-resort finale at a slow family pace.</p>
+        <p class="hero-copy">A first United States trip for a family of four: San Francisco, Yosemite, the Pacific coast, Los Angeles, and a Las Vegas city-resort finale at a slow family pace.</p>
         <div class="hero-stats" aria-label="Trip summary">
           <div class="hero-stat"><strong>20</strong><span>days Sydney to Sydney</span></div>
           <div class="hero-stat"><strong>17</strong><span>US hotel nights</span></div>
@@ -1178,7 +1178,7 @@
               <div class="tag-row" style="margin-top: 16px;">
                 <span class="tag info">SFO arrival transfer</span>
                 <span class="tag good">Car-free San Francisco</span>
-                <span class="tag warn">SFO city pickup to LAX return quote needed</span>
+                <span class="tag warn">SFO city pickup to LAS return quote needed</span>
               </div>
             </div>
           </section>
@@ -1375,789 +1375,201 @@
   <script>
     const tripData = {
       selectedRoute: [
-        { base: "San Francisco", nights: 5, sights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods", transfer: "Fly SYD-SFO", notes: "No car until leaving San Francisco. Avoid July 4 driving." },
-        { base: "Yosemite Valley or Fish Camp", nights: 3, sights: "Yosemite Valley, Glacier Point or Mariposa Grove", transfer: "4-5 hours from San Francisco", notes: "Book lodging early. No day-use reservation is currently required for July 2026, but nonresident fees apply." },
-        { base: "Monterey / Carmel", nights: 3, sights: "Monterey Bay Aquarium, Pacific Grove, Big Sur day trip", transfer: "4.5-5.5 hours from Yosemite", notes: "Break for lunch in the Central Valley or Mariposa." },
-        { base: "Santa Barbara / Montecito", nights: 3, sights: "Hearst Castle en route if timing works, waterfront, courthouse, mission, beach rhythm", transfer: "Full intercity transfer from Monterey/Carmel", notes: "Use the new driving tolerance to skip a one-night midpoint and gain a deeper Santa Barbara stay." },
-        { base: "Los Angeles / Santa Monica", nights: 3, sights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods", transfer: "1.5-2.5 hours to LA", notes: "Depart LAX late on Day 18 to arrive Sydney on Day 20." }
+        { base: "San Francisco", nights: 4, sights: "Golden Gate, Alcatraz, July 4 local day", transfer: "Fly SYD-SFO", notes: "No car until leaving San Francisco. Muir Woods is a fallback swap." },
+        { base: "Yosemite Valley or Fish Camp", nights: 3, sights: "Yosemite Valley, Glacier Point or Mariposa Grove", transfer: "4-5 hours from San Francisco", notes: "Book lodging early; July 5 may still price like holiday week." },
+        { base: "Monterey / Carmel", nights: 2, sights: "Monterey Bay Aquarium, Pacific Grove, Carmel coast", transfer: "4.5-5.5 hours from Yosemite", notes: "Big Sur is now a short optional reach, not a full day." },
+        { base: "Santa Barbara / Montecito", nights: 2, sights: "Waterfront, courthouse, mission, beach rhythm", transfer: "Full intercity transfer from Monterey/Carmel", notes: "Soft coastal pause before LA." },
+        { base: "Los Angeles / Santa Monica", nights: 3, sights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods", transfer: "1.5-2.5 hours from Santa Barbara", notes: "Keep one base and avoid cross-city overloading." },
+        { base: "Las Vegas", nights: 3, sights: "Strip landmarks, hotel pool, Bellagio, one indoor ticketed attraction, optional Red Rock", transfer: "4-5 hours from Los Angeles", notes: "Plan around July heat. Depart LAS if flight quotes work." }
       ],
       mapStops: [
         { id: "sfo", type: "airport", name: "SFO", label: "Arrival airport", dates: "Day 1", nights: "", coords: [37.6213, -122.3790], highlights: "Preferred arrival gateway for Sydney-San Francisco.", transfer: "Fly SYD-SFO." },
-        { id: "sf", type: "base", name: "San Francisco", label: "Arrival and Bay Area", dates: "July 1-6", nights: "5 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Alcatraz, neighborhoods, Muir Woods.", transfer: "No car until leaving San Francisco." },
-        { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 6-9", nights: "3 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, Glacier Point or Mariposa Grove.", transfer: "4-5 hours from San Francisco." },
-        { id: "monterey", type: "base", name: "Monterey / Carmel", label: "Central Coast North", dates: "July 9-12", nights: "3 nights", coords: [36.5552, -121.9233], highlights: "Aquarium, Pacific Grove, Carmel, Big Sur day trip.", transfer: "4.5-5.5 hours from Yosemite." },
-        { id: "santabarbara", type: "base", name: "Santa Barbara / Montecito", label: "Riviera-style coast", dates: "July 12-15", nights: "3 nights", coords: [34.4208, -119.6982], highlights: "Hearst Castle en route if timing works, waterfront, courthouse, mission, beach rhythm.", transfer: "Full intercity transfer from Monterey/Carmel." },
-        { id: "la", type: "base", name: "Los Angeles / Santa Monica", label: "Departure city", dates: "July 15-18", nights: "3 nights", coords: [34.0195, -118.4912], highlights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods.", transfer: "1.5-2.5 hours from Santa Barbara before LA traffic variation." },
-        { id: "lax", type: "airport", name: "LAX", label: "Departure airport", dates: "Day 18", nights: "", coords: [33.9416, -118.4085], highlights: "Preferred return gateway for Los Angeles-Sydney.", transfer: "Return car at LAX on departure day." }
+        { id: "sf", type: "base", name: "San Francisco", label: "Arrival and Bay Area", dates: "July 1-5", nights: "4 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Alcatraz, July 4 local day.", transfer: "No car until leaving San Francisco." },
+        { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 5-8", nights: "3 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, Glacier Point or Mariposa Grove.", transfer: "4-5 hours from San Francisco." },
+        { id: "monterey", type: "base", name: "Monterey / Carmel", label: "Central Coast North", dates: "July 8-10", nights: "2 nights", coords: [36.5552, -121.9233], highlights: "Aquarium, Pacific Grove, Carmel, short scenic coast.", transfer: "4.5-5.5 hours from Yosemite." },
+        { id: "santabarbara", type: "base", name: "Santa Barbara / Montecito", label: "Coastal pause", dates: "July 10-12", nights: "2 nights", coords: [34.4208, -119.6982], highlights: "Waterfront, courthouse, mission, beach rhythm.", transfer: "Full intercity transfer from Monterey/Carmel." },
+        { id: "la", type: "base", name: "Los Angeles / Santa Monica", label: "Southern California", dates: "July 12-15", nights: "3 nights", coords: [34.0195, -118.4912], highlights: "Getty Center, Griffith Observatory, Academy Museum, beach neighborhoods.", transfer: "1.5-2.5 hours from Santa Barbara." },
+        { id: "lv", type: "base", name: "Las Vegas", label: "City-resort finale", dates: "July 15-18", nights: "3 nights", coords: [36.1147, -115.1728], highlights: "Strip landmarks, Bellagio, pool/rest time, one indoor attraction, optional Red Rock.", transfer: "4-5 hours from Los Angeles." },
+        { id: "las", type: "airport", name: "LAS", label: "Departure airport", dates: "Day 18", nights: "", coords: [36.0840, -115.1537], highlights: "Quote LAS-Sydney via a connecting gateway.", transfer: "Return car at LAS on departure day." }
       ],
-      // Keep itinerary data structured so activities, meals, transfers, and logistics can render with different weight.
       days: [
-        {
-          day: 1,
-          date: "Wednesday, July 1",
-          title: "Arrive San Francisco",
-          region: "San Francisco",
-          dayType: "Arrival",
-          sleep: "San Francisco",
-          summary: "Land, clear immigration, and keep the first evening easy.",
-          focus: "Use the day to arrive well and settle into the San Francisco base.",
-          places: [{ name: "San Francisco International Airport", role: "Arrival gateway" }],
-          flow: [
-            { slot: "Morning", kind: "travel", text: "Fly Sydney to San Francisco." },
-            { slot: "Lunch", kind: "meal", text: "In flight or arrival-dependent." },
-            { slot: "Afternoon", kind: "logistics", text: "Clear immigration, transfer by car service or taxi to hotel, unpack." },
-            { slot: "Dinner", kind: "meal", text: "Easy local dinner near the hotel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "San Francisco", tone: "info" },
-            { label: "Driving", value: "None after arrival except airport transfer.", tone: "good" },
-            { label: "Walking", value: "Keep light.", tone: "good" },
-            { label: "Reservation", value: "Airport transfer if arriving with significant luggage and pram.", tone: "warn" }
-          ],
-          backup: "If arrival is delayed, skip dinner booking and eat near the hotel."
-        },
-        {
-          day: 2,
-          date: "Thursday, July 2",
-          title: "Golden Gate and Presidio",
-          region: "San Francisco",
-          dayType: "Sightseeing",
-          sleep: "San Francisco",
-          summary: "Classic San Francisco views without adding car logistics.",
-          focus: "Make the Golden Gate Bridge and Presidio the main experience, then keep the afternoon adjacent and flexible.",
-          places: [
-            { name: "Golden Gate Bridge", role: "Primary" },
-            { name: "Palace of Fine Arts", role: "Secondary" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Golden Gate Bridge viewpoints from Crissy Field or the Presidio." },
-            { slot: "Lunch", kind: "meal", text: "Marina, Presidio, or Fort Mason area." },
-            { slot: "Afternoon", kind: "secondary", text: "Palace of Fine Arts and neighborhood walk." },
-            { slot: "Dinner", kind: "meal", text: "North Beach or Hayes Valley." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "San Francisco", tone: "info" },
-            { label: "Driving", value: "None; use taxis/rideshare/transit.", tone: "good" },
-            { label: "Walking", value: "Moderate and pram-friendly if routes stay near waterfront paths.", tone: "info" },
-            { label: "Reservation", value: "None required.", tone: "good" }
-          ],
-          backup: "Exploratorium if fog, wind, or jet lag makes outdoor time hard."
-        },
-        {
-          day: 3,
-          date: "Friday, July 3",
-          title: "Alcatraz and Ferry Building",
-          region: "San Francisco",
-          dayType: "Sightseeing",
-          sleep: "San Francisco",
-          summary: "Ticketed landmark day with waterfront time afterward.",
-          focus: "Anchor the day around Alcatraz, then use the Ferry Building and Embarcadero as low-friction follow-ons.",
-          places: [
-            { name: "Alcatraz Island", role: "Primary" },
-            { name: "Ferry Building", role: "Lunch / secondary" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Alcatraz Island day tour." },
-            { slot: "Lunch", kind: "meal", text: "Ferry Building." },
-            { slot: "Afternoon", kind: "secondary", text: "Embarcadero, cable car if queues are manageable, or North Beach." },
-            { slot: "Dinner", kind: "meal", text: "Early dinner near hotel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "San Francisco", tone: "info" },
-            { label: "Driving", value: "None.", tone: "good" },
-            { label: "Walking", value: "Moderate.", tone: "info" },
-            { label: "Reservation", value: "Book the official Alcatraz ferry as soon as tickets open.", tone: "warn" }
-          ],
-          backup: "Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable."
-        },
-        {
-          day: 4,
-          date: "Saturday, July 4",
-          title: "San Francisco Local Day",
-          region: "San Francisco",
-          dayType: "Flexible",
-          sleep: "San Francisco",
-          summary: "Holiday-local day designed around jet lag, crowds, and energy.",
-          focus: "Choose one nearby activity and protect rest time on Independence Day.",
-          places: [
-            { name: "Golden Gate Park", role: "Primary option" },
-            { name: "California Academy of Sciences", role: "Indoor option" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "optional", text: "Slow start after jet lag. Choose Golden Gate Park, the California Academy of Sciences, or a neighborhood farmers market." },
-            { slot: "Lunch", kind: "meal", text: "Inner Sunset, Haight, or Ferry Building area depending on the morning choice." },
-            { slot: "Afternoon", kind: "rest", text: "Rest at hotel. Avoid long transfers on Independence Day." },
-            { slot: "Dinner", kind: "meal", text: "Early casual dinner." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "San Francisco", tone: "info" },
-            { label: "Driving", value: "None.", tone: "good" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "Buy museum tickets if choosing California Academy of Sciences.", tone: "warn" }
-          ],
-          backup: "Hotel pool/spa time or indoor museum time."
-        },
-        {
-          day: 5,
-          date: "Sunday, July 5",
-          title: "Muir Woods and Sausalito",
-          region: "San Francisco",
-          dayType: "Sightseeing",
-          sleep: "San Francisco",
-          summary: "Redwoods first, then a waterfront afternoon.",
-          focus: "Use Muir Woods as the core nature moment and make Sausalito the lighter second half.",
-          places: [
-            { name: "Muir Woods National Monument", role: "Primary" },
-            { name: "Sausalito", role: "Secondary" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Muir Woods with a reserved parking or shuttle slot." },
-            { slot: "Lunch", kind: "meal", text: "Mill Valley or Sausalito." },
-            { slot: "Afternoon", kind: "secondary", text: "Sausalito waterfront, then return to San Francisco." },
-            { slot: "Dinner", kind: "meal", text: "San Francisco." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "San Francisco", tone: "info" },
-            { label: "Driving", value: "1.5-2.5 hours total depending on traffic and parking plan.", tone: "info" },
-            { label: "Walking", value: "Light to moderate on accessible redwood boardwalks.", tone: "info" },
-            { label: "Reservation", value: "Muir Woods parking or shuttle reservation is required.", tone: "warn" }
-          ],
-          backup: "Lands End, Presidio Tunnel Tops, or Golden Gate Park if Muir Woods reservations are poor."
-        },
-        {
-          day: 6,
-          date: "Monday, July 6",
-          title: "San Francisco to Yosemite",
-          region: "Yosemite",
-          dayType: "Transfer",
-          sleep: "Yosemite Valley, Fish Camp, or another Yosemite-area base.",
-          summary: "Move bases; any Yosemite walk is a bonus.",
-          focus: "Treat this as a transfer day. The win is arriving calmly at the Yosemite-area lodging.",
-          places: [{ name: "Yosemite Valley", role: "Optional orientation" }],
-          flow: [
-            { slot: "Morning", kind: "transfer", text: "Pick up rental car and leave San Francisco after breakfast." },
-            { slot: "Lunch", kind: "meal", text: "Oakdale, Mariposa, or route-dependent stop." },
-            { slot: "Afternoon", kind: "logistics", text: "Arrive, check in, take a short Yosemite Valley orientation walk if time allows." },
-            { slot: "Dinner", kind: "meal", text: "Hotel or lodge restaurant." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Yosemite Valley, Fish Camp, or another Yosemite-area base.", tone: "info" },
-            { label: "Driving", value: "4-5 hours before stops.", tone: "warn" },
-            { label: "Walking", value: "Light.", tone: "good" },
-            { label: "Reservation", value: "Yosemite-area lodging must be booked early.", tone: "warn" }
-          ],
-          backup: "If traffic is severe, skip Yosemite Valley sightseeing and settle in."
-        },
-        {
-          day: 7,
-          date: "Tuesday, July 7",
-          title: "Yosemite Valley",
-          region: "Yosemite",
-          dayType: "Sightseeing",
-          sleep: "Yosemite area.",
-          summary: "Main Yosemite Valley sightseeing day.",
-          focus: "Prioritize the iconic valley viewpoints, then adjust the afternoon based on heat and family energy.",
-          places: [
-            { name: "Tunnel View Yosemite", role: "Primary" },
-            { name: "Bridalveil Fall", role: "Secondary" },
-            { name: "Lower Yosemite Fall", role: "Optional afternoon" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints." },
-            { slot: "Lunch", kind: "meal", text: "Yosemite Valley." },
-            { slot: "Afternoon", kind: "secondary", text: "Lower Yosemite Fall, meadows, or shuttle-based loop." },
-            { slot: "Dinner", kind: "meal", text: "Lodge or hotel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Yosemite area.", tone: "info" },
-            { label: "Driving", value: "Minimal if staying in the valley; more if staying outside the park.", tone: "info" },
-            { label: "Walking", value: "Moderate and adjustable.", tone: "info" },
-            { label: "Reservation", value: "None for trails; dining may require advance planning.", tone: "info" }
-          ],
-          backup: "Use the free valley shuttle and shorter paved routes if it is hot."
-        },
-        {
-          day: 8,
-          date: "Wednesday, July 8",
-          title: "Mariposa Grove or Glacier Point",
-          region: "Yosemite",
-          dayType: "Flexible",
-          sleep: "Yosemite area.",
-          summary: "Conditions-based Yosemite choice.",
-          focus: "Choose one larger Yosemite outing only after road, shuttle, lodging location, and heat checks.",
-          places: [
-            { name: "Mariposa Grove of Giant Sequoias", role: "Primary option" },
-            { name: "Glacier Point", role: "Alternate option" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "optional", text: "Choose Mariposa Grove if the shuttle is operating and heat is manageable." },
-            { slot: "Lunch", kind: "meal", text: "Wawona, hotel, or packed lunch." },
-            { slot: "Afternoon", kind: "optional", text: "Glacier Point if open and practical, or rest day near the hotel." },
-            { slot: "Dinner", kind: "meal", text: "Hotel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Yosemite area.", tone: "info" },
-            { label: "Driving", value: "1-3 hours depending on base and route.", tone: "info" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "Check road and shuttle status before committing.", tone: "warn" }
-          ],
-          backup: "Yosemite Valley scenic loop, visitor center, and hotel rest."
-        },
-        {
-          day: 9,
-          date: "Thursday, July 9",
-          title: "Yosemite to Monterey / Carmel",
-          region: "Monterey / Carmel",
-          dayType: "Transfer",
-          sleep: "Monterey, Carmel, or Carmel Valley.",
-          summary: "Transfer to the coast; beach time only if the drive lands well.",
-          focus: "Use the day to move from Yosemite to the Monterey/Carmel base without squeezing in major sightseeing.",
-          places: [{ name: "Carmel Beach", role: "Optional arrival walk" }],
-          flow: [
-            { slot: "Morning", kind: "transfer", text: "Depart Yosemite after breakfast." },
-            { slot: "Lunch", kind: "meal", text: "Route stop in the Central Valley or around Gilroy." },
-            { slot: "Afternoon", kind: "logistics", text: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk." },
-            { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Monterey, Carmel, or Carmel Valley.", tone: "info" },
-            { label: "Driving", value: "4.5-5.5 hours before breaks.", tone: "warn" },
-            { label: "Walking", value: "Light.", tone: "good" },
-            { label: "Reservation", value: "Dinner reservation if choosing a popular Carmel restaurant.", tone: "info" }
-          ],
-          backup: "If the drive runs long, skip sunset stops and settle in."
-        },
-        {
-          day: 10,
-          date: "Friday, July 10",
-          title: "Monterey Bay Aquarium",
-          region: "Monterey / Carmel",
-          dayType: "Sightseeing",
-          sleep: "Monterey / Carmel.",
-          summary: "Aquarium anchor day with an adjustable coastal afternoon.",
-          focus: "Make Monterey Bay Aquarium the main event, then keep the afternoon easy and child-friendly.",
-          places: [
-            { name: "Monterey Bay Aquarium", role: "Primary" },
-            { name: "Pacific Grove", role: "Secondary" },
-            { name: "Dennis the Menace Playground", role: "Child-friendly option" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Monterey Bay Aquarium." },
-            { slot: "Lunch", kind: "meal", text: "Cannery Row, Pacific Grove, or hotel." },
-            { slot: "Afternoon", kind: "secondary", text: "Pacific Grove coastal walk, Dennis the Menace Playground, or rest." },
-            { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Monterey / Carmel.", tone: "info" },
-            { label: "Driving", value: "Minimal.", tone: "good" },
-            { label: "Walking", value: "Moderate.", tone: "info" },
-            { label: "Reservation", value: "Buy aquarium tickets ahead once 2026 ticketing is open.", tone: "warn" }
-          ],
-          backup: "If aquarium crowds are heavy, go at opening and move the playground/rest time earlier."
-        },
-        {
-          day: 11,
-          date: "Saturday, July 11",
-          title: "Big Sur Day Trip",
-          region: "Monterey / Carmel",
-          dayType: "Sightseeing",
-          sleep: "Monterey / Carmel.",
-          summary: "Scenic drive day whose exact reach depends on Highway 1 conditions.",
-          focus: "Treat Big Sur as the core experience, with turnaround points decided by traffic, road status, and family energy.",
-          places: [
-            { name: "Big Sur California", role: "Primary scenic area" },
-            { name: "Bixby Bridge", role: "Viewpoint" },
-            { name: "Point Lobos", role: "Optional stop" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Drive south to Big Sur viewpoints." },
-            { slot: "Lunch", kind: "meal", text: "Big Sur or return toward Carmel depending on traffic." },
-            { slot: "Afternoon", kind: "secondary", text: "Bixby Bridge viewpoint, Pfeiffer Big Sur area, or Point Lobos if reservations/parking work." },
-            { slot: "Dinner", kind: "meal", text: "Carmel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Monterey / Carmel.", tone: "info" },
-            { label: "Driving", value: "2-4 hours total depending on how far south the family goes.", tone: "warn" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "None for a simple scenic drive; check state park parking rules if adding hikes.", tone: "info" }
-          ],
-          backup: "17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor."
-        },
-        {
-          day: 12,
-          date: "Sunday, July 12",
-          title: "Monterey to Santa Barbara",
-          region: "Santa Barbara",
-          dayType: "Transfer",
-          sleep: "Santa Barbara or Montecito.",
-          summary: "Full intercity transfer; Hearst Castle is optional, not the point of the day.",
-          focus: "Protect the long coastal move. Add Hearst Castle only if road conditions and tour timing keep the day comfortable.",
-          places: [
-            { name: "Hearst Castle", role: "Optional ticketed stop" },
-            { name: "Santa Barbara", role: "Destination base" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "transfer", text: "Leave Monterey / Carmel after breakfast. Use the coastal drive south if Highway 1 is open and timing works." },
-            { slot: "Lunch", kind: "meal", text: "Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic." },
-            { slot: "Afternoon", kind: "optional", text: "Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in." },
-            { slot: "Dinner", kind: "meal", text: "Santa Barbara or Montecito." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
-            { label: "Driving", value: "Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.", tone: "warn" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "Hearst Castle tour tickets open about 60 days in advance.", tone: "warn" }
-          ],
-          backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive."
-        },
-        {
-          day: 13,
-          date: "Monday, July 13",
-          title: "Santa Barbara Recovery Day",
-          region: "Santa Barbara",
-          dayType: "Recovery",
-          sleep: "Santa Barbara or Montecito.",
-          summary: "Soft landing after the long coastal transfer.",
-          focus: "Keep the day restorative, with sightseeing treated as optional if Day 12 was tiring.",
-          places: [
-            { name: "Santa Barbara Waterfront", role: "Primary easy option" },
-            { name: "Santa Barbara County Courthouse", role: "Optional short visit" },
-            { name: "Old Mission Santa Barbara", role: "Optional short visit" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "rest", text: "Slow start, beach, hotel pool, or waterfront walk." },
-            { slot: "Lunch", kind: "meal", text: "State Street, Funk Zone, or hotel." },
-            { slot: "Afternoon", kind: "optional", text: "Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest." },
-            { slot: "Dinner", kind: "meal", text: "Santa Barbara waterfront or Montecito." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
-            { label: "Driving", value: "Minimal.", tone: "good" },
-            { label: "Walking", value: "Light.", tone: "good" },
-            { label: "Reservation", value: "None required.", tone: "good" }
-          ],
-          backup: "Keep the day almost entirely resort-based if the Day 12 transfer was tiring."
-        },
-        {
-          day: 14,
-          date: "Tuesday, July 14",
-          title: "Santa Barbara",
-          region: "Santa Barbara",
-          dayType: "Flexible",
-          sleep: "Santa Barbara or Montecito.",
-          summary: "Choose one Santa Barbara sight, then keep the day coastal and easy.",
-          focus: "Use this as the main Santa Barbara local day without over-programming it.",
-          places: [
-            { name: "Santa Barbara County Courthouse", role: "Primary option" },
-            { name: "Old Mission Santa Barbara", role: "Alternate option" },
-            { name: "Stearns Wharf", role: "Waterfront option" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "optional", text: "Choose the Santa Barbara County Courthouse, Old Mission Santa Barbara, or a beach morning if not done on Day 13." },
-            { slot: "Lunch", kind: "meal", text: "State Street or Funk Zone." },
-            { slot: "Afternoon", kind: "rest", text: "Beach, pier, hotel pool, or Montecito time." },
-            { slot: "Dinner", kind: "meal", text: "Santa Barbara." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" },
-            { label: "Driving", value: "Minimal.", tone: "good" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "None unless choosing a specific dinner.", tone: "good" }
-          ],
-          backup: "Keep the day almost entirely resort-based if the family needs a rest reset."
-        },
-        {
-          day: 15,
-          date: "Wednesday, July 15",
-          title: "Santa Barbara to Los Angeles",
-          region: "Los Angeles",
-          dayType: "Transfer",
-          sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.",
-          summary: "Move to LA; Getty works only if traffic cooperates.",
-          focus: "Make the base transfer work first. Getty Center is the planned attraction if arrival timing stays comfortable.",
-          places: [
-            { name: "Getty Center", role: "Primary if timing works" },
-            { name: "Santa Monica", role: "Lunch / base option" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "transfer", text: "Drive to Los Angeles after breakfast." },
-            { slot: "Lunch", kind: "meal", text: "Santa Monica or Brentwood." },
-            { slot: "Afternoon", kind: "core", text: "Getty Center." },
-            { slot: "Dinner", kind: "meal", text: "Santa Monica, Brentwood, or hotel." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", tone: "info" },
-            { label: "Driving", value: "1.5-2.5 hours before LA traffic variation.", tone: "warn" },
-            { label: "Walking", value: "Moderate.", tone: "info" },
-            { label: "Reservation", value: "Reserve Getty parking/timed-entry if the museum requires it for the chosen date.", tone: "warn" }
-          ],
-          backup: "If traffic is poor, go straight to the hotel and shift Getty to Day 16."
-        },
-        {
-          day: 16,
-          date: "Thursday, July 16",
-          title: "LA Museums and Everyday City Life",
-          region: "Los Angeles",
-          dayType: "Sightseeing",
-          sleep: "Los Angeles.",
-          summary: "Museum anchor with everyday LA neighborhoods around it.",
-          focus: "Use one museum area as the anchor, then keep the afternoon flexible for rest or a neighborhood walk.",
-          places: [
-            { name: "Academy Museum of Motion Pictures", role: "Primary option" },
-            { name: "Original Farmers Market", role: "Lunch option" },
-            { name: "Rodeo Drive", role: "Optional walk" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Academy Museum of Motion Pictures or La Brea / LACMA area." },
-            { slot: "Lunch", kind: "meal", text: "Original Farmers Market or Beverly Grove." },
-            { slot: "Afternoon", kind: "rest", text: "Rest, Rodeo Drive walk, or neighborhood time." },
-            { slot: "Dinner", kind: "meal", text: "Beverly Hills, West Hollywood, or Santa Monica." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Los Angeles.", tone: "info" },
-            { label: "Driving", value: "1-2 hours total depending on hotel base.", tone: "info" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "Academy Museum tickets if visiting.", tone: "warn" }
-          ],
-          backup: "Petersen Automotive Museum, The Grove, or hotel pool."
-        },
-        {
-          day: 17,
-          date: "Friday, July 17",
-          title: "Griffith Observatory and Hollywood Viewpoints",
-          region: "Los Angeles",
-          dayType: "Sightseeing",
-          sleep: "Los Angeles.",
-          summary: "Recognizable LA viewpoint day before the final dinner.",
-          focus: "Make Griffith and the Hollywood views the main LA icon, then avoid overloading the final full day.",
-          places: [
-            { name: "Griffith Observatory", role: "Primary" },
-            { name: "Hollywood Sign", role: "Viewpoint" }
-          ],
-          flow: [
-            { slot: "Morning", kind: "core", text: "Griffith Observatory / Hollywood Sign viewpoints." },
-            { slot: "Lunch", kind: "meal", text: "Los Feliz, Silver Lake, or Hollywood area." },
-            { slot: "Afternoon", kind: "rest", text: "Rest or beach time." },
-            { slot: "Dinner", kind: "meal", text: "Final LA dinner." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Los Angeles.", tone: "info" },
-            { label: "Driving", value: "1.5-3 hours depending on traffic.", tone: "warn" },
-            { label: "Walking", value: "Light to moderate.", tone: "info" },
-            { label: "Reservation", value: "None for observatory grounds; planetarium shows require tickets and age rules should be checked.", tone: "info" }
-          ],
-          backup: "Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead."
-        },
-        {
-          day: 18,
-          date: "Saturday, July 18",
-          title: "Depart Los Angeles",
-          region: "Los Angeles",
-          dayType: "Departure",
-          sleep: "Overnight flight.",
-          summary: "Protect packing, car return, and LAX buffer.",
-          focus: "Avoid meaningful sightseeing and make the outbound flight logistics calm.",
-          places: [{ name: "Los Angeles International Airport", role: "Departure airport" }],
-          flow: [
-            { slot: "Morning", kind: "logistics", text: "Pack slowly. Avoid major sightseeing." },
-            { slot: "Lunch", kind: "meal", text: "Near hotel." },
-            { slot: "Afternoon", kind: "transfer", text: "Depart for LAX with a large traffic buffer." },
-            { slot: "Dinner", kind: "meal", text: "Airport or lounge." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Overnight flight.", tone: "info" },
-            { label: "Driving", value: "30-90 minutes to LAX depending on hotel location and traffic.", tone: "warn" },
-            { label: "Walking", value: "Light.", tone: "good" },
-            { label: "Reservation", value: "International flight and car return.", tone: "warn" }
-          ],
-          backup: "If the flight leaves very late, reserve late checkout or a day room."
-        },
-        {
-          day: 19,
-          date: "Sunday, July 19",
-          title: "In Transit",
-          region: "Transit",
-          dayType: "Transit",
-          sleep: "In flight.",
-          summary: "Pacific crossing and date-line day.",
-          focus: "This is a flight day only.",
-          places: [],
-          flow: [
-            { slot: "Morning", kind: "travel", text: "Cross the Pacific." },
-            { slot: "Lunch", kind: "meal", text: "In flight." },
-            { slot: "Afternoon", kind: "travel", text: "Cross the date line." },
-            { slot: "Dinner", kind: "meal", text: "In flight." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "In flight.", tone: "info" },
-            { label: "Driving", value: "None.", tone: "good" },
-            { label: "Walking", value: "None.", tone: "good" },
-            { label: "Reservation", value: "None.", tone: "good" }
-          ],
-          backup: "None."
-        },
-        {
-          day: 20,
-          date: "Monday, July 20",
-          title: "Arrive Sydney",
-          region: "Transit",
-          dayType: "Arrival",
-          sleep: "Home.",
-          summary: "Arrive home and recover.",
-          focus: "Keep the post-flight day empty except for getting home and resetting.",
-          places: [{ name: "Sydney Airport", role: "Arrival airport" }],
-          flow: [
-            { slot: "Morning", kind: "travel", text: "Arrive Sydney." },
-            { slot: "Lunch", kind: "meal", text: "Home." },
-            { slot: "Afternoon", kind: "rest", text: "Recovery day." },
-            { slot: "Dinner", kind: "meal", text: "Home." }
-          ],
-          logistics: [
-            { label: "Sleep", value: "Home.", tone: "info" },
-            { label: "Driving", value: "Airport transfer only.", tone: "info" },
-            { label: "Walking", value: "Light.", tone: "good" },
-            { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }
-          ],
-          backup: "None."
-        }
+        { day: 1, date: "Wednesday, July 1", title: "Arrive San Francisco", region: "San Francisco", dayType: "Arrival", sleep: "San Francisco", summary: "Land, clear immigration, and keep the first evening easy.", focus: "Use the day to arrive well and settle into the San Francisco base.", places: [{ name: "San Francisco International Airport", role: "Arrival gateway" }], flow: [{ slot: "Morning", kind: "travel", text: "Fly Sydney to San Francisco." }, { slot: "Afternoon", kind: "logistics", text: "Clear immigration, transfer by car service or taxi to hotel, unpack." }, { slot: "Dinner", kind: "meal", text: "Easy local dinner near the hotel." }], logistics: [{ label: "Sleep", value: "San Francisco", tone: "info" }, { label: "Driving", value: "None after arrival except airport transfer.", tone: "good" }, { label: "Walking", value: "Keep light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if arriving with luggage and pram.", tone: "warn" }], backup: "If arrival is delayed, skip dinner booking and eat near the hotel." },
+        { day: 2, date: "Thursday, July 2", title: "Golden Gate and Presidio", region: "San Francisco", dayType: "Sightseeing", sleep: "San Francisco", summary: "Classic San Francisco views without car logistics.", focus: "Make the Golden Gate Bridge and Presidio the main experience.", places: [{ name: "Golden Gate Bridge", role: "Primary" }, { name: "Palace of Fine Arts", role: "Secondary" }], flow: [{ slot: "Morning", kind: "core", text: "Golden Gate Bridge viewpoints from Crissy Field or the Presidio." }, { slot: "Lunch", kind: "meal", text: "Marina, Presidio, or Fort Mason area." }, { slot: "Afternoon", kind: "secondary", text: "Palace of Fine Arts and neighborhood walk." }, { slot: "Dinner", kind: "meal", text: "North Beach or Hayes Valley." }], logistics: [{ label: "Sleep", value: "San Francisco", tone: "info" }, { label: "Driving", value: "None; use taxis/rideshare/transit.", tone: "good" }, { label: "Walking", value: "Moderate and pram-friendly if routes stay near waterfront paths.", tone: "info" }, { label: "Reservation", value: "None required.", tone: "good" }], backup: "Exploratorium if fog, wind, or jet lag makes outdoor time hard." },
+        { day: 3, date: "Friday, July 3", title: "Alcatraz and Ferry Building", region: "San Francisco", dayType: "Sightseeing", sleep: "San Francisco", summary: "Ticketed landmark day with waterfront time afterward.", focus: "Anchor the day around Alcatraz, then stay near the Embarcadero.", places: [{ name: "Alcatraz Island", role: "Primary" }, { name: "Ferry Building", role: "Lunch / secondary" }], flow: [{ slot: "Morning", kind: "core", text: "Alcatraz Island day tour." }, { slot: "Lunch", kind: "meal", text: "Ferry Building." }, { slot: "Afternoon", kind: "secondary", text: "Embarcadero, cable car if queues are manageable, or North Beach." }, { slot: "Dinner", kind: "meal", text: "Early dinner near hotel." }], logistics: [{ label: "Sleep", value: "San Francisco", tone: "info" }, { label: "Driving", value: "None.", tone: "good" }, { label: "Walking", value: "Moderate.", tone: "info" }, { label: "Reservation", value: "Book the official Alcatraz ferry as soon as tickets open.", tone: "warn" }], backup: "Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable." },
+        { day: 4, date: "Saturday, July 4", title: "San Francisco Local Day", region: "San Francisco", dayType: "Flexible", sleep: "San Francisco", summary: "Holiday-local day designed around jet lag, crowds, and energy.", focus: "Choose one nearby activity and protect rest time.", places: [{ name: "Golden Gate Park", role: "Primary option" }, { name: "California Academy of Sciences", role: "Indoor option" }], flow: [{ slot: "Morning", kind: "optional", text: "Slow start. Choose Golden Gate Park, California Academy of Sciences, or a neighborhood market." }, { slot: "Lunch", kind: "meal", text: "Inner Sunset, Haight, or Ferry Building area." }, { slot: "Afternoon", kind: "rest", text: "Rest at hotel. Avoid long transfers on Independence Day." }, { slot: "Dinner", kind: "meal", text: "Early casual dinner." }], logistics: [{ label: "Sleep", value: "San Francisco", tone: "info" }, { label: "Driving", value: "None.", tone: "good" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Museum tickets only if choosing California Academy of Sciences.", tone: "warn" }], backup: "Muir Woods can replace this only if the family prefers redwoods over a slower holiday day." },
+        { day: 5, date: "Sunday, July 5", title: "San Francisco to Yosemite", region: "Yosemite", dayType: "Transfer", sleep: "Yosemite area.", summary: "Pick up the car and move to the Yosemite base.", focus: "Make the transfer comfortable; any valley walk is a bonus.", places: [{ name: "Yosemite Valley", role: "Optional orientation" }], flow: [{ slot: "Morning", kind: "transfer", text: "Pick up rental car and leave San Francisco after breakfast." }, { slot: "Lunch", kind: "meal", text: "Oakdale, Mariposa, or route-dependent stop." }, { slot: "Afternoon", kind: "logistics", text: "Arrive, check in, take a short Yosemite Valley orientation walk if time allows." }, { slot: "Dinner", kind: "meal", text: "Hotel or lodge restaurant." }], logistics: [{ label: "Sleep", value: "Yosemite Valley, Fish Camp, or another Yosemite-area base.", tone: "info" }, { label: "Driving", value: "4-5 hours before stops.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Yosemite-area lodging must be booked early.", tone: "warn" }], backup: "If traffic is severe, skip Yosemite Valley sightseeing and settle in." },
+        { day: 6, date: "Monday, July 6", title: "Yosemite Valley", region: "Yosemite", dayType: "Sightseeing", sleep: "Yosemite area.", summary: "Main Yosemite Valley sightseeing day.", focus: "Prioritize iconic valley viewpoints, then adjust for heat and energy.", places: [{ name: "Tunnel View Yosemite", role: "Primary" }, { name: "Bridalveil Fall", role: "Secondary" }, { name: "Lower Yosemite Fall", role: "Optional afternoon" }], flow: [{ slot: "Morning", kind: "core", text: "Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints." }, { slot: "Lunch", kind: "meal", text: "Yosemite Valley." }, { slot: "Afternoon", kind: "secondary", text: "Lower Yosemite Fall, meadows, or shuttle-based loop." }, { slot: "Dinner", kind: "meal", text: "Lodge or hotel." }], logistics: [{ label: "Sleep", value: "Yosemite area.", tone: "info" }, { label: "Driving", value: "Minimal if staying in the valley; more if outside.", tone: "info" }, { label: "Walking", value: "Moderate and adjustable.", tone: "info" }, { label: "Reservation", value: "Dining may require advance planning.", tone: "info" }], backup: "Use the free valley shuttle and shorter paved routes if it is hot." },
+        { day: 7, date: "Tuesday, July 7", title: "Mariposa Grove or Glacier Point", region: "Yosemite", dayType: "Flexible", sleep: "Yosemite area.", summary: "Conditions-based Yosemite choice.", focus: "Choose one larger outing only after road, shuttle, lodging, and heat checks.", places: [{ name: "Mariposa Grove of Giant Sequoias", role: "Primary option" }, { name: "Glacier Point", role: "Alternate option" }], flow: [{ slot: "Morning", kind: "optional", text: "Choose Mariposa Grove if the shuttle is operating and heat is manageable." }, { slot: "Lunch", kind: "meal", text: "Wawona, hotel, or packed lunch." }, { slot: "Afternoon", kind: "optional", text: "Glacier Point if open and practical, or rest near the hotel." }, { slot: "Dinner", kind: "meal", text: "Hotel." }], logistics: [{ label: "Sleep", value: "Yosemite area.", tone: "info" }, { label: "Driving", value: "1-3 hours depending on base and route.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Check road and shuttle status before committing.", tone: "warn" }], backup: "Yosemite Valley scenic loop, visitor center, and hotel rest." },
+        { day: 8, date: "Wednesday, July 8", title: "Yosemite to Monterey / Carmel", region: "Monterey / Carmel", dayType: "Transfer", sleep: "Monterey, Carmel, or Carmel Valley.", summary: "Transfer to the coast; beach time only if the drive lands well.", focus: "Move from Yosemite to the Monterey/Carmel base without squeezing in major sightseeing.", places: [{ name: "Carmel Beach", role: "Optional arrival walk" }], flow: [{ slot: "Morning", kind: "transfer", text: "Depart Yosemite after breakfast." }, { slot: "Lunch", kind: "meal", text: "Route stop in the Central Valley or around Gilroy." }, { slot: "Afternoon", kind: "logistics", text: "Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk." }, { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }], logistics: [{ label: "Sleep", value: "Monterey, Carmel, or Carmel Valley.", tone: "info" }, { label: "Driving", value: "4.5-5.5 hours before breaks.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Dinner reservation if choosing a popular Carmel restaurant.", tone: "info" }], backup: "If the drive runs long, skip sunset stops and settle in." },
+        { day: 9, date: "Thursday, July 9", title: "Monterey Bay Aquarium and Carmel Coast", region: "Monterey / Carmel", dayType: "Sightseeing", sleep: "Monterey / Carmel.", summary: "Aquarium anchor day with an adjustable coast afternoon.", focus: "Make Monterey Bay Aquarium the main event, then keep the afternoon easy.", places: [{ name: "Monterey Bay Aquarium", role: "Primary" }, { name: "Pacific Grove", role: "Secondary" }, { name: "Carmel Beach", role: "Optional coast" }], flow: [{ slot: "Morning", kind: "core", text: "Monterey Bay Aquarium." }, { slot: "Lunch", kind: "meal", text: "Cannery Row, Pacific Grove, or hotel." }, { slot: "Afternoon", kind: "secondary", text: "Pacific Grove, Dennis the Menace Playground, Carmel Beach, or short Big Sur reach if conditions allow." }, { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }], logistics: [{ label: "Sleep", value: "Monterey / Carmel.", tone: "info" }, { label: "Driving", value: "Minimal unless adding a short Big Sur scenic drive.", tone: "good" }, { label: "Walking", value: "Moderate.", tone: "info" }, { label: "Reservation", value: "Buy aquarium tickets ahead once 2026 ticketing is open.", tone: "warn" }], backup: "Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
+        { day: 10, date: "Friday, July 10", title: "Monterey to Santa Barbara", region: "Santa Barbara", dayType: "Transfer", sleep: "Santa Barbara or Montecito.", summary: "Full intercity transfer; Hearst Castle is optional.", focus: "Protect the long coastal move. Add Hearst Castle only if timing stays comfortable.", places: [{ name: "Hearst Castle", role: "Optional ticketed stop" }, { name: "Santa Barbara", role: "Destination base" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Monterey / Carmel after breakfast. Use the coastal drive only if Highway 1 is practical." }, { slot: "Lunch", kind: "meal", text: "Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez." }, { slot: "Afternoon", kind: "optional", text: "Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara." }, { slot: "Dinner", kind: "meal", text: "Santa Barbara or Montecito." }], logistics: [{ label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" }, { label: "Driving", value: "Full intercity transfer day; verify current timing.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Hearst Castle tickets open about 60 days in advance.", tone: "warn" }], backup: "Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails." },
+        { day: 11, date: "Saturday, July 11", title: "Santa Barbara Recovery Day", region: "Santa Barbara", dayType: "Recovery", sleep: "Santa Barbara or Montecito.", summary: "Soft landing after the long coastal transfer.", focus: "Keep the day restorative; sightseeing is optional.", places: [{ name: "Santa Barbara Waterfront", role: "Primary easy option" }, { name: "Santa Barbara County Courthouse", role: "Optional short visit" }, { name: "Old Mission Santa Barbara", role: "Optional short visit" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow start, beach, hotel pool, or waterfront walk." }, { slot: "Lunch", kind: "meal", text: "State Street, Funk Zone, or hotel." }, { slot: "Afternoon", kind: "optional", text: "Courthouse, mission, or rest." }, { slot: "Dinner", kind: "meal", text: "Santa Barbara waterfront or Montecito." }], logistics: [{ label: "Sleep", value: "Santa Barbara or Montecito.", tone: "info" }, { label: "Driving", value: "Minimal.", tone: "good" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "None required.", tone: "good" }], backup: "Keep the day almost entirely resort-based if the Day 10 transfer was tiring." },
+        { day: 12, date: "Sunday, July 12", title: "Santa Barbara to Los Angeles", region: "Los Angeles", dayType: "Transfer", sleep: "Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.", summary: "Move to LA; Getty works only if traffic cooperates.", focus: "Make the base transfer work first.", places: [{ name: "Getty Center", role: "Primary if timing works" }, { name: "Santa Monica", role: "Lunch / base option" }], flow: [{ slot: "Morning", kind: "transfer", text: "Drive to Los Angeles after breakfast." }, { slot: "Lunch", kind: "meal", text: "Santa Monica or Brentwood." }, { slot: "Afternoon", kind: "optional", text: "Getty Center if traffic cooperates; otherwise check in and rest." }, { slot: "Dinner", kind: "meal", text: "Santa Monica, Brentwood, or hotel." }], logistics: [{ label: "Sleep", value: "Los Angeles.", tone: "info" }, { label: "Driving", value: "1.5-2.5 hours before LA traffic variation.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Reserve Getty parking/timed-entry if required.", tone: "warn" }], backup: "If traffic is poor, shift Getty to Day 13." },
+        { day: 13, date: "Monday, July 13", title: "LA Museums and Everyday City Life", region: "Los Angeles", dayType: "Sightseeing", sleep: "Los Angeles.", summary: "Museum anchor with everyday LA neighborhoods around it.", focus: "Use one museum area as the anchor, then keep the afternoon flexible.", places: [{ name: "Academy Museum of Motion Pictures", role: "Primary option" }, { name: "Original Farmers Market", role: "Lunch option" }, { name: "Petersen Automotive Museum", role: "Backup / dad-friendly option" }], flow: [{ slot: "Morning", kind: "core", text: "Academy Museum or La Brea / LACMA area." }, { slot: "Lunch", kind: "meal", text: "Original Farmers Market or Beverly Grove." }, { slot: "Afternoon", kind: "rest", text: "Rest, Rodeo Drive walk, Petersen, or neighborhood time." }, { slot: "Dinner", kind: "meal", text: "Beverly Hills, West Hollywood, or Santa Monica." }], logistics: [{ label: "Sleep", value: "Los Angeles.", tone: "info" }, { label: "Driving", value: "1-2 hours total depending on hotel base.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Academy Museum tickets if visiting.", tone: "warn" }], backup: "Getty Center if Day 12 traffic made it impractical." },
+        { day: 14, date: "Tuesday, July 14", title: "Griffith Observatory and Hollywood Viewpoints", region: "Los Angeles", dayType: "Sightseeing", sleep: "Los Angeles.", summary: "Recognizable LA viewpoint day before the desert transfer.", focus: "Make Griffith and the Hollywood views the main LA icon.", places: [{ name: "Griffith Observatory", role: "Primary" }, { name: "Hollywood Sign", role: "Viewpoint" }], flow: [{ slot: "Morning", kind: "core", text: "Griffith Observatory / Hollywood Sign viewpoints." }, { slot: "Lunch", kind: "meal", text: "Los Feliz, Silver Lake, or Hollywood area." }, { slot: "Afternoon", kind: "rest", text: "Rest or beach time." }, { slot: "Dinner", kind: "meal", text: "Los Angeles." }], logistics: [{ label: "Sleep", value: "Los Angeles.", tone: "info" }, { label: "Driving", value: "1.5-3 hours depending on traffic.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Planetarium shows require tickets and age checks.", tone: "info" }], backup: "Skip Hollywood Boulevard if it feels too crowded." },
+        { day: 15, date: "Wednesday, July 15", title: "Los Angeles to Las Vegas", region: "Las Vegas", dayType: "Transfer", sleep: "Las Vegas.", summary: "Desert transfer and easy first Las Vegas evening.", focus: "Arrive without turning the first Vegas night into a marathon.", places: [{ name: "Las Vegas Strip", role: "Arrival area" }, { name: "Fountains of Bellagio", role: "Easy evening option" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Los Angeles after breakfast and drive toward Las Vegas." }, { slot: "Lunch", kind: "meal", text: "Route-dependent practical stop." }, { slot: "Afternoon", kind: "logistics", text: "Check in, rest, pool time, or indoor hotel exploration." }, { slot: "Evening", kind: "secondary", text: "Bellagio fountains or an easy Strip lights walk if everyone has energy." }], logistics: [{ label: "Sleep", value: "Las Vegas.", tone: "info" }, { label: "Driving", value: "About 4-5 hours before stops, with heat and traffic buffers.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Confirm resort fee, parking, pool access, and room occupancy.", tone: "warn" }], backup: "If the drive runs long or heat is severe, skip the Strip walk." },
+        { day: 16, date: "Thursday, July 16", title: "Las Vegas Strip Family Day", region: "Las Vegas", dayType: "Sightseeing", sleep: "Las Vegas.", summary: "Indoor, pool, and evening Strip day designed for July heat.", focus: "Choose one paid anchor and leave room for free sights.", places: [{ name: "Bellagio Conservatory", role: "Free / indoor option" }, { name: "Sphere", role: "Ticketed option" }, { name: "High Roller Observation Wheel", role: "Ticketed option" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight." }, { slot: "Lunch", kind: "meal", text: "Food hall, casual resort dining, or nearby mall dining." }, { slot: "Afternoon", kind: "core", text: "Rest during peak heat. Choose one indoor attraction or family-appropriate show." }, { slot: "Evening", kind: "secondary", text: "Fountains, High Roller, or a short Strip walk if temperatures and crowds are manageable." }], logistics: [{ label: "Sleep", value: "Las Vegas.", tone: "info" }, { label: "Driving", value: "Minimal if staying on or near the Strip.", tone: "good" }, { label: "Walking", value: "Light to moderate, with rideshare/monorail backup.", tone: "info" }, { label: "Reservation", value: "Book only one ticketed attraction or show for the day.", tone: "warn" }], backup: "If attraction prices are poor, make this a pool-and-free-sights day." },
+        { day: 17, date: "Friday, July 17", title: "Red Rock or Las Vegas Flex Day", region: "Las Vegas", dayType: "Flexible", sleep: "Las Vegas.", summary: "Optional early desert nature or a recovery-focused Vegas day.", focus: "Keep the last full day flexible and heat-aware.", places: [{ name: "Red Rock Canyon", role: "Optional early drive" }, { name: "Las Vegas Strip", role: "Fallback / final evening" }], flow: [{ slot: "Morning", kind: "optional", text: "Optional early Red Rock Canyon scenic drive only if heat is manageable; otherwise pool time." }, { slot: "Lunch", kind: "meal", text: "Return to hotel or casual indoor lunch." }, { slot: "Afternoon", kind: "rest", text: "Rest, packing buffer, indoor attraction, or low-key shopping near hotel." }, { slot: "Evening", kind: "meal", text: "Final Las Vegas dinner and one last easy landmark." }], logistics: [{ label: "Sleep", value: "Las Vegas.", tone: "info" }, { label: "Driving", value: "1.5-3 hours if adding Red Rock; minimal otherwise.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Red Rock reservations are not required in July, but re-check conditions.", tone: "info" }], backup: "Treat the day as hotel/pool recovery if the desert heat is too high." },
+        { day: 18, date: "Saturday, July 18", title: "Depart Las Vegas", region: "Las Vegas", dayType: "Departure", sleep: "Overnight flight.", summary: "Protect packing, car return, LAS, and connection buffers.", focus: "Avoid meaningful sightseeing and make outbound logistics calm.", places: [{ name: "Harry Reid International Airport", role: "Departure airport" }], flow: [{ slot: "Morning", kind: "logistics", text: "Pack slowly. Avoid major sightseeing." }, { slot: "Lunch", kind: "meal", text: "Near hotel." }, { slot: "Afternoon", kind: "transfer", text: "Return rental car at LAS and begin the return trip via the booked connecting gateway." }, { slot: "Dinner", kind: "meal", text: "Airport or in flight." }], logistics: [{ label: "Sleep", value: "Overnight flight.", tone: "info" }, { label: "Driving", value: "15-45 minutes to LAS depending on hotel location and traffic.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "International itinerary, connection buffer, and car return.", tone: "warn" }], backup: "If the flight leaves very late, reserve late checkout or a day room." },
+        { day: 19, date: "Sunday, July 19", title: "In Transit", region: "Transit", dayType: "Transit", sleep: "In flight.", summary: "Pacific crossing and date-line day.", focus: "This is a flight day only.", places: [], flow: [{ slot: "Morning", kind: "travel", text: "Cross the Pacific." }, { slot: "Afternoon", kind: "travel", text: "Cross the date line." }, { slot: "Dinner", kind: "meal", text: "In flight." }], logistics: [{ label: "Sleep", value: "In flight.", tone: "info" }, { label: "Driving", value: "None.", tone: "good" }, { label: "Walking", value: "None.", tone: "good" }, { label: "Reservation", value: "None.", tone: "good" }], backup: "None." },
+        { day: 20, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home.", summary: "Arrive home and recover.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive Sydney." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, { slot: "Dinner", kind: "meal", text: "Home." }], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Driving", value: "Airport transfer only.", tone: "info" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
       ],
       lodgingStrategy: [
-        "Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.",
-        "Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.",
-        "Treat a confirmed single room or suite for two adults, one teen, and one two-year-old as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.",
-        "Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.",
-        "Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.",
+        "Book locations before optimizing hotel brand.",
+        "Target comfortable, well-located family hotels at USD $200-$250 per night; do not exceed $250 without explicit approval.",
+        "Treat a confirmed single room or suite for all four travelers as a key requirement.",
+        "In Las Vegas, compare the full stay cost including resort fees, taxes, parking, pool access, and extra-person fees.",
         "Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking."
       ],
       bases: [
-        { base: "San Francisco", nights: 5, area: "Nob Hill, Embarcadero, Union Square edge, or SoMa near transit", fit: "No-car start, easy airport transfer, access to Alcatraz and waterfront", watch: "Avoid car parking here; city hotel rooms may be small for four." },
-        { base: "Yosemite", nights: 3, area: "Yosemite Valley first; Fish Camp / Oakhurst area second", fit: "Staying inside or near the park reduces daily driving", watch: "July availability and the $250/night cap may force a farther base." },
-        { base: "Monterey / Carmel", nights: 3, area: "Carmel-by-the-Sea, Carmel Valley, Pebble Beach, or Monterey waterfront", fit: "Aquarium, Pacific Grove, Big Sur day trip", watch: "Beach-area parking and summer rates can be difficult." },
-        { base: "Santa Barbara / Montecito", nights: 3, area: "Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well", fit: "Relaxed family pacing after the longer coastal transfer", watch: "High July rates and minimum-stay rules may make nearby towns better value." },
-        { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, or West Hollywood", fit: "Good access to Getty, Griffith, museums, beach, and LAX", watch: "LA traffic makes base choice important." }
+        { base: "San Francisco", nights: 4, area: "Nob Hill, Embarcadero, Union Square edge, or SoMa near transit", fit: "No-car start, airport transfer, Alcatraz, waterfront, July 4 local day", watch: "Avoid car parking; city hotel rooms may be small for four." },
+        { base: "Yosemite", nights: 3, area: "Yosemite Valley first; Fish Camp / Oakhurst area second", fit: "Staying inside or near the park reduces daily driving", watch: "Availability and the $250/night cap may force a farther base." },
+        { base: "Monterey / Carmel", nights: 2, area: "Carmel, Monterey, Pacific Grove, Seaside, or Carmel Valley", fit: "Aquarium, Pacific Grove, Carmel, short scenic coast", watch: "Two nights leaves little margin." },
+        { base: "Santa Barbara / Montecito", nights: 2, area: "Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well", fit: "Soft coastal pause before LA", watch: "High July rates and minimum-stay rules." },
+        { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, West Hollywood, Culver City, or Brentwood", fit: "Getty, Griffith, museums, beach, and the Las Vegas transfer route", watch: "Traffic makes base choice important." },
+        { base: "Las Vegas", nights: 3, area: "Center Strip family-friendly resort first; quieter non-gaming or off-Strip base second", fit: "Strip landmarks, pool/rest time, indoor attractions, and LAS departure", watch: "Resort fees, parking, smoky casino paths, heat, and occupancy rules." }
       ],
       hotels: [
-        { base: "San Francisco", checks: "Rate-filtered family rooms near Nob Hill, Embarcadero, Union Square edge, or SoMa", why: "No-car logistics and transit access matter more than brand", status: "Needs live one-room family occupancy and $200-$250/night quote" },
-        { base: "Yosemite", checks: "Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels", why: "Park access matters, but the $250/night cap is binding", status: "Needs immediate availability and rate check" },
-        { base: "Monterey / Carmel", checks: "Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, or Seaside", why: "Family room size and coastal access matter more than brand positioning", status: "Needs live one-room family occupancy and $200-$250/night quote" },
-        { base: "Fallback Central Coast midpoint", checks: "Rate-filtered family rooms in San Luis Obispo, Cambria, or Paso Robles", why: "Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full", status: "Quote only if needed and within cap" },
-        { base: "Santa Barbara / Montecito", checks: "Rate-filtered family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito", why: "Three nights should preserve rest without breaking the hotel cap", status: "Needs live one-room family occupancy and $200-$250/night quote" },
-        { base: "Los Angeles", checks: "Rate-filtered family rooms in Santa Monica, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent if value requires it", why: "Choose based on beach vs. museum access, traffic, and total stay cost", status: "Needs live one-room family occupancy and $200-$250/night quote" }
+        { base: "San Francisco", checks: "Rate-filtered family rooms near Nob Hill, Embarcadero, Union Square edge, or SoMa", why: "No-car logistics and transit access matter more than brand", status: "Needs live quote" },
+        { base: "Yosemite", checks: "Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa", why: "Park access matters, but the cap is binding", status: "Needs July 5-8 availability check" },
+        { base: "Monterey / Carmel", checks: "Family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley", why: "Family room size and coastal access matter more than brand", status: "Needs live quote" },
+        { base: "Santa Barbara / Montecito", checks: "Family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito", why: "Two nights should provide rest without breaking the cap", status: "Needs live quote" },
+        { base: "Los Angeles", checks: "Santa Monica, Beverly Hills-adjacent, West Hollywood, Culver City, Brentwood, or value LAX-adjacent", why: "Choose based on traffic, beach/museum access, and Las Vegas transfer comfort", status: "Needs live quote" },
+        { base: "Las Vegas", checks: "Center Strip resorts, non-gaming suite options, or off-Strip value suites", why: "Total stay cost and family comfort matter more than headline rate", status: "Needs quote with resort fees, taxes, parking, and occupancy" }
       ],
       transportPlan: [
         "Fly Sydney to San Francisco.",
-        "Stay car-free in San Francisco for the first five nights.",
-        "Pick up a rental car on Day 6 when leaving San Francisco.",
-        "Use the car for Yosemite, the Central Coast, Santa Barbara, and Los Angeles.",
-        "Return the car at LAX on departure day.",
-        "Fly Los Angeles to Sydney late on Day 18 if the July 1-20 window is fixed."
+        "Stay car-free in San Francisco for the first four nights.",
+        "Pick up a rental car on Day 5 when leaving San Francisco.",
+        "Use the car for Yosemite, the Central Coast, Santa Barbara, Los Angeles, and Las Vegas.",
+        "Return the car at LAS on departure day if the Las Vegas return itinerary is booked.",
+        "Fly Las Vegas to Sydney via a connecting gateway on Day 18; compare against LAX-Sydney as a fallback."
       ],
       budget: [
-        { category: "International flights", low: "AU$8,600", target: "AU$14,000", high: "AU$35,000+", basis: "United search result showed Sydney-San Francisco July round trips from about AU$2,159 per person; exact open-jaw fare must be quoted.", weight: 40 },
-        { category: "Lodging, 17 nights", low: "$3,400", target: "$3,825", high: "$4,250", basis: "$200-$250 per night across SF, Yosemite, Carmel/Monterey, Santa Barbara, and LA; do not exceed $250/night without explicit approval.", weight: 46 },
-        { category: "Rental car, fuel, parking, tolls", low: "$2,000", target: "$3,500", high: "$6,000", basis: "SUV rental, one-way drop, hotel valet parking, fuel, and buffers; needs live quote.", weight: 48 },
-        { category: "Attractions and tours", low: "$600", target: "$1,000", high: "$1,600", basis: "Includes Alcatraz, Muir Woods, aquarium, Hearst Castle, museums, and parking.", weight: 22 },
-        { category: "Food", low: "$4,500", target: "$6,500", high: "$10,000", basis: "$265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, and mixed dinners.", weight: 58 },
-        { category: "Airport transfers and local transit", low: "$500", target: "$1,000", high: "$1,800", basis: "SFO transfer, taxis/rideshare in SF and LA, luggage-friendly transfers.", weight: 20 },
+        { category: "International flights", low: "AU$8,600", target: "AU$14,500", high: "AU$36,000+", basis: "Exact open-jaw SYD-SFO / LAS-SYD fare must be quoted and compared with LAX-SYD.", weight: 42 },
+        { category: "Lodging, 17 nights", low: "$3,400", target: "$3,825", high: "$4,250", basis: "$200-$250 per night across SF, Yosemite, Monterey/Carmel, Santa Barbara, LA, and Las Vegas.", weight: 46 },
+        { category: "Rental car, fuel, parking, tolls", low: "$2,200", target: "$4,000", high: "$6,500", basis: "SUV rental, SFO-to-LAS one-way drop, hotel parking, fuel, and desert-route buffers.", weight: 52 },
+        { category: "Attractions and tours", low: "$800", target: "$1,400", high: "$2,400", basis: "Adds one Las Vegas ticketed attraction/show and Red Rock if used.", weight: 32 },
+        { category: "Food", low: "$4,500", target: "$6,500", high: "$10,000", basis: "Family planning allowance with casual meals, food halls, and mixed dinners.", weight: 58 },
+        { category: "Airport transfers and local transit", low: "$500", target: "$1,100", high: "$2,000", basis: "SFO transfer, rideshare/transit in cities, and Las Vegas Strip mobility.", weight: 22 },
         { category: "Travel insurance, mobile data, documents", low: "$600", target: "$1,200", high: "$2,500", basis: "Needs family policy quote and phone plan choice.", weight: 24 },
-        { category: "Buffer", low: "$3,000", target: "$5,000", high: "$10,000", basis: "Keep a separate buffer because July lodging, parking, and holiday-week pricing are volatile; do not use it to exceed the hotel cap without approval.", weight: 52 }
+        { category: "Buffer", low: "$3,000", target: "$5,500", high: "$10,500", basis: "July lodging, parking, resort fees, show pricing, and holiday-week volatility.", weight: 56 }
       ],
       attractions: [
         { item: "Alcatraz day tour", note: "Two adults, one youth, one child under 5", anchor: "$143.85" },
-        { item: "Muir Woods", note: "Two adult entrance fees plus one standard parking reservation; children under 16 free", anchor: "$39.50" },
-        { item: "Monterey Bay Aquarium", note: "Two adults plus one youth; the younger child is outside the adult/youth paid bands", anchor: "$180+" },
-        { item: "Hearst Castle", note: "Two adults, one child age 5-12 band does not apply to the younger child; tour choice can change cost", anchor: "$70+" },
-        { item: "Getty Center", note: "Admission is free but timed-entry reservation and parking apply", anchor: "$25 parking, less after 3pm" },
-        { item: "Academy Museum", note: "Two adults; children 17 and under free for museum admission", anchor: "$50 before parking or add-ons" }
+        { item: "Monterey Bay Aquarium", note: "Two adults plus one youth; the younger child is outside adult/youth paid bands", anchor: "$180+" },
+        { item: "Hearst Castle, if transfer timing works", note: "Tour choice can change cost", anchor: "$70+" },
+        { item: "Getty Center", note: "Admission is free but timed-entry reservation and parking apply", anchor: "$25 parking" },
+        { item: "Academy Museum", note: "Children 17 and under free for museum admission", anchor: "$50 before parking/add-ons" },
+        { item: "Bellagio fountains and conservatory", note: "Free Strip landmark option; schedule can vary", anchor: "$0" },
+        { item: "Las Vegas ticketed attraction or show", note: "Choose one after age, price, timing, and refund checks", anchor: "Needs live quote" },
+        { item: "Red Rock Canyon, if used", note: "Early-morning scenic drive; re-check entry and heat", anchor: "Needs live quote" }
       ],
       costControls: [
         "Keep San Francisco car-free to avoid parking charges and city driving.",
         "Book Yosemite lodging first; a poor location creates more driving and less park time.",
-        "Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.",
-        "Use the direct Monterey-to-Santa Barbara transfer to avoid a one-night midpoint hotel unless live road or tour timing makes the fallback worthwhile.",
-        "Choose one Los Angeles base and avoid cross-city sightseeing on the same day.",
-        "Treat San Diego as an extension, not a free add-on."
+        "Compare Las Vegas total stay cost with resort fees and parking included.",
+        "Choose only one Las Vegas paid attraction or show until live prices are known.",
+        "Treat San Diego and Grand Canyon as extensions, not free add-ons."
       ],
       quoteTasks: [
-        "Quote flights for July 1 departure from Sydney and July 18 or July 19 departure from Los Angeles.",
-        "Quote Yosemite lodging immediately for July 6-9.",
-        "Quote one-room family configurations in each base within the USD $200-$250 nightly target before committing to exact dates or hotel brands.",
-        "Quote rental car SFO city pickup to LAX return for July 6-18.",
-        "Rebuild the budget with actual booking quotes before paying nonrefundable deposits."
+        "Quote SYD-SFO and LAS-SYD via a connecting gateway for July 1 and July 18.",
+        "Compare LAS return against LAX-SYD before nonrefundable deposits.",
+        "Quote Yosemite lodging for July 5-8.",
+        "Quote one-room family configurations in each base within the $200-$250 nightly target.",
+        "Quote Las Vegas hotels with resort fees, taxes, parking, pool access, and occupancy included.",
+        "Quote rental car SFO city pickup to LAS return for July 5-18."
       ],
       bookingTasks: [
-        { task: "Confirm final trip dates", when: "Now", owner: "Alexey / Ana", notes: "Decide July 1-20 Sydney-to-Sydney or extend to July 21 for one extra US night.", status: "Open" },
-        { task: "Check ESTA eligibility for all travelers", when: "Now", owner: "Alexey / Ana", notes: "Do this before paying nonrefundable bookings.", status: "Open" },
-        { task: "Quote flights", when: "Now", owner: "Alexey / Ana", notes: "Price SYD-SFO and LAX-SYD, plus one-day date shifts.", status: "Open" },
-        { task: "Hold or book Yosemite lodging", when: "Now", owner: "Alexey / Ana", notes: "This is the hardest lodging constraint.", status: "Open" },
-        { task: "Quote one-room family lodging in each base", when: "Now", owner: "Alexey / Ana", notes: "Confirm one room or suite for all four at USD $200-$250 per night before comparing brands.", status: "Open" },
-        { task: "Quote rental car", when: "After flights are held", owner: "Alexey / Ana", notes: "SFO city pickup on July 6, LAX return on July 18.", status: "Open" }
+        { task: "Confirm final trip dates", when: "Now", owner: "Travelers", notes: "Use July 1-20 Sydney-to-Sydney for the first quote round.", status: "Open" },
+        { task: "Confirm Las Vegas finale", when: "Now", owner: "Travelers", notes: "Current primary plan gives Las Vegas 3 nights and departs via LAS.", status: "Open" },
+        { task: "Check ESTA eligibility", when: "Now", owner: "Travelers", notes: "Do this before nonrefundable bookings.", status: "Open" },
+        { task: "Quote flights", when: "Now", owner: "Travelers", notes: "Price SYD-SFO and LAS-SYD; compare LAX-SYD fallback.", status: "Open" },
+        { task: "Hold or book Yosemite lodging", when: "Now", owner: "Travelers", notes: "Check July 5-8.", status: "Open" },
+        { task: "Quote Las Vegas lodging total cost", when: "Now", owner: "Travelers", notes: "Include resort fees, taxes, parking, occupancy, pool access, and cancellation terms.", status: "Open" },
+        { task: "Quote rental car", when: "After flights are held", owner: "Travelers", notes: "SFO city pickup July 5, LAS return July 18.", status: "Open" }
       ],
       timedTickets: [
         { task: "Alcatraz day tour", timing: "As soon as July 2026 tickets open", notes: "Use official Alcatraz City Cruises only.", status: "Open" },
-        { task: "Muir Woods parking or shuttle", timing: "As soon as plan is fixed", notes: "Reservation is required before arrival.", status: "Open" },
         { task: "Monterey Bay Aquarium", timing: "When July 2026 tickets are available", notes: "Prefer opening-time entry.", status: "Open" },
-        { task: "Hearst Castle", timing: "About 60 days before July 12", notes: "Choose tour time only if it fits the longer Monterey-to-Santa Barbara transfer day.", status: "Open" },
-        { task: "Getty Center", timing: "When July 2026 calendar is available", notes: "Check parking and any timed-entry rules.", status: "Open" },
-        { task: "Academy Museum", timing: "When July 2026 calendar is available", notes: "Keep as flexible LA museum day.", status: "Open" }
+        { task: "Hearst Castle", timing: "About 60 days before July 10", notes: "Only if it fits the transfer day.", status: "Open" },
+        { task: "Getty Center", timing: "When July 2026 calendar is available", notes: "Check parking and timed-entry rules.", status: "Open" },
+        { task: "Academy Museum", timing: "When July 2026 calendar is available", notes: "Keep as flexible LA museum day.", status: "Open" },
+        { task: "Las Vegas ticketed attraction/show", timing: "After hotel and flights are held", notes: "Choose only one paid anchor at first.", status: "Open" },
+        { task: "Red Rock Canyon, if used", timing: "Week before travel and morning of Day 17", notes: "Re-check entry rules, parking, weather, and closures.", status: "Open" }
       ],
       preDeparture: [
-        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 11-12", action: "Use Caltrans before the Big Sur day trip and the Monterey-to-Santa Barbara transfer." },
+        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 9-10", action: "Use Caltrans before any Big Sur reach and the Monterey-to-Santa Barbara transfer." },
         { check: "Yosemite entry and fee rules", when: "Before flights, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment." },
         { check: "Yosemite road and shuttle status", when: "Week of arrival", action: "Decide Mariposa Grove vs. Glacier Point vs. valley rest day." },
-        { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 4 local and avoid car-dependent plans." },
-        { check: "LA traffic and airport timing", when: "Day before departure", action: "Confirm car-return route and departure buffer." }
+        { check: "LA traffic and desert transfer timing", when: "Day before Day 15", action: "Choose LA departure time, route, lunch stop, and Las Vegas arrival buffer." },
+        { check: "Las Vegas heat and air quality", when: "Day before each Las Vegas day", action: "Move outdoor time to early morning or evening; keep peak heat indoors." },
+        { check: "LAS airport and car return", when: "Day before departure", action: "Confirm terminal, rental return location, connection buffer, and luggage timing." }
       ],
       doNotBook: [
-        "Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.",
+        "Do not book Warner Bros. Studio Tour unless the younger child is not attending.",
         "Do not add San Diego unless the family extends the return date or removes another region.",
-        "Do not book any hotel above USD $250 per night unless the family explicitly approves the exception.",
-        "Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.",
-        "Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing."
+        "Do not add Grand Canyon or Death Valley inside this 20-day July plan without explicitly choosing a hotter Southwest route.",
+        "Do not book any hotel above USD $250 per night without explicit approval.",
+        "Do not book a Las Vegas hotel from headline room rate alone; include resort fees, taxes, parking, and occupancy terms.",
+        "Do not book multiple Las Vegas paid attractions until flights, hotel, heat plan, and one anchor attraction are confirmed."
       ],
       openQuestions: [
-        { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and whether San Diego can fit.", default: "Use July 1-20 for the first quote round." },
-        { question: "Is the family willing to arrive Sydney on July 21 instead of July 20?", why: "One extra night makes San Diego or more recovery time easier, but the new driving tolerance means it is not needed just to soften transfers.", default: "Extend only if San Diego is a must." },
-        { question: "Is Yosemite a must-do?", why: "Yosemite drives the hardest lodging and transfer constraints.", default: "Keep Yosemite unless lodging is unavailable or very poor value." },
-        { question: "Should the Central Coast midpoint remain a fallback only?", why: "The selected route now skips the one-night midpoint, but road conditions or Hearst Castle timing may still make it useful.", default: "Keep it as a contingency, not the default route." },
-        { question: "Does the family want a theme park day?", why: "Disneyland or Universal would consume a full LA day and add crowd/height constraints.", default: "Skip theme parks on this first plan." },
-        { question: "Should the plan optimize for beach base or classic-city base in LA?", why: "Santa Monica lowers beach friction; Beverly Hills improves classic LA neighborhood access; West Hollywood improves central access.", default: "Choose Santa Monica if the younger child's beach/pool time matters most." },
-        { question: "Will the family bring or rent the younger child's child seat?", why: "It affects airport transfers and rental car pickup.", default: "Bring a known seat if airline and rental logistics allow." }
+        { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and recovery margin.", default: "Use July 1-20 for the first quote round." },
+        { question: "Is Las Vegas definitely a 3-night final base?", why: "Three nights makes Vegas intentional, but shortens San Francisco, Monterey, and Santa Barbara.", default: "Keep 3 nights unless flight or hotel quotes are poor." },
+        { question: "Is departing from LAS acceptable if the Sydney return requires a connection?", why: "It avoids backtracking to LA, but may cost more or add connection risk.", default: "Quote LAS-Sydney first, then compare against LAX-Sydney." },
+        { question: "Is Yosemite a must-do?", why: "Yosemite drives the hardest lodging and transfer constraints.", default: "Keep Yosemite unless lodging is unavailable or poor value." },
+        { question: "Should Red Rock Canyon be included?", why: "It adds desert nature, but July heat makes it an early-morning option only.", default: "Keep it optional for Day 17, not fixed." },
+        { question: "Which Las Vegas base style fits best?", why: "Base choice affects walking, sleep, pool access, parking, smoke exposure, and true cost.", default: "Start with family-friendly center Strip or non-gaming suite options." }
       ],
       researchGaps: [
-        "Exact open-jaw airfare for SYD-SFO and LAX-SYD.",
-        "Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms.",
-        "Yosemite lodging availability for July 6-9.",
-        "Rental car quote for SFO pickup and LAX return.",
-        "Confirm whether the rental company requires an International Driving Permit with Australian licenses.",
-        "Current Highway 1 status for the Monterey-Big Sur-Hearst Castle plan.",
-        "July 2026 attraction calendars once ticket windows open."
+        "Exact open-jaw airfare for SYD-SFO and LAS-SYD via a connecting gateway.",
+        "Comparison quote for LAX-SYD in case LAS return is meaningfully worse.",
+        "One-room family lodging availability and total stay price in each base.",
+        "Yosemite lodging availability for July 5-8.",
+        "Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy.",
+        "Rental car quote for SFO pickup and LAS return.",
+        "Las Vegas selected attraction/show age rules, prices, refund terms, and schedule.",
+        "Las Vegas heat, air quality, Red Rock Canyon conditions, and any fire/closure notices in travel week."
       ],
       currentAssumptions: [
-        "The family wants a recognizable West Coast first trip more than a completionist route.",
-        "The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego inside the 20-day plan.",
-        "A late LAX departure on July 18 can arrive Sydney on July 20, depending on airline schedule.",
-        "The hotel budget target is USD $200-$250 per night, with no booking above $250 per night unless the family explicitly approves it."
+        "The family wants Las Vegas included in the primary plan.",
+        "The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.",
+        "A July 18 departure from LAS can still arrive Sydney on July 20 if connections work.",
+        "The hotel budget target remains USD $200-$250 per night unless explicitly approved.",
+        "Las Vegas sightseeing should use early outdoor time, indoor afternoons, hotel pool/rest, and evening Strip walks."
       ],
       retainedAlternatives: [
-        { option: "No-Yosemite route", why: "Preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot.", trigger: "Use if July 6-9 Yosemite lodging or conditions are poor." },
-        { option: "San Diego extension", why: "Zoo and La Jolla would fit the family well but do not fit the 20-day working route.", trigger: "Use only if the family extends the trip or removes another region." },
-        { option: "Santa Monica, Beverly Hills, or West Hollywood as LA base", why: "Each base supports a different version of LA.", trigger: "Choose after one-room hotel quotes and $250/night cap checks." },
-        { option: "Mariposa Grove or Glacier Point on Yosemite Day 8", why: "Both are worthwhile.", trigger: "Let road, shuttle, heat, and lodging location decide." },
-        { option: "Central Coast midpoint night", why: "Useful if Highway 1 conditions, Hearst Castle timing, or family energy make the direct Monterey-to-Santa Barbara transfer too much.", trigger: "Add only if it solves a live logistics problem." },
-        { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 12 route remains comfortable." }
+        { option: "Original California-only route", why: "Better coastal pacing and avoids desert heat, but no longer matches the updated primary intent.", trigger: "Restore if Vegas flights, lodging, heat, or fees look poor." },
+        { option: "No-Yosemite route", why: "Preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot.", trigger: "Use if July 5-8 Yosemite lodging or conditions are poor." },
+        { option: "San Diego extension", why: "Zoo and La Jolla fit the family but do not fit the 20-day working route.", trigger: "Use only if the trip extends or another region is removed." },
+        { option: "Las Vegas Strip vs quieter base", why: "A Strip base improves first-visit energy; quieter options may improve sleep and value.", trigger: "Choose after total-stay quotes." },
+        { option: "Central Coast midpoint night", why: "Useful if Highway 1, Hearst Castle timing, or family energy make Day 10 too full.", trigger: "Add only if another night is removed elsewhere." }
       ],
       potentialOptions: [
-        { option: "San Diego inside the 20-day plan", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It adds another base after Los Angeles and would compress the current 17-night California route. The new driving tolerance helps transfers, but it does not create another usable sightseeing day.", reconsider: "The family extends the trip by at least one night or removes Yosemite, Monterey/Carmel, Santa Barbara, or an LA day." },
-        { option: "Las Vegas", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Major inland detour from the West Coast route; July heat makes toddler-friendly outdoor time harder.", reconsider: "The family wants a city-resort extension and drops part of the coast." },
-        { option: "Grand Canyon", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It would turn the trip into a Southwest road trip with long desert transfers.", reconsider: "The family replaces the California coast with a dedicated Southwest itinerary." },
-        { option: "Pacific Northwest", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Seattle, Portland, and Olympic Peninsula sit too far north for the current California route.", reconsider: "The family chooses a San Francisco-to-Seattle route." },
-        { option: "Lake Tahoe", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It adds a mountain detour without improving the first-time landmark mix as much as Yosemite.", reconsider: "Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base." },
-        { option: "Napa or Sonoma overnight", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "More adult-oriented and adds a base before Yosemite.", reconsider: "The adults want a resort pause, accept a likely hotel-cap exception, and remove Muir Woods or one San Francisco day." },
-        { option: "Disneyland Resort", category: "Attractions", link: "https://disneyland.disney.go.com/experience-updates/park-reservations/", why: "It would consume at least one full LA-area day and shift the trip toward theme parks.", reconsider: "Disney becomes a must-do and the family drops an LA museum/beach day." },
-        { option: "Universal Studios Hollywood", category: "Attractions", link: "https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf", why: "Full-day theme-park commitment with attraction height and intensity constraints for a two-year-old.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
-        { option: "Warner Bros. Studio Tour Hollywood", category: "Attractions", link: "https://www.wbstudiotour.com/faq/", why: "Children under 5 are not permitted, so the younger child cannot attend.", reconsider: "the younger child is not attending that activity or the trip is repeated when she is older." },
-        { option: "Exploratorium Tactile Dome / Life in Space", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Strong hands-on science fit for a 13-year-old, but the Tactile Dome needs a separate reservation and would compete with the slow San Francisco local day.", reconsider: "Dasha wants a more interactive science block and the family uses part of Day 4 for Pier 15." },
-        { option: "Alcatraz Night Tour or Behind the Scenes Tour", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "More memorable than the planned day tour for a teen; the Behind the Scenes Tour is age-eligible for Dasha but excludes children under 12.", reconsider: "Dasha is especially interested in Alcatraz history and the family accepts a split activity or later night." },
-        { option: "Santa Cruz Beach Boardwalk rides and arcade", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Classic seaside ride block with admission-free entry and pay-to-ride options, but it adds crowds and detours from the selected Yosemite-to-Monterey flow.", reconsider: "The family wants one playful teen ride block and adjusts a Monterey/Carmel day or transfer route." },
-        { option: "Santa Barbara surf or SUP lesson", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Strong California activity for Dasha and one parent, but it needs ocean confidence, a booked slot, and a split-family plan for the younger child.", reconsider: "Dasha wants an active beach lesson and the short Santa Barbara stay can absorb it." },
-        { option: "Pacific Park at Santa Monica Pier", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Easy LA amusement add-on near Santa Monica, but less important than the Getty, Academy Museum, or Griffith plan and likely crowded in July.", reconsider: "The family bases in Santa Monica or wants a short ride block without committing to a full theme park." },
-        { option: "Griffith Observatory planetarium show", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Good teen-friendly upgrade inside the existing Griffith day; tickets are onsite same-day only and small-child admission is limited.", reconsider: "The LA viewpoint day stays centered on Griffith and one parent can manage timing with Dasha." },
-        { option: "Dodger Stadium tour or baseball sampler", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Strong everyday-US sports/culture experience, but it adds LA traffic, parking, and schedule friction.", reconsider: "Dasha wants a sports activity and the family swaps out an LA museum, shopping, beach, or rest block." },
-        { option: "AREA15 and Meow Wolf Omega Mart", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Immersive indoor Las Vegas fit for a teen during July heat, but it becomes the main ticketed attraction instead of a casual Strip add-on.", reconsider: "Dasha wants a weird interactive Vegas activity and the family chooses it as the primary indoor attraction." },
-        { option: "Neon Museum evening visit", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Memorable visual Vegas history with photo value, but it is outdoors, timed, and still hot at night in July.", reconsider: "Dasha wants a visual/photo-oriented Vegas activity and the family is comfortable with an evening ticket." },
-        { option: "The STRAT SkyPod and thrill rides", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Teen adrenaline option with Strip views; SkyJump starts at age 14, so the tower rides are the only relevant thrill version for this trip.", reconsider: "Dasha wants a thrill-ride block and one parent can split off while the rest of the family rests." },
-        { option: "Pinball Hall of Fame", category: "Teen / Dasha", link: "03-potential-options.md#teen-and-dasha-focused-split-ideas", why: "Low-commitment indoor Vegas arcade/museum backup near the Welcome to Las Vegas sign; useful, but not a landmark anchor.", reconsider: "The family needs an inexpensive indoor reset during a hot or low-energy block." },
-        { option: "Presidio Tunnel Tops Outpost and Field Station", category: "Younger-Child-Friendly Add-Ons", link: "https://presidio.gov/explore/attractions/outpost-playground", why: "Strongest free San Francisco play add-on for the younger child, with an outdoor nature playground for ages 2-12, nearby restrooms, food options, and Golden Gate views for the adults.", reconsider: "Day 2 or Day 4 needs a child-led outdoor reset, or fog makes bridge viewpoints less rewarding." },
-        { option: "Bay Area Discovery Museum", category: "Younger-Child-Friendly Add-Ons", link: "https://bayareadiscoverymuseum.org/plan-your-visit/landing/", why: "Best purpose-built Bay Area toddler museum near the route, aimed at children 0-8 and open Wednesday-Sunday.", reconsider: "The younger child needs a dedicated play half-day, Muir Woods reservations are poor, or the family wants to soften the San Francisco start." },
-        { option: "Koret Children's Quarter and Carousel", category: "Younger-Child-Friendly Add-Ons", link: "https://www.sfrecpark.org/Facilities/Facility/Details/Koret-Childrens-Quarter-and-Carousel-414", why: "Free, central San Francisco playground option with accessible play features and Golden Gate Park pairing potential.", reconsider: "Day 4 becomes a Golden Gate Park day and the younger child needs simple playground time before hotel rest." },
-        { option: "Yosemite Junior Ranger-style activity plus Lower Yosemite Fall", category: "Younger-Child-Friendly Add-Ons", link: "https://www.nps.gov/yose/planyourvisit/lowerfalltrail.htm", why: "Lower Yosemite Fall is a short paved loop where strollers are allowed, and Junior Ranger materials can structure a low-pressure nature activity.", reconsider: "Yosemite heat, crowds, or tired legs make the family choose the gentlest valley plan." },
-        { option: "MY Museum and Dennis the Menace Playground", category: "Younger-Child-Friendly Add-Ons", link: "https://mymuseum.org/visit/", why: "MY Museum is geared toward children 8 and under, and Dennis the Menace Playground gives the younger child a free outdoor energy outlet near downtown Monterey.", reconsider: "Day 10 needs a toddler-focused afternoon after the aquarium, or Day 9 arrival leaves enough energy for a short play stop." },
-        { option: "Santa Barbara Zoo", category: "Younger-Child-Friendly Add-Ons", link: "https://www.sbzoo.org/visit", why: "Strong Santa Barbara animal morning for a two-year-old, with spring/summer daily hours that can fit before heat builds.", reconsider: "The younger child needs a clear child-first Santa Barbara morning, or the family wants a zoo instead of another museum or architecture stop." },
-        { option: "MOXI Toddler Tuesday or Santa Barbara Sea Center", category: "Younger-Child-Friendly Add-Ons", link: "https://moxi.org/visit/hours-admission/", why: "MOXI gives a hands-on indoor STEAM option, including Tuesday toddler hours; the Sea Center is a compact waterfront marine-life option.", reconsider: "Beach weather is poor, the family wants a shorter indoor activity, or Day 14 needs more structure without a long drive." },
-        { option: "Cayton Children's Museum", category: "Younger-Child-Friendly Add-Ons", link: "https://www.caytonmuseum.org/visit/getting-here", why: "Best Los Angeles toddler fit if the family chooses a Santa Monica base, with Wednesday-Sunday hours and advance reservations recommended.", reconsider: "The younger child's beach and play needs outweigh a grown-up LA museum block, or the family wants a soft indoor reset near the hotel." },
-        { option: "Kidspace Children's Museum", category: "Younger-Child-Friendly Add-Ons", link: "https://kidspacemuseum.org/visit/hours-and-admission/", why: "A strong outdoor children's museum near the Griffith side of LA, with a 3.5-acre campus and Tuesday-Sunday hours.", reconsider: "Day 17 becomes more child-led, the family is staying east/central, or Griffith Observatory is kept to viewpoints only." },
-        { option: "Griffith Observatory first planetarium show only", category: "Younger-Child-Friendly Add-Ons", link: "https://griffithobservatory.org/exhibits/samuel-oschin-planetarium/", why: "Observatory grounds remain a good family viewpoint, but children under five are admitted to the planetarium only for the first show of the day.", reconsider: "The family wants the planetarium specifically and can build Day 17 around the first show, with a quick exit plan if it feels too intense." },
-        { option: "Las Vegas indoor child-first reset", category: "Younger-Child-Friendly Add-Ons", link: "https://discoverykidslv.org/hours-directions/", why: "DISCOVERY Children's Museum is the clearest toddler-first indoor Las Vegas option; Shark Reef Aquarium, Bellagio Conservatory, and Springs Preserve are also useful heat-aware choices.", reconsider: "July heat makes outdoor time uncomfortable, the hotel pool is not enough, or the younger child needs one explicitly child-led Las Vegas activity." },
-        { option: "Porsche Experience Center Los Angeles", category: "Adventure", link: "https://www.porschedriving.com/los-angeles/faq/", why: "Best dad car fit near the route, but adult-centered, license/age-gated, and would consume a valuable LA half-day.", reconsider: "Alexey wants a solo or adult-only driving session and the family drops an LA museum, viewpoint, or beach block." },
-        { option: "K1 Speed indoor karting", category: "Adventure", link: "https://www.k1speed.com/race-now.html", why: "Short speed fix near SF or LA, but adult and junior races do not mix and the younger child is too small.", reconsider: "The family wants a weather or jet-lag backup near the hotel." },
-        { option: "Laguna Seca race event during Monterey dates", category: "Adventure", link: "https://weathertechraceway.com/pages/season-events", why: "MotoAmerica overlaps the Monterey stay, but it competes with the aquarium, Big Sur, and transfer pacing.", reconsider: "Live motorsport matters more than the current Monterey sightseeing plan." },
-        { option: "Mount Hermon redwood zipline / ropes", category: "Adventure", link: "https://mounthermonadventures.com/saa", why: "Fun canopy activity near Santa Cruz, but age/height/weight rules exclude the younger child and it adds a fixed stop to a nature-heavy route.", reconsider: "The family wants a Dasha-plus-adult split activity and accepts reduced Monterey or Big Sur time." },
-        { option: "Margarita Adventures zipline", category: "Adventure", link: "https://www.margarita-adventures.com/everyday-adventure/", why: "Could work near Paso Robles on the transfer route, but it makes Day 12 more reservation-dependent and less restful.", reconsider: "The family skips Hearst Castle and chooses an action stop on the US-101 route." },
-        { option: "Yosemite Mountaineering School climbing lesson", category: "Adventure", link: "https://www.yosemite.com/things-to-do/adventure-activities/yosemite-mountaineering-school-guide-service/", why: "Iconic dad adventure, but it would replace one of only two full Yosemite sightseeing days and likely split the family.", reconsider: "Guided climbing becomes a must-do." },
-        { option: "Channel Islands / Santa Barbara kayaking", category: "Adventure", link: "https://www.sbadventureco.com/faqs/", why: "High adventure value, but Channel Islands kayaking starts at age 5 and adds ferry timing.", reconsider: "One parent stays with the younger child or the trip repeats when she is older." },
-        { option: "Catalina Island Zip Line Eco Tour", category: "Adventure", link: "https://www.catalinatours.com/tour/zip-line-eco-tour/", why: "Big LA-region adrenaline payoff, but it requires a Catalina day trip or overnight and has age/height/weight limits.", reconsider: "The family adds Catalina or replaces an LA day with a full island day." },
-        { option: "Skydive Perris wind tunnel or tandem skydiving", category: "Adventure", link: "https://skydiveperris.com/", why: "The wind tunnel starts at age 3+, so the younger child cannot participate yet; tandem skydiving remains a true dad adrenaline option, but Perris is an inland detour from the LA coast/museum plan.", reconsider: "Alexey wants a dedicated action day and the family replaces an LA sightseeing day." },
-        { option: "Six Flags Magic Mountain", category: "Adventure", link: "https://www.sixflags.com/magicmountain/attractions", why: "Obvious thrill-coaster option, but still a full theme-park day with heat, queue, and toddler tradeoffs.", reconsider: "The family explicitly chooses thrill rides over the current LA plan." },
+        { option: "Original California-only route", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Better coastal pacing and no July desert heat, but it omits the now-primary Las Vegas stop.", reconsider: "LAS return flights, Las Vegas lodging, resort fees, heat, or family energy make Vegas poor value." },
+        { option: "San Diego inside the 20-day plan", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It adds another base and compresses the current 17-night route further.", reconsider: "The family extends by at least two nights or removes Yosemite, Santa Barbara, LA, or Las Vegas." },
+        { option: "Grand Canyon", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It turns the trip into a broader Southwest road trip with longer desert transfers.", reconsider: "The family replaces part of the California coast with a dedicated Southwest itinerary." },
+        { option: "Muir Woods as a default day", category: "Attractions", link: "03-potential-options.md#attractions-and-experiences", why: "A good redwood experience, but the Las Vegas finale uses the night that protected a fifth SF day.", reconsider: "The family drops one Vegas night or replaces a San Francisco local day." },
+        { option: "Full Big Sur day trip", category: "Attractions", link: "03-potential-options.md#attractions-and-experiences", why: "The Monterey stay is now two nights, so a full Big Sur day competes with the aquarium.", reconsider: "The family drops Santa Barbara or accepts a faster coast pace." },
+        { option: "Disneyland Resort", category: "Attractions", link: "https://disneyland.disney.go.com/experience-updates/park-reservations/", why: "A full-day theme-park commitment with July crowd exposure.", reconsider: "Disney becomes a must-do and the family drops an LA or Vegas activity." },
+        { option: "Universal Studios Hollywood", category: "Attractions", link: "https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf", why: "Full-day theme park with height/intensity constraints for the younger child.", reconsider: "The family wants a theme-park day and accepts split activities by age." },
+        { option: "Hoover Dam day trip from Las Vegas", category: "Attractions", link: "https://www.recreation.gov/gateways/29", why: "Classic side trip, but July heat and a three-night finale make it lower priority.", reconsider: "The family wants a civil-engineering landmark more than Red Rock or a Vegas indoor attraction." },
+        { option: "Porsche Experience Center Los Angeles", category: "Adventure", link: "https://www.porschedriving.com/los-angeles/faq/", why: "Best adult car-experience fit near the route, but adult-centered and time-consuming.", reconsider: "One adult wants a solo/adult-only drive and the family drops an LA or Vegas block." },
+        { option: "K1 Speed indoor karting", category: "Adventure", link: "https://www.k1speed.com/race-now.html", why: "Short speed fix, but adult and junior races do not mix and the younger child is too small.", reconsider: "The family needs a heat or jet-lag backup near the hotel." },
         { option: "Pick up rental car on San Francisco arrival", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
-        { option: "Keep a default Central Coast midpoint night", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "The updated driving tolerance allows Monterey-to-Santa Barbara as a single intercity transfer, so the selected route now avoids a one-night hotel change and gives the extra night to Santa Barbara.", reconsider: "Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive." }
+        { option: "Return from Los Angeles instead of Las Vegas", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "LAX may have better Sydney return options, but would require backtracking or moving Vegas earlier.", reconsider: "LAS-Sydney fares, connection times, or car drop-off costs are clearly worse." }
       ],
       sourceGroups: [
-        {
-          title: "01 Trip Purpose",
-          rows: [
-            { fact: "Traveler intent, family details, pace, updated driving tolerance, and planning principles.", source: "Repository trip purpose", url: "01-trip-purpose.md", accessed: "2026-05-09", status: "Current" }
-          ]
-        },
-        {
-          title: "02 Current Plan Options",
-          rows: [
-            { fact: "Australian citizens may use the Visa Waiver Program/ESTA when eligible.", source: "US Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html", accessed: "2026-05-08", status: "Current" },
-            { fact: "Sydney-San Francisco nonstop air service exists and is a plausible open-jaw gateway.", source: "San Francisco International Airport", url: "https://www.flysfo.com/nonstop", accessed: "2026-05-08", status: "Current" },
-            { fact: "Los Angeles-Sydney nonstop service exists and is a plausible return gateway.", source: "FlightsFrom", url: "https://www.flightsfrom.com/LAX-SYD", accessed: "2026-05-08", status: "Current; compare direct airline quotes" },
-            { fact: "Yosemite does not currently require a reservation for park entry in July 2026; lodging or campground reservations are separate.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-09", status: "Current; re-check before travel" }
-          ]
-        },
-        {
-          title: "03 Potential Options",
-          rows: [
-            { fact: "Porsche Experience Center Los Angeles drive experiences require a valid license and minimum age of 21 for the main drive experience.", source: "Porsche Experience Center Los Angeles", url: "https://www.porschedriving.com/los-angeles/faq/", accessed: "2026-05-10", status: "Current" },
-            { fact: "K1 Speed has multiple California locations near the route and separates junior and adult racing by height bands.", source: "K1 Speed", url: "https://www.k1speed.com/race-now.html", accessed: "2026-05-10", status: "Current" },
-            { fact: "WeatherTech Raceway Laguna Seca lists MotoAmerica Superbike Speedfest for July 10-12, 2026, overlapping the Monterey stay.", source: "WeatherTech Raceway Laguna Seca", url: "https://weathertechraceway.com/pages/season-events", accessed: "2026-05-10", status: "Current" },
-            { fact: "Mount Hermon and Margarita Adventures zipline options have age, size, tandem, or tour-size constraints that affect family fit.", source: "Mount Hermon Adventures / Margarita Adventures", url: "https://mounthermonadventures.com/saa", accessed: "2026-05-10", status: "Current" },
-            { fact: "Yosemite climbing, Channel Islands kayaking, Catalina ziplining, Skydive Perris, and Six Flags Magic Mountain are action options with age, logistics, distance, or full-day tradeoffs.", source: "Yosemite.com / SB Adventure Co / Catalina Tours / Skydive Perris / Six Flags", url: "https://www.yosemite.com/things-to-do/adventure-activities/yosemite-mountaineering-school-guide-service/", accessed: "2026-05-10", status: "Current" },
-            { fact: "Exploratorium, Alcatraz, Santa Cruz Beach Boardwalk, Santa Barbara surf/SUP, Pacific Park, Griffith Observatory, and Dodger Stadium tours define the California teen/Dasha candidate set.", source: "Exploratorium / Alcatraz City Cruises / Santa Cruz Beach Boardwalk / SB Adventure Co / Pacific Park / Griffith Observatory / LA Dodgers", url: "https://www.exploratorium.edu/visit/calendar", accessed: "2026-05-13", status: "Current" },
-            { fact: "AREA15/Omega Mart, Neon Museum, The STRAT thrill rides, and Pinball Hall of Fame define the Las Vegas teen/Dasha candidate set.", source: "AREA15 / The Neon Museum / The STRAT / Pinball Hall of Fame", url: "https://area15.com/faqs/", accessed: "2026-05-13", status: "Current" },
-            { fact: "Presidio Tunnel Tops, Bay Area Discovery Museum, and Koret Children's Quarter are San Francisco-area toddler-friendly play options for the younger child.", source: "Presidio Trust / Bay Area Discovery Museum / San Francisco Recreation and Parks", url: "https://presidio.gov/explore/attractions/outpost-playground", accessed: "2026-05-13", status: "Current" },
-            { fact: "Lower Yosemite Fall, MY Museum, Dennis the Menace Playground, Santa Barbara Zoo, MOXI, and the Sea Center are route-compatible child-friendly swaps or backups.", source: "NPS / MY Museum / See Monterey / Santa Barbara Zoo / MOXI / Santa Barbara Museum of Natural History", url: "https://www.nps.gov/yose/planyourvisit/lowerfalltrail.htm", accessed: "2026-05-13", status: "Current" },
-            { fact: "Cayton Children's Museum, Kidspace Children's Museum, and Griffith Observatory planetarium age rules shape the Los Angeles younger-child-friendly backup set.", source: "Cayton Children's Museum / Kidspace Children's Museum / Griffith Observatory", url: "https://www.caytonmuseum.org/visit/getting-here", accessed: "2026-05-13", status: "Current" },
-            { fact: "DISCOVERY Children's Museum, Springs Preserve, Shark Reef Aquarium, and Bellagio Conservatory shape the Las Vegas younger-child-friendly heat-aware backup set.", source: "DISCOVERY Children's Museum / Springs Preserve / MGM Resorts", url: "https://discoverykidslv.org/hours-directions/", accessed: "2026-05-13", status: "Current" }
-          ]
-        },
-        {
-          title: "04 Daily Itinerary",
-          rows: [
-            { fact: "Alcatraz tickets should be booked through the NPS-authorized ferry concessioner.", source: "National Park Service / Alcatraz City Cruises", url: "https://www.nps.gov/alca/planyourvisit/fees.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Muir Woods requires parking or shuttle reservations before arrival.", source: "National Park Service", url: "https://www.nps.gov/muwo/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Monterey Bay Aquarium is a ticketed, high-demand family attraction.", source: "Monterey Bay Aquarium", url: "https://www.montereybayaquarium.org/visit/tickets", accessed: "2026-05-08", status: "Current" },
-            { fact: "Hearst Castle tours are ticketed and should be reserved once the booking window opens.", source: "California State Parks", url: "https://hearstcastle.org/tour-hearst-castle/", accessed: "2026-05-08", status: "Current" },
-            { fact: "Getty Center, Academy Museum, and Griffith Observatory logistics should be checked for selected dates.", source: "Getty / Academy Museum / Griffith Observatory", url: "https://www.getty.edu/visit/center/", accessed: "2026-05-08", status: "Current" }
-          ]
-        },
-        {
-          title: "05 Lodging and Transport",
-          rows: [
-            { fact: "Yosemite Valley Lodge should be checked first only if it can fit the hotel cap, because location materially reduces daily driving.", source: "Yosemite Hospitality", url: "https://www.travelyosemite.com/lodging/yosemite-valley-lodge/", accessed: "2026-05-08", status: "Needs live rate quote against $250/night cap" },
-          ]
-        },
-        {
-          title: "06 Budget",
-          rows: [
-            { fact: "United fare page supplied a planning anchor for Sydney-San Francisco, but exact itinerary needs a direct airline quote.", source: "United Airlines", url: "https://www.united.com/en-au/flights-from-sydney-to-san-francisco", accessed: "2026-05-08", status: "Needs exact open-jaw quote" },
-            { fact: "Getty Center admission is free but timed-entry reservation and parking apply.", source: "J. Paul Getty Trust", url: "https://www.getty.edu/visit/center/", accessed: "2026-05-08", status: "Current" },
-            { fact: "Academy Museum child/adult ticketing supports the family attraction allowance.", source: "Academy Museum of Motion Pictures", url: "https://www.academymuseum.org/en/visit?icid=homepage-carousel2-a-night-at-the-academy-museum-may-2022", accessed: "2026-05-08", status: "Current" }
-          ]
-        },
-        {
-          title: "07 Booking Checklist and 08 Open Questions",
-          rows: [
-            { fact: "ESTA/Visa Waiver eligibility must be checked before nonrefundable booking.", source: "US Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html", accessed: "2026-05-08", status: "Current" },
-            { fact: "Yosemite reservation rules should be checked repeatedly because park entry systems can change.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/reservations.htm", accessed: "2026-05-08", status: "Current" },
-            { fact: "Highway 1 needs current verification before the coastal route is treated as fixed.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-05-09", status: "Current; re-check before travel" },
-            { fact: "Warner Bros. Studio Tour does not allow children under 5.", source: "Warner Bros. Studio Tour Hollywood", url: "https://www.wbstudiotour.com/faq/", accessed: "2026-05-08", status: "Current" }
-          ]
-        }
+        { title: "Las Vegas Primary Plan", rows: [
+          { fact: "Las Vegas is now a primary final base in the selected route.", source: "Repository trip purpose and current plan", url: "01-trip-purpose.md", accessed: "2026-05-13", status: "Current" },
+          { fact: "Las Vegas has family-friendly free sights, indoor attractions, pool options, shows, and dining.", source: "Visit Las Vegas", url: "https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/", accessed: "2026-05-13", status: "Current; verify selected attraction dates" },
+          { fact: "Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window.", source: "National Weather Service Las Vegas", url: "https://www.weather.gov/media/vef/July_Temps.pdf", accessed: "2026-05-13", status: "Current climate normal" },
+          { fact: "Bellagio fountain shows run daily but schedules can vary and weather can cancel displays.", source: "Bellagio", url: "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html", accessed: "2026-05-13", status: "Current; re-check before visit" },
+          { fact: "Sphere Experience dates, times, prices, and availability are subject to change.", source: "Sphere", url: "https://www.thesphere.com/shows/the-sphere-experience", accessed: "2026-05-13", status: "Current; verify before booking" },
+          { fact: "Red Rock Canyon reservations are not required June 1-September 30, but parking and current conditions still need checks.", source: "Recreation.gov", url: "https://www.recreation.gov/timed-entry/10075177", accessed: "2026-05-13", status: "Current; re-check before travel" },
+          { fact: "LAS is the airport to quote for the Las Vegas departure.", source: "Harry Reid International Airport", url: "https://www.harryreidairport.com/flights/airlines", accessed: "2026-05-13", status: "Current; quote exact routing" }
+        ] }
       ]
     };
 
