@@ -1045,7 +1045,7 @@
           <div class="metric"><strong>3-4h</strong><span>Local sightseeing day car time; 10-12h only for intercity moves.</span></div>
           <div class="metric"><strong>15km</strong><span>Walking tolerance, with pram-friendly routing for the younger child.</span></div>
           <div class="metric"><strong>$200-$250</strong><span>Nightly hotel target; one room for four is required.</span></div>
-          <div class="metric"><strong>No car</strong><span>San Francisco stay remains car-free until Day 6.</span></div>
+          <div class="metric"><strong>No car</strong><span>San Francisco stay remains car-free until Day 5.</span></div>
         </div>
 
         <div class="panel">
@@ -1418,13 +1418,15 @@
         "Book locations before optimizing hotel brand.",
         "Target comfortable, well-located family hotels at USD $200-$250 per night; do not exceed $250 without explicit approval.",
         "Treat a confirmed single room or suite for all four travelers as a key requirement.",
+        "Treat Cambria, Paso Robles, or San Luis Obispo as a fallback stop, not part of the default route.",
+        "Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.",
         "In Las Vegas, compare the full stay cost including resort fees, taxes, parking, pool access, and extra-person fees.",
         "Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking."
       ],
       bases: [
         { base: "San Francisco", nights: 4, area: "Nob Hill, Embarcadero, Union Square edge, or SoMa near transit", fit: "No-car start, airport transfer, Alcatraz, waterfront, July 4 local day", watch: "Avoid car parking; city hotel rooms may be small for four." },
         { base: "Yosemite", nights: 3, area: "Yosemite Valley first; Fish Camp / Oakhurst area second", fit: "Staying inside or near the park reduces daily driving", watch: "Availability and the $250/night cap may force a farther base." },
-        { base: "Monterey / Carmel", nights: 2, area: "Carmel, Monterey, Pacific Grove, Seaside, or Carmel Valley", fit: "Aquarium, Pacific Grove, Carmel, short scenic coast", watch: "Two nights leaves little margin." },
+        { base: "Monterey / Carmel", nights: 2, area: "Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside", fit: "Aquarium, Pacific Grove, Carmel, and a short scenic coast option", watch: "Beach-area parking and summer rates can be difficult; two nights leaves little margin." },
         { base: "Santa Barbara / Montecito", nights: 2, area: "Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well", fit: "Soft coastal pause before LA", watch: "High July rates and minimum-stay rules." },
         { base: "Los Angeles", nights: 3, area: "Santa Monica, Beverly Hills, West Hollywood, Culver City, or Brentwood", fit: "Getty, Griffith, museums, beach, and the Las Vegas transfer route", watch: "Traffic makes base choice important." },
         { base: "Las Vegas", nights: 3, area: "Center Strip family-friendly resort first; quieter non-gaming or off-Strip base second", fit: "Strip landmarks, pool/rest time, indoor attractions, and LAS departure", watch: "Resort fees, parking, smoky casino paths, heat, and occupancy rules." }
@@ -1433,6 +1435,7 @@
         { base: "San Francisco", checks: "Rate-filtered family rooms near Nob Hill, Embarcadero, Union Square edge, or SoMa", why: "No-car logistics and transit access matter more than brand", status: "Needs live quote" },
         { base: "Yosemite", checks: "Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa", why: "Park access matters, but the cap is binding", status: "Needs July 5-8 availability check" },
         { base: "Monterey / Carmel", checks: "Family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley", why: "Family room size and coastal access matter more than brand", status: "Needs live quote" },
+        { base: "Fallback Central Coast midpoint", checks: "Family rooms in San Luis Obispo, Cambria, or Paso Robles", why: "Contingency if Highway 1 conditions or Hearst Castle timing make the direct transfer too full", status: "Quote only if needed and within cap" },
         { base: "Santa Barbara / Montecito", checks: "Family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito", why: "Two nights should provide rest without breaking the cap", status: "Needs live quote" },
         { base: "Los Angeles", checks: "Santa Monica, Beverly Hills-adjacent, West Hollywood, Culver City, Brentwood, or value LAX-adjacent", why: "Choose based on traffic, beach/museum access, and Las Vegas transfer comfort", status: "Needs live quote" },
         { base: "Las Vegas", checks: "Center Strip resorts, non-gaming suite options, or off-Strip value suites", why: "Total stay cost and family comfort matter more than headline rate", status: "Needs quote with resort fees, taxes, parking, and occupancy" }
@@ -1457,6 +1460,7 @@
       ],
       attractions: [
         { item: "Alcatraz day tour", note: "Two adults, one youth, one child under 5", anchor: "$143.85" },
+        { item: "Muir Woods, if restored as a swap", note: "Two adult entrance fees plus one standard parking reservation; children under 16 free", anchor: "$39.50" },
         { item: "Monterey Bay Aquarium", note: "Two adults plus one youth; the younger child is outside adult/youth paid bands", anchor: "$180+" },
         { item: "Hearst Castle, if transfer timing works", note: "Tour choice can change cost", anchor: "$70+" },
         { item: "Getty Center", note: "Admission is free but timed-entry reservation and parking apply", anchor: "$25 parking" },
@@ -1468,7 +1472,10 @@
       costControls: [
         "Keep San Francisco car-free to avoid parking charges and city driving.",
         "Book Yosemite lodging first; a poor location creates more driving and less park time.",
+        "Prioritize hotels that confirm one room or suite for all four travelers within the nightly cap.",
         "Compare Las Vegas total stay cost with resort fees and parking included.",
+        "Use the direct Monterey-to-Santa Barbara transfer unless live road or tour timing makes a midpoint night worthwhile.",
+        "Choose one Los Angeles base and avoid cross-city sightseeing on the same day.",
         "Choose only one Las Vegas paid attraction or show until live prices are known.",
         "Treat San Diego and Grand Canyon as extensions, not free add-ons."
       ],
@@ -1478,7 +1485,8 @@
         "Quote Yosemite lodging for July 5-8.",
         "Quote one-room family configurations in each base within the $200-$250 nightly target.",
         "Quote Las Vegas hotels with resort fees, taxes, parking, pool access, and occupancy included.",
-        "Quote rental car SFO city pickup to LAS return for July 5-18."
+        "Quote rental car SFO city pickup to LAS return for July 5-18, then compare against SFO pickup to LAX return if flight quotes favor Los Angeles.",
+        "Rebuild the budget with actual booking quotes before paying nonrefundable deposits."
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Now", owner: "Travelers", notes: "Use July 1-20 Sydney-to-Sydney for the first quote round.", status: "Open" },
@@ -1486,6 +1494,7 @@
         { task: "Check ESTA eligibility", when: "Now", owner: "Travelers", notes: "Do this before nonrefundable bookings.", status: "Open" },
         { task: "Quote flights", when: "Now", owner: "Travelers", notes: "Price SYD-SFO and LAS-SYD; compare LAX-SYD fallback.", status: "Open" },
         { task: "Hold or book Yosemite lodging", when: "Now", owner: "Travelers", notes: "Check July 5-8.", status: "Open" },
+        { task: "Quote one-room family lodging", when: "Now", owner: "Travelers", notes: "Confirm one room or suite for all four at USD $200-$250 per night before comparing brands.", status: "Open" },
         { task: "Quote Las Vegas lodging total cost", when: "Now", owner: "Travelers", notes: "Include resort fees, taxes, parking, occupancy, pool access, and cancellation terms.", status: "Open" },
         { task: "Quote rental car", when: "After flights are held", owner: "Travelers", notes: "SFO city pickup July 5, LAS return July 18.", status: "Open" }
       ],
@@ -1502,6 +1511,7 @@
         { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 9-10", action: "Use Caltrans before any Big Sur reach and the Monterey-to-Santa Barbara transfer." },
         { check: "Yosemite entry and fee rules", when: "Before flights, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment." },
         { check: "Yosemite road and shuttle status", when: "Week of arrival", action: "Decide Mariposa Grove vs. Glacier Point vs. valley rest day." },
+        { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 4 local and avoid car-dependent plans." },
         { check: "LA traffic and desert transfer timing", when: "Day before Day 15", action: "Choose LA departure time, route, lunch stop, and Las Vegas arrival buffer." },
         { check: "Las Vegas heat and air quality", when: "Day before each Las Vegas day", action: "Move outdoor time to early morning or evening; keep peak heat indoors." },
         { check: "LAS airport and car return", when: "Day before departure", action: "Confirm terminal, rental return location, connection buffer, and luggage timing." }
@@ -1511,8 +1521,10 @@
         "Do not add San Diego unless the family extends the return date or removes another region.",
         "Do not add Grand Canyon or Death Valley inside this 20-day July plan without explicitly choosing a hotter Southwest route.",
         "Do not book any hotel above USD $250 per night without explicit approval.",
+        "Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.",
         "Do not book a Las Vegas hotel from headline room rate alone; include resort fees, taxes, parking, and occupancy terms.",
-        "Do not book multiple Las Vegas paid attractions until flights, hotel, heat plan, and one anchor attraction are confirmed."
+        "Do not book multiple Las Vegas paid attractions until flights, hotel, heat plan, and one anchor attraction are confirmed.",
+        "Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing."
       ],
       openQuestions: [
         { question: "Is July 1-20, 2026 the correct Sydney-to-Sydney window?", why: "It fixes the number of US hotel nights and recovery margin.", default: "Use July 1-20 for the first quote round." },
@@ -1520,7 +1532,10 @@
         { question: "Is departing from LAS acceptable if the Sydney return requires a connection?", why: "It avoids backtracking to LA, but may cost more or add connection risk.", default: "Quote LAS-Sydney first, then compare against LAX-Sydney." },
         { question: "Is Yosemite a must-do?", why: "Yosemite drives the hardest lodging and transfer constraints.", default: "Keep Yosemite unless lodging is unavailable or poor value." },
         { question: "Should Red Rock Canyon be included?", why: "It adds desert nature, but July heat makes it an early-morning option only.", default: "Keep it optional for Day 17, not fixed." },
-        { question: "Which Las Vegas base style fits best?", why: "Base choice affects walking, sleep, pool access, parking, smoke exposure, and true cost.", default: "Start with family-friendly center Strip or non-gaming suite options." }
+        { question: "Which Las Vegas base style fits best?", why: "Base choice affects walking, sleep, pool access, parking, smoke exposure, and true cost.", default: "Start with family-friendly center Strip or non-gaming suite options." },
+        { question: "Does the family want a theme park day?", why: "Disneyland or Universal would consume a full LA day and add crowd/height constraints.", default: "Skip theme parks on this first plan." },
+        { question: "Should the plan optimize for beach base or classic-city base in LA?", why: "Santa Monica lowers beach friction; Beverly Hills improves classic LA access; West Hollywood improves central access.", default: "Choose Santa Monica if the younger child's beach/pool time matters most." },
+        { question: "Will the family bring or rent the younger child's child seat?", why: "It affects airport transfers and rental car pickup.", default: "Bring a known seat if airline and rental logistics allow." }
       ],
       researchGaps: [
         "Exact open-jaw airfare for SYD-SFO and LAS-SYD via a connecting gateway.",
@@ -1529,12 +1544,17 @@
         "Yosemite lodging availability for July 5-8.",
         "Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy.",
         "Rental car quote for SFO pickup and LAS return.",
+        "Rental car comparison quote for SFO pickup and LAX return if flight quotes favor Los Angeles.",
+        "Confirm whether the rental company requires an International Driving Permit with Australian licenses.",
+        "Current Highway 1 status for the Monterey, Big Sur, and Hearst Castle transfer plan.",
+        "July 2026 attraction calendars once ticket windows open.",
         "Las Vegas selected attraction/show age rules, prices, refund terms, and schedule.",
         "Las Vegas heat, air quality, Red Rock Canyon conditions, and any fire/closure notices in travel week."
       ],
       currentAssumptions: [
         "The family wants Las Vegas included in the primary plan.",
         "The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.",
+        "The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego or Grand Canyon inside the 20-day plan.",
         "A July 18 departure from LAS can still arrive Sydney on July 20 if connections work.",
         "The hotel budget target remains USD $200-$250 per night unless explicitly approved.",
         "Las Vegas sightseeing should use early outdoor time, indoor afternoons, hotel pool/rest, and evening Strip walks."
@@ -1544,21 +1564,67 @@
         { option: "No-Yosemite route", why: "Preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot.", trigger: "Use if July 5-8 Yosemite lodging or conditions are poor." },
         { option: "San Diego extension", why: "Zoo and La Jolla fit the family but do not fit the 20-day working route.", trigger: "Use only if the trip extends or another region is removed." },
         { option: "Las Vegas Strip vs quieter base", why: "A Strip base improves first-visit energy; quieter options may improve sleep and value.", trigger: "Choose after total-stay quotes." },
-        { option: "Central Coast midpoint night", why: "Useful if Highway 1, Hearst Castle timing, or family energy make Day 10 too full.", trigger: "Add only if another night is removed elsewhere." }
+        { option: "Mariposa Grove or Glacier Point", why: "Both are worthwhile, but road, shuttle, heat, and lodging location should decide the final Yosemite day.", trigger: "Choose during the week-of Yosemite conditions check." },
+        { option: "Central Coast midpoint night", why: "Useful if Highway 1, Hearst Castle timing, or family energy make Day 10 too full.", trigger: "Add only if another night is removed elsewhere." },
+        { option: "Hearst Castle on the transfer day", why: "It can fit the Monterey-to-Santa Barbara move if tour timing and road conditions cooperate.", trigger: "Book only if the Day 10 route remains comfortable." }
       ],
       potentialOptions: [
-        { option: "Original California-only route", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Better coastal pacing and no July desert heat, but it omits the now-primary Las Vegas stop.", reconsider: "LAS return flights, Las Vegas lodging, resort fees, heat, or family energy make Vegas poor value." },
-        { option: "San Diego inside the 20-day plan", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It adds another base and compresses the current 17-night route further.", reconsider: "The family extends by at least two nights or removes Yosemite, Santa Barbara, LA, or Las Vegas." },
-        { option: "Grand Canyon", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "It turns the trip into a broader Southwest road trip with longer desert transfers.", reconsider: "The family replaces part of the California coast with a dedicated Southwest itinerary." },
-        { option: "Muir Woods as a default day", category: "Attractions", link: "03-potential-options.md#attractions-and-experiences", why: "A good redwood experience, but the Las Vegas finale uses the night that protected a fifth SF day.", reconsider: "The family drops one Vegas night or replaces a San Francisco local day." },
-        { option: "Full Big Sur day trip", category: "Attractions", link: "03-potential-options.md#attractions-and-experiences", why: "The Monterey stay is now two nights, so a full Big Sur day competes with the aquarium.", reconsider: "The family drops Santa Barbara or accepts a faster coast pace." },
-        { option: "Disneyland Resort", category: "Attractions", link: "https://disneyland.disney.go.com/experience-updates/park-reservations/", why: "A full-day theme-park commitment with July crowd exposure.", reconsider: "Disney becomes a must-do and the family drops an LA or Vegas activity." },
-        { option: "Universal Studios Hollywood", category: "Attractions", link: "https://www.universalstudioshollywood.com/tridiondata/ush/en/us/files/documents/universal_riders_guide.pdf", why: "Full-day theme park with height/intensity constraints for the younger child.", reconsider: "The family wants a theme-park day and accepts split activities by age." },
-        { option: "Hoover Dam day trip from Las Vegas", category: "Attractions", link: "https://www.recreation.gov/gateways/29", why: "Classic side trip, but July heat and a three-night finale make it lower priority.", reconsider: "The family wants a civil-engineering landmark more than Red Rock or a Vegas indoor attraction." },
-        { option: "Porsche Experience Center Los Angeles", category: "Adventure", link: "https://www.porschedriving.com/los-angeles/faq/", why: "Best adult car-experience fit near the route, but adult-centered and time-consuming.", reconsider: "One adult wants a solo/adult-only drive and the family drops an LA or Vegas block." },
-        { option: "K1 Speed indoor karting", category: "Adventure", link: "https://www.k1speed.com/race-now.html", why: "Short speed fix, but adult and junior races do not mix and the younger child is too small.", reconsider: "The family needs a heat or jet-lag backup near the hotel." },
+        { option: "Original California-only route without Las Vegas", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Better coastal pacing, keeps Muir Woods as a default day, and avoids July desert heat; no longer primary because Las Vegas is now desired.", reconsider: "LAS return flights, Las Vegas lodging, resort fees, heat, or family energy make the city-resort finale poor value." },
+        { option: "San Diego inside the 20-day plan", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Adds another base after Los Angeles and compresses the 17-night route further.", reconsider: "The family extends by at least two nights or removes Yosemite, Santa Barbara, Los Angeles, or Las Vegas." },
+        { option: "Grand Canyon", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Turns the trip into a broader Southwest road trip with longer desert transfers and more hotel changes.", reconsider: "The family replaces part of the California coast with a dedicated Southwest itinerary." },
+        { option: "Pacific Northwest: Seattle, Portland, or Olympic Peninsula", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Fits a West Coast theme but sits too far north for the California-to-Las-Vegas route.", reconsider: "The family chooses a San Francisco-to-Seattle route instead of Los Angeles and Las Vegas." },
+        { option: "Lake Tahoe", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Adds a mountain detour without improving the first-time US landmark mix as much as Yosemite.", reconsider: "Yosemite lodging is unavailable and the family still wants a Sierra Nevada mountain base." },
+        { option: "Napa or Sonoma overnight", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "Wine-country lodging and dining are more adult-oriented and add a base before Yosemite.", reconsider: "The adults want a resort pause, accept a likely hotel-cap exception, and remove a San Francisco or coast day." },
+        { option: "East Coast add-on", category: "Route and Region", link: "03-potential-options.md#route-and-region-options", why: "The source intent says the East Coast flight distance is too long and would break the West Coast focus.", reconsider: "The family plans a separate US trip." },
+        { option: "Muir Woods as a default day", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Good redwood experience, but the Las Vegas finale uses the night that previously protected a fifth San Francisco day.", reconsider: "The family drops one Las Vegas night or replaces a San Francisco day with Muir Woods." },
+        { option: "Full Big Sur day trip", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "The Monterey stay is now two nights, so a full Big Sur day competes with the aquarium and transfer planning.", reconsider: "The family drops Santa Barbara or accepts a faster coast pace." },
+        { option: "Disneyland Resort", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Consumes a full LA-area day, increases July crowd exposure, and shifts the trip toward theme parks.", reconsider: "Disney becomes a must-do and the family drops an LA museum/beach day or one Las Vegas activity." },
+        { option: "Universal Studios Hollywood", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Full-day theme park with height and intensity constraints for the younger child.", reconsider: "The family specifically wants a theme-park day and is comfortable splitting activities by age." },
+        { option: "Warner Bros. Studio Tour Hollywood", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Children under 5 are not permitted, so the younger child cannot attend.", reconsider: "The younger child is not attending that activity or the trip is repeated when she is older." },
+        { option: "San Diego Zoo", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Strong family attraction, but adding San Diego makes the 20-day plan rushed.", reconsider: "The trip extends by at least two nights or San Diego replaces another region." },
+        { option: "Death Valley National Park", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "July heat is a poor family fit, especially with the younger child and pram logistics.", reconsider: "The family travels in a cooler season and builds a desert-focused itinerary." },
+        { option: "Joshua Tree National Park", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Adds desert driving and heat exposure without enough value for the current route.", reconsider: "The family drops Yosemite or the Central Coast and wants a Southern California desert day." },
+        { option: "Hoover Dam day trip from Las Vegas", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "Classic side trip, but July heat and a three-night finale make it lower priority than Strip, pool, and Red Rock options.", reconsider: "The family wants a civil-engineering landmark more than Red Rock or a Las Vegas indoor attraction." },
+        { option: "Shopping-heavy outlet days", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "The trip intent asks for landmarks and everyday experiences, not shopping-heavy days.", reconsider: "The family asks for a dedicated shopping allowance." },
+        { option: "Nightlife-focused city plans", category: "Attractions and Experiences", link: "03-potential-options.md#attractions-and-experiences", why: "The family includes a younger child and prefers slow, restorative days.", reconsider: "Adults arrange childcare or split activities." },
+        { option: "Exploratorium Tactile Dome or Life in Space exhibit", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Strong hands-on science fit, but needs timed reservations and competes with the slow July 4 local day.", reconsider: "The teen wants a more interactive science block and the family uses part of Day 4 for Pier 15." },
+        { option: "Alcatraz Night Tour or Behind the Scenes Tour", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "More memorable than the day tour, but Behind the Scenes excludes children under 12 and creates a late split activity.", reconsider: "The teen is especially interested in Alcatraz history and the family accepts a split or later night." },
+        { option: "Santa Cruz Beach Boardwalk ride and arcade block", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Classic California seaside fun, but it detours from the selected Yosemite-to-Monterey route and adds crowds/noise.", reconsider: "The family wants one playful teen ride block and adjusts a Monterey/Carmel day or transfer route." },
+        { option: "Santa Barbara surf or stand-up paddle lesson", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Strong California activity for the teen and one parent, but adds ocean-condition risk and a booked time slot.", reconsider: "The teen wants an active beach lesson and the family uses part of the short Santa Barbara stay." },
+        { option: "Pacific Park at Santa Monica Pier ride block", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Easy LA add-on near a likely base, but less defining than the Getty, Academy Museum, or Griffith plan.", reconsider: "The family bases in Santa Monica or wants a short amusement block without a full theme park." },
+        { option: "Griffith Observatory planetarium show", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Good low-cost upgrade inside the Griffith day, but tickets are same-day onsite and under-5 timing is constrained.", reconsider: "The family keeps Griffith central and manages the younger child's timing or a split." },
+        { option: "Dodger Stadium tour or baseball sampler", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Strong everyday-US sports/culture activity, but adds LA traffic, parking, and schedule friction.", reconsider: "The teen wants sports/culture and the family replaces an LA museum, shopping, beach, or rest block." },
+        { option: "AREA15 and Meow Wolf Omega Mart", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Immersive indoor Las Vegas activity with strong teen appeal, but it is a ticketed off-Strip attraction.", reconsider: "The teen wants an interactive Vegas activity and this becomes the one main paid indoor attraction." },
+        { option: "Neon Museum evening visit", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Memorable visual Vegas history, but outdoors, timed, and still hot at night in July.", reconsider: "The teen wants a photo-oriented Vegas activity and the family accepts an evening timed ticket." },
+        { option: "The STRAT SkyPod and thrill rides", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Teen adrenaline option with Strip views, but too intense and split-family for the default Vegas plan.", reconsider: "The teen wants a thrill-ride block and one parent splits off while the rest use pool or indoor time." },
+        { option: "Pinball Hall of Fame heat backup", category: "Teen-Focused Split", link: "03-potential-options.md#teen-focused-split-ideas", why: "Low-commitment indoor arcade near the Strip and welcome sign; useful as a rescue block, not a landmark anchor.", reconsider: "The family needs an inexpensive indoor reset." },
+        { option: "Presidio Tunnel Tops Outpost and Field Station", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Strong free San Francisco play add-on with Golden Gate views; overlaps neatly with the Presidio day.", reconsider: "A San Francisco day needs child-led outdoor time or fog makes bridge viewpoints less rewarding." },
+        { option: "Bay Area Discovery Museum, Sausalito", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Purpose-built toddler museum near the route, but it can compete with Muir Woods or city time.", reconsider: "The younger child needs a dedicated play half-day or the family wants to soften the San Francisco start." },
+        { option: "Koret Children's Quarter and Carousel", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Free central Golden Gate Park playground, easy with Cal Academy or a park day.", reconsider: "A San Francisco local day becomes a Golden Gate Park day and needs simple playground time." },
+        { option: "Yosemite Junior Ranger-style activity plus Lower Yosemite Fall", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Supports the existing Yosemite Valley day with a gentle paved loop and low-pressure nature activity.", reconsider: "Yosemite heat, crowds, or tired legs make the family choose the gentlest valley plan." },
+        { option: "MY Museum and Dennis the Menace Playground", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Strong Monterey toddler backup if the aquarium is crowded or an afternoon needs play.", reconsider: "Monterey needs a toddler-focused afternoon after the aquarium or arrival leaves enough energy." },
+        { option: "Santa Barbara Zoo", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Good child-first Santa Barbara morning, but it replaces courthouse, mission, beach, or pool time.", reconsider: "The younger child needs a clear child-first Santa Barbara morning." },
+        { option: "MOXI Toddler Tuesday or Santa Barbara Sea Center", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Hands-on indoor or compact waterfront options, but they duplicate some museum/aquarium energy.", reconsider: "Beach weather is poor or Santa Barbara needs more structure without a long drive." },
+        { option: "Cayton Children's Museum, Santa Monica", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Best toddler fit if the family chooses a Santa Monica base, but would replace part of an LA museum day.", reconsider: "The younger child's beach and play needs outweigh a grown-up LA museum block." },
+        { option: "Kidspace Children's Museum, Pasadena", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Strong outdoor children's museum near Griffith, but less convenient from westside bases.", reconsider: "The Griffith day becomes more child-led or the family stays east/central." },
+        { option: "Griffith Observatory first planetarium show only", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Observatory grounds fit the family, but children under five are admitted to the planetarium only for the first show.", reconsider: "The family wants the planetarium and can build the Griffith day around the first show." },
+        { option: "Las Vegas indoor child-first reset", category: "Younger-Child Add-On", link: "03-potential-options.md#younger-child-friendly-add-on-ideas", why: "Discovery Children's Museum, Shark Reef, Bellagio Conservatory, and Springs Preserve can rescue hot or tired blocks.", reconsider: "Heat is uncomfortable, the pool is not enough, or the younger child needs one child-led Vegas activity." },
+        { option: "Porsche Experience Center Los Angeles", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Strongest adult car fit near the route, but adult-centered and consumes a valuable LA half-day.", reconsider: "One adult wants a solo or adult-only driving session and the family drops an LA or Vegas block." },
+        { option: "K1 Speed indoor karting", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Easy speed fix with several route-adjacent locations, but adult and junior races do not mix and the younger child is too small.", reconsider: "The family needs a weather, heat, or jet-lag backup and one adult plus the teen want a short racing block." },
+        { option: "WeatherTech Raceway Laguna Seca race event", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "MotoAmerica is scheduled for July 10-12, 2026, but the Las Vegas route leaves Monterey before that weekend.", reconsider: "Live motorsport matters more than the current Yosemite-to-coast pacing and the family shifts Monterey dates." },
+        { option: "Sonoma Raceway race weekend or drag racing", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Major June/July 2026 racing conflicts with route timing or geography.", reconsider: "Dates change, Sonoma becomes a deliberate detour, or the family drops part of the coast." },
+        { option: "Mount Hermon Adventures redwood zipline or ropes course", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Fun redwood canopy option, but has requirements, excludes the younger child, and adds a fixed adventure stop.", reconsider: "The family wants a teen-plus-adult split and accepts a slower Yosemite-to-Monterey or Monterey day." },
+        { option: "Margarita Adventures zipline", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Could fit a US-101 transfer, but adds a reservation-dependent activity to a transfer day.", reconsider: "Day 10 shifts away from Hearst Castle and timing keeps Santa Barbara arrival comfortable." },
+        { option: "Yosemite Mountaineering School climbing lesson", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Iconic adult adventure, but it replaces one of only two full Yosemite sightseeing days.", reconsider: "One adult wants guided climbing as a must-do and the family accepts a split Yosemite day." },
+        { option: "Santa Barbara / Channel Islands kayaking or sea-cave tour", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "High adventure value, but Channel Islands kayaking starts at age 5 and adds ferry/ocean logistics.", reconsider: "One parent stays with the younger child or the trip is repeated when the younger child is old enough." },
+        { option: "Catalina Island Zip Line Eco Tour", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Big adrenaline payoff near LA, but requires a Catalina day trip or overnight and has age/size rules.", reconsider: "The family adds Catalina overnight or replaces an LA museum/Hollywood day with a full island day." },
+        { option: "Skydive Perris wind tunnel or tandem skydiving", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Adult adrenaline option, but Perris is a long inland detour from the LA-to-Vegas route.", reconsider: "One adult wants a dedicated action day and the family replaces an LA or Vegas sightseeing day." },
+        { option: "Six Flags Magic Mountain thrill-coaster day", category: "Dad-Focused Adventure", link: "03-potential-options.md#dad-focused-adventure-ideas", why: "Obvious LA-area high-intensity option, but it is still a full theme-park day with heat, queue, and toddler tradeoffs.", reconsider: "The family explicitly chooses thrill rides over the current LA and Vegas sightseeing plan." },
         { option: "Pick up rental car on San Francisco arrival", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "Adds city parking cost, post-flight driving, and unnecessary stress.", reconsider: "The hotel offers included parking and the family wants to self-drive Muir Woods." },
-        { option: "Return from Los Angeles instead of Las Vegas", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "LAX may have better Sydney return options, but would require backtracking or moving Vegas earlier.", reconsider: "LAS-Sydney fares, connection times, or car drop-off costs are clearly worse." }
+        { option: "Keep a default Central Coast midpoint night", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "The route already needs six bases; a midpoint adds hotel churn and steals a night from Yosemite, LA, or Las Vegas.", reconsider: "Highway 1 conditions, Hearst Castle timing, or family energy make the direct transfer unattractive." },
+        { option: "Return from Los Angeles instead of Las Vegas", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "LAX may have better Sydney return options, but would require backtracking or moving Las Vegas before LA.", reconsider: "LAS-Sydney fares, connection times, or car drop-off costs are clearly worse." },
+        { option: "Add more one-night stops", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "Can reduce individual drive times but increases packing friction and hotel churn.", reconsider: "A specific transfer becomes too long after live quotes and road checks." },
+        { option: "Book Yosemite outside the park by default", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "May improve hotel quality, but increases daily driving and reduces park time.", reconsider: "Inside-park lodging is unavailable or poor value." }
       ],
       sourceGroups: [
         { title: "Las Vegas Primary Plan", rows: [
