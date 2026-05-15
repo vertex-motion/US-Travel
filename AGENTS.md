@@ -1,5 +1,10 @@
 # Codex Instructions
 
+## Instruction Style
+
+- Write short, sharp declarative requirements for LLM instructions.
+- Do not use long prose.
+
 ## Commit Workflow
 
 - Commit changes after all modifications have been finalized and reviewed.
