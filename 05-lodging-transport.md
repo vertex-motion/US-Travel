@@ -6,6 +6,7 @@
 - Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
 - Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
 - Use LAX as the start and end airport for the selected closed-circle plan.
+- Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
 - Keep the final Los Angeles night practical. Prioritize departure reliability over sightseeing.
 - Treat Cambria, Paso Robles, San Luis Obispo, Bakersfield, Barstow, or another midpoint as fallback stops, not part of the default route.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
@@ -16,7 +17,7 @@
 
 | Base | Nights | Recommended area | Why it fits | Watch-outs |
 | --- | ---: | --- | --- | --- |
-| Los Angeles arrival | 3 | Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent if arriving late | Starts the closed circle, supports recovery, and gives the family a first LA sample before driving north | LA traffic makes base choice important; airport transfer and parking costs can change value. |
+| Los Angeles arrival | 6 | Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent for the first night if early arrival logistics matter | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am; early check-in, luggage storage, and base choice matter. LA traffic and parking costs can change value. |
 | Santa Barbara / Montecito | 2 | Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well | A soft coastal pause after the short LA transfer | High July rates and minimum-stay rules may make nearby towns better value. |
 | Monterey / Carmel | 2 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, and a short scenic coast option | Beach-area parking and summer rates can be difficult; two nights leaves little margin. |
 | San Francisco | 3 | Nob Hill, Embarcadero, Union Square edge, SoMa near transit, or another parking-manageable base | Access to Alcatraz, Golden Gate, and waterfront without a long Bay Area stay | Decide whether to keep the car parked, return it temporarily, or use taxis/transit. City hotel rooms may be small for four. |
@@ -38,14 +39,14 @@
 
 ## Transport Plan
 
-1. Fly Sydney to Los Angeles.
+1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
 2. Transfer from LAX to the arrival hotel by pre-booked car service, taxi, rideshare, or hotel shuttle depending on arrival base.
-3. Decide whether to pick up the rental car on Day 1 or Day 4. Default to Day 4 if the arrival base supports car-free or rideshare-based LA sightseeing; use Day 1 only if hotel parking is reasonable and family logistics favor one continuous car rental.
+3. Decide whether to pick up the rental car on Day 1, Day 6, or Day 7. Default to a later pickup if the arrival base supports car-free or rideshare-based LA sightseeing; use Day 1 only if hotel parking is reasonable and family logistics favor one continuous car rental.
 4. Use the car for Santa Barbara, Monterey/Carmel, San Francisco, Yosemite, Las Vegas, and the return to Los Angeles.
 5. In San Francisco, compare keeping the car parked against returning it temporarily and picking up another car for Yosemite.
-6. Drive Las Vegas to Los Angeles on Day 17 and sleep near LAX, the Westside, or another departure-friendly base.
-7. Return the car at LAX on Day 17 or Day 18, depending on hotel parking, shuttle, and flight timing.
-8. Fly Los Angeles to Sydney on Day 18.
+6. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
+7. Return the car at LAX on Day 20 or Day 21, depending on hotel parking, shuttle, and the 10:45 pm flight timing.
+8. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
 
 ## Rental Car Requirements
 
@@ -54,24 +55,25 @@
 - Confirm whether the rental company requires an International Driving Permit for an Australian license.
 - Add a second authorized driver if both adults may drive.
 - Price LAX pickup to LAX return first.
-- Compare Day 1 pickup against Day 4 pickup if the LA arrival base can work without a car.
+- Compare Day 1 pickup against Day 6 or Day 7 pickup if the LA arrival base can work without a car.
 - Compare keeping the car through San Francisco against a temporary return if city parking is expensive.
 - Confirm parking fees at each hotel, toll handling, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
 
 ## Airport and Transfer Notes
 
-- LAX arrival: Use a pre-booked car service, taxi, rideshare, FlyAway/Metro, or hotel shuttle after choosing the first hotel. With luggage and a pram, default to a direct transfer unless the price difference is large.
-- LAX departure: Leave a large traffic buffer for rental car return, luggage, terminal transfer, and international check-in.
+- LAX arrival: UA 842 arrives at 6:10 am on June 28. Use a pre-booked car service, taxi, rideshare, FlyAway/Metro, or hotel shuttle after choosing the first hotel. With luggage, a pram, and likely early-arrival fatigue, default to a direct transfer unless the price difference is large.
+- LAX departure: UA 839 departs at 10:45 pm on July 18. Leave a large traffic buffer for rental car return, luggage, terminal transfer, and international check-in.
 - Final-day option: Book late checkout or a day room rather than filling the departure day with sightseeing.
-- SFO and LAS are no longer selected gateways. Keep them as quote fallbacks only if LAX fares or schedules are poor.
+- SFO and LAS are no longer selected gateways.
 
 ## Sources
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
+| Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
-| United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228, but exact family fares need live quotes. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Volatile fare anchor; quote exact dates |
+| United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
 | Las Vegas has family-friendly hotel, pool, free-sight, indoor attraction, and dining options, but selected lodging and attraction terms need current checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected hotel terms |
 | Yosemite Valley Lodge should be checked first only if it can fit the hotel cap, because location materially reduces daily driving. | Yosemite Hospitality | [Yosemite Valley Lodge](https://www.travelyosemite.com/lodging/yosemite-valley-lodge/) | 2026-05-08 | Needs live rate quote against $250/night cap |

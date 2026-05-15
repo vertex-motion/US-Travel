@@ -1,27 +1,31 @@
 # Daily Itinerary
 
-## Working Dates
+## Confirmed Dates
 
-Use July 1-20, 2026 as the planning window. This assumes:
+Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 
-- Day 1: Depart Sydney and arrive in Los Angeles on Wednesday, July 1, 2026.
-- Nights in the United States: 17.
-- Day 18: Depart Los Angeles on Saturday, July 18, 2026.
-- Day 20: Arrive in Sydney on Monday, July 20, 2026 after crossing the date line.
+- Day 1: Depart Sydney at 9:30 am and arrive in Los Angeles at 6:10 am on Sunday, June 28, 2026.
+- Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy.
+- Nights in the United States: 20.
+- Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
+- Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
+- Day 23: Arrive in Sydney at 7:00 am on Monday, July 20, 2026 after crossing the date line.
 
-## Day 1: Wednesday, July 1 - Arrive Los Angeles
+Seat assignments and booking references must not be recorded in this public repository.
 
-- Sleep: Los Angeles, preferably Santa Monica, Westside, or an arrival-friendly LAX-area base if the fare arrives late.
-- Morning: Fly Sydney to Los Angeles.
-- Afternoon: Clear immigration, collect bags, transfer to hotel, unpack.
+## Day 1: Sunday, June 28 - Arrive Los Angeles
+
+- Sleep: Los Angeles, preferably Santa Monica, Westside, or an arrival-friendly LAX-area base.
+- Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and transfer to the hotel.
+- Afternoon: Check in if available, unpack, nap, hotel pool, or a short pram-friendly neighborhood walk.
 - Dinner: Easy local dinner near the hotel.
 - Driving: None after arrival except airport transfer.
 - Walking: Keep light.
-- Reservations: Airport transfer if arriving with significant luggage and pram.
-- Backup plan: If arrival is delayed, skip dinner booking and eat near the hotel.
-- Source notes: LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate cities.
+- Reservations: Airport transfer if arriving with significant luggage and pram; early check-in or luggage storage if available.
+- Backup plan: If rooms are not ready, use a low-effort cafe, beach path, or hotel lobby plan until check-in.
+- Source notes: Flight details are from confirmed traveler ticket information.
 
-## Day 2: Thursday, July 2 - Santa Monica and Arrival Recovery
+## Day 2: Monday, June 29 - Santa Monica and Arrival Recovery
 
 - Sleep: Los Angeles.
 - Morning: Slow start, Santa Monica beach path, Palisades Park, or hotel pool.
@@ -33,7 +37,19 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Cayton if using it as a child-first indoor reset.
 - Backup plan: If jet lag is heavy, make this a hotel, beach, and early-dinner day only.
 
-## Day 3: Friday, July 3 - Getty, Academy Museum, or Griffith
+## Day 3: Tuesday, June 30 - Gentle Los Angeles Buffer Day
+
+- Sleep: Los Angeles.
+- Morning: Keep a flexible start: beach, hotel pool, groceries, laundry, or a nearby playground.
+- Lunch: Near the hotel base.
+- Afternoon: Short neighborhood outing, Petersen Automotive Museum, Rodeo Drive walk, or rest.
+- Dinner: Los Angeles.
+- Driving: Minimal to moderate depending on base.
+- Walking: Light to moderate.
+- Reservations: None unless choosing a ticketed museum.
+- Backup plan: Treat this as a recovery and logistics day if the first two nights are rough.
+
+## Day 4: Wednesday, July 1 - Getty, Academy Museum, or Griffith
 
 - Sleep: Los Angeles.
 - Morning: Choose one primary LA anchor: Getty Center, Academy Museum, or Griffith Observatory viewpoints.
@@ -46,7 +62,31 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: If traffic is poor, stay Westside and move Griffith to a future LA return trip.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
-## Day 4: Saturday, July 4 - Los Angeles to Santa Barbara
+## Day 5: Thursday, July 2 - Flexible Los Angeles Day
+
+- Sleep: Los Angeles.
+- Morning: Choose a second LA sample only if energy is good: beach, Getty/Academy/Griffith option not used on Day 4, or a simple neighborhood morning.
+- Lunch: Near the chosen area.
+- Afternoon: Hotel pool, shopping errand, playground, or low-key museum backup.
+- Dinner: Los Angeles.
+- Driving: Keep below 3-4 hours total.
+- Walking: Light to moderate.
+- Reservations: Only for a chosen ticketed attraction.
+- Backup plan: Keep the day local and save energy for the July 4 coast move.
+
+## Day 6: Friday, July 3 - Los Angeles Final Local Day
+
+- Sleep: Los Angeles.
+- Morning: Easy beach, viewpoint, or neighborhood walk.
+- Lunch: Los Angeles.
+- Afternoon: Pack, laundry, rental car pickup if choosing a Day 6/7 pickup, or one short local activity.
+- Dinner: Early dinner near the hotel.
+- Driving: Minimal unless picking up the rental car.
+- Walking: Light.
+- Reservations: Rental car pickup only if the family chooses to avoid a Day 1 car.
+- Backup plan: Keep this as a full rest day before the holiday transfer.
+
+## Day 7: Saturday, July 4 - Los Angeles to Santa Barbara
 
 - Sleep: Santa Barbara or Montecito.
 - Morning: Drive to Santa Barbara after breakfast.
@@ -59,7 +99,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: If holiday traffic is poor, leave later and treat the day as a transfer plus hotel evening.
 - Source notes: Keep July 4 local and flexible after arrival. Do not add a second major activity.
 
-## Day 5: Sunday, July 5 - Santa Barbara Recovery Day
+## Day 8: Sunday, July 5 - Santa Barbara Recovery Day
 
 - Sleep: Santa Barbara or Montecito.
 - Morning: Slow start, beach, hotel pool, or waterfront walk.
@@ -71,7 +111,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: None required unless choosing the zoo or a popular dinner.
 - Backup plan: Keep the day almost entirely resort-based if the family still feels jet lag.
 
-## Day 6: Monday, July 6 - Santa Barbara to Monterey / Carmel
+## Day 9: Monday, July 6 - Santa Barbara to Monterey / Carmel
 
 - Sleep: Monterey, Carmel, Pacific Grove, Seaside, or Carmel Valley.
 - Morning: Leave Santa Barbara after breakfast. Use the coastal drive north only if Highway 1 is open and timing works.
@@ -84,7 +124,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Central Coast midpoint night only if another route night is removed.
 - Source notes: Caltrans currently reports Highway 1 controls north of Big Sur and near Jamala Road in Santa Barbara County, so keep the evening unstructured.
 
-## Day 7: Tuesday, July 7 - Monterey Bay Aquarium and Carmel Coast
+## Day 10: Tuesday, July 7 - Monterey Bay Aquarium and Carmel Coast
 
 - Sleep: Monterey / Carmel.
 - Morning: Monterey Bay Aquarium.
@@ -96,7 +136,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
-## Day 8: Wednesday, July 8 - Monterey / Carmel to San Francisco
+## Day 11: Wednesday, July 8 - Monterey / Carmel to San Francisco
 
 - Sleep: San Francisco.
 - Morning: Depart Monterey/Carmel after breakfast.
@@ -108,7 +148,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: San Francisco hotel parking, or car return if the family chooses to go car-free in the city.
 - Backup plan: If traffic is poor, go straight to the hotel and keep the evening close.
 
-## Day 9: Thursday, July 9 - Golden Gate and Presidio
+## Day 12: Thursday, July 9 - Golden Gate and Presidio
 
 - Sleep: San Francisco.
 - Morning: Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
@@ -120,7 +160,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: None required.
 - Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard.
 
-## Day 10: Friday, July 10 - Alcatraz and Ferry Building
+## Day 13: Friday, July 10 - Alcatraz and Ferry Building
 
 - Sleep: San Francisco.
 - Morning: Alcatraz Island day tour.
@@ -133,7 +173,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable.
 - Source notes: Alcatraz is operated through the NPS-authorized concessioner, Alcatraz City Cruises.
 
-## Day 11: Saturday, July 11 - San Francisco to Yosemite
+## Day 14: Saturday, July 11 - San Francisco to Yosemite
 
 - Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
 - Morning: Leave San Francisco after breakfast.
@@ -146,7 +186,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: If traffic is severe, skip Yosemite Valley sightseeing and settle in.
 - Source notes: No July 2026 day-use reservation is currently required, but entry fees and lodging reservations still apply.
 
-## Day 12: Sunday, July 12 - Yosemite Valley
+## Day 15: Sunday, July 12 - Yosemite Valley
 
 - Sleep: Yosemite area.
 - Morning: Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints.
@@ -158,7 +198,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: None for trails; dining may require advance planning.
 - Backup plan: Use the free valley shuttle and shorter paved routes if it is hot.
 
-## Day 13: Monday, July 13 - Mariposa Grove or Glacier Point
+## Day 16: Monday, July 13 - Mariposa Grove or Glacier Point
 
 - Sleep: Yosemite area.
 - Morning: Choose Mariposa Grove if the shuttle is operating and heat is manageable.
@@ -170,7 +210,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Check road and shuttle status before committing.
 - Backup plan: Yosemite Valley scenic loop, visitor center, and hotel rest.
 
-## Day 14: Tuesday, July 14 - Yosemite to Las Vegas
+## Day 17: Tuesday, July 14 - Yosemite to Las Vegas
 
 - Sleep: Las Vegas.
 - Morning: Leave very early. Treat this as the hardest transfer day of the loop.
@@ -184,7 +224,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Backup plan: Add a midpoint overnight only if live route timing makes the direct transfer too risky, and remove one night from another base.
 - Source notes: Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so do not plan outdoor sightseeing on arrival.
 
-## Day 15: Wednesday, July 15 - Las Vegas Strip Family Day
+## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
 - Sleep: Las Vegas.
 - Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
@@ -197,7 +237,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Book only one ticketed attraction or show for the day.
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
-## Day 16: Thursday, July 16 - Red Rock or Las Vegas Flex Day
+## Day 19: Thursday, July 16 - Red Rock or Las Vegas Flex Day
 
 - Sleep: Las Vegas.
 - Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
@@ -210,7 +250,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
 - Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
 
-## Day 17: Friday, July 17 - Las Vegas to Los Angeles / LAX Area
+## Day 20: Friday, July 17 - Las Vegas to Los Angeles / LAX Area
 
 - Sleep: Los Angeles, preferably LAX area, Westside, or another departure-friendly base.
 - Morning: Pack and leave Las Vegas after breakfast.
@@ -222,19 +262,20 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Final LAX-area hotel with parking, shuttle, or clear airport transfer plan.
 - Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
-## Day 18: Saturday, July 18 - Depart Los Angeles
+## Day 21: Saturday, July 18 - Depart Los Angeles
 
 - Sleep: Overnight flight.
 - Morning: Pack slowly. Avoid major sightseeing.
 - Lunch: Near hotel or airport.
-- Afternoon: Return rental car if not already returned and start the return trip to Sydney from LAX.
+- Afternoon: Return rental car if not already returned. Use a late checkout or day room if the gap before check-in is too long.
+- Evening: Depart LAX on UA 839 at 10:45 pm.
 - Dinner: Airport or in flight.
 - Driving: Airport transfer only if car has already been returned; otherwise allow a large rental-car return buffer.
 - Walking: Light.
-- Reservations: SYD-LAX-SYD international itinerary and car return. Confirm terminal, luggage timing, and check-in buffer.
-- Backup plan: If the flight leaves very late, reserve late checkout or a day room.
+- Reservations: United UA 839 LAX-SYD international itinerary and car return. Confirm terminal, luggage timing, and check-in buffer.
+- Backup plan: If traffic or rental return logistics look poor, return the car on Day 20 and use an airport transfer on departure day.
 
-## Day 19: Sunday, July 19 - In Transit
+## Day 22: Sunday, July 19 - In Transit
 
 - Sleep: In flight.
 - Morning: Cross the Pacific.
@@ -245,10 +286,10 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: None.
 - Backup plan: None.
 
-## Day 20: Monday, July 20 - Arrive Sydney
+## Day 23: Monday, July 20 - Arrive Sydney
 
 - Sleep: Home.
-- Morning: Arrive Sydney.
+- Morning: Arrive SYD on UA 839 at 7:00 am.
 - Afternoon: Recovery day.
 - Dinner: Home.
 - Driving: Airport transfer only.
@@ -260,9 +301,10 @@ Use July 1-20, 2026 as the planning window. This assumes:
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
+| Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
-| United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228, but exact family fares need live quotes. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Volatile fare anchor; quote exact dates |
+| United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
 | Alcatraz tickets should be booked through the NPS-authorized ferry concessioner; NPS publishes current ferry-ticket fees. | National Park Service / Alcatraz City Cruises | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |

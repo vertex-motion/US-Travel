@@ -4,7 +4,7 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The selected route now starts and ends at LAX. This should improve flight competition and may reduce rental-car one-way fees, but it adds one final Los Angeles-area hotel night and a Las Vegas-to-Los Angeles return drive.
+The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan.
 
 The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, San Francisco, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
@@ -14,8 +14,8 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
-| International flights | AU$4,900 | AU$10,500 | AU$28,000+ | United fare page showed Sydney-Los Angeles round trips from about AU$1,228 per person; exact SYD-LAX-SYD family fare must be quoted directly with airlines or a trusted booking source. |
-| Lodging, 17 nights | $3,400 | $3,825 | $4,250 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, SF, Yosemite, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
+| International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
+| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, SF, Yosemite, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, and San Francisco parking strategy; needs live quote. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Alcatraz, Monterey Bay Aquarium, Hearst Castle if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
@@ -39,9 +39,9 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 ## Cost Controls That Preserve Quality
 
-- Quote SYD-LAX-SYD before other international patterns.
+- Keep the booked UA 842 / UA 839 itinerary as the flight baseline.
 - Use LAX-to-LAX rental quotes as the baseline before adding complexity.
-- Consider delaying car pickup until Day 4 if the first LA base supports car-free or rideshare-based sightseeing and parking is expensive.
+- Consider delaying car pickup until Day 6 or Day 7 if the first LA base supports car-free or rideshare-based sightseeing and parking is expensive.
 - Compare San Francisco parking against returning the car temporarily during the city stay.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
@@ -50,24 +50,23 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 - Choose only one Las Vegas paid attraction or show until live prices are known.
 - Treat San Diego and Grand Canyon as extensions, not free add-ons.
 
-## Quote Tasks
+## Remaining Quote Tasks
 
-1. Quote SYD-LAX-SYD for July 1 departure and July 18 return.
-2. Compare SFO-SFO and LAS-LAS closed-circle fares only as fallbacks if LAX pricing or times are poor.
-3. Quote one-room family configurations in each base within the USD $200-$250 nightly target before committing to exact dates or hotel brands.
-4. Quote Yosemite lodging immediately for July 11-14.
-5. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
-6. Quote rental car LAX pickup to LAX return for July 4-18 first.
-7. Compare rental car Day 1 pickup versus Day 4 pickup after the first LA hotel base is chosen.
-8. Compare keeping the car through San Francisco versus returning it temporarily if parking is expensive.
-9. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
+1. Quote one-room family configurations in each base within the USD $200-$250 nightly target before committing to exact hotel brands.
+2. Quote Yosemite lodging immediately for July 11-14.
+3. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
+4. Quote rental car LAX pickup to LAX return for July 4-18 first.
+5. Compare rental car Day 1 pickup versus Day 6 or Day 7 pickup after the first LA hotel base is chosen.
+6. Compare keeping the car through San Francisco versus returning it temporarily if parking is expensive.
+7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
-| United fare page supplied a planning anchor for Sydney-Los Angeles, but exact itinerary needs a direct airline quote. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Needs exact family quote |
+| Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; exact fare and seat assignments intentionally omitted |
+| United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | Alcatraz day-tour ticket levels support the family attraction allowance. | National Park Service | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Muir Woods entrance and parking requirements support the family attraction allowance if restored as a swap. | National Park Service / Go Muir Woods | [Muir Woods fees](https://www.nps.gov/muwo/planyourvisit/fees.htm) and [parking reservations](https://gomuirwoods.com/) | 2026-05-08 | Current |
