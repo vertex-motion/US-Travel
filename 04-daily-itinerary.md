@@ -4,75 +4,149 @@
 
 Use July 1-20, 2026 as the planning window. This assumes:
 
-- Day 1: Depart Sydney and arrive in San Francisco on Wednesday, July 1, 2026.
+- Day 1: Depart Sydney and arrive in Los Angeles on Wednesday, July 1, 2026.
 - Nights in the United States: 17.
-- Day 18: Depart Las Vegas on Saturday, July 18, 2026, likely via a connecting US gateway.
+- Day 18: Depart Los Angeles on Saturday, July 18, 2026.
 - Day 20: Arrive in Sydney on Monday, July 20, 2026 after crossing the date line.
 
-## Day 1: Wednesday, July 1 - Arrive San Francisco
+## Day 1: Wednesday, July 1 - Arrive Los Angeles
 
-- Sleep: San Francisco.
-- Morning: Fly Sydney to San Francisco.
-- Afternoon: Clear immigration, transfer by car service or taxi to hotel, unpack.
+- Sleep: Los Angeles, preferably Santa Monica, Westside, or an arrival-friendly LAX-area base if the fare arrives late.
+- Morning: Fly Sydney to Los Angeles.
+- Afternoon: Clear immigration, collect bags, transfer to hotel, unpack.
 - Dinner: Easy local dinner near the hotel.
 - Driving: None after arrival except airport transfer.
 - Walking: Keep light.
 - Reservations: Airport transfer if arriving with significant luggage and pram.
 - Backup plan: If arrival is delayed, skip dinner booking and eat near the hotel.
-- Source notes: Use SFO as the preferred arrival airport because it supports nonstop Sydney service.
+- Source notes: LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate cities.
 
-## Day 2: Thursday, July 2 - Golden Gate and Presidio
+## Day 2: Thursday, July 2 - Santa Monica and Arrival Recovery
+
+- Sleep: Los Angeles.
+- Morning: Slow start, Santa Monica beach path, Palisades Park, or hotel pool.
+- Lunch: Santa Monica, Brentwood, or hotel area.
+- Afternoon: Cayton Children's Museum, beach/playground time, or a quiet neighborhood walk.
+- Dinner: Santa Monica, Brentwood, or hotel.
+- Driving: Minimal if based on the Westside.
+- Walking: Light to moderate and pram-friendly near the beach path.
+- Reservations: Cayton if using it as a child-first indoor reset.
+- Backup plan: If jet lag is heavy, make this a hotel, beach, and early-dinner day only.
+
+## Day 3: Friday, July 3 - Getty, Academy Museum, or Griffith
+
+- Sleep: Los Angeles.
+- Morning: Choose one primary LA anchor: Getty Center, Academy Museum, or Griffith Observatory viewpoints.
+- Lunch: Brentwood, Farmers Market, Los Feliz, or route-dependent neighborhood.
+- Afternoon: Rest, beach time, Rodeo Drive walk, Petersen Automotive Museum, or hotel pool.
+- Dinner: Los Angeles.
+- Driving: 1-3 hours total depending on base and chosen anchor.
+- Walking: Light to moderate.
+- Reservations: Getty parking/timed-entry if required, Academy Museum tickets if visiting, or planetarium tickets if choosing Griffith.
+- Backup plan: If traffic is poor, stay Westside and move Griffith to a future LA return trip.
+- Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
+
+## Day 4: Saturday, July 4 - Los Angeles to Santa Barbara
+
+- Sleep: Santa Barbara or Montecito.
+- Morning: Drive to Santa Barbara after breakfast.
+- Lunch: Santa Barbara waterfront, Funk Zone, or hotel area.
+- Afternoon: Check in, beach, pool, or easy waterfront walk.
+- Dinner: Early casual dinner.
+- Driving: 1.5-2.5 hours before traffic variation.
+- Walking: Light.
+- Reservations: None unless choosing a July 4 dinner with a fixed seating time.
+- Backup plan: If holiday traffic is poor, leave later and treat the day as a transfer plus hotel evening.
+- Source notes: Keep July 4 local and flexible after arrival. Do not add a second major activity.
+
+## Day 5: Sunday, July 5 - Santa Barbara Recovery Day
+
+- Sleep: Santa Barbara or Montecito.
+- Morning: Slow start, beach, hotel pool, or waterfront walk.
+- Lunch: State Street, Funk Zone, or hotel.
+- Afternoon: Santa Barbara County Courthouse, Old Mission Santa Barbara, Santa Barbara Zoo, or rest.
+- Dinner: Santa Barbara waterfront or Montecito.
+- Driving: Minimal.
+- Walking: Light.
+- Reservations: None required unless choosing the zoo or a popular dinner.
+- Backup plan: Keep the day almost entirely resort-based if the family still feels jet lag.
+
+## Day 6: Monday, July 6 - Santa Barbara to Monterey / Carmel
+
+- Sleep: Monterey, Carmel, Pacific Grove, Seaside, or Carmel Valley.
+- Morning: Leave Santa Barbara after breakfast. Use the coastal drive north only if Highway 1 is open and timing works.
+- Lunch: Santa Ynez, San Luis Obispo, Cambria, San Simeon, Big Sur, or route-dependent stop.
+- Afternoon: Hearst Castle tour if tickets and timing work; otherwise continue to Monterey/Carmel and settle in.
+- Dinner: Carmel or Monterey.
+- Driving: Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.
+- Walking: Light to moderate.
+- Reservations: Hearst Castle tour tickets open about 60 days in advance.
+- Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Central Coast midpoint night only if another route night is removed.
+- Source notes: Caltrans currently reports Highway 1 controls north of Big Sur and near Jamala Road in Santa Barbara County, so keep the evening unstructured.
+
+## Day 7: Tuesday, July 7 - Monterey Bay Aquarium and Carmel Coast
+
+- Sleep: Monterey / Carmel.
+- Morning: Monterey Bay Aquarium.
+- Lunch: Cannery Row, Pacific Grove, or hotel.
+- Afternoon: Pacific Grove coastal walk, Dennis the Menace Playground, Carmel Beach, or a short Big Sur reach if Highway 1 and energy allow.
+- Dinner: Carmel or Monterey.
+- Driving: Minimal unless adding a short Big Sur scenic drive.
+- Walking: Moderate.
+- Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
+- Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
+
+## Day 8: Wednesday, July 8 - Monterey / Carmel to San Francisco
+
+- Sleep: San Francisco.
+- Morning: Depart Monterey/Carmel after breakfast.
+- Lunch: Half Moon Bay, San Mateo, or San Francisco depending on route.
+- Afternoon: Check in. Choose a light Ferry Building, Embarcadero, North Beach, or hotel-area walk.
+- Dinner: North Beach, Hayes Valley, Ferry Building area, or near hotel.
+- Driving: 2-3 hours before traffic and stops.
+- Walking: Light.
+- Reservations: San Francisco hotel parking, or car return if the family chooses to go car-free in the city.
+- Backup plan: If traffic is poor, go straight to the hotel and keep the evening close.
+
+## Day 9: Thursday, July 9 - Golden Gate and Presidio
 
 - Sleep: San Francisco.
 - Morning: Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
 - Lunch: Marina, Presidio, or Fort Mason area.
-- Afternoon: Palace of Fine Arts and neighborhood walk.
+- Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
 - Dinner: North Beach or Hayes Valley.
-- Driving: None; use taxis/rideshare/transit.
+- Driving: Avoid if possible; use taxis/rideshare/transit or a short self-drive only if parking is easy.
 - Walking: Moderate and pram-friendly if routes stay near waterfront paths.
 - Reservations: None required.
-- Backup plan: Exploratorium if fog, wind, or jet lag makes outdoor time hard.
+- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard.
 
-## Day 3: Friday, July 3 - Alcatraz and Ferry Building
+## Day 10: Friday, July 10 - Alcatraz and Ferry Building
 
 - Sleep: San Francisco.
 - Morning: Alcatraz Island day tour.
 - Lunch: Ferry Building.
 - Afternoon: Embarcadero, cable car if queues are manageable, or North Beach.
 - Dinner: Early dinner near hotel.
-- Driving: None.
+- Driving: None if possible.
 - Walking: Moderate.
 - Reservations: Book the official Alcatraz ferry as soon as tickets open.
 - Backup plan: Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable.
 - Source notes: Alcatraz is operated through the NPS-authorized concessioner, Alcatraz City Cruises.
 
-## Day 4: Saturday, July 4 - San Francisco Local Day
+## Day 11: Saturday, July 11 - San Francisco to Yosemite
 
-- Sleep: San Francisco.
-- Morning: Slow start after jet lag. Choose Golden Gate Park, the California Academy of Sciences, or a neighborhood farmers market.
-- Lunch: Inner Sunset, Haight, or Ferry Building area depending on the morning choice.
-- Afternoon: Rest at hotel. Avoid long transfers on Independence Day.
-- Dinner: Early casual dinner.
-- Driving: None.
-- Walking: Light to moderate.
-- Reservations: Buy museum tickets if choosing California Academy of Sciences.
-- Backup plan: Hotel pool/spa time or indoor museum time.
-- Source notes: July 4 creates holiday crowds; keep this day local and flexible.
-
-## Day 5: Sunday, July 5 - San Francisco to Yosemite
-
-- Sleep: Yosemite Valley, Fish Camp, or another Yosemite-area base.
-- Morning: Pick up rental car and leave San Francisco after breakfast.
+- Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
+- Morning: Leave San Francisco after breakfast.
 - Lunch: Oakdale, Mariposa, or route-dependent stop.
 - Afternoon: Arrive, check in, take a short Yosemite Valley orientation walk if time allows.
 - Dinner: Hotel or lodge restaurant.
 - Driving: 4-5 hours before stops.
 - Walking: Light.
 - Reservations: Yosemite-area lodging must be booked early.
-- Backup plan: If traffic is severe, skip Yosemite Valley sightseeing and settle in. Muir Woods can replace part of Day 4 only if the family prefers redwoods over a slower San Francisco holiday day.
+- Backup plan: If traffic is severe, skip Yosemite Valley sightseeing and settle in.
 - Source notes: No July 2026 day-use reservation is currently required, but entry fees and lodging reservations still apply.
 
-## Day 6: Monday, July 6 - Yosemite Valley
+## Day 12: Sunday, July 12 - Yosemite Valley
 
 - Sleep: Yosemite area.
 - Morning: Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints.
@@ -84,7 +158,7 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: None for trails; dining may require advance planning.
 - Backup plan: Use the free valley shuttle and shorter paved routes if it is hot.
 
-## Day 7: Tuesday, July 7 - Mariposa Grove or Glacier Point
+## Day 13: Monday, July 13 - Mariposa Grove or Glacier Point
 
 - Sleep: Yosemite area.
 - Morning: Choose Mariposa Grove if the shuttle is operating and heat is manageable.
@@ -96,113 +170,26 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Check road and shuttle status before committing.
 - Backup plan: Yosemite Valley scenic loop, visitor center, and hotel rest.
 
-## Day 8: Wednesday, July 8 - Yosemite to Monterey / Carmel
-
-- Sleep: Monterey, Carmel, or Carmel Valley.
-- Morning: Depart Yosemite after breakfast.
-- Lunch: Route stop in the Central Valley or around Gilroy.
-- Afternoon: Arrive Monterey/Carmel, check in, short Pacific Grove or Carmel Beach walk.
-- Dinner: Carmel or Monterey.
-- Driving: 4.5-5.5 hours before breaks.
-- Walking: Light.
-- Reservations: Dinner reservation if choosing a popular Carmel restaurant.
-- Backup plan: If the drive runs long, skip sunset stops and settle in.
-- Source notes: This is a normal intercity transfer under the updated driving tolerance.
-
-## Day 9: Thursday, July 9 - Monterey Bay Aquarium and Carmel Coast
-
-- Sleep: Monterey / Carmel.
-- Morning: Monterey Bay Aquarium.
-- Lunch: Cannery Row, Pacific Grove, or hotel.
-- Afternoon: Pacific Grove coastal walk, Dennis the Menace Playground, Carmel Beach, or a short Big Sur reach if Highway 1 and energy allow.
-- Dinner: Carmel or Monterey.
-- Driving: Minimal unless adding a short Big Sur scenic drive.
-- Walking: Moderate.
-- Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
-- Backup plan: If aquarium crowds are heavy, go at opening and move the playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
-
-## Day 10: Friday, July 10 - Monterey to Santa Barbara
-
-- Sleep: Santa Barbara or Montecito.
-- Morning: Leave Monterey / Carmel after breakfast. Use the coastal drive south only if Highway 1 is open and timing works.
-- Lunch: Big Sur, Cambria, San Simeon, Paso Robles, or Santa Ynez depending on route and traffic.
-- Afternoon: Hearst Castle tour if tickets and timing work; otherwise continue to Santa Barbara and settle in.
-- Dinner: Santa Barbara or Montecito.
-- Driving: Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.
-- Walking: Light to moderate.
-- Reservations: Hearst Castle tour tickets open about 60 days in advance.
-- Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Cambria, San Luis Obispo, or Paso Robles overnight only if the direct transfer becomes unattractive and another route night is removed.
-- Source notes: This city-to-city move uses the updated 10-12 hour intercity driving tolerance. Caltrans currently reports Highway 1 controls north of Big Sur and near Jamala Road in Santa Barbara County, so keep the evening unstructured.
-
-## Day 11: Saturday, July 11 - Santa Barbara Recovery Day
-
-- Sleep: Santa Barbara or Montecito.
-- Morning: Slow start, beach, hotel pool, or waterfront walk.
-- Lunch: State Street, Funk Zone, or hotel.
-- Afternoon: Santa Barbara County Courthouse, Old Mission Santa Barbara, or rest.
-- Dinner: Santa Barbara waterfront or Montecito.
-- Driving: Minimal.
-- Walking: Light.
-- Reservations: None required.
-- Backup plan: Keep the day almost entirely resort-based if the Day 10 transfer was tiring.
-
-## Day 12: Sunday, July 12 - Santa Barbara to Los Angeles
-
-- Sleep: Los Angeles, preferably Santa Monica, Beverly Hills, or West Hollywood.
-- Morning: Drive to Los Angeles after breakfast.
-- Lunch: Santa Monica or Brentwood.
-- Afternoon: Getty Center if traffic cooperates; otherwise hotel check-in and local neighborhood time.
-- Dinner: Santa Monica, Brentwood, or hotel.
-- Driving: 1.5-2.5 hours before LA traffic variation.
-- Walking: Light to moderate.
-- Reservations: Reserve Getty parking/timed-entry if the museum requires it for the chosen date.
-- Backup plan: If traffic is poor, go straight to the hotel and shift Getty to Day 13.
-
-## Day 13: Monday, July 13 - LA Museums and Everyday City Life
-
-- Sleep: Los Angeles.
-- Morning: Academy Museum of Motion Pictures or La Brea / LACMA area.
-- Lunch: Original Farmers Market or Beverly Grove.
-- Afternoon: Rest, Rodeo Drive walk, Petersen Automotive Museum, or neighborhood time.
-- Dinner: Beverly Hills, West Hollywood, or Santa Monica.
-- Driving: 1-2 hours total depending on hotel base.
-- Walking: Light to moderate.
-- Reservations: Academy Museum tickets if visiting.
-- Backup plan: Getty Center if Day 12 traffic made it impractical.
-
-## Day 14: Tuesday, July 14 - Griffith Observatory and Hollywood Viewpoints
-
-- Sleep: Los Angeles.
-- Morning: Griffith Observatory / Hollywood Sign viewpoints.
-- Lunch: Los Feliz, Silver Lake, or Hollywood area.
-- Afternoon: Rest or beach time.
-- Dinner: Los Angeles.
-- Driving: 1.5-3 hours depending on traffic.
-- Walking: Light to moderate.
-- Reservations: None for observatory grounds; planetarium shows require tickets and age rules should be checked.
-- Backup plan: Skip Hollywood Boulevard if it feels too crowded; use Griffith and a neighborhood lunch instead.
-- Source notes: Warner Bros. Studio Tour is not a fit for this family because children under 5 are not allowed.
-
-## Day 15: Wednesday, July 15 - Los Angeles to Las Vegas
+## Day 14: Tuesday, July 14 - Yosemite to Las Vegas
 
 - Sleep: Las Vegas.
-- Morning: Leave Los Angeles after breakfast and drive toward Las Vegas.
-- Lunch: Route-dependent stop. Keep this practical rather than scenic.
-- Afternoon: Arrive Las Vegas, check in, rest, pool time, or indoor hotel exploration.
+- Morning: Leave very early. Treat this as the hardest transfer day of the loop.
+- Lunch: Practical route stop around the Central Valley, Bakersfield, Barstow, or another route-dependent location.
+- Afternoon: Continue to Las Vegas with heat, traffic, and fatigue buffers.
 - Dinner: Casual dinner near the hotel.
-- Evening: Bellagio fountains or an easy Strip lights walk if everyone has energy.
-- Driving: About 4-5 hours before stops, with desert heat and traffic buffers.
+- Evening: Rest, pool time, or indoor hotel exploration only if everyone has energy.
+- Driving: Likely 8-10+ hours before breaks depending on Yosemite base and route.
 - Walking: Light.
 - Reservations: Las Vegas hotel with confirmed room occupancy, resort fee, parking, pool access, and cancellation terms.
-- Backup plan: If the drive runs long or heat is severe, skip the evening Strip walk and use the hotel pool/food court.
-- Source notes: Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so schedule outdoor time cautiously.
+- Backup plan: Add a midpoint overnight only if live route timing makes the direct transfer too risky, and remove one night from another base.
+- Source notes: Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so do not plan outdoor sightseeing on arrival.
 
-## Day 16: Thursday, July 16 - Las Vegas Strip Family Day
+## Day 15: Wednesday, July 15 - Las Vegas Strip Family Day
 
 - Sleep: Las Vegas.
 - Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
 - Lunch: Food hall, casual resort dining, or nearby mall dining.
-- Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, or a family-appropriate show after current age, price, and timing checks.
+- Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
 - Dinner: Las Vegas.
 - Evening: Fountains of Bellagio, High Roller, or a short Strip walk if temperatures and crowds are manageable.
 - Driving: Minimal if staying on or near the Strip.
@@ -210,29 +197,41 @@ Use July 1-20, 2026 as the planning window. This assumes:
 - Reservations: Book only one ticketed attraction or show for the day.
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
-## Day 17: Friday, July 17 - Red Rock or Las Vegas Flex Day
+## Day 16: Thursday, July 16 - Red Rock or Las Vegas Flex Day
 
 - Sleep: Las Vegas.
 - Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
 - Lunch: Return to hotel or casual indoor lunch.
 - Afternoon: Rest, packing buffer, indoor attraction, or low-key shopping near the hotel.
 - Dinner: Final Las Vegas dinner.
-- Evening: Final Bellagio fountains, Fremont Street only if the family explicitly wants a louder/crowded scene, or early night before travel.
+- Evening: Final Bellagio fountains, Fremont Street only if the family explicitly wants a louder/crowded scene, or early night before the loop-closure drive.
 - Driving: 1.5-3 hours if adding Red Rock; minimal otherwise.
 - Walking: Light.
 - Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
 - Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
 
-## Day 18: Saturday, July 18 - Depart Las Vegas
+## Day 17: Friday, July 17 - Las Vegas to Los Angeles / LAX Area
+
+- Sleep: Los Angeles, preferably LAX area, Westside, or another departure-friendly base.
+- Morning: Pack and leave Las Vegas after breakfast.
+- Lunch: Practical route stop. Keep this a logistics day, not a sightseeing day.
+- Afternoon: Arrive Los Angeles, return car if convenient, check in near the departure base.
+- Dinner: Easy final dinner near the hotel.
+- Driving: 4-5 hours before Los Angeles traffic and stops.
+- Walking: Light.
+- Reservations: Final LAX-area hotel with parking, shuttle, or clear airport transfer plan.
+- Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
+
+## Day 18: Saturday, July 18 - Depart Los Angeles
 
 - Sleep: Overnight flight.
 - Morning: Pack slowly. Avoid major sightseeing.
-- Lunch: Near hotel.
-- Afternoon: Return rental car at LAS and start the return trip to Sydney via the booked connecting gateway.
+- Lunch: Near hotel or airport.
+- Afternoon: Return rental car if not already returned and start the return trip to Sydney from LAX.
 - Dinner: Airport or in flight.
-- Driving: 15-45 minutes to LAS depending on hotel location and traffic.
+- Driving: Airport transfer only if car has already been returned; otherwise allow a large rental-car return buffer.
 - Walking: Light.
-- Reservations: International itinerary and car return. Confirm terminal, luggage timing, and connection buffer.
+- Reservations: SYD-LAX-SYD international itinerary and car return. Confirm terminal, luggage timing, and check-in buffer.
 - Backup plan: If the flight leaves very late, reserve late checkout or a day room.
 
 ## Day 19: Sunday, July 19 - In Transit
@@ -261,9 +260,11 @@ Use July 1-20, 2026 as the planning window. This assumes:
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
-| SFO is a plausible nonstop arrival airport from Sydney. | San Francisco International Airport | [Nonstop service from SFO](https://www.flysfo.com/nonstop) | 2026-05-08 | Current |
+| LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
+| Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
+| United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228, but exact family fares need live quotes. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Volatile fare anchor; quote exact dates |
+| LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
 | Alcatraz tickets should be booked through the NPS-authorized ferry concessioner; NPS publishes current ferry-ticket fees. | National Park Service / Alcatraz City Cruises | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
-| Muir Woods requires parking or shuttle reservations before arrival if restored as a San Francisco swap. | National Park Service | [Muir Woods reservations](https://www.nps.gov/muwo/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mariposa Grove shuttle and seasonal road access must be checked before planning the grove day. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-08 | Current |
@@ -279,4 +280,3 @@ Use July 1-20, 2026 as the planning window. This assumes:
 | Bellagio publishes daily fountain display windows, but schedule can vary and outdoor shows can be canceled by weather. | Bellagio | [Fountains of Bellagio](https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html) | 2026-05-13 | Current; re-check before visit |
 | Sphere Experience content, dates, times, prices, and availability are subject to change. | Sphere | [The Sphere Experience](https://www.thesphere.com/shows/the-sphere-experience) | 2026-05-13 | Current; verify before booking |
 | Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking can fill and summer hours apply. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |
-| LAS is the Las Vegas departure airport to quote for the return itinerary. | Harry Reid International Airport | [Airlines](https://www.harryreidairport.com/flights/airlines) | 2026-05-13 | Current; quote exact routing |
