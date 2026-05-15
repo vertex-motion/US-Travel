@@ -1054,43 +1054,24 @@
           <div class="route-list" id="routeList"></div>
         </div>
 
-        <div class="grid two" style="margin-top: 16px;">
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Traveler Intent</h2>
-                <p class="panel-kicker">Canonical source: 01-trip-purpose.md</p>
-              </div>
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Selected Route</h2>
+              <p class="panel-kicker">Canonical source: 02-current-plan-options.md</p>
             </div>
-            <div class="panel-body">
-              <ul class="list">
-                <li><span class="dot"></span><span>First trip to the United States, with a West Coast focus because the East Coast flight would be too long.</span></li>
-                <li><span class="dot ocean"></span><span>Famous landmarks and recognizable places matter, alongside everyday experiences that feel like US life.</span></li>
-                <li><span class="dot sun"></span><span>The family currently lives in Sydney and will travel with a pram for the younger child.</span></li>
-                <li><span class="dot rose"></span><span>Planning principles favor realistic days, rest time, a $200-$250 nightly hotel target, and one room or suite for all four travelers.</span></li>
-              </ul>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead>
+                  <tr><th>Base</th><th>Nights</th><th>Key sights</th></tr>
+                </thead>
+                <tbody id="selectedRouteRows"></tbody>
+              </table>
             </div>
-          </section>
-
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Selected Route</h2>
-                <p class="panel-kicker">Canonical source: 02-current-plan-options.md</p>
-              </div>
-            </div>
-            <div class="panel-body">
-              <div class="table-wrap">
-                <table class="mini-table">
-                  <thead>
-                    <tr><th>Base</th><th>Nights</th><th>Key sights</th></tr>
-                  </thead>
-                  <tbody id="selectedRouteRows"></tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
 
       <section class="view" id="potential" role="tabpanel">
