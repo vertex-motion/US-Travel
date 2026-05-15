@@ -79,7 +79,7 @@ Use only as a fallback:
 
 ## Suggested Decision Rule
 
-1. Quote **SYD-LAX-SYD** for July 1-20, 2026 first.
+1. Use the booked **SYD-LAX-SYD** United itinerary for June 28-July 20, 2026.
 2. Quote **SYD-SFO-SYD** second, only to see whether the arrival comfort is worth the route penalty.
 3. Quote **SYD-LAS-SYD** third, but treat it as a fallback unless it is materially cheaper and has family-safe connection times.
 4. If LAX is within about **AU$300-AU$500 per person** of the cheapest option, choose LAX because the route and rental-car simplicity are worth it.
@@ -94,7 +94,7 @@ The LAX closed-circle recommendation has been promoted into the canonical trip f
 | --- | --- | --- | --- |
 | `02-current-plan-options.md` | Current plan now uses LAX as the selected closed-circle gateway. | Done. | Confirm after live quotes. |
 | `04-daily-itinerary.md` | Day order now follows LAX -> Santa Barbara -> Monterey -> San Francisco -> Yosemite -> Las Vegas -> LAX. | Done. | Review the Yosemite-to-Las-Vegas transfer. |
-| `05-lodging-transport.md` | Rental car pickup/return and first/last hotel strategy now center on LAX. | Done. | Decide Day 1 vs. Day 4 car pickup after hotel quotes. |
+| `05-lodging-transport.md` | Rental car pickup/return and first/last hotel strategy now center on LAX. | Done. | Decide Day 1 vs. Day 6/7 car pickup after hotel quotes. |
 | `06-budget.md` | Airfare and rental-car assumptions now use SYD-LAX-SYD and LAX-to-LAX as baselines. | Done. | Run live quote round. |
 | `07-booking-checklist.md` | Flight quote tasks now prioritize the LAX closed loop. | Done. | Confirm dates before bookings. |
 

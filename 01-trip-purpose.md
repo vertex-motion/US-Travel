@@ -30,10 +30,11 @@ This is the family's first trip to explore the United States, with a particular 
 
 ## Travel Timing
 
-- The family plans to travel in early July 2026.
-- Trip duration: 20 days including flights.
-- Dates and route can be flexible to get lower prices, better views, or include worthwhile places.
-- Route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
+- Confirmed travel window: Sunday, June 28, 2026 to Monday, July 20, 2026, Sydney-to-Sydney.
+- Confirmed US stay: Sunday, June 28, 2026 to Saturday, July 18, 2026, arriving and departing through LAX.
+- Trip duration: 23 calendar days including flights and the date-line crossing.
+- Route shape: closed circle starting and ending in Los Angeles.
+- Flights: United UA 842 SYD-LAX on June 28, 2026, and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026.
 
 ## Travel Style
 
