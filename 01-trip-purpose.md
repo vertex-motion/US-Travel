@@ -33,6 +33,7 @@ This is the family's first trip to explore the United States, with a particular 
 - The family plans to travel in early July 2026.
 - Trip duration: 20 days including flights.
 - Dates and route can be flexible to get lower prices, better views, or include worthwhile places.
+- Route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
 
 ## Travel Style
 

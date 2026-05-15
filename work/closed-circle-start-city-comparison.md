@@ -11,7 +11,7 @@ Why:
 - LAX has the strongest Sydney flight market among the three candidates.
 - LAX has the best chance of cheaper fares because it has more nonstop airline competition.
 - A LAX loop can include Los Angeles, the coast, San Francisco, Yosemite, and Las Vegas without forcing the family to backtrack all the way from Las Vegas to San Francisco.
-- Returning the rental car to the same airport should reduce one-way rental risk compared with the current SFO-to-LAS open-jaw plan.
+- Returning the rental car to the same airport should reduce one-way rental risk compared with the previous SFO-to-LAS open-jaw plan.
 
 Use **San Francisco (SFO)** only if flights are close in price and the family wants the easiest jet-lag arrival. Use **Las Vegas (LAS)** only if an unusually good fare appears or the family wants the trip to feel like a Southwest loop first and a California coast trip second.
 
@@ -86,17 +86,17 @@ Use only as a fallback:
 5. If SFO is cheaper by more than that, compare whether the extra final driving or route reshuffle cancels the airfare saving.
 6. If LAS is cheapest, check connection time, arrival hour, stroller/luggage handling, and whether the family is comfortable starting in Las Vegas heat.
 
-## Proposed Follow-Up Changes
+## Implementation Status
 
-These are not made yet because this file is a temporary comparison.
+The LAX closed-circle recommendation has been promoted into the canonical trip files.
 
 | Affected area | Impact | Proposed change | User decision needed |
 | --- | --- | --- | --- |
-| `02-current-plan-options.md` | Current plan assumes open-jaw SYD-SFO and LAS-SYD. A closed circle changes the route structure. | Add a retained or selected LAX closed-loop option after flight quotes. | Choose LAX, SFO, or LAS as the closed-circle gateway. |
-| `04-daily-itinerary.md` | Day order changes if LAX becomes both start and end. | Rebuild days around LAX -> coast -> SF -> Yosemite -> Las Vegas -> LAX. | Approve route reorder. |
-| `05-lodging-transport.md` | Rental car pickup/return and first/last hotel strategy change. | Compare LAX round-trip rental against the current SFO-to-LAS one-way plan. | Decide whether lower rental risk is a priority. |
-| `06-budget.md` | Airfare and rental-car assumptions change. | Add LAX round-trip flight and car quotes once live prices are checked. | Provide preferred dates or approve July 1-20 quote round. |
-| `07-booking-checklist.md` | Flight quote tasks still focus on open-jaw. | Add closed-loop quote tasks for LAX, SFO, and LAS. | Confirm closed-circle requirement. |
+| `02-current-plan-options.md` | Current plan now uses LAX as the selected closed-circle gateway. | Done. | Confirm after live quotes. |
+| `04-daily-itinerary.md` | Day order now follows LAX -> Santa Barbara -> Monterey -> San Francisco -> Yosemite -> Las Vegas -> LAX. | Done. | Review the Yosemite-to-Las-Vegas transfer. |
+| `05-lodging-transport.md` | Rental car pickup/return and first/last hotel strategy now center on LAX. | Done. | Decide Day 1 vs. Day 4 car pickup after hotel quotes. |
+| `06-budget.md` | Airfare and rental-car assumptions now use SYD-LAX-SYD and LAX-to-LAX as baselines. | Done. | Run live quote round. |
+| `07-booking-checklist.md` | Flight quote tasks now prioritize the LAX closed loop. | Done. | Confirm dates before bookings. |
 
 ## Sources
 
@@ -113,4 +113,4 @@ These are not made yet because this file is a temporary comparison.
 | SFO has BART connection to downtown San Francisco. | BART | https://www.bart.gov/guide/airport/sfo | 2026-05-15 | Current |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | https://www.lawa.org/commutelax/transit | 2026-05-15 | Current |
 | LAS is two miles from the Las Vegas Strip and 15 miles from downtown. | Harry Reid International Airport | https://www.lasairport.com/Directions | 2026-05-15 | Current |
-| Existing route constraints, family pace, and current open-jaw plan. | Repository planning files | `01-trip-purpose.md`, `02-current-plan-options.md`, `05-lodging-transport.md` | 2026-05-15 | Local planning source |
+| Existing route constraints, family pace, and previous open-jaw plan. | Repository planning files | `01-trip-purpose.md`, `02-current-plan-options.md`, `05-lodging-transport.md` | 2026-05-15 | Local planning source |
