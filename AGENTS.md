@@ -31,6 +31,10 @@ Use these rules when writing or updating technical documents, including skills, 
 
 - Before editing planning files, check nearby documents for the same fact, decision, task, or instruction.
 - Keep one canonical home for stable traveler intent, route decisions, rejected options, budgets, booking tasks, and open questions.
+- Use `03-potential-options.md` as the golden source for every found trip option, including selected, retained, parked, and rejected options.
+- When adding a route, attraction, logistics, lodging, booking, or split-family option, add or update its row in `03-potential-options.md` first.
+- Set the option interest score to `0` unless the traveler gives a 1-10 preference. Treat `0` as no input, not as rejection.
+- Link other planning files to the option row or registry instead of duplicating full option rationale.
 - Link or refer to the canonical file instead of restating the same material in another file.
 - Keep necessary repetition when it supports use of the file on its own. This includes daily itinerary fields, status tables, and source rows required to keep researched facts traceable in the same file.
 - Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
@@ -46,5 +50,4 @@ Use these rules when writing or updating technical documents, including skills, 
 | Affected area | Impact | Proposed change | User decision needed |
 | --- | --- | --- | --- |
 | `<file or trip area>` | `<what the new input changes>` | `<specific update to make>` | `<yes/no or choice>` |
-
 
