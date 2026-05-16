@@ -473,11 +473,132 @@
       margin: 18px 0 14px;
     }
 
+    .potential-controls {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: stretch;
+      margin: 18px 0 14px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, #fff, var(--panel-soft));
+    }
+
+    .filter-panel {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .control-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10px;
+      min-width: 190px;
+    }
+
+    .control-label {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .category-filter {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border-color: rgba(23, 33, 38, 0.12);
+      box-shadow: 0 1px 0 rgba(23, 33, 38, 0.03);
+    }
+
+    .category-filter::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--category-color, var(--muted));
+      box-shadow: 0 0 0 3px rgba(23, 33, 38, 0.08);
+      flex: 0 0 auto;
+    }
+
+    .category-filter.active {
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .category-filter.active::before {
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.22);
+    }
+
+    .potential-count {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: var(--radius);
+      background: #edf0ec;
+      color: #314047;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+
+    .map-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+      max-width: 430px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 28px;
+      padding: 5px 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .legend-swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--category-color, var(--muted));
+      box-shadow: 0 0 0 3px rgba(23, 33, 38, 0.08);
+      flex: 0 0 auto;
+    }
+
     .subtabs {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      width: fit-content;
       margin-bottom: 18px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #edf0ec;
+    }
+
+    .subtab-button {
+      background: transparent;
+      font-weight: 760;
+    }
+
+    .subtab-button[aria-selected="true"] {
+      box-shadow: 0 8px 18px rgba(23, 33, 38, 0.14);
     }
 
     .potential-subview {
@@ -1144,9 +1265,24 @@
 
       .panel-header,
       .day-toolbar,
+      .potential-controls,
       .budget-head {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .potential-controls {
+        grid-template-columns: 1fr;
+      }
+
+      .control-meta {
+        align-items: flex-start;
+        min-width: 0;
+      }
+
+      .map-legend {
+        justify-content: flex-start;
+        max-width: none;
       }
 
       .day-summary {
@@ -1272,9 +1408,15 @@
               <button class="subtab-button" type="button" role="tab" aria-selected="false" data-potential-view="map">Map</button>
             </div>
             <div class="potential-subview active" id="potentialTablePanel">
-              <div class="day-toolbar">
-                <div class="filters" id="potentialCategoryFilters"></div>
-                <div class="day-count" id="potentialOptionCount"></div>
+              <div class="potential-controls">
+                <div class="filter-panel">
+                  <span class="control-label">Category filter</span>
+                  <div class="filters" id="potentialCategoryFilters"></div>
+                </div>
+                <div class="control-meta">
+                  <span class="control-label">Shown</span>
+                  <div class="potential-count" id="potentialOptionCount"></div>
+                </div>
               </div>
               <div class="table-wrap">
                 <table class="potential-table">
@@ -1284,9 +1426,18 @@
               </div>
             </div>
             <div class="potential-subview" id="potentialMapPanel">
-              <div class="day-toolbar">
-                <div class="filters" id="potentialMapCategoryFilters"></div>
-                <div class="day-count" id="potentialMapCount"></div>
+              <div class="potential-controls">
+                <div class="filter-panel">
+                  <span class="control-label">Mapped category filter</span>
+                  <div class="filters" id="potentialMapCategoryFilters"></div>
+                </div>
+                <div class="control-meta">
+                  <div>
+                    <span class="control-label">Shown</span>
+                    <div class="potential-count" id="potentialMapCount"></div>
+                  </div>
+                  <div class="map-legend" id="potentialMapLegend" aria-label="Map pin colour legend"></div>
+                </div>
               </div>
               <div class="potential-map-layout">
                 <div id="potentialMap" aria-label="Interactive map of potential attraction options"></div>
@@ -2009,6 +2160,34 @@
       .replaceAll("'", "&#039;");
 
     const mapSearchUrl = (place) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place)}`;
+    const categoryColors = {
+      "Attractions and Experiences": "#0b6f8d",
+      "Teen-Focused Split": "#604c8d",
+      "Younger-Child Add-On": "#23624d",
+      "Dad-Focused Adventure": "#d88a22",
+      "Route and Region": "#b85c5c",
+      "Logistics and Pacing": "#607079",
+      "All": "#172126"
+    };
+    const categoryColor = (category) => categoryColors[category] || "#b85c5c";
+
+    function renderCategoryFilterButton(category, active = false) {
+      return `
+        <button class="filter-button category-filter ${active ? "active" : ""}" type="button" data-category="${escapeHtml(category)}" style="--category-color: ${escapeHtml(categoryColor(category))};">
+          ${escapeHtml(category)}
+        </button>
+      `;
+    }
+
+    function renderMapLegend() {
+      const categories = [...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
+      $("#potentialMapLegend").innerHTML = categories.map((category) => `
+        <span class="legend-item" style="--category-color: ${escapeHtml(categoryColor(category))};">
+          <span class="legend-swatch" aria-hidden="true"></span>
+          ${escapeHtml(category)}
+        </span>
+      `).join("");
+    }
 
     const statusTag = (status) => {
       const lower = String(status).toLowerCase();
@@ -2207,7 +2386,7 @@
 
     function renderPotentialCategoryFilters() {
       const categories = ["All", ...new Set(tripData.potentialOptions.map((row) => row.category))];
-      $("#potentialCategoryFilters").innerHTML = categories.map((category) => `<button class="filter-button ${category === "All" ? "active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+      $("#potentialCategoryFilters").innerHTML = categories.map((category) => renderCategoryFilterButton(category, category === "All")).join("");
     }
 
     function ratingMeta(interest) {
@@ -2274,17 +2453,11 @@
 
     function renderPotentialMapCategoryFilters() {
       const categories = ["All", ...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
-      $("#potentialMapCategoryFilters").innerHTML = categories.map((category) => `<button class="filter-button ${category === potentialMapState.category ? "active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+      $("#potentialMapCategoryFilters").innerHTML = categories.map((category) => renderCategoryFilterButton(category, category === potentialMapState.category)).join("");
     }
 
     function potentialMarkerIcon(category) {
-      const colorByCategory = {
-        "Attractions and Experiences": "#0b6f8d",
-        "Teen-Focused Split": "#604c8d",
-        "Younger-Child Add-On": "#23624d",
-        "Dad-Focused Adventure": "#d88a22"
-      };
-      const color = colorByCategory[category] || "#b85c5c";
+      const color = categoryColor(category);
       return L.divIcon({
         className: "trip-marker",
         html: `<span style="display:block;width:17px;height:17px;border-radius:999px;background:${color};border:3px solid #fff;box-shadow:0 4px 14px rgba(23,33,38,.3);"></span>`,
@@ -2541,6 +2714,7 @@
       renderPotentialCategoryFilters();
       renderPotentialOptions();
       renderSources();
+      renderMapLegend();
       renderMap();
       wireTabs();
       wirePotentialSubtabs();
