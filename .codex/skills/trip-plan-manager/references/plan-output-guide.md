@@ -4,8 +4,8 @@
 
 Use existing repository structure first. If no structure exists beyond the source intent document, create only the files needed for the current request:
 
-- `02-current-plan-options.md`: route, activity, lodging, and logistics options included in the working plan or retained as fallbacks.
-- `03-potential-options.md`: options considered or researched but parked outside the working plan, with reasons and reconsideration triggers.
+- `02-current-plan-options.md`: route, activity, lodging, and logistics options included in the working plan or retained as fallbacks. Keep detailed option registry data in `03-potential-options.md`.
+- `03-potential-options.md`: golden source for every found option, including selected, retained, parked, and rejected options, with interest score, current fit or tradeoff, and decision trigger.
 - `04-daily-itinerary.md`: day-by-day plan with timing, drive time, walking load, meals, and backup options.
 - `05-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
 - `06-budget.md`: estimated costs by category with low/target/high ranges and source notes.
@@ -49,6 +49,8 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 | --- | --- | --- |
 ```
 
+Before adding a current plan option, add or update its row in `03-potential-options.md`. Link from this file to the detailed planning document instead of restating all option rationale.
+
 ## Daily Itinerary Template
 
 ```markdown
@@ -81,12 +83,12 @@ Use one `Sources` section per planning file. Keep links close to the file they s
 ## Potential Options Template
 
 ```markdown
-| Potential option | Current fit / tradeoff | Reconsider if |
-| --- | --- | --- |
-|  |  |  |
+| Name | Interest (0-10) | Link | Category | Description | Current fit / trade-off | Reconsider if |
+| --- | ---: | --- | --- | --- | --- | --- |
+|  | 0 |  |  |  |  |  |
 ```
 
-Use this table for routes, attractions, logistics, lodging approaches, or booking ideas that were meaningfully considered and rejected. Tie each reason to traveler constraints, current research, route quality, budget posture, or explicit assumptions.
+Use this table for every route, attraction, logistics, lodging approach, booking idea, or split-family option that was found. Include selected, retained, parked, and rejected options. Set `Interest (0-10)` to `0` unless the traveler gives a preference; `0` means no input, not rejection. Tie each fit note and trigger to traveler constraints, current research, route quality, budget posture, or explicit assumptions.
 
 ## Budget Template
 
@@ -110,6 +112,6 @@ Use this table for routes, attractions, logistics, lodging approaches, or bookin
 - Outdoor-heavy days include weather, daylight, closure, and backup considerations.
 - Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
-- Current plan options include a clear inclusion reason and a pointer to the detailed planning file.
+- Current plan options include a clear inclusion reason, a pointer to the detailed planning file, and a matching row in `03-potential-options.md`.
 - Open questions are written as decisions the traveler can answer, not vague reminders.
-- Potential options include a clear reason they are outside the working plan and a trigger for reconsideration.
+- The option registry includes every selected, retained, parked, and rejected option with a 0-10 interest score.
