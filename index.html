@@ -788,6 +788,110 @@
       border-bottom: 0;
     }
 
+    .potential-table {
+      min-width: 1040px;
+    }
+
+    .rating-cell {
+      width: 174px;
+    }
+
+    .rating-widget {
+      display: grid;
+      gap: 7px;
+      min-width: 150px;
+    }
+
+    .rating-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .rating-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      border-radius: 999px;
+      border: 1px solid #cfd6d5;
+      padding: 4px 9px;
+      color: #4f5f66;
+      background: #f5f6f2;
+      font-size: 0.78rem;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+
+    .rating-label.low {
+      color: #7a4d14;
+      background: #fff7e9;
+      border-color: #e9cb92;
+    }
+
+    .rating-label.medium {
+      color: #1f5f50;
+      background: #edf8f2;
+      border-color: #bfe1cf;
+    }
+
+    .rating-label.high {
+      color: #195d82;
+      background: #edf6ff;
+      border-color: #bad9ef;
+    }
+
+    .rating-label.top {
+      color: #5b447f;
+      background: #f5f1ff;
+      border-color: #d7c8f2;
+    }
+
+    .rating-score {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .rating-meter {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: 3px;
+      height: 9px;
+    }
+
+    .rating-segment {
+      border-radius: 999px;
+      background: #dfe4e1;
+    }
+
+    .rating-segment.filled {
+      background: linear-gradient(180deg, #2b7f62, #0b6f8d);
+    }
+
+    .rating-widget.low .rating-segment.filled {
+      background: linear-gradient(180deg, #e2a144, #c6791f);
+    }
+
+    .rating-widget.medium .rating-segment.filled {
+      background: linear-gradient(180deg, #3d8b6d, #23624d);
+    }
+
+    .rating-widget.high .rating-segment.filled {
+      background: linear-gradient(180deg, #2d8bac, #0b6f8d);
+    }
+
+    .rating-widget.top .rating-segment.filled {
+      background: linear-gradient(180deg, #8065b5, #604c8d);
+    }
+
+    .rating-note {
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.25;
+    }
+
     .mini-table {
       min-width: 0;
     }
@@ -1088,8 +1192,8 @@
               <div class="day-count" id="potentialOptionCount"></div>
             </div>
             <div class="table-wrap">
-              <table>
-                <thead><tr><th>Name</th><th>Interest</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
+              <table class="potential-table">
+                <thead><tr><th>Name</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
                 <tbody id="potentialOptions"></tbody>
               </table>
             </div>
@@ -1920,12 +2024,45 @@
       $("#potentialCategoryFilters").innerHTML = categories.map((category) => `<button class="filter-button ${category === "All" ? "active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
     }
 
+    function ratingMeta(interest) {
+      const rating = Math.max(0, Math.min(10, Number(interest) || 0));
+      if (rating === 0) {
+        return { rating, tone: "unrated", label: "Not rated", note: "Awaiting family input" };
+      }
+      if (rating <= 3) {
+        return { rating, tone: "low", label: "Low pull", note: "Nice only if easy" };
+      }
+      if (rating <= 6) {
+        return { rating, tone: "medium", label: "Interested", note: "Plan if it fits" };
+      }
+      if (rating <= 8) {
+        return { rating, tone: "high", label: "Strong pull", note: "Protect if practical" };
+      }
+      return { rating, tone: "top", label: "Must shape plan", note: "Build around this" };
+    }
+
+    function renderRating(interest) {
+      const meta = ratingMeta(interest);
+      const segments = Array.from({ length: 10 }, (_, index) => `<span class="rating-segment ${index < meta.rating ? "filled" : ""}"></span>`).join("");
+      const score = meta.rating === 0 ? "0/10" : `${meta.rating}/10`;
+      return `
+        <div class="rating-widget ${escapeHtml(meta.tone)}" aria-label="${escapeHtml(meta.label)}: ${escapeHtml(score)}">
+          <div class="rating-head">
+            <span class="rating-label ${escapeHtml(meta.tone)}">${escapeHtml(meta.label)}</span>
+            <span class="rating-score">${escapeHtml(score)}</span>
+          </div>
+          <div class="rating-meter" aria-hidden="true">${segments}</div>
+          <div class="rating-note">${escapeHtml(meta.note)}</div>
+        </div>
+      `;
+    }
+
     function renderPotentialOptions(category = "All") {
       const rows = category === "All" ? tripData.potentialOptions : tripData.potentialOptions.filter((row) => row.category === category);
       $("#potentialOptions").innerHTML = rows.map((row) => `
         <tr>
           <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
-          <td>${escapeHtml(row.interest)}</td>
+          <td class="rating-cell">${renderRating(row.interest)}</td>
           <td><span class="tag info">${escapeHtml(row.category)}</span></td>
           <td>${escapeHtml(row.why)}</td>
           <td>${escapeHtml(row.reconsider)}</td>
