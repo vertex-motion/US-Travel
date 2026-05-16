@@ -194,6 +194,7 @@
     }
 
     .tab-button,
+    .subtab-button,
     .filter-button,
     .text-button {
       min-height: 38px;
@@ -206,12 +207,14 @@
     }
 
     .tab-button:hover,
+    .subtab-button:hover,
     .filter-button:hover,
     .text-button:hover {
       background: rgba(23, 33, 38, 0.06);
     }
 
     .tab-button[aria-selected="true"],
+    .subtab-button[aria-selected="true"],
     .filter-button.active {
       color: #fff;
       background: var(--ink);
@@ -468,6 +471,73 @@
       justify-content: space-between;
       gap: 12px;
       margin: 18px 0 14px;
+    }
+
+    .subtabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .potential-subview {
+      display: none;
+    }
+
+    .potential-subview.active {
+      display: block;
+    }
+
+    #potentialMap {
+      height: min(68vh, 640px);
+      min-height: 440px;
+      width: 100%;
+      background: #dfe6df;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .potential-map-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.36fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .potential-map-list {
+      display: grid;
+      gap: 8px;
+      max-height: min(68vh, 640px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .map-place-button {
+      display: grid;
+      gap: 4px;
+      width: 100%;
+      text-align: left;
+      padding: 11px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel-soft);
+    }
+
+    .map-place-button.active {
+      outline: 3px solid rgba(11, 111, 141, 0.22);
+      border-color: rgba(11, 111, 141, 0.55);
+      background: #f2fbfd;
+    }
+
+    .map-place-button strong {
+      font-size: 0.92rem;
+      line-height: 1.22;
+    }
+
+    .map-place-button span {
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.25;
     }
 
     .day-count {
@@ -1055,6 +1125,7 @@
       .grid.two,
       .grid.three,
       .split,
+      .potential-map-layout,
       .route-list,
       .day-grid,
       .day-lead,
@@ -1103,6 +1174,15 @@
       #map {
         min-height: 360px;
         height: 52vh;
+      }
+
+      #potentialMap {
+        min-height: 360px;
+        height: 52vh;
+      }
+
+      .potential-map-list {
+        max-height: none;
       }
     }
   </style>
@@ -1187,15 +1267,31 @@
             </div>
           </div>
           <div class="panel-body">
-            <div class="day-toolbar">
-              <div class="filters" id="potentialCategoryFilters"></div>
-              <div class="day-count" id="potentialOptionCount"></div>
+            <div class="subtabs" id="potentialSubtabs" role="tablist" aria-label="Potential options views">
+              <button class="subtab-button" type="button" role="tab" aria-selected="true" data-potential-view="table">Table</button>
+              <button class="subtab-button" type="button" role="tab" aria-selected="false" data-potential-view="map">Map</button>
             </div>
-            <div class="table-wrap">
-              <table class="potential-table">
-                <thead><tr><th>Name</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
-                <tbody id="potentialOptions"></tbody>
-              </table>
+            <div class="potential-subview active" id="potentialTablePanel">
+              <div class="day-toolbar">
+                <div class="filters" id="potentialCategoryFilters"></div>
+                <div class="day-count" id="potentialOptionCount"></div>
+              </div>
+              <div class="table-wrap">
+                <table class="potential-table">
+                  <thead><tr><th>Name</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
+                  <tbody id="potentialOptions"></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="potential-subview" id="potentialMapPanel">
+              <div class="day-toolbar">
+                <div class="filters" id="potentialMapCategoryFilters"></div>
+                <div class="day-count" id="potentialMapCount"></div>
+              </div>
+              <div class="potential-map-layout">
+                <div id="potentialMap" aria-label="Interactive map of potential attraction options"></div>
+                <div class="potential-map-list" id="potentialMapList"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -1782,6 +1878,95 @@
         { interest: 0, option: "Add more one-night stops", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "Can reduce individual drive times but increases packing friction and hotel churn.", reconsider: "A specific transfer becomes too long after live quotes and road checks." },
         { interest: 0, option: "Book Yosemite outside the park by default", category: "Logistics and Pacing", link: "03-potential-options.md#logistics-and-pacing-ideas", why: "May improve hotel quality, but increases daily driving and reduces park time.", reconsider: "Inside-park lodging is unavailable or poor value." }
       ],
+      potentialMapPlaces: [
+        { id: "santa-monica", name: "Santa Monica", option: "Santa Monica arrival recovery", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0100, -118.4962] },
+        { id: "getty-center", name: "Getty Center", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0780, -118.4741] },
+        { id: "academy-museum", name: "Academy Museum", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0639, -118.3610] },
+        { id: "griffith-observatory", name: "Griffith Observatory", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.1184, -118.3004] },
+        { id: "petersen", name: "Petersen Automotive Museum", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0623, -118.3611] },
+        { id: "rodeo-drive", name: "Rodeo Drive", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0674, -118.4004] },
+        { id: "santa-barbara-waterfront", name: "Santa Barbara Waterfront", option: "Santa Barbara waterfront, courthouse, mission, or beach day", category: "Attractions and Experiences", region: "Santa Barbara", coords: [34.4100, -119.6920] },
+        { id: "santa-barbara-courthouse", name: "Santa Barbara County Courthouse", option: "Santa Barbara waterfront, courthouse, mission, or beach day", category: "Attractions and Experiences", region: "Santa Barbara", coords: [34.4240, -119.7020] },
+        { id: "old-mission-santa-barbara", name: "Old Mission Santa Barbara", option: "Santa Barbara waterfront, courthouse, mission, or beach day", category: "Attractions and Experiences", region: "Santa Barbara", coords: [34.4384, -119.7136] },
+        { id: "hearst-castle", name: "Hearst Castle", option: "Hearst Castle on the Santa Barbara-to-Monterey transfer", category: "Attractions and Experiences", region: "Central Coast", coords: [35.6852, -121.1666] },
+        { id: "monterey-bay-aquarium", name: "Monterey Bay Aquarium", option: "Monterey Bay Aquarium", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.6183, -121.9018] },
+        { id: "pacific-grove", name: "Pacific Grove", option: "Pacific Grove, Carmel Beach, 17-Mile Drive, or short Big Sur reach", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.6266, -121.9166] },
+        { id: "carmel-beach", name: "Carmel Beach", option: "Pacific Grove, Carmel Beach, 17-Mile Drive, or short Big Sur reach", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.5533, -121.9309] },
+        { id: "seventeen-mile-drive", name: "17-Mile Drive", option: "Pacific Grove, Carmel Beach, 17-Mile Drive, or short Big Sur reach", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.5704, -121.9491] },
+        { id: "big-sur", name: "Big Sur coast reach", option: "Pacific Grove, Carmel Beach, 17-Mile Drive, or short Big Sur reach", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.3715, -121.9018] },
+        { id: "golden-gate-bridge", name: "Golden Gate Bridge", option: "Golden Gate, Presidio, and Palace of Fine Arts", category: "Attractions and Experiences", region: "San Francisco", coords: [37.8199, -122.4783] },
+        { id: "presidio", name: "Presidio", option: "Golden Gate, Presidio, and Palace of Fine Arts", category: "Attractions and Experiences", region: "San Francisco", coords: [37.8008, -122.4630] },
+        { id: "palace-fine-arts", name: "Palace of Fine Arts", option: "Golden Gate, Presidio, and Palace of Fine Arts", category: "Attractions and Experiences", region: "San Francisco", coords: [37.8029, -122.4484] },
+        { id: "alcatraz", name: "Alcatraz Island", option: "Alcatraz day tour and Ferry Building", category: "Attractions and Experiences", region: "San Francisco", coords: [37.8267, -122.4230] },
+        { id: "ferry-building", name: "Ferry Building", option: "Alcatraz day tour and Ferry Building", category: "Attractions and Experiences", region: "San Francisco", coords: [37.7955, -122.3937] },
+        { id: "yosemite-valley", name: "Yosemite Valley", option: "Yosemite Valley, Tunnel View, Bridalveil Fall, and Lower Yosemite Fall", category: "Attractions and Experiences", region: "Yosemite", coords: [37.7456, -119.5936] },
+        { id: "tunnel-view", name: "Tunnel View", option: "Yosemite Valley, Tunnel View, Bridalveil Fall, and Lower Yosemite Fall", category: "Attractions and Experiences", region: "Yosemite", coords: [37.7157, -119.6762] },
+        { id: "bridalveil-fall", name: "Bridalveil Fall", option: "Yosemite Valley, Tunnel View, Bridalveil Fall, and Lower Yosemite Fall", category: "Attractions and Experiences", region: "Yosemite", coords: [37.7166, -119.6507] },
+        { id: "lower-yosemite-fall", name: "Lower Yosemite Fall", option: "Yosemite Valley, Tunnel View, Bridalveil Fall, and Lower Yosemite Fall", category: "Attractions and Experiences", region: "Yosemite", coords: [37.7486, -119.5969] },
+        { id: "mariposa-grove", name: "Mariposa Grove", option: "Mariposa Grove or Glacier Point", category: "Attractions and Experiences", region: "Yosemite", coords: [37.5069, -119.6048] },
+        { id: "glacier-point", name: "Glacier Point", option: "Mariposa Grove or Glacier Point", category: "Attractions and Experiences", region: "Yosemite", coords: [37.7304, -119.5734] },
+        { id: "bellagio", name: "Bellagio Conservatory and Fountains", option: "Las Vegas Strip family sights", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.1126, -115.1767] },
+        { id: "sphere", name: "Sphere", option: "Las Vegas paid indoor attraction or show", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.1208, -115.1618] },
+        { id: "high-roller", name: "High Roller Observation Wheel", option: "Las Vegas paid indoor attraction or show", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.1175, -115.1682] },
+        { id: "red-rock-canyon", name: "Red Rock Canyon", option: "Red Rock Canyon early scenic drive", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.1350, -115.4270] },
+        { id: "muir-woods", name: "Muir Woods", option: "Muir Woods as a default day", category: "Attractions and Experiences", region: "San Francisco", coords: [37.8916, -122.5713] },
+        { id: "full-big-sur", name: "Big Sur day trip", option: "Full Big Sur day trip", category: "Attractions and Experiences", region: "Monterey / Carmel", coords: [36.2704, -121.8081] },
+        { id: "solvang", name: "Solvang", option: "Solvang and Santa Ynez Valley stop", category: "Attractions and Experiences", region: "Santa Barbara", coords: [34.5958, -120.1376] },
+        { id: "cambria", name: "Cambria", option: "Cambria and San Simeon elephant seals", category: "Attractions and Experiences", region: "Central Coast", coords: [35.5641, -121.0808] },
+        { id: "elephant-seal-vista", name: "San Simeon elephant seal viewing", option: "Cambria and San Simeon elephant seals", category: "Attractions and Experiences", region: "Central Coast", coords: [35.6639, -121.2577] },
+        { id: "getty-villa", name: "Getty Villa", option: "Getty Villa", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0459, -118.5649] },
+        { id: "disneyland", name: "Disneyland Resort", option: "Disneyland Resort", category: "Attractions and Experiences", region: "Los Angeles", coords: [33.8121, -117.9190] },
+        { id: "universal-studios", name: "Universal Studios Hollywood", option: "Universal Studios Hollywood", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.1381, -118.3534] },
+        { id: "warner-bros-studio", name: "Warner Bros. Studio Tour Hollywood", option: "Warner Bros. Studio Tour Hollywood", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.1490, -118.3388] },
+        { id: "san-diego-zoo", name: "San Diego Zoo", option: "San Diego Zoo", category: "Attractions and Experiences", region: "San Diego", coords: [32.7353, -117.1490] },
+        { id: "death-valley", name: "Death Valley National Park", option: "Death Valley National Park", category: "Attractions and Experiences", region: "Death Valley", coords: [36.4623, -116.8656] },
+        { id: "joshua-tree", name: "Joshua Tree National Park", option: "Joshua Tree National Park", category: "Attractions and Experiences", region: "Southern California", coords: [33.8734, -115.9010] },
+        { id: "hoover-dam", name: "Hoover Dam", option: "Hoover Dam day trip from Las Vegas", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.0161, -114.7377] },
+        { id: "valley-of-fire", name: "Valley of Fire State Park", option: "Valley of Fire State Park", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.4850, -114.5353] },
+        { id: "forestiere", name: "Forestiere Underground Gardens", option: "Forestiere Underground Gardens or Fresno Chaffee Zoo", category: "Attractions and Experiences", region: "Central Valley", coords: [36.7657, -119.8703] },
+        { id: "fresno-chaffee-zoo", name: "Fresno Chaffee Zoo", option: "Forestiere Underground Gardens or Fresno Chaffee Zoo", category: "Attractions and Experiences", region: "Central Valley", coords: [36.7538, -119.8207] },
+        { id: "kelso-dunes", name: "Kelso Dunes", option: "Kelso Dunes inside Mojave National Preserve", category: "Attractions and Experiences", region: "Mojave", coords: [34.8947, -115.7156] },
+        { id: "lost-dutchman", name: "Lost Dutchman State Park", option: "Lost Dutchman, Peralta Trail, and Superstition Mountains", category: "Attractions and Experiences", region: "Arizona", coords: [33.4597, -111.4810] },
+        { id: "peralta-trail", name: "Peralta Trail / Superstition Mountains", option: "Lost Dutchman, Peralta Trail, and Superstition Mountains", category: "Attractions and Experiences", region: "Arizona", coords: [33.3970, -111.3460] },
+        { id: "bartlett-lake", name: "Bartlett Lake", option: "Bartlett Lake and Picacho Peak State Park", category: "Attractions and Experiences", region: "Arizona", coords: [33.8393, -111.6280] },
+        { id: "picacho-peak", name: "Picacho Peak State Park", option: "Bartlett Lake and Picacho Peak State Park", category: "Attractions and Experiences", region: "Arizona", coords: [32.6460, -111.4010] },
+        { id: "exploratorium", name: "Exploratorium", option: "Exploratorium Tactile Dome or Life in Space exhibit", category: "Teen-Focused Split", region: "San Francisco", coords: [37.8014, -122.3973] },
+        { id: "alcatraz-night-tour", name: "Alcatraz Night Tour", option: "Alcatraz Night Tour or Behind the Scenes Tour", category: "Teen-Focused Split", region: "San Francisco", coords: [37.8267, -122.4230] },
+        { id: "santa-cruz-boardwalk", name: "Santa Cruz Beach Boardwalk", option: "Santa Cruz Beach Boardwalk ride and arcade block", category: "Teen-Focused Split", region: "Santa Cruz", coords: [36.9640, -122.0258] },
+        { id: "santa-barbara-surf", name: "Santa Barbara surf / SUP lesson", option: "Santa Barbara surf or stand-up paddle lesson", category: "Teen-Focused Split", region: "Santa Barbara", coords: [34.4140, -119.6920] },
+        { id: "pacific-park", name: "Pacific Park", option: "Pacific Park at Santa Monica Pier ride block", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.0100, -118.4962] },
+        { id: "griffith-planetarium", name: "Griffith Observatory planetarium", option: "Griffith Observatory planetarium show", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.1184, -118.3004] },
+        { id: "dodger-stadium", name: "Dodger Stadium", option: "Dodger Stadium tour or baseball sampler", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.0739, -118.2400] },
+        { id: "area15", name: "AREA15 / Omega Mart", option: "AREA15 and Meow Wolf Omega Mart", category: "Teen-Focused Split", region: "Las Vegas", coords: [36.1317, -115.1800] },
+        { id: "neon-museum", name: "Neon Museum", option: "Neon Museum evening visit", category: "Teen-Focused Split", region: "Las Vegas", coords: [36.1769, -115.1351] },
+        { id: "strat", name: "The STRAT SkyPod", option: "The STRAT SkyPod and thrill rides", category: "Teen-Focused Split", region: "Las Vegas", coords: [36.1475, -115.1566] },
+        { id: "pinball-hall", name: "Pinball Hall of Fame", option: "Pinball Hall of Fame heat backup", category: "Teen-Focused Split", region: "Las Vegas", coords: [36.1019, -115.1733] },
+        { id: "presidio-tunnel-tops", name: "Presidio Tunnel Tops Outpost", option: "Presidio Tunnel Tops Outpost and Field Station", category: "Younger-Child Add-On", region: "San Francisco", coords: [37.8008, -122.4630] },
+        { id: "bay-area-discovery", name: "Bay Area Discovery Museum", option: "Bay Area Discovery Museum, Sausalito", category: "Younger-Child Add-On", region: "San Francisco", coords: [37.8351, -122.4782] },
+        { id: "koret-childrens-quarter", name: "Koret Children's Quarter", option: "Koret Children's Quarter and Carousel", category: "Younger-Child Add-On", region: "San Francisco", coords: [37.7676, -122.4598] },
+        { id: "my-museum", name: "MY Museum", option: "MY Museum and Dennis the Menace Playground", category: "Younger-Child Add-On", region: "Monterey / Carmel", coords: [36.5989, -121.8947] },
+        { id: "dennis-menace-playground", name: "Dennis the Menace Playground", option: "MY Museum and Dennis the Menace Playground", category: "Younger-Child Add-On", region: "Monterey / Carmel", coords: [36.5956, -121.8905] },
+        { id: "santa-barbara-zoo", name: "Santa Barbara Zoo", option: "Santa Barbara Zoo", category: "Younger-Child Add-On", region: "Santa Barbara", coords: [34.4190, -119.6660] },
+        { id: "moxi", name: "MOXI", option: "MOXI Toddler Tuesday or Santa Barbara Sea Center", category: "Younger-Child Add-On", region: "Santa Barbara", coords: [34.4142, -119.6913] },
+        { id: "santa-barbara-sea-center", name: "Santa Barbara Sea Center", option: "MOXI Toddler Tuesday or Santa Barbara Sea Center", category: "Younger-Child Add-On", region: "Santa Barbara", coords: [34.4100, -119.6854] },
+        { id: "cayton", name: "Cayton Children's Museum", option: "Cayton Children's Museum, Santa Monica", category: "Younger-Child Add-On", region: "Los Angeles", coords: [34.0150, -118.4974] },
+        { id: "kidspace", name: "Kidspace Children's Museum", option: "Kidspace Children's Museum, Pasadena", category: "Younger-Child Add-On", region: "Los Angeles", coords: [34.1535, -118.1669] },
+        { id: "griffith-first-show", name: "Griffith planetarium first show", option: "Griffith Observatory first planetarium show only", category: "Younger-Child Add-On", region: "Los Angeles", coords: [34.1184, -118.3004] },
+        { id: "discovery-childrens-museum", name: "DISCOVERY Children's Museum", option: "Las Vegas indoor child-first reset", category: "Younger-Child Add-On", region: "Las Vegas", coords: [36.1685, -115.1455] },
+        { id: "shark-reef", name: "Shark Reef Aquarium", option: "Las Vegas indoor child-first reset", category: "Younger-Child Add-On", region: "Las Vegas", coords: [36.0906, -115.1767] },
+        { id: "springs-preserve", name: "Springs Preserve", option: "Las Vegas indoor child-first reset", category: "Younger-Child Add-On", region: "Las Vegas", coords: [36.1709, -115.1901] },
+        { id: "porsche-experience", name: "Porsche Experience Center Los Angeles", option: "Porsche Experience Center Los Angeles", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [33.8444, -118.2793] },
+        { id: "k1-speed", name: "K1 Speed route-adjacent karting", option: "K1 Speed indoor karting", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [33.8427, -118.3448] },
+        { id: "laguna-seca", name: "WeatherTech Raceway Laguna Seca", option: "WeatherTech Raceway Laguna Seca race event", category: "Dad-Focused Adventure", region: "Monterey / Carmel", coords: [36.5844, -121.7538] },
+        { id: "sonoma-raceway", name: "Sonoma Raceway", option: "Sonoma Raceway race weekend or drag racing", category: "Dad-Focused Adventure", region: "Sonoma", coords: [38.1606, -122.4544] },
+        { id: "mount-hermon", name: "Mount Hermon Adventures", option: "Mount Hermon Adventures redwood zipline or ropes course", category: "Dad-Focused Adventure", region: "Santa Cruz", coords: [37.0510, -122.0580] },
+        { id: "margarita-adventures", name: "Margarita Adventures", option: "Margarita Adventures zipline", category: "Dad-Focused Adventure", region: "Central Coast", coords: [35.3910, -120.6150] },
+        { id: "yosemite-mountaineering", name: "Yosemite Mountaineering School", option: "Yosemite Mountaineering School climbing lesson", category: "Dad-Focused Adventure", region: "Yosemite", coords: [37.7386, -119.5716] },
+        { id: "channel-islands-kayaking", name: "Channel Islands kayaking / sea caves", option: "Santa Barbara / Channel Islands kayaking or sea-cave tour", category: "Dad-Focused Adventure", region: "Santa Barbara", coords: [34.1780, -119.2230] },
+        { id: "catalina-zipline", name: "Catalina Island Zip Line Eco Tour", option: "Catalina Island Zip Line Eco Tour", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [33.3428, -118.3278] },
+        { id: "skydive-perris", name: "Skydive Perris", option: "Skydive Perris wind tunnel or tandem skydiving", category: "Dad-Focused Adventure", region: "Southern California", coords: [33.7627, -117.2189] },
+        { id: "six-flags-magic-mountain", name: "Six Flags Magic Mountain", option: "Six Flags Magic Mountain thrill-coaster day", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [34.4237, -118.5970] }
+      ],
       sourceGroups: [
         { title: "LAX Closed-Circle Plan", rows: [
           { fact: "LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities.", source: "Local comparison file", url: "work/closed-circle-start-city-comparison.md", accessed: "2026-05-15", status: "Current planning decision" },
@@ -1836,6 +2021,7 @@
 
     const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
     const dayFilterState = { region: "All", type: "All" };
+    const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
 
     function renderSelectedRoute() {
       $("#selectedRouteRows").innerHTML = tripData.selectedRoute.map((row) => `
@@ -2071,6 +2257,108 @@
       $("#potentialOptionCount").textContent = `${rows.length} of ${tripData.potentialOptions.length} options`;
     }
 
+    function potentialOptionDetails(place) {
+      return tripData.potentialOptions.find((row) => row.option === place.option) || {
+        interest: 0,
+        option: place.option,
+        category: place.category,
+        link: "03-potential-options.md",
+        why: "Mapped place from the potential options registry.",
+        reconsider: "See the canonical potential options table for the decision trigger."
+      };
+    }
+
+    function filteredPotentialPlaces() {
+      return tripData.potentialMapPlaces.filter((place) => potentialMapState.category === "All" || place.category === potentialMapState.category);
+    }
+
+    function renderPotentialMapCategoryFilters() {
+      const categories = ["All", ...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
+      $("#potentialMapCategoryFilters").innerHTML = categories.map((category) => `<button class="filter-button ${category === potentialMapState.category ? "active" : ""}" type="button" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");
+    }
+
+    function potentialMarkerIcon(category) {
+      const colorByCategory = {
+        "Attractions and Experiences": "#0b6f8d",
+        "Teen-Focused Split": "#604c8d",
+        "Younger-Child Add-On": "#23624d",
+        "Dad-Focused Adventure": "#d88a22"
+      };
+      const color = colorByCategory[category] || "#b85c5c";
+      return L.divIcon({
+        className: "trip-marker",
+        html: `<span style="display:block;width:17px;height:17px;border-radius:999px;background:${color};border:3px solid #fff;box-shadow:0 4px 14px rgba(23,33,38,.3);"></span>`,
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+    }
+
+    function renderPotentialMapList(places) {
+      $("#potentialMapList").innerHTML = places.map((place) => {
+        const details = potentialOptionDetails(place);
+        return `
+          <button type="button" class="map-place-button" data-place="${escapeHtml(place.id)}">
+            <strong>${escapeHtml(place.name)}</strong>
+            <span>${escapeHtml(place.region)} - ${escapeHtml(details.option)}</span>
+            <span>${escapeHtml(place.category)}</span>
+          </button>
+        `;
+      }).join("");
+      $("#potentialMapCount").textContent = `${places.length} mapped place${places.length === 1 ? "" : "s"}`;
+    }
+
+    function activatePotentialPlace(id) {
+      $$("#potentialMapList .map-place-button").forEach((button) => button.classList.toggle("active", button.dataset.place === id));
+      const marker = potentialMapState.markers.get(id);
+      if (!marker || !potentialMapState.map) return;
+      potentialMapState.map.flyTo(marker.getLatLng(), 10, { duration: 0.45 });
+      marker.openPopup();
+    }
+
+    function renderPotentialMap() {
+      renderPotentialMapCategoryFilters();
+      const places = filteredPotentialPlaces();
+      renderPotentialMapList(places);
+
+      if (!window.L) {
+        $("#potentialMap").innerHTML = '<div style="padding: 24px;">Map library unavailable.</div>';
+        return;
+      }
+
+      if (!potentialMapState.map) {
+        potentialMapState.map = L.map("potentialMap", { scrollWheelZoom: false }).setView([36.45, -120.35], 6);
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 18,
+          attribution: "&copy; OpenStreetMap contributors"
+        }).addTo(potentialMapState.map);
+        potentialMapState.layer = L.layerGroup().addTo(potentialMapState.map);
+      }
+
+      potentialMapState.layer.clearLayers();
+      potentialMapState.markers.clear();
+
+      places.forEach((place) => {
+        const details = potentialOptionDetails(place);
+        const marker = L.marker(place.coords, { icon: potentialMarkerIcon(place.category) }).addTo(potentialMapState.layer);
+        marker.bindPopup(`
+          <div class="popup-title">${escapeHtml(place.name)}</div>
+          <div class="popup-meta">${escapeHtml(place.region)}<br>${escapeHtml(place.category)}</div>
+          <div><strong>Option:</strong> <a href="${escapeHtml(details.link)}">${escapeHtml(details.option)}</a></div>
+          <div style="margin-top: 6px;">${escapeHtml(details.why)}</div>
+          <div style="margin-top: 6px;"><strong>Decision trigger:</strong> ${escapeHtml(details.reconsider)}</div>
+        `);
+        marker.on("click", () => activatePotentialPlace(place.id));
+        potentialMapState.markers.set(place.id, marker);
+      });
+
+      setTimeout(() => {
+        potentialMapState.map.invalidateSize();
+        if (!places.length) return;
+        const bounds = L.latLngBounds(places.map((place) => place.coords));
+        potentialMapState.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 9 });
+      }, 0);
+    }
+
     function renderSources() {
       $("#sourceGrid").innerHTML = tripData.sourceGroups.map((group) => `
         <section class="source-group">
@@ -2180,6 +2468,22 @@
           if (tab.dataset.tab === "overview" && window.dispatchEvent) {
             window.dispatchEvent(new Event("resize"));
           }
+          if (tab.dataset.tab === "potential" && $("#potentialMapPanel").classList.contains("active")) {
+            renderPotentialMap();
+          }
+        });
+      });
+    }
+
+    function wirePotentialSubtabs() {
+      const tabs = $$("#potentialSubtabs .subtab-button");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const isMap = tab.dataset.potentialView === "map";
+          tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+          $("#potentialTablePanel").classList.toggle("active", !isMap);
+          $("#potentialMapPanel").classList.toggle("active", isMap);
+          if (isMap) renderPotentialMap();
         });
       });
     }
@@ -2190,6 +2494,20 @@
         if (!button) return;
         $$("#potentialCategoryFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
         renderPotentialOptions(button.dataset.category);
+      });
+    }
+
+    function wirePotentialMapControls() {
+      $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        potentialMapState.category = button.dataset.category;
+        renderPotentialMap();
+      });
+      $("#potentialMapList").addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        activatePotentialPlace(button.dataset.place);
       });
     }
 
@@ -2225,7 +2543,9 @@
       renderSources();
       renderMap();
       wireTabs();
+      wirePotentialSubtabs();
       wirePotentialCategories();
+      wirePotentialMapControls();
       wireDayToggle();
     }
 
