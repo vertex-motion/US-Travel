@@ -548,18 +548,11 @@
       white-space: nowrap;
     }
 
-    .map-legend {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 6px;
-      max-width: 430px;
-    }
-
-    .legend-item {
+    .map-place-category {
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      width: fit-content;
       min-height: 28px;
       padding: 5px 8px;
       border: 1px solid var(--line);
@@ -571,7 +564,8 @@
       white-space: nowrap;
     }
 
-    .legend-swatch {
+    .map-place-category::before {
+      content: "";
       width: 10px;
       height: 10px;
       border-radius: 999px;
@@ -1280,11 +1274,6 @@
         min-width: 0;
       }
 
-      .map-legend {
-        justify-content: flex-start;
-        max-width: none;
-      }
-
       .day-summary {
         grid-template-columns: auto minmax(0, 1fr);
       }
@@ -1436,7 +1425,6 @@
                     <span class="control-label">Shown</span>
                     <div class="potential-count" id="potentialMapCount"></div>
                   </div>
-                  <div class="map-legend" id="potentialMapLegend" aria-label="Map pin colour legend"></div>
                 </div>
               </div>
               <div class="potential-map-layout">
@@ -2179,16 +2167,6 @@
       `;
     }
 
-    function renderMapLegend() {
-      const categories = [...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
-      $("#potentialMapLegend").innerHTML = categories.map((category) => `
-        <span class="legend-item" style="--category-color: ${escapeHtml(categoryColor(category))};">
-          <span class="legend-swatch" aria-hidden="true"></span>
-          ${escapeHtml(category)}
-        </span>
-      `).join("");
-    }
-
     const statusTag = (status) => {
       const lower = String(status).toLowerCase();
       let type = "info";
@@ -2470,10 +2448,10 @@
       $("#potentialMapList").innerHTML = places.map((place) => {
         const details = potentialOptionDetails(place);
         return `
-          <button type="button" class="map-place-button" data-place="${escapeHtml(place.id)}">
+          <button type="button" class="map-place-button" data-place="${escapeHtml(place.id)}" style="--category-color: ${escapeHtml(categoryColor(place.category))};">
             <strong>${escapeHtml(place.name)}</strong>
             <span>${escapeHtml(place.region)} - ${escapeHtml(details.option)}</span>
-            <span>${escapeHtml(place.category)}</span>
+            <span class="map-place-category">${escapeHtml(place.category)}</span>
           </button>
         `;
       }).join("");
@@ -2714,7 +2692,6 @@
       renderPotentialCategoryFilters();
       renderPotentialOptions();
       renderSources();
-      renderMapLegend();
       renderMap();
       wireTabs();
       wirePotentialSubtabs();
