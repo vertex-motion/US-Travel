@@ -1614,24 +1614,33 @@
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Timed Tickets and Pre-Departure Checks</h2>
-              <p class="panel-kicker">Track calendar-sensitive reservations and route checks.</p>
+              <h2 class="panel-title">Timed Tickets</h2>
+              <p class="panel-kicker">Track calendar-sensitive reservations and ticket windows.</p>
             </div>
           </div>
           <div class="panel-body">
-            <div class="grid two">
-              <div class="table-wrap">
-                <table class="mini-table">
-                  <thead><tr><th>Task</th><th>Target timing</th><th>Status</th></tr></thead>
-                  <tbody id="timedRows"></tbody>
-                </table>
-              </div>
-              <div class="table-wrap">
-                <table class="mini-table">
-                  <thead><tr><th>Check</th><th>When</th><th>Required action</th></tr></thead>
-                  <tbody id="preDepartureRows"></tbody>
-                </table>
-              </div>
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Task</th><th>Target timing</th><th>Status</th></tr></thead>
+                <tbody id="timedRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Pre-Departure Checks</h2>
+              <p class="panel-kicker">Track route, weather, logistics, and final verification work.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Check</th><th>When</th><th>Required action</th></tr></thead>
+                <tbody id="preDepartureRows"></tbody>
+              </table>
             </div>
           </div>
         </section>
