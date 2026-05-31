@@ -977,6 +977,23 @@
       min-width: 1040px;
     }
 
+    .potential-table tr[data-map-url] {
+      cursor: pointer;
+    }
+
+    .potential-table tr[data-map-url]:hover td,
+    .potential-table tr[data-map-url]:focus td {
+      background: rgba(11, 111, 141, 0.06);
+    }
+
+    .potential-map-hint {
+      display: inline-block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
     .rating-cell {
       width: 174px;
     }
@@ -2456,17 +2473,43 @@
       `;
     }
 
+    function potentialPlacesForOption(row) {
+      return tripData.potentialMapPlaces.filter((place) => place.option === row.option);
+    }
+
+    function potentialOptionMapTarget(row) {
+      const places = potentialPlacesForOption(row);
+      if (!places.length) return null;
+      const primary = places[0];
+      return {
+        url: mapSearchUrl(primary.query || primary.name),
+        label: primary.name,
+        count: places.length
+      };
+    }
+
     function renderPotentialOptions(category = "All") {
       const rows = category === "All" ? tripData.potentialOptions : tripData.potentialOptions.filter((row) => row.category === category);
-      $("#potentialOptions").innerHTML = rows.map((row) => `
-        <tr>
-          <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
-          <td class="rating-cell">${renderRating(row.interest)}</td>
-          <td><span class="tag info">${escapeHtml(row.category)}</span></td>
-          <td>${escapeHtml(row.why)}</td>
-          <td>${escapeHtml(row.reconsider)}</td>
-        </tr>
-      `).join("");
+      $("#potentialOptions").innerHTML = rows.map((row) => {
+        const mapTarget = potentialOptionMapTarget(row);
+        const optionHref = mapTarget ? mapTarget.url : row.link;
+        const rowAttributes = mapTarget
+          ? ` data-map-url="${escapeHtml(mapTarget.url)}" tabindex="0" role="link" aria-label="Open ${escapeHtml(row.option)} in Google Maps"`
+          : "";
+        const mapHint = mapTarget
+          ? `<br><span class="potential-map-hint">Google Maps: ${escapeHtml(mapTarget.label)}${mapTarget.count > 1 ? ` + ${mapTarget.count - 1} more` : ""}</span>`
+          : "";
+
+        return `
+          <tr${rowAttributes}>
+            <td><strong><a href="${escapeHtml(optionHref)}">${escapeHtml(row.option)}</a></strong>${mapHint}</td>
+            <td class="rating-cell">${renderRating(row.interest)}</td>
+            <td><span class="tag info">${escapeHtml(row.category)}</span></td>
+            <td>${escapeHtml(row.why)}</td>
+            <td>${escapeHtml(row.reconsider)}</td>
+          </tr>
+        `;
+      }).join("");
       $("#potentialOptionCount").textContent = `${rows.length} of ${tripData.potentialOptions.length} options`;
     }
 
@@ -2704,6 +2747,22 @@
       });
     }
 
+    function wirePotentialOptionRows() {
+      $("#potentialOptions").addEventListener("click", (event) => {
+        if (event.target.closest("a")) return;
+        const row = event.target.closest("tr[data-map-url]");
+        if (!row) return;
+        window.location.assign(row.dataset.mapUrl);
+      });
+      $("#potentialOptions").addEventListener("keydown", (event) => {
+        if (!["Enter", " "].includes(event.key)) return;
+        const row = event.target.closest("tr[data-map-url]");
+        if (!row) return;
+        event.preventDefault();
+        window.location.assign(row.dataset.mapUrl);
+      });
+    }
+
     function wirePotentialMapControls() {
       $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
         const button = event.target.closest("button");
@@ -2752,6 +2811,7 @@
       wireTabs();
       wirePotentialSubtabs();
       wirePotentialCategories();
+      wirePotentialOptionRows();
       wirePotentialMapControls();
       wireDayToggle();
     }
