@@ -16,7 +16,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | --- | ---: | ---: | ---: | --- |
 | International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
 | Lodging, 20 nights | $4,000 | $4,500 | $5,000 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
-| Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer; needs live quote. |
+| Rental car, fuel, parking, tolls | Booked + variable | Booked + variable | Booked + variable | Rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. Provider, price, and booking reference stay private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
@@ -46,9 +46,9 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 ## Cost Controls That Preserve Quality
 
 - Keep the booked UA 842 / UA 839 itinerary as the flight baseline.
-- Use LAX-to-LAX rental quotes as the baseline before adding complexity.
-- Consider delaying car pickup until Day 6 or Day 7 if the first LA base supports car-free or rideshare-based sightseeing and parking is expensive.
-- Compare Palo Alto / Stanford-area parking and Golden Gate day-trip transport before choosing the Bay Area hotel.
+- Use the booked LAX-to-LAX rental car as the transport baseline.
+- Because the car starts on Day 1, check Los Angeles arrival hotel parking before committing to an otherwise good room rate.
+- Compare Palo Alto / Stanford-area parking and self-drive vs. transit/rideshare for the Golden Gate day before choosing the Bay Area hotel.
 - Book Yosemite lodging first; with only two nights, a poor location creates more driving and less park time.
 - Keep the Bakersfield / Tehachapi midpoint functional and value-priced. It should reduce driving stress, not become a luxury stop.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
@@ -63,10 +63,9 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 2. Quote Yosemite lodging immediately for July 11-13.
 3. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
 4. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
-5. Quote rental car LAX pickup to LAX return for July 4-18 first.
-6. Compare rental car Day 1 pickup versus Day 6 or Day 7 pickup after the first LA hotel base is chosen.
-7. Compare keeping the car through the Palo Alto / Stanford-area stay against a transit/rideshare Golden Gate day if parking is expensive.
-8. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
+5. Add the booked rental car cost privately to the working budget outside this public repository.
+6. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
+7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
 
@@ -74,6 +73,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; exact fare and seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | Google Visitor Experience is free to enter; purchases and food are optional. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check events before visit |

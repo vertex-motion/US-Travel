@@ -35,6 +35,7 @@ This is the family's first trip to explore the United States, with a particular 
 - Trip duration: 23 calendar days including flights and the date-line crossing.
 - Route shape: closed circle starting and ending in Los Angeles.
 - Flights: United UA 842 SYD-LAX on June 28, 2026, and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026.
+- Rental car: booked LAX pickup at Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am, and LAX return on Saturday, July 18, 2026 at 8:00 pm. Provider, price, and booking reference are intentionally omitted from this public repository.
 
 ## Travel Style
 

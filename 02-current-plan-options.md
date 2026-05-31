@@ -11,7 +11,7 @@
 - Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
 - Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
 - Hardest route day: The former Yosemite-to-Las-Vegas mega-transfer is now split by a Bakersfield / Tehachapi-area midpoint night. Keep both transfer days simple and heat-aware.
-- Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United.
+- Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United. A rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm.
 - Open decisions remain tracked in `08-open-questions.md`.
 
 ## Selected Route
@@ -34,6 +34,7 @@
 | Option in the plan | Why it remains included | Where it appears |
 | --- | --- | --- |
 | Closed-circle flights: SYD-LAX-SYD | United flights are booked into and out of LAX, preserving the closed-circle structure and avoiding one-way international flight complexity. | Flight details in `04-daily-itinerary.md`; booked status in `07-booking-checklist.md`. |
+| Booked LAX-to-LAX rental car | The car is booked for the full US stay, with LAX pickup on June 28 at 8:00 am and LAX return on July 18 at 8:00 pm. | Transport plan in `05-lodging-transport.md`; Day 1 and Day 21 in `04-daily-itinerary.md`. |
 | Los Angeles at both start and end | This satisfies the closed-circle requirement while preserving the coast, Stanford / Silicon Valley, Golden Gate, Yosemite, and Las Vegas. | Days 1-6 and 21 in `04-daily-itinerary.md`. |
 | Six Los Angeles arrival nights | The earlier confirmed arrival gives the family a softer landing and room for flexible LA sightseeing before driving north. | Days 1-6 in `04-daily-itinerary.md`. |
 | Two Santa Barbara / Montecito nights | It preserves a coastal pause after LA and prevents the northbound coast from becoming only transfer days. | Days 7-8 in `04-daily-itinerary.md`. |
@@ -80,6 +81,7 @@
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Australian citizens may use the Visa Waiver Program/ESTA when eligible. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
