@@ -6,9 +6,9 @@
 | --- | --- | --- |
 | Should the rental car start on Day 1, Day 6, or Day 7? | Day 1 is simpler for one rental contract; a later pickup may avoid LA parking during the longer arrival recovery. | Choose after the first LA hotel base and parking cost are known. |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. |
-| Is the Yosemite-to-Las-Vegas transfer acceptable? | It is the hardest day in the loop and may be 8-10+ hours before breaks. | Keep it only if live map timing and family energy feel acceptable. |
+| Which midpoint should break the Yosemite-to-Las-Vegas / LAX corridor? | The family asked to remove one Yosemite day and add a middle stop to break the long drive. | Default to Bakersfield for practical lodging and easy route position; use Tehachapi if hotel value and the next-day CA-58 route look better. |
 | Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Yosemite-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
-| Is Yosemite a must-do? | Yosemite drives the hardest lodging and transfer constraints. | Keep Yosemite unless lodging is unavailable or very poor value. |
+| Is two Yosemite nights enough? | Removing one Yosemite night keeps the park but makes Mariposa Grove / Glacier Point conditional. | Keep one full Yosemite Valley day, then use Day 16 as a flexible exit toward the midpoint. |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not a fixed booking. |
 | Which Las Vegas base style fits best: center Strip, non-gaming, or off-Strip value suite? | Base choice affects walking, sleep, pool access, parking, smoke exposure, and true cost. | Start with family-friendly center Strip or non-gaming suite options, then compare total stay cost. |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full LA day and add crowd/height constraints. | Skip theme parks on this first plan. |
@@ -18,7 +18,8 @@
 ## Research Gaps To Close After Flight Booking
 
 - Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms.
-- Yosemite lodging availability for July 11-14.
+- Yosemite lodging availability for July 11-13.
+- Bakersfield / Tehachapi midpoint lodging availability for July 13.
 - Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy for four.
 - Final LAX-area or Westside one-night hotel quote for July 17.
 - Rental car quote for LAX pickup and LAX return.
@@ -26,7 +27,9 @@
 - Palo Alto / Stanford-area parking cost and transport plan for Stanford, Silicon Valley tech stops, and the Golden Gate day trip.
 - Confirm whether the rental company requires an International Driving Permit with Australian licenses.
 - Current Highway 1 status for the Santa Barbara, Big Sur, Hearst Castle, and Monterey route.
-- Current route timing for Yosemite to Las Vegas, including heat, road works, and safe break points.
+- Current route timing for Yosemite to Bakersfield / Tehachapi and Bakersfield / Tehachapi to Las Vegas, including heat, road works, and safe break points.
+- Day 16 Forestiere Underground Gardens tour times and whether the route can absorb a one-hour guided stop.
+- Bakersfield CALM Zoo / Kern County Museum and Tehachapi stop hours for the selected midpoint date.
 - July 2026 attraction calendars once ticket windows open.
 - Las Vegas selected attraction or show age rules, prices, refund terms, and schedule.
 - Las Vegas heat, air quality, Red Rock Canyon conditions, and any fire/closure notices in the travel week.
@@ -38,12 +41,13 @@
 - Confirmed flights are UA 842 SYD-LAX on Sunday, June 28, 2026 and UA 839 LAX-SYD departing Saturday, July 18, 2026 and arriving Monday, July 20, 2026.
 - The family wants Las Vegas included in the primary plan, not parked as a potential option.
 - The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.
-- The family can handle longer intercity transfer days, but still prefers fewer hotel changes over adding San Diego or Grand Canyon inside the confirmed route.
+- The family can handle longer intercity transfer days, but now prefers one midpoint hotel change over a direct Yosemite-to-Las-Vegas mega-transfer.
 - A July 18 departure from LAX can still arrive Sydney on July 20 after the date-line crossing.
 - The hotel budget target is USD $200-$250 per night, with no booking above $250 per night unless the family explicitly approves it.
 - Las Vegas sightseeing should be planned around July heat: early outdoor time, indoor afternoons, hotel pool/rest time, and evening Strip walks.
 - The final LAX-area night is a reliability buffer, not an extra sightseeing day.
 - Alcatraz is out of the current plan by traveler preference.
+- Yosemite is reduced to two nights, with one new Bakersfield / Tehachapi midpoint night on July 13.
 
 ## Sources
 
@@ -55,7 +59,13 @@
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA eligibility needs confirmation before nonrefundable bookings. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
 | Yosemite should remain conditional because 2026 entry rules, fee rules, lodging, and congestion management matter to the route. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) and [Yosemite fees](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
+| Mariposa Grove shuttle hours and Glacier Point road access are seasonal and condition-dependent. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) and [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; re-check before using on Day 16 |
+| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; route-dependent midpoint stop |
+| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
+| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check before visit |
+| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
 | Highway 1 needs current verification before the coastal route is treated as fixed; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
+| Caltrans provides current California highway conditions and should also be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
 | Las Vegas has family-friendly free sights, indoor attractions, pool options, shows, and dining, but selected attractions need live ticket and age checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |
 | Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window. | National Weather Service Las Vegas | [July Climate Data for Las Vegas](https://www.weather.gov/media/vef/July_Temps.pdf) | 2026-05-13 | Current climate normal |
 | Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking and current conditions still need a same-week check. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |

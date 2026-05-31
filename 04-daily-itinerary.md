@@ -198,30 +198,31 @@ Seat assignments and booking references must not be recorded in this public repo
 - Reservations: None for trails; dining may require advance planning.
 - Backup plan: Use the free valley shuttle and shorter paved routes if it is hot.
 
-## Day 16: Monday, July 13 - Mariposa Grove or Glacier Point
+## Day 16: Monday, July 13 - Yosemite to Bakersfield / Tehachapi Midpoint
 
-- Sleep: Yosemite area.
-- Morning: Choose Mariposa Grove if the shuttle is operating and heat is manageable.
-- Lunch: Wawona, hotel, or packed lunch.
-- Afternoon: Glacier Point if open and practical, or rest day near the hotel.
-- Dinner: Hotel.
-- Driving: 1-3 hours depending on base and route.
-- Walking: Light to moderate.
-- Reservations: Check road and shuttle status before committing.
-- Backup plan: Yosemite Valley scenic loop, visitor center, and hotel rest.
+- Sleep: Bakersfield, Tehachapi, or another practical CA-99 / CA-58 midpoint.
+- Morning: Check out and choose one Yosemite exit add-on only if timing works: a short Mariposa Grove visit from the South Entrance side, Glacier Point if base and road conditions make it easy, or a simple valley farewell.
+- Lunch: Fresno, Visalia, Bakersfield, or packed lunch depending on route and chosen activity.
+- Afternoon: Drive toward the midpoint. Forestiere Underground Gardens in Fresno is the preferred distinctive stop if tour timing works; otherwise keep the day simple and use CALM Zoo, Kern County Museum, hotel pool, or an early dinner in Bakersfield / Tehachapi.
+- Dinner: Bakersfield, Tehachapi, or near the hotel.
+- Driving: Split-transfer day from Yosemite to the Central Valley / Tehachapi corridor; verify live map timing, heat, and CA-41 / CA-99 / CA-58 conditions.
+- Walking: Light to moderate, depending on the Yosemite exit stop or Forestiere tour.
+- Reservations: Midpoint hotel with parking and one-room occupancy for four; Forestiere tour reservation if used.
+- Backup plan: Skip all activities and make this a plain relocation day if Yosemite exit traffic, heat, or family energy is poor.
+- Source notes: Forestiere Underground Gardens offers a one-hour guided tour and strongly recommends reservations; NPS Mariposa Grove shuttle and Glacier Point access are seasonal and condition-dependent.
 
-## Day 17: Tuesday, July 14 - Yosemite to Las Vegas
+## Day 17: Tuesday, July 14 - Bakersfield / Tehachapi Midpoint to Las Vegas
 
 - Sleep: Las Vegas.
-- Morning: Leave very early. Treat this as the hardest transfer day of the loop.
-- Lunch: Practical route stop around the Central Valley, Bakersfield, Barstow, or another route-dependent location.
+- Morning: Leave after breakfast. If sleeping in Bakersfield, use CALM Zoo or Kern County Museum only if the family wants a short local stop and heat is manageable; if sleeping in Tehachapi, consider a brief Tehachapi Loop / town stop before continuing east.
+- Lunch: Mojave, Barstow, or route-dependent stop.
 - Afternoon: Continue to Las Vegas with heat, traffic, and fatigue buffers.
 - Dinner: Casual dinner near the hotel.
 - Evening: Rest, pool time, or indoor hotel exploration only if everyone has energy.
-- Driving: Likely 8-10+ hours before breaks depending on Yosemite base and route.
+- Driving: Shorter than the former direct Yosemite-to-Las-Vegas day, but still a substantial desert transfer; verify live route timing and road conditions.
 - Walking: Light.
 - Reservations: Las Vegas hotel with confirmed room occupancy, resort fee, parking, pool access, and cancellation terms.
-- Backup plan: Add a midpoint overnight only if live route timing makes the direct transfer too risky, and remove one night from another base.
+- Backup plan: If heat or traffic is poor, skip Tehachapi / Bakersfield sightseeing and go directly to Las Vegas.
 - Source notes: Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so do not plan outdoor sightseeing on arrival.
 
 ## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
@@ -313,7 +314,13 @@ Seat assignments and booking references must not be recorded in this public repo
 | The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
-| Mariposa Grove shuttle and seasonal road access must be checked before planning the grove day. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-08 | Current |
+| Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite exit stop. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; re-check week of arrival |
+| Glacier Point road access is seasonal and condition-dependent, and the viewpoint adds driving from Yosemite Valley or Wawona. | National Park Service | [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; re-check before using on Day 16 |
+| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; re-check tour times before using on Day 16 |
+| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
+| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check before using on Day 16 or 17 |
+| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
+| Caltrans provides current California highway conditions and should be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
 | Highway 1 through Big Sur and toward Santa Barbara requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
 | Monterey Bay Aquarium is a ticketed, high-demand family attraction. | Monterey Bay Aquarium | [Tickets](https://www.montereybayaquarium.org/visit/tickets) | 2026-05-08 | Current |
 | Hearst Castle tours are ticketed and should be reserved once the booking window opens. | California State Parks | [Hearst Castle tours](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
