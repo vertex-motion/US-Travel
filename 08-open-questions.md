@@ -5,7 +5,7 @@
 | Question | Why it matters | Recommended default |
 | --- | --- | --- |
 | Should the rental car start on Day 1, Day 6, or Day 7? | Day 1 is simpler for one rental contract; a later pickup may avoid LA parking during the longer arrival recovery. | Choose after the first LA hotel base and parking cost are known. |
-| How should the family handle Palo Alto / Stanford-area parking and San Francisco day trips? | Peninsula lodging may make parking easier, but Golden Gate and Alcatraz become commute-dependent days. | Keep the car if hotel parking is reasonable; choose self-drive for Golden Gate / Presidio and Caltrain/rideshare or pre-planned parking for Alcatraz. |
+| Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. |
 | Is the Yosemite-to-Las-Vegas transfer acceptable? | It is the hardest day in the loop and may be 8-10+ hours before breaks. | Keep it only if live map timing and family energy feel acceptable. |
 | Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Yosemite-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
 | Is Yosemite a must-do? | Yosemite drives the hardest lodging and transfer constraints. | Keep Yosemite unless lodging is unavailable or very poor value. |
@@ -23,7 +23,7 @@
 - Final LAX-area or Westside one-night hotel quote for July 17.
 - Rental car quote for LAX pickup and LAX return.
 - Rental car comparison quote for Day 1 pickup versus Day 6 or Day 7 pickup.
-- Palo Alto / Stanford-area parking cost and transport plan for San Francisco day trips.
+- Palo Alto / Stanford-area parking cost and transport plan for Stanford, Silicon Valley tech stops, and the Golden Gate day trip.
 - Confirm whether the rental company requires an International Driving Permit with Australian licenses.
 - Current Highway 1 status for the Santa Barbara, Big Sur, Hearst Castle, and Monterey route.
 - Current route timing for Yosemite to Las Vegas, including heat, road works, and safe break points.
@@ -43,6 +43,7 @@
 - The hotel budget target is USD $200-$250 per night, with no booking above $250 per night unless the family explicitly approves it.
 - Las Vegas sightseeing should be planned around July heat: early outdoor time, indoor afternoons, hotel pool/rest time, and evening Strip walks.
 - The final LAX-area night is a reliability buffer, not an extra sightseeing day.
+- Alcatraz is out of the current plan by traveler preference.
 
 ## Sources
 
@@ -58,3 +59,6 @@
 | Las Vegas has family-friendly free sights, indoor attractions, pool options, shows, and dining, but selected attractions need live ticket and age checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |
 | Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window. | National Weather Service Las Vegas | [July Climate Data for Las Vegas](https://www.weather.gov/media/vef/July_Temps.pdf) | 2026-05-13 | Current climate normal |
 | Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking and current conditions still need a same-week check. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |
+| Stanford Visitor Center is generally open weekdays, summer 2026 visit programs are posted for most weekdays, and self-guided campus materials are available. | Stanford Visitor Information | [Visitor Information](https://visit.stanford.edu/) | 2026-05-31 | Current; re-check campus events and parking before visit |
+| Google Visitor Experience is a public Mountain View destination with no general RSVP requirement and free entry. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check hours and events before visit |
+| Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; re-check tickets and hours before visit |

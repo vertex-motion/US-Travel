@@ -20,7 +20,7 @@
 | Los Angeles arrival | 6 | Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent for the first night if early arrival logistics matter | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am; early check-in, luggage storage, and base choice matter. LA traffic and parking costs can change value. |
 | Santa Barbara / Montecito | 2 | Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well | A soft coastal pause after the short LA transfer | High July rates and minimum-stay rules may make nearby towns better value. |
 | Monterey / Carmel | 2 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, and a short scenic coast option | Beach-area parking and summer rates can be difficult; two nights leaves little margin. |
-| Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime plus day trips to Alcatraz, Golden Gate, Presidio, and the waterfront without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, and the Alcatraz transport plan before booking. |
+| Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime, Silicon Valley tech stops, and one Golden Gate / Presidio day trip without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, Stanford access, tech-stop hours, and the Golden Gate transport plan before booking. |
 | Yosemite | 3 | Yosemite Valley first; Fish Camp / Oakhurst / Mariposa area second | Staying inside or near the park reduces daily driving | July availability and the $250/night cap may force a farther base. |
 | Las Vegas | 3 | Center Strip family-friendly resort first; quieter non-gaming or off-Strip base second | First-visit Strip landmarks, pool/rest time, indoor attractions, and heat-aware finale | Resort fees, parking fees, smoky casino paths, summer heat, and room occupancy rules can change the real value. |
 | Los Angeles departure | 1 | LAX area, Westside, or another departure-friendly base | Protects the LAX international departure after the Las Vegas drive | Do not over-optimize for charm; airport logistics matter most. |
@@ -32,7 +32,7 @@
 | Los Angeles arrival | Rate-filtered family rooms in Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent | Balance recovery, beach access, early sightseeing, and parking | Needs live one-room family occupancy and $200-$250/night quote |
 | Santa Barbara / Montecito | Rate-filtered family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito | Two nights should provide rest without breaking the hotel cap | Needs live one-room family occupancy and $200-$250/night quote |
 | Monterey / Carmel | Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley | Family room size and coastal access matter more than brand positioning | Needs live one-room family occupancy and $200-$250/night quote |
-| Palo Alto / Stanford area | Rate-filtered family rooms in Palo Alto, Menlo Park, Mountain View, Redwood City, or nearby Peninsula towns | Room size, parking terms, and San Francisco day-trip access matter more than brand | Needs live one-room family occupancy, parking terms, and $200-$250/night quote |
+| Palo Alto / Stanford area | Rate-filtered family rooms in Palo Alto, Menlo Park, Mountain View, Redwood City, or nearby Peninsula towns | Room size, parking terms, Stanford access, Silicon Valley tech stops, and Golden Gate day-trip access matter more than brand | Needs live one-room family occupancy, parking terms, and $200-$250/night quote |
 | Yosemite | Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels | Park access matters, but the $250/night cap is binding | Needs immediate availability and rate check for July 11-14 |
 | Las Vegas | Center Strip family-friendly resorts, Vdara-style non-gaming options, or off-Strip value suites with parking | Total cost and family comfort matter more than headline room rate | Needs live quote including resort fees, taxes, parking, pool access, and one-room occupancy |
 | Los Angeles departure | LAX-area suites, Westside family rooms, or airport hotels with shuttle/parking clarity | Reduces departure-day stress after the Las Vegas-to-LA drive | Needs one-night quote with parking or airport transfer terms |
@@ -43,7 +43,7 @@
 2. Transfer from LAX to the arrival hotel by pre-booked car service, taxi, rideshare, or hotel shuttle depending on arrival base.
 3. Decide whether to pick up the rental car on Day 1, Day 6, or Day 7. Default to a later pickup if the arrival base supports car-free or rideshare-based LA sightseeing; use Day 1 only if hotel parking is reasonable and family logistics favor one continuous car rental.
 4. Use the car for Santa Barbara, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, Las Vegas, and the return to Los Angeles.
-5. During the Palo Alto / Stanford-area stay, keep the car if hotel parking is reasonable, but plan each San Francisco day separately: Golden Gate / Presidio may suit self-driving, while Alcatraz / Ferry Building may suit Caltrain plus local transit or rideshare.
+5. During the Palo Alto / Stanford-area stay, keep the car if hotel parking is reasonable. Use it for Stanford / Mountain View / Cupertino / San Jose tech stops and decide whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
 6. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
 7. Return the car at LAX on Day 20 or Day 21, depending on hotel parking, shuttle, and the 10:45 pm flight timing.
 8. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
@@ -56,7 +56,7 @@
 - Add a second authorized driver if both adults may drive.
 - Price LAX pickup to LAX return first.
 - Compare Day 1 pickup against Day 6 or Day 7 pickup if the LA arrival base can work without a car.
-- Compare keeping the car through the Palo Alto / Stanford-area stay against transit-heavy San Francisco sightseeing if hotel or city parking is expensive.
+- Compare keeping the car through the Palo Alto / Stanford-area stay against a transit/rideshare Golden Gate day if hotel or city parking is expensive.
 - Confirm parking fees at each hotel, toll handling, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
 
 ## Airport and Transfer Notes
