@@ -6,9 +6,11 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 
 - Day 1: Depart Sydney at 9:30 am and arrive in Los Angeles at 6:10 am on Sunday, June 28, 2026.
 - Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy.
+- Rental car pickup: Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
+- Rental car return: Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - Day 23: Arrive in Sydney at 7:00 am on Monday, July 20, 2026 after crossing the date line.
 
 Seat assignments and booking references must not be recorded in this public repository.
@@ -16,14 +18,14 @@ Seat assignments and booking references must not be recorded in this public repo
 ## Day 1: Sunday, June 28 - Arrive Los Angeles
 
 - Sleep: Los Angeles, preferably Santa Monica, Westside, or an arrival-friendly LAX-area base.
-- Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and transfer to the hotel.
+- Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
 - Afternoon: Check in if available, unpack, nap, hotel pool, or a short pram-friendly neighborhood walk.
 - Dinner: Easy local dinner near the hotel.
-- Driving: None after arrival except airport transfer.
+- Driving: LAX to the arrival hotel only; keep any extra driving minimal after the long flight.
 - Walking: Keep light.
-- Reservations: Airport transfer if arriving with significant luggage and pram; early check-in or luggage storage if available.
+- Reservations: Booked rental car pickup at 8:00 am; early hotel check-in or luggage storage if available.
 - Backup plan: If rooms are not ready, use a low-effort cafe, beach path, or hotel lobby plan until check-in.
-- Source notes: Flight details are from confirmed traveler ticket information.
+- Source notes: Flight and rental car details are from confirmed traveler booking information. Provider, price, and booking reference are intentionally omitted.
 
 ## Day 2: Monday, June 29 - Santa Monica and Arrival Recovery
 
@@ -79,11 +81,11 @@ Seat assignments and booking references must not be recorded in this public repo
 - Sleep: Los Angeles.
 - Morning: Easy beach, viewpoint, or neighborhood walk.
 - Lunch: Los Angeles.
-- Afternoon: Pack, laundry, rental car pickup if choosing a Day 6/7 pickup, or one short local activity.
+- Afternoon: Pack, laundry, confirm hotel parking for the already-booked rental car, or one short local activity.
 - Dinner: Early dinner near the hotel.
-- Driving: Minimal unless picking up the rental car.
+- Driving: Minimal; the car is already picked up from LAX on Day 1.
 - Walking: Light.
-- Reservations: Rental car pickup only if the family chooses to avoid a Day 1 car.
+- Reservations: None unless choosing a ticketed local activity.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
 ## Day 7: Saturday, July 4 - Los Angeles to Santa Barbara
@@ -268,13 +270,13 @@ Seat assignments and booking references must not be recorded in this public repo
 - Sleep: Overnight flight.
 - Morning: Pack slowly. Avoid major sightseeing.
 - Lunch: Near hotel or airport.
-- Afternoon: Return rental car if not already returned. Use a late checkout or day room if the gap before check-in is too long.
-- Evening: Depart LAX on UA 839 at 10:45 pm.
+- Afternoon: Use late checkout or a day room if the gap before airport check-in is too long. Keep luggage and car-return timing simple.
+- Evening: Return the booked rental car at Los Angeles International Airport at 8:00 pm, then depart LAX on UA 839 at 10:45 pm.
 - Dinner: Airport or in flight.
-- Driving: Airport transfer only if car has already been returned; otherwise allow a large rental-car return buffer.
+- Driving: Final hotel to LAX rental car return; allow a large buffer for traffic, fuel, luggage, shuttle/terminal transfer, and international check-in.
 - Walking: Light.
-- Reservations: United UA 839 LAX-SYD international itinerary and car return. Confirm terminal, luggage timing, and check-in buffer.
-- Backup plan: If traffic or rental return logistics look poor, return the car on Day 20 and use an airport transfer on departure day.
+- Reservations: United UA 839 LAX-SYD international itinerary and booked rental car return at 8:00 pm. Confirm terminal, luggage timing, fuel policy, and check-in buffer.
+- Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
 
 ## Day 22: Sunday, July 19 - In Transit
 
@@ -303,6 +305,7 @@ Seat assignments and booking references must not be recorded in this public repo
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |

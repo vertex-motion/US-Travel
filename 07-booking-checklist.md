@@ -10,11 +10,12 @@
 | Confirm Bakersfield / Tehachapi midpoint strategy | Now | Travelers | One Yosemite night has moved to a midpoint overnight to break the former Yosemite-to-Las-Vegas mega-transfer. | Open |
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
+| Book rental car | Done | Travelers | LAX pickup on Sunday, June 28, 2026 at 8:00 am; LAX return on Saturday, July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
 | Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-13 after reducing Yosemite to two nights. | Open |
 | Hold or book Bakersfield / Tehachapi midpoint lodging | Now | Travelers | Check July 13 one-night family room with easy parking and cancellation. Prefer practical value over charm. | Open |
 | Quote one-room family lodging in each base | Now | Travelers | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
 | Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
-| Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and Palo Alto / Stanford-area parking plus Silicon Valley / Golden Gate day-trip needs. | Open |
+| Confirm rental car operating details | Before pickup | Travelers | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and after-hours or counter timing for the 8:00 am pickup and 8:00 pm return. | Open |
 
 ## Timed Tickets and Reservations
 
@@ -44,7 +45,7 @@
 | Yosemite-to-midpoint and midpoint-to-Las-Vegas route timing | Before booking final lodging and again the day before Days 16-17 | Confirm route, departure times, lunch stops, heat plan, and CA-41 / CA-99 / CA-58 / I-15 conditions. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
-| LAX airport and car return | Day before departure | Confirm terminal, rental car return location, check-in buffer, and luggage timing. |
+| LAX airport and car return | Day before departure | Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing. |
 
 ## Do Not Book
 
@@ -66,6 +67,7 @@
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA/Visa Waiver eligibility must be checked before nonrefundable booking. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |

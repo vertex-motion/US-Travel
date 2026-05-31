@@ -7,6 +7,7 @@
 - Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
 - Use LAX as the start and end airport for the selected closed-circle plan.
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
+- Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - Keep the final Los Angeles night practical. Prioritize departure reliability over sightseeing.
 - Treat Bakersfield, Tehachapi, or another CA-99 / CA-58 midpoint as part of the default route after the family chose to remove one Yosemite night and break the long Yosemite-to-Las-Vegas / LAX corridor.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
@@ -17,7 +18,7 @@
 
 | Base | Nights | Recommended area | Why it fits | Watch-outs |
 | --- | ---: | --- | --- | --- |
-| Los Angeles arrival | 6 | Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent for the first night if early arrival logistics matter | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am; early check-in, luggage storage, and base choice matter. LA traffic and parking costs can change value. |
+| Los Angeles arrival | 6 | Santa Monica, Brentwood, Beverly Hills-adjacent, West Hollywood, Culver City, or LAX-adjacent for the first night if early arrival logistics matter | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am and the rental car pickup is booked for 8:00 am. Early check-in, luggage storage, base choice, and hotel parking cost matter. |
 | Santa Barbara / Montecito | 2 | Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well | A soft coastal pause after the short LA transfer | High July rates and minimum-stay rules may make nearby towns better value. |
 | Monterey / Carmel | 2 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, and a short scenic coast option | Beach-area parking and summer rates can be difficult; two nights leaves little margin. |
 | Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime, Silicon Valley tech stops, and one Golden Gate / Presidio day trip without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, Stanford access, tech-stop hours, and the Golden Gate transport plan before booking. |
@@ -42,31 +43,31 @@
 ## Transport Plan
 
 1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
-2. Transfer from LAX to the arrival hotel by pre-booked car service, taxi, rideshare, or hotel shuttle depending on arrival base.
-3. Decide whether to pick up the rental car on Day 1, Day 6, or Day 7. Default to a later pickup if the arrival base supports car-free or rideshare-based LA sightseeing; use Day 1 only if hotel parking is reasonable and family logistics favor one continuous car rental.
+2. Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage.
+3. Drive from LAX to the arrival hotel and keep the first day low-driving because it follows the long-haul flight.
 4. Use the car for Santa Barbara, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, the Bakersfield / Tehachapi midpoint, Las Vegas, and the return to Los Angeles.
-5. During the Palo Alto / Stanford-area stay, keep the car if hotel parking is reasonable. Use it for Stanford / Mountain View / Cupertino / San Jose tech stops and decide whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
+5. During the Palo Alto / Stanford-area stay, use the car for Stanford / Mountain View / Cupertino / San Jose tech stops, while deciding whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
 6. Split the Yosemite-to-Las-Vegas corridor over Days 16-17 via Bakersfield, Tehachapi, or another practical midpoint; keep sightseeing to one short stop.
 7. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
-8. Return the car at LAX on Day 20 or Day 21, depending on hotel parking, shuttle, and the 10:45 pm flight timing.
+8. Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026, allowing enough buffer for fuel, luggage, rental return, terminal transfer, and international check-in.
 9. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
 
-## Rental Car Requirements
+## Rental Car Booking and Requirements
 
-- Book a midsize or full-size SUV with luggage space for four passengers, pram, and long-haul luggage.
+- Rental car is booked LAX-to-LAX from June 28, 2026 at 8:00 am to July 18, 2026 at 8:00 pm.
+- Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup.
 - Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat.
 - Confirm whether the rental company requires an International Driving Permit for an Australian license.
 - Add a second authorized driver if both adults may drive.
-- Price LAX pickup to LAX return first.
-- Compare Day 1 pickup against Day 6 or Day 7 pickup if the LA arrival base can work without a car.
-- Compare keeping the car through the Palo Alto / Stanford-area stay against a transit/rideshare Golden Gate day if hotel or city parking is expensive.
+- Keep provider, price, and booking reference out of this public repository.
+- Compare self-driving against Caltrain/rideshare for the Golden Gate day if hotel or San Francisco parking is expensive.
 - Confirm the midpoint hotel location does not create backtracking. Bakersfield is usually the practical default; Tehachapi can work if rates, room type, and next-day routing are better.
-- Confirm parking fees at each hotel, toll handling, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
+- Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
 
 ## Airport and Transfer Notes
 
-- LAX arrival: UA 842 arrives at 6:10 am on June 28. Use a pre-booked car service, taxi, rideshare, FlyAway/Metro, or hotel shuttle after choosing the first hotel. With luggage, a pram, and likely early-arrival fatigue, default to a direct transfer unless the price difference is large.
-- LAX departure: UA 839 departs at 10:45 pm on July 18. Leave a large traffic buffer for rental car return, luggage, terminal transfer, and international check-in.
+- LAX arrival: UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport. If immigration, luggage, or rental counter timing slips, keep the arrival day flexible.
+- LAX departure: UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport. Leave a large traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in.
 - Final-day option: Book late checkout or a day room rather than filling the departure day with sightseeing.
 - SFO and LAS are no longer selected gateways.
 
@@ -76,6 +77,7 @@
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |

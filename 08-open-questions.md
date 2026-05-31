@@ -4,7 +4,7 @@
 
 | Question | Why it matters | Recommended default |
 | --- | --- | --- |
-| Should the rental car start on Day 1, Day 6, or Day 7? | Day 1 is simpler for one rental contract; a later pickup may avoid LA parking during the longer arrival recovery. | Choose after the first LA hotel base and parking cost are known. |
+| Does the booked rental car need any operating-detail changes before pickup? | The car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm, so pickup timing is fixed but vehicle class, luggage fit, child seat, fuel policy, toll handling, second driver, and license / IDP rules still matter. | Keep the booking, then verify operating details before nonrefundable hotel parking decisions. |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. |
 | Which midpoint should break the Yosemite-to-Las-Vegas / LAX corridor? | The family asked to remove one Yosemite day and add a middle stop to break the long drive. | Default to Bakersfield for practical lodging and easy route position; use Tehachapi if hotel value and the next-day CA-58 route look better. |
 | Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Yosemite-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
@@ -22,10 +22,8 @@
 - Bakersfield / Tehachapi midpoint lodging availability for July 13.
 - Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy for four.
 - Final LAX-area or Westside one-night hotel quote for July 17.
-- Rental car quote for LAX pickup and LAX return.
-- Rental car comparison quote for Day 1 pickup versus Day 6 or Day 7 pickup.
+- Booked rental car operating details: vehicle class, luggage fit, child seat plan, fuel policy, toll handling, second driver, and Australian license / IDP requirements.
 - Palo Alto / Stanford-area parking cost and transport plan for Stanford, Silicon Valley tech stops, and the Golden Gate day trip.
-- Confirm whether the rental company requires an International Driving Permit with Australian licenses.
 - Current Highway 1 status for the Santa Barbara, Big Sur, Hearst Castle, and Monterey route.
 - Current route timing for Yosemite to Bakersfield / Tehachapi and Bakersfield / Tehachapi to Las Vegas, including heat, road works, and safe break points.
 - Day 16 Forestiere Underground Gardens tour times and whether the route can absorb a one-hour guided stop.
@@ -39,6 +37,7 @@
 
 - The family wants a closed-circle trip and has selected Los Angeles / LAX as the start and end point.
 - Confirmed flights are UA 842 SYD-LAX on Sunday, June 28, 2026 and UA 839 LAX-SYD departing Saturday, July 18, 2026 and arriving Monday, July 20, 2026.
+- Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - The family wants Las Vegas included in the primary plan, not parked as a potential option.
 - The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.
 - The family can handle longer intercity transfer days, but now prefers one midpoint hotel change over a direct Yosemite-to-Las-Vegas mega-transfer.
@@ -55,6 +54,7 @@
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
+| Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA eligibility needs confirmation before nonrefundable bookings. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
