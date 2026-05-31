@@ -6,11 +6,12 @@
 | --- | --- | --- | --- | --- |
 | Confirm final trip dates | Done | Travelers | Confirmed June 28-July 20, 2026 Sydney-to-Sydney. US stay is June 28-July 18. | Done |
 | Confirm LAX closed-circle routing | Done | Travelers | Confirmed flights arrive and depart through LAX. | Done |
-| Confirm Las Vegas as a 3-night primary base | Now | Travelers | Current primary plan gives Las Vegas 3 nights before returning to Los Angeles. | Open |
-| Accept or revise the Yosemite-to-Las Vegas transfer | Now | Travelers | This is the hardest travel day in the loop. Keep it only if live route timing is acceptable. | Open |
+| Confirm Las Vegas as a 3-night primary base | Now | Travelers | Current primary plan keeps Las Vegas at 3 nights before returning to Los Angeles. | Open |
+| Confirm Bakersfield / Tehachapi midpoint strategy | Now | Travelers | One Yosemite night has moved to a midpoint overnight to break the former Yosemite-to-Las-Vegas mega-transfer. | Open |
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
-| Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-14. | Open |
+| Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-13 after reducing Yosemite to two nights. | Open |
+| Hold or book Bakersfield / Tehachapi midpoint lodging | Now | Travelers | Check July 13 one-night family room with easy parking and cancellation. Prefer practical value over charm. | Open |
 | Quote one-room family lodging in each base | Now | Travelers | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
 | Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
 | Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and Palo Alto / Stanford-area parking plus Silicon Valley / Golden Gate day-trip needs. | Open |
@@ -26,6 +27,8 @@
 | Computer History Museum or Apple Park Visitor Center | Week before Bay Area stay | Choose the second tech anchor after checking CHM tickets/hours and Apple Park Visitor Center hours/sessions. | Open |
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
 | Hearst Castle | About 60 days before July 6 | Choose tour time only if it fits the longer Santa Barbara-to-Monterey transfer day. | Open |
+| Forestiere Underground Gardens | When Day 16 route is chosen | Reserve only if the Yosemite exit route and tour time protect an easy midpoint arrival. | Open |
+| Kern County Museum, CALM Zoo, or Tehachapi Loop | Week before midpoint night | Use as low-commitment swaps; do not stack all of them. | Open |
 | Las Vegas ticketed attraction or show | After hotel is held | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
 | Red Rock Canyon, if used | Week before travel and morning of Day 19 | July reservations are not currently required, but re-check entry rules, parking, weather, and fire/closure notices. | Open |
 
@@ -33,12 +36,12 @@
 
 | Check | When | Required action |
 | --- | --- | --- |
-| Highway 1 / Big Sur status | 7 days before and morning of Days 6-7 | Use Caltrans before any Big Sur reach and the Santa Barbara-to-Monterey transfer. |
+| Highway 1 / Big Sur status | 7 days before and morning of Days 9-10 | Use Caltrans before any Big Sur reach and the Santa Barbara-to-Monterey transfer. |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
-| Yosemite road and shuttle status | Week of arrival | Decide Mariposa Grove vs. Glacier Point vs. valley rest day. |
+| Yosemite road and shuttle status | Week of arrival | Decide whether Mariposa Grove or Glacier Point can fit the Day 16 exit, or whether to go straight to the midpoint. |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa Barbara move. |
 | Palo Alto / Stanford-area parking and Bay Area activity plan | Before booking Bay Area hotel | Confirm hotel parking, then plan Stanford, Google / Computer History Museum / Apple, and the Golden Gate / Presidio day. |
-| Yosemite-to-Las-Vegas route timing | Before booking final lodging and again the day before Day 17 | Confirm route, departure time, lunch stop, heat plan, and whether a midpoint overnight is needed. |
+| Yosemite-to-midpoint and midpoint-to-Las-Vegas route timing | Before booking final lodging and again the day before Days 16-17 | Confirm route, departure times, lunch stops, heat plan, and CA-41 / CA-99 / CA-58 / I-15 conditions. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
 | LAX airport and car return | Day before departure | Confirm terminal, rental car return location, check-in buffer, and luggage timing. |
@@ -55,6 +58,7 @@
 - Do not book multiple Las Vegas paid attractions until hotel, heat plan, and one anchor attraction are confirmed.
 - Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.
 - Do not book a same-day Las Vegas-to-LAX drive plus international departure unless the family explicitly accepts the missed-flight risk.
+- Do not turn the Bakersfield / Tehachapi midpoint into a packed sightseeing day; it exists to reduce drive stress.
 
 ## Sources
 
@@ -71,7 +75,13 @@
 | Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, demos, and sessions when available. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
 | The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite reservation rules should be checked repeatedly because park entry systems can change. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
+| Mariposa Grove shuttle hours and Glacier Point road access are seasonal and condition-dependent. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) and [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; re-check before using on Day 16 |
+| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; book only if route timing works |
+| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
+| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check hours before visit |
+| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
 | Highway 1 should be checked through Caltrans before the Big Sur and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
+| Caltrans provides current California highway conditions and should also be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
 | Hearst Castle tour tickets are time-sensitive and route-dependent. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
 | Warner Bros. Studio Tour does not allow children under 5. | Warner Bros. Studio Tour Hollywood | [FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |
 | Las Vegas has family-friendly indoor, free, pool, show, and attraction options, but selected attractions need current age, ticket, and date checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |

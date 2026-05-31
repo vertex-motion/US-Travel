@@ -8,7 +8,7 @@
 - Use LAX as the start and end airport for the selected closed-circle plan.
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
 - Keep the final Los Angeles night practical. Prioritize departure reliability over sightseeing.
-- Treat Cambria, Paso Robles, San Luis Obispo, Bakersfield, Barstow, or another midpoint as fallback stops, not part of the default route.
+- Treat Bakersfield, Tehachapi, or another CA-99 / CA-58 midpoint as part of the default route after the family chose to remove one Yosemite night and break the long Yosemite-to-Las-Vegas / LAX corridor.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
 - In Las Vegas, compare the full stay cost, not only the headline room rate. Include resort fees, taxes, parking, pool access, and any extra-person fees.
 - Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before booking.
@@ -21,7 +21,8 @@
 | Santa Barbara / Montecito | 2 | Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well | A soft coastal pause after the short LA transfer | High July rates and minimum-stay rules may make nearby towns better value. |
 | Monterey / Carmel | 2 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, and a short scenic coast option | Beach-area parking and summer rates can be difficult; two nights leaves little margin. |
 | Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime, Silicon Valley tech stops, and one Golden Gate / Presidio day trip without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, Stanford access, tech-stop hours, and the Golden Gate transport plan before booking. |
-| Yosemite | 3 | Yosemite Valley first; Fish Camp / Oakhurst / Mariposa area second | Staying inside or near the park reduces daily driving | July availability and the $250/night cap may force a farther base. |
+| Yosemite | 2 | Yosemite Valley first; Fish Camp / Oakhurst / Mariposa area second | Staying inside or near the park reduces daily driving and protects the one full Valley day | July availability and the $250/night cap may force a farther base. With only two nights, avoid a lodging base that adds long daily drives. |
+| Bakersfield / Tehachapi midpoint | 1 | Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel | Breaks the former Yosemite-to-Las-Vegas mega-transfer and can support a short Forestiere, Bakersfield, or Tehachapi stop | This is a functional overnight. Do not overpay, and do not add a remote detour that erases the drive-time benefit. |
 | Las Vegas | 3 | Center Strip family-friendly resort first; quieter non-gaming or off-Strip base second | First-visit Strip landmarks, pool/rest time, indoor attractions, and heat-aware finale | Resort fees, parking fees, smoky casino paths, summer heat, and room occupancy rules can change the real value. |
 | Los Angeles departure | 1 | LAX area, Westside, or another departure-friendly base | Protects the LAX international departure after the Las Vegas drive | Do not over-optimize for charm; airport logistics matter most. |
 
@@ -33,7 +34,8 @@
 | Santa Barbara / Montecito | Rate-filtered family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito | Two nights should provide rest without breaking the hotel cap | Needs live one-room family occupancy and $200-$250/night quote |
 | Monterey / Carmel | Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley | Family room size and coastal access matter more than brand positioning | Needs live one-room family occupancy and $200-$250/night quote |
 | Palo Alto / Stanford area | Rate-filtered family rooms in Palo Alto, Menlo Park, Mountain View, Redwood City, or nearby Peninsula towns | Room size, parking terms, Stanford access, Silicon Valley tech stops, and Golden Gate day-trip access matter more than brand | Needs live one-room family occupancy, parking terms, and $200-$250/night quote |
-| Yosemite | Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels | Park access matters, but the $250/night cap is binding | Needs immediate availability and rate check for July 11-14 |
+| Yosemite | Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels | Park access matters more with only two nights; the $250/night cap is still binding | Needs immediate availability and rate check for July 11-13 |
+| Bakersfield / Tehachapi midpoint | Rate-filtered family rooms in Bakersfield or Tehachapi with easy parking and breakfast | This is a one-night drive break, so convenience, cancellation terms, and sleep quality matter more than charm | Needs July 13 one-night quote and route-position check |
 | Las Vegas | Center Strip family-friendly resorts, Vdara-style non-gaming options, or off-Strip value suites with parking | Total cost and family comfort matter more than headline room rate | Needs live quote including resort fees, taxes, parking, pool access, and one-room occupancy |
 | Los Angeles departure | LAX-area suites, Westside family rooms, or airport hotels with shuttle/parking clarity | Reduces departure-day stress after the Las Vegas-to-LA drive | Needs one-night quote with parking or airport transfer terms |
 
@@ -42,11 +44,12 @@
 1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
 2. Transfer from LAX to the arrival hotel by pre-booked car service, taxi, rideshare, or hotel shuttle depending on arrival base.
 3. Decide whether to pick up the rental car on Day 1, Day 6, or Day 7. Default to a later pickup if the arrival base supports car-free or rideshare-based LA sightseeing; use Day 1 only if hotel parking is reasonable and family logistics favor one continuous car rental.
-4. Use the car for Santa Barbara, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, Las Vegas, and the return to Los Angeles.
+4. Use the car for Santa Barbara, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, the Bakersfield / Tehachapi midpoint, Las Vegas, and the return to Los Angeles.
 5. During the Palo Alto / Stanford-area stay, keep the car if hotel parking is reasonable. Use it for Stanford / Mountain View / Cupertino / San Jose tech stops and decide whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
-6. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
-7. Return the car at LAX on Day 20 or Day 21, depending on hotel parking, shuttle, and the 10:45 pm flight timing.
-8. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
+6. Split the Yosemite-to-Las-Vegas corridor over Days 16-17 via Bakersfield, Tehachapi, or another practical midpoint; keep sightseeing to one short stop.
+7. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
+8. Return the car at LAX on Day 20 or Day 21, depending on hotel parking, shuttle, and the 10:45 pm flight timing.
+9. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
 
 ## Rental Car Requirements
 
@@ -57,6 +60,7 @@
 - Price LAX pickup to LAX return first.
 - Compare Day 1 pickup against Day 6 or Day 7 pickup if the LA arrival base can work without a car.
 - Compare keeping the car through the Palo Alto / Stanford-area stay against a transit/rideshare Golden Gate day if hotel or city parking is expensive.
+- Confirm the midpoint hotel location does not create backtracking. Bakersfield is usually the practical default; Tehachapi can work if rates, room type, and next-day routing are better.
 - Confirm parking fees at each hotel, toll handling, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
 
 ## Airport and Transfer Notes
@@ -77,3 +81,8 @@
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
 | Las Vegas has family-friendly hotel, pool, free-sight, indoor attraction, and dining options, but selected lodging and attraction terms need current checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected hotel terms |
 | Yosemite Valley Lodge should be checked first only if it can fit the hotel cap, because location materially reduces daily driving. | Yosemite Hospitality | [Yosemite Valley Lodge](https://www.travelyosemite.com/lodging/yosemite-valley-lodge/) | 2026-05-08 | Needs live rate quote against $250/night cap |
+| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; route-dependent midpoint stop |
+| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
+| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check hours before visit |
+| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
+| Caltrans provides current California highway conditions and should be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
