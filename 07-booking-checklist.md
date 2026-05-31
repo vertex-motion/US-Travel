@@ -11,9 +11,10 @@
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
 | Book rental car | Done | Travelers | LAX pickup on Sunday, June 28, 2026 at 8:00 am; LAX return on Saturday, July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
+| Book first Los Angeles hotel | Done | Travelers | Booked in the Pasadena area from Sunday, June 28 to Saturday, July 4, 2026. Check-in is 3:00 pm and checkout is 12:00 pm. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
 | Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-13 after reducing Yosemite to two nights. | Open |
 | Hold or book Bakersfield / Tehachapi midpoint lodging | Now | Travelers | Check July 13 one-night family room with easy parking and cancellation. Prefer practical value over charm. | Open |
-| Quote one-room family lodging in each base | Now | Travelers | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
+| Quote remaining one-room family lodging | Now | Travelers | First Los Angeles hotel is booked. Confirm one room or suite for all four at USD $200-$250 per night in each remaining unbooked base before comparing brands. | Open |
 | Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
 | Confirm rental car operating details | Before pickup | Travelers | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and after-hours or counter timing for the 8:00 am pickup and 8:00 pm return. | Open |
 
@@ -38,6 +39,7 @@
 | Check | When | Required action |
 | --- | --- | --- |
 | Highway 1 / Big Sur status | 7 days before and morning of Days 9-10 | Use Caltrans before any Big Sur reach and the Santa Barbara-to-Monterey transfer. |
+| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm 3:00 pm check-in, 12:00 pm checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
 | Yosemite road and shuttle status | Week of arrival | Decide whether Mariposa Grove or Glacier Point can fit the Day 16 exit, or whether to go straight to the midpoint. |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa Barbara move. |
@@ -68,6 +70,7 @@
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
+| First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA/Visa Waiver eligibility must be checked before nonrefundable booking. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |

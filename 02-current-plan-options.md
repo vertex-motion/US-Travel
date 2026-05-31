@@ -11,7 +11,7 @@
 - Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
 - Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
 - Hardest route day: The former Yosemite-to-Las-Vegas mega-transfer is now split by a Bakersfield / Tehachapi-area midpoint night. Keep both transfer days simple and heat-aware.
-- Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United. A rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm.
+- Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United. A rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. The first Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, with 3:00 pm check-in and 12:00 pm checkout.
 - Open decisions remain tracked in `08-open-questions.md`.
 
 ## Selected Route
@@ -20,7 +20,7 @@
 
 | Segment | Base | Nights | Key sights | Approx. transfer | Notes |
 | --- | --- | ---: | --- | --- | --- |
-| Arrival and Southern California | Los Angeles / Santa Monica or Westside | 6 | Santa Monica, Getty or Academy Museum, Griffith / Hollywood viewpoints, flexible jet-lag recovery | Fly SYD-LAX | UA 842 arrives LAX at 6:10 am on June 28. Use the extra three nights as a soft landing before the July 4 coast move. |
+| Arrival and Southern California | Pasadena-area Los Angeles base | 6 | Pasadena / Griffith area, Getty or Academy Museum, Santa Monica if energy is good, flexible jet-lag recovery | Fly SYD-LAX | UA 842 arrives LAX at 6:10 am on June 28. The first hotel is booked in the Pasadena area, with 3:00 pm check-in on June 28 and 12:00 pm checkout on July 4. |
 | Riviera-style coast | Santa Barbara / Montecito | 2 | Waterfront, courthouse, mission, beach rhythm | 1.5-2.5 hours from Los Angeles | July 4 is a short transfer and local evening, not a heavy sightseeing day. |
 | Central Coast North | Monterey / Carmel | 2 | Monterey Bay Aquarium, Pacific Grove, short Carmel coast time | 4-6 hours from Santa Barbara depending on Highway 1 choice | Big Sur remains an optional scenic reach, not a full separate day. |
 | Bay Area | Palo Alto / Stanford area | 3 | Stanford campus, Google Visitor Experience, Computer History Museum, optional Apple Park Visitor Center, Golden Gate, Presidio | Monterey/Carmel to Peninsula timing needs live map check | Use the Peninsula base for Stanford and tech stops; keep one San Francisco day trip for Golden Gate. Alcatraz is removed by traveler preference. |
@@ -35,8 +35,9 @@
 | --- | --- | --- |
 | Closed-circle flights: SYD-LAX-SYD | United flights are booked into and out of LAX, preserving the closed-circle structure and avoiding one-way international flight complexity. | Flight details in `04-daily-itinerary.md`; booked status in `07-booking-checklist.md`. |
 | Booked LAX-to-LAX rental car | The car is booked for the full US stay, with LAX pickup on June 28 at 8:00 am and LAX return on July 18 at 8:00 pm. | Transport plan in `05-lodging-transport.md`; Day 1 and Day 21 in `04-daily-itinerary.md`. |
+| Booked Pasadena-area arrival hotel | The first Los Angeles hotel is booked from June 28 to July 4, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference are intentionally omitted. | Lodging details in `05-lodging-transport.md`; Days 1-7 in `04-daily-itinerary.md`. |
 | Los Angeles at both start and end | This satisfies the closed-circle requirement while preserving the coast, Stanford / Silicon Valley, Golden Gate, Yosemite, and Las Vegas. | Days 1-6 and 21 in `04-daily-itinerary.md`. |
-| Six Los Angeles arrival nights | The earlier confirmed arrival gives the family a softer landing and room for flexible LA sightseeing before driving north. | Days 1-6 in `04-daily-itinerary.md`. |
+| Six Los Angeles arrival nights | The earlier confirmed arrival gives the family a softer landing and room for flexible LA sightseeing before driving north, now anchored in the Pasadena area. | Days 1-6 in `04-daily-itinerary.md`. |
 | Two Santa Barbara / Montecito nights | It preserves a coastal pause after LA and prevents the northbound coast from becoming only transfer days. | Days 7-8 in `04-daily-itinerary.md`. |
 | Two Monterey / Carmel nights | It keeps Monterey Bay Aquarium and a first Pacific coast taste while protecting time for the Bay Area, Yosemite, and Las Vegas. | Days 9-10 in `04-daily-itinerary.md`. |
 | Three Palo Alto / Stanford-area nights | This keeps Golden Gate in the plan, adds Stanford and Silicon Valley tech stops, and removes Alcatraz by traveler preference. | Days 11-13 in `04-daily-itinerary.md`. |
@@ -55,7 +56,7 @@
 | Original SFO-to-LAS open-jaw route | It has cleaner geography and avoids the final Las Vegas-to-LAX drive, but it no longer matches the closed-circle requirement. | Restore only if the family drops the closed-circle requirement. |
 | No-Yosemite route | It preserves the trip if Yosemite lodging is unavailable, badly priced, too crowded, or too hot for the family. | Use if July 11-13 Yosemite lodging or conditions are poor. |
 | San Diego extension | It is not in the confirmed route, but it remains a valid extension because San Diego Zoo and La Jolla would fit the family well. | Use only if the family extends the trip or removes another region. |
-| Santa Monica, Beverly Hills, West Hollywood, Culver City, or LAX-adjacent as LA bases | Each base supports a different version of LA: beach ease, classic city access, central access, or airport simplicity. | Choose after one-room hotel quotes and $250/night cap checks. |
+| Santa Monica, Beverly Hills, West Hollywood, Culver City, or LAX-adjacent as LA bases | These remain useful only as future-trip or final-night LA references because the first Los Angeles hotel is now booked in the Pasadena area. | Restore only if the first hotel booking changes or the final LAX-area night needs a non-airport base. |
 | Las Vegas Strip family resort vs. quieter non-gaming or off-Strip base | A Strip base improves first-visit energy and walking access, while a quieter base may improve sleep and pool value. | Choose after resort fee, parking, pool, room configuration, and total-stay quotes. |
 | Mariposa Grove or Glacier Point on the Yosemite exit day | Both are worthwhile, but road, shuttle, heat, and lodging location should decide whether either fits after the Yosemite night reduction. | Choose during the week-of Yosemite conditions check; skip if it threatens a calm midpoint arrival. |
 | Direct Yosemite-to-Las-Vegas drive | It avoids a hotel move, but restores the longest and least family-friendly transfer day. | Use only if live map timing is excellent and the family reverses the midpoint preference. |
@@ -67,12 +68,14 @@
 - The Yosemite-to-Las-Vegas transfer is now intentionally split. Keep Forestiere, Bakersfield, or Tehachapi as one short activity, not a full sightseeing day.
 - The final LAX-area night protects the international departure but consumes one hotel night that could otherwise support the Bay Area, the coast, or Las Vegas.
 - The Bay Area is now three Palo Alto / Stanford-area nights instead of central San Francisco lodging. Keep Golden Gate, add Stanford and Silicon Valley tech stops, and do not add Alcatraz or Muir Woods by default.
+- The first Los Angeles stay is now a booked Pasadena-area base. Favor Griffith, Pasadena, and east/central LA logistics, and treat Santa Monica / Westside time as a deliberate cross-town outing.
 - Big Sur remains a short scenic reach or transfer-day routing choice, not a dedicated full day.
 - Santa Barbara is a two-night pause. Do not load it with several fixed activities.
 - Las Vegas in mid-July needs a heat-first schedule: early outdoor windows, hotel pool/rest time, indoor attractions, and evening Strip walks.
 - Re-check Highway 1 status the week before travel; current Caltrans data already shows one-way controls north of Big Sur and near Jamala Road in Santa Barbara County.
 - Re-check Yosemite road/shuttle rules, Central Valley / CA-58 conditions, and midpoint attraction hours before locking the Yosemite-to-Las-Vegas split.
 - International flights are booked: UA 842 SYD-LAX on June 28 and UA 839 LAX-SYD departing July 18.
+- First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4; exact hotel name, address, price, and booking reference stay out of this public repository.
 - Treat a confirmed one-room or suite setup for all four travelers and a USD $200-$250 nightly rate as lodging requirements before choosing a hotel brand.
 
 ## Sources
@@ -82,6 +85,7 @@
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
+| First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Australian citizens may use the Visa Waiver Program/ESTA when eligible. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |

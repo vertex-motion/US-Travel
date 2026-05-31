@@ -7,67 +7,68 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 - Day 1: Depart Sydney at 9:30 am and arrive in Los Angeles at 6:10 am on Sunday, June 28, 2026.
 - Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy.
 - Rental car pickup: Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am.
+- First Los Angeles hotel: booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
 - Rental car return: Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - Day 23: Arrive in Sydney at 7:00 am on Monday, July 20, 2026 after crossing the date line.
 
-Seat assignments and booking references must not be recorded in this public repository.
+Seat assignments, exact hotel names, hotel addresses, prices, and booking references must not be recorded in this public repository.
 
 ## Day 1: Sunday, June 28 - Arrive Los Angeles
 
-- Sleep: Los Angeles, preferably Santa Monica, Westside, or an arrival-friendly LAX-area base.
+- Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
-- Afternoon: Check in if available, unpack, nap, hotel pool, or a short pram-friendly neighborhood walk.
+- Afternoon: Check in at 3:00 pm if the room is ready, unpack, nap, hotel pool, or a short pram-friendly Pasadena-area walk.
 - Dinner: Easy local dinner near the hotel.
-- Driving: LAX to the arrival hotel only; keep any extra driving minimal after the long flight.
+- Driving: LAX to the Pasadena-area arrival hotel only; keep any extra driving minimal after the long flight.
 - Walking: Keep light.
-- Reservations: Booked rental car pickup at 8:00 am; early hotel check-in or luggage storage if available.
-- Backup plan: If rooms are not ready, use a low-effort cafe, beach path, or hotel lobby plan until check-in.
-- Source notes: Flight and rental car details are from confirmed traveler booking information. Provider, price, and booking reference are intentionally omitted.
+- Reservations: Booked rental car pickup at 8:00 am; booked Pasadena-area hotel check-in at 3:00 pm; early check-in or luggage storage if available.
+- Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
+- Source notes: Flight, rental car, and first-hotel timing details are from confirmed traveler booking information. Provider, exact hotel name, address, price, and booking reference are intentionally omitted.
 
-## Day 2: Monday, June 29 - Santa Monica and Arrival Recovery
+## Day 2: Monday, June 29 - Pasadena or Santa Monica Arrival Recovery
 
-- Sleep: Los Angeles.
-- Morning: Slow start, Santa Monica beach path, Palisades Park, or hotel pool.
-- Lunch: Santa Monica, Brentwood, or hotel area.
-- Afternoon: Cayton Children's Museum, beach/playground time, or a quiet neighborhood walk.
-- Dinner: Santa Monica, Brentwood, or hotel.
-- Driving: Minimal if based on the Westside.
-- Walking: Light to moderate and pram-friendly near the beach path.
-- Reservations: Cayton if using it as a child-first indoor reset.
-- Backup plan: If jet lag is heavy, make this a hotel, beach, and early-dinner day only.
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Slow start, hotel pool, Pasadena-area walk, Kidspace Children's Museum, or Santa Monica beach path if energy is good.
+- Lunch: Pasadena, Glendale, Los Feliz, or Santa Monica if choosing a beach outing.
+- Afternoon: Kidspace, beach/playground time, or a quiet neighborhood walk.
+- Dinner: Pasadena, Los Feliz, Glendale, or near the hotel.
+- Driving: Minimal if staying Pasadena-local; moderate if crossing town to Santa Monica.
+- Walking: Light to moderate and pram-friendly.
+- Reservations: Kidspace or Cayton only if using a child-first indoor/outdoor reset.
+- Backup plan: If jet lag is heavy, make this a hotel, local walk, and early-dinner day only.
 
 ## Day 3: Tuesday, June 30 - Gentle Los Angeles Buffer Day
 
-- Sleep: Los Angeles.
-- Morning: Keep a flexible start: beach, hotel pool, groceries, laundry, or a nearby playground.
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Keep a flexible start: hotel pool, Pasadena-area playground, groceries, laundry, or a short neighborhood walk.
 - Lunch: Near the hotel base.
-- Afternoon: Short neighborhood outing, Petersen Automotive Museum, Rodeo Drive walk, or rest.
+- Afternoon: Short neighborhood outing, Griffith-adjacent viewpoint, Petersen Automotive Museum, Rodeo Drive walk, or rest.
 - Dinner: Los Angeles.
-- Driving: Minimal to moderate depending on base.
+- Driving: Minimal to moderate; Pasadena makes Griffith and east/central LA easier than Santa Monica.
 - Walking: Light to moderate.
 - Reservations: None unless choosing a ticketed museum.
 - Backup plan: Treat this as a recovery and logistics day if the first two nights are rough.
 
 ## Day 4: Wednesday, July 1 - Getty, Academy Museum, or Griffith
 
-- Sleep: Los Angeles.
-- Morning: Choose one primary LA anchor: Getty Center, Academy Museum, or Griffith Observatory viewpoints.
-- Lunch: Brentwood, Farmers Market, Los Feliz, or route-dependent neighborhood.
-- Afternoon: Rest, beach time, Rodeo Drive walk, Petersen Automotive Museum, or hotel pool.
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Choose one primary LA anchor: Griffith Observatory viewpoints, Getty Center, or Academy Museum.
+- Lunch: Los Feliz, Pasadena, Farmers Market, Brentwood, or route-dependent neighborhood.
+- Afternoon: Rest, Kidspace / playground time, Rodeo Drive walk, Petersen Automotive Museum, or hotel pool.
 - Dinner: Los Angeles.
-- Driving: 1-3 hours total depending on base and chosen anchor.
+- Driving: 1-3 hours total depending on chosen anchor; Westside sights need more traffic buffer from Pasadena.
 - Walking: Light to moderate.
 - Reservations: Getty parking/timed-entry if required, Academy Museum tickets if visiting, or planetarium tickets if choosing Griffith.
-- Backup plan: If traffic is poor, stay Westside and move Griffith to a future LA return trip.
+- Backup plan: If cross-town traffic is poor, stay Pasadena / Griffith-local and move Westside sights to a future LA return trip.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
 ## Day 5: Thursday, July 2 - Flexible Los Angeles Day
 
-- Sleep: Los Angeles.
-- Morning: Choose a second LA sample only if energy is good: beach, Getty/Academy/Griffith option not used on Day 4, or a simple neighborhood morning.
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Choose a second LA sample only if energy is good: Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or a simple neighborhood morning.
 - Lunch: Near the chosen area.
 - Afternoon: Hotel pool, shopping errand, playground, or low-key museum backup.
 - Dinner: Los Angeles.
@@ -78,26 +79,26 @@ Seat assignments and booking references must not be recorded in this public repo
 
 ## Day 6: Friday, July 3 - Los Angeles Final Local Day
 
-- Sleep: Los Angeles.
+- Sleep: Booked Pasadena-area hotel.
 - Morning: Easy beach, viewpoint, or neighborhood walk.
 - Lunch: Los Angeles.
-- Afternoon: Pack, laundry, confirm hotel parking for the already-booked rental car, or one short local activity.
+- Afternoon: Pack, laundry, confirm hotel parking / folio handling for the already-booked rental car, or one short local activity.
 - Dinner: Early dinner near the hotel.
 - Driving: Minimal; the car is already picked up from LAX on Day 1.
 - Walking: Light.
-- Reservations: None unless choosing a ticketed local activity.
+- Reservations: None unless choosing a ticketed local activity; prepare for 12:00 pm checkout on Day 7.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
 ## Day 7: Saturday, July 4 - Los Angeles to Santa Barbara
 
 - Sleep: Santa Barbara or Montecito.
-- Morning: Drive to Santa Barbara after breakfast.
+- Morning: Check out of the booked Pasadena-area hotel by 12:00 pm and drive to Santa Barbara after breakfast or an early checkout.
 - Lunch: Santa Barbara waterfront, Funk Zone, or hotel area.
 - Afternoon: Check in, beach, pool, or easy waterfront walk.
 - Dinner: Early casual dinner.
 - Driving: 1.5-2.5 hours before traffic variation.
 - Walking: Light.
-- Reservations: None unless choosing a July 4 dinner with a fixed seating time.
+- Reservations: Pasadena-area hotel checkout by 12:00 pm; none unless choosing a July 4 dinner with a fixed seating time.
 - Backup plan: If holiday traffic is poor, leave later and treat the day as a transfer plus hotel evening.
 - Source notes: Keep July 4 local and flexible after arrival. Do not add a second major activity.
 
@@ -306,6 +307,7 @@ Seat assignments and booking references must not be recorded in this public repo
 | --- | --- | --- | --- | --- |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
+| First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
