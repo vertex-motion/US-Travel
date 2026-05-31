@@ -6,7 +6,7 @@ Use this as a planning allowance, not a booked quote. All amounts are in USD unl
 
 The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan.
 
-The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, San Francisco, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
+The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, the Bay Area, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
 Las Vegas can look cheaper than the California coast on room rate alone. Compare total stay cost, including resort fees, taxes, parking, pool fees or cabana temptations, attraction tickets, and any extra-person charges.
 
@@ -15,8 +15,8 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
-| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, SF, Yosemite, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
-| Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, and San Francisco parking strategy; needs live quote. |
+| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
+| Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, and San Francisco day-trip transport; needs live quote. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Alcatraz, Monterey Bay Aquarium, Hearst Castle if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
@@ -42,7 +42,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 - Keep the booked UA 842 / UA 839 itinerary as the flight baseline.
 - Use LAX-to-LAX rental quotes as the baseline before adding complexity.
 - Consider delaying car pickup until Day 6 or Day 7 if the first LA base supports car-free or rideshare-based sightseeing and parking is expensive.
-- Compare San Francisco parking against returning the car temporarily during the city stay.
+- Compare Palo Alto / Stanford-area parking and San Francisco day-trip transport before choosing the Bay Area hotel.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
 - In Las Vegas, compare total stay cost with resort fees and parking included.
@@ -57,7 +57,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 3. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
 4. Quote rental car LAX pickup to LAX return for July 4-18 first.
 5. Compare rental car Day 1 pickup versus Day 6 or Day 7 pickup after the first LA hotel base is chosen.
-6. Compare keeping the car through San Francisco versus returning it temporarily if parking is expensive.
+6. Compare keeping the car through the Palo Alto / Stanford-area stay against transit-heavy San Francisco sightseeing if parking is expensive.
 7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources

@@ -13,7 +13,7 @@
 | Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-14. | Open |
 | Quote one-room family lodging in each base | Now | Travelers | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
 | Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
-| Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and San Francisco parking/temporary return options. | Open |
+| Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and Palo Alto / Stanford-area parking plus San Francisco day-trip options. | Open |
 
 ## Timed Tickets and Reservations
 
@@ -35,7 +35,7 @@
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
 | Yosemite road and shuttle status | Week of arrival | Decide Mariposa Grove vs. Glacier Point vs. valley rest day. |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa Barbara move. |
-| San Francisco parking and car plan | Before booking SF hotel | Decide whether to keep the car, return it temporarily, or choose a hotel with manageable parking. |
+| Palo Alto / Stanford-area parking and San Francisco day-trip plan | Before booking Bay Area hotel | Confirm hotel parking, then choose self-drive versus Caltrain/rideshare for the Golden Gate / Presidio and Alcatraz / Ferry Building days. |
 | Yosemite-to-Las-Vegas route timing | Before booking final lodging and again the day before Day 17 | Confirm route, departure time, lunch stop, heat plan, and whether a midpoint overnight is needed. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
