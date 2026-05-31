@@ -141,7 +141,7 @@ Seat assignments and booking references must not be recorded in this public repo
 - Sleep: Palo Alto / Stanford area.
 - Morning: Depart Monterey/Carmel after breakfast.
 - Lunch: Santa Cruz, Half Moon Bay, San Mateo, or Palo Alto depending on route and traffic.
-- Afternoon: Check in. Keep the first Peninsula evening easy: Stanford campus, Palo Alto downtown, hotel pool, or a short neighborhood walk.
+- Afternoon: Check in. If energy is good, make this the first Stanford taste: Stanford campus, Main Quad / Oval, Stanford Bookstore, Palo Alto downtown, hotel pool, or a short neighborhood walk.
 - Dinner: Palo Alto, Menlo Park, Mountain View, or near the hotel.
 - Driving: Peninsula transfer day; verify live map timing before choosing the coastal or inland route.
 - Walking: Light.
@@ -160,19 +160,18 @@ Seat assignments and booking references must not be recorded in this public repo
 - Reservations: None required.
 - Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day Peninsula-local if the commute looks bad.
 
-## Day 13: Friday, July 10 - Alcatraz and Ferry Building from the Peninsula
+## Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
 
 - Sleep: Palo Alto / Stanford area.
-- Morning: Leave the Peninsula early enough for Pier 33 check-in. Use Caltrain plus local transit/rideshare, or self-drive only if parking is pre-planned.
-- Core activity: Alcatraz Island day tour.
-- Lunch: Ferry Building.
-- Afternoon: Embarcadero, cable car if queues are manageable, or North Beach.
-- Dinner: Early dinner in San Francisco or return to the Peninsula before the younger child's bedtime.
-- Driving: Avoid unplanned waterfront parking; choose the transport mode before booking the ferry time.
+- Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
+- Lunch: Palo Alto, Stanford Shopping Center, Mountain View, or the Google Visitor Experience cafe.
+- Afternoon: Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest.
+- Dinner: Palo Alto, Mountain View, Menlo Park, or near the hotel.
+- Driving: Local Peninsula / Silicon Valley driving; keep it to two tech anchors, not every company campus.
 - Walking: Moderate.
-- Reservations: Book the official Alcatraz ferry as soon as tickets open.
-- Backup plan: Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable.
-- Source notes: Alcatraz is operated through the NPS-authorized concessioner, Alcatraz City Cruises.
+- Reservations: Check Stanford visitor schedule, Google Visitor Experience hours/events, Computer History Museum tickets and hours, and Apple Park Visitor Center hours before choosing the final mix.
+- Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
+- Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
 ## Day 14: Saturday, July 11 - Palo Alto / Stanford Area to Yosemite
 
@@ -307,7 +306,11 @@ Seat assignments and booking references must not be recorded in this public repo
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
-| Alcatraz tickets should be booked through the NPS-authorized ferry concessioner; NPS publishes current ferry-ticket fees. | National Park Service / Alcatraz City Cruises | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
+| Stanford Visitor Center is generally open weekdays, summer 2026 visit programs are posted for most weekdays, and the public can use self-guided campus visit materials. | Stanford Visitor Information | [Visitor Information](https://visit.stanford.edu/) and [Self-guided tour map](https://visit.stanford.edu/sites/g/files/sbiybj35161/files/media/file/general_campus_self-guided_tour_map.pdf) | 2026-05-31 | Current; re-check campus events and parking before visit |
+| Google Visitor Experience is a public Mountain View destination with no general RSVP requirement, free entry, Google Store, cafe, pop-up shop, public art, and self-guided exploration. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check hours and events before visit |
+| Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View and includes exhibits on AI, computing history, software, and classic computing. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; re-check tickets and hours before visit |
+| Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, campus model, demos, and sessions when available. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
+| The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mariposa Grove shuttle and seasonal road access must be checked before planning the grove day. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-08 | Current |

@@ -16,8 +16,8 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | --- | ---: | ---: | ---: | --- |
 | International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
 | Lodging, 20 nights | $4,000 | $4,500 | $5,000 | $200-$250 per night across LA, Santa Barbara, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Las Vegas, and final LAX-area night; do not exceed $250/night without explicit approval. |
-| Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, and San Francisco day-trip transport; needs live quote. |
-| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Alcatraz, Monterey Bay Aquarium, Hearst Castle if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
+| Rental car, fuel, parking, tolls | $2,000 | $3,600 | $6,000 | SUV rental, possible LAX-to-LAX round trip, hotel parking, fuel, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, Silicon Valley local driving, and Golden Gate day-trip transport; needs live quote. |
+| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
 | Travel insurance, mobile data, documents | $600 | $1,200 | $2,500 | Needs family policy quote and phone plan choice. |
@@ -29,7 +29,10 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | --- | --- | ---: |
 | Getty Center | Admission is free but timed-entry reservation and parking apply | $25 parking, less after 3pm |
 | Academy Museum | Two adults; children 17 and under free for museum admission | $50 before parking or add-ons |
-| Alcatraz day tour | Two adults, one youth, one child under 5 | $143.85 |
+| Google Visitor Experience | Free public destination; cafe, shop, and event purchases optional | $0 before food/shopping |
+| Computer History Museum | Check current admission for two adults, one youth, and younger-child age band | Needs live quote |
+| Apple Park Visitor Center | Free to enter; cafe, merchandise, demos, and sessions optional | $0 before food/shopping |
+| The Tech Interactive, if used | Ticketed San Jose hands-on technology museum; two adults plus children by age band | Needs live quote |
 | Muir Woods, if restored as a swap | Two adult entrance fees plus one standard parking reservation; children under 16 free | $39.50 |
 | Monterey Bay Aquarium | Two adults plus one youth; the younger child is outside the adult/youth paid bands | $180+ |
 | Hearst Castle, if transfer timing works | Two adults, one child age 5-12 band does not apply to the younger child; tour choice can change cost | $70+ |
@@ -42,7 +45,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 - Keep the booked UA 842 / UA 839 itinerary as the flight baseline.
 - Use LAX-to-LAX rental quotes as the baseline before adding complexity.
 - Consider delaying car pickup until Day 6 or Day 7 if the first LA base supports car-free or rideshare-based sightseeing and parking is expensive.
-- Compare Palo Alto / Stanford-area parking and San Francisco day-trip transport before choosing the Bay Area hotel.
+- Compare Palo Alto / Stanford-area parking and Golden Gate day-trip transport before choosing the Bay Area hotel.
 - Book Yosemite lodging first; a poor location creates more driving and less park time.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
 - In Las Vegas, compare total stay cost with resort fees and parking included.
@@ -57,7 +60,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 3. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
 4. Quote rental car LAX pickup to LAX return for July 4-18 first.
 5. Compare rental car Day 1 pickup versus Day 6 or Day 7 pickup after the first LA hotel base is chosen.
-6. Compare keeping the car through the Palo Alto / Stanford-area stay against transit-heavy San Francisco sightseeing if parking is expensive.
+6. Compare keeping the car through the Palo Alto / Stanford-area stay against a transit/rideshare Golden Gate day if parking is expensive.
 7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
@@ -68,7 +71,10 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; exact fare and seat assignments intentionally omitted |
 | United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
-| Alcatraz day-tour ticket levels support the family attraction allowance. | National Park Service | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
+| Google Visitor Experience is free to enter; purchases and food are optional. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check events before visit |
+| Computer History Museum ticketing and hours need a current check before the Silicon Valley day is finalized. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; live ticket quote needed |
+| Apple Park Visitor Center is free to enter, with optional purchases, cafe, demos, and sessions. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
+| The Tech Interactive publishes ticket pricing and seasonal hours; use it only after checking the selected date. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; live ticket quote needed |
 | Muir Woods entrance and parking requirements support the family attraction allowance if restored as a swap. | National Park Service / Go Muir Woods | [Muir Woods fees](https://www.nps.gov/muwo/planyourvisit/fees.htm) and [parking reservations](https://gomuirwoods.com/) | 2026-05-08 | Current |
 | Monterey Bay Aquarium ticket levels support the family attraction allowance. | Monterey Bay Aquarium | [Admission tickets](https://www.montereybayaquarium.org/visit/admission-tickets) | 2026-05-08 | Current |
 | Hearst Castle starting ticket prices support the attraction allowance. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current; exact tour time needs booking-window check |

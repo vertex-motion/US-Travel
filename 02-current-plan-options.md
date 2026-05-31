@@ -6,7 +6,7 @@
 - Confirmed window: June 28-July 20, 2026, Sydney-to-Sydney, with 20 US hotel nights.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
 - Canonical option registry: `03-potential-options.md` contains every found selected, retained, parked, and rejected option, plus the 0-10 family interest score used when planning changes.
-- Route theme: Los Angeles arrival recovery, Pacific coast, a Palo Alto / Stanford-area Bay Area base for San Francisco landmarks, Yosemite, and a Las Vegas city-resort finale before returning to LAX.
+- Route theme: Los Angeles arrival recovery, Pacific coast, a Palo Alto / Stanford-area Bay Area base for Stanford, Silicon Valley technology stops, Golden Gate, Yosemite, and a Las Vegas city-resort finale before returning to LAX.
 - Planning posture: Las Vegas remains a primary stop. The closed-circle requirement is met by returning from Las Vegas to Los Angeles for the final departure.
 - Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
 - Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
@@ -23,7 +23,7 @@
 | Arrival and Southern California | Los Angeles / Santa Monica or Westside | 6 | Santa Monica, Getty or Academy Museum, Griffith / Hollywood viewpoints, flexible jet-lag recovery | Fly SYD-LAX | UA 842 arrives LAX at 6:10 am on June 28. Use the extra three nights as a soft landing before the July 4 coast move. |
 | Riviera-style coast | Santa Barbara / Montecito | 2 | Waterfront, courthouse, mission, beach rhythm | 1.5-2.5 hours from Los Angeles | July 4 is a short transfer and local evening, not a heavy sightseeing day. |
 | Central Coast North | Monterey / Carmel | 2 | Monterey Bay Aquarium, Pacific Grove, short Carmel coast time | 4-6 hours from Santa Barbara depending on Highway 1 choice | Big Sur remains an optional scenic reach, not a full separate day. |
-| Bay Area | Palo Alto / Stanford area | 3 | Stanford-area downtime, Golden Gate, Alcatraz, Ferry Building, Presidio | Monterey/Carmel to Peninsula timing needs live map check | Use the Peninsula base for easier car logistics and possible room value; treat San Francisco sightseeing as day trips. |
+| Bay Area | Palo Alto / Stanford area | 3 | Stanford campus, Google Visitor Experience, Computer History Museum, optional Apple Park Visitor Center, Golden Gate, Presidio | Monterey/Carmel to Peninsula timing needs live map check | Use the Peninsula base for Stanford and tech stops; keep one San Francisco day trip for Golden Gate. Alcatraz is removed by traveler preference. |
 | Sierra Nevada | Yosemite Valley or Fish Camp | 3 | Yosemite Valley, Glacier Point or Mariposa Grove | Palo Alto / Stanford area to Yosemite timing needs live map check | Book lodging early. July 11 arrival may still feel like peak-summer demand. |
 | City-resort finale | Las Vegas | 3 | Strip landmarks, hotel pool, Bellagio, one indoor ticketed attraction, optional Red Rock sunrise drive | Long transfer from Yosemite, likely 8-10+ hours before breaks | Plan around July heat. Treat the arrival evening as rest only. |
 | Loop closure | LAX area / Westside / airport hotel | 1 | Pack, recover, prepare for flight | 4-5 hours from Las Vegas before traffic and stops | Use this night to avoid a same-day Las Vegas-to-LAX international departure risk. |
@@ -33,11 +33,11 @@
 | Option in the plan | Why it remains included | Where it appears |
 | --- | --- | --- |
 | Closed-circle flights: SYD-LAX-SYD | United flights are booked into and out of LAX, preserving the closed-circle structure and avoiding one-way international flight complexity. | Flight details in `04-daily-itinerary.md`; booked status in `07-booking-checklist.md`. |
-| Los Angeles at both start and end | This satisfies the closed-circle requirement while preserving the coast, San Francisco landmarks from a Palo Alto / Stanford-area base, Yosemite, and Las Vegas. | Days 1-6 and 21 in `04-daily-itinerary.md`. |
+| Los Angeles at both start and end | This satisfies the closed-circle requirement while preserving the coast, Stanford / Silicon Valley, Golden Gate, Yosemite, and Las Vegas. | Days 1-6 and 21 in `04-daily-itinerary.md`. |
 | Six Los Angeles arrival nights | The earlier confirmed arrival gives the family a softer landing and room for flexible LA sightseeing before driving north. | Days 1-6 in `04-daily-itinerary.md`. |
 | Two Santa Barbara / Montecito nights | It preserves a coastal pause after LA and prevents the northbound coast from becoming only transfer days. | Days 7-8 in `04-daily-itinerary.md`. |
 | Two Monterey / Carmel nights | It keeps Monterey Bay Aquarium and a first Pacific coast taste while protecting time for the Bay Area, Yosemite, and Las Vegas. | Days 9-10 in `04-daily-itinerary.md`. |
-| Three Palo Alto / Stanford-area nights | This keeps Golden Gate and Alcatraz in the plan while shifting the sleep base to the Peninsula for likely easier car and room logistics. | Days 11-13 in `04-daily-itinerary.md`. |
+| Three Palo Alto / Stanford-area nights | This keeps Golden Gate in the plan, adds Stanford and Silicon Valley tech stops, and removes Alcatraz by traveler preference. | Days 11-13 in `04-daily-itinerary.md`. |
 | Three Yosemite nights | Yosemite remains the strongest national park moment in the plan and gives the family more than a drive-through visit. | Days 14-16 in `04-daily-itinerary.md`. |
 | Three Las Vegas nights | It gives Las Vegas enough time to feel intentional: arrival recovery, one full Strip/indoor day, and one flexible early-morning or pool-focused day. | Days 17-19 in `04-daily-itinerary.md`. |
 | Final LAX-area night | It reduces the risk of a missed international flight after the Las Vegas-to-Los Angeles drive. | Day 20 in `04-daily-itinerary.md`; lodging and transport notes in `05-lodging-transport.md`. |
@@ -63,7 +63,7 @@
 - The closed-circle LAX route improves flight competition and rental-car simplicity, but it adds a final Las Vegas-to-Los Angeles return leg.
 - Yosemite to Las Vegas becomes the hardest transfer day. Do not add sightseeing to that day unless live timing is much better than expected.
 - The final LAX-area night protects the international departure but consumes one hotel night that could otherwise support the Bay Area, the coast, or Las Vegas.
-- The Bay Area is now three Palo Alto / Stanford-area nights instead of central San Francisco lodging. Keep Alcatraz and Golden Gate, but do not add Muir Woods by default.
+- The Bay Area is now three Palo Alto / Stanford-area nights instead of central San Francisco lodging. Keep Golden Gate, add Stanford and Silicon Valley tech stops, and do not add Alcatraz or Muir Woods by default.
 - Big Sur remains a short scenic reach or transfer-day routing choice, not a dedicated full day.
 - Santa Barbara is a two-night pause. Do not load it with several fixed activities.
 - Las Vegas in mid-July needs a heat-first schedule: early outdoor windows, hotel pool/rest time, indoor attractions, and evening Strip walks.
@@ -87,3 +87,8 @@
 | Las Vegas has family-friendly indoor, free, pool, show, and attraction options suitable for a non-nightlife family stay. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |
 | Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so outdoor plans need heat controls. | National Weather Service Las Vegas | [July Climate Data for Las Vegas](https://www.weather.gov/media/vef/July_Temps.pdf) | 2026-05-13 | Current climate normal |
 | Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking can fill and summer hours apply. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |
+| Stanford Visitor Center is generally open weekdays, summer 2026 visit programs are posted for most weekdays, and the public can use self-guided campus visit materials. | Stanford Visitor Information | [Visitor Information](https://visit.stanford.edu/) | 2026-05-31 | Current; re-check campus events and parking before visit |
+| Google Visitor Experience is a public Mountain View destination with no general RSVP requirement, free entry, Google Store, cafe, pop-up shop, public art, and self-guided exploration. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check hours and events before visit |
+| Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; re-check tickets and hours before visit |
+| Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, demos, and sessions when available. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
+| The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |

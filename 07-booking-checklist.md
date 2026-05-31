@@ -13,7 +13,7 @@
 | Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-14. | Open |
 | Quote one-room family lodging in each base | Now | Travelers | Confirm one room or suite for all four at USD $200-$250 per night before comparing brands. | Open |
 | Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
-| Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and Palo Alto / Stanford-area parking plus San Francisco day-trip options. | Open |
+| Quote rental car | Now | Travelers | LAX pickup and LAX return for July 4-18 first; compare Day 1, Day 6, or Day 7 pickup and Palo Alto / Stanford-area parking plus Silicon Valley / Golden Gate day-trip needs. | Open |
 
 ## Timed Tickets and Reservations
 
@@ -21,7 +21,9 @@
 | --- | --- | --- | --- |
 | Getty Center | When July 2026 calendar is available | Check parking and any timed-entry rules for the selected LA day. | Open |
 | Academy Museum | When July 2026 calendar is available | Keep as a flexible LA museum option. | Open |
-| Alcatraz day tour | As soon as July 2026 tickets open | Use official Alcatraz City Cruises only. | Open |
+| Stanford campus visit | When July 2026 schedule is stable | Check guided tour availability, self-guided route, campus event closures, and parking rules. | Open |
+| Google Visitor Experience | Week before Bay Area stay | Re-check opening hours, events, parking, and whether any workshop needs RSVP. | Open |
+| Computer History Museum or Apple Park Visitor Center | Week before Bay Area stay | Choose the second tech anchor after checking CHM tickets/hours and Apple Park Visitor Center hours/sessions. | Open |
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
 | Hearst Castle | About 60 days before July 6 | Choose tour time only if it fits the longer Santa Barbara-to-Monterey transfer day. | Open |
 | Las Vegas ticketed attraction or show | After hotel is held | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
@@ -35,7 +37,7 @@
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
 | Yosemite road and shuttle status | Week of arrival | Decide Mariposa Grove vs. Glacier Point vs. valley rest day. |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa Barbara move. |
-| Palo Alto / Stanford-area parking and San Francisco day-trip plan | Before booking Bay Area hotel | Confirm hotel parking, then choose self-drive versus Caltrain/rideshare for the Golden Gate / Presidio and Alcatraz / Ferry Building days. |
+| Palo Alto / Stanford-area parking and Bay Area activity plan | Before booking Bay Area hotel | Confirm hotel parking, then plan Stanford, Google / Computer History Museum / Apple, and the Golden Gate / Presidio day. |
 | Yosemite-to-Las-Vegas route timing | Before booking final lodging and again the day before Day 17 | Confirm route, departure time, lunch stop, heat plan, and whether a midpoint overnight is needed. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
@@ -44,6 +46,7 @@
 ## Do Not Book
 
 - Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.
+- Do not book Alcatraz unless the family explicitly reverses the current decision to skip it.
 - Do not add San Diego unless the family extends the return date or removes another region.
 - Do not add Grand Canyon or Death Valley inside this confirmed July route unless the family explicitly chooses a hotter Southwest route.
 - Do not book any hotel above USD $250 per night unless the family explicitly approves the exception.
@@ -62,7 +65,11 @@
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA/Visa Waiver eligibility must be checked before nonrefundable booking. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
-| Alcatraz ferry tickets must use the authorized concessioner. | National Park Service | [Alcatraz fees and passes](https://www.nps.gov/alca/planyourvisit/fees.htm) | 2026-05-08 | Current |
+| Stanford Visitor Center is generally open weekdays, summer 2026 visit programs are posted for most weekdays, and self-guided campus materials are available. | Stanford Visitor Information | [Visitor Information](https://visit.stanford.edu/) | 2026-05-31 | Current; re-check campus events and parking before visit |
+| Google Visitor Experience is a public Mountain View destination with no general RSVP requirement and free entry. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check hours and events before visit |
+| Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; re-check tickets and hours before visit |
+| Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, demos, and sessions when available. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
+| The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite reservation rules should be checked repeatedly because park entry systems can change. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Highway 1 should be checked through Caltrans before the Big Sur and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
 | Hearst Castle tour tickets are time-sensitive and route-dependent. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
