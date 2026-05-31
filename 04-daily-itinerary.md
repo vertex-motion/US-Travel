@@ -136,51 +136,52 @@ Seat assignments and booking references must not be recorded in this public repo
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
-## Day 11: Wednesday, July 8 - Monterey / Carmel to San Francisco
+## Day 11: Wednesday, July 8 - Monterey / Carmel to Palo Alto / Stanford Area
 
-- Sleep: San Francisco.
+- Sleep: Palo Alto / Stanford area.
 - Morning: Depart Monterey/Carmel after breakfast.
-- Lunch: Half Moon Bay, San Mateo, or San Francisco depending on route.
-- Afternoon: Check in. Choose a light Ferry Building, Embarcadero, North Beach, or hotel-area walk.
-- Dinner: North Beach, Hayes Valley, Ferry Building area, or near hotel.
-- Driving: 2-3 hours before traffic and stops.
+- Lunch: Santa Cruz, Half Moon Bay, San Mateo, or Palo Alto depending on route and traffic.
+- Afternoon: Check in. Keep the first Peninsula evening easy: Stanford campus, Palo Alto downtown, hotel pool, or a short neighborhood walk.
+- Dinner: Palo Alto, Menlo Park, Mountain View, or near the hotel.
+- Driving: Peninsula transfer day; verify live map timing before choosing the coastal or inland route.
 - Walking: Light.
-- Reservations: San Francisco hotel parking, or car return if the family chooses to go car-free in the city.
-- Backup plan: If traffic is poor, go straight to the hotel and keep the evening close.
+- Reservations: Palo Alto / Stanford-area hotel with confirmed parking and one-room occupancy for four.
+- Backup plan: If traffic is poor, go straight to the hotel and save Stanford-area wandering for another evening.
 
-## Day 12: Thursday, July 9 - Golden Gate and Presidio
+## Day 12: Thursday, July 9 - Golden Gate and Presidio from the Peninsula
 
-- Sleep: San Francisco.
-- Morning: Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
+- Sleep: Palo Alto / Stanford area.
+- Morning: Drive or transit-plus-rideshare from the Peninsula to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
 - Lunch: Marina, Presidio, or Fort Mason area.
 - Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
-- Dinner: North Beach or Hayes Valley.
-- Driving: Avoid if possible; use taxis/rideshare/transit or a short self-drive only if parking is easy.
+- Dinner: Early dinner in San Francisco if energy is good, or return to Palo Alto / Menlo Park for a simpler evening.
+- Driving: San Francisco day-trip logistics; decide parking versus Caltrain/rideshare after hotel location is known.
 - Walking: Moderate and pram-friendly if routes stay near waterfront paths.
 - Reservations: None required.
-- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard.
+- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day Peninsula-local if the commute looks bad.
 
-## Day 13: Friday, July 10 - Alcatraz and Ferry Building
+## Day 13: Friday, July 10 - Alcatraz and Ferry Building from the Peninsula
 
-- Sleep: San Francisco.
-- Morning: Alcatraz Island day tour.
+- Sleep: Palo Alto / Stanford area.
+- Morning: Leave the Peninsula early enough for Pier 33 check-in. Use Caltrain plus local transit/rideshare, or self-drive only if parking is pre-planned.
+- Core activity: Alcatraz Island day tour.
 - Lunch: Ferry Building.
 - Afternoon: Embarcadero, cable car if queues are manageable, or North Beach.
-- Dinner: Early dinner near hotel.
-- Driving: None if possible.
+- Dinner: Early dinner in San Francisco or return to the Peninsula before the younger child's bedtime.
+- Driving: Avoid unplanned waterfront parking; choose the transport mode before booking the ferry time.
 - Walking: Moderate.
 - Reservations: Book the official Alcatraz ferry as soon as tickets open.
 - Backup plan: Exploratorium or California Academy of Sciences if Alcatraz tickets are unavailable.
 - Source notes: Alcatraz is operated through the NPS-authorized concessioner, Alcatraz City Cruises.
 
-## Day 14: Saturday, July 11 - San Francisco to Yosemite
+## Day 14: Saturday, July 11 - Palo Alto / Stanford Area to Yosemite
 
 - Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
-- Morning: Leave San Francisco after breakfast.
-- Lunch: Oakdale, Mariposa, or route-dependent stop.
+- Morning: Leave Palo Alto / Stanford area after breakfast.
+- Lunch: Manteca, Oakdale, Mariposa, or route-dependent stop after live timing check.
 - Afternoon: Arrive, check in, take a short Yosemite Valley orientation walk if time allows.
 - Dinner: Hotel or lodge restaurant.
-- Driving: 4-5 hours before stops.
+- Driving: Intercity transfer into Yosemite; verify live map timing and route after the Bay Area hotel is chosen.
 - Walking: Light.
 - Reservations: Yosemite-area lodging must be booked early.
 - Backup plan: If traffic is severe, skip Yosemite Valley sightseeing and settle in.

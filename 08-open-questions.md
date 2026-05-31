@@ -5,7 +5,7 @@
 | Question | Why it matters | Recommended default |
 | --- | --- | --- |
 | Should the rental car start on Day 1, Day 6, or Day 7? | Day 1 is simpler for one rental contract; a later pickup may avoid LA parking during the longer arrival recovery. | Choose after the first LA hotel base and parking cost are known. |
-| Should the family keep the car in San Francisco or return it temporarily? | San Francisco parking can be expensive, but returning the car adds logistics. | Compare parking cost against rental interruption after hotel quotes. |
+| How should the family handle Palo Alto / Stanford-area parking and San Francisco day trips? | Peninsula lodging may make parking easier, but Golden Gate and Alcatraz become commute-dependent days. | Keep the car if hotel parking is reasonable; choose self-drive for Golden Gate / Presidio and Caltrain/rideshare or pre-planned parking for Alcatraz. |
 | Is the Yosemite-to-Las-Vegas transfer acceptable? | It is the hardest day in the loop and may be 8-10+ hours before breaks. | Keep it only if live map timing and family energy feel acceptable. |
 | Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Yosemite-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
 | Is Yosemite a must-do? | Yosemite drives the hardest lodging and transfer constraints. | Keep Yosemite unless lodging is unavailable or very poor value. |
@@ -23,7 +23,7 @@
 - Final LAX-area or Westside one-night hotel quote for July 17.
 - Rental car quote for LAX pickup and LAX return.
 - Rental car comparison quote for Day 1 pickup versus Day 6 or Day 7 pickup.
-- San Francisco parking cost versus temporary car return.
+- Palo Alto / Stanford-area parking cost and transport plan for San Francisco day trips.
 - Confirm whether the rental company requires an International Driving Permit with Australian licenses.
 - Current Highway 1 status for the Santa Barbara, Big Sur, Hearst Castle, and Monterey route.
 - Current route timing for Yosemite to Las Vegas, including heat, road works, and safe break points.
