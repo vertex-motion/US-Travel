@@ -89,45 +89,33 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Reservations: None unless choosing a ticketed local activity; prepare for 12:00 pm checkout on Day 7.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
-## Day 7: Saturday, July 4 - Los Angeles to Santa Barbara
+## Day 7: Saturday, July 4 - Los Angeles to Central Coast / Route 1 Overnight
 
-- Sleep: Santa Barbara or Montecito.
-- Morning: Check out of the booked Pasadena-area hotel by 12:00 pm and drive to Santa Barbara after breakfast or an early checkout.
-- Lunch: Santa Barbara waterfront, Funk Zone, or hotel area.
-- Afternoon: Check in, beach, pool, or easy waterfront walk.
-- Dinner: Early casual dinner.
-- Driving: 1.5-2.5 hours before traffic variation.
+- Sleep: Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or another value-priced Central Coast stop.
+- Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
+- Lunch: Ventura, Oxnard, Santa Barbara bypass area, Pismo Beach, Morro Bay, or route-dependent stop. Do not plan Santa Barbara sightseeing unless the family explicitly restores it.
+- Afternoon: Continue to the Central Coast overnight, check in, beach/pier walk, pool, or a short Cambria / Morro Bay / Pismo stroll.
+- Dinner: Near the overnight base.
+- Driving: Full holiday transfer day; expect 3.5-6 hours plus stops depending on Route 1 use, July 4 traffic, and road controls.
 - Walking: Light.
-- Reservations: Pasadena-area hotel checkout by 12:00 pm; none unless choosing a July 4 dinner with a fixed seating time.
-- Backup plan: If holiday traffic is poor, leave later and treat the day as a transfer plus hotel evening.
-- Source notes: Keep July 4 local and flexible after arrival. Do not add a second major activity.
+- Reservations: Pasadena-area hotel checkout by 12:00 pm; Central Coast one-night family room with parking and cancellation.
+- Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
+- Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
-## Day 8: Sunday, July 5 - Santa Barbara Recovery Day
-
-- Sleep: Santa Barbara or Montecito.
-- Morning: Slow start, beach, hotel pool, or waterfront walk.
-- Lunch: State Street, Funk Zone, or hotel.
-- Afternoon: Santa Barbara County Courthouse, Old Mission Santa Barbara, Santa Barbara Zoo, or rest.
-- Dinner: Santa Barbara waterfront or Montecito.
-- Driving: Minimal.
-- Walking: Light.
-- Reservations: None required unless choosing the zoo or a popular dinner.
-- Backup plan: Keep the day almost entirely resort-based if the family still feels jet lag.
-
-## Day 9: Monday, July 6 - Santa Barbara to Monterey / Carmel
+## Day 8: Sunday, July 5 - Central Coast to Monterey / Carmel via Route 1
 
 - Sleep: Monterey, Carmel, Pacific Grove, Seaside, or Carmel Valley.
-- Morning: Leave Santa Barbara after breakfast. Use the coastal drive north only if Highway 1 is open and timing works.
-- Lunch: Santa Ynez, San Luis Obispo, Cambria, San Simeon, Big Sur, or route-dependent stop.
-- Afternoon: Hearst Castle tour if tickets and timing work; otherwise continue to Monterey/Carmel and settle in.
+- Morning: Leave the Central Coast base after breakfast. Use Highway 1 through San Simeon, Big Sur, and Carmel only if Caltrans still shows the route open and timing is comfortable.
+- Lunch: Cambria, San Simeon, Big Sur, Carmel, or Monterey depending on start point and road pace.
+- Afternoon: San Simeon elephant seal viewing, a short Hearst Castle tour only if timing is easy, Big Sur viewpoints, or direct arrival and settle-in.
 - Dinner: Carmel or Monterey.
-- Driving: Full intercity transfer day; verify current map timing after Highway 1 and Hearst Castle plans are known.
+- Driving: Full scenic transfer day; verify current map timing after Highway 1, one-way controls, and any Hearst Castle choice are known.
 - Walking: Light to moderate.
-- Reservations: Hearst Castle tour tickets open about 60 days in advance.
-- Backup plan: Use US-101 and skip Hearst Castle if Highway 1 or tour timing fails. Add a Central Coast midpoint night only if another route night is removed.
-- Source notes: Caltrans currently reports Highway 1 controls north of Big Sur and near Jamala Road in Santa Barbara County, so keep the evening unstructured.
+- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival.
+- Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
+- Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
-## Day 10: Tuesday, July 7 - Monterey Bay Aquarium and Carmel Coast
+## Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
 - Sleep: Monterey / Carmel.
 - Morning: Monterey Bay Aquarium.
@@ -138,6 +126,18 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Walking: Moderate.
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
+
+## Day 10: Tuesday, July 7 - Monterey / Carmel Coast Buffer
+
+- Sleep: Monterey / Carmel.
+- Morning: Slow coast morning: Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, MY Museum, or hotel pool.
+- Lunch: Carmel, Pacific Grove, Monterey, or hotel.
+- Afternoon: Short Big Sur reach if Highway 1 is open and the family still wants more coast; otherwise keep the day local and restorative.
+- Dinner: Carmel or Monterey.
+- Driving: Minimal if local; moderate only if adding a Big Sur reach.
+- Walking: Light to moderate.
+- Reservations: None unless choosing a ticketed backup activity.
+- Backup plan: Use this as the recovery day if the Day 8 Route 1 transfer was slow.
 
 ## Day 11: Wednesday, July 8 - Monterey / Carmel to Palo Alto / Stanford Area
 
@@ -326,7 +326,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check before using on Day 16 or 17 |
 | Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
 | Caltrans provides current California highway conditions and should be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
-| Highway 1 through Big Sur and toward Santa Barbara requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
+| Highway 1 through the Central Coast and Big Sur requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
 | Monterey Bay Aquarium is a ticketed, high-demand family attraction. | Monterey Bay Aquarium | [Tickets](https://www.montereybayaquarium.org/visit/tickets) | 2026-05-08 | Current |
 | Hearst Castle tours are ticketed and should be reserved once the booking window opens. | California State Parks | [Hearst Castle tours](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
 | The Getty Center is a practical LA museum stop with parking logistics to confirm. | J. Paul Getty Trust | [Visit the Getty Center](https://www.getty.edu/visit/center/) | 2026-05-08 | Current |
