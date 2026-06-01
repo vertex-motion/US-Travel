@@ -7,11 +7,13 @@
 | Confirm final trip dates | Done | Travelers | Confirmed June 28-July 20, 2026 Sydney-to-Sydney. US stay is June 28-July 18. | Done |
 | Confirm LAX closed-circle routing | Done | Travelers | Confirmed flights arrive and depart through LAX. | Done |
 | Confirm Las Vegas as a 3-night primary base | Now | Travelers | Current primary plan keeps Las Vegas at 3 nights before returning to Los Angeles. | Open |
+| Confirm Santa Barbara removal and Central Coast / Route 1 split | Done | Travelers | Santa Barbara is removed by traveler request. Current coast plan uses one Central Coast / Route 1 overnight and three Monterey/Carmel nights. | Done |
 | Confirm Bakersfield / Tehachapi midpoint strategy | Now | Travelers | One Yosemite night has moved to a midpoint overnight to break the former Yosemite-to-Las-Vegas mega-transfer. | Open |
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
 | Book rental car | Done | Travelers | LAX pickup on Sunday, June 28, 2026 at 8:00 am; LAX return on Saturday, July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
 | Book first Los Angeles hotel | Done | Travelers | Booked in the Pasadena area from Sunday, June 28 to Saturday, July 4, 2026. Check-in is 3:00 pm and checkout is 12:00 pm. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
+| Hold or book Central Coast / Route 1 overnight lodging | Now | Travelers | Check July 4 one-night family room in Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or nearby value option. Confirm parking, cancellation, and no two-night minimum. | Open |
 | Hold or book Yosemite lodging | Now | Travelers | This is the hardest lodging constraint; check July 11-13 after reducing Yosemite to two nights. | Open |
 | Hold or book Bakersfield / Tehachapi midpoint lodging | Now | Travelers | Check July 13 one-night family room with easy parking and cancellation. Prefer practical value over charm. | Open |
 | Quote remaining one-room family lodging | Now | Travelers | First Los Angeles hotel is booked. Confirm one room or suite for all four at USD $200-$250 per night in each remaining unbooked base before comparing brands. | Open |
@@ -28,7 +30,7 @@
 | Google Visitor Experience | Week before Bay Area stay | Re-check opening hours, events, parking, and whether any workshop needs RSVP. | Open |
 | Computer History Museum or Apple Park Visitor Center | Week before Bay Area stay | Choose the second tech anchor after checking CHM tickets/hours and Apple Park Visitor Center hours/sessions. | Open |
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
-| Hearst Castle | About 60 days before July 6 | Choose tour time only if it fits the longer Santa Barbara-to-Monterey transfer day. | Open |
+| Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Forestiere Underground Gardens | When Day 16 route is chosen | Reserve only if the Yosemite exit route and tour time protect an easy midpoint arrival. | Open |
 | Kern County Museum, CALM Zoo, or Tehachapi Loop | Week before midpoint night | Use as low-commitment swaps; do not stack all of them. | Open |
 | Las Vegas ticketed attraction or show | After hotel is held | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
@@ -38,11 +40,11 @@
 
 | Check | When | Required action |
 | --- | --- | --- |
-| Highway 1 / Big Sur status | 7 days before and morning of Days 9-10 | Use Caltrans before any Big Sur reach and the Santa Barbara-to-Monterey transfer. |
+| Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. |
 | Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm 3:00 pm check-in, 12:00 pm checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
 | Yosemite road and shuttle status | Week of arrival | Decide whether Mariposa Grove or Glacier Point can fit the Day 16 exit, or whether to go straight to the midpoint. |
-| July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa Barbara move. |
+| July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. |
 | Palo Alto / Stanford-area parking and Bay Area activity plan | Before booking Bay Area hotel | Confirm hotel parking, then plan Stanford, Google / Computer History Museum / Apple, and the Golden Gate / Presidio day. |
 | Yosemite-to-midpoint and midpoint-to-Las-Vegas route timing | Before booking final lodging and again the day before Days 16-17 | Confirm route, departure times, lunch stops, heat plan, and CA-41 / CA-99 / CA-58 / I-15 conditions. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
@@ -62,6 +64,7 @@
 - Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.
 - Do not book a same-day Las Vegas-to-LAX drive plus international departure unless the family explicitly accepts the missed-flight risk.
 - Do not turn the Bakersfield / Tehachapi midpoint into a packed sightseeing day; it exists to reduce drive stress.
+- Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route.
 
 ## Sources
 
@@ -85,7 +88,7 @@
 | CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
 | Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check hours before visit |
 | Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
-| Highway 1 should be checked through Caltrans before the Big Sur and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-05-09 | Current; re-check before travel |
+| Highway 1 should be checked through Caltrans before the Central Coast / Route 1 overnight, Big Sur, and Hearst Castle legs; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
 | Caltrans provides current California highway conditions and should also be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
 | Hearst Castle tour tickets are time-sensitive and route-dependent. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
 | Warner Bros. Studio Tour does not allow children under 5. | Warner Bros. Studio Tour Hollywood | [FAQ](https://www.wbstudiotour.com/faq/) | 2026-05-08 | Current |

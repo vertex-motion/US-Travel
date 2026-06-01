@@ -15,9 +15,9 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
-| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | First six Los Angeles nights are booked privately in the Pasadena area; remaining lodging should still target $200-$250 per night across Santa Barbara, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
+| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | First six Los Angeles nights are booked privately in the Pasadena area; remaining lodging should still target $200-$250 per night across the Central Coast / Route 1 overnight, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | Booked + variable | Booked + variable | Booked + variable | Rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. Provider, price, and booking reference stay private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
-| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
+| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
 | Travel insurance, mobile data, documents | $600 | $1,200 | $2,500 | Needs family policy quote and phone plan choice. |
@@ -38,7 +38,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Tehachapi Loop / town stop, if used | Brief route stop rather than a ticketed anchor | $0 before food/shopping |
 | Muir Woods, if restored as a swap | Two adult entrance fees plus one standard parking reservation; children under 16 free | $39.50 |
 | Monterey Bay Aquarium | Two adults plus one youth; the younger child is outside the adult/youth paid bands | $180+ |
-| Hearst Castle, if transfer timing works | Two adults, one child age 5-12 band does not apply to the younger child; tour choice can change cost | $70+ |
+| Hearst Castle, if Central Coast-to-Monterey timing works | Two adults, one child age 5-12 band does not apply to the younger child; tour choice can change cost | $70+ |
 | Bellagio fountains and conservatory | Free Strip landmark option, but fountain shows can vary or cancel for weather | $0 |
 | Las Vegas ticketed attraction or show | Choose one from Sphere Experience, High Roller, Shark Reef, AREA15 / Omega Mart, family show, or similar after age and price checks | Needs live quote |
 | Red Rock Canyon scenic drive, if used | Early-morning heat-controlled outdoor option; summer reservations are not required but entry/pass and parking rules need current check | Needs live quote |
@@ -61,11 +61,12 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 1. Quote one-room family configurations for each remaining unbooked base within the USD $200-$250 nightly target before committing to exact hotel brands.
 2. Quote Yosemite lodging immediately for July 11-13.
-3. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
-4. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
-5. Add the booked rental car cost and booked first-hotel cost privately to the working budget outside this public repository.
-6. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
-7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
+3. Quote a Central Coast / Route 1 overnight for July 4, prioritizing one-room occupancy, parking, cancellation, and no two-night minimum.
+4. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
+5. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
+6. Add the booked rental car cost and booked first-hotel cost privately to the working budget outside this public repository.
+7. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
+8. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
 
@@ -88,6 +89,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Muir Woods entrance and parking requirements support the family attraction allowance if restored as a swap. | National Park Service / Go Muir Woods | [Muir Woods fees](https://www.nps.gov/muwo/planyourvisit/fees.htm) and [parking reservations](https://gomuirwoods.com/) | 2026-05-08 | Current |
 | Monterey Bay Aquarium ticket levels support the family attraction allowance. | Monterey Bay Aquarium | [Admission tickets](https://www.montereybayaquarium.org/visit/admission-tickets) | 2026-05-08 | Current |
 | Hearst Castle starting ticket prices support the attraction allowance. | California State Parks | [Tour Hearst Castle](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current; exact tour time needs booking-window check |
+| Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County due to a washout. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
 | Getty Center admission is free but timed-entry reservation and parking apply. | J. Paul Getty Trust | [Getty Center visit information](https://www.getty.edu/visit/center/) | 2026-05-08 | Current |
 | Academy Museum child/adult ticketing supports the family attraction allowance. | Academy Museum of Motion Pictures | [Plan your visit](https://www.academymuseum.org/en/visit?icid=homepage-carousel2-a-night-at-the-academy-museum-may-2022) | 2026-05-08 | Current |
 | Las Vegas has free sights, indoor attractions, pool options, shows, and family dining, but selected attractions need live ticket checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |

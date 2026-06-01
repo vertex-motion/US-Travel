@@ -9,6 +9,7 @@
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
 - Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - First Los Angeles hotel is booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference stay out of this public repository.
+- Santa Barbara is removed from the current route by traveler request. Use one Central Coast / Route 1 overnight instead.
 - Keep the final Los Angeles night practical. Prioritize departure reliability over sightseeing.
 - Treat Bakersfield, Tehachapi, or another CA-99 / CA-58 midpoint as part of the default route after the family chose to remove one Yosemite night and break the long Yosemite-to-Las-Vegas / LAX corridor.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
@@ -20,8 +21,8 @@
 | Base | Nights | Recommended area | Why it fits | Watch-outs |
 | --- | ---: | --- | --- | --- |
 | Los Angeles arrival | 6 | Booked Pasadena-area hotel | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am, the rental car pickup is booked for 8:00 am, and hotel check-in is 3:00 pm. Confirm early check-in or luggage storage, parking cost, family occupancy, and cancellation terms. |
-| Santa Barbara / Montecito | 2 | Central Santa Barbara, Goleta, Carpinteria, or Montecito if priced well | A soft coastal pause after the short LA transfer | High July rates and minimum-stay rules may make nearby towns better value. |
-| Monterey / Carmel | 2 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, and a short scenic coast option | Beach-area parking and summer rates can be difficult; two nights leaves little margin. |
+| Central Coast / Route 1 overnight | 1 | Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or nearby value option | Splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and supports the Route 1 preference | July 4 rates, minimum-stay rules, and holiday traffic may make US-101 or a less charming value town the better choice. |
+| Monterey / Carmel | 3 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a flexible Big Sur or rest day | Beach-area parking and summer rates can be difficult; confirm that the extra night still fits the $200-$250 cap. |
 | Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime, Silicon Valley tech stops, and one Golden Gate / Presidio day trip without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, Stanford access, tech-stop hours, and the Golden Gate transport plan before booking. |
 | Yosemite | 2 | Yosemite Valley first; Fish Camp / Oakhurst / Mariposa area second | Staying inside or near the park reduces daily driving and protects the one full Valley day | July availability and the $250/night cap may force a farther base. With only two nights, avoid a lodging base that adds long daily drives. |
 | Bakersfield / Tehachapi midpoint | 1 | Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel | Breaks the former Yosemite-to-Las-Vegas mega-transfer and can support a short Forestiere, Bakersfield, or Tehachapi stop | This is a functional overnight. Do not overpay, and do not add a remote detour that erases the drive-time benefit. |
@@ -33,8 +34,8 @@
 | Base | First checks | Why check first | Status |
 | --- | --- | --- | --- |
 | Los Angeles arrival | Booked Pasadena-area hotel for June 28-July 4 | Fixed first hotel anchor; Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent | Booked; confirm parking, early luggage storage, family occupancy, cancellation terms, and private total cost |
-| Santa Barbara / Montecito | Rate-filtered family rooms in Santa Barbara, Goleta, Carpinteria, or Montecito | Two nights should provide rest without breaking the hotel cap | Needs live one-room family occupancy and $200-$250/night quote |
-| Monterey / Carmel | Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley | Family room size and coastal access matter more than brand positioning | Needs live one-room family occupancy and $200-$250/night quote |
+| Central Coast / Route 1 overnight | Rate-filtered family rooms in Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or nearby value towns | One night should split the scenic coast drive without recreating Santa Barbara pricing pressure | Needs July 4 one-room family occupancy, parking, cancellation, and $200-$250/night quote |
+| Monterey / Carmel | Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley | Family room size and coastal access matter more than brand positioning; three nights now absorb the spare coast night | Needs live one-room family occupancy and $200-$250/night quote for July 5-8 |
 | Palo Alto / Stanford area | Rate-filtered family rooms in Palo Alto, Menlo Park, Mountain View, Redwood City, or nearby Peninsula towns | Room size, parking terms, Stanford access, Silicon Valley tech stops, and Golden Gate day-trip access matter more than brand | Needs live one-room family occupancy, parking terms, and $200-$250/night quote |
 | Yosemite | Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels | Park access matters more with only two nights; the $250/night cap is still binding | Needs immediate availability and rate check for July 11-13 |
 | Bakersfield / Tehachapi midpoint | Rate-filtered family rooms in Bakersfield or Tehachapi with easy parking and breakfast | This is a one-night drive break, so convenience, cancellation terms, and sleep quality matter more than charm | Needs July 13 one-night quote and route-position check |
@@ -46,7 +47,7 @@
 1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
 2. Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage.
 3. Drive from LAX to the booked Pasadena-area arrival hotel and keep the first day low-driving because it follows the long-haul flight; use luggage storage or a low-effort local plan until 3:00 pm check-in if needed.
-4. Use the car for Santa Barbara, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, the Bakersfield / Tehachapi midpoint, Las Vegas, and the return to Los Angeles.
+4. Use the car for the Central Coast / Route 1 overnight, Monterey/Carmel, the Palo Alto / Stanford-area Bay Area stay, Yosemite, the Bakersfield / Tehachapi midpoint, Las Vegas, and the return to Los Angeles.
 5. During the Palo Alto / Stanford-area stay, use the car for Stanford / Mountain View / Cupertino / San Jose tech stops, while deciding whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
 6. Split the Yosemite-to-Las-Vegas corridor over Days 16-17 via Bakersfield, Tehachapi, or another practical midpoint; keep sightseeing to one short stop.
 7. Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX, the Westside, or another departure-friendly base.
@@ -62,6 +63,7 @@
 - Add a second authorized driver if both adults may drive.
 - Keep provider, price, and booking reference out of this public repository.
 - Because the first hotel is in the Pasadena area, confirm parking cost and height/entry details before arrival.
+- For the July 4 coast move, confirm the Central Coast overnight does not require a two-night minimum and does not create a long backtrack before the Highway 1 / Big Sur day.
 - Compare self-driving against Caltrain/rideshare for the Golden Gate day if hotel or San Francisco parking is expensive.
 - Confirm the midpoint hotel location does not create backtracking. Bakersfield is usually the practical default; Tehachapi can work if rates, room type, and next-day routing are better.
 - Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
@@ -92,3 +94,4 @@
 | Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check hours before visit |
 | Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
 | Caltrans provides current California highway conditions and should be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
+| Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County due to a washout. | Caltrans | [Highway 1 road status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
