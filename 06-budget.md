@@ -4,7 +4,7 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. The first Los Angeles hotel is now booked in the Pasadena area, but exact hotel name, address, price, and booking reference stay private.
+The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. The first Los Angeles hotel is booked in the Pasadena area and the Central Coast overnight is booked in Santa Maria, but exact hotel names, addresses, prices, and booking references stay private.
 
 The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, the Bay Area, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
@@ -15,7 +15,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | Booked | Booked | Private | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed. Exact fare should not be recorded in this public repository unless the family explicitly wants a public budget total. |
-| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | First six Los Angeles nights are booked privately in the Pasadena area; remaining lodging should still target $200-$250 per night across the Central Coast / Route 1 overnight, Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
+| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | First six Los Angeles nights are booked privately in the Pasadena area and the Central Coast / Route 1 overnight is booked privately in Santa Maria; remaining lodging should still target $200-$250 per night across Monterey/Carmel, Palo Alto / Stanford area, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | Booked + variable | Booked + variable | Booked + variable | Rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. Provider, price, and booking reference stay private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, Palo Alto / Stanford-area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
@@ -48,6 +48,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 - Keep the booked UA 842 / UA 839 itinerary as the flight baseline.
 - Use the booked LAX-to-LAX rental car as the transport baseline.
 - Use the booked Pasadena-area first hotel as the first lodging baseline; add its private total cost outside this public repository and confirm parking, taxes/fees, and any incidentals.
+- Use the booked Santa Maria hotel as the Central Coast lodging baseline; add its private total cost outside this public repository and confirm parking, taxes/fees, and any incidentals.
 - Compare Palo Alto / Stanford-area parking and self-drive vs. transit/rideshare for the Golden Gate day before choosing the Bay Area hotel.
 - Book Yosemite lodging first; with only two nights, a poor location creates more driving and less park time.
 - Keep the Bakersfield / Tehachapi midpoint functional and value-priced. It should reduce driving stress, not become a luxury stop.
@@ -61,12 +62,11 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 1. Quote one-room family configurations for each remaining unbooked base within the USD $200-$250 nightly target before committing to exact hotel brands.
 2. Quote Yosemite lodging immediately for July 11-13.
-3. Quote a Central Coast / Route 1 overnight for July 4, prioritizing one-room occupancy, parking, cancellation, and no two-night minimum.
-4. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
-5. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
-6. Add the booked rental car cost and booked first-hotel cost privately to the working budget outside this public repository.
-7. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
-8. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
+3. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
+4. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
+5. Add the booked rental car cost, booked first-hotel cost, and booked Santa Maria hotel cost privately to the working budget outside this public repository.
+6. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
+7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
 
@@ -76,6 +76,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; exact fare and seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | Google Visitor Experience is free to enter; purchases and food are optional. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check events before visit |
