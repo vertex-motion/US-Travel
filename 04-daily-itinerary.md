@@ -9,6 +9,7 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 - Rental car pickup: Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am.
 - First Los Angeles hotel: booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Central Coast hotel: booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026.
+- Monterey-area hotel: booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
@@ -103,22 +104,22 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
 - Source notes: This replaces Santa Barbara by traveler request. The Santa Maria hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
-## Day 8: Sunday, July 5 - Central Coast to Monterey / Carmel via Route 1
+## Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
-- Sleep: Monterey, Carmel, Pacific Grove, Seaside, or Carmel Valley.
+- Sleep: Booked Monterey-area hotel.
 - Morning: Leave Santa Maria after breakfast. Use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows the route open and timing is comfortable.
 - Lunch: Cambria, San Simeon, Big Sur, Salinas, Carmel, or Monterey depending on route choice and road pace.
 - Afternoon: San Simeon elephant seal viewing, a short Hearst Castle tour only if timing is easy, Big Sur viewpoints, or direct arrival and settle-in.
 - Dinner: Carmel or Monterey.
 - Driving: Full scenic transfer day; verify current map timing after Highway 1, one-way controls, and any Hearst Castle choice are known.
 - Walking: Light to moderate.
-- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start.
+- Reservations: Booked Monterey-area hotel check-in; Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start. Confirm hotel check-in time, parking, resort/amenity fees, family occupancy, cancellation terms, and taxes/fees outside this public repository.
 - Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
-- Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
+- Source notes: The Monterey-area hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
 ## Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
-- Sleep: Monterey / Carmel.
+- Sleep: Booked Monterey-area hotel.
 - Morning: Monterey Bay Aquarium.
 - Lunch: Cannery Row, Pacific Grove, or hotel.
 - Afternoon: Pacific Grove coastal walk, Dennis the Menace Playground, Carmel Beach, or a short Big Sur reach if Highway 1 and energy allow.
@@ -128,45 +129,45 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
-## Day 10: Tuesday, July 7 - Monterey / Carmel Coast Buffer
+## Day 10: Tuesday, July 7 - Monterey / Carmel to San Francisco / Bay Area
 
-- Sleep: Monterey / Carmel.
-- Morning: Slow coast morning: Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, MY Museum, or hotel pool.
-- Lunch: Carmel, Pacific Grove, Monterey, or hotel.
-- Afternoon: Short Big Sur reach if Highway 1 is open and the family still wants more coast; otherwise keep the day local and restorative.
-- Dinner: Carmel or Monterey.
-- Driving: Minimal if local; moderate only if adding a Big Sur reach.
+- Sleep: San Francisco / Bay Area.
+- Morning: Check out of the booked Monterey-area hotel. Use a short Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, or MY Museum stop only if the family is rested.
+- Lunch: Santa Cruz, Half Moon Bay, San Mateo, Palo Alto, or route-dependent stop.
+- Afternoon: Transfer to the San Francisco / Bay Area base, check in, and keep the first evening light.
+- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel depending on the chosen base.
+- Driving: Monterey to Bay Area transfer day; verify live map timing before choosing the coastal or inland route.
 - Walking: Light to moderate.
-- Reservations: None unless choosing a ticketed backup activity.
-- Backup plan: Use this as the recovery day if the Day 8 Route 1 transfer was slow.
+- Reservations: San Francisco / Bay Area hotel with confirmed parking and one-room occupancy for four.
+- Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
-## Day 11: Wednesday, July 8 - Monterey / Carmel to Palo Alto / Stanford Area
+## Day 11: Wednesday, July 8 - San Francisco / Bay Area Buffer
 
-- Sleep: Palo Alto / Stanford area.
-- Morning: Depart Monterey/Carmel after breakfast.
-- Lunch: Santa Cruz, Half Moon Bay, San Mateo, or Palo Alto depending on route and traffic.
-- Afternoon: Check in. If energy is good, make this the first Stanford taste: Stanford campus, Main Quad / Oval, Stanford Bookstore, Palo Alto downtown, hotel pool, or a short neighborhood walk.
-- Dinner: Palo Alto, Menlo Park, Mountain View, or near the hotel.
-- Driving: Peninsula transfer day; verify live map timing before choosing the coastal or inland route.
-- Walking: Light.
-- Reservations: Palo Alto / Stanford-area hotel with confirmed parking and one-room occupancy for four.
-- Backup plan: If traffic is poor, go straight to the hotel and save Stanford-area wandering for another evening.
+- Sleep: San Francisco / Bay Area.
+- Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Ferry Building / waterfront, Exploratorium if weather is poor, or Stanford campus if the base is Peninsula-side.
+- Lunch: Near the chosen area.
+- Afternoon: Keep this flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset.
+- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel.
+- Driving: Base-dependent; keep the day local unless the weather strongly favors a San Francisco outdoor window.
+- Walking: Light to moderate.
+- Reservations: None unless choosing Exploratorium or another ticketed backup.
+- Backup plan: Treat this as the Bay Area recovery day if the Monterey transfer was slow.
 
-## Day 12: Thursday, July 9 - Golden Gate and Presidio from the Peninsula
+## Day 12: Thursday, July 9 - Golden Gate and Presidio
 
-- Sleep: Palo Alto / Stanford area.
-- Morning: Drive or transit-plus-rideshare from the Peninsula to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
+- Sleep: San Francisco / Bay Area.
+- Morning: Drive, transit, or rideshare to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
 - Lunch: Marina, Presidio, or Fort Mason area.
 - Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
 - Dinner: Early dinner in San Francisco if energy is good, or return to Palo Alto / Menlo Park for a simpler evening.
-- Driving: San Francisco day-trip logistics; decide parking versus Caltrain/rideshare after hotel location is known.
+- Driving: San Francisco logistics; decide parking versus transit/rideshare after hotel location is known.
 - Walking: Moderate and pram-friendly if routes stay near waterfront paths.
 - Reservations: None required.
-- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day Peninsula-local if the commute looks bad.
+- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day hotel-base-local if the commute looks bad.
 
 ## Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
 
-- Sleep: Palo Alto / Stanford area.
+- Sleep: San Francisco / Bay Area.
 - Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
 - Lunch: Palo Alto, Stanford Shopping Center, Mountain View, or the Google Visitor Experience cafe.
 - Afternoon: Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest.
@@ -177,10 +178,10 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
-## Day 14: Saturday, July 11 - Palo Alto / Stanford Area to Yosemite
+## Day 14: Saturday, July 11 - San Francisco / Bay Area to Yosemite
 
 - Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
-- Morning: Leave Palo Alto / Stanford area after breakfast.
+- Morning: Leave the San Francisco / Bay Area base after breakfast.
 - Lunch: Manteca, Oakdale, Mariposa, or route-dependent stop after live timing check.
 - Afternoon: Arrive, check in, take a short Yosemite Valley orientation walk if time allows.
 - Dinner: Hotel or lodge restaurant.
@@ -310,6 +311,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Monterey-area hotel is booked from July 5 to July 7, 2026. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |

@@ -6,8 +6,10 @@
 | --- | --- | --- |
 | Does the booked rental car need any operating-detail changes before pickup? | The car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm, so pickup timing is fixed but vehicle class, luggage fit, child seat, fuel policy, toll handling, second driver, and license / IDP rules still matter. | Keep the booking, then verify operating details before nonrefundable hotel parking decisions. |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. |
+| Which San Francisco / Bay Area base should hold the extended July 7-11 stay? | The Monterey booking moved one night north, so the Bay Area block is now four nights. Base choice affects Golden Gate access, Stanford / Silicon Valley driving, parking, family-room size, and total cost. | Compare San Francisco, Palo Alto / Stanford area, Mountain View, Redwood City, and nearby Bay Area towns before booking. |
 | Which midpoint should break the Yosemite-to-Las-Vegas / LAX corridor? | The family asked to remove one Yosemite day and add a middle stop to break the long drive. | Default to Bakersfield for practical lodging and easy route position; use Tehachapi if hotel value and the next-day CA-58 route look better. |
 | Does the booked Santa Maria hotel need any operating-detail follow-up? | The July 4 Central Coast bed is fixed, but check-in time, checkout time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost still affect Day 7 and Day 8 logistics. | Keep the booking and verify operating details before arrival. |
+| Does the booked Monterey-area hotel need any operating-detail follow-up? | The July 5-7 Monterey stay is fixed, but check-in time, checkout time, parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost still affect Days 8-10 logistics. | Keep the booking and verify operating details before arrival. |
 | Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Yosemite-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
 | Is two Yosemite nights enough? | Removing one Yosemite night keeps the park but makes Mariposa Grove / Glacier Point conditional. | Keep one full Yosemite Valley day, then use Day 16 as a flexible exit toward the midpoint. |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not a fixed booking. |
@@ -20,13 +22,15 @@
 
 - Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms for remaining unbooked bases.
 - Booked Pasadena-area first hotel operating details: parking cost, early luggage storage, family occupancy, cancellation terms, taxes/fees, and private total cost.
-- Yosemite lodging availability for July 11-13.
 - Booked Santa Maria hotel operating details: check-in time, checkout time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost.
+- Booked Monterey-area hotel operating details: check-in time, checkout time, parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost.
+- San Francisco / Bay Area lodging availability for July 7-11, including one-room family occupancy, parking, cancellation, base choice, and total cost.
+- Yosemite lodging availability for July 11-13.
 - Bakersfield / Tehachapi midpoint lodging availability for July 13.
 - Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy for four.
 - Final LAX-area or Westside one-night hotel quote for July 17.
 - Booked rental car operating details: vehicle class, luggage fit, child seat plan, fuel policy, toll handling, second driver, and Australian license / IDP requirements.
-- Palo Alto / Stanford-area parking cost and transport plan for Stanford, Silicon Valley tech stops, and the Golden Gate day trip.
+- San Francisco / Bay Area parking cost and transport plan for Golden Gate, Stanford, Silicon Valley tech stops, and any San Francisco waterfront backup.
 - Current Highway 1 status for the Los Angeles-to-Central-Coast move, Big Sur, Hearst Castle, and Monterey route.
 - Current route timing for Yosemite to Bakersfield / Tehachapi and Bakersfield / Tehachapi to Las Vegas, including heat, road works, and safe break points.
 - Day 16 Forestiere Underground Gardens tour times and whether the route can absorb a one-hour guided stop.
@@ -43,6 +47,7 @@
 - Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - First Los Angeles hotel is booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference stay private.
 - Central Coast hotel is booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026. Exact hotel name, address, price, and booking reference stay private.
+- Monterey-area hotel is booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026. Exact hotel name, address, price, and booking reference stay private.
 - The family wants Las Vegas included in the primary plan, not parked as a potential option.
 - The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.
 - The family can handle longer intercity transfer days, but now prefers one midpoint hotel change over a direct Yosemite-to-Las-Vegas mega-transfer.
@@ -53,7 +58,7 @@
 - Alcatraz is out of the current plan by traveler preference.
 - Yosemite is reduced to two nights, with one new Bakersfield / Tehachapi midpoint night on July 13.
 - Santa Barbara is out of the current plan by traveler preference.
-- The coast now uses one booked Santa Maria overnight on July 4 and three Monterey/Carmel nights from July 5-8.
+- The coast now uses one booked Santa Maria overnight on July 4, two booked Monterey/Carmel nights from July 5-7, and four San Francisco / Bay Area nights from July 7-11.
 
 ## Sources
 
@@ -64,6 +69,7 @@
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Monterey-area hotel is booked from July 5 to July 7, 2026. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA eligibility needs confirmation before nonrefundable bookings. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
