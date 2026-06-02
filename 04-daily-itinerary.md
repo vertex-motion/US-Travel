@@ -8,6 +8,7 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 - Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy.
 - Rental car pickup: Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am.
 - First Los Angeles hotel: booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.
+- Central Coast hotel: booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
@@ -89,29 +90,29 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Reservations: None unless choosing a ticketed local activity; prepare for 12:00 pm checkout on Day 7.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
-## Day 7: Saturday, July 4 - Los Angeles to Central Coast / Route 1 Overnight
+## Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 
-- Sleep: Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or another value-priced Central Coast stop.
+- Sleep: Booked Santa Maria hotel.
 - Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
-- Lunch: Ventura, Oxnard, Santa Barbara bypass area, Pismo Beach, Morro Bay, or route-dependent stop. Do not plan Santa Barbara sightseeing unless the family explicitly restores it.
-- Afternoon: Continue to the Central Coast overnight, check in, beach/pier walk, pool, or a short Cambria / Morro Bay / Pismo stroll.
-- Dinner: Near the overnight base.
-- Driving: Full holiday transfer day; expect 3.5-6 hours plus stops depending on Route 1 use, July 4 traffic, and road controls.
+- Lunch: Ventura, Oxnard, Santa Barbara bypass area, Solvang / Santa Ynez, Pismo Beach, or route-dependent stop. Do not plan Santa Barbara sightseeing unless the family explicitly restores it.
+- Afternoon: Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy.
+- Dinner: Santa Maria or near the overnight base.
+- Driving: Full holiday transfer day; expect 3.5-5.5 hours plus stops depending on Route 1 use, US-101 timing, July 4 traffic, and road controls.
 - Walking: Light.
-- Reservations: Pasadena-area hotel checkout by 12:00 pm; Central Coast one-night family room with parking and cancellation.
+- Reservations: Pasadena-area hotel checkout by 12:00 pm; booked Santa Maria hotel. Confirm check-in time, parking, family occupancy, cancellation terms, and taxes/fees outside this public repository.
 - Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
-- Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
+- Source notes: This replaces Santa Barbara by traveler request. The Santa Maria hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
 ## Day 8: Sunday, July 5 - Central Coast to Monterey / Carmel via Route 1
 
 - Sleep: Monterey, Carmel, Pacific Grove, Seaside, or Carmel Valley.
-- Morning: Leave the Central Coast base after breakfast. Use Highway 1 through San Simeon, Big Sur, and Carmel only if Caltrans still shows the route open and timing is comfortable.
-- Lunch: Cambria, San Simeon, Big Sur, Carmel, or Monterey depending on start point and road pace.
+- Morning: Leave Santa Maria after breakfast. Use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows the route open and timing is comfortable.
+- Lunch: Cambria, San Simeon, Big Sur, Salinas, Carmel, or Monterey depending on route choice and road pace.
 - Afternoon: San Simeon elephant seal viewing, a short Hearst Castle tour only if timing is easy, Big Sur viewpoints, or direct arrival and settle-in.
 - Dinner: Carmel or Monterey.
 - Driving: Full scenic transfer day; verify current map timing after Highway 1, one-way controls, and any Hearst Castle choice are known.
 - Walking: Light to moderate.
-- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival.
+- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start.
 - Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
@@ -308,6 +309,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |

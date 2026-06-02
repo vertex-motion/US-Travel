@@ -9,6 +9,7 @@
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
 - Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - First Los Angeles hotel is booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference stay out of this public repository.
+- Central Coast hotel is booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026. Exact hotel name, address, price, and booking reference stay out of this public repository.
 - Santa Barbara is removed from the current route by traveler request. Use one Central Coast / Route 1 overnight instead.
 - Keep the final Los Angeles night practical. Prioritize departure reliability over sightseeing.
 - Treat Bakersfield, Tehachapi, or another CA-99 / CA-58 midpoint as part of the default route after the family chose to remove one Yosemite night and break the long Yosemite-to-Las-Vegas / LAX corridor.
@@ -21,7 +22,7 @@
 | Base | Nights | Recommended area | Why it fits | Watch-outs |
 | --- | ---: | --- | --- | --- |
 | Los Angeles arrival | 6 | Booked Pasadena-area hotel | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am, the rental car pickup is booked for 8:00 am, and hotel check-in is 3:00 pm. Confirm early check-in or luggage storage, parking cost, family occupancy, and cancellation terms. |
-| Central Coast / Route 1 overnight | 1 | Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or nearby value option | Splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and supports the Route 1 preference | July 4 rates, minimum-stay rules, and holiday traffic may make US-101 or a less charming value town the better choice. |
+| Central Coast / Route 1 overnight | 1 | Booked Santa Maria hotel | Splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and gives the family a confirmed July 4 bed | Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check. |
 | Monterey / Carmel | 3 | Carmel-by-the-Sea, Carmel Valley, Pebble Beach, Monterey waterfront, Pacific Grove, or Seaside | Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a flexible Big Sur or rest day | Beach-area parking and summer rates can be difficult; confirm that the extra night still fits the $200-$250 cap. |
 | Palo Alto / Stanford area | 3 | Palo Alto, Menlo Park, Mountain View, Redwood City, or another Stanford-adjacent Peninsula base with parking | Stanford-area downtime, Silicon Valley tech stops, and one Golden Gate / Presidio day trip without sleeping in central San Francisco | San Francisco sightseeing becomes commute-dependent. Confirm parking, family-room size, Stanford access, tech-stop hours, and the Golden Gate transport plan before booking. |
 | Yosemite | 2 | Yosemite Valley first; Fish Camp / Oakhurst / Mariposa area second | Staying inside or near the park reduces daily driving and protects the one full Valley day | July availability and the $250/night cap may force a farther base. With only two nights, avoid a lodging base that adds long daily drives. |
@@ -34,7 +35,7 @@
 | Base | First checks | Why check first | Status |
 | --- | --- | --- | --- |
 | Los Angeles arrival | Booked Pasadena-area hotel for June 28-July 4 | Fixed first hotel anchor; Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent | Booked; confirm parking, early luggage storage, family occupancy, cancellation terms, and private total cost |
-| Central Coast / Route 1 overnight | Rate-filtered family rooms in Cambria, San Simeon, Morro Bay, Pismo Beach, San Luis Obispo, or nearby value towns | One night should split the scenic coast drive without recreating Santa Barbara pricing pressure | Needs July 4 one-room family occupancy, parking, cancellation, and $200-$250/night quote |
+| Central Coast / Route 1 overnight | Booked Santa Maria hotel for July 4-5 | One night should split the scenic coast drive without recreating Santa Barbara pricing pressure | Booked; confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost |
 | Monterey / Carmel | Rate-filtered family rooms in Monterey, Pacific Grove, Carmel, Seaside, or Carmel Valley | Family room size and coastal access matter more than brand positioning; three nights now absorb the spare coast night | Needs live one-room family occupancy and $200-$250/night quote for July 5-8 |
 | Palo Alto / Stanford area | Rate-filtered family rooms in Palo Alto, Menlo Park, Mountain View, Redwood City, or nearby Peninsula towns | Room size, parking terms, Stanford access, Silicon Valley tech stops, and Golden Gate day-trip access matter more than brand | Needs live one-room family occupancy, parking terms, and $200-$250/night quote |
 | Yosemite | Yosemite Valley Lodge if within cap; otherwise Fish Camp, Oakhurst, or Mariposa family hotels | Park access matters more with only two nights; the $250/night cap is still binding | Needs immediate availability and rate check for July 11-13 |
@@ -63,7 +64,7 @@
 - Add a second authorized driver if both adults may drive.
 - Keep provider, price, and booking reference out of this public repository.
 - Because the first hotel is in the Pasadena area, confirm parking cost and height/entry details before arrival.
-- For the July 4 coast move, confirm the Central Coast overnight does not require a two-night minimum and does not create a long backtrack before the Highway 1 / Big Sur day.
+- For the July 4 coast move, confirm the booked Santa Maria hotel check-in time, parking, room occupancy, and cancellation terms. Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.
 - Compare self-driving against Caltrain/rideshare for the Golden Gate day if hotel or San Francisco parking is expensive.
 - Confirm the midpoint hotel location does not create backtracking. Bakersfield is usually the practical default; Tehachapi can work if rates, room type, and next-day routing are better.
 - Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the Las Vegas hotel has self-parking that fits the vehicle.
@@ -72,6 +73,7 @@
 
 - LAX arrival: UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport. If immigration, luggage, or rental counter timing slips, keep the arrival day flexible.
 - First hotel arrival: Pasadena-area hotel check-in is 3:00 pm on June 28 and checkout is 12:00 pm on July 4. Confirm early luggage storage, parking, room occupancy, and cancellation terms outside this public repo.
+- Central Coast arrival: Santa Maria hotel is booked for July 4-5. Confirm check-in time, parking, room occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo.
 - LAX departure: UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport. Leave a large traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in.
 - Final-day option: Book late checkout or a day room rather than filling the departure day with sightseeing.
 - SFO and LAS are no longer selected gateways.
@@ -84,6 +86,7 @@
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
