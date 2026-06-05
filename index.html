@@ -410,17 +410,14 @@
       align-items: center;
     }
 
-    .metric.route-summary-tile p {
+    .route-summary-list {
       margin: 0;
+      padding-left: 18px;
       color: var(--ink);
       font-size: 0.88rem;
       line-height: 1.35;
-    }
-
-    .route-summary-note {
-      color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.32;
+      display: grid;
+      gap: 4px;
     }
 
     .tag-row,
@@ -1665,14 +1662,14 @@
   <script>
     const tripData = {
       selectedRoute: [
-        { base: "Pasadena-area Los Angeles base", nights: 6, sights: "Pasadena / Griffith area, Getty or Academy Museum, Santa Monica if energy is good, flexible jet-lag recovery", transfer: "UA 842 SYD-LAX", notes: "Arrives LAX 6:10 am on June 28; first hotel is booked in the Pasadena area with 3:00 pm check-in and July 4 noon checkout." },
-        { base: "Booked Santa Maria hotel", nights: 1, sights: "Scenic coast drive, Santa Ynez / Pismo-area evening if timing is easy, optional elephant seals or Hearst Castle timing on Day 8", transfer: "3.5-5.5 hours from Pasadena depending on CA-1 use, US-101 timing, and holiday traffic", notes: "Replaces Santa Barbara by traveler request; Santa Maria is practical for US-101, while a full Highway 1 / Big Sur Day 8 needs an early start." },
-        { base: "Booked Monterey-area hotel", nights: 2, sights: "Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, short Big Sur reach only if timing is easy", transfer: "3-6 hours from Santa Maria depending on Highway 1 choice", notes: "Booked July 5-7; the former third coast night moves to the San Francisco / Bay Area block." },
-        { base: "San Francisco / Bay Area", nights: 4, sights: "Golden Gate, Presidio, San Francisco waterfront or Exploratorium, Stanford campus, Google Visitor Experience, Computer History Museum, optional Apple Park Visitor Center", transfer: "Monterey to Bay Area timing needs live check", notes: "Extended by traveler request; choose exact base after comparing San Francisco access, Stanford / Silicon Valley logistics, parking, and family-room cost." },
-        { base: "Yosemite Valley or Fish Camp", nights: 2, sights: "Yosemite Valley, optional Mariposa Grove or Glacier Point", transfer: "Bay Area to Yosemite timing needs live check", notes: "Book lodging early for July 11-13; make the second Yosemite activity conditional." },
-        { base: "Bakersfield / Tehachapi midpoint", nights: 1, sights: "Forestiere Underground Gardens, Kern County Museum, CALM Zoo, Tehachapi Loop", transfer: "Yosemite to midpoint timing needs live check", notes: "Breaks the former Yosemite-to-Las-Vegas mega-transfer." },
-        { base: "Las Vegas", nights: 3, sights: "Strip landmarks, hotel pool, Bellagio, one indoor ticketed attraction, optional Red Rock", transfer: "Midpoint to Las Vegas timing needs live check", notes: "Keep arrival evening restful and heat-aware." },
-        { base: "LAX area / Westside", nights: 1, sights: "Pack, recover, prepare for flight", transfer: "4-5 hours from Las Vegas before traffic and stops", notes: "Protect the international departure." }
+        { base: "Pasadena-area Los Angeles base", nights: 6, transfer: "UA 842 SYD-LAX", items: ["Pasadena / Griffith area", "Getty or Academy Museum", "Santa Monica if energy is good", "Flexible jet-lag recovery"] },
+        { base: "Santa Maria", nights: 1, transfer: "3.5-5.5 hours from Pasadena depending on CA-1 use, US-101 timing, and holiday traffic", items: ["Scenic coast drive", "Santa Ynez / Pismo-area evening if timing is easy", "Optional elephant seals or Hearst Castle timing on Day 8"] },
+        { base: "Monterey-area hotel", nights: 2, transfer: "3-6 hours from Santa Maria depending on Highway 1 choice", items: ["Monterey Bay Aquarium", "Pacific Grove", "Carmel", "17-Mile Drive", "Short Big Sur reach only if timing is easy"] },
+        { base: "San Francisco / Bay Area", nights: 4, transfer: "Monterey to Bay Area timing needs live check", items: ["Golden Gate", "Presidio", "San Francisco waterfront or Exploratorium", "Stanford campus", "Google Visitor Experience", "Computer History Museum", "Optional Apple Park Visitor Center"] },
+        { base: "Yosemite Valley or Fish Camp", nights: 2, transfer: "Bay Area to Yosemite timing needs live check", items: ["Yosemite Valley", "Optional Mariposa Grove or Glacier Point"] },
+        { base: "Bakersfield / Tehachapi midpoint", nights: 1, transfer: "Yosemite to midpoint timing needs live check", items: ["Forestiere Underground Gardens", "Kern County Museum", "CALM Zoo", "Tehachapi Loop"] },
+        { base: "Las Vegas", nights: 3, transfer: "Midpoint to Las Vegas timing needs live check", items: ["Strip landmarks", "Hotel pool", "Bellagio", "One indoor ticketed attraction", "Optional Red Rock"] },
+        { base: "LAX area / Westside", nights: 1, transfer: "4-5 hours from Las Vegas before traffic and stops", items: ["Pack", "Recover", "Prepare for flight"] }
       ],
       mapStops: [
         { id: "lax", type: "airport", name: "LAX", label: "Arrival and departure airport", dates: "Days 1 and 21", nights: "", coords: [33.9416, -118.4085], highlights: "Booked closed-circle gateway for UA 842 and UA 839.", transfer: "Arrive from Sydney June 28; depart for Sydney July 18." },
@@ -2197,8 +2194,9 @@
             <span class="tag">${row.nights} night${row.nights === 1 ? "" : "s"}</span>
             <span class="tag info">${escapeHtml(row.transfer)}</span>
           </div>
-          <p>${escapeHtml(row.sights)}</p>
-          <span class="route-summary-note">${escapeHtml(row.notes)}</span>
+          <ul class="route-summary-list">
+            ${row.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
         </article>
       `).join("");
     }
