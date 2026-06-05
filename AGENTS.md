@@ -40,6 +40,13 @@ Use these rules when writing or updating technical documents, including skills, 
 - Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
 - When repetition remains intentional, make each instance serve a distinct purpose, such as summary, action checklist, rationale, or source evidence.
 
+## Dashboard Sync
+
+- Keep `index.html` as a presentation view for the trip plan.
+- Do not sync `06-budget.md` into `index.html`.
+- Keep budget details, cost ranges, cost controls, and quote tasks in `06-budget.md`.
+- When updating `index.html`, use planning files `01-05` and `07-08` as the dashboard sources unless the user explicitly requests another source.
+
 ## Trip Change Impact Review
 
 - When the user adds a trip fact, preference, constraint, booking, task, or decision, check how it affects the rest of the trip plan.
@@ -50,4 +57,3 @@ Use these rules when writing or updating technical documents, including skills, 
 | Affected area | Impact | Proposed change | User decision needed |
 | --- | --- | --- | --- |
 | `<file or trip area>` | `<what the new input changes>` | `<specific update to make>` | `<yes/no or choice>` |
-

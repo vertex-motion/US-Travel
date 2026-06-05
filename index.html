@@ -1109,29 +1109,6 @@
       gap: 16px;
     }
 
-    .budget-bars {
-      display: grid;
-      gap: 13px;
-    }
-
-    .budget-row {
-      display: grid;
-      gap: 8px;
-    }
-
-    .budget-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 14px;
-    }
-
-    .budget-head span {
-      color: var(--muted);
-      font-size: 0.88rem;
-      text-align: right;
-    }
-
     .bar {
       height: 13px;
       border-radius: 999px;
@@ -1276,8 +1253,7 @@
 
       .panel-header,
       .day-toolbar,
-      .potential-controls,
-      .budget-head {
+      .potential-controls {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -1349,14 +1325,13 @@
       <div class="nav-inner">
         <div class="brand">
           <strong>Trip Dashboard</strong>
-          <span>Source: planning files 01-08</span>
+          <span>Source: planning files 01-05 and 07-08</span>
         </div>
         <div class="tabs" role="tablist">
           <button class="tab-button" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="potential">Potential Options</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="itinerary">Itinerary</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="lodging">Lodging</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="budget">Budget</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Booking</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="decisions">Decisions</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
@@ -1537,63 +1512,6 @@
                 <tbody id="hotelRows"></tbody>
               </table>
             </div>
-          </div>
-        </section>
-      </section>
-
-      <section class="view" id="budget" role="tabpanel">
-        <div class="split">
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Planning Range</h2>
-                <p class="panel-kicker">Canonical source: 06-budget.md. Amounts are USD unless noted.</p>
-              </div>
-            </div>
-            <div class="panel-body">
-              <div class="budget-bars" id="budgetBars"></div>
-            </div>
-          </section>
-
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Cost Controls</h2>
-                <p class="panel-kicker">Quality-preserving constraints from the budget plan.</p>
-              </div>
-            </div>
-            <div class="panel-body">
-              <ul class="list" id="costControls"></ul>
-            </div>
-          </section>
-        </div>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">Attraction Cost Anchors</h2>
-              <p class="panel-kicker">Planning anchors only; exact costs and booking windows need current checks.</p>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="table-wrap">
-              <table>
-                <thead><tr><th>Item</th><th>Family planning note</th><th>Current anchor</th></tr></thead>
-                <tbody id="attractionRows"></tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">Quote Tasks</h2>
-              <p class="panel-kicker">Rebuild the budget with actual quotes before nonrefundable deposits.</p>
-            </div>
-          </div>
-          <div class="panel-body">
-            <ul class="list" id="quoteTasks"></ul>
           </div>
         </section>
       </section>
@@ -1810,57 +1728,6 @@
         "Drive Las Vegas to Los Angeles on Day 20 and sleep near LAX or the Westside.",
         "Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026, allowing enough buffer for fuel, luggage, rental return, terminal transfer, and international check-in.",
         "Fly Los Angeles to Sydney on UA 839 at 10:45 pm on July 18."
-      ],
-      budget: [
-        { category: "International flights", low: "Booked", target: "Booked", high: "Private", basis: "UA 842 and UA 839 are confirmed; exact fare is not recorded in the public repo.", weight: 42 },
-        { category: "Lodging, 20 nights", low: "$4,000", target: "$4,500", high: "$5,000", basis: "First six Los Angeles nights, the Santa Maria overnight, and the two Monterey-area nights are booked privately; remaining lodging should still target $200-$250 per night across the San Francisco / Bay Area stay, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night.", weight: 50 },
-        { category: "Rental car, fuel, parking, tolls", low: "Booked + variable", target: "Booked + variable", high: "Booked + variable", basis: "Rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm; provider, price, and booking reference stay private. Fuel, parking, tolls, and city driving costs still need tracking.", weight: 52 },
-        { category: "Attractions and tours", low: "$800", target: "$1,400", high: "$2,400", basis: "Includes Silicon Valley tech stops, Monterey Bay Aquarium, optional Hearst Castle, Route 1 / elephant seal stops, midpoint activity if used, one Las Vegas ticketed attraction/show, and Red Rock if used.", weight: 32 },
-        { category: "Food", low: "$4,500", target: "$6,500", high: "$10,000", basis: "Family planning allowance with casual meals, food halls, and mixed dinners.", weight: 58 },
-        { category: "Airport transfers and local transit", low: "$500", target: "$1,000", high: "$2,000", basis: "LAX arrival/departure transfers, rideshare/transit in cities, and Las Vegas Strip mobility.", weight: 22 },
-        { category: "Travel insurance, mobile data, documents", low: "$600", target: "$1,200", high: "$2,500", basis: "Needs family policy quote and phone plan choice.", weight: 24 },
-        { category: "Buffer", low: "$3,000", target: "$5,500", high: "$10,500", basis: "July lodging, parking, resort fees, show pricing, and holiday-week volatility.", weight: 56 }
-      ],
-      attractions: [
-        { item: "Getty Center", note: "Admission is free but timed-entry reservation and parking apply", anchor: "$25 parking" },
-        { item: "Academy Museum", note: "Children 17 and under free for museum admission", anchor: "$50 before parking/add-ons" },
-        { item: "Google Visitor Experience", note: "Free public destination; cafe, shop, and event purchases optional", anchor: "$0 before food/shopping" },
-        { item: "Computer History Museum", note: "Check admission for two adults, one youth, and younger-child age band", anchor: "Needs live quote" },
-        { item: "Apple Park Visitor Center", note: "Free to enter; cafe, merchandise, demos, and sessions optional", anchor: "$0 before food/shopping" },
-        { item: "The Tech Interactive, if used", note: "Ticketed San Jose hands-on technology museum; check age bands", anchor: "Needs live quote" },
-        { item: "Forestiere Underground Gardens, if used", note: "One-hour guided Fresno tour; reserve ahead and allow extra arrival time", anchor: "Needs live quote" },
-        { item: "Kern County Museum or CALM Zoo, if used", note: "Bakersfield midpoint alternatives; CALM is mostly outdoors", anchor: "Needs live quote" },
-        { item: "Tehachapi Loop / town stop, if used", note: "Brief route stop rather than a ticketed anchor", anchor: "$0 before food/shopping" },
-        { item: "Muir Woods, if restored as a swap", note: "Two adult entrance fees plus one standard parking reservation; children under 16 free", anchor: "$39.50" },
-        { item: "Monterey Bay Aquarium", note: "Two adults plus one youth; the younger child is outside adult/youth paid bands", anchor: "$180+" },
-        { item: "Hearst Castle, if Central Coast-to-Monterey timing works", note: "Tour choice can change cost", anchor: "$70+" },
-        { item: "Bellagio fountains and conservatory", note: "Free Strip landmark option; schedule can vary", anchor: "$0" },
-        { item: "Las Vegas ticketed attraction or show", note: "Choose one after age, price, timing, and refund checks", anchor: "Needs live quote" },
-        { item: "Red Rock Canyon, if used", note: "Early-morning scenic drive; re-check entry and heat", anchor: "Needs live quote" }
-      ],
-      costControls: [
-        "Keep the booked UA 842 / UA 839 itinerary as the flight baseline.",
-        "Use the booked LAX-to-LAX rental car as the transport baseline.",
-        "Use the booked Pasadena-area first hotel as the first lodging baseline; add its private total cost outside this public repository and confirm parking, taxes/fees, and incidentals.",
-        "Use the booked Santa Maria hotel as the Central Coast lodging baseline; add its private total cost outside this public repository and confirm parking, taxes/fees, and incidentals.",
-        "Use the booked Monterey-area hotel as the Monterey lodging baseline; add its private total cost outside this public repository and confirm parking, resort/amenity fees, taxes/fees, and incidentals.",
-        "Compare San Francisco / Bay Area parking and self-drive vs. transit/rideshare for the Golden Gate day before choosing the Bay Area hotel.",
-        "Book Yosemite lodging first; with only two nights, a poor location creates more driving and less park time.",
-        "Keep the Bakersfield / Tehachapi midpoint functional and value-priced.",
-        "Prioritize hotels that confirm one room or suite for all four travelers within the nightly cap.",
-        "Compare Las Vegas total stay cost with resort fees and parking included.",
-        "Use the final LAX-area night to reduce missed-flight risk.",
-        "Choose only one Las Vegas paid attraction or show until live prices are known.",
-        "Treat San Diego and Grand Canyon as extensions, not free add-ons."
-      ],
-      quoteTasks: [
-        "Quote Yosemite lodging for July 11-13.",
-        "Quote a Bakersfield / Tehachapi midpoint hotel for July 13.",
-        "Quote one-room family configurations for each remaining unbooked base within the $200-$250 nightly target.",
-        "Quote Las Vegas hotels with resort fees, taxes, parking, pool access, and occupancy included.",
-        "Add the booked rental car cost, booked first-hotel cost, booked Santa Maria hotel cost, and booked Monterey-area hotel cost privately to the working budget outside this public repository.",
-        "Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.",
-        "Rebuild the budget with actual booking quotes before paying nonrefundable deposits."
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Done", owner: "Travelers", notes: "Confirmed June 28-July 20, 2026 Sydney-to-Sydney.", status: "Done" },
@@ -2308,8 +2175,6 @@
     function renderLists() {
       $("#lodgingStrategy").innerHTML = tripData.lodgingStrategy.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#transportPlan").innerHTML = tripData.transportPlan.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
-      $("#costControls").innerHTML = tripData.costControls.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
-      $("#quoteTasks").innerHTML = tripData.quoteTasks.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#researchGaps").innerHTML = tripData.researchGaps.map((item, index) => `<li><span class="dot ${["sun", "ocean", "", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#currentAssumptions").innerHTML = tripData.currentAssumptions.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
@@ -2321,9 +2186,6 @@
       `).join("");
       $("#hotelRows").innerHTML = tripData.hotels.map((row) => `
         <tr><td><strong>${escapeHtml(row.base)}</strong></td><td>${escapeHtml(row.checks)}</td><td>${escapeHtml(row.why)}</td><td>${statusTag(row.status)}</td></tr>
-      `).join("");
-      $("#attractionRows").innerHTML = tripData.attractions.map((row) => `
-        <tr><td><strong>${escapeHtml(row.item)}</strong></td><td>${escapeHtml(row.note)}</td><td>${escapeHtml(row.anchor)}</td></tr>
       `).join("");
       $("#timedRows").innerHTML = tripData.timedTickets.map((row) => `
         <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
@@ -2438,19 +2300,6 @@
         $$("#dayTypeFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
         renderDays();
       });
-    }
-
-    function renderBudget() {
-      $("#budgetBars").innerHTML = tripData.budget.map((row) => `
-        <div class="budget-row">
-          <div class="budget-head">
-            <strong>${escapeHtml(row.category)}</strong>
-            <span>Low ${escapeHtml(row.low)} / Target ${escapeHtml(row.target)} / High ${escapeHtml(row.high)}</span>
-          </div>
-          <div class="bar" aria-hidden="true"><div class="bar-fill" style="width: ${row.weight}%;"></div></div>
-          <span style="color: var(--muted); font-size: 0.9rem;">${escapeHtml(row.basis)}</span>
-        </div>
-      `).join("");
     }
 
     function renderBooking() {
@@ -2836,7 +2685,6 @@
       renderTables();
       renderDayFilters();
       renderDays();
-      renderBudget();
       renderBooking();
       renderDecisionCards("#openQuestions", tripData.openQuestions, [
         { label: "Why it matters", key: "why" },
