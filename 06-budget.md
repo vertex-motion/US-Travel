@@ -14,7 +14,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
-| International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX and UA 839 LAX-SYD are confirmed on United Airlines. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted at 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
+| International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX is on Sunday, June 28, 2026. UA 839 LAX-SYD departs on Saturday, July 18, 2026 and arrives in Sydney on Monday, July 20, 2026. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted at 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
 | Lodging, 20 nights | $4,000 | $4,500 | $5,000 | First six Los Angeles nights, the Santa Maria overnight, and the two Monterey-area nights are booked privately; remaining lodging should still target $200-$250 per night across the San Francisco / Bay Area stay, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
@@ -25,10 +25,10 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 ## Committed Spend
 
-| Item | Native charges | Total USD | Total AUD | Status | Notes |
-| --- | --- | ---: | ---: | --- | --- |
-| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Totals use today's exchange rate: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
-| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. Free cancellation or modification before pickup. SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. AUD total uses today's exchange rate. |
+| Item | Native charges | Total USD | Total AUD | Status | Dates | Notes |
+| --- | --- | ---: | ---: | --- | --- | --- |
+| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Outbound Sunday, June 28, 2026; return departs Saturday, July 18, 2026 and arrives Monday, July 20, 2026. | Totals use today's exchange rate: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
+| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. | Free cancellation or modification before pickup. SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. AUD total uses today's exchange rate. |
 
 ## Attraction Cost Anchors
 
@@ -81,7 +81,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
-| Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. United Airlines committed flight spend is 3 x A$1,561.12 plus A$1,491.12 plus 4 x $59.99 plus 2 x $54.99, totaling $4,748.02 / A$6,665.73 at today's exchange rate. | Traveler booking | User-provided ticket details | 2026-06-05 | Booked; booking reference and seat assignments intentionally omitted |
+| Confirmed flights are United UA 842 SYD-LAX on Sunday, June 28, 2026 and United UA 839 LAX-SYD departing Saturday, July 18, 2026 and arriving Monday, July 20, 2026. United Airlines committed flight spend is 3 x A$1,561.12 plus A$1,491.12 plus 4 x $59.99 plus 2 x $54.99, totaling $4,748.02 / A$6,665.73 at today's exchange rate. | Traveler booking | User-provided ticket details | 2026-06-05 | Booked; booking reference and seat assignments intentionally omitted |
 | AUD/USD conversion for committed spend uses 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD, last updated June 5, 2026 at 1:00 AM UTC. | Exchange-Rates.org | [AUD to USD converter](https://www.exchange-rates.org/converter/aud-usd) | 2026-06-05 | Current conversion snapshot; rates fluctuate |
 | SIXT rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm for $1,281.93. Free cancellation or modification is available before pickup. A temporary $200.00 refundable deposit hold applies at pickup. | Traveler booking | User-provided rental booking details | 2026-06-05 | Booked; booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
