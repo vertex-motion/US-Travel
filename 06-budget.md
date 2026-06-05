@@ -25,11 +25,11 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 ## Committed Spend
 
-| Item | Native charges | Total USD | Total AUD | Status | Dates | Notes |
-| --- | --- | ---: | ---: | --- | --- | --- |
-| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Outbound Sunday, June 28, 2026; return departs Saturday, July 18, 2026 and arrives Monday, July 20, 2026. | Totals use today's exchange rate: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
-| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. | Free cancellation or modification before pickup. SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. AUD total uses today's exchange rate. |
-| Historic Santa Maria Inn | Room $188.10 + other tax $18.81 + tourism fee $4.70 | $211.61 | A$297.06 | Booked | Check-in Saturday, July 4, 2026 from 3:00 pm. Check-out Sunday, July 5, 2026 until 12:00 pm. | Queen Room with Two Queen Beds for the family. Free cancellation until July 2, 2026 at 23:59 PDT; cancellation cost from July 3, 2026 at 00:00 is $206.91. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, and children ages omitted from this public repo. |
+| Item | Native charges | Total USD | Total AUD | Status | Dates | Cancellation notes | Notes |
+| --- | --- | ---: | ---: | --- | --- | --- | --- |
+| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Outbound Sunday, June 28, 2026; return departs Saturday, July 18, 2026 and arrives Monday, July 20, 2026. | Not recorded. | Totals use today's exchange rate: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
+| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. | Free cancellation or modification before pickup. | SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. AUD total uses today's exchange rate. |
+| Historic Santa Maria Inn | Room $188.10 + other tax $18.81 + tourism fee $4.70 | $211.61 | A$297.06 | Booked | Check-in Saturday, July 4, 2026 from 3:00 pm. Check-out Sunday, July 5, 2026 until 12:00 pm. | Free cancellation until July 2, 2026 at 23:59 PDT; cancellation cost from July 3, 2026 at 00:00 is $206.91. | Queen Room with Two Queen Beds for the family. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, and children ages omitted from this public repo. |
 
 ## Attraction Cost Anchors
 
