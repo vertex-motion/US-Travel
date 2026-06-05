@@ -352,72 +352,27 @@
       font-size: 0.84rem;
     }
 
-    .summary-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    #selectedRouteTiles {
-      display: contents;
-    }
-
-    .metric {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 16px;
-      min-height: 104px;
-    }
-
-    .metric.route-summary-tile {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      min-height: 172px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 1.45rem;
-      line-height: 1.05;
-      margin-bottom: 8px;
-    }
-
-    .metric span {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .metric-kicker {
-      color: var(--muted);
-      font-size: 0.76rem;
-      font-weight: 780;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .metric.route-summary-tile strong {
-      font-size: 1.04rem;
-      margin-bottom: 0;
-    }
-
-    .route-summary-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      align-items: center;
-    }
-
-    .route-summary-list {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--ink);
-      font-size: 0.88rem;
-      line-height: 1.35;
+    .route-chip-items {
       display: grid;
       gap: 4px;
+      margin-top: 4px;
+    }
+
+    .route-chip-item {
+      color: var(--ink);
+      display: grid;
+      grid-template-columns: 10px 1fr;
+      gap: 6px;
+      line-height: 1.3;
+    }
+
+    .route-chip-item::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--muted);
+      margin-top: 0.55em;
     }
 
     .tag-row,
@@ -1255,7 +1210,6 @@
       .grid.two,
       .grid.three,
       .split,
-      .summary-strip,
       .route-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -1271,7 +1225,6 @@
       }
 
       .hero-stats,
-      .summary-strip,
       .grid.two,
       .grid.three,
       .split,
@@ -1382,10 +1335,6 @@
 
     <main>
       <section class="view active" id="overview" role="tabpanel">
-        <div class="summary-strip">
-          <div id="selectedRouteTiles"></div>
-        </div>
-
         <div class="panel">
           <div id="map" aria-label="Interactive West Coast and Las Vegas trip map"></div>
           <div class="map-tools" id="mapTools"></div>
@@ -1656,26 +1605,16 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
     const tripData = {
-      selectedRoute: [
-        { base: "Pasadena-area Los Angeles base", nights: 6, transfer: "UA 842 SYD-LAX", items: ["Pasadena / Griffith area", "Getty or Academy Museum", "Santa Monica if energy is good", "Flexible jet-lag recovery"] },
-        { base: "Santa Maria", nights: 1, transfer: "3.5-5.5 hours from Pasadena depending on CA-1 use, US-101 timing, and holiday traffic", items: ["Scenic coast drive", "Santa Ynez / Pismo-area evening if timing is easy", "Optional elephant seals or Hearst Castle timing on Day 8"] },
-        { base: "Monterey-area hotel", nights: 2, transfer: "3-6 hours from Santa Maria depending on Highway 1 choice", items: ["Monterey Bay Aquarium", "Pacific Grove", "Carmel", "17-Mile Drive", "Short Big Sur reach only if timing is easy"] },
-        { base: "San Francisco / Bay Area", nights: 4, transfer: "Monterey to Bay Area timing needs live check", items: ["Golden Gate", "Presidio", "San Francisco waterfront or Exploratorium", "Stanford campus", "Google Visitor Experience", "Computer History Museum", "Optional Apple Park Visitor Center"] },
-        { base: "Yosemite Valley or Fish Camp", nights: 2, transfer: "Bay Area to Yosemite timing needs live check", items: ["Yosemite Valley", "Optional Mariposa Grove or Glacier Point"] },
-        { base: "Bakersfield / Tehachapi midpoint", nights: 1, transfer: "Yosemite to midpoint timing needs live check", items: ["Forestiere Underground Gardens", "Kern County Museum", "CALM Zoo", "Tehachapi Loop"] },
-        { base: "Las Vegas", nights: 3, transfer: "Midpoint to Las Vegas timing needs live check", items: ["Strip landmarks", "Hotel pool", "Bellagio", "One indoor ticketed attraction", "Optional Red Rock"] },
-        { base: "LAX area / Westside", nights: 1, transfer: "4-5 hours from Las Vegas before traffic and stops", items: ["Pack", "Recover", "Prepare for flight"] }
-      ],
       mapStops: [
-        { id: "lax", type: "airport", name: "LAX", label: "Arrival and departure airport", dates: "Days 1 and 21", nights: "", coords: [33.9416, -118.4085], highlights: "Booked closed-circle gateway for UA 842 and UA 839.", transfer: "Arrive from Sydney June 28; depart for Sydney July 18." },
-        { id: "la-arrival", type: "base", name: "Pasadena-area Los Angeles base", label: "Southern California start", dates: "June 28-July 4", nights: "6 nights", coords: [34.1478, -118.1445], highlights: "Booked first hotel, Pasadena / Griffith area, Getty or Academy Museum, Santa Monica if energy is good, flexible recovery.", transfer: "Booked LAX rental car pickup June 28 at 8:00 am; hotel check-in 3:00 pm." },
-        { id: "central-coast-route-1", type: "base", name: "Booked Santa Maria hotel", label: "Central Coast bridge", dates: "July 4-5", nights: "1 night", coords: [34.9530, -120.4357], highlights: "Booked Santa Maria overnight, Santa Ynez / Pismo-area evening if timing is easy, optional elephant seals or Hearst Castle timing on Day 8.", transfer: "3.5-5.5 hours from Pasadena depending on CA-1 use, US-101 timing, and holiday traffic." },
-        { id: "monterey", type: "base", name: "Booked Monterey-area hotel", label: "Central Coast North", dates: "July 5-7", nights: "2 nights", coords: [36.6002, -121.8947], highlights: "Booked Monterey-area stay, aquarium, Pacific Grove, Carmel, 17-Mile Drive, short Big Sur reach only if timing is easy.", transfer: "3-6 hours from Santa Maria depending on Highway 1 choice." },
-        { id: "bay-area", type: "base", name: "San Francisco / Bay Area", label: "Extended Bay Area stay", dates: "July 7-11", nights: "4 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Presidio, San Francisco waterfront or Exploratorium, Stanford, Google Visitor Experience, Computer History Museum, optional Apple Park Visitor Center.", transfer: "Monterey to Bay Area timing needs live check." },
-        { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 11-13", nights: "2 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, optional Mariposa Grove or Glacier Point.", transfer: "Bay Area to Yosemite timing needs live check." },
-        { id: "midpoint", type: "base", name: "Bakersfield / Tehachapi midpoint", label: "Central Valley / CA-58 break", dates: "July 13-14", nights: "1 night", coords: [35.3733, -119.0187], highlights: "Forestiere Underground Gardens, Kern County Museum, CALM Zoo, or Tehachapi Loop.", transfer: "Breaks the former Yosemite-to-Las-Vegas mega-transfer." },
-        { id: "lv", type: "base", name: "Las Vegas", label: "City-resort finale", dates: "July 14-17", nights: "3 nights", coords: [36.1147, -115.1728], highlights: "Strip landmarks, Bellagio, pool/rest time, one indoor attraction, optional Red Rock.", transfer: "Midpoint-to-Las-Vegas travel day." },
-        { id: "la-departure", type: "base", name: "LAX area", label: "Loop closure", dates: "July 17-18", nights: "1 night", coords: [33.9416, -118.4085], highlights: "Final hotel, packing, airport buffer.", transfer: "4-5 hours from Las Vegas before traffic and stops." }
+        { id: "lax", type: "airport", name: "LAX", label: "Arrival and departure airport", dates: "Days 1 and 21", nights: "", coords: [33.9416, -118.4085], highlights: "Closed-circle gateway for UA 842 and UA 839.", transfer: "Arrive from Sydney June 28; depart for Sydney July 18." },
+        { id: "la-arrival", type: "base", name: "Pasadena-area Los Angeles base", label: "Southern California start", dates: "June 28-July 4", nights: "6 nights", coords: [34.1478, -118.1445], highlights: "Pasadena / Griffith area, Getty or Academy Museum, Santa Monica if energy is good, flexible recovery.", items: ["Pasadena / Griffith area", "Getty or Academy Museum", "Santa Monica if energy is good", "Flexible recovery"], transfer: "LAX rental car pickup June 28 at 8:00 am; hotel check-in 3:00 pm." },
+        { id: "central-coast-route-1", type: "base", name: "Santa Maria", label: "Central Coast bridge", dates: "July 4-5", nights: "1 night", coords: [34.9530, -120.4357], highlights: "Scenic coast drive, Santa Ynez / Pismo-area evening if timing is easy, optional elephant seals or Hearst Castle timing on Day 8.", items: ["Scenic coast drive", "Santa Ynez / Pismo-area evening if timing is easy", "Optional elephant seals or Hearst Castle timing on Day 8"], transfer: "3.5-5.5 hours from Pasadena depending on CA-1 use, US-101 timing, and holiday traffic." },
+        { id: "monterey", type: "base", name: "Monterey-area hotel", label: "Central Coast North", dates: "July 5-7", nights: "2 nights", coords: [36.6002, -121.8947], highlights: "Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, short Big Sur reach only if timing is easy.", items: ["Monterey Bay Aquarium", "Pacific Grove", "Carmel", "17-Mile Drive", "Short Big Sur reach only if timing is easy"], transfer: "3-6 hours from Santa Maria depending on Highway 1 choice." },
+        { id: "bay-area", type: "base", name: "San Francisco / Bay Area", label: "Extended Bay Area stay", dates: "July 7-11", nights: "4 nights", coords: [37.7749, -122.4194], highlights: "Golden Gate, Presidio, San Francisco waterfront or Exploratorium, Stanford, Google Visitor Experience, Computer History Museum, optional Apple Park Visitor Center.", items: ["Golden Gate", "Presidio", "San Francisco waterfront or Exploratorium", "Stanford campus", "Google Visitor Experience", "Computer History Museum", "Optional Apple Park Visitor Center"], transfer: "Monterey to Bay Area timing needs live check." },
+        { id: "yosemite", type: "base", name: "Yosemite", label: "Sierra Nevada", dates: "July 11-13", nights: "2 nights", coords: [37.7456, -119.5936], highlights: "Yosemite Valley, optional Mariposa Grove or Glacier Point.", items: ["Yosemite Valley", "Optional Mariposa Grove or Glacier Point"], transfer: "Bay Area to Yosemite timing needs live check." },
+        { id: "midpoint", type: "base", name: "Bakersfield / Tehachapi midpoint", label: "Central Valley / CA-58 break", dates: "July 13-14", nights: "1 night", coords: [35.3733, -119.0187], highlights: "Forestiere Underground Gardens, Kern County Museum, CALM Zoo, or Tehachapi Loop.", items: ["Forestiere Underground Gardens", "Kern County Museum", "CALM Zoo", "Tehachapi Loop"], transfer: "Yosemite to midpoint timing needs live check." },
+        { id: "lv", type: "base", name: "Las Vegas", label: "City-resort finale", dates: "July 14-17", nights: "3 nights", coords: [36.1147, -115.1728], highlights: "Strip landmarks, Bellagio, pool/rest time, one indoor attraction, optional Red Rock.", items: ["Strip landmarks", "Bellagio", "Pool / rest time", "One indoor attraction", "Optional Red Rock"], transfer: "Midpoint-to-Las-Vegas travel day." },
+        { id: "la-departure", type: "base", name: "LAX area", label: "Loop closure", dates: "July 17-18", nights: "1 night", coords: [33.9416, -118.4085], highlights: "Final hotel, packing, airport buffer.", items: ["Final hotel", "Packing", "Airport buffer"], transfer: "4-5 hours from Las Vegas before traffic and stops." }
       ],
       days: [
         { day: 1, date: "Sunday, June 28", title: "Arrive Los Angeles", region: "Los Angeles", dayType: "Arrival", sleep: "Pasadena-area booked hotel", summary: "UA 842 arrives LAX at 6:10 am; rental car pickup is booked for 8:00 am; first hotel check-in is 3:00 pm.", focus: "Clear arrival logistics, pick up the car, and settle into the Pasadena-area base.", places: [{ name: "Los Angeles International Airport", role: "Arrival gateway and rental car pickup" }, { name: "Pasadena area", role: "Booked first hotel base" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive LAX on UA 842, clear immigration, collect bags, and pick up the booked rental car at 8:00 am." }, { slot: "Afternoon", kind: "rest", text: "Check in at 3:00 pm if the room is ready, unpack, nap, pool, or short Pasadena-area walk." }, { slot: "Dinner", kind: "meal", text: "Easy local dinner near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "LAX to Pasadena-area hotel only; keep extra driving minimal.", tone: "warn" }, { label: "Walking", value: "Keep light.", tone: "good" }, { label: "Reservation", value: "Booked rental car pickup at 8:00 am; booked hotel check-in at 3:00 pm; confirm luggage storage.", tone: "warn" }], backup: "If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in." },
@@ -2180,22 +2119,6 @@
     const dayFilterState = { region: "All", type: "All" };
     const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
 
-    function renderSelectedRoute() {
-      $("#selectedRouteTiles").innerHTML = tripData.selectedRoute.map((row) => `
-        <article class="metric route-summary-tile">
-          <span class="metric-kicker">Selected route</span>
-          <strong>${escapeHtml(row.base)}</strong>
-          <div class="route-summary-meta">
-            <span class="tag">${row.nights} night${row.nights === 1 ? "" : "s"}</span>
-            <span class="tag info">${escapeHtml(row.transfer)}</span>
-          </div>
-          <ul class="route-summary-list">
-            ${row.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-          </ul>
-        </article>
-      `).join("");
-    }
-
     function renderLists() {
       $("#lodgingStrategy").innerHTML = tripData.lodgingStrategy.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#transportPlan").innerHTML = tripData.transportPlan.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
@@ -2555,7 +2478,9 @@
         <button type="button" class="route-chip" data-stop="${stop.id}">
           <strong>${escapeHtml(stop.name)}</strong>
           <span>${escapeHtml(stop.dates)} - ${escapeHtml(stop.nights)}</span>
-          <span>${escapeHtml(stop.highlights)}</span>
+          <span class="route-chip-items">
+            ${stop.items.map((item) => `<span class="route-chip-item">${escapeHtml(item)}</span>`).join("")}
+          </span>
         </button>
       `).join("");
 
@@ -2704,7 +2629,6 @@
     }
 
     function boot() {
-      renderSelectedRoute();
       renderLists();
       renderTables();
       renderDayFilters();
