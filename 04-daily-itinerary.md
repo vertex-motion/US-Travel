@@ -178,57 +178,56 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
-## Day 14: Saturday, July 11 - San Francisco / Bay Area to Yosemite
+## Day 14: Saturday, July 11 - San Francisco / Bay Area Flex Day
+
+- Sleep: San Francisco / Bay Area.
+- Morning: Use the longer Bay Area stay for a slower family day: Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, or a local neighborhood reset.
+- Lunch: Near the chosen area.
+- Afternoon: Keep the day flexible for fog, parking, and family energy. Use this as the San Francisco city day that did not fit earlier, or keep it base-local if the week has been busy.
+- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel.
+- Driving: Base-dependent; avoid stacking a long San Francisco commute with a second distant stop.
+- Walking: Light to moderate.
+- Reservations: None unless choosing Exploratorium or another ticketed attraction.
+- Backup plan: Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push.
+
+## Day 15: Sunday, July 12 - Bay Area Tech, Redwood, or Rest Buffer
+
+- Sleep: San Francisco / Bay Area.
+- Morning: Use the sixth Bay Area night as a true buffer: second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning.
+- Lunch: Palo Alto, Mountain View, Cupertino, San Jose, Sausalito, or near the hotel depending on the chosen plan.
+- Afternoon: Pack for Yosemite, confirm route conditions, and keep the evening easy.
+- Dinner: Near the hotel.
+- Driving: Base-dependent; keep this less ambitious than Day 13 unless the family specifically wants another tech or redwood block.
+- Walking: Light to moderate.
+- Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
+- Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
+
+## Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley
 
 - Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
-- Morning: Leave the San Francisco / Bay Area base after breakfast.
-- Lunch: Manteca, Oakdale, Mariposa, or route-dependent stop after live timing check.
-- Afternoon: Arrive, check in, take a short Yosemite Valley orientation walk if time allows.
-- Dinner: Hotel or lodge restaurant.
-- Driving: Intercity transfer into Yosemite; verify live map timing and route after the Bay Area hotel is chosen.
-- Walking: Light.
-- Reservations: Yosemite-area lodging must be booked early.
-- Backup plan: If traffic is severe, skip Yosemite Valley sightseeing and settle in.
-- Source notes: No July 2026 day-use reservation is currently required, but entry fees and lodging reservations still apply.
+- Morning: Leave the San Francisco / Bay Area base early and drive toward Yosemite Valley.
+- Lunch: Manteca, Oakdale, Mariposa, Yosemite Valley, or packed lunch depending on live timing.
+- Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware.
+- Dinner: Hotel, lodge restaurant, or simple route-dependent meal.
+- Driving: Long intercity transfer plus Yosemite Valley sightseeing; verify live map timing after the Bay Area hotel and Yosemite-area lodging are chosen.
+- Walking: Light to moderate and adjustable.
+- Reservations: One Yosemite-area night for July 13. Confirm lodging location, parking, check-in time, family occupancy, cancellation terms, and dining options.
+- Backup plan: If traffic or heat is poor, make this a shorter valley-viewpoint day and save energy for the next day's desert transfer.
+- Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
 
-## Day 15: Sunday, July 12 - Yosemite Valley
-
-- Sleep: Yosemite area.
-- Morning: Tunnel View, Bridalveil Fall area, and Yosemite Valley viewpoints.
-- Lunch: Yosemite Valley.
-- Afternoon: Lower Yosemite Fall, meadows, or shuttle-based loop.
-- Dinner: Lodge or hotel.
-- Driving: Minimal if staying in the valley; more if staying outside the park.
-- Walking: Moderate and adjustable.
-- Reservations: None for trails; dining may require advance planning.
-- Backup plan: Use the free valley shuttle and shorter paved routes if it is hot.
-
-## Day 16: Monday, July 13 - Yosemite to Bakersfield / Tehachapi Midpoint
-
-- Sleep: Bakersfield, Tehachapi, or another practical CA-99 / CA-58 midpoint.
-- Morning: Check out and choose one Yosemite exit add-on only if timing works: a short Mariposa Grove visit from the South Entrance side, Glacier Point if base and road conditions make it easy, or a simple valley farewell.
-- Lunch: Fresno, Visalia, Bakersfield, or packed lunch depending on route and chosen activity.
-- Afternoon: Drive toward the midpoint. Forestiere Underground Gardens in Fresno is the preferred distinctive stop if tour timing works; otherwise keep the day simple and use CALM Zoo, Kern County Museum, hotel pool, or an early dinner in Bakersfield / Tehachapi.
-- Dinner: Bakersfield, Tehachapi, or near the hotel.
-- Driving: Split-transfer day from Yosemite to the Central Valley / Tehachapi corridor; verify live map timing, heat, and CA-41 / CA-99 / CA-58 conditions.
-- Walking: Light to moderate, depending on the Yosemite exit stop or Forestiere tour.
-- Reservations: Midpoint hotel with parking and one-room occupancy for four; Forestiere tour reservation if used.
-- Backup plan: Skip all activities and make this a plain relocation day if Yosemite exit traffic, heat, or family energy is poor.
-- Source notes: Forestiere Underground Gardens offers a one-hour guided tour and strongly recommends reservations; NPS Mariposa Grove shuttle and Glacier Point access are seasonal and condition-dependent.
-
-## Day 17: Tuesday, July 14 - Bakersfield / Tehachapi Midpoint to Las Vegas
+## Day 17: Tuesday, July 14 - Yosemite to Las Vegas via Death Valley
 
 - Sleep: Las Vegas.
-- Morning: Leave after breakfast. If sleeping in Bakersfield, use CALM Zoo or Kern County Museum only if the family wants a short local stop and heat is manageable; if sleeping in Tehachapi, consider a brief Tehachapi Loop / town stop before continuing east.
-- Lunch: Mojave, Barstow, or route-dependent stop.
-- Afternoon: Continue to Las Vegas with heat, traffic, and fatigue buffers.
-- Dinner: Casual dinner near the hotel.
+- Morning: Leave the Yosemite-area lodging early. Use Tioga Road / CA-120 toward Lee Vining and US-395 only if the route remains open and safe.
+- Lunch: Lee Vining, Lone Pine, Panamint Springs, Furnace Creek, or a packed car lunch depending on route timing and heat.
+- Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, visitor center if timing works, then continue to Las Vegas.
+- Dinner: Casual Las Vegas dinner near the hotel.
 - Evening: Rest, pool time, or indoor hotel exploration only if everyone has energy.
-- Driving: Shorter than the former direct Yosemite-to-Las-Vegas day, but still a substantial desert transfer; verify live route timing and road conditions.
-- Walking: Light.
+- Driving: Very long mountain-to-desert transfer. Re-check Yosemite Tioga Road, Caltrans CA-120 / US-395 / CA-190, Death Valley road status, weather, smoke, and flood risk within 7 days and again the morning of departure.
+- Walking: Minimal. Do not plan hikes in Death Valley lower elevations in July.
 - Reservations: Las Vegas hotel with confirmed room occupancy, resort fee, parking, pool access, and cancellation terms.
-- Backup plan: If heat or traffic is poor, skip Tehachapi / Bakersfield sightseeing and go directly to Las Vegas.
-- Source notes: Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window, so do not plan outdoor sightseeing on arrival.
+- Backup plan: If Tioga Road, CA-190, US-395, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use the southern bypass toward Bakersfield / CA-58 / I-15 or restore a midpoint overnight.
+- Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
 ## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
@@ -323,13 +322,17 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
-| Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite exit stop. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; re-check week of arrival |
-| Glacier Point road access is seasonal and condition-dependent, and the viewpoint adds driving from Yosemite Valley or Wawona. | National Park Service | [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; re-check before using on Day 16 |
-| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; re-check tour times before using on Day 16 |
-| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; use only if heat and timing work |
-| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; re-check before using on Day 16 or 17 |
-| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; keep as a brief stop |
-| Caltrans provides current California highway conditions and should be checked for CA-41, CA-99, CA-58, and I-15 before the midpoint transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-05-31 | Current; re-check before and during travel |
+| Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13-14 |
+| Tioga Road opened for the 2026 season on May 15, 2026, but services along Tioga Road are limited and conditions must be checked before using it for the Death Valley transfer. | National Park Service | [Tioga and Glacier Point roads update](https://www.nps.gov/yose/planyourvisit/tioga.htm) | 2026-06-05 | Current; re-check before July 14 |
+| Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite add-on. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
+| Glacier Point road access is seasonal and condition-dependent, and the viewpoint adds driving from Yosemite Valley or Wawona. | National Park Service | [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
+| Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction. | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Current; fallback route only |
+| CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; fallback route only |
+| Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; fallback route only |
+| Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; fallback route only |
+| Caltrans provides current California highway conditions and should be checked for CA-120, US-395, CA-190, and I-15 before the Yosemite-to-Las-Vegas via Death Valley transfer. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-06-05 | Current; re-check before and during travel |
+| Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, advises against hiking in lower elevations when hot, and says to check alerts, road status, and weather before visiting. | National Park Service | [Death Valley safety](https://www.nps.gov/deva/planyourvisit/safety.htm) | 2026-06-05 | Current; keep July 14 as paved transit only |
+| Death Valley road status can change quickly; the current conditions page lists paved-road cautions and links to Caltrans / Sierra Nevada pass checks. | National Park Service | [Death Valley alerts and conditions](https://www.nps.gov/deva/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 14 |
 | Highway 1 through the Central Coast and Big Sur requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
 | Monterey Bay Aquarium is a ticketed, high-demand family attraction. | Monterey Bay Aquarium | [Tickets](https://www.montereybayaquarium.org/visit/tickets) | 2026-05-08 | Current |
 | Hearst Castle tours are ticketed and should be reserved once the booking window opens. | California State Parks | [Hearst Castle tours](https://hearstcastle.org/tour-hearst-castle/) | 2026-05-08 | Current |
