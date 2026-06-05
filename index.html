@@ -354,7 +354,7 @@
 
     .summary-strip {
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 12px;
       margin-bottom: 16px;
     }
@@ -1383,11 +1383,6 @@
     <main>
       <section class="view active" id="overview" role="tabpanel">
         <div class="summary-strip">
-          <div class="metric"><strong>Slow</strong><span>One main sightseeing stop per day where practical.</span></div>
-          <div class="metric"><strong>3-4h</strong><span>Local sightseeing day car time; 10-12h only for intercity moves.</span></div>
-          <div class="metric"><strong>15km</strong><span>Walking tolerance, with pram-friendly routing for the younger child.</span></div>
-          <div class="metric"><strong>$200-$250</strong><span>Nightly hotel target; one room for four is required.</span></div>
-          <div class="metric"><strong>LAX</strong><span>Booked United flights: UA 842 in, UA 839 out.</span></div>
           <div id="selectedRouteTiles"></div>
         </div>
 
