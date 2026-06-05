@@ -14,7 +14,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
-| International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX is on Sunday, June 28, 2026. UA 839 LAX-SYD departs on Saturday, July 18, 2026 and arrives in Sydney on Monday, July 20, 2026. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted at 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
+| International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX is on Sunday, June 28, 2026. UA 839 LAX-SYD departs on Saturday, July 18, 2026 and arrives in Sydney on Monday, July 20, 2026. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted using the committed-spend exchange rate below. |
 | Lodging, 20 nights | $4,000 | $4,500 | $5,000 | Historic Santa Maria Inn is booked for the Central Coast overnight and recorded below. First six Los Angeles nights and the two Monterey-area nights are booked privately; remaining lodging should still target $200-$250 per night across the San Francisco / Bay Area stay, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
 | Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
@@ -25,10 +25,12 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 
 ## Committed Spend
 
+Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD.
+
 | Item | Native charges | Total USD | Total AUD | Status | Dates | Cancellation notes | Notes |
 | --- | --- | ---: | ---: | --- | --- | --- | --- |
-| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Outbound Sunday, June 28, 2026; return departs Saturday, July 18, 2026 and arrives Monday, July 20, 2026. | Not recorded. | Totals use today's exchange rate: 1 AUD = 0.7123 USD and 1 USD = 1.4038 AUD. |
-| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. | Free cancellation or modification before pickup. | SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. AUD total uses today's exchange rate. |
+| United Airlines flights | 3 x A$1,561.12 + A$1,491.12 + 4 x $59.99 + 2 x $54.99 | $4,748.02 | A$6,665.73 | Booked | Outbound Sunday, June 28, 2026; return departs Saturday, July 18, 2026 and arrives Monday, July 20, 2026. | Not recorded. | Includes A$6,174.48 in AUD-denominated flight charges and $349.94 in USD-denominated add-ons. |
+| SIXT rental car | $1,281.93 | $1,281.93 | A$1,799.57 | Booked | Pickup Sunday, June 28, 2026 at 8:00 am at Los Angeles International Airport. Return Saturday, July 18, 2026 at 8:00 pm at Los Angeles International Airport. | Free cancellation or modification before pickup. | SIXT places a temporary $200.00 refundable deposit hold on the card at pickup; it is not a charge and should release within a few days after returning the car. |
 | Historic Santa Maria Inn | Room $188.10 + other tax $18.81 + tourism fee $4.70 | $211.61 | A$297.06 | Booked | Check-in Saturday, July 4, 2026 from 3:00 pm. Check-out Sunday, July 5, 2026 until 12:00 pm. | Free cancellation until July 2, 2026 at 23:59 PDT; cancellation cost from July 3, 2026 at 00:00 is $206.91. | Queen Room with Two Queen Beds for the family. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, and children ages omitted from this public repo. |
 
 ## Attraction Cost Anchors
