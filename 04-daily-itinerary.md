@@ -129,45 +129,45 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
-## Day 10: Tuesday, July 7 - Monterey / Carmel to San Francisco / Bay Area
+## Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 
-- Sleep: San Francisco / Bay Area.
+- Sleep: Booked Mountain View hotel.
 - Morning: Check out of the booked Monterey-area hotel. Use a short Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, or MY Museum stop only if the family is rested.
 - Lunch: Santa Cruz, Half Moon Bay, San Mateo, Palo Alto, or route-dependent stop.
-- Afternoon: Transfer to the San Francisco / Bay Area base, check in, and keep the first evening light.
-- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel depending on the chosen base.
-- Driving: Monterey to Bay Area transfer day; verify live map timing before choosing the coastal or inland route.
+- Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
+- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
+- Driving: Monterey to Mountain View transfer day; verify live map timing before choosing the coastal or inland route.
 - Walking: Light to moderate.
-- Reservations: San Francisco / Bay Area hotel with confirmed parking and one-room occupancy for four.
+- Reservations: Booked Mountain View hotel; confirm final tax/fee total, cancellation terms, free parking, free WiFi, and any incidentals outside this public repo.
 - Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
-## Day 11: Wednesday, July 8 - San Francisco / Bay Area Buffer
+## Day 11: Wednesday, July 8 - Mountain View / Bay Area Buffer
 
-- Sleep: San Francisco / Bay Area.
-- Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Ferry Building / waterfront, Exploratorium if weather is poor, or Stanford campus if the base is Peninsula-side.
+- Sleep: Booked Mountain View hotel.
+- Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable.
 - Lunch: Near the chosen area.
 - Afternoon: Keep this flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset.
-- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel.
-- Driving: Base-dependent; keep the day local unless the weather strongly favors a San Francisco outdoor window.
+- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
+- Driving: Mountain View base; keep the day local unless the weather strongly favors a San Francisco outdoor window.
 - Walking: Light to moderate.
 - Reservations: None unless choosing Exploratorium or another ticketed backup.
 - Backup plan: Treat this as the Bay Area recovery day if the Monterey transfer was slow.
 
 ## Day 12: Thursday, July 9 - Golden Gate and Presidio
 
-- Sleep: San Francisco / Bay Area.
+- Sleep: Booked Mountain View hotel.
 - Morning: Drive, transit, or rideshare to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
 - Lunch: Marina, Presidio, or Fort Mason area.
 - Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
-- Dinner: Early dinner in San Francisco if energy is good, or return to Palo Alto / Menlo Park for a simpler evening.
-- Driving: San Francisco logistics; decide parking versus transit/rideshare after hotel location is known.
+- Dinner: Early dinner in San Francisco if energy is good, or return to Mountain View / Palo Alto / Menlo Park for a simpler evening.
+- Driving: Mountain View to San Francisco day trip; decide parking versus Caltrain/rideshare after live timing and parking checks.
 - Walking: Moderate and pram-friendly if routes stay near waterfront paths.
 - Reservations: None required.
 - Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day hotel-base-local if the commute looks bad.
 
 ## Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
 
-- Sleep: San Francisco / Bay Area.
+- Sleep: Booked Mountain View hotel.
 - Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
 - Lunch: Palo Alto, Stanford Shopping Center, Mountain View, or the Google Visitor Experience cafe.
 - Afternoon: Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest.
@@ -178,26 +178,26 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
-## Day 14: Saturday, July 11 - San Francisco / Bay Area Flex Day
+## Day 14: Saturday, July 11 - Mountain View / Bay Area Flex Day
 
-- Sleep: San Francisco / Bay Area.
+- Sleep: Booked Mountain View hotel.
 - Morning: Use the longer Bay Area stay for a slower family day: Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, or a local neighborhood reset.
 - Lunch: Near the chosen area.
 - Afternoon: Keep the day flexible for fog, parking, and family energy. Use this as the San Francisco city day that did not fit earlier, or keep it base-local if the week has been busy.
-- Dinner: San Francisco, Palo Alto, Menlo Park, Mountain View, or near the hotel.
-- Driving: Base-dependent; avoid stacking a long San Francisco commute with a second distant stop.
+- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
+- Driving: Mountain View base; avoid stacking a San Francisco day trip with a second distant stop.
 - Walking: Light to moderate.
 - Reservations: None unless choosing Exploratorium or another ticketed attraction.
 - Backup plan: Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push.
 
 ## Day 15: Sunday, July 12 - Bay Area Tech, Redwood, or Rest Buffer
 
-- Sleep: San Francisco / Bay Area.
+- Sleep: Booked Mountain View hotel.
 - Morning: Use the sixth Bay Area night as a true buffer: second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning.
 - Lunch: Palo Alto, Mountain View, Cupertino, San Jose, Sausalito, or near the hotel depending on the chosen plan.
 - Afternoon: Pack for Yosemite, confirm route conditions, and keep the evening easy.
 - Dinner: Near the hotel.
-- Driving: Base-dependent; keep this less ambitious than Day 13 unless the family specifically wants another tech or redwood block.
+- Driving: Mountain View base; keep this less ambitious than Day 13 unless the family specifically wants another tech or redwood block.
 - Walking: Light to moderate.
 - Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
 - Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
@@ -205,11 +205,11 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 ## Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
 
 - Sleep: Booked Mammoth Lakes hotel.
-- Morning: Leave the San Francisco / Bay Area base early and drive toward Yosemite Valley.
+- Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
 - Lunch: Manteca, Oakdale, Mariposa, Yosemite Valley, or packed lunch depending on live timing.
 - Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
 - Dinner: Mammoth Lakes or simple route-dependent meal.
-- Driving: Long intercity transfer plus Yosemite Valley sightseeing plus a Tioga Road crossing to Mammoth Lakes; verify live map timing after the Bay Area hotel is chosen.
+- Driving: Long intercity transfer plus Yosemite Valley sightseeing plus a Tioga Road crossing to Mammoth Lakes; verify live map timing after route, road, smoke, and Tioga Road checks.
 - Walking: Light to moderate and adjustable.
 - Reservations: Booked Mammoth Lakes hotel for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am. Confirm parking, check-in process, family occupancy, and any property fees outside this public repo.
 - Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
@@ -320,6 +320,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View and includes exhibits on AI, computing history, software, and classic computing. | Computer History Museum | [Visit](https://computerhistory.org/visit/) | 2026-05-31 | Current; re-check tickets and hours before visit |
 | Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, campus model, demos, and sessions when available. | Apple | [Apple Park Visitor Center](https://www.apple.com/retail/appleparkvisitorcenter/) | 2026-05-31 | Current; re-check hours before visit |
 | The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
+| Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi. | Traveler booking | User-provided Bay Area hotel booking details | 2026-06-06 | Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
