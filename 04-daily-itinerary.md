@@ -202,31 +202,31 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 - Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
 - Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
 
-## Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley
+## Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
 
-- Sleep: Yosemite Valley, Fish Camp, Oakhurst, Mariposa, or another Yosemite-area base.
+- Sleep: Booked Mammoth Lakes hotel.
 - Morning: Leave the San Francisco / Bay Area base early and drive toward Yosemite Valley.
 - Lunch: Manteca, Oakdale, Mariposa, Yosemite Valley, or packed lunch depending on live timing.
-- Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware.
-- Dinner: Hotel, lodge restaurant, or simple route-dependent meal.
-- Driving: Long intercity transfer plus Yosemite Valley sightseeing; verify live map timing after the Bay Area hotel and Yosemite-area lodging are chosen.
+- Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
+- Dinner: Mammoth Lakes or simple route-dependent meal.
+- Driving: Long intercity transfer plus Yosemite Valley sightseeing plus a Tioga Road crossing to Mammoth Lakes; verify live map timing after the Bay Area hotel is chosen.
 - Walking: Light to moderate and adjustable.
-- Reservations: One Yosemite-area night for July 13. Confirm lodging location, parking, check-in time, family occupancy, cancellation terms, and dining options.
-- Backup plan: If traffic or heat is poor, make this a shorter valley-viewpoint day and save energy for the next day's desert transfer.
-- Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
+- Reservations: Booked Mammoth Lakes hotel for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am. Confirm parking, check-in process, family occupancy, and any property fees outside this public repo.
+- Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
+- Source notes: The Mammoth Lakes booking is from traveler-provided booking information; booking PIN, exact address, payment details, contact details, property phone, and private traveler details are intentionally omitted. Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
 
-## Day 17: Tuesday, July 14 - Yosemite to Las Vegas via Death Valley
+## Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
 - Sleep: Las Vegas.
-- Morning: Leave the Yosemite-area lodging early. Use Tioga Road / CA-120 toward Lee Vining and US-395 only if the route remains open and safe.
-- Lunch: Lee Vining, Lone Pine, Panamint Springs, Furnace Creek, or a packed car lunch depending on route timing and heat.
+- Morning: Leave Mammoth Lakes early. Use US-395 toward Lone Pine and CA-190 / Death Valley only if the route remains open and safe.
+- Lunch: Lone Pine, Panamint Springs, Furnace Creek, or a packed car lunch depending on route timing and heat.
 - Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, visitor center if timing works, then continue to Las Vegas.
 - Dinner: Casual Las Vegas dinner near the hotel.
 - Evening: Rest, pool time, or indoor hotel exploration only if everyone has energy.
-- Driving: Very long mountain-to-desert transfer. Re-check Yosemite Tioga Road, Caltrans CA-120 / US-395 / CA-190, Death Valley road status, weather, smoke, and flood risk within 7 days and again the morning of departure.
+- Driving: Very long mountain-to-desert transfer. Re-check Caltrans US-395 / CA-190, Death Valley road status, weather, smoke, heat, and flood risk within 7 days and again the morning of departure. Tioga Road also remains relevant because the family must reach Mammoth Lakes on July 13.
 - Walking: Minimal. Do not plan hikes in Death Valley lower elevations in July.
 - Reservations: Las Vegas hotel with confirmed room occupancy, resort fee, parking, pool access, and cancellation terms.
-- Backup plan: If Tioga Road, CA-190, US-395, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use the southern bypass toward Bakersfield / CA-58 / I-15 or restore a midpoint overnight.
+- Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
 ## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
@@ -322,7 +322,8 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission. | The Tech Interactive | [Visit](https://www.thetech.org/visit/) | 2026-05-31 | Current; re-check daily schedule and tickets before visit |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
-| Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13-14 |
+| Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
+| Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13 Yosemite Valley / Mammoth Lakes crossing |
 | Tioga Road opened for the 2026 season on May 15, 2026, but services along Tioga Road are limited and conditions must be checked before using it for the Death Valley transfer. | National Park Service | [Tioga and Glacier Point roads update](https://www.nps.gov/yose/planyourvisit/tioga.htm) | 2026-06-05 | Current; re-check before July 14 |
 | Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite add-on. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
 | Glacier Point road access is seasonal and condition-dependent, and the viewpoint adds driving from Yosemite Valley or Wawona. | National Park Service | [Glacier Point](https://www.nps.gov/yose/planyourvisit/glacierpoint.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
@@ -330,7 +331,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors. | CALM Zoo | [Visit](https://calmzoo.org/visit/) | 2026-05-31 | Current; fallback route only |
 | Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits. | Kern County Museum | [Home / hours](https://kerncountymuseum.org/) | 2026-05-31 | Current; fallback route only |
 | Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor. | Visit Tehachapi | [Official visitor site](https://www.visittehachapi.com/) | 2026-05-31 | Current; fallback route only |
-| Caltrans provides current California highway conditions and should be checked for CA-120, US-395, CA-190, and I-15 before the Yosemite-to-Las-Vegas via Death Valley transfer. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-06-05 | Current; re-check before and during travel |
+| Caltrans provides current California highway conditions and should be checked for CA-120, US-395, CA-190, and I-15 before the Mammoth-Lakes-to-Las-Vegas via Death Valley transfer. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-06-05 | Current; re-check before and during travel |
 | Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, advises against hiking in lower elevations when hot, and says to check alerts, road status, and weather before visiting. | National Park Service | [Death Valley safety](https://www.nps.gov/deva/planyourvisit/safety.htm) | 2026-06-05 | Current; keep July 14 as paved transit only |
 | Death Valley road status can change quickly; the current conditions page lists paved-road cautions and links to Caltrans / Sierra Nevada pass checks. | National Park Service | [Death Valley alerts and conditions](https://www.nps.gov/deva/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 14 |
 | Highway 1 through the Central Coast and Big Sur requires a current Caltrans road check before and during travel; one-way controlled traffic is currently reported north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County. | Caltrans | [Highway 1 status](https://roads.dot.ca.gov/?roadnumber=1) | 2026-06-01 | Current; re-check before travel |
