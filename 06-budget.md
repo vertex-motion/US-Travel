@@ -4,7 +4,7 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. Hyatt Place Pasadena is booked for the first Los Angeles stay, Historic Santa Maria Inn is booked for the Central Coast overnight, and Hyatt Regency Monterey is booked for July 5-7. Exact booking references, payment details, contact details, and private traveler details stay private.
+The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. Hyatt Place Pasadena is booked for the first Los Angeles stay, Historic Santa Maria Inn is booked for the Central Coast overnight, Hyatt Regency Monterey is booked for July 5-7, and Outbound Mammoth is booked for the July 13 east-side Yosemite overnight. Exact booking references, payment details, contact details, and private traveler details stay private.
 
 The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, the Bay Area, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. A confirmed single room or suite for all four travelers is the key cost-control requirement because two rooms are likely too expensive.
 
@@ -15,9 +15,9 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX is on Sunday, June 28, 2026. UA 839 LAX-SYD departs on Saturday, July 18, 2026 and arrives in Sydney on Monday, July 20, 2026. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted using the committed-spend exchange rate below. |
-| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | Hyatt Place Pasadena, Historic Santa Maria Inn, and Hyatt Regency Monterey are recorded below. Remaining lodging should still target $200-$250 per night across the San Francisco / Bay Area stay, Yosemite, Bakersfield / Tehachapi midpoint, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
-| Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Central Valley / Tehachapi split transfer. |
-| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Forestiere / Bakersfield / Tehachapi midpoint activity if used, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
+| Lodging, 20 nights | $4,000 | $4,500 | $5,000 | Hyatt Place Pasadena, Historic Santa Maria Inn, Hyatt Regency Monterey, and Outbound Mammoth are recorded below. Remaining lodging should still target $200-$250 per night across the San Francisco / Bay Area stay, Las Vegas, and final LAX-area night. Do not exceed $250/night without explicit approval. |
+| Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Mammoth Lakes / Death Valley transfer. |
+| Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Yosemite entrance or pass costs, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
 | Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
 | Travel insurance, mobile data, documents | $600 | $1,200 | $2,500 | Needs family policy quote and phone plan choice. |
@@ -34,7 +34,8 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 | Hyatt Place Pasadena | 6-night stay $1,355.20 + taxes and fees $233.09 | $1,588.29 | A$2,229.64 | Booked | June 28-July 4, 2026 | Not recorded. | Two Queen Beds plus sofa bed for the family. Self-parking is $35 daily with in-and-out privileges. Breakfast is included during posted breakfast hours. Confirmation number, member details, rate code, payment card, address, phone, email, and other private traveler details omitted from this public repo. |
 | Historic Santa Maria Inn | Room $188.10 + other tax $18.81 + tourism fee $4.70 | $211.61 | A$297.06 | Booked | July 4-5, 2026 | Free cancellation until July 2, 2026 at 23:59 PDT; cancellation cost from July 3, 2026 at 00:00 is $206.91. | Queen Room with Two Queen Beds for the family. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, and children ages omitted from this public repo. |
 | Hyatt Regency Monterey | 2-night stay $525.30 + taxes and fees $82.66 + expected resort fee $70.00 | $677.96 | A$951.72 | Booked | July 5-7, 2026 | Full prepayment; no refund; no changes. | Two Queen Beds for the family. Displayed room total is $607.96; expected total adds the separately stated $35 nightly resort fee for two nights unless the final folio confirms it was already included. Confirmation number, member details, rate code, payment card, address, phone, email, and other private traveler details omitted from this public repo. |
-| Total committed spend |  | $8,507.81 | A$11,943.72 |  |  |  |  |
+| Outbound Mammoth | Room $156.87 + other tax $29.45 + resort fee $25.00 | $211.32 | A$296.65 | Booked | July 13-14, 2026 | Free cancellation until July 10, 2026 at 23:59 PDT; cancellation cost from July 11, 2026 at 00:00 is $186.32. | Deluxe 2 Queen Beds for the family. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, property phone, and children ages omitted from this public repo. |
+| Total committed spend |  | $8,720.13 | A$12,240.37 |  |  |  |  |
 
 ## Attraction Cost Anchors
 
@@ -63,9 +64,10 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 - Use the booked Hyatt Place Pasadena first hotel as the first lodging baseline; confirm parking, taxes/fees, and any incidentals.
 - Use the booked Historic Santa Maria Inn as the Central Coast lodging baseline; confirm parking, taxes/fees, and any incidentals.
 - Use the booked Hyatt Regency Monterey hotel as the Monterey lodging baseline; confirm whether the $35 nightly resort fee is charged outside the displayed room total, plus parking and any incidentals.
+- Use the booked Outbound Mammoth night as the July 13 east-side Yosemite / Tioga Road lodging baseline; confirm parking, check-in logistics, and any incidentals before arrival.
 - Compare San Francisco / Bay Area parking and self-drive vs. transit/rideshare for the Golden Gate day before choosing the Bay Area hotel.
-- Book Yosemite lodging first; with only two nights, a poor location creates more driving and less park time.
-- Keep the Bakersfield / Tehachapi midpoint functional and value-priced. It should reduce driving stress, not become a luxury stop.
+- Keep the Mammoth Lakes night tied to a successful Tioga Road crossing on July 13. If Tioga Road or conditions fail before the free-cancellation deadline, reassess the booking before it becomes nonrefundable.
+- Keep any Bakersfield / Tehachapi midpoint quote as a fallback only. It should reduce driving stress, not become a luxury stop.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
 - In Las Vegas, compare total stay cost with resort fees and parking included.
 - Use the final LAX-area night to reduce missed-flight risk; do not turn it into a luxury stay unless the price fits the cap.
@@ -75,12 +77,13 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 ## Remaining Quote Tasks
 
 1. Quote one-room family configurations for each remaining unbooked base within the USD $200-$250 nightly target before committing to exact hotel brands.
-2. Quote Yosemite lodging immediately for July 11-13.
-3. Quote a Bakersfield / Tehachapi midpoint hotel for July 13.
-4. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
+2. Quote San Francisco / Bay Area lodging for July 7-13.
+3. Quote Las Vegas hotels with resort fees, taxes, parking, room occupancy, pool access, and cancellation terms included.
+4. Quote final LAX-area lodging for July 17.
 5. Confirm whether Hyatt Regency Monterey charges the $35 nightly resort fee outside the displayed room total.
-6. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
-7. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
+6. Confirm Outbound Mammoth parking, check-in process, and whether any additional local fees are due at the property.
+7. Compare self-driving against Caltrain/rideshare for the Golden Gate day if parking is expensive.
+8. Rebuild the budget with actual booking quotes before paying nonrefundable deposits.
 
 ## Sources
 
@@ -93,6 +96,7 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 | Hyatt Place Pasadena is booked from Sunday, June 28 to Saturday, July 4, 2026, with check-in at 3:00 pm and checkout at 12:00 pm. The room is Two Queen Beds plus sofa bed for the family. Total cost is $1,588.29 / A$2,229.64, including a 6-night stay at $1,355.20 and taxes and fees of $233.09. Self-parking is listed at $35 daily with in-and-out privileges. | Traveler booking | User-provided first hotel booking details | 2026-06-05 | Booked; confirmation number, member details, rate code, payment card, address, phone, email, and other private traveler details intentionally omitted |
 | Historic Santa Maria Inn is booked through Booking.com from Saturday, July 4 to Sunday, July 5, 2026, with check-in from 3:00 pm and check-out until 12:00 pm. The room is a Queen Room with Two Queen Beds for the family, totaling $211.61 / A$297.06. Free cancellation runs until July 2, 2026 at 23:59 PDT; cancellation cost from July 3, 2026 at 00:00 is $206.91. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-05 | Booked; booking PIN, links, payment details, contact details, and children ages intentionally omitted |
 | Hyatt Regency Monterey Hotel and Spa on Del Monte Golf Course is booked from Sunday, July 5 to Tuesday, July 7, 2026, with check-in at 4:00 pm and checkout at 12:00 pm. The room is Two Queen Beds for the family. Displayed room total is $607.96, including a 2-night stay at $525.30 and taxes and fees of $82.66. The property also lists a $35 nightly resort fee, so the budget records $677.96 / A$951.72 unless the final folio confirms that fee was already included. Cancellation terms are full prepayment, no refund, and no changes. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-05 | Booked; confirmation number, member details, rate code, payment card, address, phone, email, and other private traveler details intentionally omitted |
+| Outbound Mammoth is booked through Booking.com from Monday, July 13 to Tuesday, July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. The room is Deluxe 2 Queen Beds for the family, totaling $211.32 / A$296.65. Free cancellation runs until July 10, 2026 at 23:59 PDT; cancellation cost from July 11, 2026 at 00:00 is $186.32. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, links, payment details, contact details, property phone, and children ages intentionally omitted |
 | United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | Google Visitor Experience is free to enter; purchases and food are optional. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check events before visit |
