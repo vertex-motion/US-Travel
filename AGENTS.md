@@ -44,16 +44,17 @@ Use these rules when writing or updating technical documents, including skills, 
 
 Use planning tags to mark what each text block is for.
 
-- `current-plan`: Selected or confirmed trip plan content. Sync this tag to `index.html`.
-- `traveler-notes`: Practical notes the traveler should see. Sync this tag to `index.html`.
-- `to-confirm`: Outstanding checks or traveler-facing confirmation tasks. Sync this tag to `index.html`.
-- `planning-notes`: Research direction, option exploration, rationale, and LLM working notes. Do not sync this tag to `index.html`.
+- `current-plan`: Exact selected or booked trip facts that are ready to present, using the most specific public-safe version when private details must stay out of the repository. Sync this tag to `index.html`.
+- `traveler-notes`: Practical traveler-facing notes about a booked location, booked transport, confirmed route segment, or confirmed place to visit. Sync this tag to `index.html`.
+- `to-confirm`: Outstanding checks, open decisions, or traveler-facing confirmation tasks. Sync this tag to `index.html`.
+- `planning-notes`: Research direction, option exploration, rationale, planning assumptions, and LLM working notes. Do not sync this tag to `index.html`.
 - `sources`: Source evidence, citations, access dates, and verification status. Do not sync this tag to `index.html`.
 - `constraints`: Rules, limits, preferences, privacy requirements, and decision boundaries. Do not sync this tag to `index.html`.
 - `fallback`: Contingency options that are not part of the main working plan. Do not sync this tag to `index.html`.
 
 - Put `<!-- tag: <tag> -->` immediately before the paragraph, bullet list, ordered list, or table it controls.
 - Use one tag per block. If multiple tags could fit, choose the most suitable tag.
+- Use `traveler-notes` for what the traveler should know during the trip. Use `planning-notes` for why an option was chosen, how the plan is being shaped, or what future planning should do, even when the text mentions a booked item.
 - Group adjacent content with the same tag into one block.
 - Keep planning documents readable as prose, paragraphs, and lists.
 - Do not add tables only to carry tags. Use tables only when they are the clearest format for comparisons, status trackers, or source evidence.
