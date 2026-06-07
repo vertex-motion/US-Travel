@@ -11,16 +11,6 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 <!-- tag: planning-notes -->
 
 - Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
-
-<!-- tag: constraints -->
-
-- Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
-- Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be used only if no acceptable one-room option exists.
-- Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
-- Keep hotel names, exact addresses, prices, confirmation numbers, guest names, membership numbers, phone numbers, private contact details, payment details, and booking references out of this public repository.
-
-<!-- tag: planning-notes -->
-
 - Use LAX as the start and end airport for the selected closed-circle plan.
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
 - Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
@@ -32,6 +22,13 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 - Las Vegas Strip hotel is booked from Tuesday, July 14, 2026 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout.
 - Final Los Angeles hotel is booked in the Pasadena area from Friday, July 17, 2026 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Santa Barbara is removed from the current route by traveler request. Use one Central Coast / Route 1 overnight instead.
+
+<!-- tag: constraints -->
+
+- Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
+- Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be used only if no acceptable one-room option exists.
+- Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
+- Keep hotel names, exact addresses, prices, confirmation numbers, guest names, membership numbers, phone numbers, private contact details, payment details, and booking references out of this public repository.
 
 <!-- tag: traveler-notes -->
 
