@@ -2,24 +2,24 @@
 
 ## Tag Use
 
-Tag: planning-notes
+<!-- tag: planning-notes -->
 
 This page uses one block-level tag before each paragraph, list, or table. Sync blocks tagged `current-plan`, `traveler-notes`, or `to-confirm` to `index.html`. Do not sync blocks tagged `planning-notes`, `sources`, `constraints`, or `fallback`.
 
 ## Lodging Strategy
 
-Tag: planning-notes
+<!-- tag: planning-notes -->
 
 - Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
 
-Tag: constraints
+<!-- tag: constraints -->
 
 - Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
 - Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be used only if no acceptable one-room option exists.
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
 - Keep hotel names, exact addresses, prices, confirmation numbers, guest names, membership numbers, phone numbers, private contact details, payment details, and booking references out of this public repository.
 
-Tag: current-plan
+<!-- tag: current-plan -->
 
 - Use LAX as the start and end airport for the selected closed-circle plan.
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
@@ -33,19 +33,19 @@ Tag: current-plan
 - Final Los Angeles hotel is booked in the Pasadena area from Friday, July 17, 2026 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Santa Barbara is removed from the current route by traveler request. Use one Central Coast / Route 1 overnight instead.
 
-Tag: traveler-notes
+<!-- tag: traveler-notes -->
 
 - Keep the final Los Angeles night practical. The final hotel is in Pasadena, so prioritize a large Day 21 LAX traffic buffer over sightseeing.
 - Treat the booked Las Vegas Strip hotel as the baseline for Las Vegas planning.
 
-Tag: to-confirm
+<!-- tag: to-confirm -->
 
 - Confirm the full Las Vegas stay cost, not only the headline room rate. Include resort fees, taxes, parking, pool access, and any extra-person fees.
 - Confirm crib/rollaway policy, parking height, resort fees, parking fees, family occupancy, and cancellation terms before arrival.
 
 ## Recommended Bases
 
-Tag: current-plan
+<!-- tag: current-plan -->
 
 - Los Angeles arrival: 6 nights at the booked Pasadena-area hotel. This starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north.
 - Central Coast / Route 1 overnight: 1 night at the booked Santa Maria hotel. This splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and gives the family a confirmed July 4 bed.
@@ -55,7 +55,7 @@ Tag: current-plan
 - Las Vegas: 3 nights at the booked Las Vegas Strip hotel. This supports first-visit Strip landmarks, pool/rest time, indoor attractions, and a heat-aware finale.
 - Los Angeles departure: 1 night at the booked Pasadena-area hotel. This protects the LAX international departure after the Las Vegas drive while reusing a known family setup.
 
-Tag: traveler-notes
+<!-- tag: traveler-notes -->
 
 - Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent.
 - Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check.
@@ -66,7 +66,7 @@ Tag: traveler-notes
 
 ## Hotel Checks
 
-Tag: to-confirm
+<!-- tag: to-confirm -->
 
 - Los Angeles arrival: Confirm early check-in or luggage storage, parking cost, family occupancy, cancellation terms, and private total cost.
 - Central Coast / Route 1 overnight: Confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, private total cost, and current Caltrans status before any full Highway 1 / Big Sur routing.
@@ -78,7 +78,7 @@ Tag: to-confirm
 
 ## Fallback Lodging
 
-Tag: fallback
+<!-- tag: fallback -->
 
 - Keep Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel as a cancellable midpoint fallback.
 - Use this fallback only if Tioga Road, US-395, CA-190, Death Valley conditions, heat, smoke, weather, fatigue, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe or too long.
@@ -86,7 +86,7 @@ Tag: fallback
 
 ## Transport Plan
 
-Tag: current-plan
+<!-- tag: current-plan -->
 
 1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
 2. Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage.
@@ -99,7 +99,7 @@ Tag: current-plan
 9. Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026.
 10. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
 
-Tag: traveler-notes
+<!-- tag: traveler-notes -->
 
 - Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan until 3:00 pm check-in if needed.
 - For the Golden Gate / Presidio day, decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View.
@@ -108,15 +108,15 @@ Tag: traveler-notes
 
 ## Rental Car and Operating Checks
 
-Tag: current-plan
+<!-- tag: current-plan -->
 
 - Rental car is booked LAX-to-LAX from June 28, 2026 at 8:00 am to July 18, 2026 at 8:00 pm.
 
-Tag: constraints
+<!-- tag: constraints -->
 
 - Keep provider, price, and booking reference out of this public repository.
 
-Tag: to-confirm
+<!-- tag: to-confirm -->
 
 - Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup.
 - Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat.
@@ -130,14 +130,14 @@ Tag: to-confirm
 - Before the July 13 Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, and Mammoth Lakes check-in timing.
 - Before the July 14 transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, and heat.
 
-Tag: traveler-notes
+<!-- tag: traveler-notes -->
 
 - Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.
 - Carry extra water, snacks, and fuel margin for the July 14 Death Valley transfer.
 
 ## Airport and Transfer Notes
 
-Tag: current-plan
+<!-- tag: current-plan -->
 
 - LAX arrival: UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport.
 - First hotel arrival: Pasadena-area hotel check-in is 3:00 pm on June 28 and checkout is 12:00 pm on July 4.
@@ -149,24 +149,24 @@ Tag: current-plan
 - Final Los Angeles arrival: Pasadena-area hotel is booked for July 17-18, with 3:00 pm check-in and 12:00 pm checkout.
 - LAX departure: UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport.
 
-Tag: traveler-notes
+<!-- tag: traveler-notes -->
 
 - If immigration, luggage, or rental counter timing slips on arrival day, keep the day flexible.
 - Leave a large departure-day traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in.
 - Book late checkout or a day room rather than filling the departure day with sightseeing.
 
-Tag: to-confirm
+<!-- tag: to-confirm -->
 
 - Confirm arrival-day timing, rental counter timing, luggage buffer, terminal, fuel policy, rental return buffer, and check-in buffer.
 - Confirm hotel operating details outside this public repository: early luggage storage, check-in/check-out timing, parking, room occupancy, resort/amenity fees, cancellation terms, taxes/fees, final folios, free WiFi/free parking where noted, pool access, quiet-room request, housekeeping preference, incidentals, and private total cost.
 
-Tag: planning-notes
+<!-- tag: planning-notes -->
 
 - SFO and LAS are no longer selected gateways.
 
 ## Sources
 
-Tag: sources
+<!-- tag: sources -->
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |

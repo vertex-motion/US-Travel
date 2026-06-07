@@ -52,7 +52,7 @@ Use planning tags to mark what each text block is for.
 - `constraints`: Rules, limits, preferences, privacy requirements, and decision boundaries. Do not sync this tag to `index.html`.
 - `fallback`: Contingency options that are not part of the main working plan. Do not sync this tag to `index.html`.
 
-- Put `Tag: <tag>` immediately before the paragraph, bullet list, ordered list, or table it controls.
+- Put `<!-- tag: <tag> -->` immediately before the paragraph, bullet list, ordered list, or table it controls.
 - Use one tag per block. If multiple tags could fit, choose the most suitable tag.
 - Group adjacent content with the same tag into one block.
 - Keep planning documents readable as prose, paragraphs, and lists.
