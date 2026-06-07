@@ -42,7 +42,7 @@ Use these rules when writing or updating technical documents, including skills, 
 
 ## Planning Content Tags
 
-Use planning tags to mark what each section or row is for.
+Use planning tags to mark what each text block is for.
 
 - `current-plan`: Selected or confirmed trip plan content. Sync this tag to `index.html`.
 - `traveler-notes`: Practical notes the traveler should see. Sync this tag to `index.html`.
@@ -52,7 +52,12 @@ Use planning tags to mark what each section or row is for.
 - `constraints`: Rules, limits, preferences, privacy requirements, and decision boundaries. Do not sync this tag to `index.html`.
 - `fallback`: Contingency options that are not part of the main working plan. Do not sync this tag to `index.html`.
 
-When updating `index.html`, sync tagged content by default unless the tag is listed as non-sync above.
+- Put `Tag: <tag>` immediately before the paragraph, bullet list, ordered list, or table it controls.
+- Use one tag per block. If multiple tags could fit, choose the most suitable tag.
+- Group adjacent content with the same tag into one block.
+- Keep planning documents readable as prose, paragraphs, and lists.
+- Do not add tables only to carry tags. Use tables only when they are the clearest format for comparisons, status trackers, or source evidence.
+- When updating `index.html`, sync tagged blocks by default unless the tag is listed as non-sync above.
 
 ## Dashboard Sync
 
