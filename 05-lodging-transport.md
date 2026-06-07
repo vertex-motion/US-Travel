@@ -33,6 +33,9 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 <!-- tag: traveler-notes -->
 
 - Keep the final Los Angeles night practical. The final hotel is in Pasadena, so prioritize a large Day 21 LAX traffic buffer over sightseeing.
+
+<!-- tag: planning-notes -->
+
 - Treat the booked Las Vegas Strip hotel as the baseline for Las Vegas planning.
 
 <!-- tag: to-confirm -->
@@ -42,24 +45,15 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 
 ## Recommended Bases
 
-<!-- tag: current-plan -->
-
-- Los Angeles arrival: 6 nights at the booked Pasadena-area hotel. This starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north.
-- Central Coast / Route 1 overnight: 1 night at the booked Santa Maria hotel. This splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and gives the family a confirmed July 4 bed.
-- Monterey / Carmel: 2 nights at the booked Monterey-area hotel. This protects Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy.
-- San Francisco / Bay Area: 6 nights at the booked Mountain View hotel. This supports Golden Gate, Presidio, Stanford-area downtime, Silicon Valley tech stops, and two extra Bay Area buffer nights before Yosemite.
-- Yosemite / Mammoth Lakes: 1 night at the booked Mammoth Lakes hotel. This supports the July 13 plan: drive from the Bay Area in the morning, explore Yosemite Valley, cross Tioga Road, and sleep on the east side before Death Valley.
-- Las Vegas: 3 nights at the booked Las Vegas Strip hotel. This supports first-visit Strip landmarks, pool/rest time, indoor attractions, and a heat-aware finale.
-- Los Angeles departure: 1 night at the booked Pasadena-area hotel. This protects the LAX international departure after the Las Vegas drive while reusing a known family setup.
-
 <!-- tag: traveler-notes -->
 
-- Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent.
-- Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check.
-- With only two Monterey nights, avoid adding a full Big Sur day unless conditions and energy are excellent.
-- Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip.
-- The Mammoth Lakes base stages July 14 well, but makes July 13 long and dependent on Tioga Road, smoke, traffic, and weather.
-- Pasadena is not airport-adjacent. Leave a large Day 21 buffer for fuel, traffic, rental return, and terminal transfer.
+- Los Angeles arrival: 6 nights at the booked Pasadena-area hotel. Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent.
+- Central Coast / Route 1 overnight: 1 night at the booked Santa Maria hotel. Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check.
+- Monterey / Carmel: 2 nights at the booked Monterey-area hotel. This base is convenient for Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy. With only two Monterey nights, avoid adding a full Big Sur day unless conditions and energy are excellent.
+- San Francisco / Bay Area: 6 nights at the booked Mountain View hotel. Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip.
+- Yosemite / Mammoth Lakes: 1 night at the booked Mammoth Lakes hotel. The Mammoth Lakes base stages July 14 well, but makes July 13 long and dependent on Tioga Road, smoke, traffic, and weather.
+- Las Vegas: 3 nights at the booked Las Vegas Strip hotel. Keep Las Vegas heat-aware: early outdoor time, indoor afternoons, pool/rest time, and short evening Strip walks.
+- Los Angeles departure: 1 night at the booked Pasadena-area hotel. Pasadena is not airport-adjacent, so leave a large Day 21 buffer for fuel, traffic, rental return, and terminal transfer.
 
 ## Hotel Checks
 
@@ -99,9 +93,12 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 <!-- tag: traveler-notes -->
 
 - Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan until 3:00 pm check-in if needed.
-- For the Golden Gate / Presidio day, decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View.
 - Keep Death Valley stops short and paved.
 - Leave enough Day 21 buffer for fuel, luggage, rental return, terminal transfer, and international check-in.
+
+<!-- tag: to-confirm -->
+
+- For the Golden Gate / Presidio day, decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View.
 
 ## Rental Car and Operating Checks
 
