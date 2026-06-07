@@ -1491,6 +1491,10 @@
             </div>
           </div>
           <div class="panel-body">
+            <div class="filter-panel" style="margin-bottom: 14px;">
+              <span class="control-label">Task status</span>
+              <div class="filters" id="bookingStatusFilters"></div>
+            </div>
             <div class="check-grid" id="bookingTasks"></div>
           </div>
         </section>
@@ -2157,6 +2161,7 @@
 
     const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
     const dayFilterState = { region: "All", type: "All" };
+    const bookingFilterState = { status: "All" };
     const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
 
     function renderLists() {
@@ -2288,13 +2293,35 @@
     }
 
     function renderBooking() {
-      $("#bookingTasks").innerHTML = tripData.bookingTasks.map((task) => `
+      const tasks = bookingFilterState.status === "All"
+        ? tripData.bookingTasks
+        : tripData.bookingTasks.filter((task) => task.status === bookingFilterState.status);
+      $("#bookingTasks").innerHTML = tasks.map((task) => `
         <article class="task-card">
           <div class="task-meta"><h3>${escapeHtml(task.task)}</h3>${statusTag(task.status)}</div>
           <p><strong>When:</strong> ${escapeHtml(task.when)}<br><strong>Owner:</strong> ${escapeHtml(task.owner)}</p>
           <p>${escapeHtml(task.notes)}</p>
         </article>
       `).join("");
+    }
+
+    function renderBookingFilters() {
+      const statuses = ["All", ...new Set(tripData.bookingTasks.map((task) => task.status))];
+      $("#bookingStatusFilters").innerHTML = statuses.map((status) => {
+        const count = status === "All"
+          ? tripData.bookingTasks.length
+          : tripData.bookingTasks.filter((task) => task.status === status).length;
+        const active = status === bookingFilterState.status;
+        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
+      }).join("");
+      $("#bookingStatusFilters").addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        bookingFilterState.status = button.dataset.status;
+        $$("#bookingStatusFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
+        $$("#bookingStatusFilters .filter-button").forEach((item) => item.setAttribute("aria-pressed", item === button ? "true" : "false"));
+        renderBooking();
+      });
     }
 
     function renderDecisionCards(target, rows, columns) {
@@ -2671,6 +2698,7 @@
       renderTables();
       renderDayFilters();
       renderDays();
+      renderBookingFilters();
       renderBooking();
       renderDecisionCards("#openQuestions", tripData.openQuestions, [
         { label: "Why it matters", key: "why" },
