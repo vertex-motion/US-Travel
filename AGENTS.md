@@ -40,6 +40,20 @@ Use these rules when writing or updating technical documents, including skills, 
 - Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
 - When repetition remains intentional, make each instance serve a distinct purpose, such as summary, action checklist, rationale, or source evidence.
 
+## Planning Content Tags
+
+Use planning tags to mark what each section or row is for.
+
+- `current-plan`: Selected or confirmed trip plan content. Sync this tag to `index.html`.
+- `traveler-notes`: Practical notes the traveler should see. Sync this tag to `index.html`.
+- `to-confirm`: Outstanding checks or traveler-facing confirmation tasks. Sync this tag to `index.html`.
+- `planning-notes`: Research direction, option exploration, rationale, and LLM working notes. Do not sync this tag to `index.html`.
+- `sources`: Source evidence, citations, access dates, and verification status. Do not sync this tag to `index.html`.
+- `constraints`: Rules, limits, preferences, privacy requirements, and decision boundaries. Do not sync this tag to `index.html`.
+- `fallback`: Contingency options that are not part of the main working plan. Do not sync this tag to `index.html`.
+
+When updating `index.html`, sync tagged content by default unless the tag is listed as non-sync above.
+
 ## Dashboard Sync
 
 - Keep `index.html` as a presentation view for the trip plan.

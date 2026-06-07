@@ -1,99 +1,98 @@
 # Lodging and Transport
 
+## Tag Map
+
+Tags: planning-notes
+
+Use the tag column to decide what can feed the HTML dashboard. Sync rows tagged `current-plan`, `traveler-notes`, or `to-confirm`. Do not sync rows tagged `planning-notes`, `sources`, `constraints`, or `fallback`.
+
 ## Lodging Strategy
 
-- Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood.
-- Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval.
-- Treat a confirmed single room or suite for all four travelers as a key requirement. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists.
-- Use LAX as the start and end airport for the selected closed-circle plan.
-- Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
-- Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
-- First Los Angeles hotel is booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference stay out of this public repository.
-- Central Coast hotel is booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026. Exact hotel name, address, price, and booking reference stay out of this public repository.
-- Monterey-area hotel is booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026. Exact hotel name, address, price, and booking reference stay out of this public repository.
-- Bay Area hotel is booked in Mountain View from Tuesday, July 7, 2026 to Monday, July 13, 2026. Exact address, confirmation number, guest name, membership number, phone, and contact details stay out of this public repository.
-- Las Vegas Strip hotel is booked from Tuesday, July 14, 2026 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout. Confirmation number, guest name, membership number, exact address, phone, and private contact details stay out of this public repository.
-- Final Los Angeles hotel is booked in the Pasadena area from Friday, July 17, 2026 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout. Confirmation number, guest name, membership number, exact address, phone, and private contact details stay out of this public repository.
-- Santa Barbara is removed from the current route by traveler request. Use one Central Coast / Route 1 overnight instead.
-- Keep the final Los Angeles night practical. The final hotel is in Pasadena, so prioritize a large Day 21 LAX traffic buffer over sightseeing.
-- Use the booked Mammoth Lakes hotel on July 13 after driving from the Bay Area to Yosemite Valley and crossing Tioga Road. The next day is a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley if road, heat, smoke, and weather checks are safe.
-- Keep Bakersfield, Tehachapi, or another CA-99 / CA-58 midpoint as the fallback if Tioga Road, US-395, CA-190, Death Valley conditions, heat, smoke, or family energy makes the direct transfer unsafe.
-- Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
-- In Las Vegas, treat the booked Strip hotel as the baseline and confirm the full stay cost, not only the headline room rate. Include resort fees, taxes, parking, pool access, and any extra-person fees.
-- Confirm crib/rollaway policy, parking height, resort fees, and cancellation terms before arrival.
+| Tags | Rule or note | Detail |
+| --- | --- | --- |
+| constraints | Hotel budget | Target comfortable, well-located family hotels at USD $200-$250 per night. Do not exceed $250 per night without explicit approval. |
+| constraints | Room setup | Prefer one confirmed room or suite that fits all four travelers. Two-room setups are too expensive and should be a fallback only if no acceptable one-room option exists. |
+| planning-notes | Location priority | Book locations before optimizing hotel brand. The right base saves more family energy than a more famous hotel in the wrong neighborhood. |
+| current-plan | Gateway shape | Use LAX as the start and end airport for the selected closed-circle plan. |
+| current-plan | Flight anchors | UA 842 arrives at LAX at 6:10 am on Sunday, June 28, 2026. UA 839 departs LAX at 10:45 pm on Saturday, July 18, 2026, and arrives SYD at 7:00 am on Monday, July 20, 2026. |
+| current-plan | Rental car anchor | Rental car is booked from Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am to Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm. |
+| traveler-notes | Final Los Angeles night | Keep the final Los Angeles night practical. The final hotel is in Pasadena, so prioritize a large Day 21 LAX traffic buffer over sightseeing. |
+| traveler-notes, to-confirm | Las Vegas total cost | Treat the booked Strip hotel as the baseline and confirm the full stay cost, not only the headline room rate. Include resort fees, taxes, parking, pool access, and any extra-person fees. |
+| to-confirm | Common hotel checks | Confirm crib/rollaway policy, parking height, resort fees, parking fees, family occupancy, and cancellation terms before arrival. |
+| constraints | Public repository privacy | Keep hotel names, exact addresses, prices, confirmation numbers, guest names, membership numbers, phone numbers, private contact details, payment details, and booking references out of this public repository. |
 
-## Recommended Bases
+## Current Lodging Bases
 
-| Base | Nights | Recommended area | Why it fits | Watch-outs |
-| --- | ---: | --- | --- | --- |
-| Los Angeles arrival | 6 | Booked Pasadena-area hotel | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north | UA 842 arrives at 6:10 am, the rental car pickup is booked for 8:00 am, and hotel check-in is 3:00 pm. Confirm early check-in or luggage storage, parking cost, family occupancy, and cancellation terms. |
-| Central Coast / Route 1 overnight | 1 | Booked Santa Maria hotel | Splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and gives the family a confirmed July 4 bed | Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check. |
-| Monterey / Carmel | 2 | Booked Monterey-area hotel | Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy | Confirm parking, family occupancy, resort/amenity fees, cancellation terms, and private total cost. With only two nights, avoid adding a full Big Sur day unless conditions and energy are excellent. |
-| San Francisco / Bay Area | 6 | Booked Mountain View hotel | Golden Gate, Presidio, Stanford-area downtime, Silicon Valley tech stops, and two extra Bay Area buffer nights before Yosemite | Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip. Confirm final taxes/fees, cancellation terms, and parking details. |
-| Yosemite / Mammoth Lakes | 1 | Booked Mammoth Lakes hotel | Supports the July 13 plan: drive from the Bay Area in the morning, explore Yosemite Valley, cross Tioga Road, and sleep on the east side before Death Valley | This base stages July 14 well, but makes July 13 long and dependent on Tioga Road, smoke, traffic, and weather. Confirm parking, check-in process, and whether any additional local fees apply. |
-| Bakersfield / Tehachapi midpoint fallback | 0 selected / 1 fallback | Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel | Safety fallback if the direct Mammoth-Lakes-to-Las-Vegas through Death Valley route fails road, heat, smoke, weather, or fatigue checks | Do not book unless the direct route looks unsafe or too long. Keep it cancellable if held as a backup. |
-| Las Vegas | 3 | Booked Las Vegas Strip hotel | First-visit Strip landmarks, pool/rest time, indoor attractions, and heat-aware finale | Confirm final folio, resort fee and tax, parking fees, pool access, quiet-room request, cancellation terms, smoky casino paths, and summer heat logistics. |
-| Los Angeles departure | 1 | Booked Pasadena-area hotel | Protects the LAX international departure after the Las Vegas drive while reusing a known family setup | Pasadena is not airport-adjacent. Confirm parking fee, final folio, and checkout timing, then leave a large Day 21 buffer for fuel, traffic, rental return, and terminal transfer. |
+| Tags | Base | Nights | Current plan | Traveler notes | To confirm |
+| --- | --- | ---: | --- | --- | --- |
+| current-plan, traveler-notes, to-confirm | Los Angeles arrival | 6 | Booked Pasadena-area hotel from Sunday, June 28 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Starts the closed circle, supports recovery, and gives the family a fuller LA sample before driving north. Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent. | Early check-in or luggage storage, parking cost, family occupancy, cancellation terms, and private total cost. |
+| current-plan, traveler-notes, to-confirm | Central Coast / Route 1 overnight | 1 | Booked Santa Maria hotel from Saturday, July 4 to Sunday, July 5, 2026. | Splits the Los Angeles-to-Monterey coast drive after removing Santa Barbara and gives the family a confirmed July 4 bed. Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. | Check-in time, parking, family occupancy, cancellation terms, taxes/fees, private total cost, and current Caltrans status before any full Highway 1 / Big Sur routing. |
+| current-plan, traveler-notes, to-confirm | Monterey / Carmel | 2 | Booked Monterey-area hotel from Sunday, July 5 to Tuesday, July 7, 2026. | Protects the aquarium day and supports Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy. With only two nights, avoid adding a full Big Sur day unless conditions and energy are excellent. | Parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, checkout time, and private total cost. |
+| current-plan, traveler-notes, to-confirm | San Francisco / Bay Area | 6 | Booked Mountain View hotel from Tuesday, July 7 to Monday, July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. | Supports Golden Gate, Presidio, Stanford-area downtime, Silicon Valley tech stops, and two extra Bay Area buffer nights before Yosemite. Mountain View improves Stanford / Silicon Valley logistics, while San Francisco / Golden Gate remains a deliberate day trip. | Final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, parking details, and any incidentals. |
+| current-plan, traveler-notes, to-confirm | Yosemite / Mammoth Lakes | 1 | Booked Mammoth Lakes hotel from Monday, July 13 to Tuesday, July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Supports the July 13 plan: drive from the Bay Area in the morning, explore Yosemite Valley, cross Tioga Road, and sleep on the east side before Death Valley. This stages July 14 well, but makes July 13 long and dependent on Tioga Road, smoke, traffic, and weather. | Parking, check-in process, property fees, family occupancy, cancellation deadline, private total cost, and whether any additional local fees apply. |
+| current-plan, traveler-notes, to-confirm | Las Vegas | 3 | Booked Las Vegas Strip hotel from Tuesday, July 14 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout. | First-visit Strip landmarks, pool/rest time, indoor attractions, and heat-aware finale. The booking confirms one suite for two adults and two children and puts the family close to first-visit Strip landmarks. | Final folio, resort fee and tax, parking fees, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental holds. |
+| current-plan, traveler-notes, to-confirm | Los Angeles departure | 1 | Booked Pasadena-area hotel from Friday, July 17 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Protects the LAX international departure after the Las Vegas drive while reusing a known family setup. Pasadena is not airport-adjacent, so Day 21 stays logistics-first. | $35/night parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and a large Day 21 LAX drive buffer. |
 
-## Hotel Shortlist
+## Fallback Lodging
 
-| Base | First checks | Why check first | Status |
+| Tags | Fallback | When to use | Action |
 | --- | --- | --- | --- |
-| Los Angeles arrival | Booked Pasadena-area hotel for June 28-July 4 | Fixed first hotel anchor; Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent | Booked; confirm parking, early luggage storage, family occupancy, cancellation terms, and private total cost |
-| Central Coast / Route 1 overnight | Booked Santa Maria hotel for July 4-5 | One night should split the scenic coast drive without recreating Santa Barbara pricing pressure | Booked; confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost |
-| Monterey / Carmel | Booked Monterey-area hotel for July 5-7 | Family room size and coastal access matter more than brand positioning; this booking protects the aquarium day | Booked; confirm parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost |
-| San Francisco / Bay Area | Booked Mountain View hotel for July 7-13 | Room size, free-parking note, Stanford access, Silicon Valley tech stops, and six-night total cost make this a practical Bay Area base | Booked; confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals |
-| Yosemite / Mammoth Lakes | Booked Mammoth Lakes hotel for July 13-14 | East-side lodging stages the July 14 Death Valley transfer better than a west-side base after the Yosemite Valley visit | Booked; confirm parking, check-in process, property fees, family occupancy, cancellation deadline, and private total cost |
-| Bakersfield / Tehachapi midpoint fallback | Cancellable one-night family rooms in Bakersfield or Tehachapi with easy parking and breakfast | This is now a fallback if the Death Valley transfer becomes unsafe or too long | Optional backup quote for July 13 or July 14 only after route checks |
-| Las Vegas | Booked Las Vegas Strip hotel for July 14-17 | The booking confirms one suite for two adults and two children and puts the family close to first-visit Strip landmarks | Booked; confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, and any extra-person or incidental holds |
-| Los Angeles departure | Booked Pasadena-area hotel for July 17-18 | Reduces missed-flight risk by splitting the Las Vegas-to-LAX return from the international departure day | Booked; confirm $35/night parking, final folio, family occupancy, housekeeping preference, checkout timing, and Day 21 LAX drive buffer |
+| fallback | Bakersfield / Tehachapi midpoint | Use only if Tioga Road, US-395, CA-190, Death Valley conditions, heat, smoke, weather, fatigue, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe or too long. | Keep Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel as a cancellable fallback. Do not book unless route checks show the direct transfer is unsafe or too tiring. |
 
 ## Transport Plan
 
-1. Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.
-2. Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage.
-3. Drive from LAX to the booked Pasadena-area arrival hotel and keep the first day low-driving because it follows the long-haul flight; use luggage storage or a low-effort local plan until 3:00 pm check-in if needed.
-4. Use the car for the Central Coast / Route 1 overnight, the booked Monterey-area stay, the booked six-night Mountain View / Bay Area stay, Yosemite, the direct Death Valley transfer, the booked Las Vegas Strip stay, and the return to Los Angeles.
-5. During the Mountain View / Bay Area stay, use the car for Stanford / Mountain View / Cupertino / San Jose tech stops, while deciding whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer.
-6. On Day 16, drive from the Bay Area to Yosemite Valley, explore Yosemite, cross Tioga Road if conditions are safe, and sleep at the booked Mammoth Lakes hotel.
-7. On Day 17, drive Mammoth Lakes to the booked Las Vegas Strip hotel through Death Valley only if US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy are acceptable. Keep Death Valley stops short and paved.
-8. Restore Bakersfield / Tehachapi as a midpoint fallback if the direct Mammoth-Lakes-to-Las-Vegas route is unsafe or too tiring.
-9. Drive Las Vegas to the booked Pasadena-area final Los Angeles hotel on Day 20.
-10. Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026, allowing enough buffer for fuel, luggage, rental return, terminal transfer, and international check-in.
-11. Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20.
+| Tags | Step | Plan |
+| --- | ---: | --- |
+| current-plan | 1 | Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026. |
+| current-plan, to-confirm | 2 | Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage. |
+| current-plan, traveler-notes | 3 | Drive from LAX to the booked Pasadena-area arrival hotel and keep the first day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan until 3:00 pm check-in if needed. |
+| current-plan | 4 | Use the car for the Central Coast / Route 1 overnight, the booked Monterey-area stay, the booked six-night Mountain View / Bay Area stay, Yosemite, the direct Death Valley transfer, the booked Las Vegas Strip stay, and the return to Los Angeles. |
+| current-plan, traveler-notes, to-confirm | 5 | During the Mountain View / Bay Area stay, use the car for Stanford / Mountain View / Cupertino / San Jose tech stops, while deciding whether the Golden Gate / Presidio day suits self-driving, Caltrain plus rideshare, or another planned transfer. |
+| current-plan, to-confirm | 6 | On Day 16, drive from the Bay Area to Yosemite Valley, explore Yosemite, cross Tioga Road if conditions are safe, and sleep at the booked Mammoth Lakes hotel. |
+| current-plan, traveler-notes, to-confirm | 7 | On Day 17, drive Mammoth Lakes to the booked Las Vegas Strip hotel through Death Valley only if US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy are acceptable. Keep Death Valley stops short and paved. |
+| fallback | 8 | Restore Bakersfield / Tehachapi as a midpoint fallback if the direct Mammoth-Lakes-to-Las-Vegas route is unsafe or too tiring. |
+| current-plan | 9 | Drive Las Vegas to the booked Pasadena-area final Los Angeles hotel on Day 20. |
+| current-plan, traveler-notes, to-confirm | 10 | Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026, allowing enough buffer for fuel, luggage, rental return, terminal transfer, and international check-in. |
+| current-plan | 11 | Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20. |
 
-## Rental Car Booking and Requirements
+## Rental Car and Operating Checks
 
-- Rental car is booked LAX-to-LAX from June 28, 2026 at 8:00 am to July 18, 2026 at 8:00 pm.
-- Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup.
-- Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat.
-- Confirm whether the rental company requires an International Driving Permit for an Australian license.
-- Add a second authorized driver if both adults may drive.
-- Keep provider, price, and booking reference out of this public repository.
-- Because the first hotel is in the Pasadena area, confirm parking cost and height/entry details before arrival.
-- For the July 4 coast move, confirm the booked Santa Maria hotel check-in time, parking, room occupancy, and cancellation terms. Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.
-- Confirm the booked Monterey-area hotel parking, room occupancy, resort/amenity fees, cancellation terms, and checkout time before the July 7 Bay Area transfer.
-- Use the booked Mountain View hotel as the Bay Area base. Confirm free parking and compare self-driving against Caltrain/rideshare for the Golden Gate day if San Francisco parking or traffic is expensive.
-- Before the July 13 Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, and Mammoth Lakes check-in timing.
-- Before the July 14 transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, and heat. Carry extra water, snacks, fuel margin, and keep stops paved and short.
-- Keep a cancellable Bakersfield / Tehachapi midpoint option only as a fallback if the direct Mammoth-Lakes-to-Las-Vegas route looks unsafe or too tiring.
-- Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the booked Las Vegas Strip hotel has self-parking that fits the vehicle.
+| Tags | Area | Requirement or check |
+| --- | --- | --- |
+| current-plan | Booking | Rental car is booked LAX-to-LAX from June 28, 2026 at 8:00 am to July 18, 2026 at 8:00 pm. |
+| to-confirm | Vehicle fit | Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup. |
+| to-confirm | Child seat | Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat. |
+| to-confirm | Driving documents | Confirm whether the rental company requires an International Driving Permit for an Australian license. |
+| to-confirm | Drivers | Add a second authorized driver if both adults may drive. |
+| constraints | Rental privacy | Keep provider, price, and booking reference out of this public repository. |
+| to-confirm | First hotel parking | Because the first hotel is in the Pasadena area, confirm parking cost and height/entry details before arrival. |
+| traveler-notes, to-confirm | Central Coast move | For the July 4 coast move, confirm the booked Santa Maria hotel check-in time, parking, room occupancy, and cancellation terms. Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon. |
+| to-confirm | Monterey transfer | Confirm the booked Monterey-area hotel parking, room occupancy, resort/amenity fees, cancellation terms, and checkout time before the July 7 Bay Area transfer. |
+| traveler-notes, to-confirm | Bay Area transport | Use the booked Mountain View hotel as the Bay Area base. Confirm free parking and compare self-driving against Caltrain/rideshare for the Golden Gate day if San Francisco parking or traffic is expensive. |
+| to-confirm | Yosemite / Mammoth Lakes route | Before the July 13 Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, and Mammoth Lakes check-in timing. |
+| traveler-notes, to-confirm | Death Valley transfer | Before the July 14 transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, and heat. Carry extra water, snacks, fuel margin, and keep stops paved and short. |
+| fallback | Midpoint option | Keep a cancellable Bakersfield / Tehachapi midpoint option only as a fallback if the direct Mammoth-Lakes-to-Las-Vegas route looks unsafe or too tiring. |
+| to-confirm | Full vehicle logistics | Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the booked Las Vegas Strip hotel has self-parking that fits the vehicle. |
 
 ## Airport and Transfer Notes
 
-- LAX arrival: UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport. If immigration, luggage, or rental counter timing slips, keep the arrival day flexible.
-- First hotel arrival: Pasadena-area hotel check-in is 3:00 pm on June 28 and checkout is 12:00 pm on July 4. Confirm early luggage storage, parking, room occupancy, and cancellation terms outside this public repo.
-- Central Coast arrival: Santa Maria hotel is booked for July 4-5. Confirm check-in time, parking, room occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo.
-- Monterey arrival: Monterey-area hotel is booked for July 5-7. Confirm check-in time, checkout time, parking, room occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo.
-- Bay Area arrival: Mountain View hotel is booked for July 7-13, with check-in at 4:00 pm and checkout at 11:00 am. Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals outside this public repo.
-- Mammoth Lakes arrival: Mammoth Lakes hotel is booked for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am. Confirm parking, check-in process, property fees, family occupancy, and any incidentals outside this public repo.
-- Las Vegas arrival: Las Vegas Strip hotel is booked for July 14-17, with 3:00 pm check-in and 11:00 am checkout. Confirm resort fee and tax, parking, pool access, quiet-room request, cancellation terms, and final folio outside this public repo.
-- Final Los Angeles arrival: Pasadena-area hotel is booked for July 17-18, with 3:00 pm check-in and 12:00 pm checkout. Confirm $35/night parking, family occupancy, housekeeping preference, final folio, and any incidentals outside this public repo.
-- LAX departure: UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport. Leave a large traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in.
-- Final-day option: Book late checkout or a day room rather than filling the departure day with sightseeing.
-- SFO and LAS are no longer selected gateways.
+| Tags | Moment | Traveler note | To confirm |
+| --- | --- | --- | --- |
+| current-plan, traveler-notes, to-confirm | LAX arrival | UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport. If immigration, luggage, or rental counter timing slips, keep the arrival day flexible. | Arrival-day timing, rental counter timing, and luggage buffer. |
+| current-plan, to-confirm | First hotel arrival | Pasadena-area hotel check-in is 3:00 pm on June 28 and checkout is 12:00 pm on July 4. | Early luggage storage, parking, room occupancy, and cancellation terms. |
+| current-plan, to-confirm | Central Coast arrival | Santa Maria hotel is booked for July 4-5. | Check-in time, parking, room occupancy, cancellation terms, taxes/fees, and private total cost. |
+| current-plan, to-confirm | Monterey arrival | Monterey-area hotel is booked for July 5-7. | Check-in time, checkout time, parking, room occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost. |
+| current-plan, to-confirm | Bay Area arrival | Mountain View hotel is booked for July 7-13, with check-in at 4:00 pm and checkout at 11:00 am. | Final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. |
+| current-plan, to-confirm | Mammoth Lakes arrival | Mammoth Lakes hotel is booked for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am. | Parking, check-in process, property fees, family occupancy, and any incidentals. |
+| current-plan, to-confirm | Las Vegas arrival | Las Vegas Strip hotel is booked for July 14-17, with 3:00 pm check-in and 11:00 am checkout. | Resort fee and tax, parking, pool access, quiet-room request, cancellation terms, and final folio. |
+| current-plan, to-confirm | Final Los Angeles arrival | Pasadena-area hotel is booked for July 17-18, with 3:00 pm check-in and 12:00 pm checkout. | $35/night parking, family occupancy, housekeeping preference, final folio, and any incidentals. |
+| current-plan, traveler-notes, to-confirm | LAX departure | UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport. Leave a large traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in. | Terminal, luggage timing, fuel policy, rental return buffer, and check-in buffer. |
+| traveler-notes | Final-day option | Book late checkout or a day room rather than filling the departure day with sightseeing. | None unless the hotel gap before airport check-in is too long. |
+| planning-notes | Unselected gateways | SFO and LAS are no longer selected gateways. | None. |
 
 ## Sources
+
+Tags: sources
 
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
