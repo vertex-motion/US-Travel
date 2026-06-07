@@ -10,24 +10,23 @@
 | Can the July 13-14 Yosemite / Mammoth Lakes / Death Valley routing remain safe? | This is now the hardest route sequence and depends on Tioga Road, US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise cancel or reroute before the July 10 free-cancellation deadline where possible. |
 | Does the booked Santa Maria hotel need any operating-detail follow-up? | The July 4 Central Coast bed is fixed, but check-in time, checkout time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost still affect Day 7 and Day 8 logistics. | Keep the booking and verify operating details before arrival. |
 | Does the booked Monterey-area hotel need any operating-detail follow-up? | The July 5-7 Monterey stay is fixed, but check-in time, checkout time, parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost still affect Days 8-10 logistics. | Keep the booking and verify operating details before arrival. |
-| Is Las Vegas definitely a 3-night base? | Three nights makes Las Vegas feel intentional, but it forces the hard Mammoth-Lakes-to-Las-Vegas transfer and final LAX return. | Keep 3 nights unless heat, hotel cost, or transfer timing looks poor. |
+| Does the booked Las Vegas Strip hotel need any operating-detail follow-up? | The Las Vegas base is now fixed for July 14-17, but final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental holds still affect cost and logistics. | Keep the booking and verify operating details before arrival. |
 | Is the Mammoth Lakes night still the right Yosemite compromise? | The booked night supports the Death Valley transfer, but July 13 becomes a long Bay Area-to-Yosemite-Valley-to-Mammoth day. | Keep the booking if Tioga Road, smoke, weather, and timing checks look good before July 10; otherwise reassess while cancellation is still free. |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not a fixed booking. |
-| Which Las Vegas base style fits best: center Strip, non-gaming, or off-Strip value suite? | Base choice affects walking, sleep, pool access, parking, smoke exposure, and true cost. | Start with family-friendly center Strip or non-gaming suite options, then compare total stay cost. |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full LA day and add crowd/height constraints. | Skip theme parks on this first plan. |
 | Does the booked Pasadena-area first hotel need any operating-detail follow-up? | The base is fixed for June 28-July 4, but parking, early luggage storage, family occupancy, cancellation terms, and private total cost still affect Day 1 and Day 7 logistics. | Keep the booking and verify operating details before arrival. |
 | Will the family bring or rent the younger child's child seat? | It affects airport transfers and rental car pickup. | Bring a known seat if airline and rental logistics allow. |
 
 ## Research Gaps To Close After Flight Booking
 
-- Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms for remaining unbooked bases.
+- Exact one-room family lodging availability, nightly rate within USD $200-$250, total stay price, and cancellation terms for the remaining final Los Angeles departure base.
 - Booked Pasadena-area first hotel operating details: parking cost, early luggage storage, family occupancy, cancellation terms, taxes/fees, and private total cost.
 - Booked Santa Maria hotel operating details: check-in time, checkout time, parking, family occupancy, cancellation terms, taxes/fees, and private total cost.
 - Booked Monterey-area hotel operating details: check-in time, checkout time, parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost.
 - Booked Mountain View / Bay Area hotel operating details: final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals.
 - Booked Mammoth Lakes hotel operating details: parking, check-in process, family occupancy, property fees, and private total cost.
+- Booked Las Vegas Strip hotel operating details: final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, incidental hold, and private total cost.
 - Optional Bakersfield / Tehachapi midpoint fallback availability if the July 14 Death Valley transfer becomes unsafe or too long.
-- Las Vegas hotel total-stay quotes including resort fees, taxes, parking, pool access, and room occupancy for four.
 - Final LAX-area or Westside one-night hotel quote for July 17.
 - Booked rental car operating details: vehicle class, luggage fit, child seat plan, fuel policy, toll handling, second driver, and Australian license / IDP requirements.
 - Mountain View / Bay Area parking and transport plan for Golden Gate, Stanford, Silicon Valley tech stops, and any San Francisco waterfront backup.
@@ -48,9 +47,10 @@
 - Central Coast hotel is booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026. Exact hotel name, address, price, and booking reference stay private.
 - Monterey-area hotel is booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026. Exact hotel name, address, price, and booking reference stay private.
 - Bay Area hotel is booked in Mountain View from Tuesday, July 7, 2026 to Monday, July 13, 2026. Exact address, confirmation number, guest name, membership number, phone, and contact details stay private.
+- Las Vegas Strip hotel is booked from Tuesday, July 14, 2026 to Friday, July 17, 2026, with one Luxury 2 Queen suite for two adults and two children, 3:00 pm check-in, and 11:00 am checkout. Confirmation number, guest name, membership number, exact address, phone, and private contact details stay private.
 - The family wants Las Vegas included in the primary plan, not parked as a potential option.
 - The family still wants a recognizable West Coast first trip rather than a full Southwest desert road trip.
-- The family now has six booked Mountain View / Bay Area nights, one booked Mammoth Lakes night after Yosemite Valley, and a direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley over the former Bakersfield / Tehachapi midpoint.
+- The family now has six booked Mountain View / Bay Area nights, one booked Mammoth Lakes night after Yosemite Valley, a booked Las Vegas Strip stay from July 14-17, and a direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley over the former Bakersfield / Tehachapi midpoint.
 - A July 18 departure from LAX can still arrive Sydney on July 20 after the date-line crossing.
 - The hotel budget target is USD $200-$250 per night, with no booking above $250 per night unless the family explicitly approves it.
 - Las Vegas sightseeing should be planned around July heat: early outdoor time, indoor afternoons, hotel pool/rest time, and evening Strip walks.
@@ -58,7 +58,7 @@
 - Alcatraz is out of the current plan by traveler preference.
 - Yosemite is reduced to one Mammoth Lakes night on July 13, followed by a direct Death Valley transit day to Las Vegas on July 14.
 - Santa Barbara is out of the current plan by traveler preference.
-- The coast and Bay Area now use one booked Santa Maria overnight on July 4, two booked Monterey/Carmel nights from July 5-7, six booked Mountain View / Bay Area nights from July 7-13, and a booked Mammoth Lakes night from July 13-14.
+- The coast, Bay Area, Yosemite / Mammoth Lakes, and Las Vegas now use one booked Santa Maria overnight on July 4, two booked Monterey/Carmel nights from July 5-7, six booked Mountain View / Bay Area nights from July 7-13, a booked Mammoth Lakes night from July 13-14, and a booked Las Vegas Strip stay from July 14-17.
 
 ## Sources
 
@@ -72,6 +72,7 @@
 | Monterey-area hotel is booked from July 5 to July 7, 2026. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi. | Traveler booking | User-provided Bay Area hotel booking details | 2026-06-06 | Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted |
 | Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. Free cancellation runs until July 10, 2026 at 23:59 PDT. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
+| Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one Luxury 2 Queen suite for two adults and two children. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA eligibility needs confirmation before nonrefundable bookings. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |

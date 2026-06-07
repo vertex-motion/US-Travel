@@ -10,13 +10,16 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 - First Los Angeles hotel: booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Central Coast hotel: booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026.
 - Monterey-area hotel: booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026.
+- Bay Area hotel: booked in Mountain View from Tuesday, July 7, 2026 to Monday, July 13, 2026.
+- Mammoth Lakes hotel: booked from Monday, July 13, 2026 to Tuesday, July 14, 2026.
+- Las Vegas hotel: booked on the Strip from Tuesday, July 14, 2026 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
 - Rental car return: Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
 - Day 23: Arrive in Sydney at 7:00 am on Monday, July 20, 2026 after crossing the date line.
 
-Seat assignments, exact hotel names, hotel addresses, prices, and booking references must not be recorded in this public repository.
+Seat assignments, hotel addresses, confirmation numbers, membership numbers, guest names, private contact details, and payment details must not be recorded in this public repository.
 
 ## Day 1: Sunday, June 28 - Arrive Los Angeles
 
@@ -217,21 +220,21 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 
 ## Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
-- Sleep: Las Vegas.
+- Sleep: Booked Las Vegas Strip hotel.
 - Morning: Leave Mammoth Lakes early. Use US-395 toward Lone Pine and CA-190 / Death Valley only if the route remains open and safe.
 - Lunch: Lone Pine, Panamint Springs, Furnace Creek, or a packed car lunch depending on route timing and heat.
 - Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, visitor center if timing works, then continue to Las Vegas.
 - Dinner: Casual Las Vegas dinner near the hotel.
-- Evening: Rest, pool time, or indoor hotel exploration only if everyone has energy.
+- Evening: Check in from 3:00 pm if arrival timing allows. Rest, pool time, or indoor hotel exploration only if everyone has energy.
 - Driving: Very long mountain-to-desert transfer. Re-check Caltrans US-395 / CA-190, Death Valley road status, weather, smoke, heat, and flood risk within 7 days and again the morning of departure. Tioga Road also remains relevant because the family must reach Mammoth Lakes on July 13.
 - Walking: Minimal. Do not plan hikes in Death Valley lower elevations in July.
-- Reservations: Las Vegas hotel with confirmed room occupancy, resort fee, parking, pool access, and cancellation terms.
+- Reservations: Booked Las Vegas Strip hotel for July 14-17 in one Luxury 2 Queen suite for two adults and two children. Confirm resort fee, resort-fee tax, parking, pool access, quiet-room request, cancellation terms, and final folio outside this public repo.
 - Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
 ## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
-- Sleep: Las Vegas.
+- Sleep: Booked Las Vegas Strip hotel.
 - Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
 - Lunch: Food hall, casual resort dining, or nearby mall dining.
 - Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
@@ -244,7 +247,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 
 ## Day 19: Thursday, July 16 - Red Rock or Las Vegas Flex Day
 
-- Sleep: Las Vegas.
+- Sleep: Booked Las Vegas Strip hotel.
 - Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
 - Lunch: Return to hotel or casual indoor lunch.
 - Afternoon: Rest, packing buffer, indoor attraction, or low-key shopping near the hotel.
@@ -258,7 +261,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 ## Day 20: Friday, July 17 - Las Vegas to Los Angeles / LAX Area
 
 - Sleep: Los Angeles, preferably LAX area, Westside, or another departure-friendly base.
-- Morning: Pack and leave Las Vegas after breakfast.
+- Morning: Check out of the booked Las Vegas hotel by 11:00 am, pack, and leave after breakfast.
 - Lunch: Practical route stop. Keep this a logistics day, not a sightseeing day.
 - Afternoon: Arrive Los Angeles, return car if convenient, check in near the departure base.
 - Dinner: Easy final dinner near the hotel.
@@ -324,6 +327,7 @@ Seat assignments, exact hotel names, hotel addresses, prices, and booking refere
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
+| Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one Luxury 2 Queen suite for two adults and two children. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13 Yosemite Valley / Mammoth Lakes crossing |
 | Tioga Road opened for the 2026 season on May 15, 2026, but services along Tioga Road are limited and conditions must be checked before using it for the Death Valley transfer. | National Park Service | [Tioga and Glacier Point roads update](https://www.nps.gov/yose/planyourvisit/tioga.htm) | 2026-06-05 | Current; re-check before July 14 |
 | Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite add-on. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
