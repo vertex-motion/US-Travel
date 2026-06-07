@@ -19,7 +19,7 @@ This page uses one block-level tag before each paragraph, list, or table. Sync b
 - Prefer suites, family rooms, or large rooms with confirmed occupancy for all four travelers.
 - Keep hotel names, exact addresses, prices, confirmation numbers, guest names, membership numbers, phone numbers, private contact details, payment details, and booking references out of this public repository.
 
-<!-- tag: current-plan -->
+<!-- tag: planning-notes -->
 
 - Use LAX as the start and end airport for the selected closed-circle plan.
 - Confirmed flights arrive LAX at 6:10 am on June 28 and depart LAX at 10:45 pm on July 18.
