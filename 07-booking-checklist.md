@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | Confirm final trip dates | Done | Travelers | Confirmed June 28-July 20, 2026 Sydney-to-Sydney. US stay is June 28-July 18. | Done |
 | Confirm LAX closed-circle routing | Done | Travelers | Confirmed flights arrive and depart through LAX. | Done |
-| Confirm Las Vegas as a 3-night primary base | Now | Travelers | Current primary plan keeps Las Vegas at 3 nights before returning to Los Angeles. | Open |
+| Confirm Las Vegas as a 3-night primary base | Done | Travelers | Las Vegas is confirmed through the booked July 14-17 Strip hotel stay before returning to Los Angeles. | Done |
 | Confirm Santa Barbara removal and Central Coast / Route 1 split | Done | Travelers | Santa Barbara is removed by traveler request. Current coast plan uses one booked Santa Maria overnight, two booked Monterey/Carmel nights, and six booked Mountain View / Bay Area nights. | Done |
 | Confirm direct Mammoth-Lakes-to-Las-Vegas via Death Valley strategy | Done | Travelers | Traveler requested a one-night Yosemite / Eastern Sierra stay followed by a direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley. Keep Bakersfield / Tehachapi only as the safety fallback. | Done |
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
@@ -20,8 +20,9 @@
 | Book Mammoth Lakes lodging | Done | Travelers | Booked for Monday, July 13 to Tuesday, July 14, 2026. Booking PIN, exact address, payment details, contact details, and private traveler details are not recorded in this public repo. | Done |
 | Confirm Mammoth Lakes hotel operating details | Before July 10 cancellation deadline | Travelers | Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay in place after Tioga Road, smoke, weather, and same-day timing checks. | Open |
 | Hold a Bakersfield / Tehachapi midpoint fallback only if needed | After route checks | Travelers | Use only as a cancellable safety fallback if Tioga Road, US-395, CA-190, Death Valley heat, smoke, weather, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe. | Optional |
-| Quote remaining one-room family lodging | Now | Travelers | First Los Angeles, Central Coast, Monterey-area, Mountain View / Bay Area, and Mammoth Lakes hotels are booked. Confirm one room or suite for all four at USD $200-$250 per night in each remaining unbooked base before comparing brands. | Open |
-| Quote Las Vegas lodging total cost | Now | Travelers | Include resort fees, taxes, parking, extra-person fees, room occupancy, pool access, and cancellation terms. | Open |
+| Book Las Vegas lodging | Done | Travelers | Booked Las Vegas Strip hotel for Tuesday, July 14 to Friday, July 17, 2026, with one Luxury 2 Queen suite for two adults and two children. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded in this public repo. | Done |
+| Confirm Las Vegas hotel operating details | Before July 10 route/cancellation review | Travelers | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and any incidental hold. | Open |
+| Quote final Los Angeles departure lodging | Now | Travelers | Final LAX-area / Westside / departure-friendly hotel for Friday, July 17 to Saturday, July 18 remains the only main-route hotel quote gap. Confirm one room or suite for all four within the USD $200-$250 target before comparing brands. | Open |
 | Confirm rental car operating details | Before pickup | Travelers | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and after-hours or counter timing for the 8:00 am pickup and 8:00 pm return. | Open |
 
 ## Timed Tickets and Reservations
@@ -36,7 +37,7 @@
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
-| Las Vegas ticketed attraction or show | After hotel is held | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
+| Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
 | Red Rock Canyon, if used | Week before travel and morning of Day 19 | July reservations are not currently required, but re-check entry rules, parking, weather, and fire/closure notices. | Open |
 
 ## Pre-Departure Checks
@@ -52,6 +53,7 @@
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. |
 | Mountain View / Bay Area parking and activity plan | Before finalizing Bay Area daily logistics | Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. |
 | Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. Tioga Road / CA-120 must also be checked for the July 13 Mammoth Lakes arrival. |
+| Las Vegas hotel operating details | Before July 14 arrival | Confirm 3:00 pm check-in, 11:00 am checkout, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, incidental hold, and final folio outside this public repo. |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
 | LAX airport and car return | Day before departure | Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing. |
@@ -83,6 +85,7 @@
 | Monterey-area hotel is booked from July 5 to July 7, 2026. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi. | Traveler booking | User-provided Bay Area hotel booking details | 2026-06-06 | Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted |
 | Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. Free cancellation runs until July 10, 2026 at 23:59 PDT. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
+| Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one Luxury 2 Queen suite for two adults and two children. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | ESTA/Visa Waiver eligibility must be checked before nonrefundable booking. | US Department of State | [Visa Waiver Program](https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html) | 2026-05-08 | Current |
