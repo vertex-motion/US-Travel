@@ -4,9 +4,9 @@
 
 Use this as a planning allowance, not a booked quote. All amounts are in USD unless noted. Convert to AUD when flights and hotels are quoted.
 
-The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. Hyatt Place Pasadena is booked for the first Los Angeles stay, Historic Santa Maria Inn is booked for the Central Coast overnight, Hyatt Regency Monterey is booked for July 5-7, Hotel Avante is booked for the July 7-13 Bay Area stay, Outbound Mammoth is booked for the July 13 east-side Yosemite overnight, and The Venetian is booked for the July 14-17 Las Vegas stay. Exact booking references, payment details, contact details, and private traveler details stay private.
+The selected route starts and ends at LAX with booked United flights. The earlier confirmed arrival adds three Los Angeles hotel nights compared with the prior working plan. Hyatt Place Pasadena is booked for the first Los Angeles stay, Historic Santa Maria Inn is booked for the Central Coast overnight, Hyatt Regency Monterey is booked for July 5-7, Hotel Avante is booked for the July 7-13 Bay Area stay, Outbound Mammoth is booked for the July 13 east-side Yosemite overnight, The Venetian is booked for the July 14-17 Las Vegas stay, and Hyatt Place Pasadena is booked for the final July 17-18 Los Angeles departure night. Exact booking references, payment details, contact details, and private traveler details stay private.
 
-The largest budget risk is still lodging. July is peak season in Los Angeles, the California coast, the Bay Area, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. The Venetian booking includes one high nightly room rate above $250 before taxes/fees, but it keeps the family in one large suite for all four travelers. A confirmed single room or suite for all four travelers remains the key cost-control requirement because two rooms are likely too expensive.
+The largest budget risk is now parking, fees, and final folio drift rather than unbooked lodging. July is peak season in Los Angeles, the California coast, the Bay Area, Yosemite, and Las Vegas resort properties. The hotel target is USD $200-$250 per night, with $250 per night as the maximum unless the family explicitly approves an exception. The Venetian booking includes one high nightly room rate above $250 before taxes/fees, but it keeps the family in one large suite for all four travelers. A confirmed single room or suite for all four travelers remains the key cost-control requirement because two rooms are likely too expensive.
 
 Las Vegas can look cheaper than the California coast on room rate alone. Compare total stay cost, including resort fees, taxes, parking, pool fees or cabana temptations, attraction tickets, and any extra-person charges.
 
@@ -15,7 +15,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Category | Low | Target | High | Basis / source |
 | --- | ---: | ---: | ---: | --- |
 | International flights | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | $4,748.02 / A$6,665.73 | UA 842 SYD-LAX is on Sunday, June 28, 2026. UA 839 LAX-SYD departs on Saturday, July 18, 2026 and arrives in Sydney on Monday, July 20, 2026. Total uses A$6,174.48 in AUD-denominated flight charges plus $349.94 in USD-denominated add-ons, converted using the committed-spend exchange rate below. |
-| Lodging, 20 nights | $4,950 | $5,100 | $5,500 | Hyatt Place Pasadena, Historic Santa Maria Inn, Hyatt Regency Monterey, Hotel Avante, Outbound Mammoth, and The Venetian are recorded below. Remaining lodging should still target $200-$250 per night for the final LAX-area night. Do not exceed $250/night without explicit approval. |
+| Lodging, 20 nights | $5,200 | $5,350 | $5,750 | Hyatt Place Pasadena, Historic Santa Maria Inn, Hyatt Regency Monterey, Hotel Avante, Outbound Mammoth, The Venetian, and the final Hyatt Place Pasadena stay are recorded below. All main-route lodging is now booked; verify final folios and parking. |
 | Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Mammoth Lakes / Death Valley transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Yosemite entrance or pass costs, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
@@ -37,7 +37,8 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 | Hotel Avante | Room $1,147.20 + inferred occupancy tax $114.72 + inferred CA tourism fee $2.24 | $1,264.16 | A$1,774.62 | Booked | July 7-13, 2026 | Not recorded. | Two Double Beds for the family. Rate notes list free parking and free WiFi. Total is inferred from the provided nightly rates and listed tax percentages; confirm final taxes, fees, cancellation terms, and any incidentals. Confirmation number, guest name, membership number, exact address, phone, and other private contact details omitted from this public repo. |
 | Outbound Mammoth | Room $156.87 + other tax $29.45 + resort fee $25.00 | $211.32 | A$296.65 | Booked | July 13-14, 2026 | Free cancellation until July 10, 2026 at 23:59 PDT; cancellation cost from July 11, 2026 at 00:00 is $186.32. | Deluxe 2 Queen Beds for the family. Booking.com automatic card charge expected; booking PIN, links, payment details, contact details, property phone, and children ages omitted from this public repo. |
 | The Venetian | Inferred room $553.39 + county tax $74.06 + resort fees $165.00 + resort-fee tax $22.08 | $814.53 | A$1,143.44 | Booked | July 14-17, 2026 | Not recorded. | Luxury 2 Queen suite for two adults and two children. Nightly room-rate detail appears to be two nights at $136.53 and one night at $280.33; confirm final folio. Package includes a $50 beverage credit per stay. Quiet-room preference requested but subject to availability. Confirmation number, guest name, membership number, exact address, phone, website link, and private contact details omitted from this public repo. |
-| Total committed spend |  | $10,798.82 | A$15,158.43 |  |  |  |  |
+| Hyatt Place Pasadena final night | Room $215.20 + occupancy/state taxes $37.01 | $252.21 | A$354.05 | Booked | July 17-18, 2026 | Not recorded. | Two Queen Beds plus sofa bed for two adults and two children. Self-parking is $35 nightly and is not included in this lodging total. Housekeeping service is chosen at check-in. Confirmation number, member details, rate code, payment card, exact address, phone, website link, and other private traveler details omitted from this public repo. |
+| Total committed spend |  | $11,051.03 | A$15,512.48 |  |  |  |  |
 
 ## Attraction Cost Anchors
 
@@ -69,24 +70,25 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 - Use the booked Hotel Avante stay as the Bay Area lodging baseline; confirm final tax/fee total, cancellation terms, and whether free parking applies for the full stay.
 - Use the booked Outbound Mammoth night as the July 13 east-side Yosemite / Tioga Road lodging baseline; confirm parking, check-in logistics, and any incidentals before arrival.
 - Use the booked The Venetian stay as the July 14-17 Las Vegas lodging baseline; confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.
+- Use the booked Hyatt Place Pasadena final night as the July 17-18 departure buffer baseline; confirm $35/night parking, final folio, housekeeping preference, and Day 21 LAX drive timing.
 - Compare Mountain View self-drive vs. transit/rideshare for the Golden Gate / San Francisco day before locking daily logistics.
 - Keep the Mammoth Lakes night tied to a successful Tioga Road crossing on July 13. If Tioga Road or conditions fail before the free-cancellation deadline, reassess the booking before it becomes nonrefundable.
 - Keep any Bakersfield / Tehachapi midpoint quote as a fallback only. It should reduce driving stress, not become a luxury stop.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
 - In Las Vegas, keep total stay cost visible with resort fees and parking included; do not evaluate the booking by headline room rate alone.
-- Use the final LAX-area night to reduce missed-flight risk; do not turn it into a luxury stay unless the price fits the cap.
+- Use the booked final Pasadena-area night to reduce missed-flight risk, but treat Pasadena-to-LAX traffic and parking as active cost/logistics items.
 - Choose only one Las Vegas paid attraction or show until live prices are known.
 - Treat San Diego and Grand Canyon as extensions, not free add-ons.
 
 ## Remaining Quote Tasks
 
-1. Quote final LAX-area lodging for July 17 with parking, shuttle, or airport-transfer terms included.
-2. Confirm whether Hyatt Regency Monterey charges the $35 nightly resort fee outside the displayed room total.
-3. Confirm Hotel Avante final tax/fee total, cancellation terms, and whether free parking applies for the full July 7-13 stay.
-4. Confirm Outbound Mammoth parking, check-in process, and whether any additional local fees are due at the property.
-5. Confirm The Venetian final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.
+1. Confirm whether Hyatt Regency Monterey charges the $35 nightly resort fee outside the displayed room total.
+2. Confirm Hotel Avante final tax/fee total, cancellation terms, and whether free parking applies for the full July 7-13 stay.
+3. Confirm Outbound Mammoth parking, check-in process, and whether any additional local fees are due at the property.
+4. Confirm The Venetian final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.
+5. Confirm Hyatt Place Pasadena final-night folio, $35/night parking, housekeeping preference, and any incidental hold.
 6. Compare self-driving against Caltrain/rideshare for the Golden Gate day from Mountain View.
-7. Rebuild the budget with the final Los Angeles departure booking and confirmed hotel folios.
+7. Rebuild the budget with confirmed final hotel folios.
 
 ## Sources
 
@@ -102,6 +104,7 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 | Hotel Avante is booked from Tuesday, July 7 to Monday, July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. The room is Two Double Beds for the family. The budget infers $1,264.16 / A$1,774.62 from the supplied nightly rates, 10.000% occupancy tax, and 0.195% CA tourism fee. Rate notes list free parking and free WiFi. | Traveler booking | User-provided Bay Area hotel booking details | 2026-06-06 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Outbound Mammoth is booked through Booking.com from Monday, July 13 to Tuesday, July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. The room is Deluxe 2 Queen Beds for the family, totaling $211.32 / A$296.65. Free cancellation runs until July 10, 2026 at 23:59 PDT; cancellation cost from July 11, 2026 at 00:00 is $186.32. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, links, payment details, contact details, property phone, and children ages intentionally omitted |
 | The Venetian is booked from Tuesday, July 14 to Friday, July 17, 2026, with check-in at 3:00 pm and checkout at 11:00 am. The room is a Luxury 2 Queen suite for two adults and two children. The budget infers $814.53 / A$1,143.44 from two nights at $136.53, one night at $280.33, 13.380% county tax, $55.00 nightly resort fee, and $7.36 nightly resort-fee tax. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, website link, and private contact details intentionally omitted |
+| Hyatt Place Pasadena is booked for the final Los Angeles night from Friday, July 17 to Saturday, July 18, 2026, with check-in at 3:00 pm and checkout at 12:00 pm. The room has two queen beds plus sofa bed for two adults and two children. The budget records $252.21 / A$354.05 from a $215.20 room rate plus 17.000% occupancy tax and 0.200% state tax. Self-parking is listed at $35 nightly and is tracked as parking, not lodging. | Traveler booking | User-provided final Los Angeles hotel booking details | 2026-06-07 | Booked; confirmation number, member details, rate code, payment card, exact address, phone, website link, and other private traveler details intentionally omitted |
 | United fare page supplied a pre-booking planning anchor for Sydney-Los Angeles. | United Airlines | [Sydney to Los Angeles flights](https://www.united.com/en-au/flights-from-sydney-to-los-angeles) | 2026-05-15 | Historical pre-booking fare anchor |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
 | Google Visitor Experience is free to enter; purchases and food are optional. | Google | [Plan your visit](https://visit.withgoogle.com/plan-your-visit/) | 2026-05-31 | Current; re-check events before visit |

@@ -13,6 +13,7 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 - Bay Area hotel: booked in Mountain View from Tuesday, July 7, 2026 to Monday, July 13, 2026.
 - Mammoth Lakes hotel: booked from Monday, July 13, 2026 to Tuesday, July 14, 2026.
 - Las Vegas hotel: booked on the Strip from Tuesday, July 14, 2026 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout.
+- Final Los Angeles hotel: booked in the Pasadena area from Friday, July 17, 2026 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout.
 - Nights in the United States: 20.
 - Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
 - Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
@@ -258,27 +259,27 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
 - Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
 
-## Day 20: Friday, July 17 - Las Vegas to Los Angeles / LAX Area
+## Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
 
-- Sleep: Los Angeles, preferably LAX area, Westside, or another departure-friendly base.
+- Sleep: Booked Pasadena-area final Los Angeles hotel.
 - Morning: Check out of the booked Las Vegas hotel by 11:00 am, pack, and leave after breakfast.
 - Lunch: Practical route stop. Keep this a logistics day, not a sightseeing day.
-- Afternoon: Arrive Los Angeles, return car if convenient, check in near the departure base.
+- Afternoon: Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple.
 - Dinner: Easy final dinner near the hotel.
 - Driving: 4-5 hours before Los Angeles traffic and stops.
 - Walking: Light.
-- Reservations: Final LAX-area hotel with parking, shuttle, or clear airport transfer plan.
+- Reservations: Booked Pasadena-area final Los Angeles hotel for July 17-18, with 3:00 pm check-in and 12:00 pm checkout. Confirm parking charge, family occupancy, housekeeping preference, final folio, and any incidentals outside this public repo.
 - Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
 ## Day 21: Saturday, July 18 - Depart Los Angeles
 
 - Sleep: Overnight flight.
-- Morning: Pack slowly. Avoid major sightseeing.
-- Lunch: Near hotel or airport.
+- Morning: Check out of the booked Pasadena-area final hotel by 12:00 pm. Pack slowly and avoid major sightseeing.
+- Lunch: Pasadena, en route, or near LAX depending on checkout and traffic timing.
 - Afternoon: Use late checkout or a day room if the gap before airport check-in is too long. Keep luggage and car-return timing simple.
 - Evening: Return the booked rental car at Los Angeles International Airport at 8:00 pm, then depart LAX on UA 839 at 10:45 pm.
 - Dinner: Airport or in flight.
-- Driving: Final hotel to LAX rental car return; allow a large buffer for traffic, fuel, luggage, shuttle/terminal transfer, and international check-in.
+- Driving: Pasadena-area hotel to LAX rental car return; allow a large buffer for traffic, fuel, luggage, shuttle/terminal transfer, and international check-in.
 - Walking: Light.
 - Reservations: United UA 839 LAX-SYD international itinerary and booked rental car return at 8:00 pm. Confirm terminal, luggage timing, fuel policy, and check-in buffer.
 - Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
@@ -328,6 +329,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
 | Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
 | Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one Luxury 2 Queen suite for two adults and two children. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
+| Final Los Angeles hotel is booked in the Pasadena area from July 17 to July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout, in one room for two adults and two children. | Traveler booking | User-provided final Los Angeles hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13 Yosemite Valley / Mammoth Lakes crossing |
 | Tioga Road opened for the 2026 season on May 15, 2026, but services along Tioga Road are limited and conditions must be checked before using it for the Death Valley transfer. | National Park Service | [Tioga and Glacier Point roads update](https://www.nps.gov/yose/planyourvisit/tioga.htm) | 2026-06-05 | Current; re-check before July 14 |
 | Mariposa Grove shuttle hours and seasonal road access must be checked before using the grove as a Yosemite add-on. | National Park Service | [Mariposa Grove](https://www.nps.gov/yose/planyourvisit/mg.htm) | 2026-05-31 | Current; one-night Yosemite plan is Valley-first |
