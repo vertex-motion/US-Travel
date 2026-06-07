@@ -40,6 +40,22 @@ Use these rules when writing or updating technical documents, including skills, 
 - Remove template prompts, stale summaries, and duplicate guidance when the surrounding content already answers the question.
 - When repetition remains intentional, make each instance serve a distinct purpose, such as summary, action checklist, rationale, or source evidence.
 
+## Planning File Purposes
+
+Use these files for their assigned planning roles.
+
+| Page | Purpose |
+| --- | --- |
+| `01-trip-purpose.md` | Traveler intent, preferences, constraints, and travel style. |
+| `02-current-plan-options.md` | Chosen route shape, rationale, alternatives, and tradeoffs. |
+| `03-potential-options.md` | Registry of every considered route, place, lodging, logistics, or split-family option. |
+| `04-daily-itinerary.md` | Day-by-day plan: sleep location, activities, transfers, backups, and source notes. |
+| `05-lodging-transport.md` | Lodging bases and transport logistics: hotels, car, airports, parking, luggage, buffers, and route operating checks. |
+| `06-budget.md` | Costs, ranges, committed spend, and financial assumptions. |
+| `07-booking-checklist.md` | Booking, reservation, document, timed-entry, and verification tasks. |
+| `08-open-questions.md` | Unresolved decisions, research gaps, and assumptions that need confirmation. |
+| `index.html` | Presentation view generated from the planning files; exclude `06-budget.md` unless explicitly requested. |
+
 ## Planning Content Tags
 
 Use planning tags to mark what each text block is for.
