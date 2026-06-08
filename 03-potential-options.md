@@ -1,5 +1,6 @@
 # Potential Options
 
+<!-- tag: planning-notes -->
 | Name | Interest (0-10) | Link | Category | Description | Current fit / trade-off | Reconsider if |
 | --- | ---: | --- | --- | --- | --- | --- |
 | LAX closed-circle primary route | 0 | [Current plan options](02-current-plan-options.md) | Route and Region | Selected loop from Los Angeles to a one-night Central Coast / Route 1 stop, Monterey / Carmel, a six-night booked Mountain View / Bay Area base, one Mammoth Lakes night after Yosemite Valley, a direct Death Valley transit day to a booked Las Vegas Strip stay, and back to Los Angeles. | Current primary route. It matches the booked LAX flights, removes Santa Barbara by traveler request, keeps the West Coast plus Las Vegas structure, uses booked Santa Maria, Monterey-area, Mountain View, Mammoth Lakes, and Las Vegas lodging anchors, and gives the Bay Area the extra nights before the Yosemite / Death Valley transfer. | Live route timing, lodging cost, Highway 1 conditions, Tioga Road, Death Valley heat/road status, Bay Area commute friction, or family energy makes the coast, Yosemite, Las Vegas, or Las Vegas-to-LAX legs too costly. |
@@ -122,6 +123,7 @@
 
 ## Do Not Book Guardrails
 
+<!-- tag: constraints -->
 - Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.
 - Do not book Alcatraz unless the family explicitly reverses the current decision to skip it.
 - Do not add San Diego unless the family extends the return date or removes another region.
@@ -137,6 +139,7 @@
 
 ## Booking Sources
 
+<!-- tag: sources -->
 | Source | Original page | Accessed | Supported additions |
 | --- | --- | --- | --- |
 | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Supports the booked Pasadena-area first hotel for June 28-July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference intentionally omitted. |

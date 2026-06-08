@@ -2,6 +2,7 @@
 
 ## Planning and Booking Tasks
 
+<!-- tag: to-confirm -->
 | Task | When | Owner | Notes | Status |
 | --- | --- | --- | --- | --- |
 | Confirm final trip dates | Done | Travelers | Confirmed June 28-July 20, 2026 Sydney-to-Sydney. US stay is June 28-July 18. | Done |
@@ -23,6 +24,7 @@
 
 ## Timed Reservations
 
+<!-- tag: to-confirm -->
 | Task | Target timing | Notes | Status |
 | --- | --- | --- | --- |
 | Getty Center | When July 2026 calendar is available | Check parking and any timed-entry rules for the selected LA day. | Open |
@@ -38,6 +40,7 @@
 
 ## Pre-Departure Tasks
 
+<!-- tag: to-confirm -->
 | Task | When | Required action | Status |
 | --- | --- | --- | --- |
 | Confirm Mountain View hotel operating details | Now | Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. | Open |
@@ -62,6 +65,7 @@
 
 ## During-Trip Tasks
 
+<!-- tag: to-confirm -->
 | Task | When | Required action | Status |
 | --- | --- | --- | --- |
 | Re-check road and weather conditions before long transfer days | Morning of each transfer | Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day. | Open |
@@ -72,6 +76,7 @@
 
 ## After-Trip Tasks
 
+<!-- tag: to-confirm -->
 | Task | When | Required action | Status |
 | --- | --- | --- | --- |
 | Check rental car deposit release | After car return | Confirm any temporary hold is released and no unexpected toll, fuel, or damage charge appears. | Open |
@@ -80,6 +85,7 @@
 
 ## Sources
 
+<!-- tag: sources -->
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |

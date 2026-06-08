@@ -2,6 +2,7 @@
 
 ## Family
 
+<!-- tag: constraints -->
 - Alexey, 39
 - Ana, 39
 - 13-year-old teen
@@ -14,20 +15,24 @@
 
 ## Why We Are Taking This Trip
 
+<!-- tag: planning-notes -->
 This is the family's first trip to explore the United States, with a particular focus on the West Coast because flying to the East Coast would be too long.
 
 ## What We Want To See
 
+<!-- tag: constraints -->
 - Famous landmarks and recognizable West Coast places.
 - Las Vegas as a primary stop, not only a parked or optional detour.
 - Everyday experiences that help the family blend a little into US life, not only visit tourist sights.
 
 ## What We Do Not Want To See
 
+<!-- tag: constraints -->
 - TBD
 
 ## Travel Timing
 
+<!-- tag: current-plan -->
 - Confirmed travel window: Sunday, June 28, 2026 to Monday, July 20, 2026, Sydney-to-Sydney.
 - Confirmed US stay: Sunday, June 28, 2026 to Saturday, July 18, 2026, arriving and departing through LAX.
 - Trip duration: 23 calendar days including flights and the date-line crossing.
@@ -38,6 +43,7 @@ This is the family's first trip to explore the United States, with a particular 
 
 ## Travel Style
 
+<!-- tag: constraints -->
 - Pace: Slow, ideally one sightseeing stop per day. Two smaller sights can fit into one day if they are adjacent.
 - Driving tolerance: 3-4 hours in the car during a local sightseeing day; 10-12 hours only when moving to another city.
 - Walking tolerance: 15km
@@ -48,6 +54,7 @@ This is the family's first trip to explore the United States, with a particular 
 
 ## Planning Principles
 
+<!-- tag: planning-notes -->
 - Prefer experiences that match the family's interests.
 - Leave enough rest time between major activities.
 - Avoid adding stops only because they are famous.
