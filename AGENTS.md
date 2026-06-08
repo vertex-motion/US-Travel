@@ -53,7 +53,7 @@ Use these files for their assigned planning roles.
 | `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, car, airports, parking, luggage, buffers, route conditions, and fallback lodging. |
 | `06-budget.md` | Use for costs, ranges, committed spend, quote assumptions, exchange rates, and cost-control notes. Do not sync it into `index.html`. |
 | `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, and follow-up tasks. |
-| `08-open-questions.md` | Use for unresolved decisions, research gaps, and assumptions that need confirmation. Move resolved tasks to `07-checklist.md` or resolved decisions to the relevant canonical file. |
+| `08-open-questions.md` | Use only for unresolved traveler decisions that need a choice before they can move into itinerary, logistics, budget, option, or checklist files. |
 | `index.html` | Use as the presentation view generated from planning files `01-05` and `07-08`; exclude `06-budget.md` unless explicitly requested. |
 
 ## Planning Content Tags
