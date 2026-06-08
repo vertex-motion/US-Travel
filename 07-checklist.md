@@ -1,15 +1,5 @@
 # Checklist
 
-## Scope
-
-Use this page as the single source for tasks the travelers need to do before, during, and after the trip.
-
-- Keep booking guardrails and rejected booking options in `03-potential-options.md`.
-- Keep the day-by-day plan in `04-daily-itinerary.md`.
-- Keep logistics constraints and route-condition requirements in `05-trip-logistics.md`.
-- Keep cost tracking and committed spend in `06-budget.md`.
-- Keep unresolved traveler decisions in `08-open-questions.md`.
-
 ## Planning and Booking Tasks
 
 | Task | When | Owner | Notes | Status |

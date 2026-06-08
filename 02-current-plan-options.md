@@ -2,10 +2,8 @@
 
 ## Planning Brief
 
-- Canonical traveler intent and pace constraints live in `01-trip-purpose.md`.
 - Confirmed window: June 28-July 20, 2026, Sydney-to-Sydney, with 20 US hotel nights.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
-- Canonical option registry: `03-potential-options.md` contains every found selected, retained, parked, and rejected option, plus the 0-10 family interest score used when planning changes.
 - Route theme: Los Angeles arrival recovery, Pacific coast, a six-night booked Mountain View / Bay Area block for Golden Gate, Stanford, Silicon Valley technology stops, and rest buffers, a confirmed Mammoth Lakes night after a same-day Yosemite Valley visit and Tioga Road crossing, a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley, and a booked Las Vegas Strip city-resort finale before returning to LAX.
 - Planning posture: Las Vegas remains a primary stop. The closed-circle requirement is met by returning from Las Vegas to Los Angeles for the final departure.
 - Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.

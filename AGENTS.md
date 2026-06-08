@@ -42,19 +42,26 @@ Use these rules when writing or updating technical documents, including skills, 
 
 ## Planning File Purposes
 
-Use these files for their assigned planning roles.
+Use these files for their assigned planning roles. Keep scope rules here instead of repeating them inside planning files.
 
 | Page | Purpose |
 | --- | --- |
 | `01-trip-purpose.md` | Use for traveler intent, preferences, constraints, dates, pace, and planning principles. Do not store route options, tasks, or costs here. |
 | `02-current-plan-options.md` | Use for the selected route, retained alternatives, route rationale, and major tradeoffs. Link option details back to `03-potential-options.md`. |
-| `03-potential-options.md` | Use as the registry for every considered route, place, lodging, logistics, booking guardrail, rejected option, and split-family option. Keep interest scores here. |
+| `03-potential-options.md` | Use as the registry for every considered route, place, lodging, logistics, booking guardrail, rejected booking move, split-family option, selected option, retained option, parked option, and rejected option. Keep interest scores, current-fit notes, decision triggers, and do-not-book guardrails here. |
 | `04-daily-itinerary.md` | Use for the day-by-day plan: sleep location, activities, transfers, backups, and source notes. Do not store cross-trip logistics or task ownership here. |
-| `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, car, airports, parking, luggage, buffers, route conditions, and fallback lodging. |
+| `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, rental car operation, airport buffers, parking, luggage, route-condition decisions, and fallback lodging. Do not store exact day-by-day schedules, sleep lines, costs, committed spend, traveler tasks, deadlines, or unresolved decisions here. |
 | `06-budget.md` | Use for costs, ranges, committed spend, quote assumptions, exchange rates, and cost-control notes. Do not sync it into `index.html`. |
-| `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, and follow-up tasks. |
-| `08-open-questions.md` | Use only for unresolved traveler decisions that need a choice before they can move into itinerary, logistics, budget, option, or checklist files. |
+| `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, deadlines, verification work, and follow-up tasks. Do not store booking guardrails, rejected booking options, day-by-day plans, logistics constraints, route-condition requirements, cost tracking, committed spend, or unresolved traveler decisions here. |
+| `08-open-questions.md` | Use only for unresolved traveler decisions that need a choice before they can move into itinerary, logistics, budget, option, or checklist files. Do not store actionable tasks, verification work, deadlines, during-trip checks, stable route facts, booking facts, selected options, retained options, parked options, rejected options, conditional options, cost controls, cost ranges, or quote checks here. |
 | `index.html` | Use as the presentation view generated from planning files `01-05` and `07-08`; exclude `06-budget.md` unless explicitly requested. |
+
+Use this routing when moving unresolved choices out of `08-open-questions.md`:
+
+- Put actionable tasks, verification work, deadlines, and during-trip checks in `07-checklist.md`.
+- Put stable route and booking facts in `02-current-plan-options.md`, `04-daily-itinerary.md`, or `05-trip-logistics.md`.
+- Put selected, retained, parked, rejected, and conditional options in `03-potential-options.md`.
+- Put cost controls, cost ranges, and quote checks in `06-budget.md`.
 
 ## Planning Content Tags
 
