@@ -1,8 +1,18 @@
-# Booking Checklist
+# Checklist
 
-## Book First
+## Scope
 
-| Task | When to do it | Owner | Notes | Status |
+Use this page as the single source for tasks the travelers need to do before, during, and after the trip.
+
+- Keep booking guardrails and rejected booking options in `03-potential-options.md`.
+- Keep the day-by-day plan in `04-daily-itinerary.md`.
+- Keep logistics constraints and route-condition requirements in `05-trip-logistics.md`.
+- Keep cost tracking and committed spend in `06-budget.md`.
+- Keep open decisions and research gaps in `08-open-questions.md`.
+
+## Planning and Booking Tasks
+
+| Task | When | Owner | Notes | Status |
 | --- | --- | --- | --- | --- |
 | Confirm final trip dates | Done | Travelers | Confirmed June 28-July 20, 2026 Sydney-to-Sydney. US stay is June 28-July 18. | Done |
 | Confirm LAX closed-circle routing | Done | Travelers | Confirmed flights arrive and depart through LAX. | Done |
@@ -11,22 +21,17 @@
 | Confirm direct Mammoth-Lakes-to-Las-Vegas via Death Valley strategy | Done | Travelers | Traveler requested a one-night Yosemite / Eastern Sierra stay followed by a direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley. Keep Bakersfield / Tehachapi only as the safety fallback. | Done |
 | Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
-| Book rental car | Done | Travelers | LAX pickup on Sunday, June 28, 2026 at 8:00 am; LAX return on Saturday, July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
-| Book first Los Angeles hotel | Done | Travelers | Booked in the Pasadena area from Sunday, June 28 to Saturday, July 4, 2026. Check-in is 3:00 pm and checkout is 12:00 pm. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
-| Book Central Coast / Route 1 overnight lodging | Done | Travelers | Booked Santa Maria hotel for Saturday, July 4 to Sunday, July 5, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
-| Book Monterey / Carmel lodging | Done | Travelers | Booked Monterey-area hotel for Sunday, July 5 to Tuesday, July 7, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
-| Book San Francisco / Bay Area lodging | Done | Travelers | Booked in Mountain View for Tuesday, July 7 to Monday, July 13, 2026. Exact address, confirmation number, guest name, membership number, phone, and contact details are not recorded in this public repo. | Done |
-| Confirm Mountain View hotel operating details | Now | Travelers | Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. | Open |
-| Book Mammoth Lakes lodging | Done | Travelers | Booked for Monday, July 13 to Tuesday, July 14, 2026. Booking PIN, exact address, payment details, contact details, and private traveler details are not recorded in this public repo. | Done |
-| Confirm Mammoth Lakes hotel operating details | Before July 10 cancellation deadline | Travelers | Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay in place after Tioga Road, smoke, weather, and same-day timing checks. | Open |
-| Hold a Bakersfield / Tehachapi midpoint fallback only if needed | After route checks | Travelers | Use only as a cancellable safety fallback if Tioga Road, US-395, CA-190, Death Valley heat, smoke, weather, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe. | Optional |
-| Book Las Vegas lodging | Done | Travelers | Booked Las Vegas Strip hotel for Tuesday, July 14 to Friday, July 17, 2026, with one Luxury 2 Queen suite for two adults and two children. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded in this public repo. | Done |
-| Confirm Las Vegas hotel operating details | Before July 10 route/cancellation review | Travelers | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and any incidental hold. | Open |
-| Book final Los Angeles departure lodging | Done | Travelers | Booked Pasadena-area hotel for Friday, July 17 to Saturday, July 18, 2026, with one room for two adults and two children. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded in this public repo. | Done |
-| Confirm final Los Angeles hotel operating details | Before July 17 arrival | Travelers | Confirm $35/night parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and Day 21 Pasadena-to-LAX drive buffer. | Open |
-| Confirm rental car operating details | Before pickup | Travelers | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and after-hours or counter timing for the 8:00 am pickup and 8:00 pm return. | Open |
+| Book rental car | Done | Travelers | LAX pickup on June 28, 2026 at 8:00 am; LAX return on July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
+| Book first Los Angeles hotel | Done | Travelers | Booked in the Pasadena area from June 28 to July 4, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
+| Book Central Coast / Route 1 overnight lodging | Done | Travelers | Booked Santa Maria hotel for July 4-5, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
+| Book Monterey / Carmel lodging | Done | Travelers | Booked Monterey-area hotel for July 5-7, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
+| Book San Francisco / Bay Area lodging | Done | Travelers | Booked in Mountain View for July 7-13, 2026. Exact address, confirmation number, guest name, membership number, phone, and contact details are not recorded in this public repo. | Done |
+| Book Mammoth Lakes lodging | Done | Travelers | Booked for July 13-14, 2026. Booking PIN, exact address, payment details, contact details, and private traveler details are not recorded in this public repo. | Done |
+| Hold a Bakersfield / Tehachapi midpoint fallback only if needed | After route checks | Travelers | Use only as a cancellable safety fallback if road, heat, smoke, weather, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe. | Optional |
+| Book Las Vegas lodging | Done | Travelers | Booked Las Vegas Strip hotel for July 14-17, 2026, with one Luxury 2 Queen suite for two adults and two children. Private booking details are not recorded in this public repo. | Done |
+| Book final Los Angeles departure lodging | Done | Travelers | Booked Pasadena-area hotel for July 17-18, 2026, with one room for two adults and two children. Private booking details are not recorded in this public repo. | Done |
 
-## Timed Tickets and Reservations
+## Timed Reservations
 
 | Task | Target timing | Notes | Status |
 | --- | --- | --- | --- |
@@ -39,41 +44,48 @@
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
 | Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
-| Red Rock Canyon, if used | Week before travel and morning of Day 19 | July reservations are not currently required, but re-check entry rules, parking, weather, and fire/closure notices. | Open |
+| Red Rock Canyon, if used | Week before travel and morning of Day 19 | Re-check entry rules, parking, weather, and fire/closure notices. | Open |
 
-## Pre-Departure Checks
+## Pre-Departure Tasks
 
-| Check | When | Required action |
-| --- | --- | --- |
-| Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. |
-| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm 3:00 pm check-in, 12:00 pm checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. |
-| Santa Maria hotel operating details | Before July 4 arrival | Confirm check-in time, checkout time, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo. |
-| Monterey-area hotel operating details | Before July 5 arrival | Confirm check-in time, checkout time, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo. |
-| Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. |
-| Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. |
-| July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. |
-| Mountain View / Bay Area parking and activity plan | Before finalizing Bay Area daily logistics | Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. |
-| Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. Tioga Road / CA-120 must also be checked for the July 13 Mammoth Lakes arrival. |
-| Las Vegas hotel operating details | Before July 14 arrival | Confirm 3:00 pm check-in, 11:00 am checkout, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, incidental hold, and final folio outside this public repo. |
-| Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. |
-| Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. |
-| Final Pasadena hotel to LAX drive timing | Day before departure | Choose checkout timing, fuel stop, LAX route, rental car return buffer, and whether any late checkout or luggage plan is useful. |
-| LAX airport and car return | Day before departure | Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing. |
+| Task | When | Required action | Status |
+| --- | --- | --- | --- |
+| Confirm Mountain View hotel operating details | Now | Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. | Open |
+| Confirm Mammoth Lakes hotel operating details | Before July 10 cancellation deadline | Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay after Tioga Road, smoke, weather, and same-day timing checks. | Open |
+| Confirm Las Vegas hotel operating details | Before July 14 arrival | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and any incidental hold. | Open |
+| Confirm final Los Angeles hotel operating details | Before July 17 arrival | Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and Pasadena-to-LAX drive buffer. | Open |
+| Confirm rental car operating details | Before pickup | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and counter timing. | Open |
+| Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
+| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm check-in, checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. | Open |
+| Santa Maria hotel operating details | Before July 4 arrival | Confirm check-in, checkout, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
+| Monterey-area hotel operating details | Before July 5 arrival | Confirm check-in, checkout, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
+| Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |
+| Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
+| July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. | Open |
+| Mountain View / Bay Area parking and activity plan | Before finalizing Bay Area daily logistics | Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. | Open |
+| Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. | Open |
+| Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. | Open |
+| Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. | Open |
+| Final Pasadena hotel to LAX drive timing | Day before departure | Choose checkout timing, fuel stop, LAX route, rental car return buffer, and whether any late checkout or luggage plan is useful. | Open |
+| LAX airport and car return | Day before departure | Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing. | Open |
 
-## Do Not Book
+## During-Trip Tasks
 
-- Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.
-- Do not book Alcatraz unless the family explicitly reverses the current decision to skip it.
-- Do not add San Diego unless the family extends the return date or removes another region.
-- Do not turn the Death Valley transfer into a hiking day or a long exposed sightseeing day; keep it paved, brief, and conditional on heat and road checks.
-- Do not book any hotel above USD $250 per night unless the family explicitly approves the exception.
-- Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.
-- Do not book a Las Vegas hotel from headline room rate alone; include resort fees, taxes, parking, and occupancy terms.
-- Do not book multiple Las Vegas paid attractions until hotel, heat plan, and one anchor attraction are confirmed.
-- Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.
-- Do not book a same-day Las Vegas-to-LAX drive plus international departure unless the family explicitly accepts the missed-flight risk.
-- Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer.
-- Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route.
+| Task | When | Required action | Status |
+| --- | --- | --- | --- |
+| Re-check road and weather conditions before long transfer days | Morning of each transfer | Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day. | Open |
+| Keep daily pacing realistic | Every day | Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows. | Open |
+| Review next-day logistics each evening | Every evening | Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day. | Open |
+| Keep Las Vegas heat-aware | Las Vegas days | Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel. | Open |
+| Protect LAX departure buffer | Final Los Angeles day | Prioritize fuel, rental return, terminal transfer, luggage, and international check-in over sightseeing. | Open |
+
+## After-Trip Tasks
+
+| Task | When | Required action | Status |
+| --- | --- | --- | --- |
+| Check rental car deposit release | After car return | Confirm any temporary hold is released and no unexpected toll, fuel, or damage charge appears. | Open |
+| Review hotel final folios | After each stay or after return | Confirm taxes, resort fees, parking, and incidentals match expectations. | Open |
+| Archive useful notes | After return | Record route lessons, family pacing notes, and lodging/logistics lessons for a future US trip. | Optional |
 
 ## Sources
 

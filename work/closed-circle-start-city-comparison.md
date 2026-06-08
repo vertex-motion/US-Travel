@@ -94,9 +94,9 @@ The LAX closed-circle recommendation has been promoted into the canonical trip f
 | --- | --- | --- | --- |
 | `02-current-plan-options.md` | Current plan now uses LAX as the selected closed-circle gateway. | Done. | Confirm after live quotes. |
 | `04-daily-itinerary.md` | Day order now follows LAX -> Santa Barbara -> Monterey -> San Francisco -> Yosemite -> Las Vegas -> LAX. | Done. | Review the Yosemite-to-Las-Vegas transfer. |
-| `05-lodging-transport.md` | Rental car pickup/return and first/last hotel strategy now center on LAX. | Done. | Decide Day 1 vs. Day 6/7 car pickup after hotel quotes. |
+| `05-trip-logistics.md` | Rental car pickup/return and first/last hotel strategy now center on LAX. | Done. | Decide Day 1 vs. Day 6/7 car pickup after hotel quotes. |
 | `06-budget.md` | Airfare and rental-car assumptions now use SYD-LAX-SYD and LAX-to-LAX as baselines. | Done. | Run live quote round. |
-| `07-booking-checklist.md` | Flight quote tasks now prioritize the LAX closed loop. | Done. | Confirm dates before bookings. |
+| `07-checklist.md` | Flight quote tasks now prioritize the LAX closed loop. | Done. | Confirm dates before bookings. |
 
 ## Sources
 
@@ -113,4 +113,4 @@ The LAX closed-circle recommendation has been promoted into the canonical trip f
 | SFO has BART connection to downtown San Francisco. | BART | https://www.bart.gov/guide/airport/sfo | 2026-05-15 | Current |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | https://www.lawa.org/commutelax/transit | 2026-05-15 | Current |
 | LAS is two miles from the Las Vegas Strip and 15 miles from downtown. | Harry Reid International Airport | https://www.lasairport.com/Directions | 2026-05-15 | Current |
-| Existing route constraints, family pace, and previous open-jaw plan. | Repository planning files | `01-trip-purpose.md`, `02-current-plan-options.md`, `05-lodging-transport.md` | 2026-05-15 | Local planning source |
+| Existing route constraints, family pace, and previous open-jaw plan. | Repository planning files | `01-trip-purpose.md`, `02-current-plan-options.md`, `05-trip-logistics.md` | 2026-05-15 | Local planning source |
