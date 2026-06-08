@@ -2,6 +2,7 @@
 
 ## Planning Brief
 
+<!-- tag: current-plan -->
 - Confirmed window: June 28-July 20, 2026, Sydney-to-Sydney, with 20 US hotel nights.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
 - Route theme: Los Angeles arrival recovery, Pacific coast, a six-night booked Mountain View / Bay Area block for Golden Gate, Stanford, Silicon Valley technology stops, and rest buffers, a confirmed Mammoth Lakes night after a same-day Yosemite Valley visit and Tioga Road crossing, a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley, and a booked Las Vegas Strip city-resort finale before returning to LAX.
@@ -14,6 +15,7 @@
 
 ## Selected Route
 
+<!-- tag: current-plan -->
 **Recommendation:** Use this LAX closed-circle route for the primary version of the trip.
 
 | Segment | Base | Nights | Key sights | Approx. transfer | Notes |
@@ -29,6 +31,7 @@
 
 ## Included Options
 
+<!-- tag: current-plan -->
 | Option in the plan | Why it remains included | Where it appears |
 | --- | --- | --- |
 | Closed-circle flights: SYD-LAX-SYD | United flights are booked into and out of LAX, preserving the closed-circle structure and avoiding one-way international flight complexity. | Flight details in `04-daily-itinerary.md`; booked status in `07-checklist.md`. |
@@ -51,6 +54,7 @@
 
 ## Retained Alternatives
 
+<!-- tag: fallback -->
 | Option kept available | Why it remains in the plan set | Decision trigger |
 | --- | --- | --- |
 | SFO start/end closed circle | It gives a pleasant arrival and San Francisco-first pacing, but closing the loop after Las Vegas creates too much unattractive driving. | Use only if SFO fares are meaningfully cheaper than LAX and the family accepts a route reshuffle. |
@@ -67,6 +71,7 @@
 
 ## Known Tradeoffs
 
+<!-- tag: planning-notes -->
 - The closed-circle LAX route improves flight competition and rental-car simplicity, but it adds a final Las Vegas-to-Los Angeles return leg.
 - The Mammoth-Lakes-to-Las-Vegas transfer is now direct through Death Valley by traveler request. It is the hardest route day and must be treated as a scenic transit with minimal walking and a real fallback.
 - The booked Pasadena-area final Los Angeles night protects the international departure but adds a final-day drive to LAX. Keep Day 21 light and leave a large traffic buffer.
@@ -89,6 +94,7 @@
 
 ## Open Decisions
 
+<!-- tag: to-confirm -->
 | Question | Why it matters | Recommended default | Move to |
 | --- | --- | --- | --- |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. | Update Day 13 in `04-daily-itinerary.md` and timed reservations in `07-checklist.md`. |
@@ -100,6 +106,7 @@
 
 ## Sources
 
+<!-- tag: sources -->
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |

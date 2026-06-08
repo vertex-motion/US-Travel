@@ -2,6 +2,7 @@
 
 ## Confirmed Dates
 
+<!-- tag: current-plan -->
 Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 
 - Day 1: Depart Sydney at 9:30 am and arrive in Los Angeles at 6:10 am on Sunday, June 28, 2026.
@@ -24,6 +25,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 
 ## Day 1: Sunday, June 28 - Arrive Los Angeles
 
+<!-- tag: traveler-notes -->
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
 - Afternoon: Check in at 3:00 pm if the room is ready, unpack, nap, hotel pool, or a short pram-friendly Pasadena-area walk.
@@ -308,6 +310,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 
 ## Sources
 
+<!-- tag: sources -->
 | Fact or decision supported | Source | Original page | Accessed | Status |
 | --- | --- | --- | --- | --- |
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
