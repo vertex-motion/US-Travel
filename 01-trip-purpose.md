@@ -1,7 +1,5 @@
 # Trip Purpose
 
-Use this file as the canonical source for traveler intent, constraints, and preferences.
-
 ## Family
 
 - Alexey, 39

@@ -1,9 +1,5 @@
 # Potential Options
 
-Use this table as the golden source for every route, attraction, logistics, lodging, and split-family option found for the July 2026 trip. Include options that are selected, retained as fallbacks, parked, or rejected. Keep the row names, categories, current-fit notes, interest scores, and decision triggers aligned with the Potential Options dashboard in [index.html](index.html#potential).
-
-Interest score uses `0` when the family has not provided input. Use `1` for very low interest and `10` for highest interest. Planning must check this table before adding or removing options in the itinerary, route plan, lodging plan, budget, checklist, or open questions.
-
 | Name | Interest (0-10) | Link | Category | Description | Current fit / trade-off | Reconsider if |
 | --- | ---: | --- | --- | --- | --- | --- |
 | LAX closed-circle primary route | 0 | [Current plan options](02-current-plan-options.md) | Route and Region | Selected loop from Los Angeles to a one-night Central Coast / Route 1 stop, Monterey / Carmel, a six-night booked Mountain View / Bay Area base, one Mammoth Lakes night after Yosemite Valley, a direct Death Valley transit day to a booked Las Vegas Strip stay, and back to Los Angeles. | Current primary route. It matches the booked LAX flights, removes Santa Barbara by traveler request, keeps the West Coast plus Las Vegas structure, uses booked Santa Maria, Monterey-area, Mountain View, Mammoth Lakes, and Las Vegas lodging anchors, and gives the Bay Area the extra nights before the Yosemite / Death Valley transfer. | Live route timing, lodging cost, Highway 1 conditions, Tioga Road, Death Valley heat/road status, Bay Area commute friction, or family energy makes the coast, Yosemite, Las Vegas, or Las Vegas-to-LAX legs too costly. |
@@ -125,8 +121,6 @@ Interest score uses `0` when the family has not provided input. Use `1` for very
 | Book Yosemite outside the park by default | 0 | [Trip logistics](05-trip-logistics.md) | Logistics and Pacing | Default lodging strategy outside Yosemite Valley or park lodging. | Partly selected through the booked Mammoth Lakes night, which stages the Death Valley transfer better than a west-side Yosemite base but reduces same-day Yosemite Valley margin. | Inside-park lodging is unavailable or poor value, or Mammoth Lakes remains the best route-stage for the July 14 Death Valley transfer. |
 
 ## Do Not Book Guardrails
-
-Use this section as the canonical source for booking guardrails, rejected booking moves, and options that need explicit traveler approval before they can return to the checklist.
 
 - Do not book Warner Bros. Studio Tour for this trip unless the younger child is not attending. Children under 5 are not allowed.
 - Do not book Alcatraz unless the family explicitly reverses the current decision to skip it.
