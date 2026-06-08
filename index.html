@@ -1325,8 +1325,8 @@
           <button class="tab-button" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="potential">Potential Options</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="itinerary">Itinerary</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="lodging">Lodging</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Booking</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="lodging">Trip Logistics</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Checklist</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="decisions">Decisions</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
         </div>
@@ -1393,6 +1393,18 @@
             </div>
           </div>
         </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Do Not Book</h2>
+              <p class="panel-kicker">Guardrails from 03-potential-options.md</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <ul class="list" id="doNotBook"></ul>
+          </div>
+        </section>
       </section>
 
       <section class="view" id="itinerary" role="tabpanel">
@@ -1428,8 +1440,8 @@
           <section class="panel flat">
             <div class="panel-header">
               <div>
-                <h2 class="panel-title">Current Anchors</h2>
-                <p class="panel-kicker">Synced from current-plan blocks in 05-lodging-transport.md</p>
+                <h2 class="panel-title">Base Strategy</h2>
+                <p class="panel-kicker">Synced from traveler-notes base strategy in 05-trip-logistics.md</p>
               </div>
             </div>
             <div class="panel-body">
@@ -1441,7 +1453,7 @@
             <div class="panel-header">
               <div>
                 <h2 class="panel-title">Transport Plan</h2>
-                <p class="panel-kicker">LAX closed-circle route and car timing</p>
+                <p class="panel-kicker">LAX closed-circle route and car operating strategy</p>
               </div>
             </div>
             <div class="panel-body">
@@ -1454,7 +1466,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Traveler Notes</h2>
-              <p class="panel-kicker">Synced from traveler-notes blocks in 05-lodging-transport.md</p>
+              <p class="panel-kicker">Synced from traveler-notes blocks in 05-trip-logistics.md</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1466,7 +1478,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">To Confirm</h2>
-              <p class="panel-kicker">Synced from to-confirm blocks in 05-lodging-transport.md</p>
+              <p class="panel-kicker">Synced from to-confirm blocks in 05-trip-logistics.md</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1486,8 +1498,8 @@
         <section class="panel flat">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Booking Checklist</h2>
-              <p class="panel-kicker">Canonical source: 07-booking-checklist.md</p>
+              <h2 class="panel-title">Checklist</h2>
+              <p class="panel-kicker">Canonical source: 07-checklist.md</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1526,7 +1538,7 @@
           <div class="panel-body">
             <div class="table-wrap">
               <table class="mini-table">
-                <thead><tr><th>Check</th><th>When</th><th>Required action</th></tr></thead>
+                <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
                 <tbody id="preDepartureRows"></tbody>
               </table>
             </div>
@@ -1536,14 +1548,37 @@
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Do Not Book</h2>
-              <p class="panel-kicker">Guardrails from the current booking checklist.</p>
+              <h2 class="panel-title">During Trip</h2>
+              <p class="panel-kicker">Tasks to repeat while traveling.</p>
             </div>
           </div>
           <div class="panel-body">
-            <ul class="list" id="doNotBook"></ul>
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
+                <tbody id="duringTripRows"></tbody>
+              </table>
+            </div>
           </div>
         </section>
+
+        <section class="panel flat" style="margin-top: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">After Trip</h2>
+              <p class="panel-kicker">Follow-up tasks after returning home.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
+                <tbody id="afterTripRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
       </section>
 
       <section class="view" id="decisions" role="tabpanel">
@@ -1645,71 +1680,48 @@
         { day: 23, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home", summary: "UA 839 arrives SYD at 7:00 am.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive SYD on UA 839 at 7:00 am." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, { slot: "Dinner", kind: "meal", text: "Home." }], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Driving", value: "Airport transfer only.", tone: "info" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
       ],
       currentAnchors: [
-        "LAX arrival: UA 842 arrives at 6:10 am on June 28. The booked rental car pickup is 8:00 am at Los Angeles International Airport.",
-        "First hotel arrival: Pasadena-area hotel check-in is 3:00 pm on June 28 and checkout is 12:00 pm on July 4.",
-        "Central Coast arrival: Santa Maria hotel is booked for July 4-5.",
-        "Monterey arrival: Monterey-area hotel is booked for July 5-7.",
-        "Bay Area arrival: Mountain View hotel is booked for July 7-13, with check-in at 4:00 pm and checkout at 11:00 am.",
-        "Mammoth Lakes arrival: Mammoth Lakes hotel is booked for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am.",
-        "Las Vegas arrival: Las Vegas Strip hotel is booked for July 14-17, with 3:00 pm check-in and 11:00 am checkout.",
-        "Final Los Angeles arrival: Pasadena-area hotel is booked for July 17-18, with 3:00 pm check-in and 12:00 pm checkout.",
-        "LAX departure: UA 839 departs at 10:45 pm on July 18. The booked rental car return is 8:00 pm at Los Angeles International Airport.",
-        "Rental car is booked LAX-to-LAX from June 28, 2026 at 8:00 am to July 18, 2026 at 8:00 pm."
+        "Los Angeles arrival: booked Pasadena-area base. Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent.",
+        "Central Coast / Route 1 overnight: booked Santa Maria base. Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but a full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check.",
+        "Monterey / Carmel: booked Monterey-area base. Good for Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy. Avoid adding a full Big Sur day unless conditions and energy are excellent.",
+        "San Francisco / Bay Area: booked Mountain View base. Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip.",
+        "Yosemite / Mammoth Lakes: booked Mammoth Lakes base. Mammoth Lakes stages the Las Vegas transfer, but the prior day depends on Tioga Road, smoke, traffic, weather, and family energy.",
+        "Las Vegas: booked Las Vegas Strip base. Keep Las Vegas heat-aware: early outdoor time, indoor afternoons, pool/rest time, and short evening Strip walks.",
+        "Los Angeles departure: booked Pasadena-area final base. Pasadena is not airport-adjacent, so leave a large final-day buffer for fuel, traffic, rental return, luggage, terminal transfer, and international check-in."
       ],
       travelerNotes: [
-        "Keep the final Los Angeles night practical. The final hotel is in Pasadena, so prioritize a large Day 21 LAX traffic buffer over sightseeing.",
-        "Los Angeles arrival: 6 nights at the booked Pasadena-area hotel. Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent.",
-        "Central Coast / Route 1 overnight: 1 night at the booked Santa Maria hotel. Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but it is south of Cambria / San Simeon. A full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check.",
-        "Monterey / Carmel: 2 nights at the booked Monterey-area hotel. This base is convenient for Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy. With only two Monterey nights, avoid adding a full Big Sur day unless conditions and energy are excellent.",
-        "San Francisco / Bay Area: 6 nights at the booked Mountain View hotel. Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip.",
-        "Yosemite / Mammoth Lakes: 1 night at the booked Mammoth Lakes hotel. The Mammoth Lakes base stages July 14 well, but makes July 13 long and dependent on Tioga Road, smoke, traffic, and weather.",
-        "Las Vegas: 3 nights at the booked Las Vegas Strip hotel. Keep Las Vegas heat-aware: early outdoor time, indoor afternoons, pool/rest time, and short evening Strip walks.",
-        "Los Angeles departure: 1 night at the booked Pasadena-area hotel. Pasadena is not airport-adjacent, so leave a large Day 21 buffer for fuel, traffic, rental return, and terminal transfer.",
-        "Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan until 3:00 pm check-in if needed.",
-        "Keep Death Valley stops short and paved.",
-        "Leave enough Day 21 buffer for fuel, luggage, rental return, terminal transfer, and international check-in.",
+        "Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan if the room is not ready.",
         "Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.",
-        "Carry extra water, snacks, and fuel margin for the July 14 Death Valley transfer.",
-        "If immigration, luggage, or rental counter timing slips on arrival day, keep the day flexible.",
-        "Leave a large departure-day traffic buffer for fuel, rental car return, luggage, terminal transfer, and international check-in.",
-        "Book late checkout or a day room rather than filling the departure day with sightseeing."
+        "Keep Death Valley stops short and paved.",
+        "Carry extra water, snacks, and fuel margin for the Death Valley transfer.",
+        "Leave enough final-day buffer for fuel, luggage, rental return, terminal transfer, and international check-in."
       ],
       lodgingChecks: [
-        { area: "Las Vegas stay cost", check: "Confirm the full Las Vegas stay cost, not only the headline room rate. Include resort fees, taxes, parking, pool access, and any extra-person fees." },
-        { area: "Common hotel checks", check: "Confirm crib/rollaway policy, parking height, resort fees, parking fees, family occupancy, and cancellation terms before arrival." },
-        { area: "Los Angeles arrival", check: "Confirm early check-in or luggage storage, parking cost, family occupancy, cancellation terms, and private total cost." },
+        { area: "Los Angeles arrival", check: "Confirm early check-in or luggage storage, parking cost, family occupancy, cancellation terms, private total cost, and parking height/entry details." },
         { area: "Central Coast / Route 1 overnight", check: "Confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, private total cost, and current Caltrans status before any full Highway 1 / Big Sur routing." },
         { area: "Monterey / Carmel", check: "Confirm parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, checkout time, and private total cost." },
         { area: "San Francisco / Bay Area", check: "Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, parking details, and any incidentals." },
         { area: "Yosemite / Mammoth Lakes", check: "Confirm parking, check-in process, property fees, family occupancy, cancellation deadline, private total cost, and whether any additional local fees apply." },
         { area: "Las Vegas", check: "Confirm final folio, resort fee and tax, parking fees, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental holds." },
-        { area: "Los Angeles departure", check: "Confirm $35/night parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and a large Day 21 LAX drive buffer." },
+        { area: "Los Angeles departure", check: "Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and the Pasadena-to-LAX drive buffer." },
         { area: "Golden Gate / Presidio transfer", check: "Decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View." },
         { area: "Rental vehicle", check: "Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup." },
         { area: "Child seat", check: "Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat." },
         { area: "Driving documents", check: "Confirm whether the rental company requires an International Driving Permit for an Australian license." },
         { area: "Drivers", check: "Add a second authorized driver if both adults may drive." },
         { area: "Vehicle logistics", check: "Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the booked Las Vegas Strip hotel has self-parking that fits the vehicle." },
-        { area: "First hotel parking", check: "Because the first hotel is in the Pasadena area, confirm parking cost and height/entry details before arrival." },
-        { area: "July 4 coast move", check: "Confirm the booked Santa Maria hotel check-in time, parking, room occupancy, and cancellation terms." },
-        { area: "July 7 Bay Area transfer", check: "Confirm the booked Monterey-area hotel parking, room occupancy, resort/amenity fees, cancellation terms, and checkout time before the Bay Area transfer." },
         { area: "Mountain View / Golden Gate logistics", check: "Confirm free parking at the booked Mountain View hotel and compare self-driving against Caltrain/rideshare for the Golden Gate day if San Francisco parking or traffic is expensive." },
-        { area: "Yosemite / Mammoth Lakes route", check: "Before the July 13 Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, and Mammoth Lakes check-in timing." },
-        { area: "Death Valley transfer", check: "Before the July 14 transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, and heat." },
-        { area: "Airport and transfer timing", check: "Confirm arrival-day timing, rental counter timing, luggage buffer, terminal, fuel policy, rental return buffer, and check-in buffer." },
-        { area: "Hotel operating details", check: "Confirm hotel operating details outside this public repository: early luggage storage, check-in/check-out timing, parking, room occupancy, resort/amenity fees, cancellation terms, taxes/fees, final folios, free WiFi/free parking where noted, pool access, quiet-room request, housekeeping preference, incidentals, and private total cost." }
+        { area: "Highway 1 / Big Sur", check: "Before the Central Coast and Monterey travel days, confirm Highway 1 / Big Sur status and choose the practical route for the day." },
+        { area: "Yosemite / Mammoth Lakes route", check: "Before the Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth Lakes check-in timing." },
+        { area: "Death Valley transfer", check: "Before the Death Valley transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, heat, fuel stops, water stops, and the safe fallback." },
+        { area: "Las Vegas to Los Angeles", check: "Before the Las Vegas-to-Los-Angeles return, choose departure time, lunch stop, route, and Los Angeles arrival buffer." },
+        { area: "Final LAX departure", check: "Before the final LAX departure, confirm terminal, rental return location, fuel stop, rental return buffer, international check-in buffer, and luggage timing." }
       ],
       transportPlan: [
-        "Fly Sydney to Los Angeles on UA 842, arriving LAX at 6:10 am on Sunday, June 28, 2026.",
-        "Pick up the booked rental car at Los Angeles International Airport at 8:00 am on Sunday, June 28, 2026, after clearing immigration and collecting luggage.",
-        "Drive from LAX to the booked Pasadena-area arrival hotel.",
-        "Use the car for the Central Coast / Route 1 overnight, the booked Monterey-area stay, the booked six-night Mountain View / Bay Area stay, Yosemite, the direct Death Valley transfer, the booked Las Vegas Strip stay, and the return to Los Angeles.",
-        "During the Mountain View / Bay Area stay, use the car for Stanford / Mountain View / Cupertino / San Jose tech stops.",
-        "On Day 16, drive from the Bay Area to Yosemite Valley, explore Yosemite, cross Tioga Road if conditions are safe, and sleep at the booked Mammoth Lakes hotel.",
-        "On Day 17, drive Mammoth Lakes to the booked Las Vegas Strip hotel through Death Valley only if US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy are acceptable.",
-        "Drive Las Vegas to the booked Pasadena-area final Los Angeles hotel on Day 20.",
-        "Return the car at Los Angeles International Airport at 8:00 pm on Saturday, July 18, 2026.",
-        "Fly Los Angeles to Sydney on UA 839 on Day 21, departing LAX at 10:45 pm on Saturday, July 18 and arriving SYD at 7:00 am on Monday, July 20."
+        "Use the booked LAX-to-LAX rental car for the full United States stay.",
+        "Use the car for the intercity route: Los Angeles, Central Coast, Monterey, Mountain View / Bay Area, Yosemite / Mammoth Lakes, Death Valley transit, Las Vegas, and the return to Los Angeles.",
+        "Use the car for Stanford, Mountain View, Cupertino, and San Jose tech stops during the Mountain View / Bay Area stay.",
+        "Keep the direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley conditional on US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy.",
+        "Return the car at LAX before the international departure. Exact flight and rental timing lives in 04-daily-itinerary.md and 07-checklist.md."
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Done", owner: "Travelers", notes: "Confirmed June 28-July 20, 2026 Sydney-to-Sydney.", status: "Done" },
@@ -1724,15 +1736,10 @@
         { task: "Book Central Coast / Route 1 overnight lodging", when: "Done", owner: "Travelers", notes: "Booked Santa Maria hotel for July 4-5. Exact hotel name, address, price, and booking reference are not recorded.", status: "Done" },
         { task: "Book Monterey / Carmel lodging", when: "Done", owner: "Travelers", notes: "Booked Monterey-area hotel for July 5-7. Exact hotel name, address, price, and booking reference are not recorded.", status: "Done" },
         { task: "Book San Francisco / Bay Area lodging", when: "Done", owner: "Travelers", notes: "Booked in Mountain View for July 7-13. Exact address, confirmation number, guest name, membership number, phone, and contact details are not recorded.", status: "Done" },
-        { task: "Confirm Mountain View hotel operating details", when: "Now", owner: "Travelers", notes: "Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals.", status: "Open" },
         { task: "Book Mammoth Lakes lodging", when: "Done", owner: "Travelers", notes: "Booked for July 13-14. Booking PIN, exact address, payment details, contact details, and private traveler details are not recorded.", status: "Done" },
-        { task: "Confirm Mammoth Lakes hotel operating details", when: "Before July 10 cancellation deadline", owner: "Travelers", notes: "Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay after route checks.", status: "Open" },
         { task: "Hold midpoint fallback only if needed", when: "After route checks", owner: "Travelers", notes: "Use only as a cancellable safety fallback if Tioga Road, US-395, CA-190, Death Valley heat, smoke, weather, or family energy makes the direct route unsafe.", status: "Optional" },
         { task: "Book Las Vegas lodging", when: "Done", owner: "Travelers", notes: "Booked Las Vegas Strip hotel for July 14-17. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded.", status: "Done" },
-        { task: "Confirm Las Vegas hotel operating details", when: "Before July 14 arrival", owner: "Travelers", notes: "Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.", status: "Open" },
-        { task: "Book final Los Angeles departure lodging", when: "Done", owner: "Travelers", notes: "Booked Pasadena-area hotel for July 17-18. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded.", status: "Done" },
-        { task: "Confirm final Los Angeles hotel operating details", when: "Before July 17 arrival", owner: "Travelers", notes: "Confirm $35/night parking, final folio, housekeeping preference, checkout timing, incidentals, and Day 21 Pasadena-to-LAX drive buffer.", status: "Open" },
-        { task: "Confirm rental car operating details", when: "Before pickup", owner: "Travelers", notes: "Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and counter timing.", status: "Open" }
+        { task: "Book final Los Angeles departure lodging", when: "Done", owner: "Travelers", notes: "Booked Pasadena-area hotel for July 17-18. Confirmation number, guest name, membership number, exact address, phone, and private contact details are not recorded.", status: "Done" }
       ],
       timedTickets: [
         { task: "Getty Center", timing: "When July 2026 calendar is available", notes: "Check parking and timed-entry rules.", status: "Open" },
@@ -1747,20 +1754,36 @@
         { task: "Red Rock Canyon, if used", timing: "Week before travel and morning of Day 19", notes: "Re-check entry rules, parking, weather, and closures.", status: "Open" }
       ],
       preDeparture: [
-        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 7-10", action: "Use Caltrans before the LA-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach." },
-        { check: "Pasadena-area first hotel operating details", when: "Before arrival and before July 4 checkout", action: "Confirm 3:00 pm check-in, 12:00 pm checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo." },
-        { check: "Santa Maria hotel operating details", when: "Before July 4 arrival", action: "Confirm check-in time, checkout time, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo." },
-        { check: "Monterey-area hotel operating details", when: "Before July 5 arrival", action: "Confirm check-in time, checkout time, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo." },
-        { check: "Yosemite entry and fee rules", when: "Before lodging lock-in, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment." },
-        { check: "Yosemite road and shuttle status", when: "Before July 10 cancellation deadline, week of arrival, and morning of Day 16", action: "Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works." },
-        { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa-Maria move." },
-        { check: "Mountain View / Bay Area parking and activity plan", when: "Before finalizing Bay Area daily logistics", action: "Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base." },
-        { check: "Mammoth-Lakes-to-Las-Vegas via Death Valley route timing", when: "Before the Mammoth free-cancellation deadline and again before Day 17", action: "Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. Tioga Road / CA-120 must also be checked for July 13." },
-        { check: "Las Vegas hotel operating details", when: "Before July 14 arrival", action: "Confirm 3:00 pm check-in, 11:00 am checkout, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, incidental hold, and final folio outside this public repo." },
-        { check: "Las Vegas heat and air quality", when: "Day before each Las Vegas day", action: "Move outdoor time to early morning or evening; keep peak heat indoors." },
-        { check: "Las Vegas-to-LAX drive timing", when: "Day before Day 20", action: "Choose departure time, route, lunch stop, and Los Angeles arrival buffer." },
-        { check: "Final Pasadena hotel to LAX drive timing", when: "Day before departure", action: "Choose checkout timing, fuel stop, LAX route, rental car return buffer, and whether any late checkout or luggage plan is useful." },
-        { check: "LAX airport and car return", when: "Day before departure", action: "Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing." }
+        { check: "Confirm Mountain View hotel operating details", when: "Now", action: "Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals.", status: "Open" },
+        { check: "Confirm Mammoth Lakes hotel operating details", when: "Before July 10 cancellation deadline", action: "Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay after route checks.", status: "Open" },
+        { check: "Confirm Las Vegas hotel operating details", when: "Before July 14 arrival", action: "Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.", status: "Open" },
+        { check: "Confirm final Los Angeles hotel operating details", when: "Before July 17 arrival", action: "Confirm parking, final folio, housekeeping preference, checkout timing, incidentals, and Day 21 Pasadena-to-LAX drive buffer.", status: "Open" },
+        { check: "Confirm rental car operating details", when: "Before pickup", action: "Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and counter timing.", status: "Open" },
+        { check: "Highway 1 / Big Sur status", when: "7 days before and morning of Days 7-10", action: "Use Caltrans before the LA-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach.", status: "Open" },
+        { check: "Pasadena-area first hotel operating details", when: "Before arrival and before July 4 checkout", action: "Confirm check-in, checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo.", status: "Open" },
+        { check: "Santa Maria hotel operating details", when: "Before July 4 arrival", action: "Confirm check-in, checkout, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo.", status: "Open" },
+        { check: "Monterey-area hotel operating details", when: "Before July 5 arrival", action: "Confirm check-in, checkout, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo.", status: "Open" },
+        { check: "Yosemite entry and fee rules", when: "Before lodging lock-in, 30 days before arrival, and week of arrival", action: "Confirm no new reservation rule and prepare nonresident fee/pass payment.", status: "Open" },
+        { check: "Yosemite road and shuttle status", when: "Before July 10 cancellation deadline, week of arrival, and morning of Day 16", action: "Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works.", status: "Open" },
+        { check: "July 4 crowd and event closures", when: "2-4 weeks before arrival", action: "Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Santa-Maria move.", status: "Open" },
+        { check: "Mountain View / Bay Area parking and activity plan", when: "Before finalizing Bay Area daily logistics", action: "Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base.", status: "Open" },
+        { check: "Mammoth-Lakes-to-Las-Vegas via Death Valley route timing", when: "Before the Mammoth free-cancellation deadline and again before Day 17", action: "Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback.", status: "Open" },
+        { check: "Las Vegas heat and air quality", when: "Day before each Las Vegas day", action: "Move outdoor time to early morning or evening; keep peak heat indoors.", status: "Open" },
+        { check: "Las Vegas-to-LAX drive timing", when: "Day before Day 20", action: "Choose departure time, route, lunch stop, and Los Angeles arrival buffer.", status: "Open" },
+        { check: "Final Pasadena hotel to LAX drive timing", when: "Day before departure", action: "Choose checkout timing, fuel stop, LAX route, rental car return buffer, and whether any late checkout or luggage plan is useful.", status: "Open" },
+        { check: "LAX airport and car return", when: "Day before departure", action: "Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing.", status: "Open" }
+      ],
+      duringTrip: [
+        { check: "Re-check road and weather conditions before long transfer days", when: "Morning of each transfer", action: "Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day.", status: "Open" },
+        { check: "Keep daily pacing realistic", when: "Every day", action: "Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows.", status: "Open" },
+        { check: "Review next-day logistics each evening", when: "Every evening", action: "Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day.", status: "Open" },
+        { check: "Keep Las Vegas heat-aware", when: "Las Vegas days", action: "Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel.", status: "Open" },
+        { check: "Protect LAX departure buffer", when: "Final Los Angeles day", action: "Prioritize fuel, rental return, terminal transfer, luggage, and international check-in over sightseeing.", status: "Open" }
+      ],
+      afterTrip: [
+        { check: "Check rental car deposit release", when: "After car return", action: "Confirm any temporary hold is released and no unexpected toll, fuel, or damage charge appears.", status: "Open" },
+        { check: "Review hotel final folios", when: "After each stay or after return", action: "Confirm taxes, resort fees, parking, and incidentals match expectations.", status: "Open" },
+        { check: "Archive useful notes", when: "After return", action: "Record route lessons, family pacing notes, and lodging/logistics lessons for a future US trip.", status: "Optional" }
       ],
       doNotBook: [
         "Do not book Warner Bros. Studio Tour unless the younger child is not attending.",
@@ -1773,7 +1796,8 @@
         "Do not book multiple Las Vegas paid attractions until hotel, heat plan, and one anchor attraction are confirmed.",
         "Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.",
         "Do not book a same-day Las Vegas-to-LAX drive plus international departure unless the family explicitly accepts the missed-flight risk.",
-        "Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer."
+        "Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer.",
+        "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
       ],
       openQuestions: [
         { question: "Does the booked rental car need any operating-detail changes before pickup?", why: "The car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm, so pickup timing is fixed but vehicle class, luggage fit, child seat, fuel policy, toll handling, second driver, and license / IDP rules still matter.", default: "Keep the booking, then verify operating details before nonrefundable hotel parking decisions." },
@@ -2065,10 +2089,10 @@
         { title: "LAX Closed-Circle Plan", rows: [
           { fact: "LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities.", source: "Local comparison file", url: "work/closed-circle-start-city-comparison.md", accessed: "2026-05-15", status: "Current planning decision" },
           { fact: "Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026.", source: "Traveler booking", url: "04-daily-itinerary.md", accessed: "2026-05-15", status: "Booked; seat assignments intentionally omitted" },
-          { fact: "Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm.", source: "Traveler booking", url: "05-lodging-transport.md", accessed: "2026-05-31", status: "Booked; provider, price, and booking reference intentionally omitted" },
-          { fact: "First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.", source: "Traveler booking", url: "05-lodging-transport.md", accessed: "2026-05-31", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
-          { fact: "Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026.", source: "Traveler booking", url: "05-lodging-transport.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
-          { fact: "Monterey-area hotel is booked from July 5 to July 7, 2026.", source: "Traveler booking", url: "05-lodging-transport.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
+          { fact: "Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-05-31", status: "Booked; provider, price, and booking reference intentionally omitted" },
+          { fact: "First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-05-31", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
+          { fact: "Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
+          { fact: "Monterey-area hotel is booked from July 5 to July 7, 2026.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
           { fact: "Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi.", source: "Traveler booking", url: "User-provided Bay Area hotel booking details", accessed: "2026-06-06", status: "Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted" },
           { fact: "Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one suite for two adults and two children.", source: "Traveler booking", url: "User-provided Las Vegas hotel booking details", accessed: "2026-06-07", status: "Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted" },
           { fact: "Final Los Angeles hotel is booked in the Pasadena area from July 17 to July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout, in one room for two adults and two children.", source: "Traveler booking", url: "User-provided final Los Angeles hotel booking details", accessed: "2026-06-07", status: "Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted" },
@@ -2181,7 +2205,13 @@
         <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
       $("#preDepartureRows").innerHTML = tripData.preDeparture.map((row) => `
-        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td></tr>
+        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+      $("#duringTripRows").innerHTML = tripData.duringTrip.map((row) => `
+        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+      $("#afterTripRows").innerHTML = tripData.afterTrip.map((row) => `
+        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
     }
 

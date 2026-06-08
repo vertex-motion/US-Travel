@@ -30,7 +30,7 @@ Use these rules when writing or updating technical documents, including skills, 
 ## Duplication Review
 
 - Before editing planning files, check nearby documents for the same fact, decision, task, or instruction.
-- Keep one canonical home for stable traveler intent, route decisions, rejected options, budgets, booking tasks, and open questions.
+- Keep one canonical home for stable traveler intent, route decisions, rejected options, budgets, checklist tasks, and open questions.
 - Use `03-potential-options.md` as the golden source for every found trip option, including selected, retained, parked, and rejected options.
 - When adding a route, attraction, logistics, lodging, booking, or split-family option, add or update its row in `03-potential-options.md` first.
 - Set the option interest score to `0` unless the traveler gives a 1-10 preference. Treat `0` as no input, not as rejection.
@@ -46,15 +46,15 @@ Use these files for their assigned planning roles.
 
 | Page | Purpose |
 | --- | --- |
-| `01-trip-purpose.md` | Traveler intent, preferences, constraints, and travel style. |
-| `02-current-plan-options.md` | Chosen route shape, rationale, alternatives, and tradeoffs. |
-| `03-potential-options.md` | Registry of every considered route, place, lodging, logistics, or split-family option. |
-| `04-daily-itinerary.md` | Day-by-day plan: sleep location, activities, transfers, backups, and source notes. |
-| `05-lodging-transport.md` | Lodging bases and transport logistics: hotels, car, airports, parking, luggage, buffers, and route operating checks. |
-| `06-budget.md` | Costs, ranges, committed spend, and financial assumptions. |
-| `07-booking-checklist.md` | Booking, reservation, document, timed-entry, and verification tasks. |
-| `08-open-questions.md` | Unresolved decisions, research gaps, and assumptions that need confirmation. |
-| `index.html` | Presentation view generated from the planning files; exclude `06-budget.md` unless explicitly requested. |
+| `01-trip-purpose.md` | Use for traveler intent, preferences, constraints, dates, pace, and planning principles. Do not store route options, tasks, or costs here. |
+| `02-current-plan-options.md` | Use for the selected route, retained alternatives, route rationale, and major tradeoffs. Link option details back to `03-potential-options.md`. |
+| `03-potential-options.md` | Use as the registry for every considered route, place, lodging, logistics, booking guardrail, rejected option, and split-family option. Keep interest scores here. |
+| `04-daily-itinerary.md` | Use for the day-by-day plan: sleep location, activities, transfers, backups, and source notes. Do not store cross-trip logistics or task ownership here. |
+| `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, car, airports, parking, luggage, buffers, route conditions, and fallback lodging. |
+| `06-budget.md` | Use for costs, ranges, committed spend, quote assumptions, exchange rates, and cost-control notes. Do not sync it into `index.html`. |
+| `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, and follow-up tasks. |
+| `08-open-questions.md` | Use for unresolved decisions, research gaps, and assumptions that need confirmation. Move resolved tasks to `07-checklist.md` or resolved decisions to the relevant canonical file. |
+| `index.html` | Use as the presentation view generated from planning files `01-05` and `07-08`; exclude `06-budget.md` unless explicitly requested. |
 
 ## Planning Content Tags
 
@@ -86,7 +86,7 @@ Use planning tags to mark what each text block is for.
 ## Trip Change Impact Review
 
 - When the user adds a trip fact, preference, constraint, booking, task, or decision, check how it affects the rest of the trip plan.
-- Review affected itinerary days, route choices, lodging, transport, budget, booking checklist, potential options, and open questions.
+- Review affected itinerary days, route choices, lodging, transport, budget, checklist, potential options, and open questions.
 - In chat, present proposed follow-up changes as a table before making changes the user did not explicitly request.
 - Use this table format:
 
