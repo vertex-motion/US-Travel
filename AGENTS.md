@@ -30,7 +30,7 @@ Use these rules when writing or updating technical documents, including skills, 
 ## Duplication Review
 
 - Before editing planning files, check nearby documents for the same fact, decision, task, or instruction.
-- Keep one canonical home for stable traveler intent, route decisions, rejected options, budgets, checklist tasks, and open questions.
+- Keep one canonical home for stable traveler intent, route decisions, open decisions, rejected options, budgets, and checklist tasks.
 - Use `03-potential-options.md` as the golden source for every found trip option, including selected, retained, parked, and rejected options.
 - When adding a route, attraction, logistics, lodging, booking, or split-family option, add or update its row in `03-potential-options.md` first.
 - Set the option interest score to `0` unless the traveler gives a 1-10 preference. Treat `0` as no input, not as rejection.
@@ -42,19 +42,26 @@ Use these rules when writing or updating technical documents, including skills, 
 
 ## Planning File Purposes
 
-Use these files for their assigned planning roles.
+Use these files for their assigned planning roles. Keep scope rules here instead of repeating them inside planning files.
 
 | Page | Purpose |
 | --- | --- |
 | `01-trip-purpose.md` | Use for traveler intent, preferences, constraints, dates, pace, and planning principles. Do not store route options, tasks, or costs here. |
-| `02-current-plan-options.md` | Use for the selected route, retained alternatives, route rationale, and major tradeoffs. Link option details back to `03-potential-options.md`. |
-| `03-potential-options.md` | Use as the registry for every considered route, place, lodging, logistics, booking guardrail, rejected option, and split-family option. Keep interest scores here. |
+| `02-current-plan-options.md` | Use for the selected route, retained alternatives, route rationale, open decisions, and major tradeoffs. Link option details back to `03-potential-options.md`. |
+| `03-potential-options.md` | Use as the registry for every considered route, place, lodging, logistics, booking guardrail, rejected booking move, split-family option, selected option, retained option, parked option, and rejected option. Keep interest scores, current-fit notes, decision triggers, and do-not-book guardrails here. |
 | `04-daily-itinerary.md` | Use for the day-by-day plan: sleep location, activities, transfers, backups, and source notes. Do not store cross-trip logistics or task ownership here. |
-| `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, car, airports, parking, luggage, buffers, route conditions, and fallback lodging. |
+| `05-trip-logistics.md` | Use for cross-day logistics: lodging bases, hotel operating checks, rental car operation, airport buffers, parking, luggage, route-condition decisions, and fallback lodging. Do not store exact day-by-day schedules, sleep lines, costs, committed spend, traveler tasks, deadlines, or unresolved decisions here. |
 | `06-budget.md` | Use for costs, ranges, committed spend, quote assumptions, exchange rates, and cost-control notes. Do not sync it into `index.html`. |
-| `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, and follow-up tasks. |
-| `08-open-questions.md` | Use only for unresolved traveler decisions that need a choice before they can move into itinerary, logistics, budget, option, or checklist files. |
-| `index.html` | Use as the presentation view generated from planning files `01-05` and `07-08`; exclude `06-budget.md` unless explicitly requested. |
+| `07-checklist.md` | Use as the single source for traveler tasks before, during, and after the trip, including bookings, timed reservations, checks, documents, deadlines, verification work, and follow-up tasks. Do not store booking guardrails, rejected booking options, day-by-day plans, logistics constraints, route-condition requirements, cost tracking, committed spend, or unresolved traveler decisions here. |
+| `index.html` | Use as the presentation view generated from planning files `01-05` and `07`; exclude `06-budget.md` unless explicitly requested. |
+
+Use this routing when resolving open decisions from `02-current-plan-options.md`:
+
+- Put actionable tasks, verification work, deadlines, and during-trip checks in `07-checklist.md`.
+- Keep unresolved traveler choices in the Open Decisions section of `02-current-plan-options.md` until they become stable facts or tasks.
+- Put stable route and booking facts in `02-current-plan-options.md`, `04-daily-itinerary.md`, or `05-trip-logistics.md`.
+- Put selected, retained, parked, rejected, and conditional options in `03-potential-options.md`.
+- Put cost controls, cost ranges, and quote checks in `06-budget.md`.
 
 ## Planning Content Tags
 
@@ -81,12 +88,12 @@ Use planning tags to mark what each text block is for.
 - Keep `index.html` as a presentation view for the trip plan.
 - Do not sync `06-budget.md` into `index.html`.
 - Keep budget details, cost ranges, cost controls, and quote tasks in `06-budget.md`.
-- When updating `index.html`, use planning files `01-05` and `07-08` as the dashboard sources unless the user explicitly requests another source.
+- When updating `index.html`, use planning files `01-05` and `07` as the dashboard sources unless the user explicitly requests another source.
 
 ## Trip Change Impact Review
 
 - When the user adds a trip fact, preference, constraint, booking, task, or decision, check how it affects the rest of the trip plan.
-- Review affected itinerary days, route choices, lodging, transport, budget, checklist, potential options, and open questions.
+- Review affected itinerary days, route choices, lodging, transport, budget, checklist, potential options, and open decisions.
 - In chat, present proposed follow-up changes as a table before making changes the user did not explicitly request.
 - Use this table format:
 

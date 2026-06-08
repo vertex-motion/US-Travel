@@ -4,14 +4,12 @@
 
 Use existing repository structure first. If no structure exists beyond the source intent document, create only the files needed for the current request:
 
-- `02-current-plan-options.md`: route, activity, lodging, and logistics options included in the working plan or retained as fallbacks. Keep detailed option registry data in `03-potential-options.md`.
+- `02-current-plan-options.md`: route, activity, lodging, logistics options, and open decisions included in the working plan or retained as fallbacks. Keep detailed option registry data in `03-potential-options.md`.
 - `03-potential-options.md`: golden source for every found option, including selected, retained, parked, and rejected options, with interest score, current fit or tradeoff, and decision trigger.
 - `04-daily-itinerary.md`: day-by-day plan with timing, drive time, walking load, meals, and backup options.
-- `05-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
+- `05-trip-logistics.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
 - `06-budget.md`: estimated costs by category with low/target/high ranges and source notes.
-- `07-booking-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
-- `08-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
-
+- `07-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
 Do not create all files automatically. Add a document when it reduces complexity or preserves useful planning state.
 Add a `Sources` section to any file that contains researched facts, estimates, rules, or availability-sensitive recommendations.
 
@@ -32,7 +30,7 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 - Budget posture:
 - Hard constraints:
 - Assumptions:
-- Open questions:
+- Open decisions:
 ```
 
 ## Current Plan Options Template
@@ -113,5 +111,5 @@ Use this table for every route, attraction, logistics, lodging approach, booking
 - Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
 - Current plan options include a clear inclusion reason, a pointer to the detailed planning file, and a matching row in `03-potential-options.md`.
-- Open questions are written as decisions the traveler can answer, not vague reminders.
+- Open decisions are written as questions the traveler can answer, not vague reminders.
 - The option registry includes every selected, retained, parked, and rejected option with a 0-10 interest score.

@@ -18,7 +18,7 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
 
 2. Build a planning brief.
    - Extract travelers, dates, desired places, pace, lodging level, mobility limits, food preferences, budget posture, and non-negotiables.
-   - List missing decisions as open questions, but continue with clearly labeled assumptions when the plan can safely move forward.
+   - List missing decisions as open decisions in the current-plan options document, but continue with clearly labeled assumptions when the plan can safely move forward.
 
 3. Research volatile facts before using them.
    - Verify current prices, opening hours, ticket rules, closures, road conditions, timed-entry requirements, hotel availability, flights, transit, legal/visa rules, and safety guidance.
@@ -32,9 +32,9 @@ Turn trip intent and constraints into a maintained set of planning documents. Ke
    - Keep `01-trip-purpose.md` as source intent.
    - Keep `03-potential-options.md` as the golden source for every found option, including selected, retained, parked, and rejected routes, attractions, logistics, lodging ideas, booking ideas, and split-family ideas.
    - Set each option's interest score in `03-potential-options.md` to `0` unless the traveler provides a 1-10 preference. Treat `0` as no input, not as rejection.
-   - Link current-plan, itinerary, lodging, budget, checklist, and open-question entries back to `03-potential-options.md` when they depend on an option.
-   - Add later documents for current plan options, daily itinerary, lodging/transport, budget, booking tasks, and open questions as needed.
-   - When trip data changes, update `trip.html` in the same change so the presentation view stays current. Keep the Markdown files as the planning source of truth.
+   - Link current-plan, itinerary, lodging, budget, checklist, and open-decision entries back to `03-potential-options.md` when they depend on an option.
+   - Add later documents for current plan options, daily itinerary, lodging/transport, budget, and booking tasks as needed. Keep open decisions in the current-plan options document.
+   - When trip data changes, update `index.html` in the same change so the presentation view stays current. Keep the Markdown files as the planning source of truth.
    - Use the output patterns in `references/plan-output-guide.md` when drafting new planning documents.
    - When editing existing documents, preserve valid source links. Update the access date when re-checking a source, replace dead or stale links with the current original page, and keep obsolete links only when they explain a prior decision.
 

@@ -2,17 +2,15 @@
 
 ## Planning Brief
 
-- Canonical traveler intent and pace constraints live in `01-trip-purpose.md`.
 - Confirmed window: June 28-July 20, 2026, Sydney-to-Sydney, with 20 US hotel nights.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
-- Canonical option registry: `03-potential-options.md` contains every found selected, retained, parked, and rejected option, plus the 0-10 family interest score used when planning changes.
 - Route theme: Los Angeles arrival recovery, Pacific coast, a six-night booked Mountain View / Bay Area block for Golden Gate, Stanford, Silicon Valley technology stops, and rest buffers, a confirmed Mammoth Lakes night after a same-day Yosemite Valley visit and Tioga Road crossing, a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley, and a booked Las Vegas Strip city-resort finale before returning to LAX.
 - Planning posture: Las Vegas remains a primary stop. The closed-circle requirement is met by returning from Las Vegas to Los Angeles for the final departure.
 - Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
 - Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
 - Hardest route day: Mammoth Lakes to Las Vegas through Death Valley on July 14 is now the longest and highest-risk transfer. Use it only with same-week Tioga Road, CA-120 / US-395 / CA-190, Death Valley road, weather, smoke, and heat checks.
 - Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United. A rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. The first Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, with 3:00 pm check-in and 12:00 pm checkout. The Central Coast hotel is booked in Santa Maria from July 4 to July 5. The Monterey-area hotel is booked from July 5 to July 7. The Bay Area hotel is booked in Mountain View from July 7 to July 13. The Mammoth Lakes hotel is booked from July 13 to July 14. The Las Vegas Strip hotel is booked from July 14 to July 17. The final Pasadena-area Los Angeles hotel is booked from July 17 to July 18.
-- Open decisions remain tracked in `08-open-questions.md`.
+- Open decisions are tracked in the Open Decisions section below.
 
 ## Selected Route
 
@@ -66,6 +64,17 @@
 | Mariposa Grove or Glacier Point | Both are worthwhile, but the one-night Yosemite plan is now Valley-first. | Use only if lodging location, road status, and family energy make one of them easy without weakening the July 14 transfer. |
 | Santa Barbara / Montecito stop | It was removed by traveler request, but remains a recoverable option if the new Central Coast / Route 1 lodging split prices poorly. | Restore only if the family reverses the skip-Santa-Barbara decision. |
 | Hearst Castle on the Central Coast-to-Monterey transfer day | It can fit the coast move if tour timing, Central Coast lodging location, and road conditions cooperate. | Book only if the Day 8 route remains comfortable. |
+
+## Open Decisions
+
+| Question | Why it matters | Recommended default | Move to |
+| --- | --- | --- | --- |
+| Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. | Update Day 13 in `04-daily-itinerary.md` and timed reservations in `07-checklist.md`. |
+| Should the July 13-14 Yosemite / Mammoth Lakes / Death Valley sequence remain in the plan after safety checks? | This is the hardest route sequence and depends on Tioga Road, US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback. | Update `04-daily-itinerary.md`, `05-trip-logistics.md`, and `07-checklist.md`. |
+| Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not fixed. | Update `04-daily-itinerary.md` and `07-checklist.md` if selected. |
+| Does the family want a theme park day? | Disneyland or Universal would consume a full Los Angeles day and add crowd, cost, and height-rule constraints. | Skip theme parks on this first plan. | Update `03-potential-options.md`, `04-daily-itinerary.md`, `06-budget.md`, and `07-checklist.md` if restored. |
+| Will the family bring or rent the younger child's child seat? | It affects airport transfers, airline logistics, rental car pickup, and vehicle fit. | Bring a known approved seat if airline and rental logistics allow. | Track the action in `07-checklist.md`; keep private packing details outside the public repo. |
+| Which one Las Vegas paid indoor attraction or show should be the anchor? | Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat. | Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics. | Update `04-daily-itinerary.md`, `06-budget.md`, and `07-checklist.md`. |
 
 ## Known Tradeoffs
 

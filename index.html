@@ -1319,7 +1319,7 @@
       <div class="nav-inner">
         <div class="brand">
           <strong>Trip Dashboard</strong>
-          <span>Source: planning files 01-05 and 07-08</span>
+          <span>Source: planning files 01-05 and 07</span>
         </div>
         <div class="tabs" role="tablist">
           <button class="tab-button" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
@@ -1586,11 +1586,11 @@
           <section class="panel flat">
             <div class="panel-header">
               <div>
-                <h2 class="panel-title">Open Questions</h2>
-                <p class="panel-kicker">Canonical source: 08-open-questions.md</p>
+                <h2 class="panel-title">Open Decisions</h2>
+                <p class="panel-kicker">Canonical source: 02-current-plan-options.md</p>
               </div>
             </div>
-            <div class="panel-body" id="openQuestions"></div>
+            <div class="panel-body" id="openDecisions"></div>
           </section>
 
           <section class="panel flat">
@@ -1785,7 +1785,7 @@
         "Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer.",
         "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
       ],
-      openQuestions: [
+      openDecisions: [
         { question: "Which Silicon Valley tech stops should anchor Day 13?", why: "Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus.", default: "Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps." },
         { question: "Should the July 13-14 Yosemite / Mammoth Lakes / Death Valley sequence remain in the plan after safety checks?", why: "This is the hardest route sequence and depends on Tioga Road, US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy.", default: "Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback." },
         { question: "Should Red Rock Canyon be included in Las Vegas?", why: "It adds a desert nature moment, but July heat makes it only an early-morning option.", default: "Keep it optional for Day 19, not fixed." },
@@ -2665,7 +2665,7 @@
       renderDays();
       renderBookingFilters();
       renderBooking();
-      renderDecisionCards("#openQuestions", tripData.openQuestions, [
+      renderDecisionCards("#openDecisions", tripData.openDecisions, [
         { label: "Why it matters", key: "why" },
         { label: "Recommended default", key: "default" }
       ]);
