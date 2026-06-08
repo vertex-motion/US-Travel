@@ -1,14 +1,5 @@
 # Open Questions
 
-## Scope
-
-Use this page only for unresolved traveler choices that need a decision before they can become itinerary, logistics, budget, option, or checklist entries.
-
-- Put actionable tasks, verification work, deadlines, and during-trip checks in `07-checklist.md`.
-- Put stable route and booking facts in `02-current-plan-options.md`, `04-daily-itinerary.md`, or `05-trip-logistics.md`.
-- Put selected, retained, parked, rejected, and conditional options in `03-potential-options.md`.
-- Put cost controls, cost ranges, and quote checks in `06-budget.md`.
-
 ## Decisions Needed
 
 | Question | Why it matters | Recommended default | Move to |

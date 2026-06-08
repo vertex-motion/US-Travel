@@ -1,15 +1,5 @@
 # Trip Logistics
 
-## Scope
-
-<!-- tag: planning-notes -->
-
-- Use this page for cross-day logistics: lodging bases, hotel operating checks, rental car operation, airport buffers, parking, luggage, and route-condition decisions.
-- Keep the exact day-by-day schedule and sleep line in `04-daily-itinerary.md`.
-- Keep costs, committed spend, and quote assumptions in `06-budget.md`.
-- Keep traveler tasks and deadlines in `07-checklist.md`.
-- Keep unresolved traveler decisions in `08-open-questions.md`.
-
 ## Logistics Principles
 
 <!-- tag: planning-notes -->
