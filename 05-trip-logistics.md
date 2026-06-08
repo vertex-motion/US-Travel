@@ -8,7 +8,7 @@
 - Keep the exact day-by-day schedule and sleep line in `04-daily-itinerary.md`.
 - Keep costs, committed spend, and quote assumptions in `06-budget.md`.
 - Keep traveler tasks and deadlines in `07-checklist.md`.
-- Keep unresolved decisions and research gaps in `08-open-questions.md`.
+- Keep unresolved traveler decisions in `08-open-questions.md`.
 
 ## Logistics Principles
 

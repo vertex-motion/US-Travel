@@ -8,7 +8,7 @@ Use this page as the single source for tasks the travelers need to do before, du
 - Keep the day-by-day plan in `04-daily-itinerary.md`.
 - Keep logistics constraints and route-condition requirements in `05-trip-logistics.md`.
 - Keep cost tracking and committed spend in `06-budget.md`.
-- Keep open decisions and research gaps in `08-open-questions.md`.
+- Keep unresolved traveler decisions in `08-open-questions.md`.
 
 ## Planning and Booking Tasks
 
@@ -55,6 +55,7 @@ Use this page as the single source for tasks the travelers need to do before, du
 | Confirm Las Vegas hotel operating details | Before July 14 arrival | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and any incidental hold. | Open |
 | Confirm final Los Angeles hotel operating details | Before July 17 arrival | Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and Pasadena-to-LAX drive buffer. | Open |
 | Confirm rental car operating details | Before pickup | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and counter timing. | Open |
+| Choose child seat plan | Before pickup | Decide whether to bring or rent an approved child seat for the younger child; confirm airline, rental company, and legal requirements. | Open |
 | Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
 | Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm check-in, checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. | Open |
 | Santa Maria hotel operating details | Before July 4 arrival | Confirm check-in, checkout, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
