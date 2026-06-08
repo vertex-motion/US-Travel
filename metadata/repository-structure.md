@@ -13,17 +13,7 @@ Canonical inventory of planning files and their scope rules.
 | `05-trip-logistics.md` | Cross-day logistics: lodging bases, hotel checks, rental car, airport buffers, parking, luggage, route-condition decisions, fallback lodging. No day-by-day schedules, sleep lines, costs, committed spend, tasks, deadlines, or unresolved decisions. |
 | `06-budget.md` | Costs, ranges, committed spend, quote assumptions, exchange rates, cost-control notes. Never sync to `index.html`. |
 | `07-checklist.md` | All traveler tasks: bookings, timed reservations, documents, deadlines, verification, follow-up. No guardrails, rejected options, day plans, logistics constraints, cost tracking, or unresolved decisions. |
-| `08-open-questions.md` | Unresolved traveler decisions only — choices that must be made before content can move to another file. No tasks, deadlines, stable facts, options, costs, or quote checks. |
-| `index.html` | Presentation view generated from `01-05` and `07-08`. Exclude `06-budget.md`. |
-
-## Routing Out of `08-open-questions.md`
-
-| Content type | Move to |
-| --- | --- |
-| Tasks, verification, deadlines, during-trip checks | `07-checklist.md` |
-| Stable route and booking facts | `02`, `04`, or `05` |
-| Options (any status) | `03-potential-options.md` |
-| Costs, ranges, quote checks | `06-budget.md` |
+| `index.html` | Presentation view generated from `01-07`. Exclude `06-budget.md`. |
 
 ## Other Files
 

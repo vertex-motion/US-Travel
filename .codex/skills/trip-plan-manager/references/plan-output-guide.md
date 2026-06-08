@@ -10,7 +10,6 @@ Use existing repository structure first. If no structure exists beyond the sourc
 - `05-lodging-transport.md`: hotels, base cities, rental car or transit, parking, airport logistics, and luggage constraints.
 - `06-budget.md`: estimated costs by category with low/target/high ranges and source notes.
 - `07-booking-checklist.md`: reservations, timed-entry tickets, cancellation deadlines, documents, and verification tasks.
-- `08-open-questions.md`: unresolved traveler decisions, research gaps, and assumptions.
 
 Do not create all files automatically. Add a document when it reduces complexity or preserves useful planning state.
 Add a `Sources` section to any file that contains researched facts, estimates, rules, or availability-sensitive recommendations.
@@ -32,7 +31,7 @@ Add a `Sources` section to any file that contains researched facts, estimates, r
 - Budget posture:
 - Hard constraints:
 - Assumptions:
-- Open questions:
+- Open decisions:
 ```
 
 ## Current Plan Options Template
@@ -113,5 +112,5 @@ Use this table for every route, attraction, logistics, lodging approach, booking
 - Source-sensitive facts include original page links, source names, access dates, and verification status in the same file.
 - Existing source links remain present after edits unless the supported fact is removed or the link is replaced with a better original page.
 - Current plan options include a clear inclusion reason, a pointer to the detailed planning file, and a matching row in `03-potential-options.md`.
-- Open questions are written as decisions the traveler can answer, not vague reminders.
+- Open decisions in `02-current-plan-options.md` are written as choices the traveler can answer, not vague reminders.
 - The option registry includes every selected, retained, parked, and rejected option with a 0-10 interest score.
