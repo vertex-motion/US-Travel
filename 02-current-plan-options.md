@@ -14,7 +14,6 @@
 ## Selected Route
 
 <!-- tag: current-plan -->
-**Recommendation:** Use this LAX closed-circle route for the primary version of the trip.
 
 | Segment | Base | Nights | Key sights | Approx. transfer | Notes |
 | --- | --- | ---: | --- | --- | --- |
