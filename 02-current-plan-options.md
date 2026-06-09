@@ -3,14 +3,12 @@
 ## Planning Brief
 
 <!-- tag: current-plan -->
-- Confirmed window: June 28-July 20, 2026, Sydney-to-Sydney, with 20 US hotel nights.
+- Confirmed window: June 28–July 18, 2026, with 20 US hotel nights, arriving and departing through LAX.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
 - Route theme: Los Angeles arrival recovery, Pacific coast, a six-night booked Mountain View / Bay Area block for Golden Gate, Stanford, Silicon Valley technology stops, and rest buffers, a confirmed Mammoth Lakes night after a same-day Yosemite Valley visit and Tioga Road crossing, a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley, and a booked Las Vegas Strip city-resort finale before returning to LAX.
 - Planning posture: Las Vegas remains a primary stop. The closed-circle requirement is met by returning from Las Vegas to Los Angeles for the final departure.
-- Cost posture: Value-conscious family lodging capped at USD $250 per night remains binding. Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
-- Route constraint: Keep local sightseeing days to about 3-4 hours in the car. Intercity transfer days can be longer, up to 10-12 hours in the car, when the destination change is worth it.
+- Cost posture: Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
 - Hardest route day: Mammoth Lakes to Las Vegas through Death Valley on July 14 is now the longest and highest-risk transfer. Use it only with same-week Tioga Road, CA-120 / US-395 / CA-190, Death Valley road, weather, smoke, and heat checks.
-- Assumptions: The family can enter the US under ESTA if eligible. International flights are booked as SYD-LAX-SYD on United. A rental car is booked LAX-to-LAX from June 28 at 8:00 am to July 18 at 8:00 pm. The first Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, with 3:00 pm check-in and 12:00 pm checkout. The Central Coast hotel is booked in Santa Maria from July 4 to July 5. The Monterey-area hotel is booked from July 5 to July 7. The Bay Area hotel is booked in Mountain View from July 7 to July 13. The Mammoth Lakes hotel is booked from July 13 to July 14. The Las Vegas Strip hotel is booked from July 14 to July 17. The final Pasadena-area Los Angeles hotel is booked from July 17 to July 18.
 - Open decisions are tracked in the Open Decisions section below.
 
 ## Selected Route
