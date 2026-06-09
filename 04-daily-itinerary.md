@@ -3,25 +3,16 @@
 ## Confirmed Dates
 
 <!-- tag: current-plan -->
-Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
+Confirmed Sydney-to-Sydney travel window: June 28–July 20, 2026.
 
-- Day 1: Depart Sydney at 9:30 am and arrive in Los Angeles at 6:10 am on Sunday, June 28, 2026.
-- Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy.
-- Rental car pickup: Los Angeles International Airport on Sunday, June 28, 2026 at 8:00 am.
-- First Los Angeles hotel: booked in the Pasadena area from Sunday, June 28, 2026 to Saturday, July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.
-- Central Coast hotel: booked in Santa Maria from Saturday, July 4, 2026 to Sunday, July 5, 2026.
-- Monterey-area hotel: booked from Sunday, July 5, 2026 to Tuesday, July 7, 2026.
-- Bay Area hotel: booked in Mountain View from Tuesday, July 7, 2026 to Monday, July 13, 2026.
-- Mammoth Lakes hotel: booked from Monday, July 13, 2026 to Tuesday, July 14, 2026.
-- Las Vegas hotel: booked on the Strip from Tuesday, July 14, 2026 to Friday, July 17, 2026, with 3:00 pm check-in and 11:00 am checkout.
-- Final Los Angeles hotel: booked in the Pasadena area from Friday, July 17, 2026 to Saturday, July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout.
-- Nights in the United States: 20.
-- Day 21: Depart Los Angeles at 10:45 pm on Saturday, July 18, 2026.
-- Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy.
-- Rental car return: Los Angeles International Airport on Saturday, July 18, 2026 at 8:00 pm.
-- Day 23: Arrive in Sydney at 7:00 am on Monday, July 20, 2026 after crossing the date line.
+- Flight to Los Angeles: United UA 842, SYD-LAX, Boeing 787-9, United Economy. Depart Sydney 9:30 am; arrive LAX 6:10 am on Sunday, June 28, 2026.
+- Rental car pickup: Los Angeles International Airport, Sunday June 28 at 8:00 am.
+- Nights in the United States: 20 (June 28–July 18).
+- Flight to Sydney: United UA 839, LAX-SYD, Boeing 787-9, United Economy. Depart LAX 10:45 pm on Saturday, July 18, 2026.
+- Rental car return: Los Angeles International Airport, Saturday July 18 at 8:00 pm.
+- Arrive Sydney: Monday, July 20, 2026 at 7:00 am after crossing the date line.
 
-Seat assignments, hotel addresses, confirmation numbers, membership numbers, guest names, private contact details, and payment details must not be recorded in this public repository.
+Lodging dates, check-in/checkout times, and operating details are in `05-trip-logistics.md`.
 
 ## Days
 
@@ -35,9 +26,8 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Easy local dinner near the hotel.
 - Driving: LAX to the Pasadena-area arrival hotel only; keep any extra driving minimal after the long flight.
 - Walking: Keep light.
-- Reservations: Booked rental car pickup at 8:00 am; booked Pasadena-area hotel check-in at 3:00 pm; early check-in or luggage storage if available.
+- Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
 - Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
-- Source notes: Flight, rental car, and first-hotel timing details are from confirmed traveler booking information. Provider, exact hotel name, address, price, and booking reference are intentionally omitted.
 
 ### Day 2: Monday, June 29 - Pasadena or Santa Monica Arrival Recovery
 
@@ -109,9 +99,9 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Santa Maria or near the overnight base.
 - Driving: Full holiday transfer day; expect 3.5-5.5 hours plus stops depending on Route 1 use, US-101 timing, July 4 traffic, and road controls.
 - Walking: Light.
-- Reservations: Pasadena-area hotel checkout by 12:00 pm; booked Santa Maria hotel. Confirm check-in time, parking, family occupancy, cancellation terms, and taxes/fees outside this public repository.
+- Reservations: Pasadena-area hotel checkout by 12:00 pm. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
-- Source notes: This replaces Santa Barbara by traveler request. The Santa Maria hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
+- Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
 ### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
@@ -122,9 +112,9 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Carmel or Monterey.
 - Driving: Full scenic transfer day; verify current map timing after Highway 1, one-way controls, and any Hearst Castle choice are known.
 - Walking: Light to moderate.
-- Reservations: Booked Monterey-area hotel check-in; Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start. Confirm hotel check-in time, parking, resort/amenity fees, family occupancy, cancellation terms, and taxes/fees outside this public repository.
+- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start. See `05-trip-logistics.md` for Monterey lodging details.
 - Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
-- Source notes: The Monterey-area hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
+- Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
@@ -147,7 +137,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
 - Driving: Monterey to Mountain View transfer day; verify live map timing before choosing the coastal or inland route.
 - Walking: Light to moderate.
-- Reservations: Booked Mountain View hotel; confirm final tax/fee total, cancellation terms, free parking, free WiFi, and any incidentals outside this public repo.
+- Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
 ### Day 11: Wednesday, July 8 - Mountain View / Bay Area Buffer
@@ -220,9 +210,9 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Mammoth Lakes or simple route-dependent meal.
 - Driving: Long intercity transfer plus Yosemite Valley sightseeing plus a Tioga Road crossing to Mammoth Lakes; verify live map timing after route, road, smoke, and Tioga Road checks.
 - Walking: Light to moderate and adjustable.
-- Reservations: Booked Mammoth Lakes hotel for July 13-14, with check-in from 4:00 pm and checkout until 11:00 am. Confirm parking, check-in process, family occupancy, and any property fees outside this public repo.
+- Reservations: See `05-trip-logistics.md` for Mammoth Lakes lodging details.
 - Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
-- Source notes: The Mammoth Lakes booking is from traveler-provided booking information; booking PIN, exact address, payment details, contact details, property phone, and private traveler details are intentionally omitted. Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
+- Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
 
 ### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
@@ -234,7 +224,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Evening: Check in from 3:00 pm if arrival timing allows. Rest, pool time, or indoor hotel exploration only if everyone has energy.
 - Driving: Very long mountain-to-desert transfer. Re-check Caltrans US-395 / CA-190, Death Valley road status, weather, smoke, heat, and flood risk within 7 days and again the morning of departure. Tioga Road also remains relevant because the family must reach Mammoth Lakes on July 13.
 - Walking: Minimal. Do not plan hikes in Death Valley lower elevations in July.
-- Reservations: Booked Las Vegas Strip hotel for July 14-17 in one Luxury 2 Queen suite for two adults and two children. Confirm resort fee, resort-fee tax, parking, pool access, quiet-room request, cancellation terms, and final folio outside this public repo.
+- Reservations: See `05-trip-logistics.md` for Las Vegas lodging details.
 - Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
@@ -273,7 +263,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Easy final dinner near the hotel.
 - Driving: 4-5 hours before Los Angeles traffic and stops.
 - Walking: Light.
-- Reservations: Booked Pasadena-area final Los Angeles hotel for July 17-18, with 3:00 pm check-in and 12:00 pm checkout. Confirm parking charge, family occupancy, housekeeping preference, final folio, and any incidentals outside this public repo.
+- Reservations: Hotel checkout by 11:00 am in Las Vegas; hotel check-in at 3:00 pm in Pasadena. See `05-trip-logistics.md` for lodging details.
 - Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
 ### Day 21: Saturday, July 18 - Depart Los Angeles
@@ -286,7 +276,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Dinner: Airport or in flight.
 - Driving: Pasadena-area hotel to LAX rental car return; allow a large buffer for traffic, fuel, luggage, shuttle/terminal transfer, and international check-in.
 - Walking: Light.
-- Reservations: United UA 839 LAX-SYD international itinerary and booked rental car return at 8:00 pm. Confirm terminal, luggage timing, fuel policy, and check-in buffer.
+- Reservations: Rental car return at LAX at 8:00 pm; United UA 839 departs 10:45 pm. See `05-trip-logistics.md` for final hotel checkout details.
 - Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
 
 ### Day 22: Sunday, July 19 - In Transit
