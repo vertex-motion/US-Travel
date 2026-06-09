@@ -23,9 +23,12 @@ Use June 28-July 20, 2026 as the confirmed Sydney-to-Sydney travel window.
 
 Seat assignments, hotel addresses, confirmation numbers, membership numbers, guest names, private contact details, and payment details must not be recorded in this public repository.
 
-## Day 1: Sunday, June 28 - Arrive Los Angeles
+## Days
 
 <!-- tag: traveler-notes -->
+
+### Day 1: Sunday, June 28 - Arrive Los Angeles
+
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
 - Afternoon: Check in at 3:00 pm if the room is ready, unpack, nap, hotel pool, or a short pram-friendly Pasadena-area walk.
@@ -36,7 +39,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
 - Source notes: Flight, rental car, and first-hotel timing details are from confirmed traveler booking information. Provider, exact hotel name, address, price, and booking reference are intentionally omitted.
 
-## Day 2: Monday, June 29 - Pasadena or Santa Monica Arrival Recovery
+### Day 2: Monday, June 29 - Pasadena or Santa Monica Arrival Recovery
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Slow start, hotel pool, Pasadena-area walk, Kidspace Children's Museum, or Santa Monica beach path if energy is good.
@@ -48,7 +51,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Kidspace or Cayton only if using a child-first indoor/outdoor reset.
 - Backup plan: If jet lag is heavy, make this a hotel, local walk, and early-dinner day only.
 
-## Day 3: Tuesday, June 30 - Gentle Los Angeles Buffer Day
+### Day 3: Tuesday, June 30 - Gentle Los Angeles Buffer Day
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Keep a flexible start: hotel pool, Pasadena-area playground, groceries, laundry, or a short neighborhood walk.
@@ -60,7 +63,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None unless choosing a ticketed museum.
 - Backup plan: Treat this as a recovery and logistics day if the first two nights are rough.
 
-## Day 4: Wednesday, July 1 - Getty, Academy Museum, or Griffith
+### Day 4: Wednesday, July 1 - Getty, Academy Museum, or Griffith
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Choose one primary LA anchor: Griffith Observatory viewpoints, Getty Center, or Academy Museum.
@@ -73,7 +76,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: If cross-town traffic is poor, stay Pasadena / Griffith-local and move Westside sights to a future LA return trip.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
-## Day 5: Thursday, July 2 - Flexible Los Angeles Day
+### Day 5: Thursday, July 2 - Flexible Los Angeles Day
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Choose a second LA sample only if energy is good: Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or a simple neighborhood morning.
@@ -85,7 +88,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Only for a chosen ticketed attraction.
 - Backup plan: Keep the day local and save energy for the July 4 coast move.
 
-## Day 6: Friday, July 3 - Los Angeles Final Local Day
+### Day 6: Friday, July 3 - Los Angeles Final Local Day
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Easy beach, viewpoint, or neighborhood walk.
@@ -97,7 +100,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None unless choosing a ticketed local activity; prepare for 12:00 pm checkout on Day 7.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
-## Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
+### Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 
 - Sleep: Booked Santa Maria hotel.
 - Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
@@ -110,7 +113,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
 - Source notes: This replaces Santa Barbara by traveler request. The Santa Maria hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
-## Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
+### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
 - Sleep: Booked Monterey-area hotel.
 - Morning: Leave Santa Maria after breakfast. Use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows the route open and timing is comfortable.
@@ -123,7 +126,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
 - Source notes: The Monterey-area hotel booking is from traveler-provided booking information; exact hotel name, address, price, and booking reference are intentionally omitted. Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
-## Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
+### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
 - Sleep: Booked Monterey-area hotel.
 - Morning: Monterey Bay Aquarium.
@@ -135,7 +138,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
-## Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
+### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Check out of the booked Monterey-area hotel. Use a short Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, or MY Museum stop only if the family is rested.
@@ -147,7 +150,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Booked Mountain View hotel; confirm final tax/fee total, cancellation terms, free parking, free WiFi, and any incidentals outside this public repo.
 - Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
-## Day 11: Wednesday, July 8 - Mountain View / Bay Area Buffer
+### Day 11: Wednesday, July 8 - Mountain View / Bay Area Buffer
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable.
@@ -159,7 +162,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None unless choosing Exploratorium or another ticketed backup.
 - Backup plan: Treat this as the Bay Area recovery day if the Monterey transfer was slow.
 
-## Day 12: Thursday, July 9 - Golden Gate and Presidio
+### Day 12: Thursday, July 9 - Golden Gate and Presidio
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Drive, transit, or rideshare to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
@@ -171,7 +174,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None required.
 - Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day hotel-base-local if the commute looks bad.
 
-## Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
+### Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
@@ -184,7 +187,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
-## Day 14: Saturday, July 11 - Mountain View / Bay Area Flex Day
+### Day 14: Saturday, July 11 - Mountain View / Bay Area Flex Day
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the longer Bay Area stay for a slower family day: Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, or a local neighborhood reset.
@@ -196,7 +199,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None unless choosing Exploratorium or another ticketed attraction.
 - Backup plan: Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push.
 
-## Day 15: Sunday, July 12 - Bay Area Tech, Redwood, or Rest Buffer
+### Day 15: Sunday, July 12 - Bay Area Tech, Redwood, or Rest Buffer
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the sixth Bay Area night as a true buffer: second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning.
@@ -208,7 +211,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
 - Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
 
-## Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
+### Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
 
 - Sleep: Booked Mammoth Lakes hotel.
 - Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
@@ -221,7 +224,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
 - Source notes: The Mammoth Lakes booking is from traveler-provided booking information; booking PIN, exact address, payment details, contact details, property phone, and private traveler details are intentionally omitted. Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
 
-## Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
+### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Leave Mammoth Lakes early. Use US-395 toward Lone Pine and CA-190 / Death Valley only if the route remains open and safe.
@@ -235,7 +238,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
-## Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
+### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
@@ -248,7 +251,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Book only one ticketed attraction or show for the day.
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
-## Day 19: Thursday, July 16 - Red Rock or Las Vegas Flex Day
+### Day 19: Thursday, July 16 - Red Rock or Las Vegas Flex Day
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
@@ -261,7 +264,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
 - Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
 
-## Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
+### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
 
 - Sleep: Booked Pasadena-area final Los Angeles hotel.
 - Morning: Check out of the booked Las Vegas hotel by 11:00 am, pack, and leave after breakfast.
@@ -273,7 +276,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: Booked Pasadena-area final Los Angeles hotel for July 17-18, with 3:00 pm check-in and 12:00 pm checkout. Confirm parking charge, family occupancy, housekeeping preference, final folio, and any incidentals outside this public repo.
 - Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
-## Day 21: Saturday, July 18 - Depart Los Angeles
+### Day 21: Saturday, July 18 - Depart Los Angeles
 
 - Sleep: Overnight flight.
 - Morning: Check out of the booked Pasadena-area final hotel by 12:00 pm. Pack slowly and avoid major sightseeing.
@@ -286,7 +289,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: United UA 839 LAX-SYD international itinerary and booked rental car return at 8:00 pm. Confirm terminal, luggage timing, fuel policy, and check-in buffer.
 - Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
 
-## Day 22: Sunday, July 19 - In Transit
+### Day 22: Sunday, July 19 - In Transit
 
 - Sleep: In flight.
 - Morning: Cross the Pacific.
@@ -297,7 +300,7 @@ Seat assignments, hotel addresses, confirmation numbers, membership numbers, gue
 - Reservations: None.
 - Backup plan: None.
 
-## Day 23: Monday, July 20 - Arrive Sydney
+### Day 23: Monday, July 20 - Arrive Sydney
 
 - Sleep: Home.
 - Morning: Arrive SYD on UA 839 at 7:00 am.
