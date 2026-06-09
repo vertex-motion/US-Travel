@@ -152,6 +152,7 @@
 
 ## Midpoint Sources
 
+<!-- tag: sources -->
 | Source | Original page | Accessed | Supported additions |
 | --- | --- | --- | --- |
 | Forestiere Underground Gardens | [Guided tour and visitor information](https://undergroundgardens.com/) | 2026-05-31 | Supports Forestiere as a one-hour guided Fresno stop, with advance reservations strongly recommended and extra arrival time needed because of nearby construction. |
@@ -165,6 +166,7 @@
 
 ## Forum Scan Sources
 
+<!-- tag: sources -->
 | Source | Original page | Accessed | Supported additions |
 | --- | --- | --- | --- |
 | AWD forum: USA subforum index | [forum.awd.ru/viewforum.php?f=187](https://forum.awd.ru/viewforum.php?f=187) | 2026-05-15 | Confirmed the relevant forum areas to scan for West Coast routes, attractions, lodging, transport, and practical trip reports. |
@@ -174,6 +176,7 @@
 
 ## Desert Loop Sources
 
+<!-- tag: sources -->
 | Source | Original page | Accessed | Supported additions |
 | --- | --- | --- | --- |
 | Death Valley National Park | [Safety](https://www.nps.gov/deva/planyourvisit/safety.htm) | 2026-06-05 | Supports heat and remote-park concerns for the Mammoth-Lakes-to-Las-Vegas via Death Valley transfer. |
