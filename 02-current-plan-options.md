@@ -32,11 +32,11 @@
 | Option in the plan | Why it remains included | Where it appears |
 | --- | --- | --- |
 | Closed-circle flights: SYD-LAX-SYD | United flights are booked into and out of LAX, preserving the closed-circle structure and avoiding one-way international flight complexity. | Flight details in `04-daily-itinerary.md`; booked status in `07-checklist.md`. |
-| Booked LAX-to-LAX rental car | The car is booked for the full US stay, with LAX pickup on June 28 at 8:00 am and LAX return on July 18 at 8:00 pm. | Transport plan in `05-trip-logistics.md`; Day 1 and Day 21 in `04-daily-itinerary.md`. |
-| Booked Pasadena-area arrival hotel | The first Los Angeles hotel is booked from June 28 to July 4, with 3:00 pm check-in and 12:00 pm checkout. Exact hotel name, address, price, and booking reference are intentionally omitted. | Lodging details in `05-trip-logistics.md`; Days 1-7 in `04-daily-itinerary.md`. |
-| Booked Santa Maria Central Coast hotel | The Central Coast / Route 1 overnight is booked from July 4 to July 5. Exact hotel name, address, price, and booking reference are intentionally omitted. | Lodging details in `05-trip-logistics.md`; Days 7-8 in `04-daily-itinerary.md`. |
-| Booked Monterey-area hotel | The Monterey / Carmel stay is booked from July 5 to July 7. Exact hotel name, address, price, and booking reference are intentionally omitted. | Lodging details in `05-trip-logistics.md`; Days 8-10 in `04-daily-itinerary.md`. |
-| Booked Mountain View Bay Area hotel | The six-night Bay Area stay is booked from July 7 to July 13. Exact address, confirmation number, guest name, membership number, phone, and contact details are intentionally omitted. | Lodging details in `05-trip-logistics.md`; Days 10-16 in `04-daily-itinerary.md`. |
+| Booked LAX-to-LAX rental car | Covers the full US stay without a separate city pickup or drop-off. | Transport plan in `05-trip-logistics.md`; Day 1 and Day 21 in `04-daily-itinerary.md`. |
+| Booked Pasadena-area arrival hotel | Pasadena base for the arrival stay. Booking details in `05-trip-logistics.md`. | Lodging details in `05-trip-logistics.md`; Days 1-7 in `04-daily-itinerary.md`. |
+| Booked Santa Maria Central Coast hotel | Confirms a July 4 bed and a practical US-101 base for the coast move. | Lodging details in `05-trip-logistics.md`; Days 7-8 in `04-daily-itinerary.md`. |
+| Booked Monterey-area hotel | Locks the aquarium stay and protects the coast-to-Bay-Area timing. | Lodging details in `05-trip-logistics.md`; Days 8-10 in `04-daily-itinerary.md`. |
+| Booked Mountain View Bay Area hotel | Six-night base with free parking; supports Stanford, Silicon Valley, and Golden Gate day trips. | Lodging details in `05-trip-logistics.md`; Days 10-16 in `04-daily-itinerary.md`. |
 | Los Angeles at both start and end | This satisfies the closed-circle requirement while preserving the coast, Stanford / Silicon Valley, Golden Gate, Yosemite, and Las Vegas. | Days 1-6 and 21 in `04-daily-itinerary.md`. |
 | Six Los Angeles arrival nights | The earlier confirmed arrival gives the family a softer landing and room for flexible LA sightseeing before driving north, now anchored in the Pasadena area. | Days 1-6 in `04-daily-itinerary.md`. |
 | One Central Coast / Route 1 overnight | It removes Santa Barbara, honors the Route 1 preference, and prevents a single overloaded Los Angeles-to-Monterey scenic day. The booked Santa Maria base makes US-101 easy and Big Sur timing more sensitive than a Cambria / San Simeon base. | Day 7 in `04-daily-itinerary.md`. |
@@ -44,9 +44,9 @@
 | Six booked Mountain View / Bay Area nights | This keeps Golden Gate in the plan, gives the family real Bay Area breathing room, and strongly supports Stanford, Silicon Valley tech stops, and rest buffers before the Yosemite / Death Valley transfer. | Days 10-15 in `04-daily-itinerary.md`. |
 | Booked Mammoth Lakes night | Yosemite remains in the route as a concentrated Valley day: drive from the Bay Area in the morning, explore Yosemite Valley, cross Tioga Road, then sleep in Mammoth Lakes. | Day 16 in `04-daily-itinerary.md`; lodging details in `05-trip-logistics.md`. |
 | Direct Mammoth-Lakes-to-Las-Vegas via Death Valley | This removes the midpoint hotel move and turns July 14 into a long scenic transit day. It must remain paved, heat-aware, and conditional on Tioga Road, US-395, CA-190, Death Valley road status, weather, smoke, and family energy. | Day 17 in `04-daily-itinerary.md`; logistics in `05-trip-logistics.md`. |
-| Booked Las Vegas Strip hotel | The three-night Las Vegas stay is booked from July 14 to July 17 in one Luxury 2 Queen suite for two adults and two children, with a quiet-room request. Confirmation number, guest name, membership number, address, phone, and private contact details are intentionally omitted. | Lodging details in `05-trip-logistics.md`; Days 17-20 in `04-daily-itinerary.md`. |
+| Booked Las Vegas Strip hotel | Three nights in one suite on the Strip. Booking details in `05-trip-logistics.md`. | Lodging details in `05-trip-logistics.md`; Days 17-20 in `04-daily-itinerary.md`. |
 | Three Las Vegas nights | The booking gives Las Vegas enough time to feel intentional: arrival recovery, one full Strip/indoor day, and one flexible early-morning or pool-focused day. | Days 17-19 in `04-daily-itinerary.md`. |
-| Booked Pasadena-area final Los Angeles hotel | It reduces the risk of a missed international flight after the Las Vegas-to-Los Angeles drive and uses a known Pasadena hotel setup for the final night. Confirmation number, guest name, membership number, exact address, phone, and private contact details are intentionally omitted. | Day 20 and Day 21 in `04-daily-itinerary.md`; trip logistics notes in `05-trip-logistics.md`. |
+| Booked Pasadena-area final Los Angeles hotel | Reduces missed-flight risk after the Las Vegas-to-Los Angeles drive. Booking details in `05-trip-logistics.md`. | Day 20 and Day 21 in `04-daily-itinerary.md`; trip logistics notes in `05-trip-logistics.md`. |
 | Bellagio fountains / conservatory, High Roller or Sphere, and Red Rock as conditional options | These give Las Vegas recognizable, family-possible experiences while respecting July heat and avoiding a nightlife-first plan. | Days 17-19 in `04-daily-itinerary.md`. |
 
 ## Retained Alternatives
@@ -79,15 +79,6 @@
 - Las Vegas in mid-July needs a heat-first schedule: early outdoor windows, hotel pool/rest time, indoor attractions, and evening Strip walks.
 - Re-check Highway 1 status the week before travel; current Caltrans data already shows one-way controls north of Big Sur and near Jamala Road in Santa Barbara County.
 - Re-check Yosemite Tioga Road, Yosemite Valley roadwork, Caltrans CA-120 / US-395 / CA-190, Death Valley road status, Death Valley weather, smoke, and flash-flood risk before locking the July 13 Mammoth Lakes crossing and July 14 Mammoth-Lakes-to-Las-Vegas transfer.
-- International flights are booked: UA 842 SYD-LAX on June 28 and UA 839 LAX-SYD departing July 18.
-- First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4; exact hotel name, address, price, and booking reference stay out of this public repository.
-- Central Coast hotel is booked in Santa Maria from July 4 to July 5; exact hotel name, address, price, and booking reference stay out of this public repository.
-- Monterey-area hotel is booked from July 5 to July 7; exact hotel name, address, price, and booking reference stay out of this public repository.
-- Bay Area hotel is booked in Mountain View from July 7 to July 13; exact address, confirmation number, guest name, membership number, phone, and contact details stay out of this public repository.
-- Mammoth Lakes hotel is booked from July 13 to July 14; exact address, booking reference, payment details, and contact details stay out of this public repository.
-- Las Vegas Strip hotel is booked from July 14 to July 17, with one Luxury 2 Queen suite for two adults and two children, 3:00 pm check-in, and 11:00 am checkout; confirmation number, guest name, membership number, address, phone, and private contact details stay out of this public repository.
-- Final Los Angeles hotel is booked in the Pasadena area from July 17 to July 18, with 3:00 pm check-in and 12:00 pm checkout; confirmation number, guest name, membership number, exact address, phone, and private contact details stay out of this public repository.
-- Treat a confirmed one-room or suite setup for all four travelers and a USD $200-$250 nightly rate as lodging requirements before choosing a hotel brand.
 
 ## Open Decisions
 
