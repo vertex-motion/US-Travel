@@ -1688,7 +1688,7 @@
               <p class="panel-kicker">Canonical source: 07-checklist.md</p>
             </div>
             <div class="filter-panel">
-              <span class="control-label">Filter</span>
+              <span class="control-label">Status</span>
               <div class="filters" id="bookingStatusFilters"></div>
             </div>
           </div>
@@ -1703,6 +1703,10 @@
             <div>
               <h2 class="panel-title">Timed Tickets</h2>
               <p class="panel-kicker">Calendar-sensitive reservations and ticket windows.</p>
+            </div>
+            <div class="filter-panel">
+              <span class="control-label">Status</span>
+              <div class="filters" id="timedStatusFilters"></div>
             </div>
           </div>
           <div class="panel-body">
@@ -1722,6 +1726,10 @@
               <h2 class="panel-title">Pre-Departure Checks</h2>
               <p class="panel-kicker">Route, weather, logistics, and final verification tasks.</p>
             </div>
+            <div class="filter-panel">
+              <span class="control-label">Status</span>
+              <div class="filters" id="preDepartureStatusFilters"></div>
+            </div>
           </div>
           <div class="panel-body">
             <div class="table-wrap">
@@ -1734,11 +1742,15 @@
         </section>
 
         <!-- Open Decisions -->
-        <section class="panel flat decisions-section">
+        <section class="panel flat decisions-section" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Open Decisions</h2>
               <p class="panel-kicker">Canonical source: 07-checklist.md. Resolve before or during the trip.</p>
+            </div>
+            <div class="filter-panel">
+              <span class="control-label">Status</span>
+              <div class="filters" id="decisionsStatusFilters"></div>
             </div>
           </div>
           <div class="panel-body" id="openQuestions"></div>
@@ -1750,6 +1762,10 @@
             <div>
               <h2 class="panel-title">Retained Alternatives</h2>
               <p class="panel-kicker">Route and lodging fallbacks kept available if constraints change.</p>
+            </div>
+            <div class="filter-panel">
+              <span class="control-label">Status</span>
+              <div class="filters" id="alternativesStatusFilters"></div>
             </div>
           </div>
           <div class="panel-body" id="retainedAlternatives"></div>
@@ -2306,6 +2322,8 @@
     const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
     const dayFilterState = { region: "All", type: "All" };
     const bookingFilterState = { status: "All" };
+    const timedFilterState = { status: "All" };
+    const preDepartureFilterState = { status: "All" };
     const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
 
     function renderLodgingBases() {
@@ -2344,18 +2362,87 @@
       $("#lodgingCheckRows").innerHTML = tripData.lodgingChecks.map((row) => `
         <tr><td><strong>${escapeHtml(row.area)}</strong></td><td>${escapeHtml(row.check)}</td></tr>
       `).join("");
-      $("#timedRows").innerHTML = tripData.timedTickets.map((row) => `
-        <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
-      `).join("");
-      $("#preDepartureRows").innerHTML = tripData.preDeparture.map((row) => `
-        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
-      `).join("");
+      renderTimedTable();
+      renderPreDepartureTable();
       $("#duringTripRows").innerHTML = tripData.duringTrip.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
       $("#afterTripRows").innerHTML = tripData.afterTrip.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
+    }
+
+    function renderTimedTable() {
+      const rows = timedFilterState.status === "All"
+        ? tripData.timedTickets
+        : tripData.timedTickets.filter((r) => r.status === timedFilterState.status);
+      $("#timedRows").innerHTML = rows.map((row) => `
+        <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+    }
+
+    function renderTimedFilters() {
+      const el = $("#timedStatusFilters");
+      if (!el) return;
+      const statuses = ["All", ...new Set(tripData.timedTickets.map((r) => r.status))];
+      el.innerHTML = statuses.map((status) => {
+        const count = status === "All" ? tripData.timedTickets.length : tripData.timedTickets.filter((r) => r.status === status).length;
+        const active = status === timedFilterState.status;
+        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
+      }).join("");
+      el.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        timedFilterState.status = button.dataset.status;
+        el.querySelectorAll(".filter-button").forEach((item) => {
+          item.classList.toggle("active", item === button);
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        renderTimedTable();
+      });
+    }
+
+    function renderPreDepartureTable() {
+      const rows = preDepartureFilterState.status === "All"
+        ? tripData.preDeparture
+        : tripData.preDeparture.filter((r) => r.status === preDepartureFilterState.status);
+      $("#preDepartureRows").innerHTML = rows.map((row) => `
+        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+      `).join("");
+    }
+
+    function renderPreDepartureFilters() {
+      const el = $("#preDepartureStatusFilters");
+      if (!el) return;
+      const statuses = ["All", ...new Set(tripData.preDeparture.map((r) => r.status))];
+      el.innerHTML = statuses.map((status) => {
+        const count = status === "All" ? tripData.preDeparture.length : tripData.preDeparture.filter((r) => r.status === status).length;
+        const active = status === preDepartureFilterState.status;
+        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
+      }).join("");
+      el.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        preDepartureFilterState.status = button.dataset.status;
+        el.querySelectorAll(".filter-button").forEach((item) => {
+          item.classList.toggle("active", item === button);
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        renderPreDepartureTable();
+      });
+    }
+
+    function renderDecisionCountFilters() {
+      const decisionsEl = $("#decisionsStatusFilters");
+      const altsEl = $("#alternativesStatusFilters");
+      if (decisionsEl) {
+        const count = tripData.openQuestions.length;
+        decisionsEl.innerHTML = `<span class="tag info">${count} open</span>`;
+      }
+      if (altsEl) {
+        const count = tripData.retainedAlternatives.length;
+        altsEl.innerHTML = `<span class="tag">${count} options</span>`;
+      }
     }
 
     function renderPlaceRows(places = []) {
@@ -2874,6 +2961,9 @@
       renderDays();
       renderBookingFilters();
       renderBooking();
+      renderTimedFilters();
+      renderPreDepartureFilters();
+      renderDecisionCountFilters();
       renderProgress();
       renderDecisionCards("#openQuestions", tripData.openQuestions, [
         { label: "Why it matters", key: "why" },
