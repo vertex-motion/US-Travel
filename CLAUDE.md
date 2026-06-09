@@ -27,6 +27,7 @@ This repo is public. Never add personal data: contact details, document numbers,
 One canonical home per fact. Before editing, check for existing coverage.
 
 - `03-potential-options.md` is the registry for every trip option (selected, retained, parked, rejected). Add or update there first.
+- `07-checklist.md` is the canonical home for all traveler tasks and open decisions. Do not track tasks or open questions elsewhere.
 - Default option interest score to `0` (no input, not rejection).
 - Link to the canonical file; don't restate its content.
 - Intentional repetition must serve a distinct purpose (summary, checklist, rationale, evidence).
@@ -41,7 +42,7 @@ See [`metadata/content-tags.md`](metadata/content-tags.md) for tag definitions a
 
 ## Dashboard Sync
 
-`index.html` is generated from planning files `01-05` and `07-08`. Never sync `06-budget.md`. Sync blocks tagged `current-plan`, `traveler-notes`, and `to-confirm` only.
+`index.html` is generated from planning files `01-07`. Never sync `06-budget.md`. Sync blocks tagged `current-plan`, `traveler-notes`, and `to-confirm` only.
 
 ## Trip Change Impact Review
 

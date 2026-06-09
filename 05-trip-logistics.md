@@ -30,6 +30,20 @@
 | Las Vegas | Booked Las Vegas Strip base. | Keep Las Vegas heat-aware: early outdoor time, indoor afternoons, pool/rest time, and short evening Strip walks. |
 | Los Angeles departure | Booked Pasadena-area final base. | Pasadena is not airport-adjacent, so leave a large final-day buffer for fuel, traffic, rental return, luggage, terminal transfer, and international check-in. |
 
+## Lodging Summary
+
+<!-- tag: traveler-notes -->
+
+| Base | Dates | Check-in | Checkout | Notes |
+| --- | --- | --- | --- | --- |
+| Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | Early check-in or luggage storage if available. |
+| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | Confirm before July 4 arrival. |
+| Monterey / Carmel | July 5–7 | Confirm | Confirm | Confirm before July 5 arrival; check resort/amenity fees. |
+| Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free parking and free WiFi per rate notes. |
+| Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | Free cancellation until July 10 at 23:59 PDT. |
+| Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | One Luxury 2 Queen suite for two adults and two children. |
+| Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | Allow large buffer for LAX fuel, rental return, and international check-in. |
+
 ## Hotel Operating Checks
 
 <!-- tag: to-confirm -->
