@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>West Coast and Las Vegas Family Trip Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://tile.openstreetmap.org">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -20,7 +23,7 @@
       --sun: #d88a22;
       --rose: #b85c5c;
       --grape: #604c8d;
-      --shadow: 0 18px 50px rgba(23, 33, 38, 0.12);
+      --shadow: 0 8px 24px rgba(23, 33, 38, 0.09);
       --radius: 8px;
       --max: 1220px;
     }
@@ -37,7 +40,7 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.5;
     }
 
@@ -1219,6 +1222,148 @@
       }
     }
 
+    .hero-timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .timeline-chip {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .timeline-chip strong {
+      font-weight: 700;
+    }
+
+    .timeline-chip .nights {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 0.76rem;
+    }
+
+    .timeline-arrow {
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 0.78rem;
+    }
+
+    .progress-bar-wrap {
+      margin-bottom: 18px;
+      padding: 16px;
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .progress-bar-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .progress-bar-label span {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .progress-track {
+      height: 10px;
+      border-radius: 999px;
+      background: #e6e4dc;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--forest), var(--ocean));
+      transition: width 0.5s ease;
+    }
+
+    .decisions-section {
+      margin-top: 24px;
+    }
+
+    .collapsible-section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .collapsible-section > summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .collapsible-section > summary::after {
+      content: "▸";
+      font-size: 0.8rem;
+      transition: transform 0.2s;
+    }
+
+    .collapsible-section[open] > summary::after {
+      transform: rotate(90deg);
+    }
+
+    .collapsible-section > .expand-body {
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-sources {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 0 auto 42px;
+    }
+
+    .footer-sources > summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-sources > summary::after {
+      content: "▸";
+      font-size: 0.76rem;
+      transition: transform 0.2s;
+    }
+
+    .footer-sources[open] > summary::after {
+      transform: rotate(90deg);
+    }
+
+    .lodging-summary-table {
+      min-width: 0;
+    }
+
     @media (max-width: 760px) {
       .hero-inner {
         padding: 42px 0 34px;
@@ -1312,6 +1457,23 @@
           <div class="hero-stat"><strong>7</strong><span>US lodging bases</span></div>
           <div class="hero-stat"><strong>LAX</strong><span>closed-circle gateway</span></div>
         </div>
+        <div class="hero-timeline" aria-label="Route timeline">
+          <div class="timeline-chip"><strong>Pasadena</strong><span class="nights">6n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Santa Maria</strong><span class="nights">1n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Monterey</strong><span class="nights">2n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Mountain View</strong><span class="nights">6n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Mammoth Lakes</strong><span class="nights">1n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Death Valley</strong><span class="nights">transit</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Las Vegas</strong><span class="nights">3n</span></div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-chip"><strong>Pasadena</strong><span class="nights">1n</span></div>
+        </div>
       </div>
     </header>
 
@@ -1326,9 +1488,7 @@
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="potential">Potential Options</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="itinerary">Itinerary</button>
           <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="lodging">Trip Logistics</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Checklist</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="decisions">Decisions</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="booking">Checklist &amp; Decisions</button>
         </div>
       </div>
     </nav>
@@ -1436,6 +1596,22 @@
       </section>
 
       <section class="view" id="lodging" role="tabpanel">
+        <section class="panel flat" style="margin-bottom: 16px;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Lodging Summary</h2>
+              <p class="panel-kicker">Dates, check-in/checkout times, and key notes per base. Source: 05-trip-logistics.md</p>
+            </div>
+          </div>
+          <div class="panel-body" style="padding: 0;">
+            <div class="table-wrap" style="border: none; border-radius: 0;">
+              <table class="lodging-summary-table mini-table">
+                <thead><tr><th>Base</th><th>Dates</th><th>Check-in</th><th>Checkout</th><th>Notes</th></tr></thead>
+                <tbody id="lodgingSummaryRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
         <div class="split">
           <section class="panel flat">
             <div class="panel-header">
@@ -1495,27 +1671,38 @@
       </section>
 
       <section class="view" id="booking" role="tabpanel">
+
+        <!-- Progress bar -->
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-label">
+            Booking progress <span id="progressLabel"></span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill" style="width: 0%;"></div></div>
+        </div>
+
+        <!-- Bookings -->
         <section class="panel flat">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Checklist</h2>
+              <h2 class="panel-title">Bookings</h2>
               <p class="panel-kicker">Canonical source: 07-checklist.md</p>
+            </div>
+            <div class="filter-panel">
+              <span class="control-label">Filter</span>
+              <div class="filters" id="bookingStatusFilters"></div>
             </div>
           </div>
           <div class="panel-body">
-            <div class="filter-panel" style="margin-bottom: 14px;">
-              <span class="control-label">Task status</span>
-              <div class="filters" id="bookingStatusFilters"></div>
-            </div>
             <div class="check-grid" id="bookingTasks"></div>
           </div>
         </section>
 
+        <!-- Timed Tickets -->
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Timed Tickets</h2>
-              <p class="panel-kicker">Track calendar-sensitive reservations and ticket windows.</p>
+              <p class="panel-kicker">Calendar-sensitive reservations and ticket windows.</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1528,11 +1715,12 @@
           </div>
         </section>
 
+        <!-- Pre-Departure -->
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Pre-Departure Checks</h2>
-              <p class="panel-kicker">Track route, weather, logistics, and final verification work.</p>
+              <p class="panel-kicker">Route, weather, logistics, and final verification tasks.</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1545,31 +1733,40 @@
           </div>
         </section>
 
+        <!-- Open Decisions -->
+        <section class="panel flat decisions-section">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Open Decisions</h2>
+              <p class="panel-kicker">Canonical source: 07-checklist.md. Resolve before or during the trip.</p>
+            </div>
+          </div>
+          <div class="panel-body" id="openQuestions"></div>
+        </section>
+
+        <!-- Retained Alternatives -->
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">During Trip</h2>
-              <p class="panel-kicker">Tasks to repeat while traveling.</p>
+              <h2 class="panel-title">Retained Alternatives</h2>
+              <p class="panel-kicker">Route and lodging fallbacks kept available if constraints change.</p>
             </div>
           </div>
-          <div class="panel-body">
-            <div class="table-wrap">
+          <div class="panel-body" id="retainedAlternatives"></div>
+        </section>
+
+        <!-- During / After trip — collapsible, lower priority -->
+        <details class="collapsible-section" style="margin-top: 16px;">
+          <summary>During-Trip &amp; After-Trip tasks</summary>
+          <div class="expand-body" style="padding: 16px;">
+            <p class="section-label" style="margin-bottom: 8px;">During trip</p>
+            <div class="table-wrap" style="margin-bottom: 16px;">
               <table class="mini-table">
                 <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
                 <tbody id="duringTripRows"></tbody>
               </table>
             </div>
-          </div>
-        </section>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">After Trip</h2>
-              <p class="panel-kicker">Follow-up tasks after returning home.</p>
-            </div>
-          </div>
-          <div class="panel-body">
+            <p class="section-label" style="margin-bottom: 8px;">After trip</p>
             <div class="table-wrap">
               <table class="mini-table">
                 <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
@@ -1577,53 +1774,30 @@
               </table>
             </div>
           </div>
-        </section>
+        </details>
 
       </section>
 
-      <section class="view" id="decisions" role="tabpanel">
-        <div class="grid two">
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Open Questions</h2>
-                <p class="panel-kicker">Canonical source: 02-current-plan-options.md</p>
-              </div>
-            </div>
-            <div class="panel-body" id="openQuestions"></div>
-          </section>
-
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Retained Alternatives</h2>
-                <p class="panel-kicker">Kept available if constraints change.</p>
-              </div>
-            </div>
-            <div class="panel-body" id="retainedAlternatives"></div>
-          </section>
-        </div>
-
-      </section>
-
-      <section class="view" id="sources" role="tabpanel">
-        <section class="panel flat">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">Sources</h2>
-              <p class="panel-kicker">Grouped by the planning file where each supported fact lives.</p>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="source-grid" id="sourceGrid"></div>
-          </div>
-        </section>
-      </section>
     </main>
 
     <footer class="footer">
       Static HTML dashboard generated from the repository planning documents. Volatile travel facts retain their existing source dates and status labels.
     </footer>
+
+    <details class="footer-sources">
+      <summary>Sources and citations</summary>
+      <section class="panel flat" style="margin-top: 12px;">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Sources</h2>
+            <p class="panel-kicker">Grouped by the planning file where each supported fact lives.</p>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="source-grid" id="sourceGrid"></div>
+        </div>
+      </section>
+    </details>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -1785,12 +1959,21 @@
         "Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer.",
         "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
       ],
+      lodgingBases: [
+        { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", notes: "Early check-in or luggage storage if available." },
+        { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "Confirm", checkout: "Confirm", notes: "Confirm before July 4 arrival." },
+        { base: "Monterey / Carmel", dates: "July 5–7", checkin: "Confirm", checkout: "Confirm", notes: "Confirm before July 5 arrival; check resort/amenity fees." },
+        { base: "Bay Area (Mountain View)", dates: "July 7–13", checkin: "4:00 pm", checkout: "11:00 am", notes: "Free parking and free WiFi per rate notes." },
+        { base: "Yosemite / Mammoth Lakes", dates: "July 13–14", checkin: "4:00 pm", checkout: "11:00 am", notes: "Free cancellation until July 10 at 23:59 PDT." },
+        { base: "Las Vegas Strip", dates: "July 14–17", checkin: "3:00 pm", checkout: "11:00 am", notes: "One Luxury 2 Queen suite for two adults and two children." },
+        { base: "Los Angeles departure (Pasadena)", dates: "July 17–18", checkin: "3:00 pm", checkout: "12:00 pm", notes: "Allow large buffer for LAX fuel, rental return, and international check-in." }
+      ],
       openQuestions: [
         { question: "Which Silicon Valley tech stops should anchor Day 13?", why: "Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus.", default: "Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps." },
         { question: "Should the July 13-14 Yosemite / Mammoth Lakes / Death Valley sequence remain in the plan after safety checks?", why: "This is the hardest route sequence and depends on Tioga Road, US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy.", default: "Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback." },
         { question: "Should Red Rock Canyon be included in Las Vegas?", why: "It adds a desert nature moment, but July heat makes it only an early-morning option.", default: "Keep it optional for Day 19, not fixed." },
         { question: "Does the family want a theme park day?", why: "Disneyland or Universal would consume a full Los Angeles day and add crowd, cost, and height-rule constraints.", default: "Skip theme parks on this first plan." },
-        { question: "Will the family bring or rent the younger child's child seat?", why: "It affects airport transfers, airline logistics, rental car pickup, and vehicle fit.", default: "Bring a known approved seat if airline and rental logistics allow." },
+        { question: "Will the family bring or rent the younger child's car seat?", why: "It affects airport transfers, airline logistics, rental car pickup, and vehicle fit.", default: "Bring a known approved seat if airline and rental logistics allow." },
         { question: "Which one Las Vegas paid indoor attraction or show should be the anchor?", why: "Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat.", default: "Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics." }
       ],
       retainedAlternatives: [
@@ -2124,6 +2307,31 @@
     const dayFilterState = { region: "All", type: "All" };
     const bookingFilterState = { status: "All" };
     const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
+
+    function renderLodgingBases() {
+      const tbody = $("#lodgingSummaryRows");
+      if (!tbody) return;
+      tbody.innerHTML = tripData.lodgingBases.map((row) => {
+        const needsConfirm = row.checkin === "Confirm" || row.checkout === "Confirm";
+        return `<tr>
+          <td><strong>${escapeHtml(row.base)}</strong></td>
+          <td>${escapeHtml(row.dates)}</td>
+          <td>${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
+          <td>${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
+          <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.notes)}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    function renderProgress() {
+      const total = tripData.bookingTasks.length;
+      const done = tripData.bookingTasks.filter((t) => t.status === "Done").length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+      const label = $("#progressLabel");
+      const fill = $("#progressFill");
+      if (label) label.textContent = `${done} of ${total} done`;
+      if (fill) fill.style.width = `${pct}%`;
+    }
 
     function renderLists() {
       $("#currentAnchors").innerHTML = tripData.currentAnchors.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
@@ -2659,12 +2867,14 @@
     }
 
     function boot() {
+      renderLodgingBases();
       renderLists();
       renderTables();
       renderDayFilters();
       renderDays();
       renderBookingFilters();
       renderBooking();
+      renderProgress();
       renderDecisionCards("#openQuestions", tripData.openQuestions, [
         { label: "Why it matters", key: "why" },
         { label: "Recommended default", key: "default" }
