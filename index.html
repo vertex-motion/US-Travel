@@ -1628,12 +1628,17 @@
           <section class="panel flat">
             <div class="panel-header">
               <div>
-                <h2 class="panel-title">Transport Plan</h2>
-                <p class="panel-kicker">LAX closed-circle route and car operating strategy</p>
+                <h2 class="panel-title">Route Disruptions</h2>
+                <p class="panel-kicker">Active closures, road works, and conditions affecting driving. Source: 05-trip-logistics.md</p>
               </div>
             </div>
-            <div class="panel-body">
-              <ol class="list" id="transportPlan"></ol>
+            <div class="panel-body" style="padding: 0;">
+              <div class="table-wrap" style="border: none; border-radius: 0;">
+                <table class="mini-table">
+                  <thead><tr><th>Route / Road</th><th>Disruption</th><th>Impact</th><th>Last checked</th><th>Re-check before</th></tr></thead>
+                  <tbody id="routeDisruptionRows"></tbody>
+                </table>
+              </div>
             </div>
           </section>
         </div>
@@ -1892,12 +1897,11 @@
         { area: "Las Vegas to Los Angeles", check: "Before the Las Vegas-to-Los-Angeles return, choose departure time, lunch stop, route, and Los Angeles arrival buffer." },
         { area: "Final LAX departure", check: "Before the final LAX departure, confirm terminal, rental return location, fuel stop, rental return buffer, international check-in buffer, and luggage timing." }
       ],
-      transportPlan: [
-        "Use the booked LAX-to-LAX rental car for the full United States stay.",
-        "Use the car for the intercity route: Los Angeles, Central Coast, Monterey, Mountain View / Bay Area, Yosemite / Mammoth Lakes, Death Valley transit, Las Vegas, and the return to Los Angeles.",
-        "Use the car for Stanford, Mountain View, Cupertino, and San Jose tech stops during the Mountain View / Bay Area stay.",
-        "Keep the direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley conditional on US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy.",
-        "Return the car at LAX before the international departure. Exact flight and rental timing lives in 04-daily-itinerary.md and 07-checklist.md."
+      routeDisruptions: [
+        { route: "Highway 1 north of Big Sur", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to any Big Sur or Central Coast leg; requires early start and Caltrans check same morning", lastChecked: "2026-06-01", recheckBefore: "Day 7 departure and Day 8 morning" },
+        { route: "Highway 1 near Jamala Road, Santa Barbara County", disruption: "Washout — one-way controlled traffic (Caltrans)", impact: "Affects southbound LA-to-Central-Coast routing if Highway 1 is used", lastChecked: "2026-06-01", recheckBefore: "Day 7 departure" },
+        { route: "Tioga Road (CA-120), Yosemite", disruption: "Open as of May 15, 2026; limited services; roadwork possible (NPS)", impact: "Yosemite Valley + Mammoth Lakes Day 16 depends on this road staying open", lastChecked: "2026-06-05", recheckBefore: "Before July 10 cancellation deadline and morning of Day 16" },
+        { route: "US-395 / CA-190, Death Valley transfer", disruption: "No active closure; summer heat and road status change quickly (NPS/Caltrans)", impact: "Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield", lastChecked: "2026-06-05", recheckBefore: "Day before Day 17 and morning of Day 17" }
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Done", owner: "Travelers", notes: "Confirmed June 28-July 20, 2026 Sydney-to-Sydney.", status: "Done" },
@@ -2353,7 +2357,14 @@
 
     function renderLists() {
       $("#currentAnchors").innerHTML = tripData.currentAnchors.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
-      $("#transportPlan").innerHTML = tripData.transportPlan.map((item, index) => `<li><span class="dot ${["", "ocean", "sun", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      const disruptionTbody = $("#routeDisruptionRows");
+      if (disruptionTbody) disruptionTbody.innerHTML = tripData.routeDisruptions.map((r) => `<tr>
+        <td><strong>${escapeHtml(r.route)}</strong></td>
+        <td>${escapeHtml(r.disruption)}</td>
+        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.impact)}</td>
+        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.lastChecked)}</td>
+        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.recheckBefore)}</td>
+      </tr>`).join("");
       $("#travelerNotes").innerHTML = tripData.travelerNotes.map((item, index) => `<li><span class="dot ${["ocean", "sun", "", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
     }
