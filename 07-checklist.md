@@ -45,12 +45,12 @@
 | --- | --- | --- | --- |
 | Confirm Mountain View hotel operating details | Now | Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. | Open |
 | Confirm Mammoth Lakes hotel operating details | Before July 10 cancellation deadline | Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay after Tioga Road, smoke, weather, and same-day timing checks. | Open |
-| Confirm Las Vegas hotel operating details | Before July 14 arrival | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and any incidental hold. | Open |
+| Confirm Las Vegas hotel operating details | Before July 14 arrival | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental hold. | Open |
 | Confirm final Los Angeles hotel operating details | Before July 17 arrival | Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and Pasadena-to-LAX drive buffer. | Open |
 | Confirm rental car operating details | Before pickup | Confirm vehicle class, luggage fit, child seat plan, second driver, fuel policy, toll handling, Australian license / IDP requirements, and counter timing. | Open |
 | Choose child seat plan | Before pickup | Decide whether to bring or rent an approved child seat for the younger child; confirm airline, rental company, and legal requirements. | Open |
 | Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
-| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm check-in, checkout, early luggage storage, parking cost, family occupancy, cancellation terms, and any taxes/fees outside this public repo. | Open |
+| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm check-in, checkout, early luggage storage, parking cost, parking height/entry details, family occupancy, cancellation terms, and any taxes/fees outside this public repo. | Open |
 | Santa Maria hotel operating details | Before July 4 arrival | Confirm check-in, checkout, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
 | Monterey-area hotel operating details | Before July 5 arrival | Confirm check-in, checkout, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |

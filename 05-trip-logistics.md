@@ -44,17 +44,6 @@
 | Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | To confirm — self-parking fee and height limit unknown. |
 | Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
 
-## Hotel Operating Checks
-
-<!-- tag: to-confirm -->
-
-- Los Angeles arrival: Confirm early check-in or luggage storage, parking cost, family occupancy, cancellation terms, private total cost, and parking height/entry details.
-- Central Coast / Route 1 overnight: Confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, private total cost, and current Caltrans status before any full Highway 1 / Big Sur routing.
-- Monterey / Carmel: Confirm parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, checkout time, and private total cost.
-- San Francisco / Bay Area: Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, parking details, and any incidentals.
-- Yosemite / Mammoth Lakes: Confirm parking, check-in process, property fees, family occupancy, cancellation deadline, private total cost, and whether any additional local fees apply.
-- Las Vegas: Confirm final folio, resort fee and tax, parking fees, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental holds.
-- Los Angeles departure: Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and the Pasadena-to-LAX drive buffer.
 
 ## Transport Plan
 
