@@ -34,15 +34,15 @@
 
 <!-- tag: traveler-notes -->
 
-| Base | Dates | Check-in | Checkout | Notes |
+| Base | Dates | Check-in | Checkout | Parking |
 | --- | --- | --- | --- | --- |
-| Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | Early check-in or luggage storage if available. |
-| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | Confirm before July 4 arrival. |
-| Monterey / Carmel | July 5–7 | Confirm | Confirm | Confirm before July 5 arrival; check resort/amenity fees. |
-| Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free parking and free WiFi per rate notes. |
-| Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | Free cancellation until July 10 at 23:59 PDT. |
-| Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | One Luxury 2 Queen suite for two adults and two children. |
-| Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | Allow large buffer for LAX fuel, rental return, and international check-in. |
+| Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
+| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | To confirm — cost and availability unknown. |
+| Monterey / Carmel | July 5–7 | Confirm | Confirm | To confirm — cost and availability unknown. |
+| Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free per rate notes — confirm before arrival. |
+| Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | To confirm — cost and availability unknown. |
+| Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | To confirm — self-parking fee and height limit unknown. |
+| Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
 
 ## Hotel Operating Checks
 

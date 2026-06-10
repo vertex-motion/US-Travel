@@ -1600,13 +1600,13 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Lodging Summary</h2>
-              <p class="panel-kicker">Dates, check-in/checkout times, and key notes per base. Source: 05-trip-logistics.md</p>
+              <p class="panel-kicker">Dates, check-in/checkout times, and parking per base. Source: 05-trip-logistics.md</p>
             </div>
           </div>
           <div class="panel-body" style="padding: 0;">
             <div class="table-wrap" style="border: none; border-radius: 0;">
               <table class="lodging-summary-table mini-table">
-                <thead><tr><th>Base</th><th>Dates</th><th>Check-in</th><th>Checkout</th><th>Notes</th></tr></thead>
+                <thead><tr><th>Base</th><th>Dates</th><th>Check-in</th><th>Checkout</th><th>Parking</th></tr></thead>
                 <tbody id="lodgingSummaryRows"></tbody>
               </table>
             </div>
@@ -1976,13 +1976,13 @@
         "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
       ],
       lodgingBases: [
-        { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", notes: "Early check-in or luggage storage if available." },
-        { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "Confirm", checkout: "Confirm", notes: "Confirm before July 4 arrival." },
-        { base: "Monterey / Carmel", dates: "July 5–7", checkin: "Confirm", checkout: "Confirm", notes: "Confirm before July 5 arrival; check resort/amenity fees." },
-        { base: "Bay Area (Mountain View)", dates: "July 7–13", checkin: "4:00 pm", checkout: "11:00 am", notes: "Free parking and free WiFi per rate notes." },
-        { base: "Yosemite / Mammoth Lakes", dates: "July 13–14", checkin: "4:00 pm", checkout: "11:00 am", notes: "Free cancellation until July 10 at 23:59 PDT." },
-        { base: "Las Vegas Strip", dates: "July 14–17", checkin: "3:00 pm", checkout: "11:00 am", notes: "One Luxury 2 Queen suite for two adults and two children." },
-        { base: "Los Angeles departure (Pasadena)", dates: "July 17–18", checkin: "3:00 pm", checkout: "12:00 pm", notes: "Allow large buffer for LAX fuel, rental return, and international check-in." }
+        { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", parking: "To confirm — cost and availability unknown." },
+        { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "Confirm", checkout: "Confirm", parking: "To confirm — cost and availability unknown." },
+        { base: "Monterey / Carmel", dates: "July 5–7", checkin: "Confirm", checkout: "Confirm", parking: "To confirm — cost and availability unknown." },
+        { base: "Bay Area (Mountain View)", dates: "July 7–13", checkin: "4:00 pm", checkout: "11:00 am", parking: "Free per rate notes — confirm before arrival." },
+        { base: "Yosemite / Mammoth Lakes", dates: "July 13–14", checkin: "4:00 pm", checkout: "11:00 am", parking: "To confirm — cost and availability unknown." },
+        { base: "Las Vegas Strip", dates: "July 14–17", checkin: "3:00 pm", checkout: "11:00 am", parking: "To confirm — self-parking fee and height limit unknown." },
+        { base: "Los Angeles departure (Pasadena)", dates: "July 17–18", checkin: "3:00 pm", checkout: "12:00 pm", parking: "To confirm — cost and availability unknown." }
       ],
       openQuestions: [
         { question: "Which Silicon Valley tech stops should anchor Day 13?", why: "Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus.", default: "Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps." },
@@ -2336,7 +2336,7 @@
           <td>${escapeHtml(row.dates)}</td>
           <td>${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
           <td>${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
-          <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.notes)}</td>
+          <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.parking)}</td>
         </tr>`;
       }).join("");
     }
