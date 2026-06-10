@@ -45,27 +45,18 @@
 | Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
 
 
-## Transport Plan
-
-<!-- tag: current-plan -->
-
-- Use the booked LAX-to-LAX rental car for the full United States stay.
-- Use the car for the intercity route: Los Angeles, Central Coast, Monterey, Mountain View / Bay Area, Yosemite / Mammoth Lakes, Death Valley transit, Las Vegas, and the return to Los Angeles.
-- Use the car for Stanford, Mountain View, Cupertino, and San Jose tech stops during the Mountain View / Bay Area stay.
-- Keep the direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley conditional on US-395 / CA-190, Death Valley road status, weather, smoke, heat, and family energy.
-- Return the car at LAX before the international departure. Exact flight and rental timing lives in `04-daily-itinerary.md` and `07-checklist.md`.
+## Route Disruptions
 
 <!-- tag: traveler-notes -->
 
-- Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan if the room is not ready.
-- Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.
-- Keep Death Valley stops short and paved.
-- Carry extra water, snacks, and fuel margin for the Death Valley transfer.
-- Leave enough final-day buffer for fuel, luggage, rental return, terminal transfer, and international check-in.
+Active disruptions, closures, and road conditions that affect where or how to drive. Update before each affected leg.
 
-<!-- tag: to-confirm -->
-
-- For the Golden Gate / Presidio day, decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View.
+| Route / Road | Disruption | Impact | Last checked | Re-check before |
+| --- | --- | --- | --- | --- |
+| Highway 1 north of Big Sur | One-way controlled traffic through July 31, 2026 (Caltrans) | Adds time to any Big Sur or Central Coast leg; requires early start and Caltrans check same morning | 2026-06-01 | Day 7 departure and Day 8 morning |
+| Highway 1 near Jamala Road, Santa Barbara County | Washout — one-way controlled traffic (Caltrans) | Affects southbound LA-to-Central-Coast routing on US-101 alternative if Highway 1 is used | 2026-06-01 | Day 7 departure |
+| Tioga Road (CA-120), Yosemite | Open as of May 15, 2026; limited services; roadwork possible (NPS) | Yosemite Valley + Mammoth Lakes Day 16 depends on this road staying open | 2026-06-05 | Before July 10 cancellation deadline and morning of Day 16 |
+| US-395 / CA-190, Death Valley transfer | No active closure; summer heat and road status change quickly (NPS/Caltrans) | Direct Mammoth-to-Las-Vegas route is conditional on this corridor; fallback is CA-99 via Bakersfield | 2026-06-05 | Day before Day 17 and morning of Day 17 |
 
 ## Rental Car Operating Checks
 
