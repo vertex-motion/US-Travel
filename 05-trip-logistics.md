@@ -58,20 +58,6 @@ Active disruptions, closures, and road conditions that affect where or how to dr
 | Tioga Road (CA-120), Yosemite | Open as of May 15, 2026; limited services; roadwork possible (NPS) | Yosemite Valley + Mammoth Lakes Day 16 depends on this road staying open | 2026-06-05 | Before July 10 cancellation deadline and morning of Day 16 |
 | US-395 / CA-190, Death Valley transfer | No active closure; summer heat and road status change quickly (NPS/Caltrans) | Direct Mammoth-to-Las-Vegas route is conditional on this corridor; fallback is CA-99 via Bakersfield | 2026-06-05 | Day before Day 17 and morning of Day 17 |
 
-## Rental Car Operating Checks
-
-<!-- tag: constraints -->
-
-- Keep rental provider, price, and booking reference out of this public repository.
-
-<!-- tag: to-confirm -->
-
-- Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup.
-- Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat.
-- Confirm whether the rental company requires an International Driving Permit for an Australian license.
-- Add a second authorized driver if both adults may drive.
-- Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the booked Las Vegas Strip hotel has self-parking that fits the vehicle.
-- Confirm free parking at the booked Mountain View hotel and compare self-driving against Caltrain/rideshare for the Golden Gate day if San Francisco parking or traffic is expensive.
 
 ## Route Condition Checks
 
