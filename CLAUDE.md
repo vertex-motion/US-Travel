@@ -20,7 +20,7 @@ Apply to all technical documents, instructions, and planning files.
 
 ## Commit Workflow
 
-Finalize all changes before committing. Push to GitHub after each successful commit.
+Finalize all changes before committing. Commit directly to `main` and push to `origin/main` after each successful commit.
 
 ## Privacy
 
