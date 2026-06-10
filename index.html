@@ -1612,7 +1612,12 @@
           </div>
           <div class="section-progress-wrap"><span class="section-progress-label" id="bookingProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="bookingProgressFill" style="width: 0%;"></div></div></div>
           <div class="panel-body">
-            <div class="check-grid" id="bookingTasks"></div>
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Task</th><th>When</th><th>Notes</th><th>Status</th></tr></thead>
+                <tbody id="bookingTasks"></tbody>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -2395,11 +2400,7 @@
         ? tripData.bookingTasks
         : tripData.bookingTasks.filter((task) => task.status === bookingFilterState.status);
       $("#bookingTasks").innerHTML = tasks.map((task) => `
-        <article class="task-card">
-          <div class="task-meta"><h3>${escapeHtml(task.task)}</h3>${statusTag(task.status)}</div>
-          <p><strong>When:</strong> ${escapeHtml(task.when)}<br><strong>Owner:</strong> ${escapeHtml(task.owner)}</p>
-          <p>${escapeHtml(task.notes)}</p>
-        </article>
+        <tr><td><strong>${escapeHtml(task.task)}</strong></td><td>${escapeHtml(task.when)}</td><td>${escapeHtml(task.notes)}</td><td>${statusTag(task.status)}</td></tr>
       `).join("");
       renderSectionProgress("bookingProgressLabel", "bookingProgressFill", tripData.bookingTasks);
     }
