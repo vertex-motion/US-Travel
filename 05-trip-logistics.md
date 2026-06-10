@@ -60,13 +60,6 @@ Known disruptions and what to confirm before each affected leg. Update before tr
 | Las Vegas to Los Angeles (I-15) | No active disruption | Standard interstate drive | Choose departure time, lunch stop, route, and LA arrival buffer before Day 20 | — |
 | Final LAX departure | No active disruption | Pasadena is not airport-adjacent; allow large buffer | Confirm terminal, rental return location, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day | — |
 
-## Fallback Lodging
-
-<!-- tag: fallback -->
-
-- Keep Bakersfield, Tehachapi, or another practical CA-99 / CA-58 corridor hotel as a cancellable midpoint fallback.
-- Use this fallback only if Tioga Road, US-395, CA-190, Death Valley conditions, heat, smoke, weather, fatigue, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe or too long.
-- Do not book the fallback unless route checks show the direct transfer is unsafe or too tiring.
 
 ## Sources
 
