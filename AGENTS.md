@@ -1,5 +1,9 @@
 # Claude / Agent Instructions
 
+## Session Start (Mandatory)
+
+At the start of every session, run `git pull` before reading or editing any file. If the pull fails or conflicts, report it and stop until resolved.
+
 ## File Sync (Mandatory)
 
 `AGENTS.md` and `CLAUDE.md` must be identical at all times. Apply every change to both files in the same commit. If they differ, reconcile before committing.
