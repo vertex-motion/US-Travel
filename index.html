@@ -1612,51 +1612,18 @@
             </div>
           </div>
         </section>
-        <div class="split">
-          <section class="panel flat">
-            <div class="panel-header">
-              <div>
-                <h2 class="panel-title">Road Conditions &amp; Disruptions</h2>
-                <p class="panel-kicker">Known disruptions and what to confirm before each affected leg. Source: 05-trip-logistics.md</p>
-              </div>
-            </div>
-            <div class="panel-body" style="padding: 0;">
-              <div class="table-wrap" style="border: none; border-radius: 0;">
-                <table class="mini-table">
-                  <thead><tr><th>Route / Road</th><th>Known disruption</th><th>Driving impact</th><th>Confirm before</th><th>Last checked</th></tr></thead>
-                  <tbody id="routeDisruptionRows"></tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-        </div>
-
         <section class="panel flat" style="margin-top: 16px;">
           <div class="panel-header">
             <div>
-              <h2 class="panel-title">Traveler Notes</h2>
-              <p class="panel-kicker">Synced from traveler-notes blocks in 05-trip-logistics.md</p>
+              <h2 class="panel-title">Road Conditions &amp; Disruptions</h2>
+              <p class="panel-kicker">Known disruptions and what to confirm before each affected leg. Source: 05-trip-logistics.md</p>
             </div>
           </div>
-          <div class="panel-body">
-            <ul class="list" id="travelerNotes"></ul>
-          </div>
-        </section>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">To Confirm</h2>
-              <p class="panel-kicker">Synced from to-confirm blocks in 05-trip-logistics.md</p>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="table-wrap">
+          <div class="panel-body" style="padding: 0;">
+            <div class="table-wrap" style="border: none; border-radius: 0;">
               <table>
-                <thead>
-                  <tr><th>Area</th><th>Check</th></tr>
-                </thead>
-                <tbody id="lodgingCheckRows"></tbody>
+                <thead><tr><th>Route / Road</th><th>Known disruption</th><th>Driving impact</th><th>Confirm before</th><th>Last checked</th></tr></thead>
+                <tbody id="routeDisruptionRows"></tbody>
               </table>
             </div>
           </div>
@@ -1847,34 +1814,6 @@
         { day: 21, date: "Saturday, July 18", title: "Depart Los Angeles", region: "Los Angeles", dayType: "Departure", sleep: "Overnight flight", summary: "Check out of the booked Pasadena-area hotel by 12:00 pm, return the rental car at LAX at 8:00 pm, and depart on UA 839 at 10:45 pm.", focus: "Protect LAX, car return, and international check-in buffers.", places: [{ name: "Los Angeles International Airport", role: "Rental car return and departure airport" }], flow: [{ slot: "Morning", kind: "logistics", text: "Check out by 12:00 pm, pack slowly, and avoid major sightseeing." }, { slot: "Lunch", kind: "meal", text: "Pasadena, en route, or near LAX depending on traffic timing." }, { slot: "Afternoon", kind: "logistics", text: "Leave a large Pasadena-to-LAX buffer for fuel, luggage, and rental return." }, { slot: "Evening", kind: "travel", text: "Return the booked rental car at LAX at 8:00 pm, then depart on UA 839 at 10:45 pm." }], logistics: [{ label: "Sleep", value: "Overnight flight.", tone: "info" }, { label: "Driving", value: "Pasadena-area hotel to LAX rental car return; leave a large traffic and fuel buffer.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "UA 839 itinerary, booked hotel checkout at 12:00 pm, and booked rental car return at 8:00 pm.", tone: "warn" }], backup: "If rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or shuttle for the final terminal move." },
         { day: 22, date: "Sunday, July 19", title: "In Transit", region: "Transit", dayType: "Transit", sleep: "In flight", summary: "Pacific crossing and date-line day.", focus: "This is a flight day only.", places: [], flow: [{ slot: "Morning", kind: "travel", text: "Cross the Pacific." }, { slot: "Afternoon", kind: "travel", text: "Cross the date line." }, { slot: "Dinner", kind: "meal", text: "In flight." }], logistics: [{ label: "Sleep", value: "In flight.", tone: "info" }, { label: "Driving", value: "None.", tone: "good" }, { label: "Walking", value: "None.", tone: "good" }, { label: "Reservation", value: "None.", tone: "good" }], backup: "None." },
         { day: 23, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home", summary: "UA 839 arrives SYD at 7:00 am.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive SYD on UA 839 at 7:00 am." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, { slot: "Dinner", kind: "meal", text: "Home." }], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Driving", value: "Airport transfer only.", tone: "info" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
-      ],
-      travelerNotes: [
-        "Keep the first arrival day low-driving because it follows the long-haul flight. Use luggage storage or a low-effort local plan if the room is not ready.",
-        "Keep Day 8 flexible because Santa Maria makes a full Highway 1 / Big Sur routing more timing-sensitive than Cambria or San Simeon.",
-        "Keep Death Valley stops short and paved.",
-        "Carry extra water, snacks, and fuel margin for the Death Valley transfer.",
-        "Leave enough final-day buffer for fuel, luggage, rental return, terminal transfer, and international check-in."
-      ],
-      lodgingChecks: [
-        { area: "Los Angeles arrival", check: "Confirm early check-in or luggage storage, parking cost, family occupancy, cancellation terms, private total cost, and parking height/entry details." },
-        { area: "Central Coast / Route 1 overnight", check: "Confirm check-in time, parking, family occupancy, cancellation terms, taxes/fees, private total cost, and current Caltrans status before any full Highway 1 / Big Sur routing." },
-        { area: "Monterey / Carmel", check: "Confirm parking, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, checkout time, and private total cost." },
-        { area: "San Francisco / Bay Area", check: "Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, parking details, and any incidentals." },
-        { area: "Yosemite / Mammoth Lakes", check: "Confirm parking, check-in process, property fees, family occupancy, cancellation deadline, private total cost, and whether any additional local fees apply." },
-        { area: "Las Vegas", check: "Confirm final folio, resort fee and tax, parking fees, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental holds." },
-        { area: "Los Angeles departure", check: "Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and the Pasadena-to-LAX drive buffer." },
-        { area: "Golden Gate / Presidio transfer", check: "Decide whether self-driving, Caltrain plus rideshare, or another planned transfer is easier from Mountain View." },
-        { area: "Rental vehicle", check: "Confirm vehicle class and luggage space for four passengers, pram, and long-haul luggage before pickup." },
-        { area: "Child seat", check: "Confirm child seat requirements for the younger child before pickup. Bring or rent an approved seat." },
-        { area: "Driving documents", check: "Confirm whether the rental company requires an International Driving Permit for an Australian license." },
-        { area: "Drivers", check: "Add a second authorized driver if both adults may drive." },
-        { area: "Vehicle logistics", check: "Confirm parking fees at each hotel, toll handling, fuel policy, additional driver fees, and whether the booked Las Vegas Strip hotel has self-parking that fits the vehicle." },
-        { area: "Mountain View / Golden Gate logistics", check: "Confirm free parking at the booked Mountain View hotel and compare self-driving against Caltrain/rideshare for the Golden Gate day if San Francisco parking or traffic is expensive." },
-        { area: "Highway 1 / Big Sur", check: "Before the Central Coast and Monterey travel days, confirm Highway 1 / Big Sur status and choose the practical route for the day." },
-        { area: "Yosemite / Mammoth Lakes route", check: "Before the Yosemite / Mammoth Lakes day, confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth Lakes check-in timing." },
-        { area: "Death Valley transfer", check: "Before the Death Valley transfer, confirm US-395, CA-190, Death Valley road status, weather, smoke, heat, fuel stops, water stops, and the safe fallback." },
-        { area: "Las Vegas to Los Angeles", check: "Before the Las Vegas-to-Los-Angeles return, choose departure time, lunch stop, route, and Los Angeles arrival buffer." },
-        { area: "Final LAX departure", check: "Before the final LAX departure, confirm terminal, rental return location, fuel stop, rental return buffer, international check-in buffer, and luggage timing." }
       ],
       routeDisruptions: [
         { route: "Highway 1 north of Big Sur", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to Central Coast and Big Sur legs; early start required", confirmBefore: "Check Caltrans same morning as Day 7 departure and Day 8", lastChecked: "2026-06-01" },
@@ -2345,15 +2284,11 @@ const disruptionTbody = $("#routeDisruptionRows");
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.lastChecked)}</td>
       </tr>`).join("");
-      $("#travelerNotes").innerHTML = tripData.travelerNotes.map((item, index) => `<li><span class="dot ${["ocean", "sun", "", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
-      $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+$("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
     }
 
     function renderTables() {
-      $("#lodgingCheckRows").innerHTML = tripData.lodgingChecks.map((row) => `
-        <tr><td><strong>${escapeHtml(row.area)}</strong></td><td>${escapeHtml(row.check)}</td></tr>
-      `).join("");
-      renderTimedTable();
+renderTimedTable();
       renderPreDepartureTable();
       $("#duringTripRows").innerHTML = tripData.duringTrip.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
