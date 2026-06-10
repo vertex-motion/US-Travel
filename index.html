@@ -1674,13 +1674,15 @@
               <h2 class="panel-title">Open Decisions</h2>
               <p class="panel-kicker">Resolve before or during the trip.</p>
             </div>
-            <div class="filter-panel">
-              <span class="control-label">Status</span>
-              <div class="filters" id="decisionsStatusFilters"></div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
+              <table class="mini-table">
+                <thead><tr><th>Decision</th><th>Why it matters</th><th>Recommended default</th></tr></thead>
+                <tbody id="openQuestions"></tbody>
+              </table>
             </div>
           </div>
-          <div class="section-progress-wrap"><span class="section-progress-label" id="decisionsProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="decisionsProgressFill" style="width: 0%;"></div></div></div>
-          <div class="panel-body" id="openQuestions"></div>
         </section>
 
         <!-- During Trip -->
@@ -2274,18 +2276,11 @@
     }
 
     function renderDecisionCountFilters() {
-      const decisionsEl = $("#decisionsStatusFilters");
       const altsEl = $("#alternativesStatusFilters");
-      if (decisionsEl) {
-        const count = tripData.openQuestions.length;
-        decisionsEl.innerHTML = `<span class="tag info">${count} open</span>`;
-      }
       if (altsEl) {
         const count = tripData.retainedAlternatives.length;
         altsEl.innerHTML = `<span class="tag">${count} options</span>`;
       }
-      const label = $("#decisionsProgressLabel");
-      if (label) label.textContent = `${tripData.openQuestions.length} questions to resolve`;
     }
 
     function renderPlaceRows(places = []) {
@@ -2812,10 +2807,9 @@
       renderPreDepartureFilters();
       renderDecisionCountFilters();
       renderProgress();
-      renderDecisionCards("#openQuestions", tripData.openQuestions, [
-        { label: "Why it matters", key: "why" },
-        { label: "Recommended default", key: "default" }
-      ]);
+      $("#openQuestions").innerHTML = tripData.openQuestions.map((row) => `
+        <tr><td><strong>${escapeHtml(row.question)}</strong></td><td>${escapeHtml(row.why)}</td><td>${escapeHtml(row.default)}</td></tr>
+      `).join("");
       renderPotentialCategoryFilters();
       renderPotentialOptions();
       renderMap();
