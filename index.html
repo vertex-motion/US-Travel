@@ -2201,7 +2201,7 @@
     }
 
     function renderLists() {
-const disruptionTbody = $("#routeDisruptionRows");
+      const disruptionTbody = $("#routeDisruptionRows");
       if (disruptionTbody) disruptionTbody.innerHTML = tripData.routeDisruptions.map((r) => `<tr>
         <td><strong>${escapeHtml(r.route)}</strong></td>
         <td style="white-space: nowrap;">${escapeHtml(r.dates)}</td>
@@ -2210,11 +2210,12 @@ const disruptionTbody = $("#routeDisruptionRows");
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
         <td style="color: var(--muted); font-size: 0.88rem; white-space: nowrap;">${escapeHtml(r.lastChecked)}</td>
       </tr>`).join("");
-$("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
+      const doNotBookEl = $("#doNotBook");
+      if (doNotBookEl) doNotBookEl.innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
     }
 
     function renderTables() {
-renderTimedTable();
+      renderTimedTable();
       renderPreDepartureTable();
       $("#duringTripRows").innerHTML = tripData.duringTrip.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
@@ -2440,7 +2441,9 @@ renderTimedTable();
     }
 
     function renderDecisionCards(target, rows, columns) {
-      $(target).innerHTML = rows.map((row, index) => `
+      const el = $(target);
+      if (!el) return;
+      el.innerHTML = rows.map((row, index) => `
         <details class="expand-card" ${index === 0 ? "open" : ""}>
           <summary class="expand-summary">
             <h3>${escapeHtml(row.question || row.option)}</h3>
@@ -2828,10 +2831,6 @@ renderTimedTable();
       renderDecisionCards("#openQuestions", tripData.openQuestions, [
         { label: "Why it matters", key: "why" },
         { label: "Recommended default", key: "default" }
-      ]);
-      renderDecisionCards("#retainedAlternatives", tripData.retainedAlternatives, [
-        { label: "Why it remains", key: "why" },
-        { label: "Decision trigger", key: "trigger" }
       ]);
       renderPotentialCategoryFilters();
       renderPotentialOptions();
