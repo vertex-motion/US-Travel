@@ -473,12 +473,11 @@
     }
 
     .potential-controls {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 14px;
-      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin: 18px 0 14px;
-      padding: 12px;
+      padding: 12px 14px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: linear-gradient(180deg, #fff, var(--panel-soft));
@@ -492,11 +491,8 @@
 
     .control-meta {
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 10px;
-      min-width: 190px;
+      align-items: center;
+      gap: 8px;
     }
 
     .control-label {
@@ -1398,14 +1394,6 @@
         align-items: flex-start;
       }
 
-      .potential-controls {
-        grid-template-columns: 1fr;
-      }
-
-      .control-meta {
-        align-items: flex-start;
-        min-width: 0;
-      }
 
       .day-summary {
         grid-template-columns: auto minmax(0, 1fr);
@@ -1518,15 +1506,15 @@
             <div class="potential-subview active" id="potentialTablePanel">
               <div class="potential-controls">
                 <div class="filter-panel">
-                  <span class="control-label">Plan status filter</span>
+                  <span class="control-label">Status</span>
                   <div class="filters" id="planStatusFilters"></div>
                 </div>
                 <div class="filter-panel">
-                  <span class="control-label">Category filter</span>
+                  <span class="control-label">Category</span>
                   <div class="filters" id="potentialCategoryFilters"></div>
                 </div>
                 <div class="control-meta">
-                  <span class="control-label">Shown</span>
+                  <span class="control-label">Showing</span>
                   <div class="potential-count" id="potentialOptionCount"></div>
                 </div>
               </div>
@@ -2785,7 +2773,10 @@ renderTimedTable();
       $("#planStatusFilters").addEventListener("click", (event) => {
         const button = event.target.closest("button");
         if (!button) return;
-        $$("#planStatusFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
+        $$("#planStatusFilters .filter-button").forEach((item) => {
+          item.classList.toggle("active", item === button);
+          item.setAttribute("aria-pressed", String(item === button));
+        });
         planStatusFilterState.status = button.dataset.category;
         const activeCategory = $$("#potentialCategoryFilters .filter-button.active")[0];
         renderPotentialOptions(activeCategory ? activeCategory.dataset.category : "All");
