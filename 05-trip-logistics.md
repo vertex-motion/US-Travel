@@ -18,7 +18,7 @@
 
 ## Base Strategy
 
-<!-- tag: traveler-notes -->
+<!-- tag: planning-notes -->
 
 | Base | Logistics role | Operating implication |
 | --- | --- | --- |
