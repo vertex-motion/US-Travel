@@ -1290,42 +1290,8 @@
       transition: width 0.5s ease;
     }
 
-    .decisions-section {
-      margin-top: 24px;
-    }
-
-    .collapsible-section {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      margin-top: 10px;
-      overflow: hidden;
-    }
-
-    .collapsible-section > summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 16px;
-      font-weight: 700;
-      cursor: pointer;
-      list-style: none;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .collapsible-section > summary::after {
-      content: "▸";
-      font-size: 0.8rem;
-      transition: transform 0.2s;
-    }
-
-    .collapsible-section[open] > summary::after {
-      transform: rotate(90deg);
-    }
-
-    .collapsible-section > .expand-body {
-      border-top: 1px solid var(--line);
+    .checklist-panel {
+      margin-top: 16px;
     }
 
     .section-progress-wrap {
@@ -1637,7 +1603,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Bookings</h2>
-              <p class="panel-kicker"></p>
+              <p class="panel-kicker">Flights, accommodation, rental car, and essential reservations.</p>
             </div>
             <div class="filter-panel">
               <span class="control-label">Status</span>
@@ -1651,7 +1617,7 @@
         </section>
 
         <!-- Timed Tickets -->
-        <section class="panel flat" style="margin-top: 16px;">
+        <section class="panel flat checklist-panel">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Timed Tickets</h2>
@@ -1674,7 +1640,7 @@
         </section>
 
         <!-- Pre-Departure -->
-        <section class="panel flat" style="margin-top: 16px;">
+        <section class="panel flat checklist-panel">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Pre-Departure Checks</h2>
@@ -1697,7 +1663,7 @@
         </section>
 
         <!-- Open Decisions -->
-        <section class="panel flat decisions-section" style="margin-top: 16px;">
+        <section class="panel flat checklist-panel">
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Open Decisions</h2>
@@ -1708,22 +1674,37 @@
               <div class="filters" id="decisionsStatusFilters"></div>
             </div>
           </div>
+          <div class="section-progress-wrap"><span class="section-progress-label" id="decisionsProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="decisionsProgressFill" style="width: 0%;"></div></div></div>
           <div class="panel-body" id="openQuestions"></div>
         </section>
 
-
-        <!-- During / After trip — collapsible, lower priority -->
-        <details class="collapsible-section" style="margin-top: 16px;">
-          <summary>During-Trip &amp; After-Trip tasks</summary>
-          <div class="expand-body" style="padding: 16px;">
-            <p class="section-label" style="margin-bottom: 8px;">During trip</p>
-            <div class="table-wrap" style="margin-bottom: 16px;">
+        <!-- During Trip -->
+        <section class="panel flat checklist-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">During-Trip Checks</h2>
+              <p class="panel-kicker">Tasks to handle while on the road.</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="table-wrap">
               <table class="mini-table">
                 <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
                 <tbody id="duringTripRows"></tbody>
               </table>
             </div>
-            <p class="section-label" style="margin-bottom: 8px;">After trip</p>
+          </div>
+        </section>
+
+        <!-- After Trip -->
+        <section class="panel flat checklist-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">After-Trip Tasks</h2>
+              <p class="panel-kicker">Wrap-up tasks once you return to Sydney.</p>
+            </div>
+          </div>
+          <div class="panel-body">
             <div class="table-wrap">
               <table class="mini-table">
                 <thead><tr><th>Task</th><th>When</th><th>Required action</th><th>Status</th></tr></thead>
@@ -1731,7 +1712,7 @@
               </table>
             </div>
           </div>
-        </details>
+        </section>
 
       </section>
 
@@ -2298,6 +2279,8 @@
         const count = tripData.retainedAlternatives.length;
         altsEl.innerHTML = `<span class="tag">${count} options</span>`;
       }
+      const label = $("#decisionsProgressLabel");
+      if (label) label.textContent = `${tripData.openQuestions.length} questions to resolve`;
     }
 
     function renderPlaceRows(places = []) {
