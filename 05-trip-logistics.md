@@ -51,14 +51,14 @@
 
 Known disruptions and what to confirm before each affected leg. Update before travel.
 
-| Route / Road | Known disruption | Driving impact | Confirm before | Last checked |
-| --- | --- | --- | --- | --- |
-| Highway 1 north of Big Sur | One-way controlled traffic through July 31, 2026 (Caltrans) | Adds time to Central Coast and Big Sur legs; early start required | Check Caltrans same morning as Day 7 departure and Day 8 | 2026-06-01 |
-| Highway 1 near Jamala Road, Santa Barbara County | Washout — one-way controlled traffic (Caltrans) | Affects LA-to-Central-Coast routing if Highway 1 is used; consider US-101 | Check Caltrans before Day 7 departure | 2026-06-01 |
-| Tioga Road (CA-120), Yosemite | Open as of May 15, 2026; limited services; roadwork possible (NPS) | Day 16 Yosemite Valley + Mammoth Lakes depends on this road staying open | Confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth check-in timing before July 10 cancellation deadline and morning of Day 16 | 2026-06-05 |
-| US-395 / CA-190, Death Valley transfer | No active closure; summer heat and road status change quickly (NPS/Caltrans) | Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield | Confirm road status, weather, smoke, heat, fuel stops, water stops, and safe fallback day before Day 17 and morning of Day 17 | 2026-06-05 |
-| Las Vegas to Los Angeles (I-15) | No active disruption | Standard interstate drive | Choose departure time, lunch stop, route, and LA arrival buffer before Day 20 | — |
-| Final LAX departure | No active disruption | Pasadena is not airport-adjacent; allow large buffer | Confirm terminal, rental return location, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day | — |
+| Route / Road | Trip dates affected | Known disruption | Driving impact | Confirm before | Last checked |
+| --- | --- | --- | --- | --- | --- |
+| Highway 1 north of Big Sur | Jul 4–7 | One-way controlled traffic through July 31, 2026 (Caltrans) | Adds time to Central Coast and Big Sur legs; early start required | Check Caltrans same morning as Day 7 departure and Day 8 | 2026-06-01 |
+| Highway 1 near Jamala Road, Santa Barbara County | Jul 4 | Washout — one-way controlled traffic (Caltrans) | Affects LA-to-Central-Coast routing if Highway 1 is used; consider US-101 | Check Caltrans before Day 7 departure | 2026-06-01 |
+| Tioga Road (CA-120), Yosemite | Jul 13 | Open as of May 15, 2026; limited services; roadwork possible (NPS) | Day 16 Yosemite Valley + Mammoth Lakes depends on this road staying open | Confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth check-in timing before July 10 cancellation deadline and morning of Day 16 | 2026-06-05 |
+| US-395 / CA-190, Death Valley transfer | Jul 14 | No active closure; summer heat and road status change quickly (NPS/Caltrans) | Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield | Confirm road status, weather, smoke, heat, fuel stops, water stops, and safe fallback day before Day 17 and morning of Day 17 | 2026-06-05 |
+| Las Vegas to Los Angeles (I-15) | Jul 17 | No active disruption | Standard interstate drive | Choose departure time, lunch stop, route, and LA arrival buffer before Day 20 | — |
+| Final LAX departure | Jul 18 | No active disruption | Pasadena is not airport-adjacent; allow large buffer | Confirm terminal, rental return location, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day | — |
 
 
 ## Sources
