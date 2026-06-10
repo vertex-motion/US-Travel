@@ -1332,6 +1332,34 @@
       border-top: 1px solid var(--line);
     }
 
+    .section-progress-wrap {
+      padding: 0 20px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-progress-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 80px;
+    }
+
+    .section-progress-track {
+      flex: 1;
+      height: 5px;
+      border-radius: 999px;
+      background: #e6e4dc;
+      overflow: hidden;
+    }
+
+    .section-progress-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--forest), var(--ocean));
+      transition: width 0.4s ease;
+    }
 
     .lodging-summary-table {
       min-width: 0;
@@ -1607,7 +1635,7 @@
         <!-- Progress bar -->
         <div class="progress-bar-wrap">
           <div class="progress-bar-label">
-            Booking progress <span id="progressLabel"></span>
+            Overall progress <span id="progressLabel"></span>
           </div>
           <div class="progress-track"><div class="progress-fill" id="progressFill" style="width: 0%;"></div></div>
         </div>
@@ -1624,6 +1652,7 @@
               <div class="filters" id="bookingStatusFilters"></div>
             </div>
           </div>
+          <div class="section-progress-wrap"><span class="section-progress-label" id="bookingProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="bookingProgressFill" style="width: 0%;"></div></div></div>
           <div class="panel-body">
             <div class="check-grid" id="bookingTasks"></div>
           </div>
@@ -1641,6 +1670,7 @@
               <div class="filters" id="timedStatusFilters"></div>
             </div>
           </div>
+          <div class="section-progress-wrap"><span class="section-progress-label" id="timedProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="timedProgressFill" style="width: 0%;"></div></div></div>
           <div class="panel-body">
             <div class="table-wrap">
               <table class="mini-table">
@@ -1663,6 +1693,7 @@
               <div class="filters" id="preDepartureStatusFilters"></div>
             </div>
           </div>
+          <div class="section-progress-wrap"><span class="section-progress-label" id="preDepartureProgressLabel">0 of 0 done</span><div class="section-progress-track"><div class="section-progress-fill" id="preDepartureProgressFill" style="width: 0%;"></div></div></div>
           <div class="panel-body">
             <div class="table-wrap">
               <table class="mini-table">
@@ -2167,11 +2198,22 @@
     }
 
     function renderProgress() {
-      const total = tripData.bookingTasks.length;
-      const done = tripData.bookingTasks.filter((t) => t.status === "Done").length;
+      const datasets = [tripData.bookingTasks, tripData.timedTickets, tripData.preDeparture];
+      const total = datasets.reduce((sum, d) => sum + d.length, 0);
+      const done = datasets.reduce((sum, d) => sum + d.filter((t) => t.status === "Done").length, 0);
       const pct = total ? Math.round((done / total) * 100) : 0;
       const label = $("#progressLabel");
       const fill = $("#progressFill");
+      if (label) label.textContent = `— ${done} of ${total} done (${pct}%)`;
+      if (fill) fill.style.width = `${pct}%`;
+    }
+
+    function renderSectionProgress(labelId, fillId, data) {
+      const total = data.length;
+      const done = data.filter((t) => t.status === "Done").length;
+      const pct = total ? Math.round((done / total) * 100) : 0;
+      const label = $(`#${labelId}`);
+      const fill = $(`#${fillId}`);
       if (label) label.textContent = `${done} of ${total} done`;
       if (fill) fill.style.width = `${pct}%`;
     }
@@ -2207,6 +2249,7 @@ renderTimedTable();
       $("#timedRows").innerHTML = rows.map((row) => `
         <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
+      renderSectionProgress("timedProgressLabel", "timedProgressFill", tripData.timedTickets);
     }
 
     function renderTimedFilters() {
@@ -2237,6 +2280,7 @@ renderTimedTable();
       $("#preDepartureRows").innerHTML = rows.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
+      renderSectionProgress("preDepartureProgressLabel", "preDepartureProgressFill", tripData.preDeparture);
     }
 
     function renderPreDepartureFilters() {
@@ -2391,6 +2435,7 @@ renderTimedTable();
           <p>${escapeHtml(task.notes)}</p>
         </article>
       `).join("");
+      renderSectionProgress("bookingProgressLabel", "bookingProgressFill", tripData.bookingTasks);
     }
 
     function renderBookingFilters() {
