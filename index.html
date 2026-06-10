@@ -1332,33 +1332,6 @@
       border-top: 1px solid var(--line);
     }
 
-    .footer-sources {
-      width: min(var(--max), calc(100% - 24px));
-      margin: 0 auto 42px;
-    }
-
-    .footer-sources > summary {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 700;
-      cursor: pointer;
-      list-style: none;
-      border-top: 1px solid var(--line);
-    }
-
-    .footer-sources > summary::after {
-      content: "▸";
-      font-size: 0.76rem;
-      transition: transform 0.2s;
-    }
-
-    .footer-sources[open] > summary::after {
-      transform: rotate(90deg);
-    }
 
     .lodging-summary-table {
       min-width: 0;
@@ -1481,7 +1454,6 @@
       <div class="nav-inner">
         <div class="brand">
           <strong>Trip Dashboard</strong>
-          <span>Source: planning files 01-07</span>
         </div>
         <div class="tabs" role="tablist">
           <button class="tab-button" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
@@ -1507,7 +1479,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Potential Options</h2>
-              <p class="panel-kicker">Canonical source: 03-potential-options.md. Use categories and interest scores to scan every found option by trip impact.</p>
+              <p class="panel-kicker">Use categories and interest scores to scan every found option by trip impact.</p>
             </div>
           </div>
           <div class="panel-body">
@@ -1572,7 +1544,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">23-Day Itinerary</h2>
-              <p class="panel-kicker">Confirmed window: June 28-July 20, 2026. Source: 04-daily-itinerary.md</p>
+              <p class="panel-kicker">Confirmed window: June 28–July 20, 2026.</p>
             </div>
             <button class="text-button" type="button" id="toggleDays">Open all days</button>
           </div>
@@ -1600,7 +1572,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Lodging Summary</h2>
-              <p class="panel-kicker">Dates, check-in/checkout times, and parking per base. Source: 05-trip-logistics.md</p>
+              <p class="panel-kicker">Dates, check-in/checkout times, and parking per base.</p>
             </div>
           </div>
           <div class="panel-body" style="padding: 0;">
@@ -1616,13 +1588,13 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Road Conditions &amp; Disruptions</h2>
-              <p class="panel-kicker">Known disruptions and what to confirm before each affected leg. Source: 05-trip-logistics.md</p>
+              <p class="panel-kicker">Known disruptions and what to confirm before each affected leg.</p>
             </div>
           </div>
           <div class="panel-body" style="padding: 0;">
             <div class="table-wrap" style="border: none; border-radius: 0;">
               <table>
-                <thead><tr><th>Route / Road</th><th>Known disruption</th><th>Driving impact</th><th>Confirm before</th><th>Last checked</th></tr></thead>
+                <thead><tr><th>Route / Road</th><th>Dates</th><th>Known disruption</th><th>Driving impact</th><th>Confirm before</th><th>Last checked</th></tr></thead>
                 <tbody id="routeDisruptionRows"></tbody>
               </table>
             </div>
@@ -1645,7 +1617,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Bookings</h2>
-              <p class="panel-kicker">Canonical source: 07-checklist.md</p>
+              <p class="panel-kicker"></p>
             </div>
             <div class="filter-panel">
               <span class="control-label">Status</span>
@@ -1706,7 +1678,7 @@
           <div class="panel-header">
             <div>
               <h2 class="panel-title">Open Decisions</h2>
-              <p class="panel-kicker">Canonical source: 07-checklist.md. Resolve before or during the trip.</p>
+              <p class="panel-kicker">Resolve before or during the trip.</p>
             </div>
             <div class="filter-panel">
               <span class="control-label">Status</span>
@@ -1760,20 +1732,6 @@
       Static HTML dashboard generated from the repository planning documents. Volatile travel facts retain their existing source dates and status labels.
     </footer>
 
-    <details class="footer-sources">
-      <summary>Sources and citations</summary>
-      <section class="panel flat" style="margin-top: 12px;">
-        <div class="panel-header">
-          <div>
-            <h2 class="panel-title">Sources</h2>
-            <p class="panel-kicker">Grouped by the planning file where each supported fact lives.</p>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="source-grid" id="sourceGrid"></div>
-        </div>
-      </section>
-    </details>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -1816,12 +1774,12 @@
         { day: 23, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home", summary: "UA 839 arrives SYD at 7:00 am.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive SYD on UA 839 at 7:00 am." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, { slot: "Dinner", kind: "meal", text: "Home." }], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Driving", value: "Airport transfer only.", tone: "info" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
       ],
       routeDisruptions: [
-        { route: "Highway 1 north of Big Sur", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to Central Coast and Big Sur legs; early start required", confirmBefore: "Check Caltrans same morning as Day 7 departure and Day 8", lastChecked: "2026-06-01" },
-        { route: "Highway 1 near Jamala Road, Santa Barbara County", disruption: "Washout — one-way controlled traffic (Caltrans)", impact: "Affects LA-to-Central-Coast routing if Highway 1 is used; consider US-101", confirmBefore: "Check Caltrans before Day 7 departure", lastChecked: "2026-06-01" },
-        { route: "Tioga Road (CA-120), Yosemite", disruption: "Open as of May 15, 2026; limited services; roadwork possible (NPS)", impact: "Day 16 Yosemite Valley + Mammoth Lakes depends on this road staying open", confirmBefore: "Confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth check-in timing before July 10 deadline and morning of Day 16", lastChecked: "2026-06-05" },
-        { route: "US-395 / CA-190, Death Valley transfer", disruption: "No active closure; summer heat and road status change quickly (NPS/Caltrans)", impact: "Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield", confirmBefore: "Confirm road status, weather, smoke, heat, fuel/water stops, and safe fallback day before and morning of Day 17", lastChecked: "2026-06-05" },
-        { route: "Las Vegas to Los Angeles (I-15)", disruption: "No active disruption", impact: "Standard interstate drive", confirmBefore: "Choose departure time, lunch stop, route, and LA arrival buffer before Day 20", lastChecked: "—" },
-        { route: "Final LAX departure", disruption: "No active disruption", impact: "Pasadena is not airport-adjacent; allow large buffer", confirmBefore: "Confirm terminal, rental return, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day", lastChecked: "—" }
+        { route: "Highway 1 north of Big Sur", dates: "Jul 4–7", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to Central Coast and Big Sur legs; early start required", confirmBefore: "Check Caltrans same morning as Day 7 departure and Day 8", lastChecked: "2026-06-01" },
+        { route: "Highway 1 near Jamala Road, Santa Barbara County", dates: "Jul 4", disruption: "Washout — one-way controlled traffic (Caltrans)", impact: "Affects LA-to-Central-Coast routing if Highway 1 is used; consider US-101", confirmBefore: "Check Caltrans before Day 7 departure", lastChecked: "2026-06-01" },
+        { route: "Tioga Road (CA-120), Yosemite", dates: "Jul 13", disruption: "Open as of May 15, 2026; limited services; roadwork possible (NPS)", impact: "Day 16 Yosemite Valley + Mammoth Lakes depends on this road staying open", confirmBefore: "Confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth check-in timing before July 10 deadline and morning of Day 16", lastChecked: "2026-06-05" },
+        { route: "US-395 / CA-190, Death Valley transfer", dates: "Jul 14", disruption: "No active closure; summer heat and road status change quickly (NPS/Caltrans)", impact: "Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield", confirmBefore: "Confirm road status, weather, smoke, heat, fuel/water stops, and safe fallback day before and morning of Day 17", lastChecked: "2026-06-05" },
+        { route: "Las Vegas to Los Angeles (I-15)", dates: "Jul 17", disruption: "No active disruption", impact: "Standard interstate drive", confirmBefore: "Choose departure time, lunch stop, route, and LA arrival buffer before Day 20", lastChecked: "—" },
+        { route: "Final LAX departure", dates: "Jul 18", disruption: "No active disruption", impact: "Pasadena is not airport-adjacent; allow large buffer", confirmBefore: "Confirm terminal, rental return, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day", lastChecked: "—" }
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Done", owner: "Travelers", notes: "Confirmed June 28-July 20, 2026 Sydney-to-Sydney.", status: "Done" },
@@ -2145,63 +2103,6 @@
         { id: "skydive-perris", name: "Skydive Perris", option: "Skydive Perris wind tunnel or tandem skydiving", category: "Dad-Focused Adventure", region: "Southern California", coords: [33.7627, -117.2189] },
         { id: "six-flags-magic-mountain", name: "Six Flags Magic Mountain", option: "Six Flags Magic Mountain thrill-coaster day", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [34.4237, -118.5970] }
       ],
-      sourceGroups: [
-        { title: "LAX Closed-Circle Plan", rows: [
-          { fact: "LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities.", source: "Local comparison file", url: "work/closed-circle-start-city-comparison.md", accessed: "2026-05-15", status: "Current planning decision" },
-          { fact: "Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026.", source: "Traveler booking", url: "04-daily-itinerary.md", accessed: "2026-05-15", status: "Booked; seat assignments intentionally omitted" },
-          { fact: "Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-05-31", status: "Booked; provider, price, and booking reference intentionally omitted" },
-          { fact: "First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-05-31", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
-          { fact: "Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
-          { fact: "Monterey-area hotel is booked from July 5 to July 7, 2026.", source: "Traveler booking", url: "05-trip-logistics.md", accessed: "2026-06-02", status: "Booked; exact hotel name, address, price, and booking reference intentionally omitted" },
-          { fact: "Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi.", source: "Traveler booking", url: "User-provided Bay Area hotel booking details", accessed: "2026-06-06", status: "Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted" },
-          { fact: "Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one suite for two adults and two children.", source: "Traveler booking", url: "User-provided Las Vegas hotel booking details", accessed: "2026-06-07", status: "Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted" },
-          { fact: "Final Los Angeles hotel is booked in the Pasadena area from July 17 to July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout, in one room for two adults and two children.", source: "Traveler booking", url: "User-provided final Los Angeles hotel booking details", accessed: "2026-06-07", status: "Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted" },
-          { fact: "Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window.", source: "Qantas", url: "https://www.qantas.com/en-us/where-we-fly/international-flight-routes", accessed: "2026-05-15", status: "Current; verify before booking" },
-          { fact: "United displayed Sydney-Los Angeles round-trip economy fare examples from AU$1,228 before booking; keep only as a historical planning anchor.", source: "United Airlines", url: "https://www.united.com/en-au/flights-from-sydney-to-los-angeles", accessed: "2026-05-15", status: "Historical pre-booking fare anchor" },
-          { fact: "Highway 1 is usable but not frictionless: Caltrans reports one-way controlled traffic north of Big Sur through July 31, 2026 and near Jamala Road in Santa Barbara County due to a washout.", source: "Caltrans", url: "https://roads.dot.ca.gov/?roadnumber=1", accessed: "2026-06-01", status: "Current; re-check before travel" },
-          { fact: "LAX has FlyAway and Metro/LAX connector transit options.", source: "Los Angeles World Airports", url: "https://www.lawa.org/commutelax/transit", accessed: "2026-05-15", status: "Current; choose transfer after hotel base" }
-        ] },
-        { title: "Forum-Derived Potential Options", rows: [
-          { fact: "AWD forum route examples support parking Sequoia / Kings Canyon, Eastern Sierra, park-gateway lodging, and broader Southwest canyon loops as alternatives outside the selected plan.", source: "AWD forum", url: "https://forum.awd.ru/viewforum.php?f=187", accessed: "2026-05-15", status: "Idea source; exact logistics need official-source verification before use" },
-          { fact: "A West Coast route thread includes Sequoia / Kings Canyon and east-side Sierra routing ideas that are useful only if Yosemite or transfer assumptions change.", source: "AWD forum", url: "https://forum.awd.ru/viewtopic.php?f=878&t=421710", accessed: "2026-05-15", status: "Idea source" },
-          { fact: "A Southwest route thread supports Page, Antelope Canyon, Horseshoe Bend, Monument Valley, Zion, and Bryce as a separate canyon-country alternative.", source: "AWD forum", url: "https://forum.awd.ru/viewtopic.php?f=878&t=437204", accessed: "2026-05-15", status: "Idea source" },
-          { fact: "A Los Angeles-to-San Francisco route thread reinforces keeping the Central Coast selective instead of stacking too many stops into one transfer day.", source: "AWD forum", url: "https://forum.awd.ru/viewtopic.php?f=878&t=418726", accessed: "2026-05-15", status: "Idea source" }
-        ] },
-        { title: "Bay Area Stanford and Tech Plan", rows: [
-          { fact: "Stanford Visitor Center is generally open weekdays, summer 2026 visit programs are posted for most weekdays, and self-guided campus materials are available.", source: "Stanford Visitor Information", url: "https://visit.stanford.edu/", accessed: "2026-05-31", status: "Current; re-check campus events and parking before visit" },
-          { fact: "Google Visitor Experience is a public Mountain View destination with no general RSVP requirement, free entry, Google Store, cafe, pop-up shop, public art, and self-guided exploration.", source: "Google", url: "https://visit.withgoogle.com/plan-your-visit/", accessed: "2026-05-31", status: "Current; re-check hours and events before visit" },
-          { fact: "Computer History Museum is open Wednesday-Sunday 10am-5pm in Mountain View.", source: "Computer History Museum", url: "https://computerhistory.org/visit/", accessed: "2026-05-31", status: "Current; re-check tickets and hours before visit" },
-          { fact: "Apple Park Visitor Center is a public Apple destination in Cupertino with store, cafe, roof terrace, demos, and sessions when available.", source: "Apple", url: "https://www.apple.com/retail/appleparkvisitorcenter/", accessed: "2026-05-31", status: "Current; re-check hours before visit" },
-          { fact: "The Tech Interactive is a hands-on technology and science museum in San Jose with seasonal hours and ticketed admission.", source: "The Tech Interactive", url: "https://www.thetech.org/visit/", accessed: "2026-05-31", status: "Current; re-check daily schedule and tickets before visit" }
-        ] },
-        { title: "Yosemite And Death Valley Transfer", rows: [
-          { fact: "Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am; private booking details are intentionally omitted from this public dashboard.", source: "Traveler booking", url: "User-provided Mammoth Lakes hotel booking details", accessed: "2026-06-06", status: "Booked" },
-          { fact: "Yosemite current conditions show Yosemite Valley roads and Tioga Road open, but roadwork and condition changes still require re-checks before the July 13 Yosemite Valley / Mammoth Lakes crossing and July 14 Death Valley transfer.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/conditions.htm", accessed: "2026-06-05", status: "Current; re-check before travel" },
-          { fact: "Tioga Road opened for the 2026 season on May 15, 2026, with limited services along Tioga Road.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/tioga.htm", accessed: "2026-06-05", status: "Current; re-check before July 14" },
-          { fact: "Mariposa Grove shuttle hours and Glacier Point road access are seasonal and condition-dependent.", source: "National Park Service", url: "https://www.nps.gov/yose/planyourvisit/mg.htm", accessed: "2026-05-31", status: "Current; one-night Yosemite plan is Valley-first" },
-          { fact: "Forestiere Underground Gardens offers a one-hour guided Fresno tour and strongly recommends reservations, with extra arrival time needed because of nearby high-speed-rail construction.", source: "Forestiere Underground Gardens", url: "https://undergroundgardens.com/", accessed: "2026-05-31", status: "Current; fallback route only" },
-          { fact: "CALM Zoo is a Bakersfield family wildlife option, open Tuesday-Sunday 9am-4pm and mostly outdoors.", source: "CALM Zoo", url: "https://calmzoo.org/visit/", accessed: "2026-05-31", status: "Current; fallback route only" },
-          { fact: "Kern County Museum is a Wednesday-Sunday 9am-4pm Bakersfield history option with historic buildings and regional exhibits.", source: "Kern County Museum", url: "https://kerncountymuseum.org/", accessed: "2026-05-31", status: "Current; fallback route only" },
-          { fact: "Tehachapi is a route-adjacent town / rail-engineering stop on the CA-58 corridor.", source: "Visit Tehachapi", url: "https://www.visittehachapi.com/", accessed: "2026-05-31", status: "Current; fallback route only" },
-          { fact: "Caltrans provides current California highway conditions and should be checked for CA-120, US-395, CA-190, and I-15 before the Mammoth-Lakes-to-Las-Vegas via Death Valley transfer.", source: "Caltrans", url: "https://roads.dot.ca.gov/", accessed: "2026-06-05", status: "Current; re-check before and during travel" },
-          { fact: "Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, advises against hiking in lower elevations when hot, and says to check alerts, road status, and weather before visiting.", source: "Death Valley National Park", url: "https://www.nps.gov/deva/planyourvisit/safety.htm", accessed: "2026-06-05", status: "Current; keep July 14 as paved transit only" },
-          { fact: "Death Valley road status can change quickly; the current conditions page lists paved-road cautions and links to Caltrans / Sierra Nevada pass checks.", source: "Death Valley National Park", url: "https://www.nps.gov/deva/planyourvisit/conditions.htm", accessed: "2026-06-05", status: "Current; re-check before July 14" }
-        ] },
-        { title: "Desert Loop Sources", rows: [
-          { fact: "Death Valley heat and remote-park safety make long desert sightseeing a poor July family default beyond the selected paved transit corridor.", source: "Death Valley National Park", url: "https://www.nps.gov/deva/planyourvisit/safety.htm", accessed: "2026-06-05", status: "Current; re-check before any desert route" },
-          { fact: "Mojave Preserve road conditions and Kelso Dunes access need current checks before routing through the preserve.", source: "Mojave National Preserve", url: "https://home.nps.gov/moja/road-conditions.htm", accessed: "2026-05-15", status: "Current; re-check before travel" },
-          { fact: "Joshua Tree and Anza-Borrego both require summer heat controls and dirt-road caution.", source: "NPS / California State Parks", url: "https://www.nps.gov/jotr/planyourvisit/summer.htm", accessed: "2026-05-15", status: "Current; exact road status still route-dependent" },
-          { fact: "Phoenix, Superstition, Bartlett Lake, and Picacho Peak ideas are best treated as a separate Arizona branch, not as add-ons to the current plan.", source: "City of Phoenix / Arizona State Parks / Tonto National Forest", url: "https://www.phoenix.gov/heat", accessed: "2026-05-15", status: "Current planning note" }
-        ] },
-        { title: "Las Vegas Primary Plan", rows: [
-          { fact: "Las Vegas remains a primary final base in the selected closed-circle route.", source: "Repository trip purpose and current plan", url: "01-trip-purpose.md", accessed: "2026-05-15", status: "Current" },
-          { fact: "Las Vegas has family-friendly free sights, indoor attractions, pool options, shows, and dining.", source: "Visit Las Vegas", url: "https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/", accessed: "2026-05-13", status: "Current; verify selected attraction dates" },
-          { fact: "Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window.", source: "National Weather Service Las Vegas", url: "https://www.weather.gov/media/vef/July_Temps.pdf", accessed: "2026-05-13", status: "Current climate normal" },
-          { fact: "Bellagio fountain shows run daily but schedules can vary and weather can cancel displays.", source: "Bellagio", url: "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html", accessed: "2026-05-13", status: "Current; re-check before visit" },
-          { fact: "Sphere Experience dates, times, prices, and availability are subject to change.", source: "Sphere", url: "https://www.thesphere.com/shows/the-sphere-experience", accessed: "2026-05-13", status: "Current; verify before booking" },
-          { fact: "Red Rock Canyon reservations are not required June 1-September 30, but parking and current conditions still need checks.", source: "Recreation.gov", url: "https://www.recreation.gov/timed-entry/10075177", accessed: "2026-05-13", status: "Current; re-check before travel" }
-        ] }
-      ]
     };
 
     const $ = (selector, root = document) => root.querySelector(selector);
@@ -2279,10 +2180,11 @@
 const disruptionTbody = $("#routeDisruptionRows");
       if (disruptionTbody) disruptionTbody.innerHTML = tripData.routeDisruptions.map((r) => `<tr>
         <td><strong>${escapeHtml(r.route)}</strong></td>
+        <td style="white-space: nowrap;">${escapeHtml(r.dates)}</td>
         <td>${escapeHtml(r.disruption)}</td>
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.impact)}</td>
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
-        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.lastChecked)}</td>
+        <td style="color: var(--muted); font-size: 0.88rem; white-space: nowrap;">${escapeHtml(r.lastChecked)}</td>
       </tr>`).join("");
 $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
     }
@@ -2698,28 +2600,6 @@ renderTimedTable();
       }, 0);
     }
 
-    function renderSources() {
-      $("#sourceGrid").innerHTML = tripData.sourceGroups.map((group) => `
-        <section class="source-group">
-          <h3>${escapeHtml(group.title)}</h3>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>Fact or decision supported</th><th>Source</th><th>Accessed</th><th>Status</th></tr></thead>
-              <tbody>
-                ${group.rows.map((row) => `
-                  <tr>
-                    <td>${escapeHtml(row.fact)}</td>
-                    <td><a href="${escapeHtml(row.url)}">${escapeHtml(row.source)}</a></td>
-                    <td>${escapeHtml(row.accessed)}</td>
-                    <td>${statusTag(row.status)}</td>
-                  </tr>
-                `).join("")}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      `).join("");
-    }
 
     function renderMap() {
       const tools = $("#mapTools");
@@ -2901,7 +2781,6 @@ renderTimedTable();
       ]);
       renderPotentialCategoryFilters();
       renderPotentialOptions();
-      renderSources();
       renderMap();
       wireTabs();
       wirePotentialSubtabs();
