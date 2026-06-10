@@ -1628,14 +1628,14 @@
           <section class="panel flat">
             <div class="panel-header">
               <div>
-                <h2 class="panel-title">Route Disruptions</h2>
-                <p class="panel-kicker">Active closures, road works, and conditions affecting driving. Source: 05-trip-logistics.md</p>
+                <h2 class="panel-title">Road Conditions &amp; Disruptions</h2>
+                <p class="panel-kicker">Known disruptions and what to confirm before each affected leg. Source: 05-trip-logistics.md</p>
               </div>
             </div>
             <div class="panel-body" style="padding: 0;">
               <div class="table-wrap" style="border: none; border-radius: 0;">
                 <table class="mini-table">
-                  <thead><tr><th>Route / Road</th><th>Disruption</th><th>Impact</th><th>Last checked</th><th>Re-check before</th></tr></thead>
+                  <thead><tr><th>Route / Road</th><th>Known disruption</th><th>Driving impact</th><th>Confirm before</th><th>Last checked</th></tr></thead>
                   <tbody id="routeDisruptionRows"></tbody>
                 </table>
               </div>
@@ -1898,10 +1898,12 @@
         { area: "Final LAX departure", check: "Before the final LAX departure, confirm terminal, rental return location, fuel stop, rental return buffer, international check-in buffer, and luggage timing." }
       ],
       routeDisruptions: [
-        { route: "Highway 1 north of Big Sur", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to any Big Sur or Central Coast leg; requires early start and Caltrans check same morning", lastChecked: "2026-06-01", recheckBefore: "Day 7 departure and Day 8 morning" },
-        { route: "Highway 1 near Jamala Road, Santa Barbara County", disruption: "Washout — one-way controlled traffic (Caltrans)", impact: "Affects southbound LA-to-Central-Coast routing if Highway 1 is used", lastChecked: "2026-06-01", recheckBefore: "Day 7 departure" },
-        { route: "Tioga Road (CA-120), Yosemite", disruption: "Open as of May 15, 2026; limited services; roadwork possible (NPS)", impact: "Yosemite Valley + Mammoth Lakes Day 16 depends on this road staying open", lastChecked: "2026-06-05", recheckBefore: "Before July 10 cancellation deadline and morning of Day 16" },
-        { route: "US-395 / CA-190, Death Valley transfer", disruption: "No active closure; summer heat and road status change quickly (NPS/Caltrans)", impact: "Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield", lastChecked: "2026-06-05", recheckBefore: "Day before Day 17 and morning of Day 17" }
+        { route: "Highway 1 north of Big Sur", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to Central Coast and Big Sur legs; early start required", confirmBefore: "Check Caltrans same morning as Day 7 departure and Day 8", lastChecked: "2026-06-01" },
+        { route: "Highway 1 near Jamala Road, Santa Barbara County", disruption: "Washout — one-way controlled traffic (Caltrans)", impact: "Affects LA-to-Central-Coast routing if Highway 1 is used; consider US-101", confirmBefore: "Check Caltrans before Day 7 departure", lastChecked: "2026-06-01" },
+        { route: "Tioga Road (CA-120), Yosemite", disruption: "Open as of May 15, 2026; limited services; roadwork possible (NPS)", impact: "Day 16 Yosemite Valley + Mammoth Lakes depends on this road staying open", confirmBefore: "Confirm Tioga Road, Yosemite Valley roads, smoke, weather, traffic, and Mammoth check-in timing before July 10 deadline and morning of Day 16", lastChecked: "2026-06-05" },
+        { route: "US-395 / CA-190, Death Valley transfer", disruption: "No active closure; summer heat and road status change quickly (NPS/Caltrans)", impact: "Direct Mammoth-to-Las-Vegas route is conditional; fallback is CA-99 via Bakersfield", confirmBefore: "Confirm road status, weather, smoke, heat, fuel/water stops, and safe fallback day before and morning of Day 17", lastChecked: "2026-06-05" },
+        { route: "Las Vegas to Los Angeles (I-15)", disruption: "No active disruption", impact: "Standard interstate drive", confirmBefore: "Choose departure time, lunch stop, route, and LA arrival buffer before Day 20", lastChecked: "—" },
+        { route: "Final LAX departure", disruption: "No active disruption", impact: "Pasadena is not airport-adjacent; allow large buffer", confirmBefore: "Confirm terminal, rental return, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day", lastChecked: "—" }
       ],
       bookingTasks: [
         { task: "Confirm final trip dates", when: "Done", owner: "Travelers", notes: "Confirmed June 28-July 20, 2026 Sydney-to-Sydney.", status: "Done" },
@@ -2362,8 +2364,8 @@
         <td><strong>${escapeHtml(r.route)}</strong></td>
         <td>${escapeHtml(r.disruption)}</td>
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.impact)}</td>
+        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.lastChecked)}</td>
-        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.recheckBefore)}</td>
       </tr>`).join("");
       $("#travelerNotes").innerHTML = tripData.travelerNotes.map((item, index) => `<li><span class="dot ${["ocean", "sun", "", "rose"][index % 4]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
       $("#doNotBook").innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
