@@ -1015,35 +1015,40 @@
     .focus-text { margin: 0; font-size: 1.1rem; font-weight: 650; line-height: 1.4; color: var(--ink); }
 
     /* Attractions */
-    .place-list { display: grid; gap: 0; }
+    .place-list { display: flex; flex-wrap: wrap; gap: 10px; }
 
-    .place-row {
+    .place-tile {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 11px 0;
-      border-bottom: 1px solid var(--line);
+      flex-direction: column;
+      gap: 6px;
+      flex: 1 1 220px;
+      padding: 13px 15px;
+      border-radius: var(--radius);
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
     }
-    .place-row:last-child { border-bottom: 0; }
-    .place-row strong { display: block; line-height: 1.3; }
-    .place-role { color: var(--muted); font-size: 0.84rem; }
+    .place-tile:not(.place-tile-static):hover {
+      transform: translateY(-2px);
+      border-color: transparent;
+      box-shadow: 0 0 0 2px var(--coral) inset, var(--shadow-sm);
+      text-decoration: none;
+    }
 
-    .place-button {
+    .place-tile-name { font-weight: 700; font-size: 0.95rem; line-height: 1.3; }
+    .place-tile-role { color: var(--muted); font-size: 0.82rem; line-height: 1.35; }
+    .place-tile-cta {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      padding: 6px 13px;
-      border-radius: 999px;
-      border: 1px solid var(--filter-bd);
+      gap: 6px;
+      margin-top: 2px;
       color: var(--ocean);
-      background: var(--panel-solid);
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 700;
-      white-space: nowrap;
-      transition: background 0.18s ease, transform 0.18s ease;
     }
-    .place-button:hover { background: var(--hover); text-decoration: none; transform: translateY(-1px); }
+    .place-tile-cta svg { width: 16px; height: 16px; }
+    .place-tile-static { cursor: default; }
 
     /* Driving legs */
     .drive-legs { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -2349,19 +2354,14 @@
 
     function renderPlaceRows(places = []) {
       if (!places.length) return "";
-      return `
-        <div class="place-list">
-          ${places.map((place) => `
-            <div class="place-row">
-              <span>
-                <strong>${escapeHtml(place.name)}</strong>
-                <span class="place-role">${escapeHtml(place.role)}</span>
-              </span>
-              ${place.map === false ? "" : `<a class="place-button" href="${escapeHtml(mapSearchUrl(place.query || place.name))}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(place.name)} in Google Maps">View place</a>`}
-            </div>
-          `).join("")}
-        </div>
-      `;
+      return `<div class="place-list">${places.map((place) => {
+        const inner = `<span class="place-tile-name">${escapeHtml(place.name)}</span>
+          <span class="place-tile-role">${escapeHtml(place.role)}</span>
+          ${place.map === false ? "" : `<span class="place-tile-cta">${icon("pin")}<span>View place</span></span>`}`;
+        return place.map === false
+          ? `<div class="place-tile place-tile-static">${inner}</div>`
+          : `<a class="place-tile" href="${escapeHtml(mapSearchUrl(place.query || place.name))}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(place.name)} in Google Maps">${inner}</a>`;
+      }).join("")}</div>`;
     }
 
     const ICONS = {
@@ -2373,7 +2373,8 @@
       sunrise: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M5.6 10.6 7 12M17 12l1.4-1.4M3 18h2M19 18h2M8 18a4 4 0 0 1 8 0"/><path d="M2 22h20"/></svg>',
       sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>',
       moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>',
-      dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>'
+      dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>',
+      pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>'
     };
     const icon = (name) => ICONS[name] || "";
 
@@ -2401,8 +2402,9 @@
     const factIcon = (label) => label === "Sleep" ? "bed" : (label === "Reservation" ? "ticket" : "dot");
 
     function renderFacts(logistics = []) {
-      if (!logistics.length) return "";
-      return `<div class="day-facts">${logistics.map((item) => `
+      const items = (logistics || []).filter((item) => item.label !== "Sleep");
+      if (!items.length) return "";
+      return `<div class="day-facts">${items.map((item) => `
         <div class="fact fact-${toneClass(item.tone)}">
           <span class="fact-ic">${icon(factIcon(item.label))}</span>
           <span class="fact-text"><span class="fact-label">${escapeHtml(item.label)}</span><span class="fact-value">${escapeHtml(item.value)}</span></span>
@@ -2447,12 +2449,7 @@
             <span class="day-chevron" aria-hidden="true">${icon("chevron")}</span>
           </summary>
           <div class="day-body">
-            <p class="day-intro">${escapeHtml(day.summary)}</p>
             ${renderFacts(day.logistics)}
-            <div class="day-section">
-              <span class="section-label">Core experience</span>
-              <p class="focus-text">${escapeHtml(day.focus)}</p>
-            </div>
             ${day.places && day.places.length ? `<div class="day-section">
               <span class="section-label">Attractions</span>
               ${renderPlaceRows(day.places)}
