@@ -23,9 +23,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
 - Afternoon: Check in at 3:00 pm if the room is ready, unpack, nap, hotel pool, or a short pram-friendly Pasadena-area walk.
-- Dinner: Easy local dinner near the hotel.
-- Driving: LAX to the Pasadena-area arrival hotel only; keep any extra driving minimal after the long flight.
-- Walking: Keep light.
+- Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
 - Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
 
@@ -33,11 +31,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Slow start, hotel pool, Pasadena-area walk, Kidspace Children's Museum, or Santa Monica beach path if energy is good.
-- Lunch: Pasadena, Glendale, Los Feliz, or Santa Monica if choosing a beach outing.
 - Afternoon: Kidspace, beach/playground time, or a quiet neighborhood walk.
-- Dinner: Pasadena, Los Feliz, Glendale, or near the hotel.
-- Driving: Minimal if staying Pasadena-local; moderate if crossing town to Santa Monica.
-- Walking: Light to moderate and pram-friendly.
+- Driving: Pasadena → Kidspace Children's Museum; Pasadena → Santa Monica Pier. Open the dashboard for live distance and time.
 - Reservations: Kidspace or Cayton only if using a child-first indoor/outdoor reset.
 - Backup plan: If jet lag is heavy, make this a hotel, local walk, and early-dinner day only.
 
@@ -45,11 +40,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Keep a flexible start: hotel pool, Pasadena-area playground, groceries, laundry, or a short neighborhood walk.
-- Lunch: Near the hotel base.
 - Afternoon: Short neighborhood outing, Griffith-adjacent viewpoint, Petersen Automotive Museum, Rodeo Drive walk, or rest.
-- Dinner: Los Angeles.
-- Driving: Minimal to moderate; Pasadena makes Griffith and east/central LA easier than Santa Monica.
-- Walking: Light to moderate.
+- Driving: Pasadena → Griffith Observatory; Pasadena → Petersen Automotive Museum. Open the dashboard for live distance and time.
 - Reservations: None unless choosing a ticketed museum.
 - Backup plan: Treat this as a recovery and logistics day if the first two nights are rough.
 
@@ -57,11 +49,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Choose one primary LA anchor: Griffith Observatory viewpoints, Getty Center, or Academy Museum.
-- Lunch: Los Feliz, Pasadena, Farmers Market, Brentwood, or route-dependent neighborhood.
 - Afternoon: Rest, Kidspace / playground time, Rodeo Drive walk, Petersen Automotive Museum, or hotel pool.
-- Dinner: Los Angeles.
-- Driving: 1-3 hours total depending on chosen anchor; Westside sights need more traffic buffer from Pasadena.
-- Walking: Light to moderate.
+- Driving: Pasadena → Griffith Observatory; Pasadena → Getty Center; Pasadena → Academy Museum of Motion Pictures. Open the dashboard for live distance and time.
 - Reservations: Getty parking/timed-entry if required, Academy Museum tickets if visiting, or planetarium tickets if choosing Griffith.
 - Backup plan: If cross-town traffic is poor, stay Pasadena / Griffith-local and move Westside sights to a future LA return trip.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
@@ -70,11 +59,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Choose a second LA sample only if energy is good: Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or a simple neighborhood morning.
-- Lunch: Near the chosen area.
 - Afternoon: Hotel pool, shopping errand, playground, or low-key museum backup.
-- Dinner: Los Angeles.
-- Driving: Keep below 3-4 hours total.
-- Walking: Light to moderate.
+- Driving: Pasadena → Getty Center; Pasadena → Academy Museum of Motion Pictures; Pasadena → Santa Monica Pier. Open the dashboard for live distance and time.
 - Reservations: Only for a chosen ticketed attraction.
 - Backup plan: Keep the day local and save energy for the July 4 coast move.
 
@@ -82,11 +68,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Easy beach, viewpoint, or neighborhood walk.
-- Lunch: Los Angeles.
 - Afternoon: Pack, laundry, confirm hotel parking / folio handling for the already-booked rental car, or one short local activity.
-- Dinner: Early dinner near the hotel.
-- Driving: Minimal; the car is already picked up from LAX on Day 1.
-- Walking: Light.
+- Driving: Pasadena → Old Pasadena. Open the dashboard for live distance and time.
 - Reservations: None unless choosing a ticketed local activity; prepare for 12:00 pm checkout on Day 7.
 - Backup plan: Keep this as a full rest day before the holiday transfer.
 
@@ -94,11 +77,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Santa Maria hotel.
 - Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
-- Lunch: Ventura, Oxnard, Santa Barbara bypass area, Solvang / Santa Ynez, Pismo Beach, or route-dependent stop. Do not plan Santa Barbara sightseeing unless the family explicitly restores it.
 - Afternoon: Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy.
-- Dinner: Santa Maria or near the overnight base.
-- Driving: Full holiday transfer day; expect 3.5-5.5 hours plus stops depending on Route 1 use, US-101 timing, July 4 traffic, and road controls.
-- Walking: Light.
+- Driving: Pasadena → Santa Barbara; Santa Barbara → Pismo Beach; Pismo Beach → Santa Maria. Open the dashboard for live distance and time.
 - Reservations: Pasadena-area hotel checkout by 12:00 pm. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
 - Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
@@ -107,11 +87,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Monterey-area hotel.
 - Morning: Leave Santa Maria after breakfast. Use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows the route open and timing is comfortable.
-- Lunch: Cambria, San Simeon, Big Sur, Salinas, Carmel, or Monterey depending on route choice and road pace.
 - Afternoon: San Simeon elephant seal viewing, a short Hearst Castle tour only if timing is easy, Big Sur viewpoints, or direct arrival and settle-in.
-- Dinner: Carmel or Monterey.
-- Driving: Full scenic transfer day; verify current map timing after Highway 1, one-way controls, and any Hearst Castle choice are known.
-- Walking: Light to moderate.
+- Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
 - Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start. See `05-trip-logistics.md` for Monterey lodging details.
 - Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
@@ -120,11 +97,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Monterey-area hotel.
 - Morning: Monterey Bay Aquarium.
-- Lunch: Cannery Row, Pacific Grove, or hotel.
 - Afternoon: Pacific Grove coastal walk, Dennis the Menace Playground, Carmel Beach, or a short Big Sur reach if Highway 1 and energy allow.
-- Dinner: Carmel or Monterey.
-- Driving: Minimal unless adding a short Big Sur scenic drive.
-- Walking: Moderate.
+- Driving: Monterey → Monterey Bay Aquarium; Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 - Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
@@ -132,11 +106,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Check out of the booked Monterey-area hotel. Use a short Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, or MY Museum stop only if the family is rested.
-- Lunch: Santa Cruz, Half Moon Bay, San Mateo, Palo Alto, or route-dependent stop.
 - Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
-- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
-- Driving: Monterey to Mountain View transfer day; verify live map timing before choosing the coastal or inland route.
-- Walking: Light to moderate.
+- Driving: Monterey → Santa Cruz; Santa Cruz → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
@@ -144,11 +115,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable.
-- Lunch: Near the chosen area.
 - Afternoon: Keep this flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset.
-- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
-- Driving: Mountain View base; keep the day local unless the weather strongly favors a San Francisco outdoor window.
-- Walking: Light to moderate.
+- Driving: Mountain View → Stanford University; Mountain View → Exploratorium. Open the dashboard for live distance and time.
 - Reservations: None unless choosing Exploratorium or another ticketed backup.
 - Backup plan: Treat this as the Bay Area recovery day if the Monterey transfer was slow.
 
@@ -156,11 +124,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Drive, transit, or rideshare to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
-- Lunch: Marina, Presidio, or Fort Mason area.
 - Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
-- Dinner: Early dinner in San Francisco if energy is good, or return to Mountain View / Palo Alto / Menlo Park for a simpler evening.
-- Driving: Mountain View to San Francisco day trip; decide parking versus Caltrain/rideshare after live timing and parking checks.
-- Walking: Moderate and pram-friendly if routes stay near waterfront paths.
+- Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Mountain View. Open the dashboard for live distance and time.
 - Reservations: None required.
 - Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day hotel-base-local if the commute looks bad.
 
@@ -168,11 +133,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
-- Lunch: Palo Alto, Stanford Shopping Center, Mountain View, or the Google Visitor Experience cafe.
 - Afternoon: Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest.
-- Dinner: Palo Alto, Mountain View, Menlo Park, or near the hotel.
-- Driving: Local Peninsula / Silicon Valley driving; keep it to two tech anchors, not every company campus.
-- Walking: Moderate.
+- Driving: Mountain View → Stanford University; Mountain View → Computer History Museum; Mountain View → Apple Park Visitor Center. Open the dashboard for live distance and time.
 - Reservations: Check Stanford visitor schedule, Google Visitor Experience hours/events, Computer History Museum tickets and hours, and Apple Park Visitor Center hours before choosing the final mix.
 - Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
@@ -181,11 +143,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the longer Bay Area stay for a slower family day: Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, or a local neighborhood reset.
-- Lunch: Near the chosen area.
 - Afternoon: Keep the day flexible for fog, parking, and family energy. Use this as the San Francisco city day that did not fit earlier, or keep it base-local if the week has been busy.
-- Dinner: Mountain View, Palo Alto, Menlo Park, or near the hotel.
-- Driving: Mountain View base; avoid stacking a San Francisco day trip with a second distant stop.
-- Walking: Light to moderate.
+- Driving: Mountain View → Golden Gate Park; Mountain View → Exploratorium. Open the dashboard for live distance and time.
 - Reservations: None unless choosing Exploratorium or another ticketed attraction.
 - Backup plan: Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push.
 
@@ -193,11 +152,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Use the sixth Bay Area night as a true buffer: second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning.
-- Lunch: Palo Alto, Mountain View, Cupertino, San Jose, Sausalito, or near the hotel depending on the chosen plan.
 - Afternoon: Pack for Yosemite, confirm route conditions, and keep the evening easy.
-- Dinner: Near the hotel.
-- Driving: Mountain View base; keep this less ambitious than Day 13 unless the family specifically wants another tech or redwood block.
-- Walking: Light to moderate.
+- Driving: Mountain View → Apple Park Visitor Center; Mountain View → The Tech Interactive; Mountain View → Muir Woods National Monument. Open the dashboard for live distance and time.
 - Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
 - Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
 
@@ -205,11 +161,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mammoth Lakes hotel.
 - Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
-- Lunch: Manteca, Oakdale, Mariposa, Yosemite Valley, or packed lunch depending on live timing.
 - Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
-- Dinner: Mammoth Lakes or simple route-dependent meal.
-- Driving: Long intercity transfer plus Yosemite Valley sightseeing plus a Tioga Road crossing to Mammoth Lakes; verify live map timing after route, road, smoke, and Tioga Road checks.
-- Walking: Light to moderate and adjustable.
+- Driving: Mountain View → Yosemite Valley; Yosemite Valley → Mammoth Lakes. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mammoth Lakes lodging details.
 - Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
 - Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
@@ -218,12 +171,9 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Leave Mammoth Lakes early. Use US-395 toward Lone Pine and CA-190 / Death Valley only if the route remains open and safe.
-- Lunch: Lone Pine, Panamint Springs, Furnace Creek, or a packed car lunch depending on route timing and heat.
 - Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, visitor center if timing works, then continue to Las Vegas.
-- Dinner: Casual Las Vegas dinner near the hotel.
 - Evening: Check in from 3:00 pm if arrival timing allows. Rest, pool time, or indoor hotel exploration only if everyone has energy.
-- Driving: Very long mountain-to-desert transfer. Re-check Caltrans US-395 / CA-190, Death Valley road status, weather, smoke, heat, and flood risk within 7 days and again the morning of departure. Tioga Road also remains relevant because the family must reach Mammoth Lakes on July 13.
-- Walking: Minimal. Do not plan hikes in Death Valley lower elevations in July.
+- Driving: Mammoth Lakes → Death Valley National Park; Death Valley National Park → Las Vegas. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Las Vegas lodging details.
 - Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
@@ -232,12 +182,9 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
-- Lunch: Food hall, casual resort dining, or nearby mall dining.
 - Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
-- Dinner: Las Vegas.
 - Evening: Fountains of Bellagio, High Roller, or a short Strip walk if temperatures and crowds are manageable.
-- Driving: Minimal if staying on or near the Strip.
-- Walking: Light to moderate, with rideshare/monorail backup.
+- Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Sphere; Las Vegas Strip → The High Roller. Open the dashboard for live distance and time.
 - Reservations: Book only one ticketed attraction or show for the day.
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
@@ -245,12 +192,9 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
-- Lunch: Return to hotel or casual indoor lunch.
 - Afternoon: Rest, packing buffer, indoor attraction, or low-key shopping near the hotel.
-- Dinner: Final Las Vegas dinner.
 - Evening: Final Bellagio fountains, Fremont Street only if the family explicitly wants a louder/crowded scene, or early night before the loop-closure drive.
-- Driving: 1.5-3 hours if adding Red Rock; minimal otherwise.
-- Walking: Light.
+- Driving: Las Vegas Strip → Red Rock Canyon National Conservation Area. Open the dashboard for live distance and time.
 - Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
 - Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
 
@@ -258,11 +202,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area final Los Angeles hotel.
 - Morning: Check out of the booked Las Vegas hotel by 11:00 am, pack, and leave after breakfast.
-- Lunch: Practical route stop. Keep this a logistics day, not a sightseeing day.
 - Afternoon: Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple.
-- Dinner: Easy final dinner near the hotel.
-- Driving: 4-5 hours before Los Angeles traffic and stops.
-- Walking: Light.
+- Driving: Las Vegas → Barstow; Barstow → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Hotel checkout by 11:00 am in Las Vegas; hotel check-in at 3:00 pm in Pasadena. See `05-trip-logistics.md` for lodging details.
 - Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
@@ -270,12 +211,9 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Overnight flight.
 - Morning: Check out of the booked Pasadena-area final hotel by 12:00 pm. Pack slowly and avoid major sightseeing.
-- Lunch: Pasadena, en route, or near LAX depending on checkout and traffic timing.
 - Afternoon: Use late checkout or a day room if the gap before airport check-in is too long. Keep luggage and car-return timing simple.
 - Evening: Return the booked rental car at Los Angeles International Airport at 8:00 pm, then depart LAX on UA 839 at 10:45 pm.
-- Dinner: Airport or in flight.
-- Driving: Pasadena-area hotel to LAX rental car return; allow a large buffer for traffic, fuel, luggage, shuttle/terminal transfer, and international check-in.
-- Walking: Light.
+- Driving: Pasadena → LAX Airport. Open the dashboard for live distance and time.
 - Reservations: Rental car return at LAX at 8:00 pm; United UA 839 departs 10:45 pm. See `05-trip-logistics.md` for final hotel checkout details.
 - Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
 
@@ -284,9 +222,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: In flight.
 - Morning: Cross the Pacific.
 - Afternoon: Cross the date line.
-- Dinner: In flight.
 - Driving: None.
-- Walking: None.
 - Reservations: None.
 - Backup plan: None.
 
@@ -295,9 +231,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Home.
 - Morning: Arrive SYD on UA 839 at 7:00 am.
 - Afternoon: Recovery day.
-- Dinner: Home.
-- Driving: Airport transfer only.
-- Walking: Light.
+- Driving: Sydney Airport → Sydney. Open the dashboard for live distance and time.
 - Reservations: Airport transfer if needed.
 - Backup plan: None.
 
