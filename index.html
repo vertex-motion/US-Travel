@@ -859,75 +859,291 @@
     details.expand-card {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: var(--radius);
+      border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-sm);
       backdrop-filter: var(--glass-blur);
-      transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+      transition: box-shadow 0.25s ease, border-color 0.25s ease;
     }
 
-    details.day-card:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+    details.day-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
     details[open] { box-shadow: var(--shadow); }
 
     summary { list-style: none; cursor: pointer; }
     summary::-webkit-details-marker { display: none; }
 
     .day-summary {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
+      display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 14px;
-      padding: 18px;
+      padding: 16px 18px;
+      transition: background 0.2s ease;
     }
+    .day-summary:hover { background: var(--hover); }
 
     .day-number {
       display: grid;
       place-items: center;
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
       color: #fff;
       background: var(--grad-brand);
       font-family: var(--font-display);
+      font-size: 1.15rem;
       font-weight: 800;
-      box-shadow: 0 8px 18px -8px rgba(255, 94, 98, 0.7);
+      box-shadow: 0 10px 20px -8px rgba(255, 94, 98, 0.7);
+      flex: 0 0 auto;
     }
 
-    .day-summary h3 { margin: 0; font-size: 1.08rem; line-height: 1.2; }
-    .day-summary p { margin: 6px 0 0; color: var(--muted); font-size: 0.9rem; }
-
-    .day-region { min-width: 104px; text-align: right; }
-    .day-summary-main { min-width: 0; }
+    .day-summary-main { flex: 1 1 240px; min-width: 0; }
+    .day-summary h3 { margin: 0; font-size: 1.1rem; line-height: 1.25; letter-spacing: -0.01em; }
+    .day-date { margin: 3px 0 0; color: var(--muted); font-size: 0.86rem; }
 
     .day-summary-tags {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
       flex-wrap: wrap;
       gap: 7px;
+      flex: 0 0 auto;
     }
 
-    .day-type { color: #fff; background: var(--ocean); border-color: transparent; }
+    .day-region-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--filter-bg);
+      box-shadow: inset 0 0 0 1px var(--filter-bd);
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .day-type {
+      border-radius: 999px;
+      color: #fff;
+      background: var(--ocean);
+      border-color: transparent;
+      font-weight: 700;
+    }
 
     .day-card[data-type="Transfer"] .day-type,
     .day-card[data-type="Departure"] .day-type,
     .day-card[data-type="Transit"] .day-type { background: var(--sun); }
-
     .day-card[data-type="Arrival"] .day-type { background: var(--grape); }
-
     .day-card[data-type="Flexible"] .day-type,
     .day-card[data-type="Recovery"] .day-type { background: var(--forest); }
 
+    .day-chevron {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      color: var(--muted);
+      background: var(--filter-bg);
+      flex: 0 0 auto;
+      transition: transform 0.25s ease, background 0.2s ease, color 0.2s ease;
+    }
+    .day-chevron svg { width: 16px; height: 16px; }
+    .day-card[open] .day-chevron { transform: rotate(180deg); background: var(--grad-brand); color: #fff; }
+
     .day-body {
       border-top: 1px solid var(--line);
-      padding: 18px;
+      padding: 22px;
       display: grid;
-      gap: 18px;
+      gap: 22px;
+      background: var(--panel-soft);
     }
 
+    .day-intro {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: var(--ink-soft);
+    }
+
+    /* Facts row */
+    .day-facts { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .fact {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      flex: 1 1 240px;
+      min-width: 0;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+    }
+
+    .fact-ic {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      color: var(--ocean);
+      background: color-mix(in srgb, var(--ocean) 15%, transparent);
+    }
+    .fact-ic svg { width: 19px; height: 19px; }
+    .fact-warn .fact-ic { color: var(--sun); background: color-mix(in srgb, var(--sun) 17%, transparent); }
+    .fact-good .fact-ic { color: var(--forest); background: color-mix(in srgb, var(--forest) 17%, transparent); }
+    .fact-stop .fact-ic { color: var(--rose); background: color-mix(in srgb, var(--rose) 17%, transparent); }
+
+    .fact-text { display: grid; gap: 1px; min-width: 0; }
+    .fact-label { font-size: 0.7rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+    .fact-value { font-size: 0.9rem; line-height: 1.35; color: var(--ink); }
+
+    /* Sections */
+    .day-section { display: grid; gap: 10px; }
+
+    .section-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .focus-text { margin: 0; font-size: 1.1rem; font-weight: 650; line-height: 1.4; color: var(--ink); }
+
+    /* Attractions */
+    .place-list { display: grid; gap: 0; }
+
+    .place-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .place-row:last-child { border-bottom: 0; }
+    .place-row strong { display: block; line-height: 1.3; }
+    .place-role { color: var(--muted); font-size: 0.84rem; }
+
+    .place-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      border: 1px solid var(--filter-bd);
+      color: var(--ocean);
+      background: var(--panel-solid);
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.18s ease, transform 0.18s ease;
+    }
+    .place-button:hover { background: var(--hover); text-decoration: none; transform: translateY(-1px); }
+
+    /* Driving legs */
+    .drive-legs { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .drive-leg {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1 1 220px;
+      padding: 13px 15px;
+      border-radius: var(--radius);
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .drive-leg:hover {
+      transform: translateY(-2px);
+      border-color: transparent;
+      box-shadow: 0 0 0 2px var(--coral) inset, var(--shadow-sm);
+      text-decoration: none;
+    }
+
+    .drive-leg-route {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .drive-leg-arrow { display: inline-grid; place-items: center; color: var(--coral); }
+    .drive-leg-arrow svg { width: 16px; height: 16px; }
+
+    .drive-leg-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ocean);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .drive-leg-cta svg { width: 16px; height: 16px; }
+
+    .drive-empty { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    /* Day flow timeline */
+    .day-flow { display: grid; gap: 2px; }
+
+    .flow-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 14px;
+      padding: 6px 0;
+      position: relative;
+    }
+
+    .flow-marker {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      color: var(--sun);
+      background: color-mix(in srgb, var(--sun) 16%, transparent);
+      flex: 0 0 auto;
+      z-index: 1;
+    }
+    .flow-marker svg { width: 18px; height: 18px; }
+
+    .flow-item::before {
+      content: "";
+      position: absolute;
+      left: 16px;
+      top: 8px;
+      bottom: -8px;
+      width: 2px;
+      background: linear-gradient(var(--line-strong), transparent);
+    }
+    .flow-item:last-child::before { display: none; }
+
+    .flow-content { display: grid; gap: 2px; padding-top: 4px; min-width: 0; }
+    .flow-time { color: var(--ink); font-size: 0.78rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+    .flow-text { margin: 0; color: var(--ink-soft); line-height: 1.45; }
+
+    /* Backup */
+    .day-backup {
+      display: grid;
+      gap: 4px;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      background: color-mix(in srgb, var(--gold) 13%, var(--panel-solid));
+      border: 1px solid color-mix(in srgb, var(--gold) 38%, transparent);
+    }
+    .day-backup-label { font-size: 0.72rem; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; color: var(--warn-fg); }
+    .day-backup span:last-child { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.45; }
+
+    /* Itinerary toolbar filters */
     .day-filter-stack { display: grid; gap: 10px; }
     .filter-row { display: flex; align-items: center; gap: 10px; }
-
     .filter-label {
       min-width: 58px;
       font-size: 0.76rem;
@@ -936,111 +1152,6 @@
       color: var(--muted);
       font-weight: 750;
     }
-
-    .day-meta-strip { display: flex; flex-wrap: wrap; gap: 8px; }
-
-    .day-meta-strip .tag {
-      align-items: flex-start;
-      max-width: 100%;
-      white-space: normal;
-      text-align: left;
-    }
-
-    .day-lead {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
-      gap: 20px;
-      align-items: start;
-    }
-
-    .day-focus { display: grid; gap: 12px; }
-
-    .section-label {
-      display: block;
-      color: var(--muted);
-      font-size: 0.76rem;
-      font-weight: 750;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-
-    .focus-text { margin: 0; font-size: 1.05rem; font-weight: 650; line-height: 1.4; }
-
-    .place-list { display: grid; gap: 8px; }
-
-    .place-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding-top: 9px;
-      border-top: 1px solid var(--line);
-    }
-
-    .place-row:first-child { padding-top: 0; border-top: 0; }
-    .place-row strong { display: block; line-height: 1.25; }
-    .place-role { color: var(--muted); font-size: 0.84rem; }
-
-    .logistics-list {
-      display: grid;
-      gap: 8px;
-      border-left: 3px solid var(--coral);
-      padding-left: 16px;
-    }
-
-    .logistics-item { display: grid; gap: 2px; }
-
-    .logistics-item strong {
-      color: var(--muted);
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .logistics-item span { font-size: 0.92rem; }
-
-    .day-flow { display: grid; gap: 0; border-top: 1px solid var(--line); }
-
-    .flow-item {
-      display: grid;
-      grid-template-columns: 96px minmax(0, 1fr);
-      gap: 16px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .flow-item:last-child { border-bottom: 0; }
-
-    .flow-time {
-      color: var(--coral);
-      font-size: 0.76rem;
-      font-weight: 750;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .flow-text { margin: 0; }
-
-    .day-backup { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); }
-
-    .place-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 30px;
-      padding: 5px 12px;
-      border: 1px solid var(--line-strong);
-      border-radius: 999px;
-      color: var(--ocean);
-      background: var(--panel-solid);
-      font-size: 0.78rem;
-      font-weight: 700;
-      white-space: nowrap;
-      transition: background 0.18s ease;
-    }
-
-    .place-button:hover { background: var(--hover); text-decoration: none; }
 
     /* ---------------- Tables ---------------- */
     .table-wrap {
@@ -1319,16 +1430,14 @@
         align-items: flex-start;
       }
 
-      .day-summary { grid-template-columns: auto minmax(0, 1fr); }
-      .day-region { grid-column: 1 / -1; text-align: left; }
+      .day-summary-main { flex-basis: 100%; }
 
-      .day-summary-tags, .filter-row, .place-row {
+      .filter-row, .place-row {
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
       }
 
-      .flow-item { grid-template-columns: 1fr; gap: 4px; }
       #map, #potentialMap { min-height: 360px; height: 52vh; }
       .potential-map-list { max-height: none; }
     }
@@ -1701,29 +1810,29 @@
         { id: "la-departure", type: "base", name: "Pasadena final hotel", label: "Booked loop closure", dates: "July 17-18", nights: "1 night", coords: [34.1478, -118.1445], highlights: "Booked final hotel, packing, and airport buffer before the LAX departure.", items: ["Booked Pasadena-area hotel", "Packing", "Airport buffer", "Large LAX drive buffer"], transfer: "4-5 hours from Las Vegas before traffic and stops; Day 21 needs a Pasadena-to-LAX buffer." }
       ],
       days: [
-        { day: 1, date: "Sunday, June 28", title: "Arrive Los Angeles", region: "Los Angeles", dayType: "Arrival", sleep: "Pasadena-area booked hotel", summary: "UA 842 arrives LAX at 6:10 am; rental car pickup is booked for 8:00 am; first hotel check-in is 3:00 pm.", focus: "Clear arrival logistics, pick up the car, and settle into the Pasadena-area base.", places: [{ name: "Los Angeles International Airport", role: "Arrival gateway and rental car pickup" }, { name: "Pasadena area", role: "Booked first hotel base" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive LAX on UA 842, clear immigration, collect bags, and pick up the booked rental car at 8:00 am." }, { slot: "Afternoon", kind: "rest", text: "Check in at 3:00 pm if the room is ready, unpack, nap, pool, or short Pasadena-area walk." }, { slot: "Dinner", kind: "meal", text: "Easy local dinner near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "LAX to Pasadena-area hotel only; keep extra driving minimal.", tone: "warn" }, { label: "Walking", value: "Keep light.", tone: "good" }, { label: "Reservation", value: "Booked rental car pickup at 8:00 am; booked hotel check-in at 3:00 pm; confirm luggage storage.", tone: "warn" }], backup: "If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in." },
-        { day: 2, date: "Monday, June 29", title: "Pasadena or Santa Monica Arrival Recovery", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Gentle first full day from the Pasadena-area base.", focus: "Keep the first full day gentle and pram-friendly.", places: [{ name: "Pasadena area", role: "Local recovery" }, { name: "Kidspace Children's Museum", role: "Optional child-first reset" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow start, hotel pool, Pasadena-area walk, Kidspace, or Santa Monica beach path if energy is good." }, { slot: "Lunch", kind: "meal", text: "Pasadena, Glendale, Los Feliz, or Santa Monica if choosing a beach outing." }, { slot: "Afternoon", kind: "optional", text: "Kidspace, beach/playground time, or quiet neighborhood walk." }, { slot: "Dinner", kind: "meal", text: "Early dinner near the base." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "Minimal if Pasadena-local; moderate if crossing town to Santa Monica.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Kidspace or Cayton only if using a child-first reset.", tone: "info" }], backup: "Make this a hotel, local walk, and early-dinner day only if jet lag is heavy." },
-        { day: 3, date: "Tuesday, June 30", title: "Gentle Los Angeles Buffer Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Flexible recovery, errands, and one short local outing.", focus: "Use the extra arrival time without overloading the first week.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Petersen Automotive Museum", role: "Optional" }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool, Pasadena-area playground, groceries, laundry, or short neighborhood walk." }, { slot: "Lunch", kind: "meal", text: "Near the hotel base." }, { slot: "Afternoon", kind: "optional", text: "Short neighborhood outing, Griffith-adjacent viewpoint, Petersen, Rodeo Drive walk, or rest." }, { slot: "Dinner", kind: "meal", text: "Los Angeles." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "Minimal to moderate; Pasadena makes Griffith and east/central LA easier.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed museum.", tone: "good" }], backup: "Treat this as a recovery and logistics day if the first two nights are rough." },
-        { day: 4, date: "Wednesday, July 1", title: "Getty, Academy Museum, or Griffith", region: "Los Angeles", dayType: "Sightseeing", sleep: "Pasadena-area booked hotel", summary: "Choose one LA anchor and keep the afternoon flexible.", focus: "Avoid cross-city overload before the coast drive.", places: [{ name: "Griffith Observatory", role: "Primary option" }, { name: "Getty Center", role: "Primary option" }, { name: "Academy Museum of Motion Pictures", role: "Primary option" }], flow: [{ slot: "Morning", kind: "core", text: "Choose one primary LA anchor: Griffith, Getty, or Academy Museum." }, { slot: "Lunch", kind: "meal", text: "Los Feliz, Pasadena, Farmers Market, Brentwood, or route-dependent neighborhood." }, { slot: "Afternoon", kind: "rest", text: "Rest, Kidspace / playground time, Rodeo Drive walk, Petersen, or hotel pool." }, { slot: "Dinner", kind: "meal", text: "Los Angeles." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "1-3 hours depending on chosen anchor; Westside sights need more traffic buffer.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Getty, Academy, or planetarium checks if selected.", tone: "warn" }], backup: "If cross-town traffic is poor, stay Pasadena / Griffith-local." },
-        { day: 5, date: "Thursday, July 2", title: "Flexible Los Angeles Day", region: "Los Angeles", dayType: "Flexible", sleep: "Pasadena-area booked hotel", summary: "Second LA sample or another soft recovery day.", focus: "Let energy decide whether this is sightseeing or rest.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Getty / Academy / Griffith", role: "If not used Day 4" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "optional", text: "Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or simple neighborhood morning." }, { slot: "Lunch", kind: "meal", text: "Near the chosen area." }, { slot: "Afternoon", kind: "rest", text: "Hotel pool, shopping errand, playground, or low-key museum backup." }, { slot: "Dinner", kind: "meal", text: "Los Angeles." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "Keep below 3-4 hours total.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Only for a chosen ticketed attraction.", tone: "info" }], backup: "Keep the day local and save energy for the July 4 coast move." },
-        { day: 6, date: "Friday, July 3", title: "Los Angeles Final Local Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Pack, rest, and keep the already-booked car logistics simple.", focus: "Keep the day light before the holiday transfer.", places: [{ name: "Pasadena area", role: "Local" }], flow: [{ slot: "Morning", kind: "rest", text: "Easy beach, viewpoint, or neighborhood walk." }, { slot: "Lunch", kind: "meal", text: "Los Angeles." }, { slot: "Afternoon", kind: "logistics", text: "Pack, laundry, confirm hotel parking / folio handling for the already-booked rental car, or one short local activity." }, { slot: "Dinner", kind: "meal", text: "Early dinner near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Driving", value: "Minimal; the car is already picked up from LAX on Day 1.", tone: "good" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Prepare for 12:00 pm checkout on Day 7.", tone: "info" }], backup: "Keep this as a full rest day before the holiday transfer." },
-        { day: 7, date: "Saturday, July 4", title: "Los Angeles to Santa Maria", region: "Central Coast", dayType: "Transfer", sleep: "Booked Santa Maria hotel", summary: "Check out of the Pasadena-area hotel and use the booked Santa Maria overnight to split the coast drive without stopping overnight in Santa Barbara.", focus: "Use Route 1 where sensible while protecting the holiday transfer.", places: [{ name: "Pasadena area", role: "Checkout base" }, { name: "Santa Maria", role: "Booked overnight base" }, { name: "Pismo / Avila Beach area", role: "Optional easy evening" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out by 12:00 pm; leave early if using CA-1 / PCH segments, otherwise use US-101 for reliability." }, { slot: "Lunch", kind: "meal", text: "Ventura, Oxnard, Santa Barbara bypass area, Solvang / Santa Ynez, Pismo, or route-dependent stop." }, { slot: "Afternoon", kind: "rest", text: "Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy." }, { slot: "Dinner", kind: "meal", text: "Santa Maria or near the overnight base." }], logistics: [{ label: "Sleep", value: "Booked Santa Maria hotel.", tone: "info" }, { label: "Driving", value: "3.5-5.5 hours plus stops depending on Route 1 use, US-101 timing, and July 4 traffic.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Booked Santa Maria hotel; confirm check-in, parking, occupancy, cancellation, and fees privately.", tone: "warn" }], backup: "Use US-101 and make the day practical if CA-1 traffic or road controls are poor." },
-        { day: 8, date: "Sunday, July 5", title: "Santa Maria to Monterey / Carmel via Route 1", region: "Monterey / Carmel", dayType: "Transfer", sleep: "Booked Monterey-area hotel", summary: "Scenic Highway 1 transfer with Hearst Castle or elephant seals only if timing stays comfortable from Santa Maria.", focus: "Arrive in Monterey without turning the coast into a forced march.", places: [{ name: "San Simeon elephant seals", role: "Flexible stop" }, { name: "Hearst Castle", role: "Optional ticketed stop" }, { name: "Big Sur", role: "Scenic route" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Santa Maria after breakfast; use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows it open." }, { slot: "Lunch", kind: "meal", text: "Cambria, San Simeon, Big Sur, Salinas, Carmel, or Monterey depending on route choice and road pace." }, { slot: "Afternoon", kind: "optional", text: "Elephant seals, short Hearst Castle tour if easy, Big Sur viewpoints, or direct arrival." }, { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }], logistics: [{ label: "Sleep", value: "Booked Monterey-area hotel.", tone: "info" }, { label: "Driving", value: "Full scenic transfer day; Santa Maria start makes Big Sur timing-sensitive.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Booked Monterey-area hotel; confirm parking, occupancy, resort/amenity fees, cancellation, and fees privately.", tone: "warn" }], backup: "Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 is too slow." },
-        { day: 9, date: "Monday, July 6", title: "Monterey Bay Aquarium and Carmel Coast", region: "Monterey / Carmel", dayType: "Sightseeing", sleep: "Booked Monterey-area hotel", summary: "Aquarium anchor day with an adjustable coast afternoon.", focus: "Make Monterey Bay Aquarium the main event.", places: [{ name: "Monterey Bay Aquarium", role: "Primary" }, { name: "Pacific Grove", role: "Secondary" }, { name: "Carmel Beach", role: "Optional coast" }], flow: [{ slot: "Morning", kind: "core", text: "Monterey Bay Aquarium." }, { slot: "Lunch", kind: "meal", text: "Cannery Row, Pacific Grove, or hotel." }, { slot: "Afternoon", kind: "secondary", text: "Pacific Grove, Dennis the Menace Playground, Carmel Beach, or short Big Sur reach." }, { slot: "Dinner", kind: "meal", text: "Carmel or Monterey." }], logistics: [{ label: "Sleep", value: "Booked Monterey-area hotel.", tone: "info" }, { label: "Driving", value: "Minimal unless adding a short scenic drive.", tone: "good" }, { label: "Walking", value: "Moderate.", tone: "info" }, { label: "Reservation", value: "Buy aquarium tickets ahead.", tone: "warn" }], backup: "Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
-        { day: 10, date: "Tuesday, July 7", title: "Monterey / Carmel to Mountain View / Bay Area", region: "Bay Area", dayType: "Transfer", sleep: "Booked Mountain View hotel", summary: "Check out of the booked Monterey-area hotel and move into the booked Mountain View Bay Area stay.", focus: "Use the new Bay Area night as breathing room, not a packed sightseeing day.", places: [{ name: "Pacific Grove / Carmel", role: "Optional short morning" }, { name: "Mountain View", role: "Booked Bay Area base" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out; use a short Pacific Grove, Carmel Beach, 17-Mile Drive, playground, or MY Museum stop only if rested." }, { slot: "Lunch", kind: "meal", text: "Santa Cruz, Half Moon Bay, San Mateo, Palo Alto, or route-dependent stop." }, { slot: "Afternoon", kind: "logistics", text: "Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light." }, { slot: "Dinner", kind: "meal", text: "Mountain View, Palo Alto, Menlo Park, or near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Monterey to Mountain View transfer; verify live map timing.", tone: "warn" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Booked Mountain View hotel; confirm final fees, cancellation, free parking, and free WiFi.", tone: "warn" }], backup: "If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day." },
-        { day: 11, date: "Wednesday, July 8", title: "Mountain View / Bay Area Buffer", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Extra Bay Area day created by the Monterey booking shift.", focus: "Use the added night for recovery, San Francisco weather flexibility, or a first Stanford taste.", places: [{ name: "Mountain View / Palo Alto", role: "Flexible" }, { name: "Exploratorium", role: "Weather backup" }, { name: "Stanford campus", role: "Easy local option" }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable." }, { slot: "Lunch", kind: "meal", text: "Near the chosen area." }, { slot: "Afternoon", kind: "optional", text: "Keep flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset." }, { slot: "Dinner", kind: "meal", text: "Mountain View, Palo Alto, Menlo Park, or near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Mountain View base; keep local unless weather favors a San Francisco outdoor window.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "None unless choosing Exploratorium or another ticketed backup.", tone: "info" }], backup: "Treat this as the Bay Area recovery day if the Monterey transfer was slow." },
-        { day: 12, date: "Thursday, July 9", title: "Golden Gate and Presidio", region: "San Francisco", dayType: "Sightseeing", sleep: "Booked Mountain View hotel", summary: "Classic San Francisco views from the booked Mountain View base.", focus: "Make Golden Gate Bridge and Presidio the main experience.", places: [{ name: "Golden Gate Bridge", role: "Primary" }, { name: "Presidio Tunnel Tops", role: "Child-friendly option" }, { name: "Palace of Fine Arts", role: "Secondary" }], flow: [{ slot: "Morning", kind: "core", text: "Drive, Caltrain/rideshare, or another planned transfer to Golden Gate viewpoints from Crissy Field or the Presidio." }, { slot: "Lunch", kind: "meal", text: "Marina, Presidio, or Fort Mason area." }, { slot: "Afternoon", kind: "secondary", text: "Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk." }, { slot: "Dinner", kind: "meal", text: "Early dinner in San Francisco if energy is good, or return to Mountain View / Palo Alto / Menlo Park for a simpler evening." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Mountain View to San Francisco day trip; decide parking versus Caltrain/rideshare after live checks.", tone: "warn" }, { label: "Walking", value: "Moderate and pram-friendly near waterfront paths.", tone: "info" }, { label: "Reservation", value: "None required.", tone: "good" }], backup: "Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day Mountain View / Peninsula-local if the commute looks bad." },
-        { day: 13, date: "Friday, July 10", title: "Stanford and Silicon Valley Tech Day", region: "Bay Area Peninsula", dayType: "Sightseeing", sleep: "Booked Mountain View hotel", summary: "Stanford plus public Silicon Valley tech stops from the booked Mountain View base.", focus: "Keep the day to Stanford and two tech anchors rather than every company campus.", places: [{ name: "Stanford University", role: "Primary" }, { name: "Google Visitor Experience", role: "Tech stop" }, { name: "Computer History Museum", role: "Tech museum" }, { name: "Apple Park Visitor Center", role: "Optional swap" }], flow: [{ slot: "Morning", kind: "core", text: "Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows." }, { slot: "Lunch", kind: "meal", text: "Palo Alto, Stanford Shopping Center, Mountain View, or the Google Visitor Experience cafe." }, { slot: "Afternoon", kind: "secondary", text: "Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest." }, { slot: "Dinner", kind: "meal", text: "Palo Alto, Mountain View, Menlo Park, or near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Local Peninsula / Silicon Valley driving from Mountain View.", tone: "info" }, { label: "Walking", value: "Moderate.", tone: "info" }, { label: "Reservation", value: "Check Stanford visitor schedule, Google hours/events, CHM tickets/hours, and Apple Park hours.", tone: "warn" }], backup: "The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus local Bay Area day if everyone is tired." },
-        { day: 14, date: "Saturday, July 11", title: "Mountain View / Bay Area Flex Day", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Extra Bay Area day for city time or recovery.", focus: "Use the longer Bay Area stay for flexibility rather than a forced transfer.", places: [{ name: "Golden Gate Park", role: "Flexible" }, { name: "Exploratorium", role: "Weather backup" }, { name: "Mountain View / Palo Alto", role: "Local option" }], flow: [{ slot: "Morning", kind: "rest", text: "Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, Mountain View / Palo Alto, or a local neighborhood reset." }, { slot: "Lunch", kind: "meal", text: "Near the chosen area." }, { slot: "Afternoon", kind: "optional", text: "Keep flexible for fog, parking, and family energy." }, { slot: "Dinner", kind: "meal", text: "Mountain View, Palo Alto, Menlo Park, or near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Mountain View base; avoid stacking a San Francisco day trip with a second distant stop.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed attraction.", tone: "info" }], backup: "Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push." },
-        { day: 15, date: "Sunday, July 12", title: "Bay Area Tech, Redwood, or Rest Buffer", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Sixth Bay Area night before Yosemite.", focus: "Use the buffer for a second tech/redwood option or protect energy before Yosemite.", places: [{ name: "Apple Park Visitor Center", role: "Optional tech stop" }, { name: "The Tech Interactive", role: "Optional hands-on museum" }, { name: "Muir Woods", role: "Reservation-dependent option" }], flow: [{ slot: "Morning", kind: "optional", text: "Second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning." }, { slot: "Lunch", kind: "meal", text: "Palo Alto, Mountain View, Cupertino, San Jose, Sausalito, or near the hotel." }, { slot: "Afternoon", kind: "logistics", text: "Pack for Yosemite, confirm route conditions, and keep the evening easy." }, { slot: "Dinner", kind: "meal", text: "Near the hotel." }], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Driving", value: "Mountain View base; keep less ambitious than Day 13 unless the family specifically wants another tech or redwood block.", tone: "info" }, { label: "Walking", value: "Light to moderate.", tone: "info" }, { label: "Reservation", value: "Muir Woods reservation if used; re-check Sunday museum hours.", tone: "warn" }], backup: "Skip new sightseeing and use the day to rest before the Yosemite transfer." },
-        { day: 16, date: "Monday, July 13", title: "Mountain View / Bay Area to Yosemite Valley and Mammoth Lakes", region: "Yosemite / Eastern Sierra", dayType: "Transfer", sleep: "Booked Mammoth Lakes hotel", summary: "Drive to Yosemite, explore the Valley, cross Tioga Road, and sleep in Mammoth Lakes.", focus: "Make Yosemite a concentrated Valley day while protecting the Mammoth Lakes arrival.", places: [{ name: "Tunnel View Yosemite", role: "Primary" }, { name: "Bridalveil Fall", role: "Secondary" }, { name: "Mammoth Lakes", role: "Booked overnight" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave the booked Mountain View hotel early and drive toward Yosemite Valley." }, { slot: "Lunch", kind: "meal", text: "Manteca, Oakdale, Mariposa, Yosemite Valley, or packed lunch depending on live timing." }, { slot: "Afternoon", kind: "core", text: "Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop, then cross Tioga Road if conditions remain good." }, { slot: "Dinner", kind: "meal", text: "Mammoth Lakes or simple route-dependent meal." }], logistics: [{ label: "Sleep", value: "Booked Mammoth Lakes hotel.", tone: "info" }, { label: "Driving", value: "Long transfer plus Valley sightseeing plus Tioga Road; verify live timing.", tone: "stop" }, { label: "Walking", value: "Light to moderate and adjustable.", tone: "info" }, { label: "Reservation", value: "Booked Mammoth Lakes night; confirm parking, check-in process, and fees.", tone: "warn" }], backup: "If traffic, smoke, heat, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night; if same-day issues appear, shorten the Valley plan and use the safest open route." },
-        { day: 17, date: "Tuesday, July 14", title: "Mammoth Lakes to Las Vegas via Death Valley", region: "Death Valley / Las Vegas", dayType: "Transfer", sleep: "Booked Las Vegas Strip hotel", summary: "Direct Eastern Sierra-to-desert transfer through Death Valley to the booked Strip stay.", focus: "Treat Death Valley as a paved scenic transit, not a hiking day.", places: [{ name: "US-395", role: "Route corridor" }, { name: "Death Valley National Park", role: "Short paved transit stops" }, { name: "Las Vegas Strip", role: "Booked arrival base" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Mammoth Lakes early; use US-395 toward Lone Pine and CA-190 / Death Valley only if open and safe." }, { slot: "Lunch", kind: "meal", text: "Lone Pine, Panamint Springs, Furnace Creek, or packed car lunch depending on timing and heat." }, { slot: "Afternoon", kind: "transfer", text: "Drive through Death Valley with short paved stops only, then continue to Las Vegas." }, { slot: "Evening", kind: "rest", text: "Check in from 3:00 pm if arrival timing allows, then keep dinner, pool, or indoor hotel exploration easy." }], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Driving", value: "Very long transfer; re-check US-395, CA-190, Death Valley roads, weather, smoke, heat, and flood risk.", tone: "stop" }, { label: "Walking", value: "Minimal; no lower-elevation Death Valley hiking in July.", tone: "warn" }, { label: "Reservation", value: "Booked Las Vegas Strip hotel; confirm resort fee, parking, pool access, quiet-room request, and room occupancy.", tone: "warn" }], backup: "If road, weather, smoke, heat, or fatigue checks fail, use a safer bypass or restore a Bakersfield / Tehachapi midpoint." },
-        { day: 18, date: "Wednesday, July 15", title: "Las Vegas Strip Family Day", region: "Las Vegas", dayType: "Sightseeing", sleep: "Booked Las Vegas Strip hotel", summary: "Indoor, pool, and evening Strip day from the booked hotel, designed for July heat.", focus: "Choose one paid anchor and leave room for free sights.", places: [{ name: "Bellagio Conservatory", role: "Free / indoor option" }, { name: "Sphere", role: "Ticketed option" }, { name: "High Roller Observation Wheel", role: "Ticketed option" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight." }, { slot: "Lunch", kind: "meal", text: "Food hall, casual resort dining, or nearby mall dining." }, { slot: "Afternoon", kind: "core", text: "Rest during peak heat; choose one indoor attraction or family-appropriate show." }, { slot: "Evening", kind: "secondary", text: "Fountains, High Roller, or a short Strip walk if temperatures are manageable." }], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Driving", value: "Minimal if staying on or near the Strip.", tone: "good" }, { label: "Walking", value: "Light to moderate, with rideshare/monorail backup.", tone: "info" }, { label: "Reservation", value: "Book only one ticketed attraction or show.", tone: "warn" }], backup: "If attraction prices are poor, make this a pool-and-free-sights day." },
-        { day: 19, date: "Thursday, July 16", title: "Red Rock or Las Vegas Flex Day", region: "Las Vegas", dayType: "Flexible", sleep: "Booked Las Vegas Strip hotel", summary: "Optional early desert nature or recovery-focused Vegas day from the booked Strip base.", focus: "Keep the last full Las Vegas day flexible and heat-aware.", places: [{ name: "Red Rock Canyon", role: "Optional early drive" }, { name: "Las Vegas Strip", role: "Fallback / final evening" }], flow: [{ slot: "Morning", kind: "optional", text: "Optional early Red Rock Canyon scenic drive only if heat is manageable; otherwise pool time." }, { slot: "Lunch", kind: "meal", text: "Return to hotel or casual indoor lunch." }, { slot: "Afternoon", kind: "rest", text: "Rest, packing buffer, indoor attraction, or low-key shopping near hotel." }, { slot: "Evening", kind: "meal", text: "Final Las Vegas dinner and one last easy landmark." }], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Driving", value: "1.5-3 hours if adding Red Rock; minimal otherwise.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Red Rock reservations are not required in July, but re-check conditions.", tone: "info" }], backup: "Treat the day as hotel/pool recovery if desert heat is too high." },
-        { day: 20, date: "Friday, July 17", title: "Las Vegas to Pasadena / Los Angeles", region: "Los Angeles", dayType: "Transfer", sleep: "Booked Pasadena-area final hotel", summary: "Check out of the booked Las Vegas hotel, close the loop, and sleep at the booked Pasadena-area final hotel.", focus: "Make this a logistics day, not a sightseeing day.", places: [{ name: "Pasadena area", role: "Booked departure buffer" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out by 11:00 am, pack, and leave Las Vegas after breakfast." }, { slot: "Lunch", kind: "meal", text: "Practical route stop." }, { slot: "Afternoon", kind: "logistics", text: "Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple." }, { slot: "Dinner", kind: "meal", text: "Easy final dinner near hotel." }], logistics: [{ label: "Sleep", value: "Booked Pasadena-area final hotel.", tone: "info" }, { label: "Driving", value: "4-5 hours before LA traffic and stops.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Booked Pasadena-area hotel; confirm parking, folio, housekeeping preference, and incidentals.", tone: "warn" }], backup: "If traffic is poor, skip any final LA activity and focus on flight readiness." },
-        { day: 21, date: "Saturday, July 18", title: "Depart Los Angeles", region: "Los Angeles", dayType: "Departure", sleep: "Overnight flight", summary: "Check out of the booked Pasadena-area hotel by 12:00 pm, return the rental car at LAX at 8:00 pm, and depart on UA 839 at 10:45 pm.", focus: "Protect LAX, car return, and international check-in buffers.", places: [{ name: "Los Angeles International Airport", role: "Rental car return and departure airport" }], flow: [{ slot: "Morning", kind: "logistics", text: "Check out by 12:00 pm, pack slowly, and avoid major sightseeing." }, { slot: "Lunch", kind: "meal", text: "Pasadena, en route, or near LAX depending on traffic timing." }, { slot: "Afternoon", kind: "logistics", text: "Leave a large Pasadena-to-LAX buffer for fuel, luggage, and rental return." }, { slot: "Evening", kind: "travel", text: "Return the booked rental car at LAX at 8:00 pm, then depart on UA 839 at 10:45 pm." }], logistics: [{ label: "Sleep", value: "Overnight flight.", tone: "info" }, { label: "Driving", value: "Pasadena-area hotel to LAX rental car return; leave a large traffic and fuel buffer.", tone: "warn" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "UA 839 itinerary, booked hotel checkout at 12:00 pm, and booked rental car return at 8:00 pm.", tone: "warn" }], backup: "If rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or shuttle for the final terminal move." },
-        { day: 22, date: "Sunday, July 19", title: "In Transit", region: "Transit", dayType: "Transit", sleep: "In flight", summary: "Pacific crossing and date-line day.", focus: "This is a flight day only.", places: [], flow: [{ slot: "Morning", kind: "travel", text: "Cross the Pacific." }, { slot: "Afternoon", kind: "travel", text: "Cross the date line." }, { slot: "Dinner", kind: "meal", text: "In flight." }], logistics: [{ label: "Sleep", value: "In flight.", tone: "info" }, { label: "Driving", value: "None.", tone: "good" }, { label: "Walking", value: "None.", tone: "good" }, { label: "Reservation", value: "None.", tone: "good" }], backup: "None." },
-        { day: 23, date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home", summary: "UA 839 arrives SYD at 7:00 am.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive SYD on UA 839 at 7:00 am." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, { slot: "Dinner", kind: "meal", text: "Home." }], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Driving", value: "Airport transfer only.", tone: "info" }, { label: "Walking", value: "Light.", tone: "good" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
+        { day: 1, driveLegs: [["LAX Airport, Los Angeles","Pasadena, CA"]], date: "Sunday, June 28", title: "Arrive Los Angeles", region: "Los Angeles", dayType: "Arrival", sleep: "Pasadena-area booked hotel", summary: "UA 842 arrives LAX at 6:10 am; rental car pickup is booked for 8:00 am; first hotel check-in is 3:00 pm.", focus: "Clear arrival logistics, pick up the car, and settle into the Pasadena-area base.", places: [{ name: "Los Angeles International Airport", role: "Arrival gateway and rental car pickup" }, { name: "Pasadena area", role: "Booked first hotel base" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive LAX on UA 842, clear immigration, collect bags, and pick up the booked rental car at 8:00 am." }, { slot: "Afternoon", kind: "rest", text: "Check in at 3:00 pm if the room is ready, unpack, nap, pool, or short Pasadena-area walk." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Booked rental car pickup at 8:00 am; booked hotel check-in at 3:00 pm; confirm luggage storage.", tone: "warn" }], backup: "If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in." },
+        { day: 2, driveLegs: [["Pasadena, CA","Kidspace Children's Museum, Pasadena, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Monday, June 29", title: "Pasadena or Santa Monica Arrival Recovery", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Gentle first full day from the Pasadena-area base.", focus: "Keep the first full day gentle and pram-friendly.", places: [{ name: "Pasadena area", role: "Local recovery" }, { name: "Kidspace Children's Museum", role: "Optional child-first reset" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow start, hotel pool, Pasadena-area walk, Kidspace, or Santa Monica beach path if energy is good." }, { slot: "Afternoon", kind: "optional", text: "Kidspace, beach/playground time, or quiet neighborhood walk." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Kidspace or Cayton only if using a child-first reset.", tone: "info" }], backup: "Make this a hotel, local walk, and early-dinner day only if jet lag is heavy." },
+        { day: 3, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Petersen Automotive Museum, Los Angeles, CA"]], date: "Tuesday, June 30", title: "Gentle Los Angeles Buffer Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Flexible recovery, errands, and one short local outing.", focus: "Use the extra arrival time without overloading the first week.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Petersen Automotive Museum", role: "Optional" }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool, Pasadena-area playground, groceries, laundry, or short neighborhood walk." }, { slot: "Afternoon", kind: "optional", text: "Short neighborhood outing, Griffith-adjacent viewpoint, Petersen, Rodeo Drive walk, or rest." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed museum.", tone: "good" }], backup: "Treat this as a recovery and logistics day if the first two nights are rough." },
+        { day: 4, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"]], date: "Wednesday, July 1", title: "Getty, Academy Museum, or Griffith", region: "Los Angeles", dayType: "Sightseeing", sleep: "Pasadena-area booked hotel", summary: "Choose one LA anchor and keep the afternoon flexible.", focus: "Avoid cross-city overload before the coast drive.", places: [{ name: "Griffith Observatory", role: "Primary option" }, { name: "Getty Center", role: "Primary option" }, { name: "Academy Museum of Motion Pictures", role: "Primary option" }], flow: [{ slot: "Morning", kind: "core", text: "Choose one primary LA anchor: Griffith, Getty, or Academy Museum." }, { slot: "Afternoon", kind: "rest", text: "Rest, Kidspace / playground time, Rodeo Drive walk, Petersen, or hotel pool." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Getty, Academy, or planetarium checks if selected.", tone: "warn" }], backup: "If cross-town traffic is poor, stay Pasadena / Griffith-local." },
+        { day: 5, driveLegs: [["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Thursday, July 2", title: "Flexible Los Angeles Day", region: "Los Angeles", dayType: "Flexible", sleep: "Pasadena-area booked hotel", summary: "Second LA sample or another soft recovery day.", focus: "Let energy decide whether this is sightseeing or rest.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Getty / Academy / Griffith", role: "If not used Day 4" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "optional", text: "Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or simple neighborhood morning." }, { slot: "Afternoon", kind: "rest", text: "Hotel pool, shopping errand, playground, or low-key museum backup." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Only for a chosen ticketed attraction.", tone: "info" }], backup: "Keep the day local and save energy for the July 4 coast move." },
+        { day: 6, driveLegs: [["Pasadena, CA","Old Pasadena, Pasadena, CA"]], date: "Friday, July 3", title: "Los Angeles Final Local Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Pack, rest, and keep the already-booked car logistics simple.", focus: "Keep the day light before the holiday transfer.", places: [{ name: "Pasadena area", role: "Local" }], flow: [{ slot: "Morning", kind: "rest", text: "Easy beach, viewpoint, or neighborhood walk." }, { slot: "Afternoon", kind: "logistics", text: "Pack, laundry, confirm hotel parking / folio handling for the already-booked rental car, or one short local activity." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Prepare for 12:00 pm checkout on Day 7.", tone: "info" }], backup: "Keep this as a full rest day before the holiday transfer." },
+        { day: 7, driveLegs: [["Pasadena, CA","Santa Barbara, CA"],["Santa Barbara, CA","Pismo Beach, CA"],["Pismo Beach, CA","Santa Maria, CA"]], date: "Saturday, July 4", title: "Los Angeles to Santa Maria", region: "Central Coast", dayType: "Transfer", sleep: "Booked Santa Maria hotel", summary: "Check out of the Pasadena-area hotel and use the booked Santa Maria overnight to split the coast drive without stopping overnight in Santa Barbara.", focus: "Use Route 1 where sensible while protecting the holiday transfer.", places: [{ name: "Pasadena area", role: "Checkout base" }, { name: "Santa Maria", role: "Booked overnight base" }, { name: "Pismo / Avila Beach area", role: "Optional easy evening" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out by 12:00 pm; leave early if using CA-1 / PCH segments, otherwise use US-101 for reliability." }, { slot: "Afternoon", kind: "rest", text: "Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy." }, ], logistics: [{ label: "Sleep", value: "Booked Santa Maria hotel.", tone: "info" }, { label: "Reservation", value: "Booked Santa Maria hotel; confirm check-in, parking, occupancy, cancellation, and fees privately.", tone: "warn" }], backup: "Use US-101 and make the day practical if CA-1 traffic or road controls are poor." },
+        { day: 8, driveLegs: [["Santa Maria, CA","Hearst Castle, San Simeon, CA"],["Hearst Castle, San Simeon, CA","Big Sur, CA"],["Big Sur, CA","Monterey, CA"]], date: "Sunday, July 5", title: "Santa Maria to Monterey / Carmel via Route 1", region: "Monterey / Carmel", dayType: "Transfer", sleep: "Booked Monterey-area hotel", summary: "Scenic Highway 1 transfer with Hearst Castle or elephant seals only if timing stays comfortable from Santa Maria.", focus: "Arrive in Monterey without turning the coast into a forced march.", places: [{ name: "San Simeon elephant seals", role: "Flexible stop" }, { name: "Hearst Castle", role: "Optional ticketed stop" }, { name: "Big Sur", role: "Scenic route" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Santa Maria after breakfast; use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows it open." }, { slot: "Afternoon", kind: "optional", text: "Elephant seals, short Hearst Castle tour if easy, Big Sur viewpoints, or direct arrival." }, ], logistics: [{ label: "Sleep", value: "Booked Monterey-area hotel.", tone: "info" }, { label: "Reservation", value: "Booked Monterey-area hotel; confirm parking, occupancy, resort/amenity fees, cancellation, and fees privately.", tone: "warn" }], backup: "Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 is too slow." },
+        { day: 9, driveLegs: [["Monterey, CA","Monterey Bay Aquarium, Monterey, CA"],["Monterey, CA","Pacific Grove, CA"],["Monterey, CA","Carmel-by-the-Sea, CA"]], date: "Monday, July 6", title: "Monterey Bay Aquarium and Carmel Coast", region: "Monterey / Carmel", dayType: "Sightseeing", sleep: "Booked Monterey-area hotel", summary: "Aquarium anchor day with an adjustable coast afternoon.", focus: "Make Monterey Bay Aquarium the main event.", places: [{ name: "Monterey Bay Aquarium", role: "Primary" }, { name: "Pacific Grove", role: "Secondary" }, { name: "Carmel Beach", role: "Optional coast" }], flow: [{ slot: "Morning", kind: "core", text: "Monterey Bay Aquarium." }, { slot: "Afternoon", kind: "secondary", text: "Pacific Grove, Dennis the Menace Playground, Carmel Beach, or short Big Sur reach." }, ], logistics: [{ label: "Sleep", value: "Booked Monterey-area hotel.", tone: "info" }, { label: "Reservation", value: "Buy aquarium tickets ahead.", tone: "warn" }], backup: "Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor." },
+        { day: 10, driveLegs: [["Monterey, CA","Santa Cruz, CA"],["Santa Cruz, CA","Mountain View, CA"]], date: "Tuesday, July 7", title: "Monterey / Carmel to Mountain View / Bay Area", region: "Bay Area", dayType: "Transfer", sleep: "Booked Mountain View hotel", summary: "Check out of the booked Monterey-area hotel and move into the booked Mountain View Bay Area stay.", focus: "Use the new Bay Area night as breathing room, not a packed sightseeing day.", places: [{ name: "Pacific Grove / Carmel", role: "Optional short morning" }, { name: "Mountain View", role: "Booked Bay Area base" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out; use a short Pacific Grove, Carmel Beach, 17-Mile Drive, playground, or MY Museum stop only if rested." }, { slot: "Afternoon", kind: "logistics", text: "Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "Booked Mountain View hotel; confirm final fees, cancellation, free parking, and free WiFi.", tone: "warn" }], backup: "If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day." },
+        { day: 11, driveLegs: [["Mountain View, CA","Stanford University, Stanford, CA"],["Mountain View, CA","Exploratorium, San Francisco, CA"]], date: "Wednesday, July 8", title: "Mountain View / Bay Area Buffer", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Extra Bay Area day created by the Monterey booking shift.", focus: "Use the added night for recovery, San Francisco weather flexibility, or a first Stanford taste.", places: [{ name: "Mountain View / Palo Alto", role: "Flexible" }, { name: "Exploratorium", role: "Weather backup" }, { name: "Stanford campus", role: "Easy local option" }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable." }, { slot: "Afternoon", kind: "optional", text: "Keep flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "None unless choosing Exploratorium or another ticketed backup.", tone: "info" }], backup: "Treat this as the Bay Area recovery day if the Monterey transfer was slow." },
+        { day: 12, driveLegs: [["Mountain View, CA","Golden Gate Bridge, San Francisco, CA"],["Golden Gate Bridge, San Francisco, CA","Palace of Fine Arts, San Francisco, CA"],["Palace of Fine Arts, San Francisco, CA","Mountain View, CA"]], date: "Thursday, July 9", title: "Golden Gate and Presidio", region: "San Francisco", dayType: "Sightseeing", sleep: "Booked Mountain View hotel", summary: "Classic San Francisco views from the booked Mountain View base.", focus: "Make Golden Gate Bridge and Presidio the main experience.", places: [{ name: "Golden Gate Bridge", role: "Primary" }, { name: "Presidio Tunnel Tops", role: "Child-friendly option" }, { name: "Palace of Fine Arts", role: "Secondary" }], flow: [{ slot: "Morning", kind: "core", text: "Drive, Caltrain/rideshare, or another planned transfer to Golden Gate viewpoints from Crissy Field or the Presidio." }, { slot: "Afternoon", kind: "secondary", text: "Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "None required.", tone: "good" }], backup: "Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day Mountain View / Peninsula-local if the commute looks bad." },
+        { day: 13, driveLegs: [["Mountain View, CA","Stanford University, Stanford, CA"],["Mountain View, CA","Computer History Museum, Mountain View, CA"],["Mountain View, CA","Apple Park Visitor Center, Cupertino, CA"]], date: "Friday, July 10", title: "Stanford and Silicon Valley Tech Day", region: "Bay Area Peninsula", dayType: "Sightseeing", sleep: "Booked Mountain View hotel", summary: "Stanford plus public Silicon Valley tech stops from the booked Mountain View base.", focus: "Keep the day to Stanford and two tech anchors rather than every company campus.", places: [{ name: "Stanford University", role: "Primary" }, { name: "Google Visitor Experience", role: "Tech stop" }, { name: "Computer History Museum", role: "Tech museum" }, { name: "Apple Park Visitor Center", role: "Optional swap" }], flow: [{ slot: "Morning", kind: "core", text: "Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows." }, { slot: "Afternoon", kind: "secondary", text: "Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "Check Stanford visitor schedule, Google hours/events, CHM tickets/hours, and Apple Park hours.", tone: "warn" }], backup: "The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus local Bay Area day if everyone is tired." },
+        { day: 14, driveLegs: [["Mountain View, CA","Golden Gate Park, San Francisco, CA"],["Mountain View, CA","Exploratorium, San Francisco, CA"]], date: "Saturday, July 11", title: "Mountain View / Bay Area Flex Day", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Extra Bay Area day for city time or recovery.", focus: "Use the longer Bay Area stay for flexibility rather than a forced transfer.", places: [{ name: "Golden Gate Park", role: "Flexible" }, { name: "Exploratorium", role: "Weather backup" }, { name: "Mountain View / Palo Alto", role: "Local option" }], flow: [{ slot: "Morning", kind: "rest", text: "Golden Gate Park, Exploratorium, Ferry Building / waterfront, hotel pool, Mountain View / Palo Alto, or a local neighborhood reset." }, { slot: "Afternoon", kind: "optional", text: "Keep flexible for fog, parking, and family energy." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed attraction.", tone: "info" }], backup: "Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push." },
+        { day: 15, driveLegs: [["Mountain View, CA","Apple Park Visitor Center, Cupertino, CA"],["Mountain View, CA","The Tech Interactive, San Jose, CA"],["Mountain View, CA","Muir Woods National Monument, CA"]], date: "Sunday, July 12", title: "Bay Area Tech, Redwood, or Rest Buffer", region: "Bay Area", dayType: "Flexible", sleep: "Booked Mountain View hotel", summary: "Sixth Bay Area night before Yosemite.", focus: "Use the buffer for a second tech/redwood option or protect energy before Yosemite.", places: [{ name: "Apple Park Visitor Center", role: "Optional tech stop" }, { name: "The Tech Interactive", role: "Optional hands-on museum" }, { name: "Muir Woods", role: "Reservation-dependent option" }], flow: [{ slot: "Morning", kind: "optional", text: "Second Silicon Valley tech stop, Apple Park Visitor Center, The Tech Interactive, Muir Woods only if reservations and timing work, or a quiet hotel-base morning." }, { slot: "Afternoon", kind: "logistics", text: "Pack for Yosemite, confirm route conditions, and keep the evening easy." }, ], logistics: [{ label: "Sleep", value: "Booked Mountain View hotel.", tone: "info" }, { label: "Reservation", value: "Muir Woods reservation if used; re-check Sunday museum hours.", tone: "warn" }], backup: "Skip new sightseeing and use the day to rest before the Yosemite transfer." },
+        { day: 16, driveLegs: [["Mountain View, CA","Yosemite Valley, CA"],["Yosemite Valley, CA","Mammoth Lakes, CA"]], date: "Monday, July 13", title: "Mountain View / Bay Area to Yosemite Valley and Mammoth Lakes", region: "Yosemite / Eastern Sierra", dayType: "Transfer", sleep: "Booked Mammoth Lakes hotel", summary: "Drive to Yosemite, explore the Valley, cross Tioga Road, and sleep in Mammoth Lakes.", focus: "Make Yosemite a concentrated Valley day while protecting the Mammoth Lakes arrival.", places: [{ name: "Tunnel View Yosemite", role: "Primary" }, { name: "Bridalveil Fall", role: "Secondary" }, { name: "Mammoth Lakes", role: "Booked overnight" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave the booked Mountain View hotel early and drive toward Yosemite Valley." }, { slot: "Afternoon", kind: "core", text: "Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop, then cross Tioga Road if conditions remain good." }, ], logistics: [{ label: "Sleep", value: "Booked Mammoth Lakes hotel.", tone: "info" }, { label: "Reservation", value: "Booked Mammoth Lakes night; confirm parking, check-in process, and fees.", tone: "warn" }], backup: "If traffic, smoke, heat, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night; if same-day issues appear, shorten the Valley plan and use the safest open route." },
+        { day: 17, driveLegs: [["Mammoth Lakes, CA","Death Valley National Park, CA"],["Death Valley National Park, CA","Las Vegas, NV"]], date: "Tuesday, July 14", title: "Mammoth Lakes to Las Vegas via Death Valley", region: "Death Valley / Las Vegas", dayType: "Transfer", sleep: "Booked Las Vegas Strip hotel", summary: "Direct Eastern Sierra-to-desert transfer through Death Valley to the booked Strip stay.", focus: "Treat Death Valley as a paved scenic transit, not a hiking day.", places: [{ name: "US-395", role: "Route corridor" }, { name: "Death Valley National Park", role: "Short paved transit stops" }, { name: "Las Vegas Strip", role: "Booked arrival base" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Mammoth Lakes early; use US-395 toward Lone Pine and CA-190 / Death Valley only if open and safe." }, { slot: "Afternoon", kind: "transfer", text: "Drive through Death Valley with short paved stops only, then continue to Las Vegas." }, { slot: "Evening", kind: "rest", text: "Check in from 3:00 pm if arrival timing allows, then keep dinner, pool, or indoor hotel exploration easy." }], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Reservation", value: "Booked Las Vegas Strip hotel; confirm resort fee, parking, pool access, quiet-room request, and room occupancy.", tone: "warn" }], backup: "If road, weather, smoke, heat, or fatigue checks fail, use a safer bypass or restore a Bakersfield / Tehachapi midpoint." },
+        { day: 18, driveLegs: [["Las Vegas Strip, NV","Bellagio, Las Vegas, NV"],["Las Vegas Strip, NV","Sphere, Las Vegas, NV"],["Las Vegas Strip, NV","The High Roller, Las Vegas, NV"]], date: "Wednesday, July 15", title: "Las Vegas Strip Family Day", region: "Las Vegas", dayType: "Sightseeing", sleep: "Booked Las Vegas Strip hotel", summary: "Indoor, pool, and evening Strip day from the booked hotel, designed for July heat.", focus: "Choose one paid anchor and leave room for free sights.", places: [{ name: "Bellagio Conservatory", role: "Free / indoor option" }, { name: "Sphere", role: "Ticketed option" }, { name: "High Roller Observation Wheel", role: "Ticketed option" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight." }, { slot: "Afternoon", kind: "core", text: "Rest during peak heat; choose one indoor attraction or family-appropriate show." }, { slot: "Evening", kind: "secondary", text: "Fountains, High Roller, or a short Strip walk if temperatures are manageable." }], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Reservation", value: "Book only one ticketed attraction or show.", tone: "warn" }], backup: "If attraction prices are poor, make this a pool-and-free-sights day." },
+        { day: 19, driveLegs: [["Las Vegas Strip, NV","Red Rock Canyon National Conservation Area, NV"]], date: "Thursday, July 16", title: "Red Rock or Las Vegas Flex Day", region: "Las Vegas", dayType: "Flexible", sleep: "Booked Las Vegas Strip hotel", summary: "Optional early desert nature or recovery-focused Vegas day from the booked Strip base.", focus: "Keep the last full Las Vegas day flexible and heat-aware.", places: [{ name: "Red Rock Canyon", role: "Optional early drive" }, { name: "Las Vegas Strip", role: "Fallback / final evening" }], flow: [{ slot: "Morning", kind: "optional", text: "Optional early Red Rock Canyon scenic drive only if heat is manageable; otherwise pool time." }, { slot: "Afternoon", kind: "rest", text: "Rest, packing buffer, indoor attraction, or low-key shopping near hotel." }, ], logistics: [{ label: "Sleep", value: "Booked Las Vegas Strip hotel.", tone: "info" }, { label: "Reservation", value: "Red Rock reservations are not required in July, but re-check conditions.", tone: "info" }], backup: "Treat the day as hotel/pool recovery if desert heat is too high." },
+        { day: 20, driveLegs: [["Las Vegas, NV","Barstow, CA"],["Barstow, CA","Pasadena, CA"]], date: "Friday, July 17", title: "Las Vegas to Pasadena / Los Angeles", region: "Los Angeles", dayType: "Transfer", sleep: "Booked Pasadena-area final hotel", summary: "Check out of the booked Las Vegas hotel, close the loop, and sleep at the booked Pasadena-area final hotel.", focus: "Make this a logistics day, not a sightseeing day.", places: [{ name: "Pasadena area", role: "Booked departure buffer" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out by 11:00 am, pack, and leave Las Vegas after breakfast." }, { slot: "Afternoon", kind: "logistics", text: "Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area final hotel.", tone: "info" }, { label: "Reservation", value: "Booked Pasadena-area hotel; confirm parking, folio, housekeeping preference, and incidentals.", tone: "warn" }], backup: "If traffic is poor, skip any final LA activity and focus on flight readiness." },
+        { day: 21, driveLegs: [["Pasadena, CA","LAX Airport, Los Angeles"]], date: "Saturday, July 18", title: "Depart Los Angeles", region: "Los Angeles", dayType: "Departure", sleep: "Overnight flight", summary: "Check out of the booked Pasadena-area hotel by 12:00 pm, return the rental car at LAX at 8:00 pm, and depart on UA 839 at 10:45 pm.", focus: "Protect LAX, car return, and international check-in buffers.", places: [{ name: "Los Angeles International Airport", role: "Rental car return and departure airport" }], flow: [{ slot: "Morning", kind: "logistics", text: "Check out by 12:00 pm, pack slowly, and avoid major sightseeing." }, { slot: "Afternoon", kind: "logistics", text: "Leave a large Pasadena-to-LAX buffer for fuel, luggage, and rental return." }, { slot: "Evening", kind: "travel", text: "Return the booked rental car at LAX at 8:00 pm, then depart on UA 839 at 10:45 pm." }], logistics: [{ label: "Sleep", value: "Overnight flight.", tone: "info" }, { label: "Reservation", value: "UA 839 itinerary, booked hotel checkout at 12:00 pm, and booked rental car return at 8:00 pm.", tone: "warn" }], backup: "If rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or shuttle for the final terminal move." },
+        { day: 22, driveLegs: [], date: "Sunday, July 19", title: "In Transit", region: "Transit", dayType: "Transit", sleep: "In flight", summary: "Pacific crossing and date-line day.", focus: "This is a flight day only.", places: [], flow: [{ slot: "Morning", kind: "travel", text: "Cross the Pacific." }, { slot: "Afternoon", kind: "travel", text: "Cross the date line." }, ], logistics: [{ label: "Sleep", value: "In flight.", tone: "info" }, { label: "Reservation", value: "None.", tone: "good" }], backup: "None." },
+        { day: 23, driveLegs: [["Sydney Airport, NSW","Sydney, NSW"]], date: "Monday, July 20", title: "Arrive Sydney", region: "Transit", dayType: "Arrival", sleep: "Home", summary: "UA 839 arrives SYD at 7:00 am.", focus: "Keep the post-flight day empty except for getting home and resetting.", places: [{ name: "Sydney Airport", role: "Arrival airport" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive SYD on UA 839 at 7:00 am." }, { slot: "Afternoon", kind: "rest", text: "Recovery day." }, ], logistics: [{ label: "Sleep", value: "Home.", tone: "info" }, { label: "Reservation", value: "Airport transfer if needed.", tone: "info" }], backup: "None." }
       ],
       routeDisruptions: [
         { route: "Highway 1 north of Big Sur", dates: "Jul 4–7", disruption: "One-way controlled traffic through July 31, 2026 (Caltrans)", impact: "Adds time to Central Coast and Big Sur legs; early start required", confirmBefore: "Check Caltrans same morning as Day 7 departure and Day 8", lastChecked: "2026-06-01" },
@@ -2255,22 +2364,60 @@
       `;
     }
 
+    const ICONS = {
+      chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>',
+      bed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9v11M2 13h18a2 2 0 0 1 2 2v5M2 17h20"/><path d="M6 13v-2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></svg>',
+      ticket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 0-2 2v1a2 2 0 1 1 0 4v1a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-1a2 2 0 1 1 0-4V9a2 2 0 0 0-2-2z"/><path d="M14 7v10"/></svg>',
+      car: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l1.4-4.2A2 2 0 0 1 8.3 7.5h7.4a2 2 0 0 1 1.9 1.3L19 13"/><path d="M4 13h16v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M7 16h.01M17 16h.01"/></svg>',
+      arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+      sunrise: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M5.6 10.6 7 12M17 12l1.4-1.4M3 18h2M19 18h2M8 18a4 4 0 0 1 8 0"/><path d="M2 22h20"/></svg>',
+      sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>',
+      moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>',
+      dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>'
+    };
+    const icon = (name) => ICONS[name] || "";
+
+    const slotIcon = (slot) => {
+      const s = String(slot).toLowerCase();
+      if (s.includes("morning")) return "sunrise";
+      if (s.includes("afternoon") || s.includes("midday") || s.includes("noon")) return "sun";
+      if (s.includes("evening") || s.includes("night") || s.includes("dinner")) return "moon";
+      return "dot";
+    };
+
     function renderFlow(flow = []) {
+      if (!flow.length) return "";
       return flow.map((item) => `
         <div class="flow-item" data-kind="${escapeHtml(item.kind || "")}">
-          <div class="flow-time">${escapeHtml(item.slot)}</div>
-          <p class="flow-text">${escapeHtml(item.text)}</p>
+          <span class="flow-marker">${icon(slotIcon(item.slot))}</span>
+          <div class="flow-content">
+            <span class="flow-time">${escapeHtml(item.slot)}</span>
+            <p class="flow-text">${escapeHtml(item.text)}</p>
+          </div>
         </div>
       `).join("");
     }
 
-    function renderLogistics(logistics = []) {
-      return logistics.map((item) => `
-        <div class="logistics-item">
-          <strong>${escapeHtml(item.label)}</strong>
-          <span>${escapeHtml(item.value)}</span>
-        </div>
-      `).join("");
+    const factIcon = (label) => label === "Sleep" ? "bed" : (label === "Reservation" ? "ticket" : "dot");
+
+    function renderFacts(logistics = []) {
+      if (!logistics.length) return "";
+      return `<div class="day-facts">${logistics.map((item) => `
+        <div class="fact fact-${toneClass(item.tone)}">
+          <span class="fact-ic">${icon(factIcon(item.label))}</span>
+          <span class="fact-text"><span class="fact-label">${escapeHtml(item.label)}</span><span class="fact-value">${escapeHtml(item.value)}</span></span>
+        </div>`).join("")}</div>`;
+    }
+
+    const dirUrl = (from, to) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(from)}&destination=${encodeURIComponent(to)}`;
+
+    function renderDriveLegs(legs = []) {
+      if (!legs || !legs.length) return `<p class="drive-empty">No driving on this day.</p>`;
+      return `<div class="drive-legs">${legs.map(([from, to]) => `
+        <a class="drive-leg" href="${escapeHtml(dirUrl(from, to))}" target="_blank" rel="noopener">
+          <span class="drive-leg-route"><span>${escapeHtml(from.split(",")[0])}</span><span class="drive-leg-arrow">${icon("arrow")}</span><span>${escapeHtml(to.split(",")[0])}</span></span>
+          <span class="drive-leg-cta">${icon("car")}<span>Distance &amp; time</span></span>
+        </a>`).join("")}</div>`;
     }
 
     function filteredDays() {
@@ -2291,34 +2438,37 @@
             <span class="day-number">${day.day}</span>
             <span class="day-summary-main">
               <h3>${escapeHtml(day.title)}</h3>
-              <p>${escapeHtml(day.date)} - ${escapeHtml(day.summary)}</p>
+              <p class="day-date">${escapeHtml(day.date)}</p>
             </span>
             <span class="day-summary-tags">
               <span class="tag day-type">${escapeHtml(day.dayType)}</span>
-              <span class="day-region">${statusTag(day.region)}</span>
+              <span class="day-region-chip">${escapeHtml(day.region)}</span>
             </span>
+            <span class="day-chevron" aria-hidden="true">${icon("chevron")}</span>
           </summary>
           <div class="day-body">
-            <div class="day-meta-strip">
-              ${(day.logistics || []).map((item) => `<span class="tag ${toneClass(item.tone)}">${escapeHtml(item.label)}: ${escapeHtml(item.value)}</span>`).join("")}
+            <p class="day-intro">${escapeHtml(day.summary)}</p>
+            ${renderFacts(day.logistics)}
+            <div class="day-section">
+              <span class="section-label">Core experience</span>
+              <p class="focus-text">${escapeHtml(day.focus)}</p>
             </div>
-            <div class="day-lead">
-              <div class="day-focus">
-                <div>
-                  <span class="section-label">Core experience</span>
-                  <p class="focus-text">${escapeHtml(day.focus)}</p>
-                </div>
-                ${renderPlaceRows(day.places)}
-              </div>
-              <aside class="logistics-list" aria-label="Day logistics">
-                ${renderLogistics(day.logistics)}
-              </aside>
+            ${day.places && day.places.length ? `<div class="day-section">
+              <span class="section-label">Attractions</span>
+              ${renderPlaceRows(day.places)}
+            </div>` : ""}
+            <div class="day-section">
+              <span class="section-label">Driving &middot; live distance &amp; time</span>
+              ${renderDriveLegs(day.driveLegs)}
             </div>
-            <div>
+            ${day.flow && day.flow.length ? `<div class="day-section">
               <span class="section-label">Day flow</span>
               <div class="day-flow">${renderFlow(day.flow)}</div>
+            </div>` : ""}
+            <div class="day-backup">
+              <span class="day-backup-label">Backup plan</span>
+              <span>${escapeHtml(day.backup)}</span>
             </div>
-            <div class="day-backup"><strong>Backup plan:</strong> ${escapeHtml(day.backup)}</div>
           </div>
         </details>
       `).join("");
