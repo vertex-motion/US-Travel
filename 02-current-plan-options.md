@@ -6,10 +6,6 @@
 - Confirmed window: June 28–July 18, 2026, with 20 US hotel nights, arriving and departing through LAX.
 - Selected route shape: closed circle starting and ending in Los Angeles, using LAX as the default airport.
 - Route theme: Los Angeles arrival recovery, Pacific coast, a six-night booked Mountain View / Bay Area block for Golden Gate, Stanford, Silicon Valley technology stops, and rest buffers, a confirmed Mammoth Lakes night after a same-day Yosemite Valley visit and Tioga Road crossing, a direct Mammoth-Lakes-to-Las-Vegas transfer through Death Valley, and a booked Las Vegas Strip city-resort finale before returning to LAX.
-- Planning posture: Las Vegas remains a primary stop. The closed-circle requirement is met by returning from Las Vegas to Los Angeles for the final departure.
-- Cost posture: Las Vegas resort fees, parking fees, and attraction tickets must be included in quotes, not treated as incidental.
-- Hardest route day: Mammoth Lakes to Las Vegas through Death Valley on July 14 is now the longest and highest-risk transfer. Use it only with same-week Tioga Road, CA-120 / US-395 / CA-190, Death Valley road, weather, smoke, and heat checks.
-- Open decisions are tracked in the Open Decisions section below.
 
 ## Selected Route
 
@@ -78,12 +74,7 @@
 - Santa Barbara is removed from the current route by traveler request. Do not add Santa Barbara sightseeing unless the family explicitly restores it.
 - Las Vegas in mid-July needs a heat-first schedule: early outdoor windows, hotel pool/rest time, indoor attractions, and evening Strip walks.
 - Re-check Highway 1 status the week before travel; current Caltrans data already shows one-way controls north of Big Sur and near Jamala Road in Santa Barbara County.
-- Re-check Yosemite Tioga Road, Yosemite Valley roadwork, Caltrans CA-120 / US-395 / CA-190, Death Valley road status, Death Valley weather, smoke, and flash-flood risk before locking the July 13 Mammoth Lakes crossing and July 14 Mammoth-Lakes-to-Las-Vegas transfer.
-
-## Open Decisions
-
-<!-- tag: planning-notes -->
-Open decisions are tracked in `07-checklist.md` under `## Open Decisions`.
+- Re-check Yosemite Tioga Road, Yosemite Valley roadwork, Caltrans CA-120 / US-395 / CA-190, Death Valley road status, Death Valley weather, smoke, and flash-flood risk before locking the July 13 Mammoth Lakes crossing and July 14 Mammoth-Lakes-to-Las-Vegas 
 
 ## Sources
 
