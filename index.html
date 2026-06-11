@@ -1036,8 +1036,26 @@
       text-decoration: none;
     }
 
+    .place-tile-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
     .place-tile-name { font-weight: 700; font-size: 0.95rem; line-height: 1.3; }
     .place-tile-role { color: var(--muted); font-size: 0.82rem; line-height: 1.35; }
+
+    .resv-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex: 0 0 auto;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 750;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+    .resv-badge svg { width: 13px; height: 13px; }
+    .resv-needed { color: var(--warn-fg); background: var(--warn-bg); border-color: var(--warn-bd); }
+    .resv-booked { color: var(--good-fg); background: var(--good-bg); border-color: var(--good-bd); }
     .place-tile-cta {
       display: inline-flex;
       align-items: center;
@@ -2352,10 +2370,47 @@
       }
     }
 
+    // Attractions that require a reservation, matched (by keyword) to their
+    // Timed Ticket so the booked/needed state stays in sync with the checklist.
+    const reservationPlaces = [
+      { match: "getty", ticket: "getty center" },
+      { match: "academy museum", ticket: "academy museum" },
+      { match: "stanford", ticket: "stanford" },
+      { match: "google visitor", ticket: "google visitor" },
+      { match: "computer history", ticket: "computer history" },
+      { match: "apple park", ticket: "computer history" },
+      { match: "monterey bay aquarium", ticket: "monterey bay aquarium" },
+      { match: "hearst castle", ticket: "hearst castle" },
+      { match: "muir woods", ticket: null },
+      { match: "red rock", ticket: "red rock" }
+    ];
+
+    const isReserved = (status) => /done|booked|purchased|reserved|confirmed/i.test(String(status));
+
+    function placeReservation(name) {
+      const n = String(name).toLowerCase();
+      const entry = reservationPlaces.find((r) => n.includes(r.match));
+      if (!entry) return null;
+      let booked = false;
+      if (entry.ticket) {
+        const t = tripData.timedTickets.find((tt) => tt.task.toLowerCase().includes(entry.ticket));
+        booked = t ? isReserved(t.status) : false;
+      }
+      return { booked };
+    }
+
+    function renderReservationBadge(name) {
+      const res = placeReservation(name);
+      if (!res) return "";
+      return res.booked
+        ? `<span class="resv-badge resv-booked" title="Reservation booked">${icon("check")}<span>Booked</span></span>`
+        : `<span class="resv-badge resv-needed" title="Reservation required">${icon("ticket")}<span>Reservation needed</span></span>`;
+    }
+
     function renderPlaceRows(places = []) {
       if (!places.length) return "";
       return `<div class="place-list">${places.map((place) => {
-        const inner = `<span class="place-tile-name">${escapeHtml(place.name)}</span>
+        const inner = `<span class="place-tile-head"><span class="place-tile-name">${escapeHtml(place.name)}</span>${renderReservationBadge(place.name)}</span>
           <span class="place-tile-role">${escapeHtml(place.role)}</span>
           ${place.map === false ? "" : `<span class="place-tile-cta">${icon("pin")}<span>View place</span></span>`}`;
         return place.map === false
@@ -2374,7 +2429,8 @@
       sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>',
       moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>',
       dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>',
-      pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>'
+      pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>',
+      check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
     };
     const icon = (name) => ICONS[name] || "";
 
