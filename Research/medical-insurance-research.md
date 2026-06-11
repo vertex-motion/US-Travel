@@ -17,6 +17,7 @@ Date researched: 2026-06-11. All prices are indicative; confirm with a live quot
 | Destination | United States (West Coast) |
 | Duration | 28 Jun – 20 Jul 2026, ~23 days |
 | Pre-existing conditions | None declared — no extra loading or medical assessment needed |
+| Alcohol | Family does not drink at all — alcohol-related exclusions do not apply |
 
 ## Why Medical Cover Matters Most Here
 
@@ -86,10 +87,69 @@ or [Finder](https://www.finder.com.au/travel-insurance) returns several insurers
 - 24/7 emergency assistance hotline.
 - Repatriation of remains.
 
+## Is a "No-Name" Budget Brand Safe vs Allianz?
+
+Yes — in Australia the brand is the shopfront; the **underwriter** is the regulated
+insurer that actually pays. Budget brands sit on top of major underwriters:
+
+| Brand | Who actually carries the risk / pays |
+| --- | --- |
+| Allianz | Allianz Australia Insurance Ltd (self-underwrites) |
+| Fast Cover | Lloyd's of London (Canopius Syndicate 4444) |
+| 1Cover | Lloyd's of London |
+| Cover-More | Zurich Australian Insurance Ltd |
+| Tick / InsureandGo | Mitsui Sumitomo Insurance (via Mapfre) |
+| Southern Cross | Southern Cross Benefits Ltd (APRA-registered) |
+
+All are protected the same way: **APRA** capital regulation of the underwriter (the
+real insolvency protection), the **General Insurance Code of Practice / ASIC**, and
+**AFCA** free dispute resolution whose decisions bind the insurer. A budget brand is
+not more likely to refuse a valid claim. Choose on underwriter + PDS terms + claims
+reputation, not logo size.
+
+## Exclusions Comparison (What Voids or Limits a Medical Claim)
+
+With no pre-existing conditions, the exclusions that realistically matter are the
+**alcohol clause** and **activity cover**. **This family does not drink, so the
+alcohol clause — the main differentiator below — does not apply to them.** That
+leaves **activity cover** and **price** as the deciding factors. Most other
+exclusions are near-identical across insurers.
+
+| Exclusion area | Southern Cross | Cover-More | 1Cover | Allianz | Fast Cover | Tick |
+| --- | --- | --- | --- | --- | --- | --- |
+| Alcohol (medical claim) | Case-by-case "reasonable person" test; excluded only if intoxication was the main cause | Objective: covered under 0.19% BAC (~4× driving limit) — clearest bright line | Excluded only where alcohol caused the loss; no numeric limit | "Affected… to the extent judgement is impaired" — broader, subjective | "Directly or indirectly from" alcohol; no threshold — broadest wording | "Under the influence"; no threshold — broad wording |
+| Activities included | Broad adventure cover included, fewer exclusions | Many need paid Adventure/Snow Pack | Defined "covered activities" list only | Need paid Adventure/Snow Pack | Defined "covered sports" list only | Defined list; USA needs Standard/Top tier |
+| Pandemic/epidemic | Some cover | Some cover | Some cover | Excluded unless expressly covered | Some cover | Some cover |
+
+Universal exclusions (same everywhere — not a differentiator): undeclared
+pre-existing conditions (N/A here), belongings left unattended, illegal acts, effect
+of non-prescribed drugs, claims under the excess, and travel against a Smartraveller
+"Do Not Travel" advisory.
+
+Alcohol clause, best-to-strictest wording (recorded for completeness, but **moot for
+this non-drinking family**): Cover-More (published 0.19% number) > Southern Cross /
+1Cover (causation-based) > Allianz ("judgement impaired") > Fast Cover / Tick
+("indirectly from" / "under the influence", no threshold).
+
+Preferred on exclusions, given alcohol is not a factor:
+- **Decide on activity cover + price.** With the alcohol clause irrelevant, the
+  cheapest unlimited-medical policies become the value picks: **Tick (Standard/Top)**
+  and **Fast Cover** both give unlimited medical/evacuation with no alcohol downside
+  here.
+- **Choose Southern Cross Comprehensive** if the family plans any adventure/activity
+  (zip-line, jet-ski, quad, etc.) — its broad activity cover is bundled, no paid add-on.
+- **Cover-More / Allianz** only justify their higher price if you want the brand or
+  add-on packs; their main edge (the 0.19% BAC alcohol clause) is wasted on a
+  non-drinking family.
+
+Caveat: based on current PDS summaries and secondary sources, not a line-by-line read
+of each 2026 PDS. Confirm the alcohol clause and "covered activities" list in the
+actual PDS before buying.
+
 ## Recommendation
 
 1. For the USA, prioritize **unlimited emergency medical + unlimited evacuation**. Most full policies above qualify; Southern Cross, Fast Cover, Tick, Cover-More, 1Cover, Bupa, Medibank, and RACV all offer unlimited on both.
-2. If you want medical cover only and minimal extras, **Fast Cover Medical Only** (unlimited medical/evacuation) is the most cost-targeted option. **Tick Standard/Top** is the cheapest full-policy option with unlimited medical.
+2. **Alcohol exclusions are irrelevant — this family does not drink — so decide on price + activity cover.** The cheapest unlimited-medical options lead: **Fast Cover Medical Only** if you want medical and nothing else, or **Tick Standard/Top** / **Fast Cover Comprehensive** as the cheapest full policies. Pick **Southern Cross Comprehensive** instead if any adventure activities are planned (broad activity cover bundled).
 3. If you already hold Bupa or Medibank health cover, or RACV membership, get their quote too — the ~15% discount can make an otherwise mid-priced policy competitive.
 4. Get three live quotes using the inputs in "Getting Exact Quotes" (e.g. Fast Cover, Tick, Southern Cross). Expect roughly **AUD $250–$450 medical-only** or **AUD $350–$700 comprehensive** for the whole family.
 5. Buy soon after the trip is fully booked so cancellation cover (if you later decide you want it) starts; medical cover itself applies from the travel dates.
@@ -113,3 +173,7 @@ or [Finder](https://www.finder.com.au/travel-insurance) returns several insurers
 | nib comprehensive plan | [nib Travel Insurance](https://www.nib.com.au/travel-insurance) |
 | Comparison engines for multi-insurer quotes | [Compare Travel Insurance](https://www.comparetravelinsurance.com.au/), [Finder](https://www.finder.com.au/travel-insurance) |
 | Indicative pricing benchmarks | [Squaremouth — Australia plans & prices](https://www.squaremouth.com/resources/destinations/australia), [Squaremouth — Family travel insurance](https://www.squaremouth.com/plans/family-travel-insurance) |
+| Underwriters behind each brand | [Finder — Travel insurance underwriters](https://www.finder.com.au/travel-insurance/travel-insurance-underwriters), [Fast Cover — Underwriters](https://help.fastcover.com.au/article/1363-who-are-the-underwriters-of-fast-cover), [Tick — About us](https://www.tickinsurance.com.au/about-us/) |
+| Claims-paying protections, AFCA disputes | [AFCA — Insurance complaints](https://www.afca.org.au/make-a-complaint/insurance) |
+| Alcohol exclusions across insurers | [CHOICE — Alcohol exclusions](https://www.choice.com.au/travel/money/travel-insurance/articles/travel-insurance-alcohol-exclusions) |
+| Cover-More / Allianz / 1Cover / SCTI / Fast Cover / Tick exclusions | [Cover-More — General exclusions](https://www.covermore.com.au/pds/general-exclusions), [Allianz Partners — T&Cs](https://www.allianz-partners.com/en_AU/in-the-news/press-releases/what-travel-insurance-terms-and-conditions-are-telling-you-and-why-you-should-listen.html), [1Cover — Alcohol](https://www.1cover.com.au/faqs/what-is-covered/drugs-alcohol/), [SCTI — Comprehensive](https://www.scti.com.au/our-policies/comprehensive), [Fast Cover — Alcohol FAQ](https://help.fastcover.com.au/article/393-does-travel-insurance-cover-the-consumption-of-alcohol), [Tick — Policy wordings](https://www.tickinsurance.com.au/policy-wordings/) |
