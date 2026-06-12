@@ -13,6 +13,7 @@
 2. The family currently lives in Sydney, Australia.
 3. No specific mobility needs, but the family will have a pram for the younger child.
 4. No specific food preferences.
+5. The family does not drink alcohol.
 
 ## Why We Are Taking This Trip
 
