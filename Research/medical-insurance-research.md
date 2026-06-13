@@ -38,10 +38,15 @@ Children are included in the family/group price (no separate child premium).
 | Fast Cover | Comprehensive | **$735.99** | $200 | Unlimited | Top Fast Cover tier |
 | Bupa | Comprehensive | **$850** | (as quoted) | Unlimited | Earlier manual quote |
 | nib | Comprehensive | **$866.00** | default | Unlimited | Unlimited evacuation; ≈$736 with code ESCAPE (15%) |
-| Cover-More | Comprehensive | **$980.00** | $250 | Unlimited | ≈$833 with code MORE15 (15% off); most expensive |
+| Cover-More | Comprehensive | **$980.00** | $250 | Unlimited | ≈$833 with code MORE15 (15% off) |
+| Cover-More | Comprehensive Plus | **$1,260.00** | $250 | Unlimited | Premium tier; highest sub-limits; most expensive option seen |
 
 (Fast Cover **Basics** $449.99 and Cover-More **Basic** $822.00 also carry unlimited/high
-medical but drop luggage/cancellation — see Medical-focused note below.)
+medical but drop luggage/cancellation — both listed as rows in the Medical-Only / Basic
+table below.)
+
+Out of scope but seen at quote time: **Allianz Annual Multi-Trip $2,562.36** (a 12-month
+policy, not a single-trip option for this trip).
 
 **Same underwriter, very different price:** Australia Post Comprehensive ($524) runs
 on the **Cover-More** engine yet costs ~$456 less than Cover-More's own-brand
@@ -57,6 +62,7 @@ white-label resellers, not just the headline brand.
 | Australia Post | Basic | **$402.00** | Unlimited | $250 excess; no cancellation; ≈$362 with MATESRATES |
 | Allianz | Basic | **$404.62** | $40M | ≈$344 with GETAWAY; no luggage/cancellation |
 | Fast Cover | Basics | **$449.99** | Unlimited | Unlimited medical + evacuation |
+| Cover-More | Basic | **$822.00** | Unlimited | $250 excess; drops luggage/cancellation; pricey for a basic tier |
 
 **Cheapest paths:** Southern Cross wins both — **$287 medical-only** and **$497
 comprehensive**, both with unlimited medical and evacuation. Promo codes advertised at
