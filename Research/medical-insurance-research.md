@@ -37,6 +37,7 @@ Children are included in the family/group price (no separate child premium).
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Southern Cross (SCTI) | Intl Comprehensive | **$497.40** | — (no code) | $200 | Unlimited | SCTI (self) | Cheapest comprehensive |
 | Australia Post | Comprehensive | **$524.00** | **$471.60** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cover-More engine; far cheaper than Cover-More's own brand |
+| Australia Post | Basic | **$402.00** | **$361.80** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cheaper tier grouped here with its sibling — no cancellation, no luggage (see "Comprehensive vs Basic" below) |
 | Tick | One-Trip Standard | **$527.27** | — (no code) | $200 | Unlimited | Europ Assistance (WL) | Family discount already applied |
 | 1Cover | Comprehensive | **$533.24** | **$474.58** (11% sale) | $200 | Unlimited | HDI Global Specialty (WL) | Sale price shown on site |
 | Tick | One-Trip Top | **$610.78** | — (no code) | $200 | Unlimited | Europ Assistance (WL) | Higher sub-limits than Standard |
@@ -75,10 +76,33 @@ white-label resellers, not just the headline brand.
 | --- | --- | --- | --- | --- | --- |
 | Southern Cross (SCTI) | Intl Medical Only | **$287.26** | — (no code) | Unlimited | Cheapest overall; $1M liability |
 | 1Cover | Medical Only | **$372.30** | **$331.35** (11% sale) | Unlimited | Sale price shown on site |
-| Australia Post | Basic | **$402.00** | **$361.80** (MATESRATES 10%) | Unlimited | $250 excess; no cancellation |
+| Australia Post | Basic | **$402.00** | **$361.80** (MATESRATES 10%) | Unlimited | $250 excess; no cancellation, no luggage (also shown in first table) |
 | Allianz | Basic | **$404.62** | **$343.93** (GETAWAY 15%) | $40M | No luggage/cancellation |
 | Fast Cover | Basics | **$449.99** | — (no code) | Unlimited | Unlimited medical + evacuation |
 | Cover-More | Basic | **$822.00** | **$698.70** (MORE15 15%) | Unlimited | $250 excess; drops luggage/cancellation; pricey for a basic tier |
+
+### Comprehensive vs Basic (and Essentials) — what differs
+
+For the USA the critical cover — **unlimited overseas medical** and **unlimited
+additional expenses** (where evacuation/repatriation sits) — is the **same on both
+tiers** for most insurers. The cheaper tier strips out the **non-medical** extras.
+Confirmed live for Australia Post (both $250 excess):
+
+| Benefit | Comprehensive ($524) | Basic ($402) |
+| --- | --- | --- |
+| Overseas medical | Unlimited | Unlimited |
+| Additional expenses (evacuation / repatriation) | Unlimited | Unlimited |
+| COVID-19 benefits | Yes | Yes |
+| Trip amendment / cancellation | Chosen limit | **No cover** |
+| Luggage & personal effects | $12,000 | **No cover** |
+
+So Australia Post Basic keeps the catastrophic-risk cover (medical + evacuation +
+COVID); the ~$122 step up to Comprehensive buys **cancellation cover + $12,000
+luggage**. The same pattern holds across insurers — only the names differ ("Basic",
+"Essentials", "Medical Only") and some lower tiers also **cap evacuation** (e.g. nib
+Essentials caps it at $1M vs unlimited on nib Comprehensive). For this trip the live
+trade-off is: drop cancellation/luggage to save money, or keep them to protect the
+prepaid flights and ~20 nights of lodging.
 
 **Cheapest paths:** Southern Cross wins both — **$287 medical-only** and **$497
 comprehensive**, both with unlimited medical and evacuation. Promo codes advertised at
