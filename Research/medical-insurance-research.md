@@ -25,21 +25,28 @@ Children are included in the family/group price (no separate child premium).
 
 ### Comprehensive (full cover, unlimited or very high medical)
 
-| Provider | Plan | Quoted price (AUD) | Excess | Overseas medical | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Southern Cross (SCTI) | Intl Comprehensive | **$497.40** | default | Unlimited | Cheapest comprehensive |
-| Australia Post | Comprehensive | **$524.00** | $250 | Unlimited | Cover-More engine; ≈$472 with code MATESRATES (10%) — far cheaper than Cover-More's own brand |
-| Tick | One-Trip Standard | **$527.27** | $200 | Unlimited | Family discount applied |
-| 1Cover | Comprehensive | **$533.24** | default | Unlimited | $474.58 with 11% sale shown on site |
-| Tick | One-Trip Top | **$610.78** | $200 | Unlimited | Higher sub-limits than Standard |
-| Fast Cover | Standard Saver | **$642.99** | $200 | Unlimited | |
-| Allianz | Comprehensive | **$683.22** | default | $40M (≈unlimited) | ≈$581 with code GETAWAY (15% off) |
-| nib | Essentials | **$708.00** | default | Unlimited | $1M evacuation; ≈$602 with code ESCAPE (15%) |
-| Fast Cover | Comprehensive | **$735.99** | $200 | Unlimited | Top Fast Cover tier |
-| Bupa | Comprehensive | **$850** | (as quoted) | Unlimited | Earlier manual quote |
-| nib | Comprehensive | **$866.00** | default | Unlimited | Unlimited evacuation; ≈$736 with code ESCAPE (15%) |
-| Cover-More | Comprehensive | **$980.00** | $250 | Unlimited | ≈$833 with code MORE15 (15% off) |
-| Cover-More | Comprehensive Plus | **$1,260.00** | $250 | Unlimited | Premium tier; highest sub-limits; most expensive option seen |
+| Provider | Plan | Price — no code | Price — with code | Excess | Overseas medical | Underwriter (WL = white-label) | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Southern Cross (SCTI) | Intl Comprehensive | **$497.40** | — (no code) | $200 | Unlimited | SCTI (self) | Cheapest comprehensive |
+| Australia Post | Comprehensive | **$524.00** | **$471.60** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cover-More engine; far cheaper than Cover-More's own brand |
+| Tick | One-Trip Standard | **$527.27** | — (no code) | $200 | Unlimited | Europ Assistance (WL) | Family discount already applied |
+| 1Cover | Comprehensive | **$533.24** | **$474.58** (11% sale) | $200 | Unlimited | HDI Global Specialty (WL) | Sale price shown on site |
+| Tick | One-Trip Top | **$610.78** | — (no code) | $200 | Unlimited | Europ Assistance (WL) | Higher sub-limits than Standard |
+| Fast Cover | Standard Saver | **$642.99** | — (no code) | $200 | Unlimited | Lloyd's (WL) | |
+| Allianz | Comprehensive | **$683.22** | **$580.74** (GETAWAY 15%) | $250 | $40M (≈unlimited) | Allianz (self) | |
+| nib | Essentials | **$708.00** | **$601.80** (ESCAPE 15%) | $250 | Unlimited | Pacific International (WL) | $1M evacuation |
+| Fast Cover | Comprehensive | **$735.99** | — (no code) | $200 | Unlimited | Lloyd's (WL) | Top Fast Cover tier |
+| Bupa | Comprehensive | **$850** | — (no code) | not recorded | Unlimited | Zurich (WL) | Earlier manual quote |
+| nib | Comprehensive | **$866.00** | **$736.10** (ESCAPE 15%) | $250 | Unlimited | Pacific International (WL) | |
+| Cover-More | Comprehensive | **$980.00** | **$833.00** (MORE15 15%) | $250 | Unlimited | Zurich | |
+| Cover-More | Comprehensive Plus | **$1,260.00** | **$1,071.00** (MORE15 15%) | $250 | Unlimited | Zurich | Premium tier; most expensive option seen |
+
+"Price — with code" uses the public promo advertised at quote time; the 1Cover figure
+and the 1Cover medical figure were shown on-site, the rest are the standard quote less
+the stated code (confirm the code still applies at purchase). Excess verified 2026-06-13
+(SCTI $200, 1Cover $200 — reducible to $100; Allianz $250 base; nib $250 — reducible to
+$150/$0). Underwriter column summarises the "who actually pays" table above (full
+legal entities/AFSL there).
 
 (Fast Cover **Basics** $449.99 and Cover-More **Basic** $822.00 also carry unlimited/high
 medical but drop luggage/cancellation — both listed as rows in the Medical-Only / Basic
@@ -55,20 +62,20 @@ white-label resellers, not just the headline brand.
 
 ### Medical-Only / Basic (medical + evacuation, minimal extras)
 
-| Provider | Plan | Quoted price (AUD) | Overseas medical | Notes |
-| --- | --- | --- | --- | --- |
-| Southern Cross (SCTI) | Intl Medical Only | **$287.26** | Unlimited | Cheapest overall; $1M liability |
-| 1Cover | Medical Only | **$372.30** | Unlimited | $331.35 with 11% sale |
-| Australia Post | Basic | **$402.00** | Unlimited | $250 excess; no cancellation; ≈$362 with MATESRATES |
-| Allianz | Basic | **$404.62** | $40M | ≈$344 with GETAWAY; no luggage/cancellation |
-| Fast Cover | Basics | **$449.99** | Unlimited | Unlimited medical + evacuation |
-| Cover-More | Basic | **$822.00** | Unlimited | $250 excess; drops luggage/cancellation; pricey for a basic tier |
+| Provider | Plan | Price — no code | Price — with code | Overseas medical | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Southern Cross (SCTI) | Intl Medical Only | **$287.26** | — (no code) | Unlimited | Cheapest overall; $1M liability |
+| 1Cover | Medical Only | **$372.30** | **$331.35** (11% sale) | Unlimited | Sale price shown on site |
+| Australia Post | Basic | **$402.00** | **$361.80** (MATESRATES 10%) | Unlimited | $250 excess; no cancellation |
+| Allianz | Basic | **$404.62** | **$343.93** (GETAWAY 15%) | $40M | No luggage/cancellation |
+| Fast Cover | Basics | **$449.99** | — (no code) | Unlimited | Unlimited medical + evacuation |
+| Cover-More | Basic | **$822.00** | **$698.70** (MORE15 15%) | Unlimited | $250 excess; drops luggage/cancellation; pricey for a basic tier |
 
 **Cheapest paths:** Southern Cross wins both — **$287 medical-only** and **$497
 comprehensive**, both with unlimited medical and evacuation. Promo codes advertised at
 quote time (Allianz GETAWAY, Cover-More MORE15, nib ESCAPE, Australia Post MATESRATES,
-InsureandGo EOFY15, 1Cover 11% sale) are reflected in the Notes column; confirm they
-still apply at purchase.
+InsureandGo EOFY15, 1Cover 11% sale) are shown in the "Price — with code" column;
+confirm they still apply at purchase.
 
 **InsureandGo — not obtained.** Its homepage quote tool is an embedded third-party
 widget that would not open under automation (and the direct quote subdomain errored).
