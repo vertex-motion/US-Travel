@@ -72,12 +72,42 @@ still apply at purchase.
 
 **InsureandGo — not obtained.** Its homepage quote tool is an embedded third-party
 widget that would not open under automation (and the direct quote subdomain errored).
-No fabricated figure is recorded. InsureandGo is a **Mapfre** brand — the same
-underwriter as Tick — so expect pricing broadly in Tick's range (~$527–$611
-comprehensive); get a live quote manually to confirm.
+No fabricated figure is recorded. InsureandGo and Tick are **sister brands** issued by
+Europ Assistance Australia (formerly Mapfre / Mitsui Sumitomo), so expect pricing
+broadly in Tick's range (~$527–$611 comprehensive); get a live quote manually to confirm.
 
 Quote forms ask only trip details (destination, dates, traveller ages) — no payment
 or personal contact details were entered, and no policy was purchased.
+
+### Who actually underwrites each brand (white-label status)
+
+The brand on the policy is often not the company that pays the claim. "White-label"
+= a distributor brand sitting on another insurer's product. Verified 2026-06-13 from
+each insurer's PDS / disclosure; confirm in the current PDS before buying.
+
+| Brand | White-label? | Actual underwriter / issuer (who pays) |
+| --- | --- | --- |
+| Southern Cross (SCTI) | No — own insurer | Southern Cross Benefits Ltd (NZ-owned); AU entity AFSL 331058 |
+| Cover-More | No — Zurich's own brand | Zurich Australian Insurance Ltd (ZAIL), AFSL 232507 |
+| Australia Post | **Yes** — runs on the Cover-More engine | Zurich Australian Insurance Ltd (ZAIL) |
+| Bupa | **Yes** — Bupa is a health fund, not the insurer | Zurich Australian Insurance Ltd (ZAIL) (PDS eff. 11 Mar 2026; older Bupa policies were Allianz) |
+| Allianz | No — own insurer | Allianz Australia Insurance Ltd, AFSL 234708 |
+| nib | **Yes** — distributed by nib | Pacific International Insurance Pty Ltd (Hollard group), ABN 83 169 311 193 |
+| Fast Cover | **Yes** | Certain underwriters at Lloyd's (some sources cite Hollard — confirm in PDS) |
+| 1Cover | **Yes** | HDI Global Specialty SE – Australia (German insurer, AU branch), AFSL 458776; Coffre-Fort underwriting agent |
+| Tick | **Yes** | Europ Assistance Australia Pty Ltd, AFSL 552106 (acquired the former Mapfre / Mitsui Sumitomo book) |
+| InsureandGo | **Yes** | Europ Assistance Australia Pty Ltd (formerly Mapfre Asistencia / Mitsui Sumitomo) — same issuer as Tick |
+
+Groupings worth knowing:
+- **Zurich underwrites three of these brands** — Cover-More, Australia Post, and Bupa.
+  So Australia Post ($524) vs Cover-More ($980) vs Bupa ($850) comprehensive are the
+  **same insurer at very different prices** — a strong reason to shop the white-label.
+- **Tick and InsureandGo are sister brands** under Europ Assistance Australia, which is
+  why InsureandGo pricing should track Tick's.
+- **Own insurers (not white-label):** Southern Cross, Allianz, and Cover-More (Zurich brand).
+
+Why it's still safe to buy a budget/white-label brand: see "Is a 'No-Name' Budget
+Brand Safe vs Allianz?" below.
 
 
 ## Trip Parameters Used
@@ -162,16 +192,9 @@ or [Finder](https://www.finder.com.au/travel-insurance) returns several insurers
 ## Is a "No-Name" Budget Brand Safe vs Allianz?
 
 Yes — in Australia the brand is the shopfront; the **underwriter** is the regulated
-insurer that actually pays. Budget brands sit on top of major underwriters:
-
-| Brand | Who actually carries the risk / pays |
-| --- | --- |
-| Allianz | Allianz Australia Insurance Ltd (self-underwrites) |
-| Fast Cover | Lloyd's of London (Canopius Syndicate 4444) |
-| 1Cover | Lloyd's of London |
-| Cover-More | Zurich Australian Insurance Ltd |
-| Tick / InsureandGo | Mitsui Sumitomo Insurance (via Mapfre) |
-| Southern Cross | Southern Cross Benefits Ltd (APRA-registered) |
+insurer that actually pays. Budget brands sit on top of major underwriters — for the
+brand-by-brand mapping and white-label status, see the
+[underwriter table](#who-actually-underwrites-each-brand-white-label-status) above.
 
 All are protected the same way: **APRA** capital regulation of the underwriter (the
 real insolvency protection), the **General Insurance Code of Practice / ASIC**, and
