@@ -10,11 +10,19 @@ Date researched: 2026-06-11. All prices are indicative; confirm with a live quot
 
 > **Pricing correction (2026-06-13, live quotes):** Both earlier estimates were
 > off. Live quotes pulled directly from each insurer's quote engine for this exact
-> trip show **Comprehensive runs ~AUD $497–$980** and **Medical-Only ~AUD
+> trip show **Comprehensive runs ~AUD $497–$1,753** and **Medical-Only ~AUD
 > $287–$372** for the whole family — a much wider spread than either the original
 > $400–$700 guess or the later $700–$1,100 correction. The cheapest comprehensive
-> (Southern Cross $497) is less than half the most expensive (Cover-More $980).
-> Insurer choice matters more than expected. See "Actual Quotes (Confirmed)" below.
+> (Southern Cross $497) is barely a quarter of the most expensive (Bupa Plus $1,753),
+> and even Bupa's entry tier ($1,281) is ~2.6× SCTI. Insurer choice matters more than
+> expected. See "Actual Quotes (Confirmed)" below.
+>
+> **Bupa claim not confirmed:** an earlier note recorded a manual Bupa quote of $850
+> (Comprehensive). A live Bupa quote on 2026-06-13 for the exact trip returned
+> **$1,281 (Essentials) / $1,753 (Plus)** at $250 excess — there is no ~$850 option,
+> and the 15% Bupa-member discount would only reach ~$1,089. The $850 figure could not
+> be reproduced (likely different dates/travellers/destination or a misremembered
+> number); treat it as unverified and use the live figures.
 
 ## Actual Quotes (Confirmed)
 
@@ -36,10 +44,11 @@ Children are included in the family/group price (no separate child premium).
 | Allianz | Comprehensive | **$683.22** | **$580.74** (GETAWAY 15%) | $250 | $40M (≈unlimited) | Allianz (self) | |
 | nib | Essentials | **$708.00** | **$601.80** (ESCAPE 15%) | $250 | Unlimited | Pacific International (WL) | $1M evacuation |
 | Fast Cover | Comprehensive | **$735.99** | — (no code) | $200 | Unlimited | Lloyd's (WL) | Top Fast Cover tier |
-| Bupa | Comprehensive | **$850** | — (no code) | not recorded | Unlimited | Zurich (WL) | Earlier manual quote |
 | nib | Comprehensive | **$866.00** | **$736.10** (ESCAPE 15%) | $250 | Unlimited | Pacific International (WL) | |
 | Cover-More | Comprehensive | **$980.00** | **$833.00** (MORE15 15%) | $250 | Unlimited | Zurich | |
-| Cover-More | Comprehensive Plus | **$1,260.00** | **$1,071.00** (MORE15 15%) | $250 | Unlimited | Zurich | Premium tier; most expensive option seen |
+| Cover-More | Comprehensive Plus | **$1,260.00** | **$1,071.00** (MORE15 15%) | $250 | Unlimited | Zurich | Premium tier |
+| Bupa | International Essentials | **$1,281.00** | — (15% Bupa-member only) | $250 | Unlimited | Zurich (WL) | Live quote 2026-06-13 |
+| Bupa | International Plus | **$1,753.00** | — (15% Bupa-member only) | $250 | Unlimited | Zurich (WL) | Most expensive option seen |
 
 "Price — with code" uses the public promo advertised at quote time; the 1Cover figure
 and the 1Cover medical figure were shown on-site, the rest are the standard quote less
