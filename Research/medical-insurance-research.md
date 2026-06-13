@@ -28,17 +28,25 @@ Children are included in the family/group price (no separate child premium).
 | Provider | Plan | Quoted price (AUD) | Excess | Overseas medical | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Southern Cross (SCTI) | Intl Comprehensive | **$497.40** | default | Unlimited | Cheapest comprehensive |
+| Australia Post | Comprehensive | **$524.00** | $250 | Unlimited | Cover-More engine; ≈$472 with code MATESRATES (10%) — far cheaper than Cover-More's own brand |
 | Tick | One-Trip Standard | **$527.27** | $200 | Unlimited | Family discount applied |
 | 1Cover | Comprehensive | **$533.24** | default | Unlimited | $474.58 with 11% sale shown on site |
 | Tick | One-Trip Top | **$610.78** | $200 | Unlimited | Higher sub-limits than Standard |
 | Fast Cover | Standard Saver | **$642.99** | $200 | Unlimited | |
 | Allianz | Comprehensive | **$683.22** | default | $40M (≈unlimited) | ≈$581 with code GETAWAY (15% off) |
+| nib | Essentials | **$708.00** | default | Unlimited | $1M evacuation; ≈$602 with code ESCAPE (15%) |
 | Fast Cover | Comprehensive | **$735.99** | $200 | Unlimited | Top Fast Cover tier |
 | Bupa | Comprehensive | **$850** | (as quoted) | Unlimited | Earlier manual quote |
+| nib | Comprehensive | **$866.00** | default | Unlimited | Unlimited evacuation; ≈$736 with code ESCAPE (15%) |
 | Cover-More | Comprehensive | **$980.00** | $250 | Unlimited | ≈$833 with code MORE15 (15% off); most expensive |
 
 (Fast Cover **Basics** $449.99 and Cover-More **Basic** $822.00 also carry unlimited/high
 medical but drop luggage/cancellation — see Medical-focused note below.)
+
+**Same underwriter, very different price:** Australia Post Comprehensive ($524) runs
+on the **Cover-More** engine yet costs ~$456 less than Cover-More's own-brand
+Comprehensive ($980) for an equivalent unlimited-medical policy. Worth checking
+white-label resellers, not just the headline brand.
 
 ### Medical-Only / Basic (medical + evacuation, minimal extras)
 
@@ -46,13 +54,21 @@ medical but drop luggage/cancellation — see Medical-focused note below.)
 | --- | --- | --- | --- | --- |
 | Southern Cross (SCTI) | Intl Medical Only | **$287.26** | Unlimited | Cheapest overall; $1M liability |
 | 1Cover | Medical Only | **$372.30** | Unlimited | $331.35 with 11% sale |
+| Australia Post | Basic | **$402.00** | Unlimited | $250 excess; no cancellation; ≈$362 with MATESRATES |
 | Allianz | Basic | **$404.62** | $40M | ≈$344 with GETAWAY; no luggage/cancellation |
 | Fast Cover | Basics | **$449.99** | Unlimited | Unlimited medical + evacuation |
 
 **Cheapest paths:** Southern Cross wins both — **$287 medical-only** and **$497
-comprehensive**, both with unlimited medical and evacuation. Promo codes (Allianz
-GETAWAY, Cover-More MORE15, 1Cover 11% sale) were publicly advertised at quote time
-and are reflected in the Notes column; confirm they still apply at purchase.
+comprehensive**, both with unlimited medical and evacuation. Promo codes advertised at
+quote time (Allianz GETAWAY, Cover-More MORE15, nib ESCAPE, Australia Post MATESRATES,
+InsureandGo EOFY15, 1Cover 11% sale) are reflected in the Notes column; confirm they
+still apply at purchase.
+
+**InsureandGo — not obtained.** Its homepage quote tool is an embedded third-party
+widget that would not open under automation (and the direct quote subdomain errored).
+No fabricated figure is recorded. InsureandGo is a **Mapfre** brand — the same
+underwriter as Tick — so expect pricing broadly in Tick's range (~$527–$611
+comprehensive); get a live quote manually to confirm.
 
 Quote forms ask only trip details (destination, dates, traveller ages) — no payment
 or personal contact details were entered, and no policy was purchased.

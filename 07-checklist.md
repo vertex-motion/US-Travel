@@ -21,7 +21,7 @@
 | Hold a Bakersfield / Tehachapi midpoint fallback only if needed | After route checks | Travelers | Use only as a cancellable safety fallback if road, heat, smoke, weather, or family energy makes the direct Mammoth-Lakes-to-Las-Vegas route unsafe. | Optional |
 | Book Las Vegas lodging | Done | Travelers | Booked Las Vegas Strip hotel for July 14-17, 2026, with one Luxury 2 Queen suite for two adults and two children. Private booking details are not recorded in this public repo. | Done |
 | Book final Los Angeles departure lodging | Done | Travelers | Booked Pasadena-area hotel for July 17-18, 2026, with one room for two adults and two children. Private booking details are not recorded in this public repo. | Done |
-| Get travel insurance quotes | Done | Travelers | Live family quotes obtained 2026-06-13 from 6 insurers; see [Research/medical-insurance-research.md](Research/medical-insurance-research.md). | Done |
+| Get travel insurance quotes | Done | Travelers | Live family quotes obtained 2026-06-13 from 8 insurers; see [Research/medical-insurance-research.md](Research/medical-insurance-research.md). | Done |
 | Buy travel insurance | Before June 30, 2026 | Travelers | Southern Cross cheapest (unlimited medical + evacuation): ~A$497 comprehensive or ~A$287 medical-only. Allianz, Cover-More, and 1Cover promo codes expire about June 30. Confirm tier (comprehensive vs medical-only) then purchase. | Open |
 
 ## Timed Reservations
