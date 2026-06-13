@@ -8,6 +8,22 @@ baggage, and other extras are out of scope per traveler request.
 
 Date researched: 2026-06-11. All prices are indicative; confirm with a live quote.
 
+> **Pricing correction (2026-06-13):** The indicative cost ranges below were too
+> LOW. A live Bupa quote for this exact trip came back at **AUD $850 (Comprehensive)**.
+> USA comprehensive cover for a 23-day family trip realistically runs **~AUD
+> $700–$1,100+**, not the $400–$700 first estimated. Treat live quotes as the truth;
+> see "Actual Quotes (Confirmed)" below.
+
+## Actual Quotes (Confirmed)
+
+Real quotes obtained manually, for the exact trip parameters. Add to this as more
+come in.
+
+| Provider | Tier | Excess | Quoted price (AUD) | Date | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Bupa | Comprehensive | (as quoted) | **$850** | 2026-06-13 | Manual quote; family of four |
+
+
 ## Trip Parameters Used
 
 | Parameter | Value |
