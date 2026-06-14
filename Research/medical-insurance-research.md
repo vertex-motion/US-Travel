@@ -36,7 +36,7 @@ Children are included in the family/group price (no separate child premium).
 | Provider | Plan | Price — no code | Price — with code | Excess | Overseas medical | Underwriter (WL = white-label) | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Southern Cross (SCTI) | Intl Comprehensive | **$497.40** | — (no code) | $200 | Unlimited | SCTI (self) | Cheapest comprehensive |
-| Australia Post | Comprehensive | **$524.00** | **$471.60** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cover-More engine; far cheaper than Cover-More's own brand |
+| Australia Post | Comprehensive | **$524.00** | **$471.60** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cheap because trip cancellation defaults to $Nil (add & pay extra) — see PDS read below |
 | Australia Post | Basic | **$402.00** | **$361.80** (MATESRATES 10%) | $250 | Unlimited | Zurich (WL) | Cheaper tier grouped here with its sibling — no cancellation, no luggage (see "Comprehensive vs Basic" below) |
 | Tick | One-Trip Standard | **$527.27** | — (no code) | $200 | Unlimited | Europ Assistance (WL) | Family discount already applied |
 | 1Cover | Comprehensive | **$533.24** | **$474.58** (11% sale) | $200 | Unlimited | HDI Global Specialty (WL) | Sale price shown on site |
@@ -149,6 +149,55 @@ Groupings worth knowing:
 Why it's still safe to buy a budget/white-label brand: see "Is a 'No-Name' Budget
 Brand Safe vs Allianz?" below.
 
+
+## Why Australia Post Looks Cheaper — Actual PDS Read (2026-06-13)
+
+Read the actual Australia Post PDS (`PDS_APC.pdf`, issuer **Zurich Australian
+Insurance Ltd**, ABN 13 000 296 640; administered by Travel Insurance Partners Pty
+Ltd, AFSL 360138 — the same platform as Bupa). The low headline price is not a
+free lunch; it comes from how the cover is configured:
+
+1. **Cancellation defaults to $Nil — the big one.** The Comprehensive benefits
+   table lists *Amendment or Cancellation* as **"Cover chosen° … $Nil"**: you must
+   *add* cancellation cover and pay extra for it. The PDS says "[plans don't]
+   include cancellation cover however, You can add the amount … The level of
+   cancellation cover You choose will influence Your [premium]." So the **$524
+   quote covers medical + luggage but $0 trip cancellation** by default. Most rivals'
+   "Comprehensive" bakes in high/unlimited cancellation, so they're not like-for-like.
+2. **Tight sub-limits.** Money/cash **$250**; Loss of Income + Disability + Accidental
+   Death share a **single $25,000 cap** (not each); luggage item caps laptop $3,000 /
+   phone $1,500 / other $1,000.
+3. **Luggage paid with depreciation,** not new-for-old (depreciation table by item
+   age — e.g. older items paid at a fraction of purchase price).
+4. **Medical "Unlimited" is capped at 12 months from onset** of the illness/injury.
+5. Standard payout-limiters: no cover for items left **Unattended** in a vehicle/out
+   of sight; **alcohol** exclusion at BAC ≥ 0.19%; pre-existing conditions need
+   assessment/extra premium (N/A here — none declared).
+
+### Comparison — Australia Post vs Southern Cross (both PDS read)
+
+Southern Cross (SCTI) is the natural comparison: it was the **cheapest** quote
+($497) and is its **own** insurer (Southern Cross Benefits Ltd, not white-label).
+
+| Feature | Australia Post Comprehensive ($524) | Southern Cross Comprehensive ($497) |
+| --- | --- | --- |
+| Underwriter | Zurich Australian Insurance Ltd | Southern Cross Benefits Ltd (self) |
+| Overseas medical | Unlimited (capped 12 months from onset) | Unlimited |
+| **Trip cancellation (default)** | **$Nil — must add & pay** | **Included: $2,500, increasable to unlimited** |
+| Luggage & personal effects | $12,000, depreciated; laptop $3k / phone $1.5k | Included, depreciated; laptop $3k |
+| Cash | $250 | ~$500–$1,000 |
+| Loss of income / disability / death | Combined $25,000 cap | Separate benefits |
+| Default excess | $250 | $200 |
+
+**Verdict:** Australia Post's apparent bargain is largely because its quoted
+Comprehensive **omits trip-cancellation cover by default** — add it and the price
+climbs toward the others. Southern Cross is **both cheaper ($497) and already
+includes cancellation** (from $2,500, up to unlimited), so for a trip with prepaid
+flights and ~20 nights of lodging, SCTI is the stronger genuine-comprehensive value.
+Australia Post Basic ($402) is only sensible if you knowingly want medical-only-style
+cover with no cancellation and no luggage.
+
+(PDFs read locally via pdftotext; sourced from each insurer's public PDS.)
 
 ## Trip Parameters Used
 
