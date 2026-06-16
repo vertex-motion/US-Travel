@@ -24,6 +24,23 @@ Date researched: 2026-06-11. All prices are indicative; confirm with a live quot
 > be reproduced (likely different dates/travellers/destination or a misremembered
 > number); treat it as unverified and use the live figures.
 
+## Outcome — Policy Purchased (2026-06-16)
+
+Purchased **Australia Post — Basic International** (single trip): **$250 excess,
+$0 cancellation cover, A$362.06** paid (incl A$3.22 stamp duty; MATESRATES 10%
+applied). Unlimited overseas medical; no luggage or cancellation cover. Underwriter
+**Zurich** (ZAIL), administered by Travel Insurance Partners. Certificate travel
+dates: **28 Jun – 18 Jul 2026**.
+
+- **Action flagged:** certificate ends 18 Jul, but the Sydney arrival is 20 Jul
+  (UA839 departs LAX 18 Jul). Verify/extend cover for the 18–20 Jul return transit —
+  see [07-checklist.md](../07-checklist.md).
+- Policy documents (certificate, purchase screenshot) are stored locally in
+  `insurance/` and are **gitignored** — they contain names, DOBs and the policy
+  number, so they are kept out of this public repo.
+- For reference, the cheaper medical-focused option in the comparison below was
+  Southern Cross Medical Only ($287); the traveller chose Australia Post Basic.
+
 ## Actual Quotes (Confirmed)
 
 Live quotes pulled from each insurer's online quote engine on **2026-06-13** for the

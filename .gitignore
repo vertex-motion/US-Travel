@@ -1,1 +1,5 @@
 .DS_Store
+
+# Personal insurance documents (certificate + purchase screenshot contain names,
+# DOBs, policy number, payment details) — keep out of this public repo.
+insurance/
