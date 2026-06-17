@@ -6,3 +6,7 @@ insurance/
 
 # Personal flight ticket (contains name, booking reference) — keep out of this public repo.
 air-tickets/
+
+# Filled ESTA application templates (contain full names, DOBs, passport numbers,
+# home address, emergency contacts) — keep out of this public repo.
+ESTA/
