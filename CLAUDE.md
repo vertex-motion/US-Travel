@@ -26,6 +26,8 @@ Finalize all changes before committing. Commit directly to `main` and push to `o
 
 This repo is public. Never add personal data: contact details, document numbers, account numbers, booking references, payment details, exact addresses, or private family details. Use placeholders. If personal data is found, flag it before editing.
 
+Sensitive personal files must never be committed. This includes tickets, insurance documents, IDs, passports, boarding passes, bookings, and any file containing the personal data listed above. Such files (and their folders) must be added to `.gitignore` and kept on disk only. Before any commit, verify no sensitive personal file is staged; if one is, unstage it, add it to `.gitignore`, and flag it.
+
 ## Duplication
 
 One canonical home per fact. Before editing, check for existing coverage.
