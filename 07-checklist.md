@@ -23,7 +23,6 @@
 | Book final Los Angeles departure lodging | Done | Travelers | Booked Pasadena-area hotel for July 17-18, 2026, with one room for two adults and two children. Private booking details are not recorded in this public repo. | Done |
 | Get travel insurance quotes | Done | Travelers | Live family quotes obtained 2026-06-13 from 9 insurers; see [Research/medical-insurance-research.md](Research/medical-insurance-research.md). | Done |
 | Buy travel insurance | Done | Travelers | Purchased 2026-06-16: Australia Post Basic International (single trip), $250 excess, no cancellation, A$362.06 (MATESRATES). Unlimited overseas medical; underwritten by Zurich. Policy documents stored locally, outside this public repo. | Done |
-| Verify insurance covers return transit to July 20 | Now | Travelers | Policy travel dates are June 28-July 18, 2026, but the LAX-Sydney flight (UA839) departs July 18 and arrives Sydney July 20. Confirm with Australia Post / Travel Insurance Partners that the July 18-20 return journey is covered, or extend the end date. | Open |
 
 ## Timed Reservations
 
