@@ -59,8 +59,6 @@
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |
 | Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
-| July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. | Open |
-| Bay Area activity plan | Before finalizing Bay Area daily logistics | Mountain View free parking confirmed. Plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. | Open |
 | Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. | Open |
 
 ## During-Trip Tasks
