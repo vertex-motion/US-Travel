@@ -10,7 +10,7 @@
 | Confirm Las Vegas as a 3-night primary base | Done | Travelers | Las Vegas is confirmed through the booked July 14-17 Strip hotel stay before returning to Los Angeles. | Done |
 | Confirm Santa Barbara removal and Central Coast / Route 1 split | Done | Travelers | Santa Barbara is removed by traveler request. Current coast plan uses one booked Santa Maria overnight, two booked Monterey/Carmel nights, and six booked Mountain View / Bay Area nights. | Done |
 | Confirm direct Mammoth-Lakes-to-Las-Vegas via Death Valley strategy | Done | Travelers | Traveler requested a one-night Yosemite / Eastern Sierra stay followed by a direct Mammoth-Lakes-to-Las-Vegas drive through Death Valley. Keep Bakersfield / Tehachapi only as the safety fallback. | Done |
-| Check ESTA eligibility for all travelers | Now | Travelers | Do this before paying nonrefundable bookings. | Open |
+| Check ESTA eligibility for all travelers | Done | Travelers | ESTAs approved and received for all four travelers. | Done |
 | Book flights | Done | Travelers | UA 842 SYD-LAX on June 28; UA 839 LAX-SYD departing July 18 and arriving July 20. Seat assignments and booking references are not recorded in this public repo. | Done |
 | Book rental car | Done | Travelers | LAX pickup on June 28, 2026 at 8:00 am; LAX return on July 18, 2026 at 8:00 pm. Provider, price, and booking reference are not recorded in this public repo. | Done |
 | Book first Los Angeles hotel | Done | Travelers | Booked in the Pasadena area from June 28 to July 4, 2026. Exact hotel name, address, price, and booking reference are not recorded in this public repo. | Done |
