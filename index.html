@@ -1651,7 +1651,7 @@
           <div class="panel-body" style="padding: 0;">
             <div class="table-wrap" style="border: none; border-radius: 0;">
               <table class="lodging-summary-table mini-table">
-                <thead><tr><th>Base</th><th>Dates</th><th>Check-in</th><th>Checkout</th><th>Parking</th></tr></thead>
+                <thead><tr><th>Base</th><th>Dates</th><th>Check-in</th><th>Checkout</th><th>Parking</th><th>Map</th></tr></thead>
                 <tbody id="lodgingSummaryRows"></tbody>
               </table>
             </div>
@@ -1947,13 +1947,13 @@
         "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
       ],
       lodgingBases: [
-        { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Hotel garage $35/night, unlimited in/out. Cheaper $12/day garage across the road but no in/out." },
-        { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Free self-parking on site." },
-        { base: "Monterey / Carmel", dates: "July 5–7", checkin: "4:00 pm", checkout: "12:00 pm", parking: "$20/day, self or valet, in/out included." },
-        { base: "Bay Area (Mountain View)", dates: "July 7–13", checkin: "4:00 pm", checkout: "11:00 am", parking: "Free self-parking (no valet)." },
-        { base: "Yosemite / Mammoth Lakes", dates: "July 13–14", checkin: "4:00 pm", checkout: "11:00 am", parking: "Free self-parking on site." },
-        { base: "Las Vegas Strip", dates: "July 14–17", checkin: "3:00 pm", checkout: "11:00 am", parking: "$20/day self-park ($40 valet), in/out. Treasure Island free park-and-walk alternative." },
-        { base: "Los Angeles departure (Pasadena)", dates: "July 17–18", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Hotel garage $35/night, unlimited in/out. Cheaper $12/day garage across the road, no in/out — better here as the car mostly sits." }
+        { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Hotel garage $35/night, unlimited in/out. Cheaper $12/day garage across the road but no in/out.", hotelMap: "Hyatt Place Pasadena, Pasadena CA", parkingMap: "Paseo Colorado Parking, Pasadena CA" },
+        { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Free self-parking on site.", hotelMap: "Historic Santa Maria Inn, Santa Maria CA", parkingMap: "Historic Santa Maria Inn, Santa Maria CA" },
+        { base: "Monterey / Carmel", dates: "July 5–7", checkin: "4:00 pm", checkout: "12:00 pm", parking: "$20/day, self or valet, in/out included.", hotelMap: "Hyatt Regency Monterey Hotel and Spa, Monterey CA", parkingMap: "Hyatt Regency Monterey Hotel and Spa, Monterey CA" },
+        { base: "Bay Area (Mountain View)", dates: "July 7–13", checkin: "4:00 pm", checkout: "11:00 am", parking: "Free self-parking (no valet).", hotelMap: "Hotel Avante, Mountain View CA", parkingMap: "Hotel Avante, Mountain View CA" },
+        { base: "Yosemite / Mammoth Lakes", dates: "July 13–14", checkin: "4:00 pm", checkout: "11:00 am", parking: "Free self-parking on site.", hotelMap: "Outbound Mammoth, Mammoth Lakes CA", parkingMap: "Outbound Mammoth, Mammoth Lakes CA" },
+        { base: "Las Vegas Strip", dates: "July 14–17", checkin: "3:00 pm", checkout: "11:00 am", parking: "$20/day self-park ($40 valet), in/out. Treasure Island free park-and-walk alternative.", hotelMap: "The Venetian Resort, Las Vegas NV", parkingMap: "The Venetian Resort, Las Vegas NV" },
+        { base: "Los Angeles departure (Pasadena)", dates: "July 17–18", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Hotel garage $35/night, unlimited in/out. Cheaper $12/day garage across the road, no in/out — better here as the car mostly sits.", hotelMap: "Hyatt Place Pasadena, Pasadena CA", parkingMap: "Paseo Colorado Parking, Pasadena CA" }
       ],
       openQuestions: [
         { question: "Which Silicon Valley tech stops should anchor Day 13?", why: "Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus.", default: "Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps." },
@@ -2244,6 +2244,11 @@
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
       if (!tbody) return;
+      const mapsBtn = (query, icon, label) => {
+        if (!query) return "";
+        const href = "https://maps.apple.com/?q=" + encodeURIComponent(query);
+        return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" title="Open ${escapeHtml(label)} in Apple Maps" aria-label="Open ${escapeHtml(label)} in Apple Maps" style="display:inline-flex;align-items:center;gap:4px;padding:3px 8px;margin:2px;border:1px solid var(--border,#d0d0d0);border-radius:999px;font-size:0.8rem;text-decoration:none;white-space:nowrap;">${icon} ${escapeHtml(label)}</a>`;
+      };
       tbody.innerHTML = tripData.lodgingBases.map((row) => {
         const needsConfirm = row.checkin === "Confirm" || row.checkout === "Confirm";
         return `<tr>
@@ -2252,6 +2257,7 @@
           <td>${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
           <td>${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
           <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.parking)}</td>
+          <td style="white-space:nowrap;">${mapsBtn(row.hotelMap, "🏨", "Hotel")}${mapsBtn(row.parkingMap, "🅿️", "Parking")}</td>
         </tr>`;
       }).join("");
     }
