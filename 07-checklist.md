@@ -57,8 +57,6 @@
 | Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |
-| Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
-| Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. | Open |
 
 ## During-Trip Tasks
 
@@ -67,6 +65,7 @@
 | --- | --- | --- | --- |
 | Re-check road and weather conditions before long transfer days | Morning of each transfer | Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day. | Open |
 | Highway 1 / Big Sur status | Morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
+| Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
 | Keep daily pacing realistic | Every day | Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows. | Open |
 | Review next-day logistics each evening | Every evening | Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day. | Open |
 | Keep Las Vegas heat-aware | Las Vegas days | Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel. | Open |
