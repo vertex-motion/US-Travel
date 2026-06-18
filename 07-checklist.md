@@ -53,7 +53,6 @@
 | Confirm parking and vehicle fit at Las Vegas Strip hotel | Done | Confirmed: self-parking $20/day with in/out; the Venetian garage has ample clearance for a standard rental. | Done |
 | Golden Gate day transfer plan | Done | Decided: self-drive everywhere, no Caltrain or ride sharing. Drive to the Golden Gate / Presidio day and park near Crissy Field or the Presidio. | Done |
 | Choose child seat plan | Done | Decided: bring the family's own approved child seat for the younger child. Confirm airline carriage allowance and that the rental allows a personal seat. | Done |
-| Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
 | Pasadena-area first hotel operating details | Done | Confirmed: cost/taxes, cancellation terms, parking, and family occupancy. Check-in/checkout and luggage storage are standard. | Done |
 | Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
@@ -67,6 +66,7 @@
 | Task | When | Required action | Status |
 | --- | --- | --- | --- |
 | Re-check road and weather conditions before long transfer days | Morning of each transfer | Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day. | Open |
+| Highway 1 / Big Sur status | Morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
 | Keep daily pacing realistic | Every day | Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows. | Open |
 | Review next-day logistics each evening | Every evening | Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day. | Open |
 | Keep Las Vegas heat-aware | Las Vegas days | Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel. | Open |
