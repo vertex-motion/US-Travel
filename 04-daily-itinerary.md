@@ -75,7 +75,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 ### Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 
-- Sleep: Booked Santa Maria hotel.
+- Sleep: Booked Historic Santa Maria Inn, Santa Maria.
 - Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
 - Afternoon: Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy.
 - Driving: Pasadena → Santa Barbara; Santa Barbara → Pismo Beach; Pismo Beach → Santa Maria. Open the dashboard for live distance and time.
@@ -159,7 +159,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 ### Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
 
-- Sleep: Booked Mammoth Lakes hotel.
+- Sleep: Booked Outbound Mammoth, Mammoth Lakes.
 - Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
 - Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
 - Driving: Mountain View → Yosemite Valley; Yosemite Valley → Mammoth Lakes. Open the dashboard for live distance and time.
@@ -243,7 +243,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 | Confirmed flights are United UA 842 SYD-LAX on June 28, 2026 and United UA 839 LAX-SYD departing July 18, 2026 and arriving July 20, 2026. | Traveler booking | User-provided ticket details | 2026-05-15 | Booked; seat assignments intentionally omitted |
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | First Los Angeles hotel is booked in the Pasadena area from June 28 to July 4, 2026, with 3:00 pm check-in and 12:00 pm checkout. | Traveler booking | User-provided first hotel booking details | 2026-05-31 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
-| Central Coast hotel is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
+| Historic Santa Maria Inn is booked in Santa Maria from July 4 to July 5, 2026. | Traveler booking | User-provided Central Coast hotel booking details | 2026-06-02 | Booked; exact address, price, and booking reference intentionally omitted |
 | Monterey-area hotel is booked from July 5 to July 7, 2026. | Traveler booking | User-provided Monterey hotel booking details | 2026-06-02 | Booked; exact hotel name, address, price, and booking reference intentionally omitted |
 | LAX is the selected closed-circle gateway because it has the strongest Sydney flight market among the candidate start/end cities. | Local comparison file | [work/closed-circle-start-city-comparison.md](work/closed-circle-start-city-comparison.md) | 2026-05-15 | Current planning decision |
 | Qantas lists direct Sydney service with Los Angeles and San Francisco, and Sydney-Las Vegas seasonal service beginning after this trip window. | Qantas | [International flight routes](https://www.qantas.com/en-us/where-we-fly/international-flight-routes) | 2026-05-15 | Current; verify before booking |
@@ -257,7 +257,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 | Bay Area hotel is booked in Mountain View from July 7 to July 13, 2026, with check-in at 4:00 pm and checkout at 11:00 am. Rate notes list free parking and free WiFi. | Traveler booking | User-provided Bay Area hotel booking details | 2026-06-06 | Booked; exact address, confirmation number, guest name, membership number, phone, and contact details intentionally omitted |
 | Yosemite July 2026 entry currently does not require a timed-entry/day-use reservation. | National Park Service | [Yosemite reservations](https://www.nps.gov/yose/planyourvisit/reservations.htm) | 2026-05-08 | Current |
 | Yosemite fee rules changed for non-US residents, and July 3-5, 2026 fee-free dates apply to US residents only. | National Park Service | [Yosemite fees and passes](https://www.nps.gov/yose/planyourvisit/fees.htm) | 2026-05-08 | Current |
-| Mammoth Lakes hotel is booked from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
+| Outbound Mammoth is booked in Mammoth Lakes from July 13 to July 14, 2026, with check-in from 4:00 pm and checkout until 11:00 am. | Traveler booking | User-provided Mammoth Lakes hotel booking details | 2026-06-06 | Booked; booking PIN, exact address, payment details, contact details, and private traveler details intentionally omitted |
 | Las Vegas Strip hotel is booked from July 14 to July 17, 2026, with 3:00 pm check-in and 11:00 am checkout, in one Luxury 2 Queen suite for two adults and two children. | Traveler booking | User-provided Las Vegas hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Final Los Angeles hotel is booked in the Pasadena area from July 17 to July 18, 2026, with 3:00 pm check-in and 12:00 pm checkout, in one room for two adults and two children. | Traveler booking | User-provided final Los Angeles hotel booking details | 2026-06-07 | Booked; confirmation number, guest name, membership number, exact address, phone, and private contact details intentionally omitted |
 | Yosemite current conditions show Yosemite Valley roads and Tioga Road open, with roadwork and condition changes still requiring re-checks before travel. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before July 13 Yosemite Valley / Mammoth Lakes crossing |

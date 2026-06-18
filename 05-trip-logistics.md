@@ -23,10 +23,10 @@
 | Base | Logistics role | Operating implication |
 | --- | --- | --- |
 | Los Angeles arrival | Booked Pasadena-area base. | Pasadena improves Griffith, Kidspace, and east/central LA access while making beach / Westside days more drive-dependent. |
-| Central Coast / Route 1 overnight | Booked Santa Maria base. | Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but a full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check. |
+| Central Coast / Route 1 overnight | Booked Historic Santa Maria Inn base. | Santa Maria is practical for US-101 and Santa Ynez / Pismo-area routing, but a full Highway 1 / Big Sur Day 8 needs an early start and a current Caltrans check. |
 | Monterey / Carmel | Booked Monterey-area base. | Good for Monterey Bay Aquarium, Pacific Grove, Carmel, 17-Mile Drive, and a short Big Sur reach if timing is easy. Avoid adding a full Big Sur day unless conditions and energy are excellent. |
 | San Francisco / Bay Area | Booked Mountain View base. | Mountain View improves Stanford / Silicon Valley logistics and rate notes list free parking, but San Francisco / Golden Gate is a deliberate day trip. |
-| Yosemite / Mammoth Lakes | Booked Mammoth Lakes base. | Mammoth Lakes stages the Las Vegas transfer, but the prior day depends on Tioga Road, smoke, traffic, weather, and family energy. |
+| Yosemite / Mammoth Lakes | Booked Outbound Mammoth (Mammoth Lakes) base. | Mammoth Lakes stages the Las Vegas transfer, but the prior day depends on Tioga Road, smoke, traffic, weather, and family energy. |
 | Las Vegas | Booked Las Vegas Strip base. | Keep Las Vegas heat-aware: early outdoor time, indoor afternoons, pool/rest time, and short evening Strip walks. |
 | Los Angeles departure | Booked Pasadena-area final base. | Pasadena is not airport-adjacent, so leave a large final-day buffer for fuel, traffic, rental return, luggage, terminal transfer, and international check-in. |
 

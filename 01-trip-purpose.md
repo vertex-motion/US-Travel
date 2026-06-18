@@ -7,7 +7,7 @@
 - Alexey, 39
 - Ana, 39
 - 13-year-old teen
-- Younger child, 2
+- Younger child, 3
 
 1. Alexey and Ana have traveled extensively in Europe and Asia, but this will be their first trip to the United States.
 2. The family currently lives in Sydney, Australia.

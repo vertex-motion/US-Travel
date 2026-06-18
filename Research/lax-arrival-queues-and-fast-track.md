@@ -4,7 +4,7 @@
 
 Research into what to expect clearing immigration and customs at Los Angeles International Airport (LAX) on arrival, and how to move through as fast as possible.
 Date researched: 2026-06-17.
-Context: Family of four (two adults, a 13-year-old, a 2-year-old), all on **Australian passports** with approved ESTAs, **first-ever US trip**. Arriving on **United UA842 (SYD–LAX)**, scheduled landing **~06:05 PDT, Sunday June 28, 2026**, at **Tom Bradley International Terminal (TBIT / Terminal B)**. LAX is the final destination — **no onward connection**.
+Context: Family of four (two adults, a 13-year-old, a 3-year-old), all on **Australian passports** with approved ESTAs, **first-ever US trip**. Arriving on **United UA842 (SYD–LAX)**, scheduled landing **~06:05 PDT, Sunday June 28, 2026**, at **Tom Bradley International Terminal (TBIT / Terminal B)**. LAX is the final destination — **no onward connection**.
 Verify all live conditions close to travel; staffing, wait times, and CBP procedures change.
 
 ---
@@ -18,7 +18,7 @@ Verify all live conditions close to travel; staffing, wait times, and CBP proced
 | How long should we expect to wait? | Plan for **45–90 minutes** from plane door to exit during the busy summer morning bank. Could be 20 min on a light day, longer if several wide-bodies land together. See Section 2. |
 | Is a 6 AM arrival good or bad? | **Mixed.** It misses the late-afternoon peak, but lands inside the heavy Asia-Pacific morning bank. Booths are usually fully staffed at this hour. |
 | What's the single biggest time-saver we control? | **Deplane fast and walk briskly to the hall.** Beating the crowd from our own and adjacent flights matters more than any trick. See Section 5. |
-| Do all four need to be processed? | Yes, individually. The 2-year-old gets a photo but **no fingerprints** (under-14 exemption). Adults and the 13-year-old: photo; first-timers may be fingerprinted. |
+| Do all four need to be processed? | Yes, individually. The 3-year-old gets a photo but **no fingerprints** (under-14 exemption). Adults and the 13-year-old: photo; first-timers may be fingerprinted. |
 | Customs declaration | One **joint family declaration** for the household traveling together. **Declare all food.** See Section 6. |
 | Best future fix | Apply for **Global Entry** before the *next* US trip — Australians are now eligible, and one prior entry also unlocks Mobile Passport Control. See Section 7. |
 
@@ -41,7 +41,7 @@ Verify all live conditions close to travel; staffing, wait times, and CBP proced
 
 1. **Deplane** at Terminal B and follow "Arrivals / Immigration" signs to the Federal Inspection Services (FIS) hall.
 2. **Immigration — Simplified Arrival.** Join the **"Visitors" / "Foreign Passports"** queue (not the US/Canada lane). At the booth a camera takes each traveler's **photo**; the officer asks a few questions (purpose of trip, where staying, how long). No paper I-94 and no paper arrival card.
-   - **Fingerprints:** first-time VWP travelers aged 14+ may have fingerprints taken. The **2-year-old is exempt** (under 14). This adds a little time per adult.
+   - **Fingerprints:** first-time VWP travelers aged 14+ may have fingerprints taken. The **3-year-old is exempt** (under 14). This adds a little time per adult.
 3. **Baggage claim.** Collect all checked bags. Grab a free baggage cart if needed (a pram helps for the toddler; keep it accessible).
 4. **Customs.** Hand the officer **one family declaration**, or answer verbally if directed. Most travelers with nothing unusual to declare walk straight out; those with food/agricultural items go to secondary inspection.
 5. **Exit** into the TBIT arrivals area, then proceed to the rental-car shuttle / pickup.
@@ -70,7 +70,7 @@ Verify all live conditions close to travel; staffing, wait times, and CBP proced
 3. **Use the family advantage.** Travelers with **young children** are often waved into a shorter or priority line, or to a dedicated family/wheelchair lane. **Ask a CBP line officer** on arrival whether a family lane is open — it is not guaranteed at LAX, but costs nothing to ask. Keep the pram visible.
 4. **Answer questions simply and consistently.** Tourism; staying ~20 days; first hotel in Pasadena; returning to Sydney July 18. Let one adult lead the answers; the officer may address the children briefly.
 5. **One family customs declaration.** Members of the same household traveling together file a single declaration. Decide *before* landing whether anyone is carrying food.
-6. **Keep the toddler regulated.** Plan for up to ~90 minutes standing/queuing after a long flight: snacks, water, a charged device, and a nappy change before joining the immigration queue. A fed, rested 2-year-old makes the whole pass smoother.
+6. **Keep the toddler regulated.** Plan for up to ~90 minutes standing/queuing after a long flight: snacks, water, a charged device, and a nappy change before joining the immigration queue. A fed, rested 3-year-old makes the whole pass smoother.
 7. **Don't photograph the immigration hall.** Photos/phone use are prohibited in the FIS area and can cause delays.
 8. **Pre-load nothing risky.** No fresh fruit, sandwiches with meat, or plant material in carry-ons "for later" — see Section 6.
 

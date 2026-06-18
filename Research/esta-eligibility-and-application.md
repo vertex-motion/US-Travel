@@ -15,7 +15,7 @@ Apply only at the official site: **https://esta.cbp.dhs.gov**. Third-party sites
 | Question | Answer for this family |
 | --- | --- |
 | Does ESTA apply? | Yes. Australian passport holders use ESTA, not a visa. |
-| Who needs one? | All four travelers individually, including the 2-year-old. |
+| Who needs one? | All four travelers individually, including the 3-year-old. |
 | Cost | ~US$40 per person → ~US$160 for four. Charged on approval. |
 | When to apply | Now. CBP says apply no later than 72 hours before departure; same-day approvals no longer exist. |
 | Validity | 2 years, or until the passport expires — whichever is first. Covers this trip with room to spare. |
@@ -66,7 +66,7 @@ A traveler is **barred from ESTA** (and must instead apply for a B-1/B-2 visa at
 
 > **Action:** Each adult should mentally run this list before applying. If any answer is "yes" or "unsure," do **not** guess on the form — a wrong "no" can cause problems at the border. Instead seek a B-1/B-2 visa, which takes much longer (Section 8) and would affect this trip's nonrefundable bookings.
 
-For the 13-year-old and the 2-year-old these bars are almost certainly all "no," but the same questions are asked on their applications and must be answered truthfully by a parent.
+For the 13-year-old and the 3-year-old these bars are almost certainly all "no," but the same questions are asked on their applications and must be answered truthfully by a parent.
 
 ---
 
@@ -91,7 +91,7 @@ Apply at **https://esta.cbp.dhs.gov** (or the official CBP One mobile app). Each
 
 ### 5.3 Tips specific to this family
 - **Do all four in one sitting** using the "group of applications" option to track them together and pay once.
-- For the **2-year-old and 13-year-old**, a parent completes and submits on their behalf; employment = "not employed."
+- For the **3-year-old and 13-year-old**, a parent completes and submits on their behalf; employment = "not employed."
 - Use the **first hotel (Pasadena area, check-in June 28)** as the U.S. address.
 - **Double-check each passport number** against the physical passport before paying — a single transposed digit means the airline's check-in system won't find a valid ESTA.
 
