@@ -36,14 +36,39 @@
 
 | Base | Dates | Check-in | Checkout | Parking |
 | --- | --- | --- | --- | --- |
-| Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
-| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | To confirm — cost and availability unknown. |
-| Monterey / Carmel | July 5–7 | Confirm | Confirm | To confirm — cost and availability unknown. |
-| Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free per rate notes — confirm before arrival. |
-| Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | To confirm — cost and availability unknown. |
-| Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | To confirm — self-parking fee and height limit unknown. |
-| Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | To confirm — cost and availability unknown. |
+| Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | Hotel garage $35/night, unlimited in/out. Cheaper garage across the road $12/day but no in/out. See Parking. |
+| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | Free self-parking on site. |
+| Monterey / Carmel | July 5–7 | Confirm | Confirm | $20/day, self or valet, in/out included. |
+| Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free self-parking (no valet). |
+| Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | Free self-parking on site. |
+| Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | $20/day self-park ($40 valet), in/out. Treasure Island free park-and-walk alternative. See Parking. |
+| Los Angeles departure (Pasadena) | July 17–18 | 3:00 pm | 12:00 pm | Hotel garage $35/night, unlimited in/out. Cheaper garage across the road $12/day, no in/out — better here as the car mostly sits. See Parking. |
 
+
+## Parking
+
+<!-- tag: traveler-notes -->
+
+Researched 2026-06-18. Rates are public facility figures for planning; committed parking spend is tracked in [06-budget.md](06-budget.md). Re-confirm close to travel.
+
+| Base | Nights | Hotel's own parking | Cheapest alternative | Plan |
+| --- | --- | --- | --- | --- |
+| Pasadena arrival | 6 | $35/night, attached garage, unlimited in/out | Paseo Colorado Green St structure $12/day, 24/7 | Use the hotel garage — daily sightseeing means frequent in/out, which the cheap garage does not allow. |
+| Santa Maria | 1 | Free self-parking | — | Free; nothing to do. |
+| Monterey | 2 | $20/day, self or valet, in/out | Free street after 6 pm and all Sunday (unreliable) | Pay the $20; street-parking shuffle is not worth it for two nights. |
+| Mountain View | 6 | Free self-parking (no valet) | — | Free; nothing to do. |
+| Mammoth Lakes | 1 | Free self-parking | — | Free; nothing to do. |
+| Las Vegas (Venetian) | 3 | $20/day self-park, $40/day valet, in/out | Treasure Island free park-and-walk | Self-park ($20), never valet. Treasure Island only if barely driving — do not store the car there for 3 days as a non-guest. |
+| Pasadena departure | 1 | $35/night, attached garage, unlimited in/out | Paseo Colorado garage $12/day, no in/out | Use the $12 garage — the car mostly sits this final night. |
+
+Key facts and caveats:
+
+- **Pasadena cheap garage (Paseo Colorado Green St structure, ~across the road):** $12/day, open 24/7 (overnight fine), height limit **6′8″**, and **no in/out** — each exit closes the ticket and re-entry starts a new daily charge. It only beats the hotel's $35 when the car stays parked or makes at most one round-trip per day. With a 3-year-old (mid-day nap returns), heavy in/out can erase the saving, plus it means crossing the road with the kids each time.
+- **Check the rental's height (≤ 6′8″)** before relying on the public garage.
+- **Plaza Las Fuentes ($12/day)** is a second Pasadena option, but its in/out policy is unconfirmed — call before relying on it.
+- **Monterey** free street parking applies only after 6 pm and on Sundays; the hotel's $20/day includes in/out.
+- **Venetian:** Treasure Island self-park is free and gateless (effectively unlimited in/out), but multi-day non-guest storage is discouraged. Venetian Rewards Sapphire+ get free self-parking (not worth pursuing for this trip).
+- **Rough total:** ~$345 at hotel rates → ~$184 with the Pasadena/Vegas swaps, the bulk of the saving from the Pasadena departure night and any nights the car sits.
 
 ## Road Conditions & Disruptions
 
@@ -72,6 +97,14 @@ Known disruptions and what to confirm before each affected leg. Update before tr
 | Rental car is booked from Los Angeles International Airport on June 28, 2026 at 8:00 am to Los Angeles International Airport on July 18, 2026 at 8:00 pm. | Traveler booking | User-provided rental booking details | 2026-05-31 | Booked; provider, price, and booking reference intentionally omitted |
 | Current lodging bases are booked in the Pasadena area, Santa Maria, the Monterey area, Mountain View, Mammoth Lakes, the Las Vegas Strip, and the Pasadena area before departure. | Traveler bookings | User-provided hotel booking details | 2026-06-07 | Booked; exact names, addresses, prices, confirmation numbers, and private traveler details intentionally omitted |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | [LAX transit](https://www.lawa.org/commutelax/transit) | 2026-05-15 | Current; choose transfer after hotel base |
+| Hyatt Place Pasadena self-parking is $35/night in the attached garage with in/out privileges. | Hyatt | [Parking & transportation](https://www.hyatt.com/hyatt-place/en-US/laczp-hyatt-place-pasadena/parking-and-transportation) | 2026-06-18 | Current; re-check before travel |
+| Paseo Colorado Green St structure (across the road) is $12/day, open 24/7, height limit 6′8″, and does not allow in/out access. | Parking Concepts (operator) | [Paseo Colorado facility](https://parkingconcepts.com/facilities/paseo-colorado/) | 2026-06-18 | Current; confirm rate and overnight terms before relying on it |
+| Plaza Las Fuentes structure is $12/day max (in/out policy unconfirmed). | City of Pasadena | [FY2025 transportation fee schedule](https://www.cityofpasadena.net/transportation/wp-content/uploads/sites/20/FY-2025-Transportation-General-Fee-Schedule.pdf) | 2026-06-18 | Current; call to confirm in/out |
+| Historic Santa Maria Inn offers free on-site self-parking. | Aggregated hotel listings | [TripAdvisor](https://www.tripadvisor.com/Hotel_Review-g33051-d77957-Reviews-The_Historic_Santa_Maria_Inn-Santa_Maria_California.html) | 2026-06-18 | Current |
+| Hyatt Regency Monterey self/valet parking is $20/day with in/out; free street parking nearby only after 6 pm and on Sundays. | Hyatt / traveler reports | [Parking & transportation](https://www.hyatt.com/hyatt-regency/en-US/mrydm-hyatt-regency-monterey-hotel-and-spa-on-del-monte-golf-course/parking-and-transportation) | 2026-06-18 | Current; re-check before travel |
+| Hotel Avante (Mountain View) offers complimentary self-parking; no valet. | Hotel Avante | [FAQ](https://hotelavante.com/faq/) | 2026-06-18 | Current |
+| Outbound Mammoth offers free on-site self-parking. | Outbound Hotels | [Amenities](https://outboundhotels.com/mammoth/amenities/) | 2026-06-18 | Current |
+| The Venetian self-parking is $20/day for hotel guests ($40 valet), with in/out; Treasure Island self-parking is free and gateless but discourages multi-day non-guest storage. | The Venetian / Treasure Island | [Venetian parking FAQs](https://www.venetianlasvegas.com/resort/maps-and-parking/parking-transportation-faqs.html) | 2026-06-18 | Current; re-check before travel |
 | Yosemite current conditions show Yosemite Valley roads and Tioga Road open, but roadwork and condition changes still require re-checks before the Yosemite Valley / Mammoth Lakes crossing and Death Valley transfer. | National Park Service | [Yosemite current conditions](https://www.nps.gov/yose/planyourvisit/conditions.htm) | 2026-06-05 | Current; re-check before travel |
 | Tioga Road opened for the 2026 season on May 15, 2026, with limited services along Tioga Road. | National Park Service | [Tioga and Glacier Point roads update](https://www.nps.gov/yose/planyourvisit/tioga.htm) | 2026-06-05 | Current; re-check before travel |
 | Caltrans provides current California highway conditions and should be checked for CA-120, US-395, CA-190, I-15, and Highway 1 before long transfer days. | Caltrans | [California highway conditions](https://roads.dot.ca.gov/) | 2026-06-05 | Current; re-check before and during travel |
