@@ -47,7 +47,7 @@
 | --- | --- | --- | --- |
 | Confirm Mountain View hotel operating details | Done | Confirmed: taxes/fees, cancellation terms, free parking, free WiFi, and family occupancy. | Done |
 | Confirm Outbound Mammoth (Mammoth Lakes) operating details | Done | Confirmed: free parking, family occupancy, fees, and cancellation terms. Keep/cancel-after-road-checks decision is tracked in the Yosemite road task and Open Decisions. | Done |
-| Confirm Las Vegas hotel operating details | Before July 14 arrival | Cost/resort fee, parking, cancellation terms, and family occupancy confirmed. Still to confirm at check-in: quiet-room request honored, pool access, and any incidental hold. | Open |
+| Confirm Las Vegas hotel operating details | Done | Confirmed: cost/resort fee, parking, cancellation terms, and family occupancy. At-check-in items (non-blocking): reconfirm quiet-room request, pool access/hours, incidental hold amount, and the $50 beverage credit. | Done |
 | Confirm final Los Angeles hotel operating details | Done | Confirmed: cost, cancellation terms, parking, and family occupancy. Pasadena-to-LAX drive timing is tracked in its own task. | Done |
 | Confirm rental car operating details | Done | Vehicle confirmed: BMW X5 or similar large SUV — ample luggage and child-seat fit, no issue. Height (~5'8") clears the 6'8" Pasadena garage. Australian licence is sufficient — no IDP needed for California/Nevada or the SIXT desk; bring the physical licence card. | Done |
 | Confirm parking and vehicle fit at Las Vegas Strip hotel | Done | Confirmed: self-parking $20/day with in/out; the Venetian garage has ample clearance for a standard rental. | Done |
