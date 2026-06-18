@@ -2244,10 +2244,13 @@
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
       if (!tbody) return;
+      const svgWrap = (paths) => `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;" aria-hidden="true">${paths}</svg>`;
+      const iconHotel = svgWrap(`<path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/>`);
+      const iconParking = svgWrap(`<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>`);
       const mapsBtn = (query, icon, label) => {
         if (!query) return "";
         const href = "https://maps.apple.com/?q=" + encodeURIComponent(query);
-        return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" title="Open ${escapeHtml(label)} in Apple Maps" aria-label="Open ${escapeHtml(label)} in Apple Maps" style="display:inline-flex;align-items:center;gap:4px;padding:3px 8px;margin:2px;border:1px solid var(--border,#d0d0d0);border-radius:999px;font-size:0.8rem;text-decoration:none;white-space:nowrap;">${icon} ${escapeHtml(label)}</a>`;
+        return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener" title="Open ${escapeHtml(label)} in Apple Maps" aria-label="Open ${escapeHtml(label)} in Apple Maps" style="display:inline-flex;align-items:center;gap:5px;padding:4px 10px;margin:2px;border:1px solid var(--border,#d8d8d8);border-radius:8px;font-size:0.8rem;color:var(--muted,#666);text-decoration:none;white-space:nowrap;">${icon}${escapeHtml(label)}</a>`;
       };
       tbody.innerHTML = tripData.lodgingBases.map((row) => {
         const needsConfirm = row.checkin === "Confirm" || row.checkout === "Confirm";
@@ -2257,7 +2260,7 @@
           <td>${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
           <td>${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
           <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.parking)}</td>
-          <td style="white-space:nowrap;">${mapsBtn(row.hotelMap, "🏨", "Hotel")}${mapsBtn(row.parkingMap, "🅿️", "Parking")}</td>
+          <td style="white-space:nowrap;">${mapsBtn(row.hotelMap, iconHotel, "Hotel")}${mapsBtn(row.parkingMap, iconParking, "Parking")}</td>
         </tr>`;
       }).join("");
     }
