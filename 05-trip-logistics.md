@@ -37,8 +37,8 @@
 | Base | Dates | Check-in | Checkout | Parking |
 | --- | --- | --- | --- | --- |
 | Los Angeles arrival (Pasadena) | June 28–July 4 | 3:00 pm | 12:00 pm | Hotel garage $35/night, unlimited in/out. Cheaper garage across the road $12/day but no in/out. See Parking. |
-| Central Coast (Santa Maria) | July 4–5 | Confirm | Confirm | Free self-parking on site. |
-| Monterey / Carmel | July 5–7 | Confirm | Confirm | $20/day, self or valet, in/out included. |
+| Central Coast (Santa Maria) | July 4–5 | 3:00 pm | 12:00 pm | Free self-parking on site. |
+| Monterey / Carmel | July 5–7 | 4:00 pm | 12:00 pm | $20/day, self or valet, in/out included. |
 | Bay Area (Mountain View) | July 7–13 | 4:00 pm | 11:00 am | Free self-parking (no valet). |
 | Yosemite / Mammoth Lakes | July 13–14 | 4:00 pm | 11:00 am | Free self-parking on site. |
 | Las Vegas Strip | July 14–17 | 3:00 pm | 11:00 am | $20/day self-park ($40 valet), in/out. Treasure Island free park-and-walk alternative. See Parking. |
