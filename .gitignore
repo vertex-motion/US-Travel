@@ -10,3 +10,7 @@ air-tickets/
 # Filled ESTA application templates (contain full names, DOBs, passport numbers,
 # home address, emergency contacts) — keep out of this public repo.
 ESTA/
+
+# Confidential trip data (hotel addresses, confirmation numbers, booking
+# references, contact details) — kept on disk only, never committed.
+private/
