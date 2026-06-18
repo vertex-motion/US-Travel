@@ -62,10 +62,6 @@
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. | Open |
 | Bay Area activity plan | Before finalizing Bay Area daily logistics | Mountain View free parking confirmed. Plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. | Open |
 | Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. | Open |
-| Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. | Open |
-| Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. | Open |
-| Final Pasadena hotel to LAX drive timing | Day before departure | Choose checkout timing, fuel stop, LAX route, rental car return buffer, and whether any late checkout or luggage plan is useful. | Open |
-| LAX airport and car return | Day before departure | Confirm terminal, rental car return location, fuel stop, 8:00 pm return target, check-in buffer, and luggage timing. | Open |
 
 ## During-Trip Tasks
 
