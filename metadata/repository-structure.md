@@ -19,6 +19,7 @@ Canonical inventory of planning files and their scope rules.
 
 | File | Purpose |
 | --- | --- |
+| `private/` | Gitignored. Canonical home for confidential trip data: actual hotel addresses, confirmation numbers, booking references, room/rate codes, contact details. Kept on disk only; never committed. Tracked files reference bookings by city and date and link here. |
 | `air-tickets/air-tickets.pdf` | Booked air ticket documents. |
 | `metadata/repository-structure.md` | This file — file inventory and planning scope rules. |
 | `metadata/content-tags.md` | Planning content tag definitions and usage rules. |

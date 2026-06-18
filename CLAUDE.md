@@ -28,6 +28,8 @@ This repo is public. Never add personal data: contact details, document numbers,
 
 Sensitive personal files must never be committed. This includes tickets, insurance documents, IDs, passports, boarding passes, bookings, and any file containing the personal data listed above. Such files (and their folders) must be added to `.gitignore` and kept on disk only. Before any commit, verify no sensitive personal file is staged; if one is, unstage it, add it to `.gitignore`, and flag it.
 
+The `private/` folder is the canonical, gitignored home for confidential trip data: actual hotel addresses, confirmation numbers, booking references, room/rate codes, and contact details. The tracked planning files reference bookings by city and date only; their real values live in `private/confidential.md`. Read and update that file when confidential details are needed, but never copy its contents into a tracked file.
+
 ## Duplication
 
 One canonical home per fact. Before editing, check for existing coverage.
