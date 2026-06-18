@@ -123,7 +123,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 12: Thursday, July 9 - Golden Gate and Presidio
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Drive, transit, or rideshare to Golden Gate Bridge viewpoints from Crissy Field or the Presidio.
+- Morning: Drive to Golden Gate Bridge viewpoints from Crissy Field or the Presidio and park there.
 - Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
 - Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Mountain View. Open the dashboard for live distance and time.
 - Reservations: None required.

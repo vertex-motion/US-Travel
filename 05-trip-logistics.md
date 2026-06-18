@@ -64,7 +64,7 @@ Researched 2026-06-18. Rates are public facility figures for planning; committed
 Key facts and caveats:
 
 - **Pasadena cheap garage (Paseo Colorado Green St structure, ~across the road):** $12/day, open 24/7 (overnight fine), height limit **6′8″**, and **no in/out** — each exit closes the ticket and re-entry starts a new daily charge. It only beats the hotel's $35 when the car stays parked or makes at most one round-trip per day. With a 3-year-old (mid-day nap returns), heavy in/out can erase the saving, plus it means crossing the road with the kids each time.
-- **Check the rental's height (≤ 6′8″)** before relying on the public garage.
+- **Rental height clears the garage:** the booked BMW X5 (or similar, ~5′8″) is well under the 6′8″ limit, so the cheap Pasadena garage is usable on height.
 - **Plaza Las Fuentes ($12/day)** is a second Pasadena option, but its in/out policy is unconfirmed — call before relying on it.
 - **Monterey** free street parking applies only after 6 pm and on Sundays; the hotel's $20/day includes in/out.
 - **Venetian:** Treasure Island self-park is free and gateless (effectively unlimited in/out), but multi-day non-guest storage is discouraged. Venetian Rewards Sapphire+ get free self-parking (not worth pursuing for this trip).

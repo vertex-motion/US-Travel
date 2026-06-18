@@ -19,7 +19,7 @@ Las Vegas can look cheaper than the California coast on room rate alone. Compare
 | Rental car, fuel, parking, tolls | $1,281.93 + variable | $1,281.93 + variable | $1,281.93 + variable | SIXT rental car is booked LAX-to-LAX from Sunday, June 28, 2026 at 8:00 am to Saturday, July 18, 2026 at 8:00 pm. Booking reference stays private. Budget still needs fuel, hotel parking, tolls, Las Vegas parking, San Francisco / Bay Area parking, Silicon Valley local driving, Golden Gate day-trip transport, and the Mammoth Lakes / Death Valley transfer. |
 | Attractions and tours | $800 | $1,400 | $2,400 | Includes Getty parking, Academy Museum or LA alternative, Silicon Valley tech stops, Monterey Bay Aquarium, Hearst Castle if used, Route 1 / elephant seal stops, Yosemite entrance or pass costs, one Las Vegas ticketed attraction/show, Red Rock entry if used, and parking. |
 | Food | $4,500 | $6,500 | $10,000 | $265-$590 per day planning allowance for a family using hotel breakfasts, casual lunches, food halls, and mixed dinners. |
-| Airport transfers and local transit | $500 | $1,000 | $2,000 | LAX arrival/departure transfers, taxis/rideshare in LA/SF/Las Vegas, luggage-friendly transfers, and possible monorail/rideshare substitution on the Strip. |
+| Airport transfers and local transit | $500 | $1,000 | $2,000 | Family drives everywhere in the booked rental (LAX pickup/return) with no rideshare, so most of this is now contingency only — can be trimmed at the budget rebuild. |
 | Travel insurance, mobile data, documents | $520 | $600 | $750 | Travel insurance now **PURCHASED 2026-06-16**: Australia Post Basic International, A$362.06 (see Committed Spend below). Remaining covers eSIM/mobile data and ESTA (US$21/person ≈ A$118 for four). Still needs phone plan choice. |
 | Buffer | $3,000 | $5,500 | $10,500 | Keep a separate buffer because July lodging, parking, resort fees, show pricing, and holiday-week pricing are volatile; do not use the buffer to exceed the hotel cap without approval. |
 
@@ -72,7 +72,7 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 - Use the booked Outbound Mammoth night as the July 13 east-side Yosemite / Tioga Road lodging baseline; confirm parking, check-in logistics, and any incidentals before arrival.
 - Use the booked The Venetian stay as the July 14-17 Las Vegas lodging baseline; confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.
 - Use the booked Hyatt Place Pasadena final night as the July 17-18 departure buffer baseline; confirm $35/night parking, final folio, housekeeping preference, and Day 21 LAX drive timing.
-- Compare Mountain View self-drive vs. transit/rideshare for the Golden Gate / San Francisco day before locking daily logistics.
+- Golden Gate / San Francisco day is self-drive (decided, no rideshare); budget San Francisco parking, not transit.
 - Keep the Mammoth Lakes night tied to a successful Tioga Road crossing on July 13. If Tioga Road or conditions fail before the free-cancellation deadline, reassess the booking before it becomes nonrefundable.
 - Keep any Bakersfield / Tehachapi midpoint quote as a fallback only. It should reduce driving stress, not become a luxury stop.
 - Prioritize hotels that can confirm one room or suite for all four travelers at USD $200-$250 per night before comparing brands or amenities.
@@ -88,7 +88,7 @@ Exchange rate for all AUD/USD totals in this table: 1 AUD = 0.7123 USD and 1 USD
 3. Confirm Outbound Mammoth parking, check-in process, and whether any additional local fees are due at the property.
 4. Confirm The Venetian final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, extra-person fees, and incidental hold.
 5. Confirm Hyatt Place Pasadena final-night folio, $35/night parking, housekeeping preference, and any incidental hold.
-6. Compare self-driving against Caltrain/rideshare for the Golden Gate day from Mountain View.
+6. Golden Gate day is self-drive from Mountain View (decided); plan San Francisco parking, no rideshare.
 7. Rebuild the budget with confirmed final hotel folios.
 
 ## Sources
