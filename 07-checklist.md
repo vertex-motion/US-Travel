@@ -45,22 +45,22 @@
 <!-- tag: to-confirm -->
 | Task | When | Required action | Status |
 | --- | --- | --- | --- |
-| Confirm Mountain View hotel operating details | Now | Confirm final taxes/fees, cancellation terms, free parking, free WiFi, family occupancy, and any incidentals. | Open |
-| Confirm Outbound Mammoth (Mammoth Lakes) operating details | Before July 10 cancellation deadline | Confirm parking, check-in process, family occupancy, property fees, and whether the booking should stay after Tioga Road, smoke, weather, and same-day timing checks. | Open |
-| Confirm Las Vegas hotel operating details | Before July 14 arrival | Confirm final folio, resort fee and tax, parking, pool access, quiet-room request, cancellation terms, smoky casino paths, summer heat logistics, extra-person fees, and any incidental hold. | Open |
-| Confirm final Los Angeles hotel operating details | Before July 17 arrival | Confirm parking, final folio, family occupancy, housekeeping preference, checkout timing, incidentals, and Pasadena-to-LAX drive buffer. | Open |
+| Confirm Mountain View hotel operating details | Done | Confirmed: taxes/fees, cancellation terms, free parking, free WiFi, and family occupancy. | Done |
+| Confirm Outbound Mammoth (Mammoth Lakes) operating details | Done | Confirmed: free parking, family occupancy, fees, and cancellation terms. Keep/cancel-after-road-checks decision is tracked in the Yosemite road task and Open Decisions. | Done |
+| Confirm Las Vegas hotel operating details | Before July 14 arrival | Cost/resort fee, parking, cancellation terms, and family occupancy confirmed. Still to confirm at check-in: quiet-room request honored, pool access, and any incidental hold. | Open |
+| Confirm final Los Angeles hotel operating details | Done | Confirmed: cost, cancellation terms, parking, and family occupancy. Pasadena-to-LAX drive timing is tracked in its own task. | Done |
 | Confirm rental car operating details | Before pickup | Confirm vehicle class, luggage fit, that the family's own child seat installs in the vehicle, second driver, fuel policy, toll handling, additional driver fees, Australian license / IDP requirements, and counter timing. | Open |
-| Confirm parking and vehicle fit at Las Vegas Strip hotel | Before July 14 arrival | Confirm self-parking availability, parking fee, and whether the vehicle height and size fit the hotel car park. | Open |
-| Confirm Mountain View free parking and Golden Gate day transfer | Before Bay Area stay | Verify free parking at the Mountain View hotel; decide self-drive vs Caltrain/rideshare for the Golden Gate / Presidio day based on San Francisco parking cost and traffic. | Open |
+| Confirm parking and vehicle fit at Las Vegas Strip hotel | Done | Confirmed: self-parking $20/day with in/out; the Venetian garage has ample clearance for a standard rental. | Done |
+| Golden Gate day transfer plan | Before Bay Area stay | Mountain View free parking confirmed. Decide self-drive vs Caltrain/rideshare for the Golden Gate / Presidio day based on San Francisco parking cost and traffic. | Open |
 | Choose child seat plan | Done | Decided: bring the family's own approved child seat for the younger child. Confirm airline carriage allowance and that the rental allows a personal seat. | Done |
 | Highway 1 / Big Sur status | 7 days before and morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
-| Pasadena-area first hotel operating details | Before arrival and before July 4 checkout | Confirm check-in, checkout, early luggage storage, parking cost, parking height/entry details, family occupancy, cancellation terms, and any taxes/fees outside this public repo. | Open |
-| Historic Santa Maria Inn operating details | Before July 4 arrival | Confirm check-in, checkout, parking cost, family occupancy, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
-| Monterey-area hotel operating details | Before July 5 arrival | Confirm check-in, checkout, parking cost, family occupancy, resort/amenity fees, cancellation terms, taxes/fees, and private total cost outside this public repo. | Open |
+| Pasadena-area first hotel operating details | Done | Confirmed: cost/taxes, cancellation terms, parking, and family occupancy. Check-in/checkout and luggage storage are standard. | Done |
+| Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
+| Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
 | Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |
 | Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
 | July 4 crowd and event closures | 2-4 weeks before arrival | Keep Day 7 flexible and avoid adding fixed sightseeing after the LA-to-Central-Coast move. | Open |
-| Mountain View / Bay Area parking and activity plan | Before finalizing Bay Area daily logistics | Confirm hotel free parking, then plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. | Open |
+| Bay Area activity plan | Before finalizing Bay Area daily logistics | Mountain View free parking confirmed. Plan Golden Gate / Presidio as a San Francisco day trip and Stanford, Google / Computer History Museum / Apple from the Mountain View base. | Open |
 | Mammoth-Lakes-to-Las-Vegas via Death Valley route timing | Before the Mammoth free-cancellation deadline and again the day before Day 17 | Confirm route, departure time, lunch/fuel/water stops, heat plan, US-395, CA-190, Death Valley road status, smoke, weather, and safe fallback. | Open |
 | Las Vegas heat and air quality | Day before each Las Vegas day | Move outdoor time to early morning or evening; keep peak heat indoors. | Open |
 | Las Vegas-to-LAX drive timing | Day before Day 20 | Choose departure time, route, lunch stop, and Los Angeles arrival buffer. | Open |
