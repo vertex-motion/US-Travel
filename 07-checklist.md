@@ -56,7 +56,7 @@
 | Pasadena-area first hotel operating details | Done | Confirmed: cost/taxes, cancellation terms, parking, and family occupancy. Check-in/checkout and luggage storage are standard. | Done |
 | Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
-| Yosemite entry and fee rules | Before lodging lock-in, 30 days before arrival, and week of arrival | Confirm no new reservation rule and prepare nonresident fee/pass payment. | Open |
+| Buy Yosemite / national-park pass | Before the trip | No 2026 entry reservation needed. New 2026 non-resident surcharge is $100/person (16+), so the two adults owe $200 + $35 vehicle at the gate (card/phone only, passports ready). Better value: buy one America the Beautiful Non-Resident Annual Pass ($250) — covers the family, waives the surcharge, and also covers Death Valley and Red Rock. Buy online at store.usgs.gov / recreation.gov. | Open |
 
 ## During-Trip Tasks
 

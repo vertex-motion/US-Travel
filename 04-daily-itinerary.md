@@ -163,7 +163,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
 - Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
 - Driving: Mountain View → Yosemite Valley; Yosemite Valley → Mammoth Lakes. Open the dashboard for live distance and time.
-- Reservations: See `05-trip-logistics.md` for Mammoth Lakes lodging details.
+- Reservations: No Yosemite entry reservation needed in 2026. Have the $250 non-resident annual pass ready at the entrance gate (or pay $35/vehicle + $100/adult by card or phone — no cash; passports ready to show residency). See `05-trip-logistics.md` for Mammoth Lakes lodging details.
 - Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
 - Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
 
