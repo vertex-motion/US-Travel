@@ -57,6 +57,7 @@
 | Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
 | Yosemite park pass — not needed | Done | Decided not to enter Yosemite. We drive the free route around the park (Highway 108 / Sonora Pass) to Mammoth, so there is no entrance fee or $100/person surcharge and no pass to buy. | Done |
+| Inflatable kids' leg-rest cushion — airline policy | Before packing | Research whether United allows an inflatable footrest / leg-rest cushion (e.g. Fly Tot, Plane Pal, JetKids BedBox) that fills the foot-well so the 3-year-old can stretch out and sleep on the LAX–SYD legs (UA 842 / UA 839). Finding: United does not allow them — it treats the device as a seat alteration that impedes emergency egress from the row. Default: do not pack one; use an approved travel pillow and the child's own seat instead. Confirm with United for the specific cabin if the family still wants to try. | Open |
 
 ## During-Trip Tasks
 
