@@ -90,7 +90,6 @@
 | Should the July 13-14 Mammoth Lakes / Death Valley sequence remain after safety checks? | The drive depends on Sonora Pass (CA-108), US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback. | Open |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not fixed. | Open |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full Los Angeles day and add crowd, cost, and height-rule constraints. | Skip theme parks on this first plan. | Open |
-| Will the family bring or rent the younger child's car seat? | It affects airport transfers, airline logistics, rental car pickup, and vehicle fit. | Decided: bring the family's own approved seat. | Resolved |
 | Which one Las Vegas paid indoor attraction or show should be the anchor? | Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat. | Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics. | Open |
 
 ## Sources
