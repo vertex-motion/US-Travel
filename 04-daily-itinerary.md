@@ -157,15 +157,17 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
 - Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
 
-### Day 16: Monday, July 13 - San Francisco / Bay Area to Yosemite Valley and Mammoth Lakes
+### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
 
 - Sleep: Booked Outbound Mammoth, Mammoth Lakes.
-- Morning: Leave the booked Mountain View hotel early and drive toward Yosemite Valley.
-- Afternoon: Explore Yosemite Valley: Tunnel View, Bridalveil Fall area, Valley viewpoints, Lower Yosemite Fall, meadows, or a short shuttle-based loop. Keep the plan paved, flexible, and heat-aware, then cross Tioga Road toward Mammoth Lakes if conditions remain good.
-- Driving: Mountain View → Yosemite Valley; Yosemite Valley → Mammoth Lakes. Open the dashboard for live distance and time.
-- Reservations: No Yosemite entry reservation needed in 2026. Have the $250 non-resident annual pass ready at the entrance gate (or pay $35/vehicle + $100/adult by card or phone — no cash; passports ready to show residency). See `05-trip-logistics.md` for Mammoth Lakes lodging details.
-- Backup plan: If traffic, heat, smoke, or Tioga Road conditions are poor before the free-cancellation deadline, reassess the Mammoth Lakes night. If problems appear same-day, shorten the Yosemite Valley plan and use the safest open route.
-- Source notes: Yosemite currently shows Tioga Road, Yosemite Valley roads, and Glacier Point Road open, but conditions can change; re-check NPS and Caltrans before the July 13-14 route.
+- Plan: Do **not** enter Yosemite National Park (avoids the $35 entry and the new $100/person non-resident surcharge). Drive the free route around the Sierra on Highway 108 over Sonora Pass to US-395, then south to Mammoth. Scenic, but a long, demanding mountain day.
+- Morning: Leave Mountain View early; CA-120 then CA-108 east through Gold Country toward Sonora Pass.
+- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view), Sonora Pass summit (9,623 ft; picnic area, Pacific Crest Trail, photos); optional short Sardine Falls walk just east of the summit.
+- Afternoon: Descend to US-395 and head south — Mono Lake (South Tufa towers, ~$3/adult and kids free, or free viewpoints at Lee Vining / Old Marina), optional June Lake Loop (CA-158) scenic detour, then into Mammoth Lakes.
+- Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (~7 hours without stops; plan a full day). Open the dashboard for live distance and time.
+- Reservations: None — not entering any national park. (Mono Lake South Tufa is a small per-person fee only.) See `05-trip-logistics.md` for Mammoth Lakes lodging details.
+- Route notes: Sonora Pass (CA-108) is steeper and narrower than Tioga and open in summer only — fine for the SUV but not relaxing. Confirm it is open via Caltrans the morning of Day 16. Easier free alternatives if preferred: Carson Pass (CA-88) or I-80 via Reno (both longer); all join US-395 for the Mono Lake / June Lake stops.
+- Backup plan: If CA-108 is closed, smoky, or the day runs long, use Carson Pass (CA-88) or the I-80 / Reno route to US-395 — both still reach Mammoth and pass Mono Lake.
 
 ### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 

@@ -56,7 +56,7 @@
 | Pasadena-area first hotel operating details | Done | Confirmed: cost/taxes, cancellation terms, parking, and family occupancy. Check-in/checkout and luggage storage are standard. | Done |
 | Historic Santa Maria Inn operating details | Done | Confirmed: cost, cancellation terms, free parking, and family occupancy. Check-in 3:00 pm / checkout 12:00 pm. | Done |
 | Monterey-area hotel operating details | Done | Confirmed: cost/resort fee, cancellation terms, parking ($20/day), and family occupancy. Check-in 4:00 pm / checkout 12:00 pm. | Done |
-| Buy Yosemite / national-park pass | Before the trip | No 2026 entry reservation needed. New 2026 non-resident surcharge is $100/person (16+), so the two adults owe $200 + $35 vehicle at the gate (card/phone only, passports ready). Better value: buy one America the Beautiful Non-Resident Annual Pass ($250) — covers the family, waives the surcharge, and also covers Death Valley and Red Rock. Buy online at store.usgs.gov / recreation.gov. | Open |
+| Yosemite park pass — not needed | Done | Decided not to enter Yosemite. We drive the free route around the park (Highway 108 / Sonora Pass) to Mammoth, so there is no entrance fee or $100/person surcharge and no pass to buy. | Done |
 
 ## During-Trip Tasks
 
@@ -65,7 +65,7 @@
 | --- | --- | --- | --- |
 | Re-check road and weather conditions before long transfer days | Morning of each transfer | Confirm Highway 1, Tioga Road, US-395, CA-190, Death Valley, I-15, smoke, heat, and traffic as relevant for that day. | Open |
 | Highway 1 / Big Sur status | Morning of Days 7-10 | Use Caltrans before the Los Angeles-to-Central-Coast move, the Central Coast-to-Monterey transfer, and any Big Sur reach. | Open |
-| Yosemite road and shuttle status | Before July 10 cancellation deadline, week of arrival, and morning of Day 16 | Confirm Yosemite Valley roads, Tioga Road / CA-120, roadwork, smoke, and whether the July 13 Valley plus Mammoth Lakes arrival plan still works. | Open |
+| Sonora Pass (CA-108) status | Week of arrival and morning of Day 16 | Confirm Highway 108 / Sonora Pass is open (Caltrans) and weather/smoke are OK for the around-Yosemite drive to Mammoth. Fallback: Carson Pass (CA-88) or I-80 via Reno — both reach Mammoth on US-395. | Open |
 | Keep daily pacing realistic | Every day | Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows. | Open |
 | Review next-day logistics each evening | Every evening | Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day. | Open |
 | Keep Las Vegas heat-aware | Las Vegas days | Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel. | Open |
@@ -86,7 +86,7 @@
 | Question | Why it matters | Recommended default | Status |
 | --- | --- | --- | --- |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. | Open |
-| Should the July 13-14 Yosemite / Mammoth Lakes / Death Valley sequence remain in the plan after safety checks? | This is the hardest route sequence and depends on Tioga Road, US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback. | Open |
+| Should the July 13-14 Mammoth Lakes / Death Valley sequence remain after safety checks? | The drive depends on Sonora Pass (CA-108), US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback. | Open |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not fixed. | Open |
 | Does the family want a theme park day? | Disneyland or Universal would consume a full Los Angeles day and add crowd, cost, and height-rule constraints. | Skip theme parks on this first plan. | Open |
 | Will the family bring or rent the younger child's car seat? | It affects airport transfers, airline logistics, rental car pickup, and vehicle fit. | Decided: bring the family's own approved seat. | Resolved |
