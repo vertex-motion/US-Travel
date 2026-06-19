@@ -1067,6 +1067,30 @@
     }
     .place-tile-cta svg { width: 16px; height: 16px; }
     .place-tile-static { cursor: default; }
+    .geo-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+    .geo-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-solid);
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .geo-btn:hover {
+      color: var(--ink);
+      border-color: var(--coral);
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+    }
+    .geo-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
 
     /* Driving legs */
     .drive-legs { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -2501,15 +2525,28 @@
         : `<span class="resv-badge resv-needed" title="Reservation required">${icon("ticket")}<span>Reservation needed</span></span>`;
     }
 
+    const geoBtn = (href, iconName, label, title) =>
+      `<a class="geo-btn" href="${escapeHtml(href)}" target="_blank" rel="noopener" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${icon(iconName)}<span>${escapeHtml(label)}</span></a>`;
+
+    function renderPlaceButtons(place) {
+      if (place.map === false) return "";
+      const q = encodeURIComponent(place.query || place.name);
+      const name = place.name;
+      return `<div class="geo-btns">
+        ${geoBtn(`https://maps.apple.com/?q=${q}`, "apple", "Place", `Open ${name} in Apple Maps`)}
+        ${geoBtn(`https://maps.apple.com/?daddr=${q}&dirflg=d`, "apple", "Route", `Drive to ${name} in Apple Maps`)}
+        ${geoBtn(`https://www.google.com/maps/search/?api=1&query=${q}`, "google", "Place", `Open ${name} in Google Maps`)}
+        ${geoBtn(`https://www.google.com/maps/dir/?api=1&destination=${q}&travelmode=driving`, "google", "Route", `Drive to ${name} in Google Maps`)}
+      </div>`;
+    }
+
     function renderPlaceRows(places = []) {
       if (!places.length) return "";
       return `<div class="place-list">${places.map((place) => {
         const inner = `<span class="place-tile-head"><span class="place-tile-name">${escapeHtml(place.name)}</span>${renderReservationBadge(place.name)}</span>
           <span class="place-tile-role">${escapeHtml(place.role)}</span>
-          ${place.map === false ? "" : `<span class="place-tile-cta">${icon("pin")}<span>View place</span></span>`}`;
-        return place.map === false
-          ? `<div class="place-tile place-tile-static">${inner}</div>`
-          : `<a class="place-tile" href="${escapeHtml(mapSearchUrl(place.query || place.name))}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(place.name)} in Google Maps">${inner}</a>`;
+          ${renderPlaceButtons(place)}`;
+        return `<div class="place-tile place-tile-static">${inner}</div>`;
       }).join("")}</div>`;
     }
 
@@ -2524,7 +2561,9 @@
       moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>',
       dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>',
       pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>',
-      check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
+      check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+      apple: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-3.09 2.52-4.57 2.64-4.64-1.44-2.11-3.68-2.4-4.48-2.43-1.91-.19-3.72 1.12-4.69 1.12-.96 0-2.45-1.09-4.03-1.06-2.07.03-3.98 1.2-5.05 3.06-2.15 3.73-.55 9.26 1.55 12.29 1.03 1.48 2.25 3.15 3.86 3.09 1.55-.06 2.13-1 4-1 1.86 0 2.39 1 4.03.97 1.66-.03 2.71-1.51 3.73-3 .96-1.41 1.36-2.78 1.38-2.85-.03-.01-2.65-1.02-2.68-4.04z"/><path d="M14.53 4.6c.85-1.03 1.42-2.46 1.27-3.89-1.22.05-2.71.81-3.59 1.84-.79.91-1.48 2.37-1.29 3.77 1.36.11 2.75-.69 3.61-1.72z"/></svg>',
+      google: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 12.23c0-.66-.06-1.29-.17-1.9H12v3.6h5.38a4.6 4.6 0 0 1-2 3.02v2.5h3.23c1.89-1.74 2.99-4.3 2.99-7.22z"/><path fill="currentColor" d="M12 22c2.7 0 4.96-.9 6.62-2.43l-3.23-2.5c-.9.6-2.05.96-3.39.96-2.6 0-4.81-1.76-5.6-4.12H3.07v2.59A10 10 0 0 0 12 22z"/><path fill="currentColor" d="M6.4 13.91A6 6 0 0 1 6.09 12c0-.66.11-1.31.32-1.91V7.5H3.07A10 10 0 0 0 2 12c0 1.61.39 3.14 1.07 4.5z"/><path fill="currentColor" d="M12 5.97c1.47 0 2.79.5 3.83 1.5l2.87-2.87C16.95 2.99 14.7 2 12 2A10 10 0 0 0 3.07 7.5l3.33 2.59C7.19 7.73 9.4 5.97 12 5.97z"/></svg>'
     };
     const icon = (name) => ICONS[name] || "";
 
