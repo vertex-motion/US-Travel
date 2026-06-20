@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd=$(jq -r \".tool_input.command // \\\"\\\"\"); if printf \"%s\" \"$cmd\" | grep -qE \"(gh[[:space:]]+pr[[:space:]]+create)|(git[[:space:]]+checkout[[:space:]]+-b)|(git[[:space:]]+switch[[:space:]]+(-c|--create))|(git[[:space:]]+branch[[:space:]]+[^-])\"; then printf \"%s\" \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"PreToolUse\\\",\\\"permissionDecision\\\":\\\"deny\\\",\\\"permissionDecisionReason\\\":\\\"BLOCKED by project policy (CLAUDE.md): this repo requires committing DIRECTLY to main. Do NOT create a branch or open a pull request. Commit and push to main instead: git add -A && git commit -m ... && git push origin main.\\\"}}\"; fi",
+            "statusMessage": "Checking commit policy (no PRs)"
+          }
+        ]
+      }
+    ]
+  }
+}
