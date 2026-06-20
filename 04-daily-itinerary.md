@@ -111,14 +111,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
-### Day 11: Wednesday, July 8 - Mountain View / Bay Area Buffer
+### Day 11: Wednesday, July 8 - California's Great America (Santa Clara)
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Use the extra Bay Area night as a soft start: hotel pool/rest, neighborhood walk, Stanford campus, Mountain View / Palo Alto, or a San Francisco waterfront / Exploratorium day if weather and traffic are favorable.
-- Afternoon: Keep this flexible for Golden Gate weather, Stanford / Palo Alto wandering, or a child-led reset.
-- Driving: Mountain View → Stanford University; Mountain View → Exploratorium. Open the dashboard for live distance and time.
-- Reservations: None unless choosing Exploratorium or another ticketed backup.
-- Backup plan: Treat this as the Bay Area recovery day if the Monterey transfer was slow.
+- Morning: Drive ~10-15 min to California's Great America in Santa Clara; arrive at opening (rope drop) to beat both crowds and afternoon heat. The 13-year-old rides the bigger coasters (Gold Striker, RailBlazer); the 3-year-old does Planet Snoopy / KidZville. Use rider swap for height-restricted rides.
+- Afternoon: Continue in the park with a midday break or water-play for the 3-year-old; leave when the toddler fades.
+- Driving: Mountain View → California's Great America, Santa Clara (~6 miles). Open the dashboard for live distance and time.
+- Reservations: Buy dated tickets online ahead (cheaper and guarantees entry). Wednesday is chosen as the least-crowded flex day (Tue-Thu are quietest; Sat is busiest); no Levi's Stadium World Cup conflict in this window. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md).
+- Backup plan: If the family skips the park, fall back to a soft Bay Area day (hotel pool/rest, Stanford campus, or a San Francisco waterfront / Exploratorium outing). On a heat-spike day, swap to the cooler Santa Cruz Beach Boardwalk.
 
 ### Day 12: Thursday, July 9 - Golden Gate and Presidio
 
