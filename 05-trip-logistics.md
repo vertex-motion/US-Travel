@@ -86,6 +86,18 @@ Known disruptions and what to confirm before each affected leg. Update before tr
 | Final LAX departure | Jul 18 | No active disruption | Pasadena is not airport-adjacent; allow large buffer | Confirm terminal, rental return location, fuel stop, return buffer, international check-in buffer, and luggage timing before final departure day | — |
 
 
+## Tolls
+
+<!-- tag: traveler-notes -->
+
+The route is near-toll-free. Full detail in [Research/toll-roads-and-electronic-tolling.md](Research/toll-roads-and-electronic-tolling.md).
+
+- The only likely road toll is **one Golden Gate Bridge crossing** (~$10.50, **southbound only**, charged only if the San Francisco day drives across the bridge). All California tolls are cashless — no booths or gates to stop at.
+- Pay it directly via a **One-Time Payment** at bayareafastrak.org using the rental's license plate (online, up to 30 days before or within 48 hours after) to avoid the SIXT pay-by-plate admin fee. Do not buy any rental all-inclusive tolling add-on.
+- **Avoid** LA Metro ExpressLanes (I-10 / I-110) and any FasTrak/ExpressLanes lane — they are optional, need a FasTrak account, and carry a ~$491 fine for crossing the double white line. Stay in the free general lanes. Orange County toll roads are off-route.
+- Central Coast, Sierra, Death Valley, all of Nevada, and the I-15 return are toll-free.
+
+
 ## Sources
 
 <!-- tag: sources -->

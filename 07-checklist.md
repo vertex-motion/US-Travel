@@ -69,6 +69,7 @@
 | Sonora Pass (CA-108) status | Week of arrival and morning of Day 16 | Confirm Highway 108 / Sonora Pass is open (Caltrans) and weather/smoke are OK for the around-Yosemite drive to Mammoth. Fallback: Carson Pass (CA-88) or I-80 via Reno — both reach Mammoth on US-395. | Open |
 | Keep daily pacing realistic | Every day | Prefer one main sight per day, use backups when energy drops, and protect toddler rest windows. | Open |
 | Review next-day logistics each evening | Every evening | Confirm checkout time, parking, fuel, route, tickets, weather, luggage, and breakfast timing for the next day. | Open |
+| Pay the Golden Gate Bridge toll | Bay Area days, if the San Francisco day crosses the bridge | Settle the ~$10.50 southbound toll yourself with a One-Time Payment at bayareafastrak.org using the rental's license plate (online, up to 30 days before or within 48 hours after crossing) to avoid the SIXT pay-by-plate admin fee. No booths or gates — all-electronic. Stay out of LA/OC express lanes. See [Research/toll-roads-and-electronic-tolling.md](Research/toll-roads-and-electronic-tolling.md). | Open |
 | Keep Las Vegas heat-aware | Las Vegas days | Move outdoor time to early morning or evening and keep peak heat indoors, at the pool, or in the hotel. | Open |
 | Protect LAX departure buffer | Final Los Angeles day | Prioritize fuel, rental return, terminal transfer, luggage, and international check-in over sightseeing. | Open |
 
