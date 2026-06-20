@@ -33,10 +33,10 @@ Verify live hours, prices, and ride heights close to travel; parks change schedu
 | **Six Flags Discovery Kingdom** (Vallejo) | [sixflags.com/discoverykingdom](https://www.sixflags.com/discoverykingdom) | ~50 mi · ~55–70 min | Teens / thrill | Limited — height limits | **Best fit** — big coasters + animals |
 
 Notes:
-- **Great America** is essentially next door to the Mountain View hotel — the only park you can reach in well under 20 minutes. Free entry to the land/park requires a ticket; under-2s typically free (the 3-year-old needs a ticket). Hours in summer roughly **10:00 am–6:00 pm or later**.
-- **Santa Cruz Beach Boardwalk** has **free admission**; you pay per ride or buy an unlimited-ride wristband. Coastal — cooler and often foggy in the morning, clearing by midday. Pairs naturally with a beach afternoon.
-- **Gilroy Gardens** is a gentle family/garden park (summer hours ~**11:00 am–5:00 pm**, open daily in season). Strongest for the 3-year-old; the 13-year-old may find it tame.
-- **Six Flags Discovery Kingdom** mixes thrill coasters with marine/animal exhibits; furthest and most intense — best if the day is built around the teen.
+- **Great America** is essentially next door to the Mountain View hotel — the only park you can reach in well under 20 minutes. **Online single-day tickets from ~$45** (gate price higher); under-2s free, so the 3-year-old needs a ticket. Hours in summer roughly **10:00 am–6:00 pm or later**.
+- **Santa Cruz Beach Boardwalk** has **free admission**; you pay per ride or buy an **all-day ride wristband ~$40–50** (cheaper bought online; ~$20–30 on summer discount nights). Coastal — cooler and often foggy in the morning, clearing by midday. Pairs naturally with a beach afternoon.
+- **Gilroy Gardens** is a gentle family/garden park (summer hours ~**11:00 am–5:00 pm**, open daily in season). **Advance online ~$65 (gate $80)**; under-3 free, ages 3–11 need a ticket. Strongest for the 3-year-old; the 13-year-old may find it tame.
+- **Six Flags Discovery Kingdom** mixes thrill coasters with marine/animal exhibits; furthest and most intense. **Online single-day from ~$39 (~$49 any-day)**. Best if the day is built around the teen.
 
 ---
 
@@ -85,7 +85,7 @@ Mapping that onto the family's actual days:
 - California's Great America — official site & park hours: <https://www.sixflags.com/cagreatamerica> · <https://www.sixflags.com/cagreatamerica/park-hours>
 - Thrill Data — Great America wait times & best days to visit (Tue least busy, Sat busiest): <https://www.thrill-data.com/waits/park/cedar-fair/californias-great-america/>
 - Discover Santa Clara — Great America summer 2026 dates & World Cup closure note: <https://www.discoversantaclara.org/place/californias-great-america/>
-- Santa Cruz Beach Boardwalk — official site: <https://beachboardwalk.com/>
-- Gilroy Gardens — official site & calendar/hours: <https://www.gilroygardens.org/> · <https://www.gilroygardens.org/calendar-hours/>
-- Six Flags Discovery Kingdom — official site: <https://www.sixflags.com/discoverykingdom>
+- Santa Cruz Beach Boardwalk — official site & ride/wristband pricing: <https://beachboardwalk.com/> · <https://beachboardwalk.com/tickets/>
+- Gilroy Gardens — official site & tickets/memberships (2026 pricing): <https://www.gilroygardens.org/> · <https://www.gilroygardens.org/tickets-memberships/>
+- Six Flags Discovery Kingdom — official site & daily tickets: <https://www.sixflags.com/discoverykingdom> · <https://www.sixflags.com/discoverykingdom/daily-tickets>
 - Bay Area World Cup match schedule (all by July 1): [`world-cup-2026-matches.md`](world-cup-2026-matches.md)
