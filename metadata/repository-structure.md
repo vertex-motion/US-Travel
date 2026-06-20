@@ -13,7 +13,7 @@ Canonical inventory of planning files and their scope rules.
 | `05-trip-logistics.md` | Cross-day logistics: lodging bases, hotel operating details (check-in/checkout times, parking, fees, cancellation), rental car, airport buffers, luggage, route disruptions (active road closures, works, conditions affecting driving), fallback lodging. No day-by-day activity schedules, costs, committed spend, tasks, deadlines, or unresolved decisions. |
 | `06-budget.md` | Costs, ranges, committed spend, quote assumptions, exchange rates, cost-control notes. Never sync to `index.html`. |
 | `07-checklist.md` | All traveler tasks and open decisions: bookings, timed reservations, documents, deadlines, verification, follow-up, and unresolved questions requiring a traveler choice. No guardrails, rejected options, day plans, logistics constraints, or cost tracking. |
-| `index.html` | Presentation view generated from `01-07`. Exclude `06-budget.md`. Also hosts a bespoke **Research** section (Lodging tab) that surfaces the `research/` papers as a collapsed accordion. |
+| `index.html` | Presentation view generated from `01-07`. Exclude `06-budget.md`. Also hosts a dedicated **Research** tab (bespoke, not generated from `01-07`) linked to the `research/` folder: it surfaces those papers as a collapsed accordion and links to each file. |
 
 ## Other Files
 
@@ -23,6 +23,6 @@ Canonical inventory of planning files and their scope rules.
 | `air-tickets/air-tickets.pdf` | Booked air ticket documents. |
 | `metadata/repository-structure.md` | This file — file inventory and planning scope rules. |
 | `metadata/content-tags.md` | Planning content tag definitions and usage rules. |
-| `research/` | Canonical home for finished research papers (one Markdown file per topic, e.g. ESTA, LAX arrival, medical insurance, airline policies). Each uses the `sources` tag. Surfaced read-only in the `index.html` Research accordion; the dashboard links to these files rather than restating them. |
+| `research/` | Canonical home for finished research papers (one Markdown file per topic, e.g. ESTA, LAX arrival, medical insurance, airline policies). Each uses the `sources` tag. Surfaced read-only in the `index.html` **Research** tab (collapsed accordion); the dashboard links to these files rather than restating them. |
 | `work/` | Working notes and research scratch files (in-progress, not yet a finished paper). Not synced to `index.html`. |
 | `CLAUDE.md` / `AGENTS.md` | Agent instructions. Must be kept identical. |
