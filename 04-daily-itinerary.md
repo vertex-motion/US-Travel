@@ -190,15 +190,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: Book only one ticketed attraction or show for the day.
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
-### Day 19: Thursday, July 16 - Red Rock or Las Vegas Flex Day
+### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day
 
 - Sleep: Booked Las Vegas Strip hotel.
-- Morning: Optional early Red Rock Canyon scenic drive, only if the family leaves early and heat is manageable. Otherwise use hotel pool time.
+- Morning: Hotel pool time and a slow start after the trip's long driving days.
 - Afternoon: Rest, packing buffer, indoor attraction, or low-key shopping near the hotel.
 - Evening: Final Bellagio fountains, Fremont Street only if the family explicitly wants a louder/crowded scene, or early night before the loop-closure drive.
-- Driving: Las Vegas Strip → Red Rock Canyon National Conservation Area. Open the dashboard for live distance and time.
-- Reservations: Red Rock scenic drive reservations are not required in July, but re-check rules, heat, and parking before committing.
-- Backup plan: Treat the day as hotel/pool recovery if the desert heat is too high.
+- Driving: None planned; keep the day Strip-based.
+- Backup plan: Add a second indoor attraction or a longer pool block if the family wants more structure.
 
 ### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
 
@@ -284,4 +283,3 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 | Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window. | National Weather Service Las Vegas | [July Climate Data for Las Vegas](https://www.weather.gov/media/vef/July_Temps.pdf) | 2026-05-13 | Current climate normal |
 | Bellagio publishes daily fountain display windows, but schedule can vary and outdoor shows can be canceled by weather. | Bellagio | [Fountains of Bellagio](https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html) | 2026-05-13 | Current; re-check before visit |
 | Sphere Experience content, dates, times, prices, and availability are subject to change. | Sphere | [The Sphere Experience](https://www.thesphere.com/shows/the-sphere-experience) | 2026-05-13 | Current; verify before booking |
-| Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking can fill and summer hours apply. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |

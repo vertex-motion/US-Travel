@@ -38,7 +38,6 @@
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
 | Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
-| Red Rock Canyon, if used | Week before travel and morning of Day 19 | Re-check entry rules, parking, weather, and fire/closure notices. | Open |
 
 ## Pre-Departure Tasks
 
@@ -89,8 +88,7 @@
 | Question | Why it matters | Recommended default | Status |
 | --- | --- | --- | --- |
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. | Open |
-| Should the July 13-14 Mammoth Lakes / Death Valley sequence remain after safety checks? | The drive depends on Sonora Pass (CA-108), US-395, CA-190, Death Valley road status, heat, smoke, weather, fuel/water stops, and family energy. | Keep it only if checks before the Mammoth cancellation deadline and same-week checks are good; otherwise use the Bakersfield / Tehachapi fallback. | Open |
-| Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Keep it optional for Day 19, not fixed. | Open |
+| Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Decided: **No.** Red Rock is not included. Day 19 is a Las Vegas flex / pool / recovery day. See Day 19 in [`04-daily-itinerary.md`](04-daily-itinerary.md). | Resolved |
 | Which theme park(s) to visit? | Park and ride choices depend on crowds, cost, a second-park-day tradeoff, and the 3-year-old's height (40″+ rides shut her out). | Decided: **California's Great America on Wednesday July 8 (Day 11)** — closest all-ages Bay Area park, chosen on a low-crowd weekday. **Universal Studios Hollywood not taken** (most rides 40″–48″ exclude the 3-year-old, busier July crowds, and it would make two park days). LA Disneyland also not taken. Confirm the 3-year-old's ride access after the pre-departure height measurement. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md) and [`research/theme-parks-los-angeles.md`](research/theme-parks-los-angeles.md). | Resolved |
 | Which one Las Vegas paid indoor attraction or show should be the anchor? | Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat. | Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics. | Open |
 
@@ -134,4 +132,3 @@
 | Las Vegas has family-friendly indoor, free, pool, show, and attraction options, but selected attractions need current age, ticket, and date checks. | Visit Las Vegas | [Things to Do in Vegas With Kids](https://www.visitlasvegas.com/experience/post/things-to-do-in-las-vegas-with-kids/) | 2026-05-13 | Current; verify selected attraction dates |
 | Normal July highs in Las Vegas are around 103-105 degrees F during this itinerary window. | National Weather Service Las Vegas | [July Climate Data for Las Vegas](https://www.weather.gov/media/vef/July_Temps.pdf) | 2026-05-13 | Current climate normal |
 | Sphere Experience event details and availability are subject to change. | Sphere | [The Sphere Experience](https://www.thesphere.com/shows/the-sphere-experience) | 2026-05-13 | Current; verify before booking |
-| Red Rock Canyon Scenic Drive reservations are not required June 1-September 30, but parking and current conditions still need a same-week check. | Recreation.gov | [Red Rock Canyon Scenic Drive Timed Entry](https://www.recreation.gov/timed-entry/10075177) | 2026-05-13 | Current; re-check before travel |
