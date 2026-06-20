@@ -187,7 +187,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
 - Evening: Fountains of Bellagio, High Roller, or a short Strip walk if temperatures and crowds are manageable.
 - Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Sphere; Las Vegas Strip → The High Roller. Open the dashboard for live distance and time.
-- Reservations: Book only one ticketed attraction or show for the day.
+- Reservations: Book only one ticketed attraction or show for the day. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium).
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
 ### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day

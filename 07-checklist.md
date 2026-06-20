@@ -37,7 +37,7 @@
 | Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
-| Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. | Open |
+| Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. Ranked options and official links in [Vegas indoor attractions research](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium). | Open |
 
 ## Pre-Departure Tasks
 
@@ -90,7 +90,7 @@
 | Which Silicon Valley tech stops should anchor Day 13? | Stanford and Golden Gate are fixed preferences, but the tech day should not try to cover every company campus. | Default to Stanford plus Google Visitor Experience and Computer History Museum; use Apple Park Visitor Center or The Tech Interactive as swaps. | Open |
 | Should Red Rock Canyon be included in Las Vegas? | It adds a desert nature moment, but July heat makes it only an early-morning option. | Decided: **No.** Red Rock is not included. Day 19 is a Las Vegas flex / pool / recovery day. See Day 19 in [`04-daily-itinerary.md`](04-daily-itinerary.md). | Resolved |
 | Which theme park(s) to visit? | Park and ride choices depend on crowds, cost, a second-park-day tradeoff, and the 3-year-old's height (40″+ rides shut her out). | Decided: **California's Great America on Wednesday July 8 (Day 11)** — closest all-ages Bay Area park, chosen on a low-crowd weekday. **Universal Studios Hollywood not taken** (most rides 40″–48″ exclude the 3-year-old, busier July crowds, and it would make two park days). LA Disneyland also not taken. Confirm the 3-year-old's ride access after the pre-departure height measurement. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md) and [`research/theme-parks-los-angeles.md`](research/theme-parks-los-angeles.md). | Resolved |
-| Which one Las Vegas paid indoor attraction or show should be the anchor? | Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat. | Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics. | Open |
+| Which one Las Vegas paid indoor attraction or show should be the anchor? | Las Vegas has many paid options, but booking several would raise cost and reduce flexibility in July heat. | Choose only one after checking age rules, schedule, refund terms, total price, and hotel logistics. Ranked alternatives and official links in [Vegas indoor attractions research](Research/las-vegas-indoor-attractions-and-shows.md): Shark Reef (value), Omega Mart (wow/teen), Blue Man Group (show); skip Sphere/Cirque as anchor due to the 3-year-old. | Open |
 
 ## Sources
 
