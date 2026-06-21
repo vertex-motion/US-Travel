@@ -54,6 +54,15 @@ See [`metadata/content-tags.md`](metadata/content-tags.md) for tag definitions a
 
 The **Research** tab is bespoke (not generated from `01-07`). Each entry must be **self-contained**: a reader must be able to act on it without opening the research file — include the decision/recommendation and the key facts (e.g. options, costs, ages, links) that support it, as a table when comparing options. Keep it **summary-level, not exhaustive**: omit full reasoning, every source, and edge-case detail. Always keep the "Read the full paper" link for the complete write-up. When the linked research file changes, update the tab entry to match.
 
+## Itinerary Parking (Mandatory)
+
+Each discrete attraction in an itinerary day card (`index.html` `days[].places[]`) must carry a `parking` array. When adding, renaming, or replacing an attraction or sightseeing stop, add or update its `parking` in the same change.
+
+- Each `parking` entry must have a short `name` (a real lot name, or `P1`/`P2`/`P3` when none fits), a `cost`, and a `query` used for map links.
+- List up to three parking areas per attraction.
+- Each area must render four map buttons: Apple and Google, place (`P`) and route (`R`).
+- Do not add `parking` to lodging bases, airports, route corridors, or combined placeholder entries.
+
 ## Trip Change Impact Review
 
 When the user adds a fact, preference, constraint, booking, task, or decision: check impact across itinerary, route, lodging, transport, budget, checklist, options, and open questions. Present proposed follow-up changes as a table before making any change the user did not explicitly request.
