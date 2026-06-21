@@ -1092,6 +1092,55 @@
     }
     .geo-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
 
+    /* Parking (per-attraction expander) */
+    .parking-details { margin-top: 9px; border-top: 1px dashed var(--line); padding-top: 8px; }
+    .parking-summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      user-select: none;
+    }
+    .parking-summary::-webkit-details-marker { display: none; }
+    .parking-summary:hover { color: var(--ink); }
+    .parking-summary svg { width: 14px; height: 14px; flex-shrink: 0; }
+    .parking-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 17px;
+      height: 17px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--line);
+      color: var(--ink);
+      font-size: 0.66rem;
+      font-weight: 750;
+    }
+    .parking-chev { display: inline-flex; transition: transform 0.18s ease; }
+    .parking-chev svg { width: 13px; height: 13px; }
+    .parking-details[open] .parking-chev { transform: rotate(180deg); }
+    .parking-body { display: flex; flex-direction: column; gap: 8px; margin-top: 9px; }
+    .parking-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-solid);
+    }
+    .parking-info { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+    .parking-name { font-weight: 700; font-size: 0.82rem; line-height: 1.3; }
+    .parking-cost { color: var(--muted); font-size: 0.78rem; font-weight: 650; white-space: nowrap; }
+    .parking-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+    .parking-note { color: var(--muted); font-size: 0.7rem; margin: 1px 0 0; }
+
     /* Driving legs */
     .drive-legs { display: flex; flex-wrap: wrap; gap: 10px; }
 
@@ -2170,10 +2219,10 @@
       ],
       days: [
         { day: 1, driveLegs: [["LAX Airport, Los Angeles","Pasadena, CA"]], date: "Sunday, June 28", title: "Arrive Los Angeles", region: "Los Angeles", dayType: "Arrival", sleep: "Pasadena-area booked hotel", summary: "UA 842 arrives LAX at 6:10 am; rental car pickup is booked for 8:00 am; first hotel check-in is 3:00 pm.", focus: "Clear arrival logistics, pick up the car, and settle into the Pasadena-area base.", places: [{ name: "Los Angeles International Airport", role: "Arrival gateway and rental car pickup" }, { name: "Pasadena area", role: "Booked first hotel base" }], flow: [{ slot: "Morning", kind: "travel", text: "Arrive LAX on UA 842, clear immigration, collect bags, and pick up the booked rental car at 8:00 am." }, { slot: "Afternoon", kind: "rest", text: "Check in at 3:00 pm if the room is ready, unpack, nap, pool, or short Pasadena-area walk." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Booked rental car pickup at 8:00 am; booked hotel check-in at 3:00 pm; confirm luggage storage.", tone: "warn" }], backup: "If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in." },
-        { day: 2, driveLegs: [["Pasadena, CA","Kidspace Children's Museum, Pasadena, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Monday, June 29", title: "Pasadena or Santa Monica Arrival Recovery", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Gentle first full day from the Pasadena-area base.", focus: "Keep the first full day gentle and pram-friendly.", places: [{ name: "Pasadena area", role: "Local recovery" }, { name: "Kidspace Children's Museum", role: "Optional child-first reset" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "rest", text: "Slow start, hotel pool, Pasadena-area walk, Kidspace, or Santa Monica beach path if energy is good." }, { slot: "Afternoon", kind: "optional", text: "Kidspace, beach/playground time, or quiet neighborhood walk." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Kidspace or Cayton only if using a child-first reset.", tone: "info" }], backup: "Make this a hotel, local walk, and early-dinner day only if jet lag is heavy." },
-        { day: 3, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Petersen Automotive Museum, Los Angeles, CA"]], date: "Tuesday, June 30", title: "Gentle Los Angeles Buffer Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Flexible recovery, errands, and one short local outing.", focus: "Use the extra arrival time without overloading the first week.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Petersen Automotive Museum", role: "Optional" }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool, Pasadena-area playground, groceries, laundry, or short neighborhood walk." }, { slot: "Afternoon", kind: "optional", text: "Short neighborhood outing, Griffith-adjacent viewpoint, Petersen, Rodeo Drive walk, or rest." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed museum.", tone: "good" }], backup: "Treat this as a recovery and logistics day if the first two nights are rough." },
-        { day: 4, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"]], date: "Wednesday, July 1", title: "Getty, Academy Museum, or Griffith", region: "Los Angeles", dayType: "Sightseeing", sleep: "Pasadena-area booked hotel", summary: "Choose one LA anchor and keep the afternoon flexible.", focus: "Avoid cross-city overload before the coast drive.", places: [{ name: "Griffith Observatory", role: "Primary option" }, { name: "Getty Center", role: "Primary option" }, { name: "Academy Museum of Motion Pictures", role: "Primary option" }], flow: [{ slot: "Morning", kind: "core", text: "Choose one primary LA anchor: Griffith, Getty, or Academy Museum." }, { slot: "Afternoon", kind: "rest", text: "Rest, Kidspace / playground time, Rodeo Drive walk, Petersen, or hotel pool." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Getty, Academy, or planetarium checks if selected.", tone: "warn" }], backup: "If cross-town traffic is poor, stay Pasadena / Griffith-local." },
-        { day: 5, driveLegs: [["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Thursday, July 2", title: "Flexible Los Angeles Day", region: "Los Angeles", dayType: "Flexible", sleep: "Pasadena-area booked hotel", summary: "Second LA sample or another soft recovery day.", focus: "Let energy decide whether this is sightseeing or rest.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Getty / Academy / Griffith", role: "If not used Day 4" }, { name: "Santa Monica", role: "Optional beach outing" }], flow: [{ slot: "Morning", kind: "optional", text: "Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or simple neighborhood morning." }, { slot: "Afternoon", kind: "rest", text: "Hotel pool, shopping errand, playground, or low-key museum backup." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Only for a chosen ticketed attraction.", tone: "info" }], backup: "Keep the day local and save energy for the July 4 coast move." },
+        { day: 2, driveLegs: [["Pasadena, CA","Kidspace Children's Museum, Pasadena, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Monday, June 29", title: "Pasadena or Santa Monica Arrival Recovery", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Gentle first full day from the Pasadena-area base.", focus: "Keep the first full day gentle and pram-friendly.", places: [{ name: "Pasadena area", role: "Local recovery" }, { name: "Kidspace Children's Museum", role: "Optional child-first reset", parking: [{ name: "P1 · Kidspace / Brookside lot", cost: "Free (event days may charge)", query: "Kidspace Children's Museum parking, Pasadena, CA" }, { name: "P2 · Rose Bowl Lot K", cost: "Free except event days", query: "Rose Bowl Lot K, Pasadena, CA" }] }, { name: "Santa Monica", role: "Optional beach outing", parking: [{ name: "P1 · Pier Deck", cost: "~$15/day beach rate", query: "Santa Monica Pier parking deck, CA" }, { name: "P2 · Santa Monica Place structure", cost: "Hourly; first 90 min free", query: "Santa Monica Place parking, CA" }, { name: "P3 · Beach Lot (PCH)", cost: "~$13-18/day", query: "Santa Monica State Beach parking lot, CA" }] }], flow: [{ slot: "Morning", kind: "rest", text: "Slow start, hotel pool, Pasadena-area walk, Kidspace, or Santa Monica beach path if energy is good." }, { slot: "Afternoon", kind: "optional", text: "Kidspace, beach/playground time, or quiet neighborhood walk." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Kidspace or Cayton only if using a child-first reset.", tone: "info" }], backup: "Make this a hotel, local walk, and early-dinner day only if jet lag is heavy." },
+        { day: 3, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Petersen Automotive Museum, Los Angeles, CA"]], date: "Tuesday, June 30", title: "Gentle Los Angeles Buffer Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Flexible recovery, errands, and one short local outing.", focus: "Use the extra arrival time without overloading the first week.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Petersen Automotive Museum", role: "Optional", parking: [{ name: "P1 · Petersen garage (under museum)", cost: "~$18 flat", query: "Petersen Automotive Museum parking, Los Angeles, CA" }, { name: "P2 · Pritzker Family Garage", cost: "~$18 flat", query: "Pritzker Family Garage, 6th and Fairfax, Los Angeles, CA" }, { name: "P3 · Metered street (Fairfax/6th)", cost: "Metered, time-limited", query: "Fairfax Ave and 6th St, Los Angeles, CA" }] }], flow: [{ slot: "Morning", kind: "rest", text: "Hotel pool, Pasadena-area playground, groceries, laundry, or short neighborhood walk." }, { slot: "Afternoon", kind: "optional", text: "Short neighborhood outing, Griffith-adjacent viewpoint, Petersen, Rodeo Drive walk, or rest." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "None unless choosing a ticketed museum.", tone: "good" }], backup: "Treat this as a recovery and logistics day if the first two nights are rough." },
+        { day: 4, driveLegs: [["Pasadena, CA","Griffith Observatory, Los Angeles, CA"],["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"]], date: "Wednesday, July 1", title: "Getty, Academy Museum, or Griffith", region: "Los Angeles", dayType: "Sightseeing", sleep: "Pasadena-area booked hotel", summary: "Choose one LA anchor and keep the afternoon flexible.", focus: "Avoid cross-city overload before the coast drive.", places: [{ name: "Griffith Observatory", role: "Primary option", parking: [{ name: "P1 · Observatory lot & roadside", cost: "Metered ~$10/hr", query: "Griffith Observatory parking, Los Angeles, CA" }, { name: "P2 · Greek Theatre lot + shuttle", cost: "Paid; weekend shuttle", query: "Greek Theatre parking, Los Angeles, CA" }, { name: "P3 · Fern Dell / lower roads", cost: "Free, limited + uphill walk", query: "Fern Dell Drive, Los Angeles, CA" }] }, { name: "Getty Center", role: "Primary option", parking: [{ name: "P1 · Getty Center Garage", cost: "$25 (after 3pm $15)", query: "Getty Center parking garage, Los Angeles, CA" }] }, { name: "Academy Museum of Motion Pictures", role: "Primary option", parking: [{ name: "P1 · Pritzker Family Garage", cost: "~$18 flat", query: "Pritzker Family Garage, 6th and Fairfax, Los Angeles, CA" }, { name: "P2 · Metered street (Fairfax/Wilshire)", cost: "Metered, time-limited", query: "Fairfax Ave and Wilshire Blvd, Los Angeles, CA" }] }], flow: [{ slot: "Morning", kind: "core", text: "Choose one primary LA anchor: Griffith, Getty, or Academy Museum." }, { slot: "Afternoon", kind: "rest", text: "Rest, Kidspace / playground time, Rodeo Drive walk, Petersen, or hotel pool." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Getty, Academy, or planetarium checks if selected.", tone: "warn" }], backup: "If cross-town traffic is poor, stay Pasadena / Griffith-local." },
+        { day: 5, driveLegs: [["Pasadena, CA","Getty Center, Los Angeles, CA"],["Pasadena, CA","Academy Museum of Motion Pictures, Los Angeles, CA"],["Pasadena, CA","Santa Monica Pier, CA"]], date: "Thursday, July 2", title: "Flexible Los Angeles Day", region: "Los Angeles", dayType: "Flexible", sleep: "Pasadena-area booked hotel", summary: "Second LA sample or another soft recovery day.", focus: "Let energy decide whether this is sightseeing or rest.", places: [{ name: "Pasadena area", role: "Flexible" }, { name: "Getty / Academy / Griffith", role: "If not used Day 4" }, { name: "Santa Monica", role: "Optional beach outing", parking: [{ name: "P1 · Pier Deck", cost: "~$15/day beach rate", query: "Santa Monica Pier parking deck, CA" }, { name: "P2 · Santa Monica Place structure", cost: "Hourly; first 90 min free", query: "Santa Monica Place parking, CA" }, { name: "P3 · Beach Lot (PCH)", cost: "~$13-18/day", query: "Santa Monica State Beach parking lot, CA" }] }], flow: [{ slot: "Morning", kind: "optional", text: "Griffith / Getty / Academy option not used on Day 4, Pasadena-local time, beach, or simple neighborhood morning." }, { slot: "Afternoon", kind: "rest", text: "Hotel pool, shopping errand, playground, or low-key museum backup." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Only for a chosen ticketed attraction.", tone: "info" }], backup: "Keep the day local and save energy for the July 4 coast move." },
         { day: 6, driveLegs: [["Pasadena, CA","Old Pasadena, Pasadena, CA"]], date: "Friday, July 3", title: "Los Angeles Final Local Day", region: "Los Angeles", dayType: "Recovery", sleep: "Pasadena-area booked hotel", summary: "Pack, rest, and keep the already-booked car logistics simple.", focus: "Keep the day light before the holiday transfer.", places: [{ name: "Pasadena area", role: "Local" }], flow: [{ slot: "Morning", kind: "rest", text: "Easy beach, viewpoint, or neighborhood walk." }, { slot: "Afternoon", kind: "logistics", text: "Pack, laundry, confirm hotel parking / folio handling for the already-booked rental car, or one short local activity." }, ], logistics: [{ label: "Sleep", value: "Booked Pasadena-area hotel.", tone: "info" }, { label: "Reservation", value: "Prepare for 12:00 pm checkout on Day 7.", tone: "info" }], backup: "Keep this as a full rest day before the holiday transfer." },
         { day: 7, driveLegs: [["Pasadena, CA","Santa Barbara, CA"],["Santa Barbara, CA","Pismo Beach, CA"],["Pismo Beach, CA","Santa Maria, CA"]], date: "Saturday, July 4", title: "Los Angeles to Santa Maria", region: "Central Coast", dayType: "Transfer", sleep: "Booked Historic Santa Maria Inn, Santa Maria", summary: "Check out of the Pasadena-area hotel and use the booked Santa Maria overnight to split the coast drive without stopping overnight in Santa Barbara.", focus: "Use Route 1 where sensible while protecting the holiday transfer.", places: [{ name: "Pasadena area", role: "Checkout base" }, { name: "Santa Maria", role: "Booked overnight base" }, { name: "Pismo / Avila Beach area", role: "Optional easy evening" }], flow: [{ slot: "Morning", kind: "transfer", text: "Check out by 12:00 pm; leave early if using CA-1 / PCH segments, otherwise use US-101 for reliability." }, { slot: "Afternoon", kind: "rest", text: "Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy." }, ], logistics: [{ label: "Sleep", value: "Booked Historic Santa Maria Inn, Santa Maria.", tone: "info" }, { label: "Reservation", value: "Booked Historic Santa Maria Inn.", tone: "info" }], backup: "Use US-101 and make the day practical if CA-1 traffic or road controls are poor." },
         { day: 8, driveLegs: [["Santa Maria, CA","Hearst Castle, San Simeon, CA"],["Hearst Castle, San Simeon, CA","Big Sur, CA"],["Big Sur, CA","Monterey, CA"]], date: "Sunday, July 5", title: "Santa Maria to Monterey / Carmel via Route 1", region: "Monterey / Carmel", dayType: "Transfer", sleep: "Booked Monterey-area hotel", summary: "Scenic Highway 1 transfer with Hearst Castle or elephant seals only if timing stays comfortable from Santa Maria.", focus: "Arrive in Monterey without turning the coast into a forced march.", places: [{ name: "San Simeon elephant seals", role: "Flexible stop" }, { name: "Hearst Castle", role: "Optional ticketed stop" }, { name: "Big Sur", role: "Scenic route" }], flow: [{ slot: "Morning", kind: "transfer", text: "Leave Santa Maria after breakfast; use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows it open." }, { slot: "Afternoon", kind: "optional", text: "Elephant seals, short Hearst Castle tour if easy, Big Sur viewpoints, or direct arrival." }, ], logistics: [{ label: "Sleep", value: "Booked Monterey-area hotel.", tone: "info" }, { label: "Reservation", value: "Booked Monterey-area hotel.", tone: "info" }], backup: "Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 is too slow." },
@@ -2758,11 +2807,38 @@
       const q = encodeURIComponent(place.query || place.name);
       const name = place.name;
       return `<div class="geo-btns">
-        ${geoBtn(`https://maps.apple.com/?q=${q}`, "apple", "Place", `Open ${name} in Apple Maps`)}
-        ${geoBtn(`https://maps.apple.com/?daddr=${q}&dirflg=d`, "apple", "Route", `Drive to ${name} in Apple Maps`)}
-        ${geoBtn(`https://www.google.com/maps/search/?api=1&query=${q}`, "google", "Place", `Open ${name} in Google Maps`)}
-        ${geoBtn(`https://www.google.com/maps/dir/?api=1&destination=${q}&travelmode=driving`, "google", "Route", `Drive to ${name} in Google Maps`)}
+        ${geoBtn(`https://maps.apple.com/?q=${q}`, "apple", "P", `Open ${name} in Apple Maps`)}
+        ${geoBtn(`https://maps.apple.com/?daddr=${q}&dirflg=d`, "apple", "R", `Drive to ${name} in Apple Maps`)}
+        ${geoBtn(`https://www.google.com/maps/search/?api=1&query=${q}`, "google", "P", `Open ${name} in Google Maps`)}
+        ${geoBtn(`https://www.google.com/maps/dir/?api=1&destination=${q}&travelmode=driving`, "google", "R", `Drive to ${name} in Google Maps`)}
       </div>`;
+    }
+
+    function renderParking(place) {
+      if (!place.parking || !place.parking.length) return "";
+      const rows = place.parking.map((p) => {
+        const q = encodeURIComponent(p.query || p.name);
+        const nm = escapeHtml(p.name);
+        return `<div class="parking-row">
+          <span class="parking-info">
+            <span class="parking-name">${nm}</span>
+            <span class="parking-cost">${escapeHtml(p.cost)}</span>
+          </span>
+          <span class="parking-btns">
+            ${geoBtn(`https://maps.apple.com/?q=${q}`, "apple", "P", `Open ${p.name} parking in Apple Maps`)}
+            ${geoBtn(`https://maps.apple.com/?daddr=${q}&dirflg=d`, "apple", "R", `Drive to ${p.name} parking in Apple Maps`)}
+            ${geoBtn(`https://www.google.com/maps/search/?api=1&query=${q}`, "google", "P", `Open ${p.name} parking in Google Maps`)}
+            ${geoBtn(`https://www.google.com/maps/dir/?api=1&destination=${q}&travelmode=driving`, "google", "R", `Drive to ${p.name} parking in Google Maps`)}
+          </span>
+        </div>`;
+      }).join("");
+      return `<details class="parking-details">
+        <summary class="parking-summary">${icon("car")}<span>Parking</span><span class="parking-count">${place.parking.length}</span><span class="parking-chev" aria-hidden="true">${icon("chevron")}</span></summary>
+        <div class="parking-body">
+          ${rows}
+          <p class="parking-note">Costs approximate &mdash; verify before travel.</p>
+        </div>
+      </details>`;
     }
 
     function renderPlaceRows(places = []) {
@@ -2770,7 +2846,8 @@
       return `<div class="place-list">${places.map((place) => {
         const inner = `<span class="place-tile-head"><span class="place-tile-name">${escapeHtml(place.name)}</span>${renderReservationBadge(place.name)}</span>
           <span class="place-tile-role">${escapeHtml(place.role)}</span>
-          ${renderPlaceButtons(place)}`;
+          ${renderPlaceButtons(place)}
+          ${renderParking(place)}`;
         return `<div class="place-tile place-tile-static">${inner}</div>`;
       }).join("")}</div>`;
     }
