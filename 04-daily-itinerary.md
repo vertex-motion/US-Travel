@@ -183,10 +183,10 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
 - Sleep: Booked Las Vegas Strip hotel.
-- Morning: Slow hotel breakfast, pool, Bellagio Conservatory, or another indoor/free Strip sight.
-- Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere Experience, Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
-- Evening: Fountains of Bellagio, High Roller, or a short Strip walk if temperatures and crowds are manageable.
-- Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Sphere; Las Vegas Strip → The High Roller. Open the dashboard for live distance and time.
+- Morning: Slow hotel breakfast, pool, or a free, heat-safe Strip walk. Free options: Bellagio Conservatory (indoor, 24h) and Fountains, the Grand Canal Shoppes at the Venetian base hotel (indoor, zero transit), and the Forum Shops at Caesars Palace (indoor Roman streetscape; hourly free Fall of Atlantis show).
+- Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere (The Wizard of Oz), Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
+- Evening: Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), the LINQ Promenade walk to the High Roller, or a short Strip walk if temperatures and crowds are manageable.
+- Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → Flamingo Wildlife Habitat. Open the dashboard for live distance and time.
 - Reservations: Book only one ticketed attraction or show for the day. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium).
 - Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
 
