@@ -3,8 +3,8 @@
 <!-- tag: sources -->
 
 Research into which **single paid indoor attraction or show** the family should book as the Las Vegas anchor. Decision support for the open question *"Which one Las Vegas paid indoor attraction or show should be the anchor?"* in [`07-checklist.md`](../07-checklist.md) and the task *"Las Vegas ticketed attraction or show"*.
-Date researched: 2026-06-20.
-Context: Family of four — two adults (39), a **13-year-old**, and a **3-year-old**. First US trip. Based on the **Las Vegas Strip (Venetian)**, July 14–17, 2026, with the family day on **July 15**. Non-drinking, non-nightlife, slow pace, self-driving (with $20/day in-out self-parking at the base). Plan calls for exactly **one** ticketed anchor; the rest of Vegas stays free/pool/Strip-walk.
+Date researched: 2026-06-20. Ticket availability re-checked 2026-06-22 for the July 14–17 window (see Section 3a).
+Context: Family of four — two adults (39), a **13-year-old**, and a **3-year-old**. First US trip. Based on the **Las Vegas Strip (Venetian)**, July 14–17, 2026, with the family day on **July 15** (a **Wednesday**). Non-drinking, non-nightlife, slow pace, self-driving (with $20/day in-out self-parking at the base). Plan calls for exactly **one** ticketed anchor; the rest of Vegas stays free/pool/Strip-walk.
 Verify live prices, age rules, and showtimes close to travel; Vegas pricing is dynamic and shows rotate.
 
 ---
@@ -18,7 +18,7 @@ Verify live prices, age rules, and showtimes close to travel; Vegas pricing is d
 | Best "wow" anchor if they want something bigger | **Omega Mart at AREA15 (Meow Wolf).** Immersive, self-paced, free for the 3-year-old, and the strongest teen pick. Off-Strip (~10–15 min drive). ~$147 total. See Section 4. |
 | Best **show** (if they specifically want a show) | **Blue Man Group (Luxor).** The only marquee show that genuinely fits a 3-year-old: recommended age **3+** and **under-3 sits on a lap free**. ~$200–216 total. See Section 5. |
 | Zero-effort in-hotel backup | **Madame Tussauds** — inside the Venetian's Grand Canal Shoppes, so **no transit, no heat exposure**, walk-up anytime. ~$120–140 total. |
-| What to skip as the anchor | **Sphere** (great spectacle but ~$380–450 for four, intense/loud, recommended 6+ — the 3-year-old is the weak link) and **Cirque du Soleil** (any child over **1** must buy a full ticket, and a 90-minute seated show is a hard ask for a 3-year-old). See Section 6. |
+| What to skip as the anchor | **Sphere — *The Wizard of Oz at Sphere*** (the immersive show that replaced *Postcard from Earth*; great spectacle but ~$380–450 for four, intense/loud 4D, recommended 5+ — the 3-year-old is the weak link) and **Cirque du Soleil — Mystère** (any child over **1** must buy a full ticket, a 90-minute seated show is a hard ask for a 3-year-old, **and it is dark on Wednesdays — unavailable on the July 15 family day**). See Sections 3a and 6. |
 
 **Bottom line:** For a one-anchor, toddler-inclusive, heat-safe, value day, book **Shark Reef Aquarium**. If the family wants a bigger spectacle and accepts a short off-Strip drive, **Omega Mart** is the better teen day. Reserve **Blue Man Group** only if they specifically want a *show* the 3-year-old can attend. Treat **Sphere** as an adults-plus-teen splurge, not a whole-family anchor, and **drop Cirque** for this trip because of the toddler.
 
@@ -48,8 +48,26 @@ Prices are 2026 online starting prices for **2 adults + 1 teen (13) + 1 toddler 
 | **Madame Tussauds** | Inside the Venetian · **0 min** | **~$120–140** | **OK** — photos, Marvel 4D | **Good** — selfies, interactive | **Full** | 60–90 min, self-paced | **Zero-transit in-hotel backup** |
 | **High Roller** | The LINQ, central Strip · ~10 min | **~$80–100** | **OK** — enclosed ride | **Good** — views | **Mostly** (AC cabins) | 30 min + boarding | Heat-safe, but thin as the day's anchor |
 | **Blue Man Group** | Luxor, S Strip · ~15–20 min | **~$200–216** (3yo lap-free) | **OK** — loud but rec. 3+ | **Excellent** | **Full** | ~90 min, fixed seat | **Best show option** (Section 5) |
-| **Sphere** | Venetian-adjacent · ~5 min | **~$380–450** | **Weak** — rec. 6+, intense | **Excellent** | **Full** | ~75 min, fixed seat | Splurge; toddler is the weak link |
-| **Cirque (Mystère etc.)** | Various · 5–20 min | **~$300+** | **Weak** — over-1 pays, 90 min sit | **Good** | **Full** | ~90 min, fixed seat | **Drop for this trip** (Section 6) |
+| **Wizard of Oz at Sphere** | Venetian-adjacent · ~5 min | **~$380–450** | **Weak** — rec. 5+, intense 4D | **Excellent** | **Full** | ~2 hrs (60-min film + Atrium) | Splurge; toddler is the weak link |
+| **Cirque (Mystère etc.)** | Various · 5–20 min | **~$300+** | **Weak** — over-1 pays, 90 min sit | **Good** | **Full** | ~90 min, fixed seat | **Drop** — also **dark Wed July 15** (Sections 3a, 6) |
+
+---
+
+## 3a. Ticket Availability on the Family Day (Wednesday, July 15, 2026)
+
+Checked 2026-06-22 for the Las Vegas window (July 14–17); family day is July 15. Re-confirm exact showtimes on the official pages before booking.
+
+| Option | Tickets for Wed, July 15? | Notes |
+| --- | --- | --- |
+| **Shark Reef Aquarium** | **Yes** | Open daily 10:00 a.m.–8:00 p.m.; hourly timed entry — reserve a slot. |
+| **Omega Mart (AREA15)** | **Yes** | Open daily. |
+| **Madame Tussauds** | **Yes** | Open daily; walk-up inside the Venetian. |
+| **High Roller** | **Yes** | Operates daily (day and night tickets). |
+| **Blue Man Group** (Luxor) | **Yes** | Runs **7 days/week**, 5:00 & 8:00 p.m. |
+| **Wizard of Oz at Sphere** | **Likely (daytime)** | July 15 sits in a **residency gap** (Kenny Chesney ends July 11, Backstreet Boys start July 16), so daytime film showings (≈11:00 a.m./2:00/5:00 p.m.) should be on sale. Confirm the exact date on Ticketmaster. |
+| **Cirque du Soleil — Mystère** | **No** | **Dark on Wednesdays** (and Thursdays). Not available July 15; nearest shows are July 14 (Tue) or July 17 (Fri). |
+
+**Sphere note:** *Postcard from Earth* has ended. The Sphere immersive show is now **The Wizard of Oz at Sphere** (≈$89–199/person, recommended age **5+**, every guest 2+ needs a ticket).
 
 ---
 
@@ -79,8 +97,8 @@ Prices are 2026 online starting prices for **2 adults + 1 teen (13) + 1 toddler 
 
 ## 6. What to Skip as the Anchor
 
-- **Sphere — *Postcard from Earth*:** a genuine spectacle on the world's largest LED screen, but **recommended age 6+**, intense/loud 4D effects, and **every guest 2+ needs a paid ticket** (~$94–114+ each). For four that is **~$380–450** — the most expensive option, with the 3-year-old as the poorest fit. Consider it only if the family reframes the anchor around the **adults + teen** and accepts the toddler may struggle. Not recommended as the *family* anchor.
-- **Cirque du Soleil (Mystère is the most family-friendly):** marketed "all ages," but **any child over age 1 must buy a full ticket**, and it is a **90-minute seated** show — a hard ask for a 3-year-old, at **~$300+** for the group. A child/under-12 discount exists but only **by phone or box office**, not online. Better suited to a return trip when the youngest is older. **Drop for this trip.**
+- **Sphere — *The Wizard of Oz at Sphere*:** *Postcard from Earth* has ended; the Sphere immersive show is now **The Wizard of Oz at Sphere** — a genuine spectacle on the world's largest LED screen, but **recommended age 5+**, intense/loud 4D effects, and **every guest 2+ needs a paid ticket** (~$89–199 each). For four that is **~$380–450** — the most expensive option, with the 3-year-old as the poorest fit. Daytime film showings should be available July 15 (residency gap), but consider it only if the family reframes the anchor around the **adults + teen** and accepts the toddler may struggle. Not recommended as the *family* anchor.
+- **Cirque du Soleil (Mystère is the most family-friendly):** marketed "all ages," but **any child over age 1 must buy a full ticket**, and it is a **90-minute seated** show — a hard ask for a 3-year-old, at **~$300+** for the group. A child/under-12 discount exists but only **by phone or box office**, not online. **Mystère is also dark on Wednesdays, so it cannot be the July 15 family-day anchor** even if reconsidered. Better suited to a return trip when the youngest is older. **Drop for this trip.**
 - **High Roller:** **air-conditioned cabins** make it heat-safe and it's cheap (~$80–100; tickets from ~$31 adult day / ~$37 night), but a 30-minute wheel rotation is **too thin to be the day's single anchor**. Keep it as a short **evening add-on** (already listed for the evening Strip block), not the paid anchor.
 
 ---
@@ -102,12 +120,12 @@ Go to the **official** page to confirm live 2026 prices, age rules, and showtime
 
 | Attraction / show | Official ticket page |
 | --- | --- |
-| **Shark Reef Aquarium** (Mandalay Bay) | <https://mandalaybay.mgmresorts.com/en/amenities/shark-reef-aquarium.html> |
+| **Shark Reef Aquarium** (Mandalay Bay) | <https://mgmresorts.tixtrack.com/events/b0e668ec-6c0f-514e-6044-abab85ebf351> (MGM official timed-entry booking; the old `/amenities/` page now 404s) |
 | **Omega Mart / Meow Wolf** (AREA15) | <https://meowwolf.com/visit/las-vegas/tickets> |
 | **Madame Tussauds** (Venetian) | <https://www.madametussauds.com/las-vegas/tickets/> |
 | **High Roller** (The LINQ) | <https://www.caesars.com/linq/things-to-do/attractions/high-roller> |
 | **Blue Man Group** (Luxor) | <https://www.blueman.com/las-vegas/buy-tickets> |
-| **Sphere — Postcard from Earth** | <https://www.thesphere.com/shows/the-sphere-experience> |
+| **The Wizard of Oz at Sphere** | <https://www.thesphere.com/shows> |
 | **Cirque du Soleil — Mystère** (Treasure Island) | <https://www.cirquedusoleil.com/mystere> |
 | **Cirque du Soleil — all Las Vegas shows** | <https://www.cirquedusoleil.com/las-vegas-shows> |
 
@@ -115,8 +133,10 @@ Go to the **official** page to confirm live 2026 prices, age rules, and showtime
 
 ## Sources
 
-- Sphere — The Sphere Experience (official): <https://www.thesphere.com/shows/the-sphere-experience>
-- Headout — Sphere: Postcard from Earth (price, age guidance): <https://www.headout.com/immersive-theatre/the-sphere-experience-postcard-from-earth-tickets-e-31258/>
+- Sphere — Shows (official; Wizard of Oz at Sphere, mid-July 2026 residencies): <https://www.thesphere.com/shows>
+- Vegas.com — The Wizard of Oz at Sphere (showtimes, ~$89–199 price, age 5+): <https://www.vegas.com/shows/variety/wizard-of-oz-sphere-las-vegas/>
+- Las Vegas Wonders — The Wizard of Oz at Sphere (schedule, pricing, age): <https://lasvegaswonders.com/the-wizard-of-oz-at-sphere-las-vegas/>
+- Nevada Business — 2026 Cirque du Soleil Las Vegas performances (Mystère dark Wed/Thu): <https://nevadabusiness.com/2025/09/tickets-available-now-for-2026-performances-of-all-five-las-vegas-resident-cirque-du-soleil-productions/>
 - Las Vegas Kids — Shark Reef Aquarium tickets (2026 prices, ages): <https://www.lasvegaskids.net/things-to-do/shark-reef-aquarium/>
 - Tripadvisor — Shark Reef Aquarium (hours, reviews): <https://www.tripadvisor.com/Attraction_Review-g45963-d3516016-Reviews-Shark_Reef_Aquarium-Las_Vegas_Nevada.html>
 - Meow Wolf — Omega Mart tickets (official): <https://meowwolf.com/visit/las-vegas/tickets>
