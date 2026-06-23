@@ -4,8 +4,10 @@
 
 Research into theme parks reachable from the family's **Mountain View** base (Days 10–16, July 7–13), with official links for each park and an analysis of which day in that window has the fewest crowds. Decision support for the open question *"Does the family want a theme park day?"* in [`07-checklist.md`](../07-checklist.md).
 Date researched: 2026-06-19.
-Context: Family of four — two adults (39), a **13-year-old**, and a **3-year-old**. Self-driving (BMW X5). In the Bay Area July 7–13; committed plans are Golden Gate (Thu July 9) and Stanford/tech (Fri July 10); flexible days are **Wed July 8, Sat July 11, Sun July 12**.
+Context: Family of four — two adults (39), a **13-year-old**, and a **3-year-old measured at ~105 cm (about 41¼ in)**. Self-driving (BMW X5). In the Bay Area July 7–13; committed plans are Golden Gate (Thu July 9) and Stanford/tech (Fri July 10); flexible days are **Wed July 8, Sat July 11, Sun July 12**.
 Verify live hours, prices, and ride heights close to travel; parks change schedules and pricing often.
+
+**Height note (key for ride access):** at ~105 cm the 3-year-old **clears the 40″ (102 cm) tier** but is **~2 cm short of 42″ (107 cm)**. So she rides everything up to and including 40″ minimums, and is turned away from anything 42″+. Parks measure strictly at the gate — put her in **thick-soled sneakers (not sandals)** for the measurement, which can be the difference at the 42″ line.
 
 ---
 
@@ -43,6 +45,7 @@ Notes:
 ## 3. Fit for a 3-year-old + a 13-year-old
 
 - **Great America** is the only park that meaningfully serves both on the same day: the teen rides Gold Striker, RailBlazer, and the larger coasters while the 3-year-old has **Planet Snoopy / KidZville** with low- and no-height rides. Use **rider swap** for the big coasters.
+- **At ~105 cm she clears all of Planet Snoopy**, including the **Woodstock Express** kids' coaster (**40″** minimum). She is **just under the 42″** family-ride line, so a few mid-tier family rides are out by ~2 cm; the 48″+ thrill coasters remain teen-only. Net effect: the 40″ clearance unlocks the kids' coaster, but don't promise the 42″ rides at the gate.
 - **Santa Cruz** works as a lighter, cheaper, pay-as-you-go day — the toddler does kiddie rides and sand, the teen does the historic **Giant Dipper** and arcade. Less "full theme park," more seaside fun.
 - **Gilroy Gardens** flips the balance toward the 3-year-old; only choose it if the priority is the little one.
 - **Six Flags Discovery Kingdom** flips toward the teen; the 3-year-old is height-limited on the headline rides.
