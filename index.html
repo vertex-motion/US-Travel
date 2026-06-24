@@ -704,8 +704,19 @@
       margin: 12px 0 26px;
     }
     .potential-toolbar .subtabs { margin: 0; }
-    .potential-filters { display: none; flex: 1 1 240px; min-width: 0; }
-    .potential-filters.active { display: block; }
+    /* Active view's filters sit inline in the toggle row: compact dropdowns + slider,
+       with the result count pushed to the far right. */
+    .potential-filters { display: none; flex: 1 1 360px; min-width: 0; }
+    .potential-filters.active {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .potential-filters .ms-dropdown { min-width: 132px; }
+    .potential-filters .ms-toggle { padding: 8px 13px; }
+    .potential-filters .range-filter { min-width: 150px; }
+    .potential-filters .potential-count { margin-left: auto; }
 
     .filter-panel { display: grid; gap: 8px; min-width: 0; }
     .control-meta { display: flex; align-items: center; gap: 8px; }
@@ -731,10 +742,6 @@
     }
     .filter-collapse > summary::-webkit-details-marker { display: none; }
     .filter-collapse > summary::marker { content: ""; }
-    /* Potential Options: stretch the summary so the count sits on the same line,
-       pushed to the right edge. Itinerary keeps its fit-content summary. */
-    .potential-toolbar .filter-collapse > summary { width: 100%; }
-    .filter-summary-meta { margin-left: auto; }
     .filter-collapse .filter-chevron {
       font-size: 0.7rem;
       color: var(--muted);
@@ -1707,6 +1714,7 @@
       }
       .potential-toolbar { flex-direction: column; align-items: stretch; }
       .potential-toolbar .subtabs { align-self: flex-start; }
+      .potential-filters { flex: 0 1 auto; max-width: 100%; width: 100%; }
 
       .day-summary-main { flex-basis: 100%; }
 
@@ -1732,6 +1740,18 @@
         align-items: stretch;
       }
       .filter-panel, .ms-dropdown { min-width: 100%; width: 100%; }
+      .potential-filters .ms-dropdown,
+      .potential-filters .range-filter,
+      .potential-filters .potential-count {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+      .potential-filters .potential-count {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0;
+      }
 
       /* Trim vertical bulk above the map so it is reachable with less scrolling */
       .potential-toolbar { margin: 8px 0 16px; }
@@ -1834,62 +1854,20 @@
                 <button class="subtab-button" type="button" role="tab" aria-selected="true" data-potential-view="table">Table</button>
                 <button class="subtab-button" type="button" role="tab" aria-selected="false" data-potential-view="map">Map</button>
               </div>
-              <details class="filter-collapse potential-filters active" id="potentialTableFilters" open>
-                <summary>
-                  <span class="control-label">Filters</span>
-                  <span class="filter-chevron">▾</span>
-                  <span class="control-meta filter-summary-meta">
-                    <span class="control-label">Showing</span>
-                    <span class="potential-count" id="potentialOptionCount"></span>
-                  </span>
-                </summary>
-                <div class="filter-collapse-body">
-                  <div class="filter-panel">
-                    <span class="control-label">Status</span>
-                    <div class="filters" id="planStatusFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Category</span>
-                    <div class="filters" id="potentialCategoryFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Region</span>
-                    <div class="filters" id="potentialRegionFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Max drive</span>
-                    <div class="filters" id="potentialDriveFilter"></div>
-                  </div>
-                </div>
-              </details>
-              <details class="filter-collapse potential-filters" id="potentialMapFilters" open>
-                <summary>
-                  <span class="control-label">Filters</span>
-                  <span class="filter-chevron">▾</span>
-                  <span class="control-meta filter-summary-meta">
-                    <span class="control-label">Shown</span>
-                    <span class="potential-count" id="potentialMapCount"></span>
-                  </span>
-                </summary>
-                <div class="filter-collapse-body">
-                  <div class="filter-panel">
-                    <span class="control-label">Status</span>
-                    <div class="filters" id="potentialMapStatusFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Category</span>
-                    <div class="filters" id="potentialMapCategoryFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Region</span>
-                    <div class="filters" id="potentialMapRegionFilters"></div>
-                  </div>
-                  <div class="filter-panel">
-                    <span class="control-label">Max drive</span>
-                    <div class="filters" id="potentialMapDriveFilter"></div>
-                  </div>
-                </div>
-              </details>
+              <div class="potential-filters active" id="potentialTableFilters">
+                <div class="filters" id="planStatusFilters"></div>
+                <div class="filters" id="potentialCategoryFilters"></div>
+                <div class="filters" id="potentialRegionFilters"></div>
+                <div class="filters" id="potentialDriveFilter"></div>
+                <span class="potential-count" id="potentialOptionCount"></span>
+              </div>
+              <div class="potential-filters" id="potentialMapFilters">
+                <div class="filters" id="potentialMapStatusFilters"></div>
+                <div class="filters" id="potentialMapCategoryFilters"></div>
+                <div class="filters" id="potentialMapRegionFilters"></div>
+                <div class="filters" id="potentialMapDriveFilter"></div>
+                <span class="potential-count" id="potentialMapCount"></span>
+              </div>
             </div>
             <div class="potential-subview active" id="potentialTablePanel">
               <div class="table-wrap">
@@ -3197,10 +3175,7 @@
     const bookingFilterState = { statuses: new Set() };
     const timedFilterState = { statuses: new Set() };
     const preDepartureFilterState = { statuses: new Set() };
-    // Categories pre-selected by default in the Potential Options table and map
-    // (the experience-focused ones). Route/Logistics stay listed but unchecked.
-    const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Scenic Walks and Viewpoints", "Iconic Landmarks and Photo Stops", "Landmarks, Parks, and Architecture", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
-    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
+    const potentialMapState = { categories: new Set(), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
     // Two-finger pan/zoom on touch so a one-finger swipe scrolls the page past the
     // full-width map instead of getting trapped. Provided by the Leaflet.GestureHandling
     // plugin; if it fails to load, Leaflet ignores the unknown options and the map still renders.
@@ -3218,7 +3193,7 @@
     };
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
-    const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
+    const potentialCategoryState = { categories: new Set() };
     const potentialRegionState = { regions: new Set() };
     const potentialDriveState = { max: null }; // null = "Any" (no drive-time limit)
 
@@ -3620,12 +3595,14 @@
       buildMultiSelect($("#potentialCategoryFilters"), {
         options: categories.map((category) => ({ value: category, label: category, color: categoryColor(category) })),
         stateSet: potentialCategoryState.categories,
+        allLabel: "All categories",
         onChange: renderPotentialOptions
       });
       const statuses = ["In the plan", "Potential option", "Rejected"];
       buildMultiSelect($("#planStatusFilters"), {
         options: statuses,
         stateSet: planStatusFilterState.statuses,
+        allLabel: "All statuses",
         onChange: renderPotentialOptions
       });
       const driveEl = $("#potentialDriveFilter");
@@ -3668,6 +3645,7 @@
       buildMultiSelect($("#potentialRegionFilters"), {
         options: regions,
         stateSet: potentialRegionState.regions,
+        allLabel: "All regions",
         onChange: renderPotentialOptions
       });
     }
@@ -3869,6 +3847,7 @@
         buildMultiSelect(statusEl, {
           options: ["In the plan", "Potential option", "Rejected"],
           stateSet: potentialMapState.statuses,
+          allLabel: "All statuses",
           onChange: renderPotentialMap
         });
       }
@@ -3878,6 +3857,7 @@
         buildMultiSelect(categoryEl, {
           options: categories.map((category) => ({ value: category, label: category, color: categoryColor(category) })),
           stateSet: potentialMapState.categories,
+          allLabel: "All categories",
           onChange: renderPotentialMap
         });
       }
@@ -3888,6 +3868,7 @@
         buildMultiSelect(regionEl, {
           options: regions,
           stateSet: potentialMapState.regions,
+          allLabel: "All regions",
           onChange: renderPotentialMap
         });
       }
@@ -4303,13 +4284,6 @@
       window.addEventListener("orientationchange", schedule, { passive: true });
     }
 
-    // On phones, start the Potential Options filter panels collapsed so the map sits
-    // higher and is reachable with less scrolling. Desktop keeps them open.
-    function collapseFiltersOnMobile() {
-      if (!window.matchMedia("(max-width: 760px)").matches) return;
-      $$(".potential-toolbar .filter-collapse[open]").forEach((details) => details.removeAttribute("open"));
-    }
-
     function boot() {
       renderLodgingBases();
       renderLists();
@@ -4337,7 +4311,6 @@
       wireTheme();
       wireNavScroll();
       wireMapResize();
-      collapseFiltersOnMobile();
     }
 
     boot();
