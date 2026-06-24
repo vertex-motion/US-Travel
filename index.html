@@ -2072,6 +2072,13 @@
               .research-table td:nth-child(2){white-space:nowrap;font-weight:600}
               .research-table a{color:var(--ocean,#2293c9);font-weight:700;text-decoration:none}
               .research-table a:hover{text-decoration:underline}
+              .road-rules-table{table-layout:fixed}
+              .road-rules-table .rr-col-area{width:13%}
+              .road-rules-table .rr-col-nsw{width:31%}
+              .road-rules-table .rr-col-california{width:31%}
+              .road-rules-table .rr-col-action{width:25%}
+              .road-rules-table td:nth-child(2){white-space:normal}
+              .road-rules-table th,.road-rules-table td{overflow-wrap:break-word}
               .rt-tag{display:inline-block;margin-right:6px;padding:1px 7px;border-radius:999px;font-size:0.68rem;font-weight:700;white-space:nowrap}
               .rt-best{background:rgba(34,147,107,0.16);color:#1f8a5b}
               .rt-skip{background:rgba(201,80,80,0.16);color:#b94a4a}
@@ -2098,7 +2105,13 @@
                 <summary><span class="research-title">Road rules: Sydney / NSW vs California</span><span class="research-note">Driving brief: right side + school buses</span></summary>
                 <div class="research-body">
                   <p><strong>Decision:</strong> use a conservative California driving mode: right side of road, full stops at stop signs, cautious right turns on red only when legal, full stop for flashing red school-bus lights unless the divided/multilane exception is obvious, U.S.-approved child restraint, mounted phone, zero alcohol before driving.</p>
-                  <table class="research-table">
+                  <table class="research-table road-rules-table">
+                    <colgroup>
+                      <col class="rr-col-area">
+                      <col class="rr-col-nsw">
+                      <col class="rr-col-california">
+                      <col class="rr-col-action">
+                    </colgroup>
                     <thead>
                       <tr><th>Rule area</th><th>Sydney / NSW baseline</th><th>California difference</th><th>Trip action</th></tr>
                     </thead>
