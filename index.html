@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://tile.openstreetmap.org">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.css" crossorigin="">
   <style>
     /* ============================================================
        Sunset Coastal design system — light + dark via CSS tokens
@@ -126,7 +127,11 @@
 
     * { box-sizing: border-box; }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%; /* stop iOS Safari from auto-enlarging text */
+      text-size-adjust: 100%;
+    }
 
     body {
       margin: 0;
@@ -878,6 +883,7 @@
 
     #potentialMap {
       height: min(68vh, 640px);
+      height: min(68dvh, 640px); /* dvh: stable under Safari's collapsing toolbar */
       min-height: 440px;
       width: 100%;
       background: var(--track);
@@ -896,7 +902,9 @@
       display: grid;
       gap: 8px;
       max-height: min(68vh, 640px);
+      max-height: min(68dvh, 640px);
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
       padding-right: 4px;
     }
 
@@ -1323,6 +1331,7 @@
     /* ---------------- Tables ---------------- */
     .table-wrap {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--panel-solid);
@@ -1654,8 +1663,29 @@
         justify-content: flex-start;
       }
 
-      #map, #potentialMap { min-height: 360px; height: 52vh; }
+      #map, #potentialMap { min-height: 360px; height: 52vh; height: 52dvh; }
       .potential-map-list { max-height: none; }
+
+      /* Bigger touch targets (Apple guidance ≥ 44px) */
+      .tab-button, .subtab-button, .filter-button, .text-button, .ms-toggle {
+        min-height: 44px;
+      }
+      .map-place-button { padding: 14px; }
+
+      /* Full-width, easy-to-tap filters: stack the panels and let each control
+         span the row instead of sitting at a 190px min-width. */
+      .filter-collapse[open] .filter-collapse-body {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .filter-panel, .ms-dropdown { min-width: 100%; width: 100%; }
+
+      /* Trim vertical bulk above the map so it is reachable with less scrolling */
+      .potential-controls { margin: 8px 0 16px; }
+      .subtabs { margin-bottom: 14px; }
+
+      /* Keep map popups (and their geo-buttons) inside the viewport */
+      .leaflet-popup-content { max-width: 78vw; }
     }
 
     /* ---------------- Reduced motion ---------------- */
@@ -2556,6 +2586,7 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.js" crossorigin=""></script>
   <script>
     const tripData = {
       mapStops: [
@@ -3110,6 +3141,21 @@
     // (the experience-focused ones). Route/Logistics stay listed but unchecked.
     const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Scenic Walks and Viewpoints", "Iconic Landmarks and Photo Stops", "Landmarks, Parks, and Architecture", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
     const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), statuses: new Set(), regions: new Set(), map: null, layer: null, markers: new Map() };
+    // Two-finger pan/zoom on touch so a one-finger swipe scrolls the page past the
+    // full-width map instead of getting trapped. Provided by the Leaflet.GestureHandling
+    // plugin; if it fails to load, Leaflet ignores the unknown options and the map still renders.
+    let routeMap = null;
+    const MAP_OPTIONS = {
+      scrollWheelZoom: false,
+      gestureHandling: true,
+      gestureHandlingOptions: {
+        text: {
+          touch: "Use two fingers to move the map",
+          scroll: "Use ctrl + scroll to zoom the map",
+          scrollMac: "Use ⌘ + scroll to zoom the map"
+        }
+      }
+    };
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
     const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
@@ -3793,7 +3839,7 @@
       }
 
       if (!potentialMapState.map) {
-        potentialMapState.map = L.map("potentialMap", { scrollWheelZoom: false }).setView([36.45, -120.35], 6);
+        potentialMapState.map = L.map("potentialMap", MAP_OPTIONS).setView([36.45, -120.35], 6);
         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 18,
           attribution: "&copy; OpenStreetMap contributors"
@@ -3849,7 +3895,8 @@
         return;
       }
 
-      const map = L.map("map", { scrollWheelZoom: false }).setView([36.45, -120.35], 6);
+      const map = L.map("map", MAP_OPTIONS).setView([36.45, -120.35], 6);
+      routeMap = map;
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
         attribution: "&copy; OpenStreetMap contributors"
@@ -4073,6 +4120,25 @@
       window.addEventListener("scroll", onScroll, { passive: true });
     }
 
+    // Keep maps correctly sized when the phone rotates or the window resizes.
+    function wireMapResize() {
+      let pending;
+      const refit = () => {
+        if (potentialMapState.map) potentialMapState.map.invalidateSize();
+        if (routeMap) routeMap.invalidateSize();
+      };
+      const schedule = () => { clearTimeout(pending); pending = setTimeout(refit, 200); };
+      window.addEventListener("resize", schedule, { passive: true });
+      window.addEventListener("orientationchange", schedule, { passive: true });
+    }
+
+    // On phones, start the Potential Options filter panels collapsed so the map sits
+    // higher and is reachable with less scrolling. Desktop keeps them open.
+    function collapseFiltersOnMobile() {
+      if (!window.matchMedia("(max-width: 760px)").matches) return;
+      $$(".potential-controls .filter-collapse[open]").forEach((details) => details.removeAttribute("open"));
+    }
+
     function boot() {
       renderLodgingBases();
       renderLists();
@@ -4099,6 +4165,8 @@
       wireDayToggle();
       wireTheme();
       wireNavScroll();
+      wireMapResize();
+      collapseFiltersOnMobile();
     }
 
     boot();
