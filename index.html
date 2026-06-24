@@ -1332,6 +1332,8 @@
     .status-cell { vertical-align: top; }
     .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
     .status-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
+    .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
     .rating-score { color: var(--muted); font-size: 0.9rem; font-weight: 750; white-space: nowrap; }
 
     .mini-table { min-width: 0; }
@@ -1639,6 +1641,10 @@
                 <div class="filter-panel">
                   <span class="control-label">Category</span>
                   <div class="filters" id="potentialCategoryFilters"></div>
+                </div>
+                <div class="filter-panel">
+                  <span class="control-label">Region</span>
+                  <div class="filters" id="potentialRegionFilters"></div>
                 </div>
                 <div class="control-meta">
                   <span class="control-label">Showing</span>
@@ -2557,7 +2563,14 @@
         { id: "channel-islands-kayaking", name: "Channel Islands kayaking / sea caves", option: "Santa Barbara / Channel Islands kayaking or sea-cave tour", category: "Dad-Focused Adventure", region: "Santa Barbara", coords: [34.1780, -119.2230] },
         { id: "catalina-zipline", name: "Catalina Island Zip Line Eco Tour", option: "Catalina Island Zip Line Eco Tour", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [33.3428, -118.3278] },
         { id: "skydive-perris", name: "Skydive Perris", option: "Skydive Perris wind tunnel or tandem skydiving", category: "Dad-Focused Adventure", region: "Southern California", coords: [33.7627, -117.2189] },
-        { id: "six-flags-magic-mountain", name: "Six Flags Magic Mountain", option: "Six Flags Magic Mountain thrill-coaster day", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [34.4237, -118.5970] }
+        { id: "six-flags-magic-mountain", name: "Six Flags Magic Mountain", option: "Six Flags Magic Mountain thrill-coaster day", category: "Dad-Focused Adventure", region: "Los Angeles", coords: [34.4237, -118.5970] },
+        { id: "great-america-bay", name: "California's Great America", option: "California's Great America (Bay Area)", category: "Attractions and Experiences", region: "Bay Area", coords: [37.3997, -121.9756] },
+        { id: "santa-cruz-boardwalk", name: "Santa Cruz Beach Boardwalk", option: "Santa Cruz Beach Boardwalk", category: "Attractions and Experiences", region: "Santa Cruz", coords: [36.9644, -122.0188] },
+        { id: "gilroy-gardens", name: "Gilroy Gardens", option: "Gilroy Gardens", category: "Attractions and Experiences", region: "Bay Area", coords: [37.0246, -121.6483] },
+        { id: "six-flags-discovery", name: "Six Flags Discovery Kingdom", option: "Six Flags Discovery Kingdom (Vallejo)", category: "Attractions and Experiences", region: "Bay Area", coords: [38.1387, -122.2330] },
+        { id: "yosemite-junior-ranger", name: "Lower Yosemite Fall", option: "Yosemite Junior Ranger-style activity plus Lower Yosemite Fall", category: "Younger-Child Add-On", region: "Yosemite", coords: [37.7561, -119.5965] },
+        { id: "shopping-outlets", name: "Citadel Outlets (representative)", option: "Shopping-heavy outlet days", category: "Attractions and Experiences", region: "Los Angeles", coords: [33.9897, -118.1690] },
+        { id: "nightlife-plans", name: "Las Vegas Strip nightlife (representative)", option: "Nightlife-focused city plans", category: "Attractions and Experiences", region: "Las Vegas", coords: [36.1147, -115.1728] }
       ],
     };
 
@@ -2612,6 +2625,7 @@
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
     const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
+    const potentialRegionState = { regions: new Set() };
 
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
@@ -3040,6 +3054,19 @@
         .join("");
     }
 
+    // Region of an option, derived from its primary mapped place ("" if unmapped).
+    function optionRegion(row) {
+      const places = potentialPlacesForOption(row);
+      return places.length ? places[0].region : "";
+    }
+
+    function renderPotentialRegionFilters() {
+      const regions = ["All", ...Array.from(new Set(tripData.potentialOptions.map(optionRegion).filter(Boolean))).sort()];
+      $("#potentialRegionFilters").innerHTML = regions
+        .map((region) => renderCategoryFilterButton(region, region === "All" ? potentialRegionState.regions.size === 0 : potentialRegionState.regions.has(region)))
+        .join("");
+    }
+
     const planStatusTag = (status) => {
       if (status === "Parked") {
         return `<span class="tag" style="background: var(--panel-soft); color: var(--muted); border: 1px solid var(--line);">${escapeHtml(status || "")}</span>`;
@@ -3124,13 +3151,16 @@
     function renderPotentialOptions() {
       const selectedCategories = potentialCategoryState.categories;
       const selectedStatuses = planStatusFilterState.statuses;
+      const selectedRegions = potentialRegionState.regions;
       const rows = tripData.potentialOptions.filter((row) => {
         const categoryMatch = selectedCategories.size === 0 || selectedCategories.has(row.category);
         const statusMatch = selectedStatuses.size === 0 || selectedStatuses.has(row.planStatus);
-        return categoryMatch && statusMatch;
+        const regionMatch = selectedRegions.size === 0 || selectedRegions.has(optionRegion(row));
+        return categoryMatch && statusMatch && regionMatch;
       });
       $("#potentialOptions").innerHTML = rows.map((row, index) => {
         const fitId = `fit-pop-${index}`;
+        const region = optionRegion(row);
         return `
           <tr>
             <td class="opt-cell">
@@ -3148,6 +3178,7 @@
                   ${renderRating(row.interest)}
                 </div>
                 <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
+                ${region ? `<span class="region-label">${icon("pin")}${escapeHtml(region)}</span>` : ""}
               </div>
             </td>
             <td class="potential-map-cell">${potentialMapButtons(row)}</td>
@@ -3416,6 +3447,14 @@
         syncMultiFilterButtons(statusEl, planStatusFilterState.statuses);
         renderPotentialOptions();
       });
+      const regionEl = $("#potentialRegionFilters");
+      regionEl.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        toggleMultiFilter(potentialRegionState.regions, button.dataset.category);
+        syncMultiFilterButtons(regionEl, potentialRegionState.regions);
+        renderPotentialOptions();
+      });
     }
 
 
@@ -3485,6 +3524,7 @@
         <tr><td><strong>${escapeHtml(row.question)}</strong></td><td>${escapeHtml(row.why)}</td><td>${escapeHtml(row.default)}</td></tr>
       `).join("");
       renderPotentialCategoryFilters();
+      renderPotentialRegionFilters();
       renderPotentialOptions();
       renderMap();
       wireTabs();
