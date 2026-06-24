@@ -723,6 +723,10 @@
     }
     .filter-collapse > summary::-webkit-details-marker { display: none; }
     .filter-collapse > summary::marker { content: ""; }
+    /* Potential Options: stretch the summary so the count sits on the same line,
+       pushed to the right edge. Itinerary keeps its fit-content summary. */
+    .potential-controls .filter-collapse > summary { width: 100%; }
+    .filter-summary-meta { margin-left: auto; }
     .filter-collapse .filter-chevron {
       font-size: 0.7rem;
       color: var(--muted);
@@ -1751,7 +1755,14 @@
             <div class="potential-subview active" id="potentialTablePanel">
               <div class="potential-controls">
                 <details class="filter-collapse" open>
-                  <summary><span class="control-label">Filters</span><span class="filter-chevron">▾</span></summary>
+                  <summary>
+                    <span class="control-label">Filters</span>
+                    <span class="filter-chevron">▾</span>
+                    <span class="control-meta filter-summary-meta">
+                      <span class="control-label">Showing</span>
+                      <span class="potential-count" id="potentialOptionCount"></span>
+                    </span>
+                  </summary>
                   <div class="filter-collapse-body">
                     <div class="filter-panel">
                       <span class="control-label">Status</span>
@@ -1767,10 +1778,6 @@
                     </div>
                   </div>
                 </details>
-                <div class="control-meta">
-                  <span class="control-label">Showing</span>
-                  <div class="potential-count" id="potentialOptionCount"></div>
-                </div>
               </div>
               <div class="table-wrap">
                 <table class="potential-table">
@@ -1787,7 +1794,14 @@
             <div class="potential-subview" id="potentialMapPanel">
               <div class="potential-controls">
                 <details class="filter-collapse" open>
-                  <summary><span class="control-label">Filters</span><span class="filter-chevron">▾</span></summary>
+                  <summary>
+                    <span class="control-label">Filters</span>
+                    <span class="filter-chevron">▾</span>
+                    <span class="control-meta filter-summary-meta">
+                      <span class="control-label">Shown</span>
+                      <span class="potential-count" id="potentialMapCount"></span>
+                    </span>
+                  </summary>
                   <div class="filter-collapse-body">
                     <div class="filter-panel">
                       <span class="control-label">Mapped category filter</span>
@@ -1795,12 +1809,6 @@
                     </div>
                   </div>
                 </details>
-                <div class="control-meta">
-                  <div>
-                    <span class="control-label">Shown</span>
-                    <div class="potential-count" id="potentialMapCount"></div>
-                  </div>
-                </div>
               </div>
               <div class="potential-map-layout">
                 <div id="potentialMap" aria-label="Interactive map of potential attraction options"></div>
