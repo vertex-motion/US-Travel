@@ -1285,8 +1285,21 @@
     tbody tr:hover td { background: var(--hover); }
     tr:last-child td { border-bottom: 0; }
 
-    .potential-table { min-width: 1040px; }
-    .potential-map-cell { min-width: 168px; }
+    .potential-table { min-width: 940px; table-layout: fixed; }
+    .potential-table th { white-space: normal; }
+    .potential-table col.col-option { width: 25%; }
+    .potential-table col.col-status { width: 17%; }
+    .potential-table col.col-fit { width: 40%; }
+    .potential-table col.col-map { width: 18%; }
+    .potential-table td { overflow-wrap: break-word; }
+
+    .opt-cell { vertical-align: top; }
+    .opt-name { font-weight: 700; font-size: 0.96rem; line-height: 1.32; color: var(--ink); }
+    .opt-desc { margin-top: 6px; color: var(--muted); font-size: 0.85rem; line-height: 1.45; }
+
+    .fit-cell { color: var(--ink); font-size: 0.9rem; line-height: 1.5; }
+
+    .potential-map-cell { vertical-align: top; }
     .potential-map-cell .geo-btns { margin-top: 0; }
     .potential-map-none { color: var(--muted); }
     .drive-est {
@@ -1294,14 +1307,13 @@
       margin-top: 6px;
       color: var(--muted);
       font-size: 0.78rem;
-      line-height: 1.25;
-      white-space: nowrap;
+      line-height: 1.3;
     }
 
-
-    .status-cell { width: 150px; vertical-align: top; }
-    .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
-    .rating-score { color: var(--ink); font-size: 0.95rem; font-weight: 750; white-space: nowrap; }
+    .status-cell { vertical-align: top; }
+    .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
+    .status-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .rating-score { color: var(--muted); font-size: 0.9rem; font-weight: 750; white-space: nowrap; }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -1605,7 +1617,13 @@
               </div>
               <div class="table-wrap">
                 <table class="potential-table">
-                  <thead><tr><th>Name</th><th>Map</th><th>Status · Rating · Category</th><th>Current fit / tradeoff</th><th>Description</th></tr></thead>
+                  <colgroup>
+                    <col class="col-option">
+                    <col class="col-status">
+                    <col class="col-fit">
+                    <col class="col-map">
+                  </colgroup>
+                  <thead><tr><th>Option</th><th>Status · Rating · Category</th><th>Current fit / tradeoff</th><th>Map</th></tr></thead>
                   <tbody id="potentialOptions"></tbody>
                 </table>
               </div>
@@ -3082,17 +3100,21 @@
       $("#potentialOptions").innerHTML = rows.map((row) => {
         return `
           <tr>
-            <td><strong>${escapeHtml(row.option)}</strong></td>
-            <td class="potential-map-cell">${potentialMapButtons(row)}</td>
+            <td class="opt-cell">
+              <div class="opt-name">${escapeHtml(row.option)}</div>
+              <div class="opt-desc">${escapeHtml(row.desc)}</div>
+            </td>
             <td class="status-cell">
               <div class="status-stack">
-                ${planStatusTag(row.planStatus)}
-                ${renderRating(row.interest)}
+                <div class="status-line">
+                  ${planStatusTag(row.planStatus)}
+                  ${renderRating(row.interest)}
+                </div>
                 <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
               </div>
             </td>
-            <td>${escapeHtml(row.why)}</td>
-            <td>${escapeHtml(row.desc)}</td>
+            <td class="fit-cell">${escapeHtml(row.why)}</td>
+            <td class="potential-map-cell">${potentialMapButtons(row)}</td>
           </tr>
         `;
       }).join("");
