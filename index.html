@@ -3940,7 +3940,7 @@
       $$("#potentialMapList .map-place-button").forEach((button) => button.classList.toggle("active", button.dataset.place === id));
       const marker = potentialMapState.markers.get(id);
       if (!marker || !potentialMapState.map) return;
-      potentialMapState.map.flyTo(marker.getLatLng(), 10, { duration: 0.45 });
+      potentialMapState.map.flyTo(marker.getLatLng(), 14, { duration: 0.45 });
       marker.openPopup();
     }
 
