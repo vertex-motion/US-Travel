@@ -729,7 +729,9 @@
       transition: transform 0.2s ease;
     }
     .filter-collapse[open] .filter-chevron { transform: rotate(180deg); }
-    .filter-collapse-body {
+    /* Scope display to [open] so the UA's closed-state hiding is not overridden
+       by an author display rule (author origin always beats UA origin). */
+    .filter-collapse[open] .filter-collapse-body {
       display: flex;
       flex-direction: column;
       gap: 12px;
