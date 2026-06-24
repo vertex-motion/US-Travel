@@ -733,8 +733,10 @@
        by an author display rule (author origin always beats UA origin). */
     .filter-collapse[open] .filter-collapse-body {
       display: flex;
-      flex-direction: column;
-      gap: 12px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 16px;
       margin-top: 12px;
     }
 
@@ -1306,7 +1308,7 @@
     .day-backup span:last-child { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.45; }
 
     /* Itinerary toolbar filters */
-    .day-filter-stack { display: grid; gap: 10px; }
+    .day-filter-stack { display: flex; flex-wrap: wrap; gap: 16px; }
     .filter-row { display: flex; align-items: center; gap: 10px; }
     .filter-label {
       min-width: 58px;
