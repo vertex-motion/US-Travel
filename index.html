@@ -747,6 +747,30 @@
       margin-top: 12px;
     }
 
+    /* Max-drive range slider filter */
+    .range-filter {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 190px;
+      max-width: 100%;
+    }
+    .range-filter .range-input {
+      flex: 1 1 auto;
+      min-width: 110px;
+      accent-color: var(--coral);
+      cursor: pointer;
+    }
+    .range-filter .range-value {
+      flex: 0 0 auto;
+      color: var(--ink-soft);
+      font-size: 0.85rem;
+      font-weight: 700;
+      white-space: nowrap;
+      min-width: 56px;
+      text-align: right;
+    }
+
     /* Multi-select dropdown filters */
     .ms-dropdown { position: relative; display: inline-block; min-width: 190px; max-width: 100%; }
     .ms-toggle {
@@ -1822,6 +1846,10 @@
                       <span class="control-label">Region</span>
                       <div class="filters" id="potentialRegionFilters"></div>
                     </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Max drive</span>
+                      <div class="filters" id="potentialDriveFilter"></div>
+                    </div>
                   </div>
                 </details>
               </div>
@@ -1860,6 +1888,10 @@
                     <div class="filter-panel">
                       <span class="control-label">Region</span>
                       <div class="filters" id="potentialMapRegionFilters"></div>
+                    </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Max drive</span>
+                      <div class="filters" id="potentialMapDriveFilter"></div>
                     </div>
                   </div>
                 </details>
@@ -3159,7 +3191,7 @@
     // Categories pre-selected by default in the Potential Options table and map
     // (the experience-focused ones). Route/Logistics stay listed but unchecked.
     const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Scenic Walks and Viewpoints", "Iconic Landmarks and Photo Stops", "Landmarks, Parks, and Architecture", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
-    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), statuses: new Set(), regions: new Set(), map: null, layer: null, markers: new Map() };
+    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
     // Two-finger pan/zoom on touch so a one-finger swipe scrolls the page past the
     // full-width map instead of getting trapped. Provided by the Leaflet.GestureHandling
     // plugin; if it fails to load, Leaflet ignores the unknown options and the map still renders.
@@ -3179,6 +3211,7 @@
     const planStatusFilterState = { statuses: new Set() };
     const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
     const potentialRegionState = { regions: new Set() };
+    const potentialDriveState = { max: null }; // null = "Any" (no drive-time limit)
 
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
@@ -3585,6 +3618,14 @@
         stateSet: planStatusFilterState.statuses,
         onChange: renderPotentialOptions
       });
+      const driveEl = $("#potentialDriveFilter");
+      if (driveEl && POTENTIAL_MINUTE_MAX > 0) {
+        buildRangeSlider(driveEl, {
+          min: 5, max: POTENTIAL_MINUTE_MAX, step: 5,
+          state: potentialDriveState, key: "max",
+          onChange: renderPotentialOptions
+        });
+      }
     }
 
     // Collapse a mapped place's fine geographic region into one of the trip's
@@ -3687,6 +3728,27 @@
       return `<span class="drive-meter" style="--drive-fill: ${fill.toFixed(2)}; --drive-tone: ${tone};" aria-hidden="true"><span class="drive-meter-dot start"></span><span class="drive-meter-dot end"></span></span>`;
     }
 
+    // Numeric straight-line drive estimate (minutes) from the region's trip base.
+    // null when the place has no coords or no mapped base. Mirrors potentialDriveEstimate.
+    function driveMinutes(place) {
+      if (!place || !Array.isArray(place.coords)) return null;
+      const base = TRIP_BASES[REGION_BASE[place.region]];
+      if (!base) return null;
+      const straight = haversineMiles(base.coords, place.coords);
+      const mph = straight < 20 ? 30 : 55;
+      return Math.round((straight * 1.3) / mph * 60);
+    }
+    // Primary mapped place's drive minutes for an option row (null if unmapped).
+    function optionDriveMinutes(row) {
+      const places = potentialPlacesForOption(row);
+      return places.length ? driveMinutes(places[0]) : null;
+    }
+    // Slider upper bound: dataset's max drive minutes rounded up to the nearest 15.
+    const POTENTIAL_MINUTE_MAX = (() => {
+      const vals = tripData.potentialMapPlaces.map(driveMinutes).filter((m) => m != null);
+      return vals.length ? Math.ceil(Math.max(...vals) / 15) * 15 : 0;
+    })();
+
     // Rough straight-line drive estimate from the region's trip base. Applies a
     // 1.3x road-winding factor and a distance-tiered average speed.
     function potentialDriveEstimate(place) {
@@ -3697,8 +3759,7 @@
       const straight = haversineMiles(base.coords, place.coords);
       const miles = Math.round(straight * 1.3);
       const km = Math.round(straight * 1.3 * 1.609);
-      const mph = straight < 20 ? 30 : 55;
-      const mins = Math.round((straight * 1.3) / mph * 60);
+      const mins = driveMinutes(place);
       const meter = driveMeter(mins);
       if (miles < 1) return `<span class="drive-est" title="At the ${escapeHtml(base.name)} base">${meter}<span>At the ${escapeHtml(base.name)} base</span></span>`;
       return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">${meter}<span>~${miles} mi (${km} km) · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span></span>`;
@@ -3724,7 +3785,9 @@
         const categoryMatch = selectedCategories.size === 0 || selectedCategories.has(row.category);
         const statusMatch = selectedStatuses.size === 0 || selectedStatuses.has(row.planStatus);
         const regionMatch = selectedRegions.size === 0 || selectedRegions.has(optionRegion(row));
-        return categoryMatch && statusMatch && regionMatch;
+        const mins = optionDriveMinutes(row);
+        const driveMatch = potentialDriveState.max == null || (mins != null && mins <= potentialDriveState.max);
+        return categoryMatch && statusMatch && regionMatch && driveMatch;
       });
       $("#potentialOptions").innerHTML = rows.map((row, index) => {
         const fitId = `fit-pop-${index}`;
@@ -3782,7 +3845,9 @@
         const catMatch = cats.size === 0 || cats.has(place.category);
         const statMatch = stats.size === 0 || stats.has(placeStatus(place));
         const regMatch = regs.size === 0 || regs.has(REGION_SEGMENT[place.region] || "");
-        return catMatch && statMatch && regMatch;
+        const mins = driveMinutes(place);
+        const driveMatch = potentialMapState.maxMinutes == null || (mins != null && mins <= potentialMapState.maxMinutes);
+        return catMatch && statMatch && regMatch && driveMatch;
       });
     }
 
@@ -3813,6 +3878,14 @@
         buildMultiSelect(regionEl, {
           options: regions,
           stateSet: potentialMapState.regions,
+          onChange: renderPotentialMap
+        });
+      }
+      const driveEl = $("#potentialMapDriveFilter");
+      if (driveEl && POTENTIAL_MINUTE_MAX > 0) {
+        buildRangeSlider(driveEl, {
+          min: 5, max: POTENTIAL_MINUTE_MAX, step: 5,
+          state: potentialMapState, key: "maxMinutes",
           onChange: renderPotentialMap
         });
       }
@@ -4097,6 +4170,26 @@
       msInstances.push({ close });
       sync();
       return { sync };
+    }
+
+    // Single-handle "max drive minutes" slider. The top of the track means "Any"
+    // (no limit), stored as null on state[key]; any lower value is the max minutes.
+    function buildRangeSlider(container, { min, max, step = 5, state, key, onChange }) {
+      const initial = state[key] == null ? max : state[key];
+      const label = (v) => (v >= max ? "Any" : `≤ ${v} min`);
+      container.classList.add("range-filter");
+      container.innerHTML = `
+        <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
+          aria-label="Maximum drive time in minutes">
+        <span class="range-value">${label(initial)}</span>`;
+      const input = container.querySelector(".range-input");
+      const valueEl = container.querySelector(".range-value");
+      input.addEventListener("input", () => {
+        const v = Number(input.value);
+        state[key] = v >= max ? null : v;
+        valueEl.textContent = label(v);
+        onChange();
+      });
     }
 
     function wirePotentialMapControls() {
