@@ -3054,14 +3054,32 @@
         .join("");
     }
 
-    // Region of an option, derived from its primary mapped place ("" if unmapped).
+    // Collapse a mapped place's fine geographic region into one of the trip's
+    // overview legs (mapStops), so the Region filter mirrors the overview.
+    // The LAX airport and both Pasadena bases fold into a single "LAX" leg.
+    const REGION_SEGMENT = {
+      "Los Angeles": "LAX", "Southern California": "LAX", "San Diego": "LAX", "Santa Barbara": "LAX",
+      "Central Coast": "Santa Maria",
+      "Monterey / Carmel": "Monterey-area hotel",
+      "Bay Area": "Mountain View / Bay Area", "Bay Area Peninsula": "Mountain View / Bay Area",
+      "San Francisco": "Mountain View / Bay Area", "Santa Cruz": "Mountain View / Bay Area", "Sonoma": "Mountain View / Bay Area",
+      "Yosemite": "Mammoth Lakes", "Central Valley": "Mammoth Lakes", "Central Valley / CA-58": "Mammoth Lakes",
+      "Death Valley": "Death Valley transit",
+      "Las Vegas": "Las Vegas Strip", "Arizona": "Las Vegas Strip", "Mojave": "Las Vegas Strip"
+    };
+    // Trip order for the Region filter chips (mirrors the overview timeline).
+    const SEGMENT_ORDER = ["LAX", "Santa Maria", "Monterey-area hotel", "Mountain View / Bay Area", "Mammoth Lakes", "Death Valley transit", "Las Vegas Strip"];
+
+    // Region of an option as a trip leg, derived from its primary mapped place
+    // ("" if the option has no mapped place).
     function optionRegion(row) {
       const places = potentialPlacesForOption(row);
-      return places.length ? places[0].region : "";
+      return places.length ? (REGION_SEGMENT[places[0].region] || "") : "";
     }
 
     function renderPotentialRegionFilters() {
-      const regions = ["All", ...Array.from(new Set(tripData.potentialOptions.map(optionRegion).filter(Boolean))).sort()];
+      const present = new Set(tripData.potentialOptions.map(optionRegion).filter(Boolean));
+      const regions = ["All", ...SEGMENT_ORDER.filter((segment) => present.has(segment))];
       $("#potentialRegionFilters").innerHTML = regions
         .map((region) => renderCategoryFilterButton(region, region === "All" ? potentialRegionState.regions.size === 0 : potentialRegionState.regions.has(region)))
         .join("");
