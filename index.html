@@ -1286,9 +1286,17 @@
     tr:last-child td { border-bottom: 0; }
 
     .potential-table { min-width: 1180px; }
-    .potential-map-cell { min-width: 150px; }
+    .potential-map-cell { min-width: 168px; }
     .potential-map-cell .geo-btns { margin-top: 0; }
     .potential-map-none { color: var(--muted); }
+    .drive-est {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
 
     .potential-map-hint {
       display: inline-block;
@@ -1626,18 +1634,6 @@
                 <div class="potential-map-list" id="potentialMapList"></div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section class="panel flat" style="margin-top: 16px;">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">Do Not Book</h2>
-              <p class="panel-kicker">Guardrails from 03-potential-options.md</p>
-            </div>
-          </div>
-          <div class="panel-body">
-            <ul class="list" id="doNotBook"></ul>
           </div>
         </section>
       </section>
@@ -2276,20 +2272,6 @@
         { check: "Review hotel final folios", when: "After each stay or after return", action: "Confirm taxes, resort fees, parking, and incidentals match expectations.", status: "Open" },
         { check: "Archive useful notes", when: "After return", action: "Record route lessons, family pacing notes, and lodging/logistics lessons for a future US trip.", status: "Optional" }
       ],
-      doNotBook: [
-        "Do not book Warner Bros. Studio Tour unless the younger child is not attending.",
-        "Do not book Alcatraz unless the family explicitly reverses the current decision to skip it.",
-        "Do not add San Diego unless the family extends the return date or removes another region.",
-        "Do not turn the Death Valley transfer into a hiking day or a long exposed sightseeing day; keep it paved, brief, and conditional on heat and road checks.",
-        "Do not book any hotel above USD $250 per night without explicit approval.",
-        "Do not book two hotel rooms unless all acceptable one-room options fail and the family explicitly accepts the total price.",
-        "Do not evaluate the booked Las Vegas hotel from headline room rate alone; include resort fees, taxes, parking, and occupancy terms.",
-        "Do not book multiple Las Vegas paid attractions until hotel, heat plan, and one anchor attraction are confirmed.",
-        "Do not make nonrefundable hotel bookings until one-room occupancy for four people is confirmed in writing.",
-        "Do not book a same-day Las Vegas-to-LAX drive plus international departure unless the family explicitly accepts the missed-flight risk.",
-        "Do not book Bakersfield / Tehachapi as part of the main route unless it is needed as the safety fallback for the Death Valley transfer.",
-        "Do not add Santa Barbara sightseeing unless the family explicitly restores Santa Barbara to the route."
-      ],
       lodgingBases: [
         { base: "Los Angeles arrival (Pasadena)", dates: "June 28–July 4", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Hotel garage $35/night, unlimited in/out. Cheaper $12/day garage across the road but no in/out.", hotelMap: "Hyatt Place Pasadena, Pasadena CA", parkingMaps: [{ map: "Hyatt Place Pasadena, Pasadena CA", label: "Hotel parking" }, { map: "Paseo Colorado Parking, Pasadena CA", label: "Alt parking", alt: true }] },
         { base: "Central Coast (Santa Maria)", dates: "July 4–5", checkin: "3:00 pm", checkout: "12:00 pm", parking: "Free self-parking on site.", hotelMap: "Historic Santa Maria Inn, Santa Maria CA", parkingMaps: [{ map: "Historic Santa Maria Inn, Santa Maria CA", label: "Parking" }] },
@@ -2644,8 +2626,6 @@
         <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
         <td style="color: var(--muted); font-size: 0.88rem; white-space: nowrap;">${escapeHtml(r.lastChecked)}</td>
       </tr>`).join("");
-      const doNotBookEl = $("#doNotBook");
-      if (doNotBookEl) doNotBookEl.innerHTML = tripData.doNotBook.map((item, index) => `<li><span class="dot ${["rose", "sun", "ocean"][index % 3]}"></span><span>${escapeHtml(item)}</span></li>`).join("");
     }
 
     function renderTables() {
@@ -3036,6 +3016,54 @@
       return tripData.potentialMapPlaces.filter((place) => place.option === row.option);
     }
 
+    // Trip lodging anchors (city centre / hotel coords) used as the origin for
+    // the rough drive estimate shown next to a potential option's map buttons.
+    const TRIP_BASES = {
+      pasadena: { name: "Pasadena", coords: [34.1478, -118.1445] },
+      santaMaria: { name: "Santa Maria", coords: [34.9530, -120.4357] },
+      monterey: { name: "Monterey", coords: [36.6002, -121.8947] },
+      mountainView: { name: "Mountain View", coords: [37.3861, -122.0839] },
+      mammoth: { name: "Mammoth Lakes", coords: [37.6485, -118.9721] },
+      lasVegas: { name: "Las Vegas", coords: [36.1212, -115.1722] }
+    };
+    // Map each mapped-place region to the trip base it would be driven from.
+    const REGION_BASE = {
+      "Los Angeles": "pasadena", "Southern California": "pasadena", "San Diego": "pasadena",
+      "Santa Barbara": "pasadena", "Central Valley": "pasadena", "Central Valley / CA-58": "pasadena",
+      "Central Coast": "santaMaria",
+      "Monterey / Carmel": "monterey",
+      "Bay Area": "mountainView", "Bay Area Peninsula": "mountainView", "San Francisco": "mountainView",
+      "Sonoma": "mountainView", "Santa Cruz": "mountainView",
+      "Yosemite": "mammoth",
+      "Las Vegas": "lasVegas", "Arizona": "lasVegas", "Death Valley": "lasVegas", "Mojave": "lasVegas"
+    };
+
+    function haversineMiles(a, b) {
+      const toRad = (d) => d * Math.PI / 180;
+      const R = 3958.8;
+      const dLat = toRad(b[0] - a[0]);
+      const dLon = toRad(b[1] - a[1]);
+      const s = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a[0])) * Math.cos(toRad(b[0])) * Math.sin(dLon / 2) ** 2;
+      return 2 * R * Math.asin(Math.sqrt(s));
+    }
+
+    const fmtDriveMins = (m) => m >= 60 ? `${Math.floor(m / 60)}h${m % 60 ? ` ${m % 60}m` : ""}` : `${m} min`;
+
+    // Rough straight-line drive estimate from the region's trip base. Applies a
+    // 1.3x road-winding factor and a distance-tiered average speed.
+    function potentialDriveEstimate(place) {
+      if (!Array.isArray(place.coords)) return "";
+      const baseKey = REGION_BASE[place.region];
+      const base = baseKey && TRIP_BASES[baseKey];
+      if (!base) return "";
+      const straight = haversineMiles(base.coords, place.coords);
+      const miles = Math.round(straight * 1.3);
+      const mph = straight < 20 ? 30 : 55;
+      const mins = Math.round((straight * 1.3) / mph * 60);
+      if (miles < 1) return `<span class="drive-est" title="At the ${escapeHtml(base.name)} base">At the ${escapeHtml(base.name)} base</span>`;
+      return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">~${miles} mi · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span>`;
+    }
+
     // The same four-button group used on the itinerary cards (Apple/Google ×
     // Place/Route), built from the primary mapped place's coordinates so the
     // links are location-unambiguous. Empty when an option has no mapped place.
@@ -3044,10 +3072,11 @@
       if (!places.length) return '<span class="potential-map-none" aria-hidden="true">—</span>';
       const primary = places[0];
       const loc = Array.isArray(primary.coords) ? `${primary.coords[0]},${primary.coords[1]}` : (primary.query || primary.name);
+      const est = potentialDriveEstimate(primary);
       const extra = places.length > 1
         ? `<span class="potential-map-hint">${escapeHtml(primary.name)} + ${places.length - 1} more</span>`
         : "";
-      return `${geoButtonGroup(loc, primary.name)}${extra}`;
+      return `${geoButtonGroup(loc, primary.name)}${est}${extra}`;
     }
 
     function renderPotentialOptions() {
