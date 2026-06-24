@@ -682,7 +682,7 @@
 
     .day-toolbar {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       gap: 12px;
       margin: 20px 0 16px;
@@ -708,6 +708,32 @@
       font-weight: 750;
       letter-spacing: 0.09em;
       text-transform: uppercase;
+    }
+
+    /* Collapsible filter groups */
+    .filter-collapse { min-width: 0; }
+    .filter-collapse > summary {
+      list-style: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+      width: fit-content;
+    }
+    .filter-collapse > summary::-webkit-details-marker { display: none; }
+    .filter-collapse > summary::marker { content: ""; }
+    .filter-collapse .filter-chevron {
+      font-size: 0.7rem;
+      color: var(--muted);
+      transition: transform 0.2s ease;
+    }
+    .filter-collapse[open] .filter-chevron { transform: rotate(180deg); }
+    .filter-collapse-body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 12px;
     }
 
     .category-filter {
@@ -1660,18 +1686,23 @@
             </div>
             <div class="potential-subview active" id="potentialTablePanel">
               <div class="potential-controls">
-                <div class="filter-panel">
-                  <span class="control-label">Status</span>
-                  <div class="filters" id="planStatusFilters"></div>
-                </div>
-                <div class="filter-panel">
-                  <span class="control-label">Category</span>
-                  <div class="filters" id="potentialCategoryFilters"></div>
-                </div>
-                <div class="filter-panel">
-                  <span class="control-label">Region</span>
-                  <div class="filters" id="potentialRegionFilters"></div>
-                </div>
+                <details class="filter-collapse" open>
+                  <summary><span class="control-label">Filters</span><span class="filter-chevron">▾</span></summary>
+                  <div class="filter-collapse-body">
+                    <div class="filter-panel">
+                      <span class="control-label">Status</span>
+                      <div class="filters" id="planStatusFilters"></div>
+                    </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Category</span>
+                      <div class="filters" id="potentialCategoryFilters"></div>
+                    </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Region</span>
+                      <div class="filters" id="potentialRegionFilters"></div>
+                    </div>
+                  </div>
+                </details>
                 <div class="control-meta">
                   <span class="control-label">Showing</span>
                   <div class="potential-count" id="potentialOptionCount"></div>
@@ -1691,10 +1722,15 @@
             </div>
             <div class="potential-subview" id="potentialMapPanel">
               <div class="potential-controls">
-                <div class="filter-panel">
-                  <span class="control-label">Mapped category filter</span>
-                  <div class="filters" id="potentialMapCategoryFilters"></div>
-                </div>
+                <details class="filter-collapse" open>
+                  <summary><span class="control-label">Filters</span><span class="filter-chevron">▾</span></summary>
+                  <div class="filter-collapse-body">
+                    <div class="filter-panel">
+                      <span class="control-label">Mapped category filter</span>
+                      <div class="filters" id="potentialMapCategoryFilters"></div>
+                    </div>
+                  </div>
+                </details>
                 <div class="control-meta">
                   <div>
                     <span class="control-label">Shown</span>
@@ -1722,16 +1758,21 @@
           </div>
           <div class="panel-body">
             <div class="day-toolbar">
-              <div class="day-filter-stack" aria-label="Itinerary filters">
-                <div class="filter-row">
-                  <span class="filter-label">Region</span>
-                  <div class="filters" id="dayRegionFilters"></div>
+              <details class="filter-collapse" open>
+                <summary><span class="control-label">Filters</span><span class="filter-chevron">▾</span></summary>
+                <div class="filter-collapse-body">
+                  <div class="day-filter-stack" aria-label="Itinerary filters">
+                    <div class="filter-row">
+                      <span class="filter-label">Region</span>
+                      <div class="filters" id="dayRegionFilters"></div>
+                    </div>
+                    <div class="filter-row">
+                      <span class="filter-label">Type</span>
+                      <div class="filters" id="dayTypeFilters"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="filter-row">
-                  <span class="filter-label">Type</span>
-                  <div class="filters" id="dayTypeFilters"></div>
-                </div>
-              </div>
+              </details>
               <div class="day-count" id="dayCount"></div>
             </div>
             <div class="day-grid" id="dayGrid"></div>
