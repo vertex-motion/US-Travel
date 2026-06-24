@@ -1322,11 +1322,55 @@
     .potential-map-cell .geo-btns { margin-top: 0; }
     .potential-map-none { color: var(--muted); }
     .drive-est {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
       margin-top: 6px;
       color: var(--muted);
       font-size: 0.78rem;
       line-height: 1.3;
+    }
+    .drive-meter {
+      position: relative;
+      width: 46px;
+      height: 11px;
+      flex: 0 0 46px;
+    }
+    .drive-meter::before,
+    .drive-meter::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 5px;
+      height: 2px;
+      border-radius: 999px;
+    }
+    .drive-meter::before {
+      right: 6px;
+      background: color-mix(in srgb, var(--muted) 28%, transparent);
+    }
+    .drive-meter::after {
+      width: calc((100% - 12px) * var(--drive-fill, 0.24));
+      max-width: calc(100% - 12px);
+      background: linear-gradient(90deg, var(--sky), var(--coral));
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--sky) 10%, transparent);
+    }
+    .drive-meter-dot {
+      position: absolute;
+      top: 2px;
+      width: 7px;
+      height: 7px;
+      border: 1px solid color-mix(in srgb, var(--muted) 34%, transparent);
+      border-radius: 999px;
+      background: var(--panel-solid);
+      box-shadow: 0 1px 4px rgba(23, 33, 38, 0.12);
+    }
+    .drive-meter-dot.start { left: 0; }
+    .drive-meter-dot.end {
+      left: calc(6px + (100% - 12px) * var(--drive-fill, 0.24) - 3.5px);
+      border-color: transparent;
+      background: var(--coral);
     }
 
     .status-cell { vertical-align: top; }
@@ -1464,6 +1508,7 @@
     .leaflet-popup-content { color: var(--ink); margin: 14px 16px; line-height: 1.5; min-width: 210px; }
     .map-popup { display: flex; flex-direction: column; gap: 9px; }
     .map-popup .geo-btns { margin-top: 2px; }
+    .map-popup .drive-est { margin-top: 0; }
     .popup-title { font-family: var(--font-display); font-weight: 800; font-size: 1.04rem; line-height: 1.25; margin: 0; }
     .popup-desc { color: var(--ink); font-size: 0.9rem; line-height: 1.45; margin: 0; }
     .popup-meta {
@@ -3138,6 +3183,11 @@
 
     const fmtDriveMins = (m) => m >= 60 ? `${Math.floor(m / 60)}h${m % 60 ? ` ${m % 60}m` : ""}` : `${m} min`;
 
+    function driveMeter(mins) {
+      const fill = Math.min(1, Math.max(0.12, (Number(mins) || 0) / 150));
+      return `<span class="drive-meter" style="--drive-fill: ${fill.toFixed(2)};" aria-hidden="true"><span class="drive-meter-dot start"></span><span class="drive-meter-dot end"></span></span>`;
+    }
+
     // Rough straight-line drive estimate from the region's trip base. Applies a
     // 1.3x road-winding factor and a distance-tiered average speed.
     function potentialDriveEstimate(place) {
@@ -3150,8 +3200,9 @@
       const km = Math.round(straight * 1.3 * 1.609);
       const mph = straight < 20 ? 30 : 55;
       const mins = Math.round((straight * 1.3) / mph * 60);
-      if (miles < 1) return `<span class="drive-est" title="At the ${escapeHtml(base.name)} base">At the ${escapeHtml(base.name)} base</span>`;
-      return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">~${miles} mi (${km} km) · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span>`;
+      const meter = driveMeter(mins);
+      if (miles < 1) return `<span class="drive-est" title="At the ${escapeHtml(base.name)} base">${meter}<span>At the ${escapeHtml(base.name)} base</span></span>`;
+      return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">${meter}<span>~${miles} mi (${km} km) · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span></span>`;
     }
 
     // The same four-button group used on the itinerary cards (Apple/Google ×
@@ -3242,10 +3293,12 @@
     function renderPotentialMapList(places) {
       $("#potentialMapList").innerHTML = places.map((place) => {
         const details = potentialOptionDetails(place);
+        const est = potentialDriveEstimate(place);
         return `
           <button type="button" class="map-place-button" data-place="${escapeHtml(place.id)}" style="--category-color: ${escapeHtml(categoryColor(place.category))};">
             <strong>${escapeHtml(place.name)}</strong>
             <span>${escapeHtml(place.region)} - ${escapeHtml(details.option)}</span>
+            ${est}
             <span class="map-place-category">${escapeHtml(place.category)}</span>
           </button>
         `;
@@ -3287,11 +3340,13 @@
         const details = potentialOptionDetails(place);
         const marker = L.marker(place.coords, { icon: potentialMarkerIcon(place.category) }).addTo(potentialMapState.layer);
         const popupLoc = Array.isArray(place.coords) ? `${place.coords[0]},${place.coords[1]}` : (place.query || place.name);
+        const est = potentialDriveEstimate(place);
         marker.bindPopup(`
           <div class="map-popup">
             <div class="popup-title">${escapeHtml(place.name)}</div>
             <div class="popup-desc">${escapeHtml(details.desc)}</div>
             <div class="popup-meta"><span class="popup-cat-dot" style="--category-color: ${escapeHtml(categoryColor(place.category))};"></span>${escapeHtml(place.region)} · ${escapeHtml(place.category)}</div>
+            ${est}
             ${geoButtonGroup(popupLoc, place.name)}
             <div class="popup-fit"><span class="popup-label">Current fit / tradeoff</span>${escapeHtml(details.why)}</div>
           </div>
