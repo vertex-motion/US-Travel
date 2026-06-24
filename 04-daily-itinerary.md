@@ -116,7 +116,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Mountain View hotel.
 - Morning: Drive ~10-15 min to California's Great America in Santa Clara; arrive at opening (rope drop) to beat both crowds and afternoon heat. The 13-year-old rides the bigger coasters (Gold Striker, RailBlazer); the 3-year-old does Planet Snoopy / KidZville. Use rider swap for height-restricted rides.
 - Afternoon: Continue in the park with a midday break or water-play for the 3-year-old; leave when the toddler fades.
-- Driving: Mountain View → California's Great America, Santa Clara (~6 miles). Open the dashboard for live distance and time.
+- Driving: Mountain View → California's Great America, Santa Clara (~6 miles / 10 km). Open the dashboard for live distance and time.
 - Reservations: Buy dated tickets online ahead (cheaper and guarantees entry). Wednesday is chosen as the least-crowded flex day (Tue-Thu are quietest; Sat is busiest); no Levi's Stadium World Cup conflict in this window. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md).
 - Backup plan: If the family skips the park, fall back to a soft Bay Area day (hotel pool/rest, Stanford campus, or a San Francisco waterfront / Exploratorium outing). On a heat-spike day, swap to the cooler Santa Cruz Beach Boardwalk.
 

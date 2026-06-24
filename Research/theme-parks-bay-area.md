@@ -16,7 +16,7 @@ Verify live hours, prices, and ride heights close to travel; parks change schedu
 | Question | Answer for this family |
 | --- | --- |
 | Is there a theme park *in San Francisco*? | **No.** SF city has no major theme park. The parks are elsewhere in the Bay Area — and two are very close to Mountain View. |
-| Closest / best all-ages park? | **California's Great America** (Santa Clara) — ~6 miles / 10–15 min from the hotel. Coasters for the teen + a kids' area for the 3-year-old. See Section 2. |
+| Closest / best all-ages park? | **California's Great America** (Santa Clara) — ~6 miles (10 km) / 10–15 min from the hotel. Coasters for the teen + a kids' area for the 3-year-old. See Section 2. |
 | **Least-crowded day to go?** | **Wednesday, July 8** (a flex day). It's a weekday — Great America's lightest days are Tue–Thu; Saturday is the busiest. **Avoid the Sat 11 / Sun 12 weekend.** See Section 4. |
 | Any closure risk? | Great America closes on **World Cup match days at adjacent Levi's Stadium** — but **all Bay Area matches end July 1**, so the July 7–13 window is clear. See Section 4. |
 | Doing this *and* Disneyland? | Probably too theme-park-heavy for one trip with a toddler. Treat LA Disneyland and a Bay Area park as **either/or**, not both. |
@@ -29,10 +29,10 @@ Verify live hours, prices, and ride heights close to travel; parks change schedu
 
 | Park | Official site | From Mountain View | Best for | 3-year-old | 13-year-old |
 | --- | --- | --- | --- | --- | --- |
-| **California's Great America** (Santa Clara) | [sixflags.com/cagreatamerica](https://www.sixflags.com/cagreatamerica) | ~6 mi · 10–15 min | All ages together | Good — Planet Snoopy / KidZville | Good — coasters + RailBlazer/Gold Striker |
-| **Santa Cruz Beach Boardwalk** (Santa Cruz) | [beachboardwalk.com](https://beachboardwalk.com/) | ~35 mi · ~40 min | Casual seaside, mixed ages | Good — kiddie rides, beach | Good — Giant Dipper, arcade |
-| **Gilroy Gardens** (Gilroy) | [gilroygardens.org](https://www.gilroygardens.org/) | ~30 mi · ~35–40 min | Young children | **Best fit** — gentle rides, gardens, splash | Light — may feel young |
-| **Six Flags Discovery Kingdom** (Vallejo) | [sixflags.com/discoverykingdom](https://www.sixflags.com/discoverykingdom) | ~50 mi · ~55–70 min | Teens / thrill | Limited — height limits | **Best fit** — big coasters + animals |
+| **California's Great America** (Santa Clara) | [sixflags.com/cagreatamerica](https://www.sixflags.com/cagreatamerica) | ~6 mi (10 km) · 10–15 min | All ages together | Good — Planet Snoopy / KidZville | Good — coasters + RailBlazer/Gold Striker |
+| **Santa Cruz Beach Boardwalk** (Santa Cruz) | [beachboardwalk.com](https://beachboardwalk.com/) | ~35 mi (56 km) · ~40 min | Casual seaside, mixed ages | Good — kiddie rides, beach | Good — Giant Dipper, arcade |
+| **Gilroy Gardens** (Gilroy) | [gilroygardens.org](https://www.gilroygardens.org/) | ~30 mi (48 km) · ~35–40 min | Young children | **Best fit** — gentle rides, gardens, splash | Light — may feel young |
+| **Six Flags Discovery Kingdom** (Vallejo) | [sixflags.com/discoverykingdom](https://www.sixflags.com/discoverykingdom) | ~50 mi (80 km) · ~55–70 min | Teens / thrill | Limited — height limits | **Best fit** — big coasters + animals |
 
 Notes:
 - **Great America** is essentially next door to the Mountain View hotel — the only park you can reach in well under 20 minutes. **Online single-day tickets from ~$45** (gate price higher); under-2s free, so the 3-year-old needs a ticket. Hours in summer roughly **10:00 am–6:00 pm or later**.

@@ -22,8 +22,8 @@ The expanded 48-team format has 104 matches across:
 
 | Host city | Venue | Distance from family's base | Family stay |
 | --- | --- | --- | --- |
-| Los Angeles (Inglewood) | SoFi Stadium | ~25–30 miles from Pasadena (~35–45 min drive) | Jun 28–Jul 4 and Jul 17–18 |
-| San Francisco Bay Area (Santa Clara) | SF Bay Area Stadium (Levi's Stadium) | ~3 miles from Mountain View hotel (~5–10 min drive) | Jul 7–13 |
+| Los Angeles (Inglewood) | SoFi Stadium | ~25–30 miles (40–48 km) from Pasadena (~35–45 min drive) | Jun 28–Jul 4 and Jul 17–18 |
+| San Francisco Bay Area (Santa Clara) | SF Bay Area Stadium (Levi's Stadium) | ~3 miles (5 km) from Mountain View hotel (~5–10 min drive) | Jul 7–13 |
 
 No other World Cup venues are on or near the planned route. Las Vegas, Monterey, Mammoth Lakes, and Santa Maria are not World Cup host cities.
 
@@ -44,7 +44,7 @@ SoFi Stadium (branded "Los Angeles Stadium" for the tournament) hosts 8 matches 
 | Teams | TBD (group stage ends June 27; teams confirmed that day) |
 | Round | Round of 32 |
 | Stadium | SoFi Stadium, 1001 Stadium Dr, Inglewood, CA 90301 |
-| Distance from Pasadena | ~30 miles, ~35–45 min in normal traffic; expect longer on match day |
+| Distance from Pasadena | ~30 miles (48 km), ~35–45 min in normal traffic; expect longer on match day |
 | Ticket availability | Available via FIFA Last-Minute Sales (fifa.com/tickets) and resale marketplaces |
 | Indicative resale price | ~USD $500–$900 per ticket; face-value tier Cat 4 starts ~USD $200–$300 + 15% fee if still on FIFA.com |
 | Sale start | FIFA Phase 4 (Last-Minute Sales) opened April 1, 2026 — first-come-first-served through kick-off |
@@ -59,7 +59,7 @@ SoFi Stadium (branded "Los Angeles Stadium" for the tournament) hosts 8 matches 
 | Teams | 1H vs 2J (Winner of Group H vs Runner-up of Group J) |
 | Round | Round of 32 |
 | Stadium | SoFi Stadium, 1001 Stadium Dr, Inglewood, CA 90301 |
-| Distance from Pasadena | ~30 miles, ~35–45 min in normal traffic; expect longer on match day |
+| Distance from Pasadena | ~30 miles (48 km), ~35–45 min in normal traffic; expect longer on match day |
 | Ticket availability | Available via FIFA Last-Minute Sales (fifa.com/tickets), FIFA Exchange Marketplace, and third-party resale |
 | Indicative resale price | ~USD $600–$1,250 per ticket from resale platforms; face-value Cat 4 starts ~USD $200–$300 + 15% fee if still on FIFA.com |
 | Sale start | FIFA Phase 4 open now (April 1, 2026 onwards) through kick-off |
@@ -69,7 +69,7 @@ SoFi Stadium (branded "Los Angeles Stadium" for the tournament) hosts 8 matches 
 
 ### SF Bay Area Stadium — Santa Clara, CA (Levi's Stadium)
 
-The Bay Area venue sits 3 miles from the family's Mountain View hotel. **Unfortunately, all 6 matches at this venue fall before the family arrives on July 7.**
+The Bay Area venue sits 3 miles (5 km) from the family's Mountain View hotel. **Unfortunately, all 6 matches at this venue fall before the family arrives on July 7.**
 
 | Match | Date | Time (PT) | Teams | Round | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -89,7 +89,7 @@ The family arrives Mountain View on July 7 — six days after the final match at
 | Match | Date | Venue | City | Distance from family that day | Gap |
 | --- | --- | --- | --- | --- | --- |
 | Round of 32 at Levi's | Jul 1 | SF Bay Area Stadium | Santa Clara | Family is in Monterey (~1.5 hr away) | 6 days before Bay Area arrival |
-| Quarterfinal at SoFi | Jul 10, 12:00 PM PT | SoFi Stadium | Inglewood | Family is in Mountain View (~380 miles) | Not reachable without an extra flight or 6-hr drive |
+| Quarterfinal at SoFi | Jul 10, 12:00 PM PT | SoFi Stadium | Inglewood | Family is in Mountain View (~380 miles / ~610 km) | Not reachable without an extra flight or 6-hr drive |
 
 ---
 

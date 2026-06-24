@@ -112,5 +112,5 @@ The LAX closed-circle recommendation has been promoted into the canonical trip f
 | Qantas announced Sydney-Las Vegas direct seasonal service from the end of 2026, after the July 2026 trip. | Qantas Agency Connect | https://www.qantas.com/agencyconnect/us/en/agency-news/february-2026/qantas-new-route-las-vegas.html | 2026-05-15 | Current; not useful for July 2026 |
 | SFO has BART connection to downtown San Francisco. | BART | https://www.bart.gov/guide/airport/sfo | 2026-05-15 | Current |
 | LAX has FlyAway and Metro/LAX connector transit options. | Los Angeles World Airports | https://www.lawa.org/commutelax/transit | 2026-05-15 | Current |
-| LAS is two miles from the Las Vegas Strip and 15 miles from downtown. | Harry Reid International Airport | https://www.lasairport.com/Directions | 2026-05-15 | Current |
+| LAS is two miles (3 km) from the Las Vegas Strip and 15 miles (24 km) from downtown. | Harry Reid International Airport | https://www.lasairport.com/Directions | 2026-05-15 | Current |
 | Existing route constraints, family pace, and previous open-jaw plan. | Repository planning files | `01-trip-purpose.md`, `02-current-plan-options.md`, `05-trip-logistics.md` | 2026-05-15 | Local planning source |

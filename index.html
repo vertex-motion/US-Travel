@@ -1831,28 +1831,28 @@
                     <tbody>
                       <tr>
                         <td><strong>Disneyland</strong> (Anaheim)</td>
-                        <td>~30–35 mi · 45–70 min</td>
+                        <td>~30–35 mi (48–56 km) · 45–70 min</td>
                         <td>~$155–179 / adult<br><span style="color:var(--muted)">day ~$600–700</span></td>
                         <td><span class="rt-tag rt-best">Top pick</span> Only LA park that works for both ages. At ~105 cm the 3yo clears the 40″ rides (Space Mountain, Big Thunder, Star Tours, Rise of the Resistance) and rides most of the park with the teen — misses only Matterhorn 42″ / Indiana Jones 46″. 3yo free; teen pays adult.</td>
                         <td><a href="https://disneyland.disney.go.com/" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Universal Studios Hollywood</strong></td>
-                        <td>~15 mi · 25–45 min</td>
+                        <td>~15 mi (24 km) · 25–45 min</td>
                         <td>from ~$109 / adult</td>
                         <td>Now viable, not just the teen's park: at ~105 cm the 3yo clears the 40″ rides (Mario Kart, Transformers, Flight of the Hippogriff) + Studio Tour. Still misses 42″+ (Jurassic World 42″, Mummy/Forbidden Journey 48″, Hollywood Drift 51″).</td>
                         <td><a href="https://www.universalstudioshollywood.com/" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Knott's Berry Farm</strong> (Buena Park)</td>
-                        <td>~25 mi · 35–55 min</td>
+                        <td>~25 mi (40 km) · 35–55 min</td>
                         <td>cheaper than Disneyland</td>
                         <td>Budget compromise — Camp Snoopy for the toddler, strong coasters for the teen.</td>
                         <td><a href="https://www.knotts.com/" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Legoland California</strong></td>
-                        <td>~90 mi · 1h45+</td>
+                        <td>~90 mi (145 km) · 1h45+</td>
                         <td>—</td>
                         <td><span class="rt-tag rt-skip">Excluded</span> Near San Diego — off-route from the Pasadena base.</td>
                         <td><a href="https://www.legoland.com/california/" target="_blank" rel="noopener">Official</a></td>
@@ -1874,28 +1874,28 @@
                     <tbody>
                       <tr>
                         <td><strong>California's Great America</strong> (Santa Clara)</td>
-                        <td>~6 mi · 10–15 min</td>
+                        <td>~6 mi (10 km) · 10–15 min</td>
                         <td>from ~$45 / ticket</td>
                         <td><span class="rt-tag rt-best">Top pick</span> Only park serving both ages — at ~105 cm the 3yo clears all Planet Snoopy + the 40″ Woodstock Express coaster (just short of 42″ rides); coasters for the teen. Closest by far. Go Wed Jul 8.</td>
                         <td><a href="https://www.sixflags.com/cagreatamerica" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Santa Cruz Beach Boardwalk</strong></td>
-                        <td>~35 mi · ~40 min</td>
+                        <td>~35 mi (56 km) · ~40 min</td>
                         <td>Free entry<br><span style="color:var(--muted)">ride wristband ~$40–50</span></td>
                         <td>Pay per ride; relaxed seaside, cooler. Best swap on a heat-spike day.</td>
                         <td><a href="https://beachboardwalk.com/" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Gilroy Gardens</strong></td>
-                        <td>~30 mi · ~35–40 min</td>
+                        <td>~30 mi (48 km) · ~35–40 min</td>
                         <td>~$65 / ticket<br><span style="color:var(--muted)">$80 gate</span></td>
                         <td>Best fit for the 3yo — gentle rides, gardens, splash; the teen may find it tame. 3yo needs a ticket (under-3 free).</td>
                         <td><a href="https://www.gilroygardens.org/" target="_blank" rel="noopener">Official</a></td>
                       </tr>
                       <tr>
                         <td><strong>Six Flags Discovery Kingdom</strong> (Vallejo)</td>
-                        <td>~50 mi · ~55–70 min</td>
+                        <td>~50 mi (80 km) · ~55–70 min</td>
                         <td>from ~$39 / ticket</td>
                         <td>Teen thrill coasters + animals; furthest, and the 3yo is height-limited on the headline rides.</td>
                         <td><a href="https://www.sixflags.com/discoverykingdom" target="_blank" rel="noopener">Official</a></td>
@@ -3059,10 +3059,11 @@
       if (!base) return "";
       const straight = haversineMiles(base.coords, place.coords);
       const miles = Math.round(straight * 1.3);
+      const km = Math.round(straight * 1.3 * 1.609);
       const mph = straight < 20 ? 30 : 55;
       const mins = Math.round((straight * 1.3) / mph * 60);
       if (miles < 1) return `<span class="drive-est" title="At the ${escapeHtml(base.name)} base">At the ${escapeHtml(base.name)} base</span>`;
-      return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">~${miles} mi · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span>`;
+      return `<span class="drive-est" title="Straight-line drive estimate from the ${escapeHtml(base.name)} base">~${miles} mi (${km} km) · ~${escapeHtml(fmtDriveMins(mins))} from ${escapeHtml(base.name)}</span>`;
     }
 
     // The same four-button group used on the itinerary cards (Apple/Google ×

@@ -18,6 +18,10 @@ Apply to all technical documents, instructions, and planning files.
 4. Keep structure scannable: headings, numbered steps for ordered work, bullets for unordered rules.
 5. Check existing files before adding guidance. Update stale content; don't layer on top.
 
+## Units
+
+State every distance in both miles and kilometers, miles first with kilometers in parentheses: `30 mi (48 km)`. Applies to all files, tables, research, and generated `index.html` output. Convert with 1 mi = 1.609 km, round both to the same style (whole numbers, or matching decimals). For a range, convert both ends: `30–35 mi (48–56 km)`. Do not state a distance in only one unit.
+
 ## Commit Workflow
 
 Finalize all changes before committing. Commit directly to `main` and push to `origin/main` after each successful commit.

@@ -30,10 +30,10 @@ Verify live prices, hours, and ride heights close to travel; parks change pricin
 
 | Park | Drive from Pasadena | Best for | Fit for the 3-year-old (~105 cm / 41¼″) | Fit for a 13-year-old |
 | --- | --- | --- | --- | --- |
-| **Disneyland Resort** (Anaheim) | ~30–35 mi · 45–70 min | All ages together | **Excellent** — clears the 40″ tier, so she rides nearly everything alongside the teen | **Good** — classic + a few thrills |
-| **Universal Studios Hollywood** | ~15 mi · 25–45 min | Teens / adults | **Moderate** — clears the 40″ rides (Mario Kart, Transformers, Hippogriff); misses 42″+ | **Excellent** — Nintendo, HP, coasters |
-| **Knott's Berry Farm** (Buena Park) | ~25 mi · 35–55 min | Mixed; thrill + Camp Snoopy | **Good** — Camp Snoopy area; clears 40″, misses 42″ | **Good** — strong coasters |
-| **Legoland California** (Carlsbad) | ~90 mi · 1h45+ | Ages 2–12 | Good, but too far | Aging out |
+| **Disneyland Resort** (Anaheim) | ~30–35 mi (48–56 km) · 45–70 min | All ages together | **Excellent** — clears the 40″ tier, so she rides nearly everything alongside the teen | **Good** — classic + a few thrills |
+| **Universal Studios Hollywood** | ~15 mi (24 km) · 25–45 min | Teens / adults | **Moderate** — clears the 40″ rides (Mario Kart, Transformers, Hippogriff); misses 42″+ | **Excellent** — Nintendo, HP, coasters |
+| **Knott's Berry Farm** (Buena Park) | ~25 mi (40 km) · 35–55 min | Mixed; thrill + Camp Snoopy | **Good** — Camp Snoopy area; clears 40″, misses 42″ | **Good** — strong coasters |
+| **Legoland California** (Carlsbad) | ~90 mi (145 km) · 1h45+ | Ages 2–12 | Good, but too far | Aging out |
 
 Legoland is **off-route** (near San Diego) and not feasible from the Pasadena base — excluded from here on. The real choice is Disneyland vs Universal, with Knott's as a cheaper middle option.
 
