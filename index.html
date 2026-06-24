@@ -680,16 +680,15 @@
     .dot.rose { background: var(--rose); box-shadow: 0 0 0 4px color-mix(in srgb, var(--rose) 18%, transparent); }
     .dot.grape { background: var(--grape); box-shadow: 0 0 0 4px color-mix(in srgb, var(--grape) 18%, transparent); }
 
-    /* Filter frames: glass treatment so they blend with the page gradient
-       instead of sitting on it as a flat opaque block. */
+    /* Filter frames: opaque neutral surface so the page's multi-color gradient
+       does not bleed through and tint the controls unevenly. */
     .day-toolbar,
     .potential-controls {
       margin: 20px 0 16px;
       padding: 14px 16px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      background: var(--panel);
-      backdrop-filter: var(--glass-blur);
+      background: var(--panel-solid);
       box-shadow: var(--shadow-sm);
     }
 
