@@ -1298,51 +1298,8 @@
       font-weight: 700;
     }
 
-    .rating-cell { width: 174px; }
-    .rating-widget { display: grid; gap: 7px; min-width: 150px; }
-
-    .rating-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .rating-label {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 9px;
-      border: 1px solid var(--line);
-      padding: 5px 10px;
-      color: var(--muted);
-      background: var(--chip-bg);
-      font-size: 0.78rem;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .rating-label.low { color: var(--warn-fg); background: var(--warn-bg); border-color: var(--warn-bd); }
-    .rating-label.medium { color: var(--good-fg); background: var(--good-bg); border-color: var(--good-bd); }
-    .rating-label.high { color: var(--info-fg); background: var(--info-bg); border-color: var(--info-bd); }
-    .rating-label.top { color: var(--grape); background: color-mix(in srgb, var(--grape) 14%, transparent); border-color: color-mix(in srgb, var(--grape) 35%, transparent); }
-
-    .rating-score { color: var(--muted); font-size: 0.78rem; font-weight: 750; white-space: nowrap; }
-
-    .rating-meter {
-      display: grid;
-      grid-template-columns: repeat(10, minmax(0, 1fr));
-      gap: 3px;
-      height: 9px;
-    }
-
-    .rating-segment { border-radius: 999px; background: var(--track); }
-    .rating-segment.filled { background: var(--grad-sky); }
-    .rating-widget.low .rating-segment.filled { background: linear-gradient(180deg, #ffb454, #ff8a3d); }
-    .rating-widget.medium .rating-segment.filled { background: linear-gradient(180deg, #3fd0b6, #0ea5a4); }
-    .rating-widget.high .rating-segment.filled { background: linear-gradient(180deg, #4cb5f0, #2293c9); }
-    .rating-widget.top .rating-segment.filled { background: linear-gradient(180deg, #9b8cff, #7b6cf6); }
-
-    .rating-note { color: var(--muted); font-size: 0.76rem; line-height: 1.25; }
+    .rating-cell { width: 64px; }
+    .rating-score { color: var(--ink); font-size: 0.95rem; font-weight: 750; white-space: nowrap; }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -3068,36 +3025,10 @@
       return `<span class="tag ${type}">${escapeHtml(status || "")}</span>`;
     };
 
-    function ratingMeta(interest) {
-      const rating = Math.max(0, Math.min(10, Number(interest) || 0));
-      if (rating === 0) {
-        return { rating, tone: "unrated", label: "Not rated", note: "Awaiting family input" };
-      }
-      if (rating <= 3) {
-        return { rating, tone: "low", label: "Low pull", note: "Nice only if easy" };
-      }
-      if (rating <= 6) {
-        return { rating, tone: "medium", label: "Interested", note: "Plan if it fits" };
-      }
-      if (rating <= 8) {
-        return { rating, tone: "high", label: "Strong pull", note: "Protect if practical" };
-      }
-      return { rating, tone: "top", label: "Must shape plan", note: "Build around this" };
-    }
-
     function renderRating(interest) {
-      const meta = ratingMeta(interest);
-      const segments = Array.from({ length: 10 }, (_, index) => `<span class="rating-segment ${index < meta.rating ? "filled" : ""}"></span>`).join("");
-      const score = meta.rating === 0 ? "0/10" : `${meta.rating}/10`;
-      return `
-        <div class="rating-widget ${escapeHtml(meta.tone)}" aria-label="${escapeHtml(meta.label)}: ${escapeHtml(score)}">
-          <div class="rating-head">
-            <span class="rating-label ${escapeHtml(meta.tone)}">${escapeHtml(meta.label)}</span>
-            <span class="rating-score">${escapeHtml(score)}</span>
-          </div>
-          <div class="rating-meter" aria-hidden="true">${segments}</div>
-          <div class="rating-note">${escapeHtml(meta.note)}</div>
-        </div>
+      const rating = Math.max(0, Math.min(10, Number(interest) || 0));
+      const score = `${rating}/10`;
+      return `<span class="rating-score" aria-label="Interest ${escapeHtml(score)}">${escapeHtml(score)}</span>
       `;
     }
 
