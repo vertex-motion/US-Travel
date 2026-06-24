@@ -4019,7 +4019,14 @@
       $$("#potentialMapList .map-place-button").forEach((button) => button.classList.toggle("active", button.dataset.place === id));
       const marker = potentialMapState.markers.get(id);
       if (!marker || !potentialMapState.map) return;
-      potentialMapState.map.flyTo(marker.getLatLng(), 14, { duration: 0.45 });
+      const map = potentialMapState.map;
+      const targetZoom = 14;
+      const targetPoint = map.project(marker.getLatLng(), targetZoom);
+      const targetCenter = map.unproject([
+        targetPoint.x,
+        targetPoint.y - (map.getSize().y / 5)
+      ], targetZoom);
+      map.flyTo(targetCenter, targetZoom, { duration: 0.45 });
       marker.openPopup();
     }
 
@@ -4058,7 +4065,7 @@
             ${geoButtonGroup(popupLoc, place.name)}
             <div class="popup-fit"><span class="popup-label">Current fit / tradeoff</span>${escapeHtml(details.why)}</div>
           </div>
-        `);
+        `, { autoPan: false });
         marker.on("click", () => activatePotentialPlace(place.id));
         potentialMapState.markers.set(place.id, marker);
       });
