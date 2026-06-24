@@ -1456,11 +1456,38 @@
     }
 
     .status-cell { vertical-align: top; }
-    .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
-    .status-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    /* Accent rail: a thin status-tinted bar on the left ties the status, rating,
+       category, and region into one cohesive block instead of loose fragments. */
+    .status-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+      padding-left: 12px;
+      border-left: 3px solid var(--status-rail, var(--line));
+    }
+    .status-stack.tone-good   { --status-rail: var(--good-fg); }
+    .status-stack.tone-info   { --status-rail: var(--info-fg); }
+    .status-stack.tone-stop   { --status-rail: var(--stop-fg); }
+    .status-stack.tone-parked { --status-rail: var(--line-strong); }
+    .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
-    .rating-score { color: var(--muted); font-size: 0.9rem; font-weight: 750; white-space: nowrap; }
+    .rating-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 9px;
+      border: 1px solid var(--line);
+      background: var(--chip-bg);
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .rating-chip svg { width: 13px; height: 13px; color: #f5a623; flex-shrink: 0; }
+    .rating-chip.is-rated { color: var(--ink-soft); }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -3392,6 +3419,7 @@
       moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>',
       dot: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>',
       pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>',
+      star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.27 5.82.85-4.21 4.1.99 5.79L12 16.78 6.99 19.5l.99-5.79-4.21-4.1 5.82-.85z"/></svg>',
       check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
       apple: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-3.09 2.52-4.57 2.64-4.64-1.44-2.11-3.68-2.4-4.48-2.43-1.91-.19-3.72 1.12-4.69 1.12-.96 0-2.45-1.09-4.03-1.06-2.07.03-3.98 1.2-5.05 3.06-2.15 3.73-.55 9.26 1.55 12.29 1.03 1.48 2.25 3.15 3.86 3.09 1.55-.06 2.13-1 4-1 1.86 0 2.39 1 4.03.97 1.66-.03 2.71-1.51 3.73-3 .96-1.41 1.36-2.78 1.38-2.85-.03-.01-2.65-1.02-2.68-4.04z"/><path d="M14.53 4.6c.85-1.03 1.42-2.46 1.27-3.89-1.22.05-2.71.81-3.59 1.84-.79.91-1.48 2.37-1.29 3.77 1.36.11 2.75-.69 3.61-1.72z"/></svg>',
       google: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 12.23c0-.66-.06-1.29-.17-1.9H12v3.6h5.38a4.6 4.6 0 0 1-2 3.02v2.5h3.23c1.89-1.74 2.99-4.3 2.99-7.22z"/><path fill="currentColor" d="M12 22c2.7 0 4.96-.9 6.62-2.43l-3.23-2.5c-.9.6-2.05.96-3.39.96-2.6 0-4.81-1.76-5.6-4.12H3.07v2.59A10 10 0 0 0 12 22z"/><path fill="currentColor" d="M6.4 13.91A6 6 0 0 1 6.09 12c0-.66.11-1.31.32-1.91V7.5H3.07A10 10 0 0 0 2 12c0 1.61.39 3.14 1.07 4.5z"/><path fill="currentColor" d="M12 5.97c1.47 0 2.79.5 3.83 1.5l2.87-2.87C16.95 2.99 14.7 2 12 2A10 10 0 0 0 3.07 7.5l3.33 2.59C7.19 7.73 9.4 5.97 12 5.97z"/></svg>'
@@ -3601,20 +3629,23 @@
       });
     }
 
+    // Single source of truth for status -> tone, used by both the status tag and
+    // the status-cell accent rail.
+    const statusTone = (status) =>
+      status === "Parked" ? "parked"
+      : ({ "In the plan": "good", "Potential option": "info", Rejected: "stop" }[status] || "info");
+
     const planStatusTag = (status) => {
       if (status === "Parked") {
         return `<span class="tag" style="background: var(--panel-soft); color: var(--muted); border: 1px solid var(--line);">${escapeHtml(status || "")}</span>`;
       }
-      const map = { "In the plan": "good", "Potential option": "info", Rejected: "stop" };
-      const type = map[status] || "info";
-      return `<span class="tag ${type}">${escapeHtml(status || "")}</span>`;
+      return `<span class="tag ${statusTone(status)}">${escapeHtml(status || "")}</span>`;
     };
 
     function renderRating(interest) {
       const rating = Math.max(0, Math.min(10, Number(interest) || 0));
       const score = `${rating}/10`;
-      return `<span class="rating-score" aria-label="Interest ${escapeHtml(score)}">${escapeHtml(score)}</span>
-      `;
+      return `<span class="rating-chip${rating > 0 ? " is-rated" : ""}" aria-label="Interest ${escapeHtml(score)}">${icon("star")}<span>${escapeHtml(score)}</span></span>`;
     }
 
     function potentialPlacesForOption(row) {
@@ -3717,7 +3748,7 @@
               </div>
             </td>
             <td class="status-cell">
-              <div class="status-stack">
+              <div class="status-stack tone-${statusTone(row.planStatus)}">
                 <div class="status-line">
                   ${planStatusTag(row.planStatus)}
                   ${renderRating(row.interest)}
