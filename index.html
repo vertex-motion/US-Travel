@@ -1285,10 +1285,10 @@
     tbody tr:hover td { background: var(--hover); }
     tr:last-child td { border-bottom: 0; }
 
-    .potential-table { min-width: 1040px; }
-    .potential-table tr[data-map-url] { cursor: pointer; }
-    .potential-table tr[data-map-url]:hover td,
-    .potential-table tr[data-map-url]:focus td { background: var(--hover); }
+    .potential-table { min-width: 1180px; }
+    .potential-map-cell { min-width: 150px; }
+    .potential-map-cell .geo-btns { margin-top: 0; }
+    .potential-map-none { color: var(--muted); }
 
     .potential-map-hint {
       display: inline-block;
@@ -1646,7 +1646,7 @@
               </div>
               <div class="table-wrap">
                 <table class="potential-table">
-                  <thead><tr><th>Name</th><th>Status</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
+                  <thead><tr><th>Name</th><th>Map</th><th>Status</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Decision trigger</th></tr></thead>
                   <tbody id="potentialOptions"></tbody>
                 </table>
               </div>
@@ -2812,16 +2812,22 @@
     const geoBtn = (href, iconName, label, title) =>
       `<a class="geo-btn" href="${escapeHtml(href)}" target="_blank" rel="noopener" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${icon(iconName)}<span>${escapeHtml(label)}</span></a>`;
 
-    function renderPlaceButtons(place) {
-      if (place.map === false) return "";
-      const q = encodeURIComponent(place.query || place.name);
-      const name = place.name;
+    // The shared four-button group (Apple/Google × Place/Route). `loc` is the
+    // location token used in the URLs: either a search string ("Getty Center,
+    // Los Angeles, California") or a "lat,lng" coordinate pair.
+    function geoButtonGroup(loc, name) {
+      const q = encodeURIComponent(loc);
       return `<div class="geo-btns">
         ${geoBtn(`https://maps.apple.com/?q=${q}`, "apple", "P", `Open ${name} in Apple Maps`)}
         ${geoBtn(`https://maps.apple.com/?daddr=${q}&dirflg=d`, "apple", "R", `Drive to ${name} in Apple Maps`)}
         ${geoBtn(`https://www.google.com/maps/search/?api=1&query=${q}`, "google", "P", `Open ${name} in Google Maps`)}
         ${geoBtn(`https://www.google.com/maps/dir/?api=1&destination=${q}&travelmode=driving`, "google", "R", `Drive to ${name} in Google Maps`)}
       </div>`;
+    }
+
+    function renderPlaceButtons(place) {
+      if (place.map === false) return "";
+      return geoButtonGroup(place.query || place.name, place.name);
     }
 
     function renderParking(place) {
@@ -3099,15 +3105,18 @@
       return tripData.potentialMapPlaces.filter((place) => place.option === row.option);
     }
 
-    function potentialOptionMapTarget(row) {
+    // The same four-button group used on the itinerary cards (Apple/Google ×
+    // Place/Route), built from the primary mapped place's coordinates so the
+    // links are location-unambiguous. Empty when an option has no mapped place.
+    function potentialMapButtons(row) {
       const places = potentialPlacesForOption(row);
-      if (!places.length) return null;
+      if (!places.length) return '<span class="potential-map-none" aria-hidden="true">—</span>';
       const primary = places[0];
-      return {
-        url: mapSearchUrl(primary.query || primary.name),
-        label: primary.name,
-        count: places.length
-      };
+      const loc = Array.isArray(primary.coords) ? `${primary.coords[0]},${primary.coords[1]}` : (primary.query || primary.name);
+      const extra = places.length > 1
+        ? `<span class="potential-map-hint">${escapeHtml(primary.name)} + ${places.length - 1} more</span>`
+        : "";
+      return `${geoButtonGroup(loc, primary.name)}${extra}`;
     }
 
     function renderPotentialOptions() {
@@ -3119,18 +3128,10 @@
         return categoryMatch && statusMatch;
       });
       $("#potentialOptions").innerHTML = rows.map((row) => {
-        const mapTarget = potentialOptionMapTarget(row);
-        const optionHref = mapTarget ? mapTarget.url : row.link;
-        const rowAttributes = mapTarget
-          ? ` data-map-url="${escapeHtml(mapTarget.url)}" tabindex="0" role="link" aria-label="Open ${escapeHtml(row.option)} in Google Maps"`
-          : "";
-        const mapHint = mapTarget
-          ? `<br><span class="potential-map-hint">Google Maps: ${escapeHtml(mapTarget.label)}${mapTarget.count > 1 ? ` + ${mapTarget.count - 1} more` : ""}</span>`
-          : "";
-
         return `
-          <tr${rowAttributes}>
-            <td><strong><a href="${escapeHtml(optionHref)}">${escapeHtml(row.option)}</a></strong>${mapHint}</td>
+          <tr>
+            <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
+            <td class="potential-map-cell">${potentialMapButtons(row)}</td>
             <td>${planStatusTag(row.planStatus)}</td>
             <td class="rating-cell">${renderRating(row.interest)}</td>
             <td><span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span></td>
@@ -3397,21 +3398,6 @@
       });
     }
 
-    function wirePotentialOptionRows() {
-      $("#potentialOptions").addEventListener("click", (event) => {
-        if (event.target.closest("a")) return;
-        const row = event.target.closest("tr[data-map-url]");
-        if (!row) return;
-        window.location.assign(row.dataset.mapUrl);
-      });
-      $("#potentialOptions").addEventListener("keydown", (event) => {
-        if (!["Enter", " "].includes(event.key)) return;
-        const row = event.target.closest("tr[data-map-url]");
-        if (!row) return;
-        event.preventDefault();
-        window.location.assign(row.dataset.mapUrl);
-      });
-    }
 
     function wirePotentialMapControls() {
       $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
@@ -3484,7 +3470,6 @@
       wireTabs();
       wirePotentialSubtabs();
       wirePotentialCategories();
-      wirePotentialOptionRows();
       wirePotentialMapControls();
       wireDayToggle();
       wireTheme();
