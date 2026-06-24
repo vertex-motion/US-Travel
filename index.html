@@ -736,6 +736,63 @@
       margin-top: 12px;
     }
 
+    /* Multi-select dropdown filters */
+    .ms-dropdown { position: relative; display: inline-block; min-width: 190px; max-width: 100%; }
+    .ms-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      background: var(--filter-bg);
+      box-shadow: inset 0 0 0 1px var(--filter-bd);
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 15px;
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: background 0.15s ease, box-shadow 0.15s ease;
+    }
+    .ms-toggle:hover { background: var(--filter-hover); }
+    .ms-dropdown.open .ms-toggle { box-shadow: inset 0 0 0 1.5px var(--coral); }
+    .ms-value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ms-caret { font-size: 0.7rem; color: var(--muted); transition: transform 0.2s ease; flex-shrink: 0; }
+    .ms-dropdown.open .ms-caret { transform: rotate(180deg); }
+    .ms-panel {
+      position: absolute;
+      z-index: 60;
+      top: calc(100% + 6px);
+      left: 0;
+      min-width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px;
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+    .ms-option {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 9px;
+      border-radius: 9px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .ms-option:hover { background: var(--filter-hover); }
+    .ms-option.ms-all { border-bottom: 1px solid var(--line); border-radius: 0; margin-bottom: 3px; padding-bottom: 9px; font-weight: 650; }
+    .ms-option input { accent-color: var(--coral); width: 15px; height: 15px; cursor: pointer; flex-shrink: 0; }
+    .ms-dot { width: 9px; height: 9px; border-radius: 999px; flex-shrink: 0; }
+
     .category-filter {
       display: inline-flex;
       align-items: center;
@@ -3033,7 +3090,7 @@
     };
 
     const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
-    const dayFilterState = { region: "All", type: "All" };
+    const dayFilterState = { regions: new Set(), types: new Set() };
     const bookingFilterState = { status: "All" };
     const timedFilterState = { status: "All" };
     const preDepartureFilterState = { status: "All" };
@@ -3349,8 +3406,8 @@
 
     function filteredDays() {
       return tripData.days.filter((day) => {
-        const regionMatch = dayFilterState.region === "All" || day.region === dayFilterState.region;
-        const typeMatch = dayFilterState.type === "All" || day.dayType === dayFilterState.type;
+        const regionMatch = dayFilterState.regions.size === 0 || dayFilterState.regions.has(day.region);
+        const typeMatch = dayFilterState.types.size === 0 || dayFilterState.types.has(day.dayType);
         return regionMatch && typeMatch;
       });
     }
@@ -3397,23 +3454,17 @@
     }
 
     function renderDayFilters() {
-      const regions = ["All", ...new Set(tripData.days.map((day) => day.region))];
-      const types = ["All", ...new Set(tripData.days.map((day) => day.dayType))];
-      $("#dayRegionFilters").innerHTML = regions.map((region) => `<button class="filter-button ${region === dayFilterState.region ? "active" : ""}" type="button" data-region="${escapeHtml(region)}">${escapeHtml(region)}</button>`).join("");
-      $("#dayTypeFilters").innerHTML = types.map((type) => `<button class="filter-button ${type === dayFilterState.type ? "active" : ""}" type="button" data-type="${escapeHtml(type)}">${escapeHtml(type)}</button>`).join("");
-      $("#dayRegionFilters").addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        dayFilterState.region = button.dataset.region;
-        $$("#dayRegionFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
-        renderDays();
+      const regions = [...new Set(tripData.days.map((day) => day.region))];
+      const types = [...new Set(tripData.days.map((day) => day.dayType))];
+      buildMultiSelect($("#dayRegionFilters"), {
+        options: regions,
+        stateSet: dayFilterState.regions,
+        onChange: renderDays
       });
-      $("#dayTypeFilters").addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        dayFilterState.type = button.dataset.type;
-        $$("#dayTypeFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
-        renderDays();
+      buildMultiSelect($("#dayTypeFilters"), {
+        options: types,
+        stateSet: dayFilterState.types,
+        onChange: renderDays
       });
     }
 
@@ -3463,14 +3514,18 @@
     }
 
     function renderPotentialCategoryFilters() {
-      const categories = ["All", ...new Set(tripData.potentialOptions.map((row) => row.category))];
-      $("#potentialCategoryFilters").innerHTML = categories
-        .map((category) => renderCategoryFilterButton(category, category === "All" ? potentialCategoryState.categories.size === 0 : potentialCategoryState.categories.has(category)))
-        .join("");
-      const statuses = ["All", "In the plan", "Potential option", "Rejected"];
-      $("#planStatusFilters").innerHTML = statuses
-        .map((status) => renderCategoryFilterButton(status, status === "All" ? planStatusFilterState.statuses.size === 0 : planStatusFilterState.statuses.has(status)))
-        .join("");
+      const categories = [...new Set(tripData.potentialOptions.map((row) => row.category))];
+      buildMultiSelect($("#potentialCategoryFilters"), {
+        options: categories.map((category) => ({ value: category, label: category, color: categoryColor(category) })),
+        stateSet: potentialCategoryState.categories,
+        onChange: renderPotentialOptions
+      });
+      const statuses = ["In the plan", "Potential option", "Rejected"];
+      buildMultiSelect($("#planStatusFilters"), {
+        options: statuses,
+        stateSet: planStatusFilterState.statuses,
+        onChange: renderPotentialOptions
+      });
     }
 
     // Collapse a mapped place's fine geographic region into one of the trip's
@@ -3499,10 +3554,12 @@
 
     function renderPotentialRegionFilters() {
       const present = new Set(tripData.potentialOptions.map(optionRegion).filter(Boolean));
-      const regions = ["All", ...SEGMENT_ORDER.filter((segment) => present.has(segment))];
-      $("#potentialRegionFilters").innerHTML = regions
-        .map((region) => renderCategoryFilterButton(region, region === "All" ? potentialRegionState.regions.size === 0 : potentialRegionState.regions.has(region)))
-        .join("");
+      const regions = SEGMENT_ORDER.filter((segment) => present.has(segment));
+      buildMultiSelect($("#potentialRegionFilters"), {
+        options: regions,
+        stateSet: potentialRegionState.regions,
+        onChange: renderPotentialOptions
+      });
     }
 
     const planStatusTag = (status) => {
@@ -3868,42 +3925,78 @@
       }
     }
 
-    function syncMultiFilterButtons(container, stateSet) {
-      $$(".filter-button", container).forEach((item) => {
-        const value = item.dataset.category;
-        const active = value === "All" ? stateSet.size === 0 : stateSet.has(value);
-        item.classList.toggle("active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
-    }
+    // Registry of open multi-select dropdowns so an outside click closes them all.
+    const msInstances = [];
+    document.addEventListener("click", () => msInstances.forEach((d) => d.close()));
 
-    function wirePotentialCategories() {
-      const categoryEl = $("#potentialCategoryFilters");
-      categoryEl.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        toggleMultiFilter(potentialCategoryState.categories, button.dataset.category);
-        syncMultiFilterButtons(categoryEl, potentialCategoryState.categories);
-        renderPotentialOptions();
-      });
-      const statusEl = $("#planStatusFilters");
-      statusEl.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        toggleMultiFilter(planStatusFilterState.statuses, button.dataset.category);
-        syncMultiFilterButtons(statusEl, planStatusFilterState.statuses);
-        renderPotentialOptions();
-      });
-      const regionEl = $("#potentialRegionFilters");
-      regionEl.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        toggleMultiFilter(potentialRegionState.regions, button.dataset.category);
-        syncMultiFilterButtons(regionEl, potentialRegionState.regions);
-        renderPotentialOptions();
-      });
-    }
+    // Build a multi-select dropdown into `container`. `options` is an array of
+    // strings or {value, label, color}. `stateSet` holds selected values (empty
+    // = All). `onChange` runs after each selection. An "All" row clears the set.
+    function buildMultiSelect(container, { options, stateSet, allLabel = "All", onChange }) {
+      const norm = options.map((o) => (typeof o === "string" ? { value: o, label: o } : o));
+      container.classList.add("ms-dropdown");
+      container.innerHTML = `
+        <button type="button" class="ms-toggle" aria-haspopup="listbox" aria-expanded="false">
+          <span class="ms-value"></span><span class="ms-caret">▾</span>
+        </button>
+        <div class="ms-panel" role="listbox" aria-multiselectable="true" hidden>
+          <label class="ms-option ms-all"><input type="checkbox" value="All">${escapeHtml(allLabel)}</label>
+          ${norm.map((o) => `
+            <label class="ms-option">
+              <input type="checkbox" value="${escapeHtml(o.value)}">
+              ${o.color ? `<span class="ms-dot" style="background:${escapeHtml(o.color)}"></span>` : ""}
+              <span>${escapeHtml(o.label)}</span>
+            </label>`).join("")}
+        </div>`;
+      const toggle = container.querySelector(".ms-toggle");
+      const valueEl = container.querySelector(".ms-value");
+      const panel = container.querySelector(".ms-panel");
 
+      const summary = () => {
+        if (stateSet.size === 0) return allLabel;
+        if (stateSet.size === 1) {
+          const v = [...stateSet][0];
+          const hit = norm.find((o) => o.value === v);
+          return hit ? hit.label : v;
+        }
+        return `${stateSet.size} selected`;
+      };
+      const sync = () => {
+        container.querySelectorAll(".ms-option input").forEach((cb) => {
+          cb.checked = cb.value === "All" ? stateSet.size === 0 : stateSet.has(cb.value);
+        });
+        valueEl.textContent = summary();
+      };
+      const close = () => {
+        panel.hidden = true;
+        container.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      };
+      const open = () => {
+        panel.hidden = false;
+        container.classList.add("open");
+        toggle.setAttribute("aria-expanded", "true");
+      };
+
+      toggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const wasOpen = !panel.hidden;
+        msInstances.forEach((d) => d.close());
+        if (!wasOpen) open();
+      });
+      panel.addEventListener("click", (event) => event.stopPropagation());
+      panel.addEventListener("change", (event) => {
+        const cb = event.target.closest("input[type=checkbox]");
+        if (!cb) return;
+        toggleMultiFilter(stateSet, cb.value);
+        sync();
+        onChange();
+      });
+
+      msInstances.push({ close });
+      sync();
+      return { sync };
+    }
 
     function wirePotentialMapControls() {
       $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
@@ -3976,7 +4069,6 @@
       renderMap();
       wireTabs();
       wirePotentialSubtabs();
-      wirePotentialCategories();
       wirePotentialMapControls();
       wireDayToggle();
       wireTheme();
