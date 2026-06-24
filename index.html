@@ -1642,6 +1642,9 @@
       text-transform: uppercase; letter-spacing: 0.05em; margin: 0;
     }
     .popup-meta .popup-cat-dot { width: 9px; height: 9px; border-radius: 999px; background: var(--category-color, var(--coral)); }
+    .popup-stays { display: grid; gap: 3px; margin: 0; }
+    .popup-stay { color: var(--ink-soft); font-size: 0.85rem; line-height: 1.4; }
+    .popup-stay b { color: var(--ink); font-weight: 700; }
     .popup-fit { margin: 2px 0 0; padding-top: 9px; border-top: 1px solid var(--line); font-size: 0.86rem; line-height: 1.5; color: var(--ink); }
     .popup-fit .popup-label { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; margin-bottom: 4px; }
 
@@ -3982,15 +3985,29 @@
       });
 
       // Lodging overlay: always shown as a reference, independent of the filters.
+      // Stays sharing one location (e.g. the Pasadena arrival + final hotels) are
+      // merged into a single marker whose popup lists every stay there.
+      const hotelGroups = new Map();
       tripHotels().forEach((hotel) => {
-        const loc = `${hotel.coords[0]},${hotel.coords[1]}`;
-        L.marker(hotel.coords, { icon: hotelMarkerIcon(), zIndexOffset: 1000 })
+        const key = `${hotel.coords[0]},${hotel.coords[1]}`;
+        if (!hotelGroups.has(key)) hotelGroups.set(key, []);
+        hotelGroups.get(key).push(hotel);
+      });
+      hotelGroups.forEach((stays, loc) => {
+        const title = stays[0].name;
+        const stayLines = stays.map((s) => {
+          const extra = s.name !== title ? ` — ${escapeHtml(s.name)}` : "";
+          return `<div class="popup-stay"><b>${escapeHtml(s.dates)}</b> · ${escapeHtml(s.nights)}${extra}</div>`;
+        }).join("");
+        const metaLabel = stays.length > 1 ? `Lodging base · ${stays.length} stays` : "Lodging base";
+        L.marker(stays[0].coords, { icon: hotelMarkerIcon(), zIndexOffset: 1000 })
           .addTo(potentialMapState.layer)
           .bindPopup(`
             <div class="map-popup">
-              <div class="popup-title">${escapeHtml(hotel.name)}</div>
-              <div class="popup-meta"><span class="popup-cat-dot" style="--category-color: #0f766e;"></span>Lodging base · ${escapeHtml(hotel.dates)} · ${escapeHtml(hotel.nights)}</div>
-              ${geoButtonGroup(loc, hotel.name)}
+              <div class="popup-title">${escapeHtml(title)}</div>
+              <div class="popup-meta"><span class="popup-cat-dot" style="--category-color: #0f766e;"></span>${metaLabel}</div>
+              <div class="popup-stays">${stayLines}</div>
+              ${geoButtonGroup(loc, title)}
             </div>
           `);
       });
