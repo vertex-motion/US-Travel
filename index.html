@@ -1801,8 +1801,16 @@
                   </summary>
                   <div class="filter-collapse-body">
                     <div class="filter-panel">
-                      <span class="control-label">Mapped category filter</span>
+                      <span class="control-label">Status</span>
+                      <div class="filters" id="potentialMapStatusFilters"></div>
+                    </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Category</span>
                       <div class="filters" id="potentialMapCategoryFilters"></div>
+                    </div>
+                    <div class="filter-panel">
+                      <span class="control-label">Region</span>
+                      <div class="filters" id="potentialMapRegionFilters"></div>
                     </div>
                   </div>
                 </details>
@@ -3084,14 +3092,6 @@
     };
     const categoryColor = (category) => categoryColors[category] || "#b85c5c";
 
-    function renderCategoryFilterButton(category, active = false) {
-      return `
-        <button class="filter-button category-filter ${active ? "active" : ""}" type="button" data-category="${escapeHtml(category)}" style="--category-color: ${escapeHtml(categoryColor(category))};">
-          ${escapeHtml(category)}
-        </button>
-      `;
-    }
-
     const statusTag = (status) => {
       const lower = String(status).toLowerCase();
       let type = "info";
@@ -3109,7 +3109,7 @@
     // Categories pre-selected by default in the Potential Options table and map
     // (the experience-focused ones). Route/Logistics stay listed but unchecked.
     const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Scenic Walks and Viewpoints", "Iconic Landmarks and Photo Stops", "Landmarks, Parks, and Architecture", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
-    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), map: null, layer: null, markers: new Map() };
+    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), statuses: new Set(), regions: new Set(), map: null, layer: null, markers: new Map() };
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
     const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
@@ -3699,15 +3699,54 @@
       };
     }
 
-    function filteredPotentialPlaces() {
-      return tripData.potentialMapPlaces.filter((place) => potentialMapState.categories.size === 0 || potentialMapState.categories.has(place.category));
+    // The planStatus of the option a mapped place belongs to ("" if unmatched).
+    function placeStatus(place) {
+      const row = tripData.potentialOptions.find((r) => r.option === place.option);
+      return row ? row.planStatus : "";
     }
 
-    function renderPotentialMapCategoryFilters() {
-      const categories = ["All", ...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
-      $("#potentialMapCategoryFilters").innerHTML = categories
-        .map((category) => renderCategoryFilterButton(category, category === "All" ? potentialMapState.categories.size === 0 : potentialMapState.categories.has(category)))
-        .join("");
+    function filteredPotentialPlaces() {
+      const cats = potentialMapState.categories;
+      const stats = potentialMapState.statuses;
+      const regs = potentialMapState.regions;
+      return tripData.potentialMapPlaces.filter((place) => {
+        const catMatch = cats.size === 0 || cats.has(place.category);
+        const statMatch = stats.size === 0 || stats.has(placeStatus(place));
+        const regMatch = regs.size === 0 || regs.has(REGION_SEGMENT[place.region] || "");
+        return catMatch && statMatch && regMatch;
+      });
+    }
+
+    // Build the map's Status / Category / Region dropdowns once (same set as the
+    // table view). Each re-renders the map on change; the dropdowns persist.
+    function renderPotentialMapFilters() {
+      const statusEl = $("#potentialMapStatusFilters");
+      if (statusEl) {
+        buildMultiSelect(statusEl, {
+          options: ["In the plan", "Potential option", "Rejected"],
+          stateSet: potentialMapState.statuses,
+          onChange: renderPotentialMap
+        });
+      }
+      const categoryEl = $("#potentialMapCategoryFilters");
+      if (categoryEl) {
+        const categories = [...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
+        buildMultiSelect(categoryEl, {
+          options: categories.map((category) => ({ value: category, label: category, color: categoryColor(category) })),
+          stateSet: potentialMapState.categories,
+          onChange: renderPotentialMap
+        });
+      }
+      const regionEl = $("#potentialMapRegionFilters");
+      if (regionEl) {
+        const present = new Set(tripData.potentialMapPlaces.map((place) => REGION_SEGMENT[place.region]).filter(Boolean));
+        const regions = SEGMENT_ORDER.filter((segment) => present.has(segment));
+        buildMultiSelect(regionEl, {
+          options: regions,
+          stateSet: potentialMapState.regions,
+          onChange: renderPotentialMap
+        });
+      }
     }
 
     function potentialMarkerIcon(category) {
@@ -3745,7 +3784,6 @@
     }
 
     function renderPotentialMap() {
-      renderPotentialMapCategoryFilters();
       const places = filteredPotentialPlaces();
       renderPotentialMapList(places);
 
@@ -3992,12 +4030,6 @@
     }
 
     function wirePotentialMapControls() {
-      $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        toggleMultiFilter(potentialMapState.categories, button.dataset.category);
-        renderPotentialMap();
-      });
       $("#potentialMapList").addEventListener("click", (event) => {
         const button = event.target.closest("button");
         if (!button) return;
@@ -4058,6 +4090,7 @@
       `).join("");
       renderPotentialCategoryFilters();
       renderPotentialRegionFilters();
+      renderPotentialMapFilters();
       renderPotentialOptions();
       renderMap();
       wireTabs();
