@@ -573,25 +573,6 @@
       border-bottom: 1px solid var(--line);
     }
 
-    .map-tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 16px;
-      border-bottom: 1px solid var(--line);
-      background: var(--panel-soft);
-    }
-
-    .map-tools .filter-button {
-      font-size: 0.84rem;
-    }
-
-    .map-tools .filter-button.active {
-      color: #fff;
-      background: var(--grad-brand);
-      border-color: transparent;
-    }
-
     .route-list {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1660,7 +1641,6 @@
       <section class="view active" id="overview" role="tabpanel">
         <div class="panel">
           <div id="map" aria-label="Interactive West Coast and Las Vegas trip map"></div>
-          <div class="map-tools" id="mapTools"></div>
           <div class="route-list" id="routeList"></div>
         </div>
       </section>
@@ -3570,9 +3550,7 @@
 
 
     function renderMap() {
-      const tools = $("#mapTools");
       const routeList = $("#routeList");
-      tools.innerHTML = tripData.mapStops.map((stop) => `<button class="filter-button" type="button" data-stop="${stop.id}">${escapeHtml(stop.name)}</button>`).join("");
       routeList.innerHTML = tripData.mapStops.filter((stop) => stop.type === "base").map((stop) => `
         <button type="button" class="route-chip" data-stop="${stop.id}">
           <strong>${escapeHtml(stop.name)}</strong>
@@ -3630,7 +3608,7 @@
       });
 
       function activateStop(id) {
-        $$(".route-chip, #mapTools .filter-button").forEach((button) => button.classList.toggle("active", button.dataset.stop === id));
+        $$(".route-chip").forEach((button) => button.classList.toggle("active", button.dataset.stop === id));
         const marker = markers.get(id);
         if (marker) {
           map.flyTo(marker.getLatLng(), id === "yosemite" ? 8 : 9, { duration: 0.5 });
@@ -3638,10 +3616,6 @@
         }
       }
 
-      tools.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (button) activateStop(button.dataset.stop);
-      });
       routeList.addEventListener("click", (event) => {
         const button = event.target.closest("button");
         if (button) activateStop(button.dataset.stop);
