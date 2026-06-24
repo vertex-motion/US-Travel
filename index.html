@@ -2605,10 +2605,13 @@
     const bookingFilterState = { status: "All" };
     const timedFilterState = { status: "All" };
     const preDepartureFilterState = { status: "All" };
-    const potentialMapState = { category: "All", map: null, layer: null, markers: new Map() };
+    // Categories pre-selected by default in the Potential Options table and map
+    // (the experience-focused ones). Route/Logistics stay listed but unchecked.
+    const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
+    const potentialMapState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES), map: null, layer: null, markers: new Map() };
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
-    const potentialCategoryState = { categories: new Set() };
+    const potentialCategoryState = { categories: new Set(POTENTIAL_DEFAULT_CATEGORIES) };
 
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
@@ -3026,11 +3029,8 @@
       `).join("");
     }
 
-    // Category filter choices shared by the Potential Options table and map.
-    const POTENTIAL_FILTER_CATEGORIES = ["All", "Attractions and Experiences", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
-
     function renderPotentialCategoryFilters() {
-      const categories = POTENTIAL_FILTER_CATEGORIES;
+      const categories = ["All", ...new Set(tripData.potentialOptions.map((row) => row.category))];
       $("#potentialCategoryFilters").innerHTML = categories
         .map((category) => renderCategoryFilterButton(category, category === "All" ? potentialCategoryState.categories.size === 0 : potentialCategoryState.categories.has(category)))
         .join("");
@@ -3170,12 +3170,14 @@
     }
 
     function filteredPotentialPlaces() {
-      return tripData.potentialMapPlaces.filter((place) => potentialMapState.category === "All" || place.category === potentialMapState.category);
+      return tripData.potentialMapPlaces.filter((place) => potentialMapState.categories.size === 0 || potentialMapState.categories.has(place.category));
     }
 
     function renderPotentialMapCategoryFilters() {
-      const categories = POTENTIAL_FILTER_CATEGORIES;
-      $("#potentialMapCategoryFilters").innerHTML = categories.map((category) => renderCategoryFilterButton(category, category === potentialMapState.category)).join("");
+      const categories = ["All", ...new Set(tripData.potentialMapPlaces.map((place) => place.category))];
+      $("#potentialMapCategoryFilters").innerHTML = categories
+        .map((category) => renderCategoryFilterButton(category, category === "All" ? potentialMapState.categories.size === 0 : potentialMapState.categories.has(category)))
+        .join("");
     }
 
     function potentialMarkerIcon(category) {
@@ -3421,7 +3423,7 @@
       $("#potentialMapCategoryFilters").addEventListener("click", (event) => {
         const button = event.target.closest("button");
         if (!button) return;
-        potentialMapState.category = button.dataset.category;
+        toggleMultiFilter(potentialMapState.categories, button.dataset.category);
         renderPotentialMap();
       });
       $("#potentialMapList").addEventListener("click", (event) => {
