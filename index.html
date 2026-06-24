@@ -1285,7 +1285,7 @@
     tbody tr:hover td { background: var(--hover); }
     tr:last-child td { border-bottom: 0; }
 
-    .potential-table { min-width: 1180px; }
+    .potential-table { min-width: 1040px; }
     .potential-map-cell { min-width: 168px; }
     .potential-map-cell .geo-btns { margin-top: 0; }
     .potential-map-none { color: var(--muted); }
@@ -1306,7 +1306,8 @@
       font-weight: 700;
     }
 
-    .rating-cell { width: 64px; }
+    .status-cell { width: 150px; vertical-align: top; }
+    .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
     .rating-score { color: var(--ink); font-size: 0.95rem; font-weight: 750; white-space: nowrap; }
 
     .mini-table { min-width: 0; }
@@ -1611,7 +1612,7 @@
               </div>
               <div class="table-wrap">
                 <table class="potential-table">
-                  <thead><tr><th>Name</th><th>Map</th><th>Status</th><th>Rating</th><th>Category</th><th>Current fit / tradeoff</th><th>Description</th></tr></thead>
+                  <thead><tr><th>Name</th><th>Map</th><th>Status · Rating · Category</th><th>Current fit / tradeoff</th><th>Description</th></tr></thead>
                   <tbody id="potentialOptions"></tbody>
                 </table>
               </div>
@@ -3092,9 +3093,13 @@
           <tr>
             <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
             <td class="potential-map-cell">${potentialMapButtons(row)}</td>
-            <td>${planStatusTag(row.planStatus)}</td>
-            <td class="rating-cell">${renderRating(row.interest)}</td>
-            <td><span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span></td>
+            <td class="status-cell">
+              <div class="status-stack">
+                ${planStatusTag(row.planStatus)}
+                ${renderRating(row.interest)}
+                <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
+              </div>
+            </td>
             <td>${escapeHtml(row.why)}</td>
             <td>${escapeHtml(row.desc)}</td>
           </tr>
@@ -3110,6 +3115,7 @@
         category: place.category,
         link: "03-potential-options.md",
         why: "Mapped place from the potential options registry.",
+        desc: place.name,
         reconsider: "See the canonical potential options table for the decision trigger."
       };
     }
@@ -3180,12 +3186,13 @@
       places.forEach((place) => {
         const details = potentialOptionDetails(place);
         const marker = L.marker(place.coords, { icon: potentialMarkerIcon(place.category) }).addTo(potentialMapState.layer);
+        const popupLoc = Array.isArray(place.coords) ? `${place.coords[0]},${place.coords[1]}` : (place.query || place.name);
         marker.bindPopup(`
           <div class="popup-title">${escapeHtml(place.name)}</div>
           <div class="popup-meta">${escapeHtml(place.region)}<br>${escapeHtml(place.category)}</div>
-          <div><strong>Option:</strong> <a href="${escapeHtml(details.link)}">${escapeHtml(details.option)}</a></div>
+          ${geoButtonGroup(popupLoc, place.name)}
           <div style="margin-top: 6px;">${escapeHtml(details.why)}</div>
-          <div style="margin-top: 6px;"><strong>Decision trigger:</strong> ${escapeHtml(details.reconsider)}</div>
+          <div style="margin-top: 6px;"><strong>Description:</strong> ${escapeHtml(details.desc)}</div>
         `);
         marker.on("click", () => activatePotentialPlace(place.id));
         potentialMapState.markers.set(place.id, marker);
