@@ -680,29 +680,21 @@
     .dot.rose { background: var(--rose); box-shadow: 0 0 0 4px color-mix(in srgb, var(--rose) 18%, transparent); }
     .dot.grape { background: var(--grape); box-shadow: 0 0 0 4px color-mix(in srgb, var(--grape) 18%, transparent); }
 
-    /* Filter frames: opaque neutral surface so the page's multi-color gradient
-       does not bleed through and tint the controls unevenly. */
-    .day-toolbar,
-    .potential-controls {
-      margin: 20px 0 16px;
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel-solid);
-      box-shadow: var(--shadow-sm);
-    }
-
+    /* Frameless filters: controls sit flush on the panel (no fill/border/shadow)
+       so there is no box to clash with the page's background gradient. */
     .day-toolbar {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 12px;
+      margin: 20px 0 16px;
     }
 
     .potential-controls {
       display: flex;
       flex-direction: column;
       gap: 12px;
+      margin: 20px 0 16px;
     }
 
     .filter-panel { display: grid; gap: 8px; min-width: 0; }
@@ -3112,9 +3104,9 @@
 
     const toneClass = (tone) => ["good", "warn", "stop", "info"].includes(tone) ? tone : "info";
     const dayFilterState = { regions: new Set(), types: new Set() };
-    const bookingFilterState = { status: "All" };
-    const timedFilterState = { status: "All" };
-    const preDepartureFilterState = { status: "All" };
+    const bookingFilterState = { statuses: new Set() };
+    const timedFilterState = { statuses: new Set() };
+    const preDepartureFilterState = { statuses: new Set() };
     // Categories pre-selected by default in the Potential Options table and map
     // (the experience-focused ones). Route/Logistics stay listed but unchecked.
     const POTENTIAL_DEFAULT_CATEGORIES = ["Attractions and Experiences", "Scenic Walks and Viewpoints", "Iconic Landmarks and Photo Stops", "Landmarks, Parks, and Architecture", "Teen-Focused Split", "Younger-Child Add-On", "Dad-Focused Adventure"];
@@ -3195,9 +3187,10 @@
     }
 
     function renderTimedTable() {
-      const rows = timedFilterState.status === "All"
+      const sel = timedFilterState.statuses;
+      const rows = sel.size === 0
         ? tripData.timedTickets
-        : tripData.timedTickets.filter((r) => r.status === timedFilterState.status);
+        : tripData.timedTickets.filter((r) => sel.has(r.status));
       $("#timedRows").innerHTML = rows.map((row) => `
         <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
@@ -3207,28 +3200,18 @@
     function renderTimedFilters() {
       const el = $("#timedStatusFilters");
       if (!el) return;
-      const statuses = ["All", ...new Set(tripData.timedTickets.map((r) => r.status))];
-      el.innerHTML = statuses.map((status) => {
-        const count = status === "All" ? tripData.timedTickets.length : tripData.timedTickets.filter((r) => r.status === status).length;
-        const active = status === timedFilterState.status;
-        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
-      }).join("");
-      el.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        timedFilterState.status = button.dataset.status;
-        el.querySelectorAll(".filter-button").forEach((item) => {
-          item.classList.toggle("active", item === button);
-          item.setAttribute("aria-pressed", String(item === button));
-        });
-        renderTimedTable();
+      buildMultiSelect(el, {
+        options: statusOptions(tripData.timedTickets),
+        stateSet: timedFilterState.statuses,
+        onChange: renderTimedTable
       });
     }
 
     function renderPreDepartureTable() {
-      const rows = preDepartureFilterState.status === "All"
+      const sel = preDepartureFilterState.statuses;
+      const rows = sel.size === 0
         ? tripData.preDeparture
-        : tripData.preDeparture.filter((r) => r.status === preDepartureFilterState.status);
+        : tripData.preDeparture.filter((r) => sel.has(r.status));
       $("#preDepartureRows").innerHTML = rows.map((row) => `
         <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
       `).join("");
@@ -3238,21 +3221,10 @@
     function renderPreDepartureFilters() {
       const el = $("#preDepartureStatusFilters");
       if (!el) return;
-      const statuses = ["All", ...new Set(tripData.preDeparture.map((r) => r.status))];
-      el.innerHTML = statuses.map((status) => {
-        const count = status === "All" ? tripData.preDeparture.length : tripData.preDeparture.filter((r) => r.status === status).length;
-        const active = status === preDepartureFilterState.status;
-        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
-      }).join("");
-      el.addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        preDepartureFilterState.status = button.dataset.status;
-        el.querySelectorAll(".filter-button").forEach((item) => {
-          item.classList.toggle("active", item === button);
-          item.setAttribute("aria-pressed", String(item === button));
-        });
-        renderPreDepartureTable();
+      buildMultiSelect(el, {
+        options: statusOptions(tripData.preDeparture),
+        stateSet: preDepartureFilterState.statuses,
+        onChange: renderPreDepartureTable
       });
     }
 
@@ -3489,10 +3461,20 @@
       });
     }
 
+    // Distinct statuses in a task list as dropdown options, each labelled with
+    // its count (e.g. "Done (5)"), matching what the old status chips showed.
+    function statusOptions(rows) {
+      return [...new Set(rows.map((r) => r.status))].map((status) => ({
+        value: status,
+        label: `${status} (${rows.filter((r) => r.status === status).length})`
+      }));
+    }
+
     function renderBooking() {
-      const tasks = bookingFilterState.status === "All"
+      const sel = bookingFilterState.statuses;
+      const tasks = sel.size === 0
         ? tripData.bookingTasks
-        : tripData.bookingTasks.filter((task) => task.status === bookingFilterState.status);
+        : tripData.bookingTasks.filter((task) => sel.has(task.status));
       $("#bookingTasks").innerHTML = tasks.map((task) => `
         <tr><td><strong>${escapeHtml(task.task)}</strong></td><td>${escapeHtml(task.when)}</td><td>${escapeHtml(task.notes)}</td><td>${statusTag(task.status)}</td></tr>
       `).join("");
@@ -3500,21 +3482,12 @@
     }
 
     function renderBookingFilters() {
-      const statuses = ["All", ...new Set(tripData.bookingTasks.map((task) => task.status))];
-      $("#bookingStatusFilters").innerHTML = statuses.map((status) => {
-        const count = status === "All"
-          ? tripData.bookingTasks.length
-          : tripData.bookingTasks.filter((task) => task.status === status).length;
-        const active = status === bookingFilterState.status;
-        return `<button class="filter-button ${active ? "active" : ""}" type="button" data-status="${escapeHtml(status)}" aria-pressed="${active}">${escapeHtml(status)} (${count})</button>`;
-      }).join("");
-      $("#bookingStatusFilters").addEventListener("click", (event) => {
-        const button = event.target.closest("button");
-        if (!button) return;
-        bookingFilterState.status = button.dataset.status;
-        $$("#bookingStatusFilters .filter-button").forEach((item) => item.classList.toggle("active", item === button));
-        $$("#bookingStatusFilters .filter-button").forEach((item) => item.setAttribute("aria-pressed", item === button ? "true" : "false"));
-        renderBooking();
+      const el = $("#bookingStatusFilters");
+      if (!el) return;
+      buildMultiSelect(el, {
+        options: statusOptions(tripData.bookingTasks),
+        stateSet: bookingFilterState.statuses,
+        onChange: renderBooking
       });
     }
 
