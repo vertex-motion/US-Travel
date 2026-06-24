@@ -695,12 +695,17 @@
       margin: 12px 0 26px;
     }
 
-    .potential-controls {
+    /* Toggle row: Table/Map subtabs and the active view's Filters control share one line. */
+    .potential-toolbar {
       display: flex;
-      flex-direction: column;
-      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 16px;
       margin: 12px 0 26px;
     }
+    .potential-toolbar .subtabs { margin: 0; }
+    .potential-filters { display: none; flex: 1 1 240px; min-width: 0; }
+    .potential-filters.active { display: block; }
 
     .filter-panel { display: grid; gap: 8px; min-width: 0; }
     .control-meta { display: flex; align-items: center; gap: 8px; }
@@ -728,7 +733,7 @@
     .filter-collapse > summary::marker { content: ""; }
     /* Potential Options: stretch the summary so the count sits on the same line,
        pushed to the right edge. Itinerary keeps its fit-content summary. */
-    .potential-controls .filter-collapse > summary { width: 100%; }
+    .potential-toolbar .filter-collapse > summary { width: 100%; }
     .filter-summary-meta { margin-left: auto; }
     .filter-collapse .filter-chevron {
       font-size: 0.7rem;
@@ -1696,10 +1701,12 @@
       .tabs { order: 3; width: 100%; margin-left: 0; }
       .theme-toggle { margin-left: auto; }
 
-      .panel-header, .day-toolbar, .potential-controls {
+      .panel-header, .day-toolbar {
         flex-direction: column;
         align-items: flex-start;
       }
+      .potential-toolbar { flex-direction: column; align-items: stretch; }
+      .potential-toolbar .subtabs { align-self: flex-start; }
 
       .day-summary-main { flex-basis: 100%; }
 
@@ -1727,8 +1734,9 @@
       .filter-panel, .ms-dropdown { min-width: 100%; width: 100%; }
 
       /* Trim vertical bulk above the map so it is reachable with less scrolling */
-      .potential-controls { margin: 8px 0 16px; }
+      .potential-toolbar { margin: 8px 0 16px; }
       .subtabs { margin-bottom: 14px; }
+      .potential-toolbar .subtabs { margin-bottom: 0; }
 
       /* Keep map popups (and their geo-buttons) inside the viewport */
       .leaflet-popup-content { max-width: 78vw; }
@@ -1821,41 +1829,69 @@
             </div>
           </div>
           <div class="panel-body">
-            <div class="subtabs" id="potentialSubtabs" role="tablist" aria-label="Potential options views">
-              <button class="subtab-button" type="button" role="tab" aria-selected="true" data-potential-view="table">Table</button>
-              <button class="subtab-button" type="button" role="tab" aria-selected="false" data-potential-view="map">Map</button>
+            <div class="potential-toolbar">
+              <div class="subtabs" id="potentialSubtabs" role="tablist" aria-label="Potential options views">
+                <button class="subtab-button" type="button" role="tab" aria-selected="true" data-potential-view="table">Table</button>
+                <button class="subtab-button" type="button" role="tab" aria-selected="false" data-potential-view="map">Map</button>
+              </div>
+              <details class="filter-collapse potential-filters active" id="potentialTableFilters" open>
+                <summary>
+                  <span class="control-label">Filters</span>
+                  <span class="filter-chevron">▾</span>
+                  <span class="control-meta filter-summary-meta">
+                    <span class="control-label">Showing</span>
+                    <span class="potential-count" id="potentialOptionCount"></span>
+                  </span>
+                </summary>
+                <div class="filter-collapse-body">
+                  <div class="filter-panel">
+                    <span class="control-label">Status</span>
+                    <div class="filters" id="planStatusFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Category</span>
+                    <div class="filters" id="potentialCategoryFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Region</span>
+                    <div class="filters" id="potentialRegionFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Max drive</span>
+                    <div class="filters" id="potentialDriveFilter"></div>
+                  </div>
+                </div>
+              </details>
+              <details class="filter-collapse potential-filters" id="potentialMapFilters" open>
+                <summary>
+                  <span class="control-label">Filters</span>
+                  <span class="filter-chevron">▾</span>
+                  <span class="control-meta filter-summary-meta">
+                    <span class="control-label">Shown</span>
+                    <span class="potential-count" id="potentialMapCount"></span>
+                  </span>
+                </summary>
+                <div class="filter-collapse-body">
+                  <div class="filter-panel">
+                    <span class="control-label">Status</span>
+                    <div class="filters" id="potentialMapStatusFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Category</span>
+                    <div class="filters" id="potentialMapCategoryFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Region</span>
+                    <div class="filters" id="potentialMapRegionFilters"></div>
+                  </div>
+                  <div class="filter-panel">
+                    <span class="control-label">Max drive</span>
+                    <div class="filters" id="potentialMapDriveFilter"></div>
+                  </div>
+                </div>
+              </details>
             </div>
             <div class="potential-subview active" id="potentialTablePanel">
-              <div class="potential-controls">
-                <details class="filter-collapse" open>
-                  <summary>
-                    <span class="control-label">Filters</span>
-                    <span class="filter-chevron">▾</span>
-                    <span class="control-meta filter-summary-meta">
-                      <span class="control-label">Showing</span>
-                      <span class="potential-count" id="potentialOptionCount"></span>
-                    </span>
-                  </summary>
-                  <div class="filter-collapse-body">
-                    <div class="filter-panel">
-                      <span class="control-label">Status</span>
-                      <div class="filters" id="planStatusFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Category</span>
-                      <div class="filters" id="potentialCategoryFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Region</span>
-                      <div class="filters" id="potentialRegionFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Max drive</span>
-                      <div class="filters" id="potentialDriveFilter"></div>
-                    </div>
-                  </div>
-                </details>
-              </div>
               <div class="table-wrap">
                 <table class="potential-table">
                   <colgroup>
@@ -1869,36 +1905,6 @@
               </div>
             </div>
             <div class="potential-subview" id="potentialMapPanel">
-              <div class="potential-controls">
-                <details class="filter-collapse" open>
-                  <summary>
-                    <span class="control-label">Filters</span>
-                    <span class="filter-chevron">▾</span>
-                    <span class="control-meta filter-summary-meta">
-                      <span class="control-label">Shown</span>
-                      <span class="potential-count" id="potentialMapCount"></span>
-                    </span>
-                  </summary>
-                  <div class="filter-collapse-body">
-                    <div class="filter-panel">
-                      <span class="control-label">Status</span>
-                      <div class="filters" id="potentialMapStatusFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Category</span>
-                      <div class="filters" id="potentialMapCategoryFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Region</span>
-                      <div class="filters" id="potentialMapRegionFilters"></div>
-                    </div>
-                    <div class="filter-panel">
-                      <span class="control-label">Max drive</span>
-                      <div class="filters" id="potentialMapDriveFilter"></div>
-                    </div>
-                  </div>
-                </details>
-              </div>
               <div class="potential-map-layout">
                 <div id="potentialMap" aria-label="Interactive map of potential attraction options"></div>
                 <div class="potential-map-list" id="potentialMapList"></div>
@@ -4129,6 +4135,8 @@
           tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
           $("#potentialTablePanel").classList.toggle("active", !isMap);
           $("#potentialMapPanel").classList.toggle("active", isMap);
+          $("#potentialTableFilters").classList.toggle("active", !isMap);
+          $("#potentialMapFilters").classList.toggle("active", isMap);
           if (isMap) renderPotentialMap();
         });
       });
@@ -4299,7 +4307,7 @@
     // higher and is reachable with less scrolling. Desktop keeps them open.
     function collapseFiltersOnMobile() {
       if (!window.matchMedia("(max-width: 760px)").matches) return;
-      $$(".potential-controls .filter-collapse[open]").forEach((details) => details.removeAttribute("open"));
+      $$(".potential-toolbar .filter-collapse[open]").forEach((details) => details.removeAttribute("open"));
     }
 
     function boot() {
