@@ -939,7 +939,7 @@
     }
 
     details.day-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
-    details[open] { box-shadow: var(--shadow); }
+    details[open]:not(.filter-collapse) { box-shadow: var(--shadow); }
 
     summary { list-style: none; cursor: pointer; }
     summary::-webkit-details-marker { display: none; }
