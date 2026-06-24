@@ -1298,13 +1298,6 @@
       white-space: nowrap;
     }
 
-    .potential-map-hint {
-      display: inline-block;
-      margin-top: 4px;
-      color: var(--coral);
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
 
     .status-cell { width: 150px; vertical-align: top; }
     .status-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; }
@@ -3075,10 +3068,7 @@
       const primary = places[0];
       const loc = Array.isArray(primary.coords) ? `${primary.coords[0]},${primary.coords[1]}` : (primary.query || primary.name);
       const est = potentialDriveEstimate(primary);
-      const extra = places.length > 1
-        ? `<span class="potential-map-hint">${escapeHtml(primary.name)} + ${places.length - 1} more</span>`
-        : "";
-      return `${geoButtonGroup(loc, primary.name)}${est}${extra}`;
+      return `${geoButtonGroup(loc, primary.name)}${est}`;
     }
 
     function renderPotentialOptions() {
@@ -3092,7 +3082,7 @@
       $("#potentialOptions").innerHTML = rows.map((row) => {
         return `
           <tr>
-            <td><strong><a href="${escapeHtml(row.link)}">${escapeHtml(row.option)}</a></strong></td>
+            <td><strong>${escapeHtml(row.option)}</strong></td>
             <td class="potential-map-cell">${potentialMapButtons(row)}</td>
             <td class="status-cell">
               <div class="status-stack">
