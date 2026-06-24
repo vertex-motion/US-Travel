@@ -3242,7 +3242,12 @@
     const bookingFilterState = { statuses: new Set() };
     const timedFilterState = { statuses: new Set() };
     const preDepartureFilterState = { statuses: new Set() };
-    const potentialMapState = { categories: new Set(), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
+    const POTENTIAL_DEFAULT_OFF_CATEGORIES = new Set(["Route and Region", "Logistics and Pacing"]);
+    const defaultPotentialCategories = (rows) => new Set(
+      [...new Set(rows.map((row) => row.category))]
+        .filter((category) => !POTENTIAL_DEFAULT_OFF_CATEGORIES.has(category))
+    );
+    const potentialMapState = { categories: defaultPotentialCategories(tripData.potentialMapPlaces), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
     // Two-finger pan/zoom on touch so a one-finger swipe scrolls the page past the
     // full-width map instead of getting trapped. Provided by the Leaflet.GestureHandling
     // plugin; if it fails to load, Leaflet ignores the unknown options and the map still renders.
@@ -3260,7 +3265,7 @@
     };
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
-    const potentialCategoryState = { categories: new Set() };
+    const potentialCategoryState = { categories: defaultPotentialCategories(tripData.potentialOptions) };
     const potentialRegionState = { regions: new Set() };
     const potentialDriveState = { max: null }; // null = "Any" (no drive-time limit)
 
