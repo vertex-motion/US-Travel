@@ -1456,20 +1456,12 @@
     }
 
     .status-cell { vertical-align: top; }
-    /* Accent rail: a thin status-tinted bar on the left ties the status, rating,
-       category, and region into one cohesive block instead of loose fragments. */
     .status-stack {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 7px;
-      padding-left: 12px;
-      border-left: 3px solid var(--status-rail, var(--line));
     }
-    .status-stack.tone-good   { --status-rail: var(--good-fg); }
-    .status-stack.tone-info   { --status-rail: var(--info-fg); }
-    .status-stack.tone-stop   { --status-rail: var(--stop-fg); }
-    .status-stack.tone-parked { --status-rail: var(--line-strong); }
     .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
@@ -3748,7 +3740,7 @@
               </div>
             </td>
             <td class="status-cell">
-              <div class="status-stack tone-${statusTone(row.planStatus)}">
+              <div class="status-stack">
                 <div class="status-line">
                   ${planStatusTag(row.planStatus)}
                   ${renderRating(row.interest)}
