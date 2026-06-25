@@ -1523,6 +1523,7 @@
     .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
+    .potential-map-cell .region-label { display: flex; width: fit-content; margin-bottom: 9px; }
     /* Interest rating: a small star + number after the option title, coloured
        red (low) to green (high) by the score. */
     .opt-rating { display: inline-flex; align-items: center; gap: 5px; margin-left: 8px; vertical-align: middle; white-space: nowrap; }
@@ -3925,10 +3926,9 @@
                   ${planStatusTag(row.planStatus)}
                 </div>
                 <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
-                ${region ? `<span class="region-label">${icon("pin")}${escapeHtml(region)}</span>` : ""}
               </div>
             </td>
-            <td class="potential-map-cell">${potentialMapButtons(row)}</td>
+            <td class="potential-map-cell">${region ? `<span class="region-label map-region">${icon("pin")}${escapeHtml(region)}</span>` : ""}${potentialMapButtons(row)}</td>
           </tr>
         `;
       }).join("");
