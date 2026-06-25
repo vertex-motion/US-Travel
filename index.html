@@ -731,8 +731,8 @@
       box-shadow: inset 0 0 0 1px var(--filter-bd);
       height: 44px;
       min-height: 44px;
-      min-width: 220px;
-      padding: 8px 13px;
+      min-width: 248px;
+      padding: 8px 14px;
     }
     .potential-filters .range-filter:focus-within {
       box-shadow: inset 0 0 0 1.5px var(--coral);
@@ -788,9 +788,18 @@
       min-width: 190px;
       max-width: 100%;
     }
+    .range-filter .range-label {
+      flex: 0 0 auto;
+      font-size: 0.7rem;
+      font-weight: 750;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
     .range-filter .range-input {
       flex: 1 1 auto;
-      min-width: 110px;
+      min-width: 70px;
       accent-color: var(--coral);
       cursor: pointer;
     }
@@ -2911,7 +2920,7 @@
         { interest: 9, planStatus: "Potential option", option: "Hollywood Boulevard classic sights", desc: "Walk of Fame, TCL Chinese Theatre forecourt, and Ovation Hollywood views.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: weekday morning; keep it to 45-75 minutes. Best view: TCL Chinese Theatre forecourt and Ovation Hollywood upper levels for the Sign. Iconic but crowded and touristy, so it is a brief teen/Hollywood sample, not a default family walk.", reconsider: "The teen wants Hollywood Boulevard, or the family wants a quick classic-photo stop before leaving the area." },
         { interest: 0, planStatus: "Potential option", option: "Downtown LA architecture and market walk", desc: "Walt Disney Concert Hall, Angels Flight, Grand Central Market, and Bradbury Building.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: late morning through lunch on a weekday or Saturday. Best view: Walt Disney Concert Hall exterior / stairs, Angels Flight, Grand Central Market, and Bradbury Building interior light. Park once and keep the route tight.", reconsider: "Beach traffic looks poor, weather is mild enough for city walking, or the family wants architecture plus food over museums." },
         { interest: 0, planStatus: "Potential option", option: "El Pueblo, Olvera Street, and Union Station", desc: "Historic-origin LA walk around Union Station and Olvera Street.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning to lunch. Best view: Union Station waiting room / courtyards and the Olvera Street marketplace. More toddler-tolerant than Hollywood Boulevard and easier to keep compact.", reconsider: "The family wants an LA history walk or a food-and-architecture swap near Downtown." },
-        { interest: 0, planStatus: "Potential option", option: "The Huntington gardens and San Marino walk", desc: "Ticketed Pasadena-adjacent gardens, galleries, and estate paths.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 10:00 am opening; avoid Tuesdays because The Huntington is closed. Best view: Chinese Garden, Japanese Garden, Desert Garden, and broad shaded paths. Best premium garden walk near Pasadena.", reconsider: "The family wants a beautiful slow half-day near the hotel and accepts the ticket cost." },
+        { interest: 5, planStatus: "Potential option", option: "The Huntington gardens and San Marino walk", desc: "Ticketed Pasadena-adjacent gardens, galleries, and estate paths.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 10:00 am opening; avoid Tuesdays because The Huntington is closed. Best view: Chinese Garden, Japanese Garden, Desert Garden, and broad shaded paths. Best premium garden walk near Pasadena.", reconsider: "The family wants a beautiful slow half-day near the hotel and accepts the ticket cost." },
         { interest: 0, planStatus: "Potential option", option: "Descanso Gardens shaded walk", desc: "Ticketed La Canada Flintridge gardens and shade near Pasadena.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 9:00 am opening or late afternoon. Best view: oak woodland, seasonal gardens, rose/camellia areas, and the miniature railroad if operating. Easier and closer than Westside sights; strong jet-lag soft-day candidate.", reconsider: "The family needs a gentle garden day without cross-town driving." },
         { interest: 0, planStatus: "Potential option", option: "Colorado Street Bridge, Lower Arroyo, and Old Pasadena", desc: "Local Pasadena bridge, Arroyo Seco, and Old Pasadena stroll.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning or early evening. Best view: Colorado Street Bridge over the Arroyo Seco, then Old Pasadena streets for food or dessert. Best no-big-drive walk; keep bridge time brief and supervise children closely near traffic.", reconsider: "The LA day needs to stay close to the Pasadena-area hotel or the family wants a packing/rest-day walk." },
         { interest: 0, planStatus: "Potential option", option: "Echo Park Lake skyline walk or swan boats", desc: "Short lake walk with Downtown LA skyline views and optional swan boats.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: golden hour; evening only if the family wants lit swan boats and still has energy. Best view: Downtown skyline across Echo Park Lake from the path or boat. Useful visual reset near Pasadena, but parking is neighborhood-style.", reconsider: "The family wants a short skyline-photo stop without committing to a full Downtown route." },
@@ -3738,13 +3747,13 @@
       if (driveEl && POTENTIAL_MINUTE_MAX > 0) {
         buildRangeSlider(driveEl, {
           min: 5, max: POTENTIAL_MINUTE_MAX, step: 5,
-          state: potentialDriveState, key: "max",
+          state: potentialDriveState, key: "max", label: "Drive",
           onChange: renderPotentialOptions
         });
       }
       const starsEl = $("#potentialStarsFilter");
       if (starsEl) {
-        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialStarsState, key: "min", onChange: renderPotentialOptions });
+        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialStarsState, key: "min", label: "Stars", onChange: renderPotentialOptions });
       }
     }
 
@@ -4013,13 +4022,13 @@
       if (driveEl && POTENTIAL_MINUTE_MAX > 0) {
         buildRangeSlider(driveEl, {
           min: 5, max: POTENTIAL_MINUTE_MAX, step: 5,
-          state: potentialMapState, key: "maxMinutes",
+          state: potentialMapState, key: "maxMinutes", label: "Drive",
           onChange: renderPotentialMap
         });
       }
       const starsEl = $("#potentialMapStarsFilter");
       if (starsEl) {
-        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialMapState, key: "minStars", onChange: renderPotentialMap });
+        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialMapState, key: "minStars", label: "Stars", onChange: renderPotentialMap });
       }
     }
 
@@ -4358,40 +4367,42 @@
 
     // Single-handle "max drive minutes" slider. The top of the track means "Any"
     // (no limit), stored as null on state[key]; any lower value is the max minutes.
-    function buildRangeSlider(container, { min, max, step = 5, state, key, onChange }) {
+    function buildRangeSlider(container, { min, max, step = 5, state, key, label = "", onChange }) {
       const initial = state[key] == null ? max : state[key];
-      const label = (v) => (v >= max ? "Any" : `≤ ${v} min`);
+      const labelFn = (v) => (v >= max ? "Any" : `≤ ${v} min`);
       container.classList.add("range-filter");
       container.innerHTML = `
+        ${label ? `<span class="range-label">${escapeHtml(label)}</span>` : ""}
         <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
           aria-label="Maximum drive time in minutes">
-        <span class="range-value">${label(initial)}</span>`;
+        <span class="range-value">${labelFn(initial)}</span>`;
       const input = container.querySelector(".range-input");
       const valueEl = container.querySelector(".range-value");
       input.addEventListener("input", () => {
         const v = Number(input.value);
         state[key] = v >= max ? null : v;
-        valueEl.textContent = label(v);
+        valueEl.textContent = labelFn(v);
         onChange();
       });
     }
 
     // Single-handle "minimum" slider. The bottom of the track (min) means "Any"
     // (no threshold), stored as null on state[key]; any higher value is the minimum.
-    function buildMinSlider(container, { min = 0, max, step = 1, state, key, unit = "", onChange }) {
+    function buildMinSlider(container, { min = 0, max, step = 1, state, key, unit = "", label = "", onChange }) {
       const initial = state[key] == null ? min : state[key];
-      const label = (v) => (v <= min ? "Any" : `≥ ${v}${unit}`);
+      const labelFn = (v) => (v <= min ? "Any" : `≥ ${v}${unit}`);
       container.classList.add("range-filter");
       container.innerHTML = `
+        ${label ? `<span class="range-label">${escapeHtml(label)}</span>` : ""}
         <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
           aria-label="Minimum interest stars">
-        <span class="range-value">${label(initial)}</span>`;
+        <span class="range-value">${labelFn(initial)}</span>`;
       const input = container.querySelector(".range-input");
       const valueEl = container.querySelector(".range-value");
       input.addEventListener("input", () => {
         const v = Number(input.value);
         state[key] = v <= min ? null : v;
-        valueEl.textContent = label(v);
+        valueEl.textContent = labelFn(v);
         onChange();
       });
     }
