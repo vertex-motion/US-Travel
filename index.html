@@ -3923,8 +3923,8 @@
             <td class="opt-cell">
               <div class="opt-main">
                 <div class="opt-name">${escapeHtml(row.option)}</div>
-                ${renderRating(row.interest)}
                 <div class="opt-desc">${escapeHtml(row.desc)}<button type="button" class="info-dot" popovertarget="${fitId}" aria-label="Show current fit and tradeoff" title="Current fit / tradeoff">i</button></div>
+                ${renderRating(row.interest)}
                 <div id="${fitId}" popover="auto" class="fit-popover">
                   <div class="fit-popover-title">Current fit / tradeoff</div>
                   <div>${escapeHtml(row.why)}</div>
