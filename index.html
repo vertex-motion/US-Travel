@@ -1519,25 +1519,13 @@
     .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
-    /* Interest rating: a slim horizontal meter filled left-to-right to the score,
-       with the number in the same colour as the fill. */
-    .opt-rating { display: inline-flex; align-items: center; gap: 8px; margin-top: 7px; }
-    .opt-rating-track {
-      width: 54px;
-      height: 5px;
-      border-radius: 999px;
-      overflow: hidden;
-      background: color-mix(in srgb, var(--muted) 15%, transparent);
-    }
-    .opt-rating-fill {
-      display: block;
-      height: 100%;
-      width: calc(var(--rating-fill, 0) * 100%);
-      border-radius: 999px;
-      background: var(--rating-color, var(--coral));
-      transition: width 0.3s ease;
-    }
-    .opt-rating-num { font-size: 0.74rem; font-weight: 700; line-height: 1; color: var(--rating-color, var(--coral)); }
+    /* Interest rating: a small star + number after the option title, coloured
+       red (low) to green (high) by the score. */
+    .opt-rating { display: inline-flex; align-items: center; gap: 5px; margin-left: 8px; vertical-align: middle; white-space: nowrap; }
+    .opt-rating-sep { color: var(--muted); font-weight: 700; }
+    .opt-rating svg { width: 13px; height: 13px; color: var(--rating-color, var(--coral)); }
+    .opt-rating svg path { fill: currentColor; }
+    .opt-rating-num { font-size: 0.82rem; font-weight: 700; color: var(--rating-color, var(--coral)); }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -3801,10 +3789,7 @@
       if (rating === 0) return "";
       // Hue scales red (0) -> green (130) with the score.
       const hue = Math.round((rating / 10) * 130);
-      return `<div class="opt-rating" style="--rating-fill:${rating / 10}; --rating-color:hsl(${hue} 72% 45%);" role="img" aria-label="Interest ${rating} out of 10">
-        <span class="opt-rating-track"><span class="opt-rating-fill"></span></span>
-        <span class="opt-rating-num">${rating}</span>
-      </div>`;
+      return `<span class="opt-rating" style="--rating-color:hsl(${hue} 72% 45%);" aria-label="Interest ${rating} out of 10"><span class="opt-rating-sep">·</span>${icon("star")}<span class="opt-rating-num">${rating}</span></span>`;
     }
 
     function potentialPlacesForOption(row) {
@@ -3922,9 +3907,8 @@
           <tr>
             <td class="opt-cell">
               <div class="opt-main">
-                <div class="opt-name">${escapeHtml(row.option)}</div>
+                <div class="opt-name">${escapeHtml(row.option)}${renderRating(row.interest)}</div>
                 <div class="opt-desc">${escapeHtml(row.desc)}<button type="button" class="info-dot" popovertarget="${fitId}" aria-label="Show current fit and tradeoff" title="Current fit / tradeoff">i</button></div>
-                ${renderRating(row.interest)}
                 <div id="${fitId}" popover="auto" class="fit-popover">
                   <div class="fit-popover-title">Current fit / tradeoff</div>
                   <div>${escapeHtml(row.why)}</div>
