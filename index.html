@@ -2918,7 +2918,7 @@
         { interest: 0, planStatus: "Potential option", option: "Venice Canals and Ocean Front Walk", desc: "Canal bridges plus a short Venice Boardwalk sample.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning before the Boardwalk reaches full intensity. Best view: canal bridges and reflections first, then a short Ocean Front Walk sample. Visually distinctive but more chaotic than Santa Monica, so treat it as a targeted photo/walk stop.", reconsider: "The family wants Venice specifically and is willing to trade calm beach recovery for a busier, more eccentric LA sample." },
         { interest: 7, planStatus: "In the plan", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", desc: "Beverly Hills Sign, Lily Pond, Rodeo Drive, and Via Rodeo.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning for clean photos and easier parking, or golden hour for nicer light. Best view: Beverly Hills Sign and Lily Pond, then Rodeo Drive / Via Rodeo. Beverly Gardens Park is a 1.9 mi (3.1 km) linear park; use only the central section.", reconsider: "A Museum Row / Petersen / Academy day needs a short recognizable LA stroll." },
         { interest: 9, planStatus: "Potential option", option: "Hollywood Boulevard classic sights", desc: "Walk of Fame, TCL Chinese Theatre forecourt, and Ovation Hollywood views.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: weekday morning; keep it to 45-75 minutes. Best view: TCL Chinese Theatre forecourt and Ovation Hollywood upper levels for the Sign. Iconic but crowded and touristy, so it is a brief teen/Hollywood sample, not a default family walk.", reconsider: "The teen wants Hollywood Boulevard, or the family wants a quick classic-photo stop before leaving the area." },
-        { interest: 0, planStatus: "Potential option", option: "Downtown LA architecture and market walk", desc: "Walt Disney Concert Hall, Angels Flight, Grand Central Market, and Bradbury Building.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: late morning through lunch on a weekday or Saturday. Best view: Walt Disney Concert Hall exterior / stairs, Angels Flight, Grand Central Market, and Bradbury Building interior light. Park once and keep the route tight.", reconsider: "Beach traffic looks poor, weather is mild enough for city walking, or the family wants architecture plus food over museums." },
+        { interest: 9, planStatus: "Potential option", option: "Downtown LA architecture and market walk", desc: "Walt Disney Concert Hall, Angels Flight, Grand Central Market, and Bradbury Building.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: late morning through lunch on a weekday or Saturday. Best view: Walt Disney Concert Hall exterior / stairs, Angels Flight, Grand Central Market, and Bradbury Building interior light. Park once and keep the route tight.", reconsider: "Beach traffic looks poor, weather is mild enough for city walking, or the family wants architecture plus food over museums." },
         { interest: 0, planStatus: "Potential option", option: "El Pueblo, Olvera Street, and Union Station", desc: "Historic-origin LA walk around Union Station and Olvera Street.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning to lunch. Best view: Union Station waiting room / courtyards and the Olvera Street marketplace. More toddler-tolerant than Hollywood Boulevard and easier to keep compact.", reconsider: "The family wants an LA history walk or a food-and-architecture swap near Downtown." },
         { interest: 5, planStatus: "Potential option", option: "The Huntington gardens and San Marino walk", desc: "Ticketed Pasadena-adjacent gardens, galleries, and estate paths.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 10:00 am opening; avoid Tuesdays because The Huntington is closed. Best view: Chinese Garden, Japanese Garden, Desert Garden, and broad shaded paths. Best premium garden walk near Pasadena.", reconsider: "The family wants a beautiful slow half-day near the hotel and accepts the ticket cost." },
         { interest: 0, planStatus: "Potential option", option: "Descanso Gardens shaded walk", desc: "Ticketed La Canada Flintridge gardens and shade near Pasadena.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 9:00 am opening or late afternoon. Best view: oak woodland, seasonal gardens, rose/camellia areas, and the miniature railroad if operating. Easier and closer than Westside sights; strong jet-lag soft-day candidate.", reconsider: "The family needs a gentle garden day without cross-town driving." },
@@ -3351,12 +3351,12 @@
         const needsConfirm = row.checkin === "Confirm" || row.checkout === "Confirm";
         const parkingBtns = (row.parkingMaps || []).map((p) => mapsBtn(p.map, p.alt ? iconParkingAlt : iconParking, p.label)).join("");
         return `<tr>
-          <td><strong>${escapeHtml(row.base)}</strong></td>
-          <td>${escapeHtml(row.dates)}</td>
-          <td>${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
-          <td>${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
-          <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.parking)}</td>
-          <td style="white-space:nowrap;">${mapsBtn(row.hotelMap, iconHotel, "Hotel")}${parkingBtns}</td>
+          <td data-label="Base"><strong>${escapeHtml(row.base)}</strong></td>
+          <td data-label="Dates">${escapeHtml(row.dates)}</td>
+          <td data-label="Check-in">${needsConfirm && row.checkin === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkin)}</td>
+          <td data-label="Checkout">${needsConfirm && row.checkout === "Confirm" ? `<span class="tag warn">Confirm</span>` : escapeHtml(row.checkout)}</td>
+          <td data-label="Parking" style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(row.parking)}</td>
+          <td data-label="Map" class="cell-maps" style="white-space:nowrap;">${mapsBtn(row.hotelMap, iconHotel, "Hotel")}${parkingBtns}</td>
         </tr>`;
       }).join("");
     }
@@ -3385,12 +3385,12 @@
     function renderLists() {
       const disruptionTbody = $("#routeDisruptionRows");
       if (disruptionTbody) disruptionTbody.innerHTML = tripData.routeDisruptions.map((r) => `<tr>
-        <td><strong>${escapeHtml(r.route)}</strong></td>
-        <td style="white-space: nowrap;">${escapeHtml(r.dates)}</td>
-        <td>${escapeHtml(r.disruption)}</td>
-        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.impact)}</td>
-        <td style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
-        <td style="color: var(--muted); font-size: 0.88rem; white-space: nowrap;">${escapeHtml(r.lastChecked)}</td>
+        <td data-label="Route / Road"><strong>${escapeHtml(r.route)}</strong></td>
+        <td data-label="Dates" style="white-space: nowrap;">${escapeHtml(r.dates)}</td>
+        <td data-label="Known disruption">${escapeHtml(r.disruption)}</td>
+        <td data-label="Driving impact" style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.impact)}</td>
+        <td data-label="Confirm before" style="color: var(--muted); font-size: 0.88rem;">${escapeHtml(r.confirmBefore)}</td>
+        <td data-label="Last checked" style="color: var(--muted); font-size: 0.88rem; white-space: nowrap;">${escapeHtml(r.lastChecked)}</td>
       </tr>`).join("");
     }
 
@@ -3398,10 +3398,10 @@
       renderTimedTable();
       renderPreDepartureTable();
       $("#duringTripRows").innerHTML = tripData.duringTrip.map((row) => `
-        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+        <tr><td data-label="Task"><strong>${escapeHtml(row.check)}</strong></td><td data-label="When">${escapeHtml(row.when)}</td><td data-label="Required action">${escapeHtml(row.action)}</td><td data-label="Status">${statusTag(row.status)}</td></tr>
       `).join("");
       $("#afterTripRows").innerHTML = tripData.afterTrip.map((row) => `
-        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+        <tr><td data-label="Task"><strong>${escapeHtml(row.check)}</strong></td><td data-label="When">${escapeHtml(row.when)}</td><td data-label="Required action">${escapeHtml(row.action)}</td><td data-label="Status">${statusTag(row.status)}</td></tr>
       `).join("");
     }
 
@@ -3411,7 +3411,7 @@
         ? tripData.timedTickets
         : tripData.timedTickets.filter((r) => sel.has(r.status));
       $("#timedRows").innerHTML = rows.map((row) => `
-        <tr><td><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td>${escapeHtml(row.timing)}</td><td>${statusTag(row.status)}</td></tr>
+        <tr><td data-label="Task"><strong>${escapeHtml(row.task)}</strong><br><span style="color: var(--muted);">${escapeHtml(row.notes)}</span></td><td data-label="Target timing">${escapeHtml(row.timing)}</td><td data-label="Status">${statusTag(row.status)}</td></tr>
       `).join("");
       renderSectionProgress("timedProgressLabel", "timedProgressFill", tripData.timedTickets);
     }
@@ -3432,7 +3432,7 @@
         ? tripData.preDeparture
         : tripData.preDeparture.filter((r) => sel.has(r.status));
       $("#preDepartureRows").innerHTML = rows.map((row) => `
-        <tr><td><strong>${escapeHtml(row.check)}</strong></td><td>${escapeHtml(row.when)}</td><td>${escapeHtml(row.action)}</td><td>${statusTag(row.status)}</td></tr>
+        <tr><td data-label="Task"><strong>${escapeHtml(row.check)}</strong></td><td data-label="When">${escapeHtml(row.when)}</td><td data-label="Required action">${escapeHtml(row.action)}</td><td data-label="Status">${statusTag(row.status)}</td></tr>
       `).join("");
       renderSectionProgress("preDepartureProgressLabel", "preDepartureProgressFill", tripData.preDeparture);
     }
