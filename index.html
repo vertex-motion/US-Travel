@@ -1534,10 +1534,10 @@
       height: 100%;
       width: calc(var(--rating-fill, 0) * 100%);
       border-radius: 999px;
-      background: var(--coral);
+      background: var(--rating-color, var(--coral));
       transition: width 0.3s ease;
     }
-    .opt-rating-num { font-size: 0.74rem; font-weight: 700; line-height: 1; color: var(--coral); }
+    .opt-rating-num { font-size: 0.74rem; font-weight: 700; line-height: 1; color: var(--rating-color, var(--coral)); }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -3799,7 +3799,9 @@
     function renderRating(interest) {
       const rating = Math.max(0, Math.min(10, Number(interest) || 0));
       if (rating === 0) return "";
-      return `<div class="opt-rating" style="--rating-fill:${rating / 10};" role="img" aria-label="Interest ${rating} out of 10">
+      // Hue scales red (0) -> green (130) with the score.
+      const hue = Math.round((rating / 10) * 130);
+      return `<div class="opt-rating" style="--rating-fill:${rating / 10}; --rating-color:hsl(${hue} 72% 45%);" role="img" aria-label="Interest ${rating} out of 10">
         <span class="opt-rating-track"><span class="opt-rating-fill"></span></span>
         <span class="opt-rating-num">${rating}</span>
       </div>`;
