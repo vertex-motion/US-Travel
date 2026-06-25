@@ -1874,6 +1874,7 @@
                 <div class="filters" id="potentialCategoryFilters"></div>
                 <div class="filters" id="potentialRegionFilters"></div>
                 <div class="filters" id="potentialDriveFilter"></div>
+                <div class="filters" id="potentialStarsFilter"></div>
                 <span class="potential-count" id="potentialOptionCount"></span>
               </div>
               <div class="potential-filters" id="potentialMapFilters">
@@ -1881,6 +1882,7 @@
                 <div class="filters" id="potentialMapCategoryFilters"></div>
                 <div class="filters" id="potentialMapRegionFilters"></div>
                 <div class="filters" id="potentialMapDriveFilter"></div>
+                <div class="filters" id="potentialMapStarsFilter"></div>
                 <span class="potential-count" id="potentialMapCount"></span>
               </div>
             </div>
@@ -2906,7 +2908,7 @@
         { interest: 0, planStatus: "In the plan", option: "Santa Monica Palisades Park, Pier, and beach path", desc: "Classic ocean walk above and beside Santa Monica beach.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: jet-lag morning for low effort, or late afternoon/sunset for the classic view. Best view: Palisades Park bluffs above the pier and the pier deck. Santa Monica State Beach stretches over 3 mi (5 km), and Palisades Park is about 1.5 mi (2.4 km), so keep the actual family walk short.", reconsider: "The family wants a beach recovery block and accepts the cross-town drive from Pasadena." },
         { interest: 0, planStatus: "Potential option", option: "Venice Canals and Ocean Front Walk", desc: "Canal bridges plus a short Venice Boardwalk sample.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning before the Boardwalk reaches full intensity. Best view: canal bridges and reflections first, then a short Ocean Front Walk sample. Visually distinctive but more chaotic than Santa Monica, so treat it as a targeted photo/walk stop.", reconsider: "The family wants Venice specifically and is willing to trade calm beach recovery for a busier, more eccentric LA sample." },
         { interest: 0, planStatus: "In the plan", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", desc: "Beverly Hills Sign, Lily Pond, Rodeo Drive, and Via Rodeo.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning for clean photos and easier parking, or golden hour for nicer light. Best view: Beverly Hills Sign and Lily Pond, then Rodeo Drive / Via Rodeo. Beverly Gardens Park is a 1.9 mi (3.1 km) linear park; use only the central section.", reconsider: "A Museum Row / Petersen / Academy day needs a short recognizable LA stroll." },
-        { interest: 0, planStatus: "Potential option", option: "Hollywood Boulevard classic sights", desc: "Walk of Fame, TCL Chinese Theatre forecourt, and Ovation Hollywood views.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: weekday morning; keep it to 45-75 minutes. Best view: TCL Chinese Theatre forecourt and Ovation Hollywood upper levels for the Sign. Iconic but crowded and touristy, so it is a brief teen/Hollywood sample, not a default family walk.", reconsider: "The teen wants Hollywood Boulevard, or the family wants a quick classic-photo stop before leaving the area." },
+        { interest: 9, planStatus: "Potential option", option: "Hollywood Boulevard classic sights", desc: "Walk of Fame, TCL Chinese Theatre forecourt, and Ovation Hollywood views.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: weekday morning; keep it to 45-75 minutes. Best view: TCL Chinese Theatre forecourt and Ovation Hollywood upper levels for the Sign. Iconic but crowded and touristy, so it is a brief teen/Hollywood sample, not a default family walk.", reconsider: "The teen wants Hollywood Boulevard, or the family wants a quick classic-photo stop before leaving the area." },
         { interest: 0, planStatus: "Potential option", option: "Downtown LA architecture and market walk", desc: "Walt Disney Concert Hall, Angels Flight, Grand Central Market, and Bradbury Building.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: late morning through lunch on a weekday or Saturday. Best view: Walt Disney Concert Hall exterior / stairs, Angels Flight, Grand Central Market, and Bradbury Building interior light. Park once and keep the route tight.", reconsider: "Beach traffic looks poor, weather is mild enough for city walking, or the family wants architecture plus food over museums." },
         { interest: 0, planStatus: "Potential option", option: "El Pueblo, Olvera Street, and Union Station", desc: "Historic-origin LA walk around Union Station and Olvera Street.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: morning to lunch. Best view: Union Station waiting room / courtyards and the Olvera Street marketplace. More toddler-tolerant than Hollywood Boulevard and easier to keep compact.", reconsider: "The family wants an LA history walk or a food-and-architecture swap near Downtown." },
         { interest: 0, planStatus: "Potential option", option: "The Huntington gardens and San Marino walk", desc: "Ticketed Pasadena-adjacent gardens, galleries, and estate paths.", category: "Scenic Walks and Viewpoints", link: "Research/los-angeles-scenic-walks-and-viewpoints.md", why: "Best time: 10:00 am opening; avoid Tuesdays because The Huntington is closed. Best view: Chinese Garden, Japanese Garden, Desert Garden, and broad shaded paths. Best premium garden walk near Pasadena.", reconsider: "The family wants a beautiful slow half-day near the hotel and accepts the ticket cost." },
@@ -3301,7 +3303,7 @@
       [...new Set(rows.map((row) => row.category))]
         .filter((category) => !POTENTIAL_DEFAULT_OFF_CATEGORIES.has(category))
     );
-    const potentialMapState = { categories: defaultPotentialCategories(tripData.potentialMapPlaces), statuses: new Set(), regions: new Set(), maxMinutes: null, map: null, layer: null, markers: new Map() };
+    const potentialMapState = { categories: defaultPotentialCategories(tripData.potentialMapPlaces), statuses: new Set(), regions: new Set(), maxMinutes: null, minStars: null, map: null, layer: null, markers: new Map() };
     // Two-finger pan/zoom on touch so a one-finger swipe scrolls the page past the
     // full-width map instead of getting trapped. Provided by the Leaflet.GestureHandling
     // plugin; if it fails to load, Leaflet ignores the unknown options and the map still renders.
@@ -3322,6 +3324,7 @@
     const potentialCategoryState = { categories: defaultPotentialCategories(tripData.potentialOptions) };
     const potentialRegionState = { regions: new Set() };
     const potentialDriveState = { max: null }; // null = "Any" (no drive-time limit)
+    const potentialStarsState = { min: null }; // null = "Any" (no minimum rating)
 
     function renderLodgingBases() {
       const tbody = $("#lodgingSummaryRows");
@@ -3739,6 +3742,10 @@
           onChange: renderPotentialOptions
         });
       }
+      const starsEl = $("#potentialStarsFilter");
+      if (starsEl) {
+        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialStarsState, key: "min", onChange: renderPotentialOptions });
+      }
     }
 
     // Collapse a mapped place's fine geographic region into one of the trip's
@@ -3903,7 +3910,8 @@
         const regionMatch = selectedRegions.size === 0 || selectedRegions.has(optionRegion(row));
         const mins = optionDriveMinutes(row);
         const driveMatch = potentialDriveState.max == null || (mins != null && mins <= potentialDriveState.max);
-        return categoryMatch && statusMatch && regionMatch && driveMatch;
+        const starsMatch = potentialStarsState.min == null || (Number(row.interest) || 0) >= potentialStarsState.min;
+        return categoryMatch && statusMatch && regionMatch && driveMatch && starsMatch;
       });
       $("#potentialOptions").innerHTML = rows.map((row, index) => {
         const fitId = `fit-pop-${index}`;
@@ -3963,7 +3971,8 @@
         const regMatch = regs.size === 0 || regs.has(REGION_SEGMENT[place.region] || "");
         const mins = driveMinutes(place);
         const driveMatch = potentialMapState.maxMinutes == null || (mins != null && mins <= potentialMapState.maxMinutes);
-        return catMatch && statMatch && regMatch && driveMatch;
+        const starMatch = potentialMapState.minStars == null || (Number(potentialOptionDetails(place).interest) || 0) >= potentialMapState.minStars;
+        return catMatch && statMatch && regMatch && driveMatch && starMatch;
       });
     }
 
@@ -4007,6 +4016,10 @@
           state: potentialMapState, key: "maxMinutes",
           onChange: renderPotentialMap
         });
+      }
+      const starsEl = $("#potentialMapStarsFilter");
+      if (starsEl) {
+        buildMinSlider(starsEl, { max: 10, unit: "★", state: potentialMapState, key: "minStars", onChange: renderPotentialMap });
       }
     }
 
@@ -4358,6 +4371,26 @@
       input.addEventListener("input", () => {
         const v = Number(input.value);
         state[key] = v >= max ? null : v;
+        valueEl.textContent = label(v);
+        onChange();
+      });
+    }
+
+    // Single-handle "minimum" slider. The bottom of the track (min) means "Any"
+    // (no threshold), stored as null on state[key]; any higher value is the minimum.
+    function buildMinSlider(container, { min = 0, max, step = 1, state, key, unit = "", onChange }) {
+      const initial = state[key] == null ? min : state[key];
+      const label = (v) => (v <= min ? "Any" : `≥ ${v}${unit}`);
+      container.classList.add("range-filter");
+      container.innerHTML = `
+        <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
+          aria-label="Minimum interest stars">
+        <span class="range-value">${label(initial)}</span>`;
+      const input = container.querySelector(".range-input");
+      const valueEl = container.querySelector(".range-value");
+      input.addEventListener("input", () => {
+        const v = Number(input.value);
+        state[key] = v <= min ? null : v;
         valueEl.textContent = label(v);
         onChange();
       });
