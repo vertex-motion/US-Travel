@@ -1519,16 +1519,15 @@
     .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
-    /* Interest rating shown as a small upright "vat" filled bottom-up to the score. */
-    .rating-vat { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 4px; padding-top: 2px; }
+    /* Interest rating: a slim, subtle vertical gauge filled bottom-up to the score. */
+    .rating-vat { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; padding-top: 4px; }
     .rating-vat-vessel {
       position: relative;
-      width: 22px;
-      height: 40px;
+      width: 5px;
+      height: 32px;
       overflow: hidden;
-      border: 1.5px solid var(--line);
-      border-radius: 5px 5px 8px 8px;
-      background: var(--chip-bg);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--muted) 15%, transparent);
     }
     .rating-vat-fill {
       position: absolute;
@@ -1536,10 +1535,11 @@
       right: 0;
       bottom: 0;
       height: calc(var(--rating-fill, 0) * 100%);
-      background: linear-gradient(180deg, var(--sky), var(--coral));
+      border-radius: 999px;
+      background: var(--coral);
       transition: height 0.3s ease;
     }
-    .rating-vat-num { font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--ink-soft); }
+    .rating-vat-num { font-size: 0.72rem; font-weight: 700; line-height: 1; color: var(--muted); }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
