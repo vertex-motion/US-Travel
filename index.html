@@ -1426,7 +1426,8 @@
     .potential-table col.col-map { width: 28%; }
     .potential-table td { overflow-wrap: break-word; }
 
-    .opt-cell { vertical-align: top; }
+    .opt-cell { vertical-align: top; display: flex; gap: 12px; align-items: flex-start; }
+    .opt-main { min-width: 0; }
     .opt-name { font-weight: 700; font-size: 0.96rem; line-height: 1.32; color: var(--ink); }
     .opt-desc { margin-top: 6px; color: var(--muted); font-size: 0.85rem; line-height: 1.45; }
 
@@ -1518,21 +1519,27 @@
     .status-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .region-label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
     .region-label svg { width: 13px; height: 13px; flex-shrink: 0; }
-    .rating-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 4px 9px;
-      border-radius: 9px;
-      border: 1px solid var(--line);
+    /* Interest rating shown as a small upright "vat" filled bottom-up to the score. */
+    .rating-vat { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 4px; padding-top: 2px; }
+    .rating-vat-vessel {
+      position: relative;
+      width: 22px;
+      height: 40px;
+      overflow: hidden;
+      border: 1.5px solid var(--line);
+      border-radius: 5px 5px 8px 8px;
       background: var(--chip-bg);
-      color: var(--muted);
-      font-size: 0.8rem;
-      font-weight: 700;
-      white-space: nowrap;
     }
-    .rating-chip svg { width: 13px; height: 13px; color: #f5a623; flex-shrink: 0; }
-    .rating-chip.is-rated { color: var(--ink-soft); }
+    .rating-vat-fill {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: calc(var(--rating-fill, 0) * 100%);
+      background: linear-gradient(180deg, var(--sky), var(--coral));
+      transition: height 0.3s ease;
+    }
+    .rating-vat-num { font-size: 0.78rem; font-weight: 800; line-height: 1; color: var(--ink-soft); }
 
     .mini-table { min-width: 0; }
     .mini-table th, .mini-table td { padding: 11px; }
@@ -1894,7 +1901,7 @@
                     <col class="col-status">
                     <col class="col-map">
                   </colgroup>
-                  <thead><tr><th>Option</th><th>Status · Rating · Category</th><th>Map</th></tr></thead>
+                  <thead><tr><th>Option</th><th>Status · Category</th><th>Map</th></tr></thead>
                   <tbody id="potentialOptions"></tbody>
                 </table>
               </div>
@@ -3757,8 +3764,11 @@
 
     function renderRating(interest) {
       const rating = Math.max(0, Math.min(10, Number(interest) || 0));
-      const score = `${rating}/10`;
-      return `<span class="rating-chip${rating > 0 ? " is-rated" : ""}" aria-label="Interest ${escapeHtml(score)}">${icon("star")}<span>${escapeHtml(score)}</span></span>`;
+      if (rating === 0) return "";
+      return `<div class="rating-vat" style="--rating-fill:${rating / 10};" role="img" aria-label="Interest ${rating} out of 10">
+        <span class="rating-vat-vessel"><span class="rating-vat-fill"></span></span>
+        <span class="rating-vat-num">${rating}</span>
+      </div>`;
     }
 
     function potentialPlacesForOption(row) {
@@ -3875,18 +3885,20 @@
         return `
           <tr>
             <td class="opt-cell">
-              <div class="opt-name">${escapeHtml(row.option)}</div>
-              <div class="opt-desc">${escapeHtml(row.desc)}<button type="button" class="info-dot" popovertarget="${fitId}" aria-label="Show current fit and tradeoff" title="Current fit / tradeoff">i</button></div>
-              <div id="${fitId}" popover="auto" class="fit-popover">
-                <div class="fit-popover-title">Current fit / tradeoff</div>
-                <div>${escapeHtml(row.why)}</div>
+              ${renderRating(row.interest)}
+              <div class="opt-main">
+                <div class="opt-name">${escapeHtml(row.option)}</div>
+                <div class="opt-desc">${escapeHtml(row.desc)}<button type="button" class="info-dot" popovertarget="${fitId}" aria-label="Show current fit and tradeoff" title="Current fit / tradeoff">i</button></div>
+                <div id="${fitId}" popover="auto" class="fit-popover">
+                  <div class="fit-popover-title">Current fit / tradeoff</div>
+                  <div>${escapeHtml(row.why)}</div>
+                </div>
               </div>
             </td>
             <td class="status-cell">
               <div class="status-stack">
                 <div class="status-line">
                   ${planStatusTag(row.planStatus)}
-                  ${renderRating(row.interest)}
                 </div>
                 <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
                 ${region ? `<span class="region-label">${icon("pin")}${escapeHtml(region)}</span>` : ""}
