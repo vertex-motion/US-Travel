@@ -1700,7 +1700,21 @@
     }
 
     /* ---------------- Live location ---------------- */
-    .live-loc-control { display: flex; flex-direction: column; }
+    .live-loc-bar { display: flex; flex-direction: column; width: 34px; }
+    .live-loc-msg {
+      display: none;
+      margin-top: 6px;
+      width: 168px;
+      padding: 7px 9px;
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      color: var(--stop-fg);
+      font-size: 0.72rem;
+      line-height: 1.35;
+      box-shadow: 0 4px 14px rgba(23, 33, 38, 0.18);
+    }
+    .live-loc-msg.show { display: block; }
     .live-loc-btn {
       display: flex;
       align-items: center;
@@ -4380,63 +4394,81 @@
         iconAnchor: [8, 8]
       });
 
-      let watching = false;
+      // `enabled` is the user's toggle intent and is kept separate from fixes
+      // and errors, so the toggle always turns off reliably even while we are
+      // still locating or showing an error.
+      let enabled = false;
       let centerOnNextFix = false;
       let lastLatLng = null;
       let dotMarker = null;
       let accuracyCircle = null;
+      let highAccuracy = true;
+      let triedLowAccuracy = false;
+      let errorMsg = "";
 
       const control = L.control({ position: "topleft" });
       control.onAdd = function () {
-        const bar = L.DomUtil.create("div", "leaflet-bar live-loc-control");
-        bar.innerHTML = `
-          <button type="button" class="live-loc-btn live-loc-toggle" aria-pressed="false" title="Show my live location" aria-label="Show my live location">${icon("locate")}</button>
-          <button type="button" class="live-loc-btn live-loc-center" title="Center on my location" aria-label="Center on my location">${icon("crosshair")}</button>`;
-        L.DomEvent.disableClickPropagation(bar);
-        L.DomEvent.disableScrollPropagation(bar);
-        return bar;
+        const wrap = L.DomUtil.create("div", "live-loc-control");
+        wrap.innerHTML = `
+          <div class="leaflet-bar live-loc-bar">
+            <button type="button" class="live-loc-btn live-loc-toggle" aria-pressed="false" title="Show my live location" aria-label="Show my live location">${icon("locate")}</button>
+            <button type="button" class="live-loc-btn live-loc-center" title="Center on my location" aria-label="Center on my location">${icon("crosshair")}</button>
+          </div>
+          <div class="live-loc-msg" role="status" aria-live="polite"></div>`;
+        L.DomEvent.disableClickPropagation(wrap);
+        L.DomEvent.disableScrollPropagation(wrap);
+        return wrap;
       };
       control.addTo(map);
 
       const container = control.getContainer();
       const toggleBtn = container.querySelector(".live-loc-toggle");
       const centerBtn = container.querySelector(".live-loc-center");
+      const msgEl = container.querySelector(".live-loc-msg");
 
-      function setToggleState() {
-        toggleBtn.classList.toggle("is-active", watching);
-        toggleBtn.setAttribute("aria-pressed", String(watching));
-        toggleBtn.classList.toggle("is-loading", watching && !lastLatLng);
-        if (watching) {
-          toggleBtn.classList.remove("is-error");
-          toggleBtn.title = toggleBtn.getAttribute("aria-label") || "Hide my live location";
-        }
+      function paint() {
+        const locating = enabled && !lastLatLng && !errorMsg;
+        toggleBtn.classList.toggle("is-active", enabled && !errorMsg);
+        toggleBtn.classList.toggle("is-loading", locating);
+        toggleBtn.classList.toggle("is-error", enabled && !!errorMsg);
+        toggleBtn.setAttribute("aria-pressed", String(enabled));
+        toggleBtn.title = !enabled ? "Show my live location" : (errorMsg || "Hide my live location");
+        toggleBtn.setAttribute("aria-label", toggleBtn.title);
+        msgEl.textContent = errorMsg;
+        msgEl.classList.toggle("show", !!errorMsg);
       }
 
-      function startWatch() {
-        if (watching) return;
-        watching = true;
+      function startLocate() {
+        map.locate({ watch: true, enableHighAccuracy: highAccuracy, setView: false, timeout: 30000, maximumAge: 10000 });
+      }
+
+      function enable() {
+        if (enabled) return;
+        enabled = true;
+        errorMsg = "";
+        highAccuracy = true;
+        triedLowAccuracy = false;
         // Center on the first fix so turning tracking on brings you into view
         // from anywhere; later fixes won't recenter, so you can pan while tracked.
         if (!lastLatLng) centerOnNextFix = true;
-        toggleBtn.title = "Hide my live location";
-        toggleBtn.setAttribute("aria-label", "Hide my live location");
-        setToggleState();
-        map.locate({ watch: true, enableHighAccuracy: true, setView: false, timeout: 30000, maximumAge: 10000 });
+        paint();
+        startLocate();
       }
 
-      function stopWatch() {
-        watching = false;
+      function disable() {
+        enabled = false;
+        errorMsg = "";
         centerOnNextFix = false;
         map.stopLocate();
         if (dotMarker) { map.removeLayer(dotMarker); dotMarker = null; }
         if (accuracyCircle) { map.removeLayer(accuracyCircle); accuracyCircle = null; }
-        toggleBtn.title = "Show my live location";
-        toggleBtn.setAttribute("aria-label", "Show my live location");
-        setToggleState();
+        lastLatLng = null;
+        paint();
       }
 
       map.on("locationfound", (e) => {
-        if (!watching) return;
+        if (!enabled) return;
+        errorMsg = "";
         lastLatLng = e.latlng;
         if (dotMarker) {
           dotMarker.setLatLng(e.latlng);
@@ -4448,7 +4480,7 @@
         } else {
           accuracyCircle = L.circle(e.latlng, { radius: e.accuracy || 0, color: "#2293c9", weight: 1, opacity: 0.5, fillColor: "#2293c9", fillOpacity: 0.1, interactive: false }).addTo(map);
         }
-        setToggleState();
+        paint();
         if (centerOnNextFix) {
           centerOnNextFix = false;
           map.setView(e.latlng, Math.max(map.getZoom(), 14));
@@ -4456,34 +4488,40 @@
       });
 
       map.on("locationerror", (e) => {
-        if (!watching) return;
-        // Safari (esp. desktop) fires transient timeout / position-unavailable
-        // errors during a watch even after permission is granted; the watch
-        // keeps running and a real fix usually follows, so only a denied
-        // permission is fatal. Ignoring the rest keeps tracking (and the
-        // toggle's off state) alive until the first fix arrives.
-        const denied = e && (e.code === 1 || /denied|permission/i.test(e.message || ""));
-        if (!denied) return;
-        stopWatch();
-        const msg = e && e.message ? e.message : "Location permission denied";
-        toggleBtn.classList.add("is-error");
-        toggleBtn.title = msg;
-        toggleBtn.setAttribute("aria-label", msg);
+        if (!enabled) return;
+        const code = e && e.code;
+        const denied = code === 1 || /denied|permission/i.test((e && e.message) || "");
+        if (denied) {
+          errorMsg = "Location access blocked. Allow this site to use your location in the browser/OS settings, then tap again.";
+          paint();
+          return;
+        }
+        // High-accuracy (GPS) often fails on devices without it (e.g. many
+        // Macs). Retry once at lower accuracy (Wi-Fi/IP) before giving up.
+        if (highAccuracy && !triedLowAccuracy) {
+          triedLowAccuracy = true;
+          highAccuracy = false;
+          map.stopLocate();
+          startLocate();
+          return;
+        }
+        // Already have a fix? Keep it; this is just a transient watch hiccup.
+        if (lastLatLng) return;
+        errorMsg = (e && e.message) ? e.message : "Location unavailable. Check that Location Services are on.";
+        paint();
       });
 
       toggleBtn.addEventListener("click", () => {
-        toggleBtn.classList.remove("is-error");
-        if (watching) stopWatch(); else startWatch();
+        if (enabled) disable(); else enable();
       });
 
       centerBtn.addEventListener("click", () => {
-        toggleBtn.classList.remove("is-error");
         if (lastLatLng) {
           map.setView(lastLatLng, Math.max(map.getZoom(), 14));
-        } else {
-          centerOnNextFix = true;
-          if (!watching) startWatch();
+          return;
         }
+        centerOnNextFix = true;
+        if (!enabled) enable();
       });
     }
 
