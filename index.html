@@ -4394,7 +4394,7 @@
         toggleBtn.title = "Hide my live location";
         toggleBtn.setAttribute("aria-label", "Hide my live location");
         setToggleState();
-        map.locate({ watch: true, enableHighAccuracy: true, setView: false });
+        map.locate({ watch: true, enableHighAccuracy: true, setView: false, timeout: 30000, maximumAge: 10000 });
       }
 
       function stopWatch() {
@@ -4430,8 +4430,15 @@
 
       map.on("locationerror", (e) => {
         if (!watching) return;
+        // Safari (esp. desktop) fires transient timeout / position-unavailable
+        // errors during a watch even after permission is granted; the watch
+        // keeps running and a real fix usually follows, so only a denied
+        // permission is fatal. Ignoring the rest keeps tracking (and the
+        // toggle's off state) alive until the first fix arrives.
+        const denied = e && (e.code === 1 || /denied|permission/i.test(e.message || ""));
+        if (!denied) return;
         stopWatch();
-        const msg = e && e.message ? e.message : "Location unavailable";
+        const msg = e && e.message ? e.message : "Location permission denied";
         toggleBtn.classList.add("is-error");
         toggleBtn.title = msg;
         toggleBtn.setAttribute("aria-label", msg);
