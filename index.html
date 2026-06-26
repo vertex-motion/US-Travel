@@ -1695,6 +1695,59 @@
       filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.95);
     }
 
+    /* ---------------- Live location ---------------- */
+    .live-loc-control { display: flex; flex-direction: column; }
+    .live-loc-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background: var(--panel-solid);
+      color: var(--ink);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .live-loc-btn + .live-loc-btn { border-top: 1px solid var(--line); }
+    .live-loc-btn svg { width: 18px; height: 18px; display: block; }
+    .live-loc-btn:hover { background: var(--panel-soft); }
+    .live-loc-btn.is-active { color: #fff; background: var(--coral); }
+    .live-loc-btn.is-active:hover { background: var(--coral); }
+    .live-loc-btn.is-loading svg { animation: live-spin 0.9s linear infinite; }
+    .live-loc-btn.is-error { color: var(--stop-fg); }
+    @keyframes live-spin { to { transform: rotate(360deg); } }
+
+    .live-dot {
+      box-sizing: border-box;
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: #2293c9;
+      border: 3px solid #fff;
+      box-shadow: 0 1px 4px rgba(23, 33, 38, 0.5);
+    }
+    .live-dot::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      margin: -8px 0 0 -8px;
+      border-radius: 999px;
+      background: rgba(34, 147, 201, 0.35);
+      animation: live-pulse 2s ease-out infinite;
+    }
+    @keyframes live-pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(3.2); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .live-dot::before { animation: none; }
+      .live-loc-btn.is-loading svg { animation: none; }
+    }
+
     /* ---------------- Footer ---------------- */
     .footer {
       width: min(var(--max), calc(100% - 24px));
@@ -3687,6 +3740,8 @@
       pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>',
       star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.27 5.82.85-4.21 4.1.99 5.79L12 16.78 6.99 19.5l.99-5.79-4.21-4.1 5.82-.85z"/></svg>',
       home: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9.5 20v-5h5v5"/></svg>',
+      crosshair: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg>',
+      locate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 13.9 10.1 21.5 12 13.9 13.9 12 21.5 10.1 13.9 2.5 12 10.1 10.1z"/></svg>',
       check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
       apple: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.04c-.03-3.09 2.52-4.57 2.64-4.64-1.44-2.11-3.68-2.4-4.48-2.43-1.91-.19-3.72 1.12-4.69 1.12-.96 0-2.45-1.09-4.03-1.06-2.07.03-3.98 1.2-5.05 3.06-2.15 3.73-.55 9.26 1.55 12.29 1.03 1.48 2.25 3.15 3.86 3.09 1.55-.06 2.13-1 4-1 1.86 0 2.39 1 4.03.97 1.66-.03 2.71-1.51 3.73-3 .96-1.41 1.36-2.78 1.38-2.85-.03-.01-2.65-1.02-2.68-4.04z"/><path d="M14.53 4.6c.85-1.03 1.42-2.46 1.27-3.89-1.22.05-2.71.81-3.59 1.84-.79.91-1.48 2.37-1.29 3.77 1.36.11 2.75-.69 3.61-1.72z"/></svg>',
       google: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 12.23c0-.66-.06-1.29-.17-1.9H12v3.6h5.38a4.6 4.6 0 0 1-2 3.02v2.5h3.23c1.89-1.74 2.99-4.3 2.99-7.22z"/><path fill="currentColor" d="M12 22c2.7 0 4.96-.9 6.62-2.43l-3.23-2.5c-.9.6-2.05.96-3.39.96-2.6 0-4.81-1.76-5.6-4.12H3.07v2.59A10 10 0 0 0 12 22z"/><path fill="currentColor" d="M6.4 13.91A6 6 0 0 1 6.09 12c0-.66.11-1.31.32-1.91V7.5H3.07A10 10 0 0 0 2 12c0 1.61.39 3.14 1.07 4.5z"/><path fill="currentColor" d="M12 5.97c1.47 0 2.79.5 3.83 1.5l2.87-2.87C16.95 2.99 14.7 2 12 2A10 10 0 0 0 3.07 7.5l3.33 2.59C7.19 7.73 9.4 5.97 12 5.97z"/></svg>'
@@ -4223,6 +4278,7 @@
           attribution: "&copy; OpenStreetMap contributors"
         }).addTo(potentialMapState.map);
         potentialMapState.layer = L.layerGroup().addTo(potentialMapState.map);
+        addLiveLocation(potentialMapState.map);
       }
 
       potentialMapState.layer.clearLayers();
@@ -4284,6 +4340,116 @@
     }
 
 
+    // Live device GPS on a Leaflet map: a pulsing dot + accuracy circle, a
+    // toggle to start/stop watching, and a recenter button. Uses Leaflet's
+    // built-in watch (map.locate) so we don't hand-roll navigator.geolocation.
+    // The dot/circle live outside any layer group that gets clearLayers()'d,
+    // so they survive marker re-renders (e.g. the Potential map's filters).
+    function addLiveLocation(map) {
+      const liveDotIcon = L.divIcon({
+        className: "live-dot",
+        html: "",
+        iconSize: [16, 16],
+        iconAnchor: [8, 8]
+      });
+
+      let watching = false;
+      let centerOnNextFix = false;
+      let lastLatLng = null;
+      let dotMarker = null;
+      let accuracyCircle = null;
+
+      const control = L.control({ position: "topleft" });
+      control.onAdd = function () {
+        const bar = L.DomUtil.create("div", "leaflet-bar live-loc-control");
+        bar.innerHTML = `
+          <button type="button" class="live-loc-btn live-loc-toggle" aria-pressed="false" title="Show my live location" aria-label="Show my live location">${icon("locate")}</button>
+          <button type="button" class="live-loc-btn live-loc-center" title="Center on my location" aria-label="Center on my location">${icon("crosshair")}</button>`;
+        L.DomEvent.disableClickPropagation(bar);
+        L.DomEvent.disableScrollPropagation(bar);
+        return bar;
+      };
+      control.addTo(map);
+
+      const container = control.getContainer();
+      const toggleBtn = container.querySelector(".live-loc-toggle");
+      const centerBtn = container.querySelector(".live-loc-center");
+
+      function setToggleState() {
+        toggleBtn.classList.toggle("is-active", watching);
+        toggleBtn.setAttribute("aria-pressed", String(watching));
+        toggleBtn.classList.toggle("is-loading", watching && !lastLatLng);
+        if (watching) {
+          toggleBtn.classList.remove("is-error");
+          toggleBtn.title = toggleBtn.getAttribute("aria-label") || "Hide my live location";
+        }
+      }
+
+      function startWatch() {
+        if (watching) return;
+        watching = true;
+        toggleBtn.title = "Hide my live location";
+        toggleBtn.setAttribute("aria-label", "Hide my live location");
+        setToggleState();
+        map.locate({ watch: true, enableHighAccuracy: true, setView: false });
+      }
+
+      function stopWatch() {
+        watching = false;
+        centerOnNextFix = false;
+        map.stopLocate();
+        if (dotMarker) { map.removeLayer(dotMarker); dotMarker = null; }
+        if (accuracyCircle) { map.removeLayer(accuracyCircle); accuracyCircle = null; }
+        toggleBtn.title = "Show my live location";
+        toggleBtn.setAttribute("aria-label", "Show my live location");
+        setToggleState();
+      }
+
+      map.on("locationfound", (e) => {
+        if (!watching) return;
+        lastLatLng = e.latlng;
+        if (dotMarker) {
+          dotMarker.setLatLng(e.latlng);
+        } else {
+          dotMarker = L.marker(e.latlng, { icon: liveDotIcon, zIndexOffset: 2000, interactive: false, keyboard: false }).addTo(map);
+        }
+        if (accuracyCircle) {
+          accuracyCircle.setLatLng(e.latlng).setRadius(e.accuracy || 0);
+        } else {
+          accuracyCircle = L.circle(e.latlng, { radius: e.accuracy || 0, color: "#2293c9", weight: 1, opacity: 0.5, fillColor: "#2293c9", fillOpacity: 0.1, interactive: false }).addTo(map);
+        }
+        setToggleState();
+        if (centerOnNextFix) {
+          centerOnNextFix = false;
+          map.setView(e.latlng, Math.max(map.getZoom(), 14));
+        }
+      });
+
+      map.on("locationerror", (e) => {
+        if (!watching) return;
+        stopWatch();
+        const msg = e && e.message ? e.message : "Location unavailable";
+        toggleBtn.classList.add("is-error");
+        toggleBtn.title = msg;
+        toggleBtn.setAttribute("aria-label", msg);
+      });
+
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.remove("is-error");
+        if (watching) stopWatch(); else startWatch();
+      });
+
+      centerBtn.addEventListener("click", () => {
+        toggleBtn.classList.remove("is-error");
+        if (lastLatLng) {
+          map.setView(lastLatLng, Math.max(map.getZoom(), 14));
+        } else {
+          centerOnNextFix = true;
+          if (!watching) startWatch();
+        }
+      });
+    }
+
     function renderMap() {
       const routeList = $("#routeList");
       routeList.innerHTML = tripData.mapStops.filter((stop) => stop.type === "base").map((stop) => `
@@ -4303,6 +4469,7 @@
 
       const map = L.map("map", MAP_OPTIONS).setView([36.45, -120.35], 6);
       routeMap = map;
+      addLiveLocation(map);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
         attribution: "&copy; OpenStreetMap contributors"
