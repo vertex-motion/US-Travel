@@ -58,12 +58,17 @@ See [`metadata/content-tags.md`](metadata/content-tags.md) for tag definitions a
 
 The **Research** tab is bespoke (not generated from `01-07`). Each entry must be **self-contained**: a reader must be able to act on it without opening the research file — include the decision/recommendation and the key facts (e.g. options, costs, ages, links) that support it, as a table when comparing options. Keep it **summary-level, not exhaustive**: omit full reasoning, every source, and edge-case detail. Always keep the "Read the full paper" link for the complete write-up. When the linked research file changes, update the tab entry to match.
 
-## Itinerary Parking (Mandatory)
+## Parking (Mandatory)
 
-Each discrete attraction in an itinerary day card (`index.html` `days[].places[]`) must carry a `parking` array. When adding, renaming, or replacing an attraction or sightseeing stop, add or update its `parking` in the same change.
+Two place sets in `index.html` must carry a `parking` array:
+
+1. Each discrete attraction in an itinerary day card (`days[].places[]`). Add or update its `parking` when adding, renaming, or replacing the attraction or sightseeing stop, in the same change.
+2. Each concrete map place (`potentialMapPlaces[]`) whose option has a star (interest `>= 1`). Add or update its `parking` when an option reaches interest `>= 1`, or when adding, renaming, or replacing such a place. Rejected options are exempt. When a starred attraction also exists as a day place, reuse the same lots.
+
+Parking renders in the day card, the Potential Map marker popup, and the Potential Options row (combined per option). Reuse `renderParking` / `renderParkingList`; do not hand-build the markup.
 
 - Each `parking` entry must have a short `name` (a real lot name, or `P1`/`P2`/`P3` when none fits), a `cost`, and a `query` used for map links.
-- List up to three parking areas per attraction.
+- List up to three parking areas per place.
 - Each area must render four map buttons: Apple and Google, place (`P`) and route (`R`).
 - Do not add `parking` to lodging bases, airports, route corridors, or combined placeholder entries.
 

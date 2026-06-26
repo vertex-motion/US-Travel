@@ -1679,10 +1679,14 @@
     .popup-fit .popup-label { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; margin-bottom: 4px; }
 
     .leaflet-bar a,
-    .leaflet-bar a:hover {
+    .leaflet-bar a:hover,
+    .leaflet-touch .leaflet-bar a {
       background: var(--panel-solid);
       color: var(--ink);
       border-bottom-color: var(--line);
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
     }
 
     .leaflet-control-attribution {
@@ -3237,41 +3241,41 @@
         { id: "getty-center", name: "Getty Center", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0780, -118.4741] },
         { id: "academy-museum", name: "Academy Museum", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0639, -118.3610] },
         { id: "griffith-observatory", name: "Griffith Observatory", option: "Getty Center, Academy Museum, or Griffith Observatory", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.1184, -118.3004] },
-        { id: "petersen", name: "Petersen Automotive Museum", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0623, -118.3611] },
-        { id: "rodeo-drive", name: "Rodeo Drive", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0674, -118.4004] },
-        { id: "la-doree-grove", name: "Ladurée — The Grove", option: "La Dorée Patisserie", category: "Food and Drink", region: "Los Angeles", coords: [34.0722, -118.3576] },
-        { id: "griffith-terraces", name: "Griffith Observatory terraces", option: "Griffith Observatory terraces and Mount Hollywood views", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1184, -118.3004] },
-        { id: "mount-hollywood-trail", name: "Mount Hollywood / Charlie Turner trail", option: "Griffith Observatory terraces and Mount Hollywood views", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1252, -118.3005] },
+        { id: "petersen", name: "Petersen Automotive Museum", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0623, -118.3611], parking: [{ name: "P1 · Petersen garage (under museum)", cost: "~$18 flat", query: "Petersen Automotive Museum parking, Los Angeles, CA" }, { name: "P2 · Pritzker Family Garage", cost: "~$18 flat", query: "Pritzker Family Garage, 6th and Fairfax, Los Angeles, CA" }, { name: "P3 · Metered street (Fairfax/6th)", cost: "Metered, time-limited", query: "Fairfax Ave and 6th St, Los Angeles, CA" }] },
+        { id: "rodeo-drive", name: "Rodeo Drive", option: "Petersen Automotive Museum or Rodeo Drive short outing", category: "Attractions and Experiences", region: "Los Angeles", coords: [34.0674, -118.4004], parking: [{ name: "P1 · Beverly Hills 2 (Rodeo) garage", cost: "Free first 2 hrs", query: "Beverly Hills parking lot 2, 9510 Brighton Way, Beverly Hills, CA" }, { name: "P2 · 450 N Rodeo garage", cost: "Free first 2 hrs", query: "450 N Rodeo Drive parking garage, Beverly Hills, CA" }, { name: "P3 · Metered street (Rodeo/Wilshire)", cost: "Metered, time-limited", query: "Rodeo Drive and Wilshire Blvd, Beverly Hills, CA" }] },
+        { id: "la-doree-grove", name: "Ladurée — The Grove", option: "La Dorée Patisserie", category: "Food and Drink", region: "Los Angeles", coords: [34.0722, -118.3576], parking: [{ name: "P1 · The Grove parking structure", cost: "Free first 1-2 hrs, then hourly", query: "The Grove parking structure, 189 The Grove Dr, Los Angeles, CA" }, { name: "P2 · Original Farmers Market lot", cost: "Free first hr w/ validation", query: "Original Farmers Market parking, 6333 W 3rd St, Los Angeles, CA" }, { name: "P3 · Metered street (3rd/Fairfax)", cost: "Metered, time-limited", query: "3rd St and Fairfax Ave, Los Angeles, CA" }] },
+        { id: "griffith-terraces", name: "Griffith Observatory terraces", option: "Griffith Observatory terraces and Mount Hollywood views", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1184, -118.3004], parking: [{ name: "P1 · Observatory lot & roadside", cost: "Metered ~$10/hr", query: "Griffith Observatory parking, Los Angeles, CA" }, { name: "P2 · Greek Theatre lot + shuttle", cost: "Paid; weekend shuttle", query: "Greek Theatre parking, Los Angeles, CA" }, { name: "P3 · Fern Dell / lower roads", cost: "Free, limited + uphill walk", query: "Fern Dell Drive, Los Angeles, CA" }] },
+        { id: "mount-hollywood-trail", name: "Mount Hollywood / Charlie Turner trail", option: "Griffith Observatory terraces and Mount Hollywood views", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1252, -118.3005], parking: [{ name: "P1 · Observatory lot & roadside", cost: "Metered ~$10/hr", query: "Griffith Observatory parking, Los Angeles, CA" }, { name: "P2 · Charlie Turner trailhead roadside", cost: "Free, limited", query: "Charlie Turner Trailhead, Griffith Park, Los Angeles, CA" }, { name: "P3 · Greek Theatre lot + shuttle", cost: "Paid; weekend shuttle", query: "Greek Theatre parking, Los Angeles, CA" }] },
         { id: "lake-hollywood-park", name: "Lake Hollywood Park", option: "Lake Hollywood Park and Hollywood Reservoir sign view", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1262, -118.3267] },
         { id: "hollywood-reservoir", name: "Hollywood Reservoir", option: "Lake Hollywood Park and Hollywood Reservoir sign view", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1206, -118.3360] },
         { id: "getty-center-terraces", name: "Getty Center gardens and terraces", option: "Getty Center gardens, tram, and terraces", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0780, -118.4741] },
         { id: "palisades-park-sm", name: "Palisades Park, Santa Monica", option: "Santa Monica Palisades Park, Pier, and beach path", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0195, -118.5010] },
         { id: "santa-monica-pier-view", name: "Santa Monica Pier", option: "Santa Monica Palisades Park, Pier, and beach path", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0100, -118.4962] },
-        { id: "venice-canals", name: "Venice Canals", option: "Venice Canals", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [33.9830, -118.4676] },
-        { id: "venice-boardwalk", name: "Venice Ocean Front Walk", option: "Venice Ocean Front Walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [33.9870, -118.4740] },
-        { id: "beverly-gardens", name: "Beverly Gardens Park", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0736, -118.4004] },
-        { id: "rodeo-via-rodeo", name: "Rodeo Drive / Via Rodeo", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0674, -118.4004] },
-        { id: "hollywood-walk-of-fame", name: "Hollywood Walk of Fame", option: "Hollywood Boulevard classic sights", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1016, -118.3269] },
-        { id: "tcl-chinese-theatre", name: "TCL Chinese Theatre", option: "Hollywood Boulevard classic sights", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1020, -118.3409] },
-        { id: "walt-disney-concert-hall", name: "Walt Disney Concert Hall", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0553, -118.2498] },
-        { id: "angels-flight", name: "Angels Flight", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0517, -118.2500] },
-        { id: "grand-central-market", name: "Grand Central Market", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0507, -118.2487] },
-        { id: "bradbury-building", name: "Bradbury Building", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0506, -118.2479] },
+        { id: "venice-canals", name: "Venice Canals", option: "Venice Canals", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [33.9830, -118.4676], parking: [{ name: "P1 · Venice Blvd Beach lot", cost: "~$10-20/day", query: "Venice Beach parking lot, Venice Blvd, Los Angeles, CA" }, { name: "P2 · Venice Fishing Pier lot", cost: "~$10-15/day", query: "Venice Fishing Pier parking lot, Washington Blvd, Venice, CA" }, { name: "P3 · Metered street (N Venice Blvd)", cost: "Metered, time-limited", query: "North Venice Blvd, Venice, CA" }] },
+        { id: "venice-boardwalk", name: "Venice Ocean Front Walk", option: "Venice Ocean Front Walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [33.9870, -118.4740], parking: [{ name: "P1 · Venice Beach lot (1800 Ocean Front Walk)", cost: "~$10-20/day", query: "Venice Beach parking lot, 1800 Ocean Front Walk, Venice, CA" }, { name: "P2 · Venice Blvd Beach lot", cost: "~$10-20/day", query: "Venice Beach parking, Venice Blvd, Los Angeles, CA" }, { name: "P3 · Metered street (Rose/Main)", cost: "Metered, time-limited", query: "Rose Ave and Main St, Venice, CA" }] },
+        { id: "beverly-gardens", name: "Beverly Gardens Park", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0736, -118.4004], parking: [{ name: "P1 · Beverly Hills 2 (Rodeo) garage", cost: "Free first 2 hrs", query: "Beverly Hills parking lot 2, 9510 Brighton Way, Beverly Hills, CA" }, { name: "P2 · Civic Center / Library garage", cost: "Free first 2 hrs", query: "Beverly Hills Library parking, 444 N Rexford Dr, Beverly Hills, CA" }, { name: "P3 · Metered street (Santa Monica Blvd)", cost: "Metered, time-limited", query: "Santa Monica Blvd and Beverly Dr, Beverly Hills, CA" }] },
+        { id: "rodeo-via-rodeo", name: "Rodeo Drive / Via Rodeo", option: "Beverly Gardens Park, Rodeo Drive, and Golden Triangle", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0674, -118.4004], parking: [{ name: "P1 · Beverly Hills 2 (Rodeo) garage", cost: "Free first 2 hrs", query: "Beverly Hills parking lot 2, 9510 Brighton Way, Beverly Hills, CA" }, { name: "P2 · 450 N Rodeo garage", cost: "Free first 2 hrs", query: "450 N Rodeo Drive parking garage, Beverly Hills, CA" }, { name: "P3 · Metered street (Rodeo/Wilshire)", cost: "Metered, time-limited", query: "Rodeo Drive and Wilshire Blvd, Beverly Hills, CA" }] },
+        { id: "hollywood-walk-of-fame", name: "Hollywood Walk of Fame", option: "Hollywood Boulevard classic sights", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1016, -118.3269], parking: [{ name: "P1 · Ovation Hollywood garage (Hollywood & Highland)", cost: "~$3 for 2 hrs validated", query: "Ovation Hollywood parking, 6801 Hollywood Blvd, Los Angeles, CA" }, { name: "P2 · Hollywood/Vine Metro garage", cost: "~$2-3 for 2 hrs", query: "Hollywood and Vine parking garage, Los Angeles, CA" }, { name: "P3 · Metered street (Hollywood Blvd)", cost: "Metered, time-limited", query: "Hollywood Blvd, Los Angeles, CA" }] },
+        { id: "tcl-chinese-theatre", name: "TCL Chinese Theatre", option: "Hollywood Boulevard classic sights", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1020, -118.3409], parking: [{ name: "P1 · Ovation Hollywood garage (Hollywood & Highland)", cost: "~$3 for 2 hrs validated", query: "Ovation Hollywood parking, 6801 Hollywood Blvd, Los Angeles, CA" }, { name: "P2 · Hollywood Blvd lots (Orange Dr)", cost: "~$15-20/day", query: "Hollywood Blvd parking lot, Orange Dr, Los Angeles, CA" }, { name: "P3 · Metered street (Hollywood/Highland)", cost: "Metered, time-limited", query: "Hollywood Blvd and Highland Ave, Los Angeles, CA" }] },
+        { id: "walt-disney-concert-hall", name: "Walt Disney Concert Hall", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0553, -118.2498], parking: [{ name: "P1 · Walt Disney Concert Hall garage", cost: "~$9-20 (event rates vary)", query: "Walt Disney Concert Hall parking garage, Los Angeles, CA" }, { name: "P2 · Music Center garage", cost: "~$9-20", query: "Music Center Garage, 135 N Grand Ave, Los Angeles, CA" }, { name: "P3 · Metered street (Grand/Temple)", cost: "Metered, time-limited", query: "Grand Ave and Temple St, Los Angeles, CA" }] },
+        { id: "angels-flight", name: "Angels Flight", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0517, -118.2500], parking: [{ name: "P1 · California Plaza garage", cost: "~$10-20/day", query: "California Plaza parking, 350 S Grand Ave, Los Angeles, CA" }, { name: "P2 · Grand Central Square garage", cost: "90 min validated w/ market", query: "Grand Central Market parking, 308 S Hill St, Los Angeles, CA" }, { name: "P3 · Metered street (Hill/4th)", cost: "Metered, time-limited", query: "Hill St and 4th St, Los Angeles, CA" }] },
+        { id: "grand-central-market", name: "Grand Central Market", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0507, -118.2487], parking: [{ name: "P1 · Grand Central Square garage (Hill St)", cost: "90 min validated w/ purchase", query: "Grand Central Market parking, 308 S Hill St, Los Angeles, CA" }, { name: "P2 · Joe's Auto Park (4th/Hill)", cost: "~$10-20/day", query: "Joe's Auto Park, 4th and Hill, Los Angeles, CA" }, { name: "P3 · Metered street (Broadway/4th)", cost: "Metered, time-limited", query: "Broadway and 4th St, Los Angeles, CA" }] },
+        { id: "bradbury-building", name: "Bradbury Building", option: "Downtown LA architecture and market walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0506, -118.2479], parking: [{ name: "P1 · Joe's Auto Park (3rd/Broadway)", cost: "~$10-20/day", query: "Joe's Auto Park, 3rd and Broadway, Los Angeles, CA" }, { name: "P2 · Grand Central Square garage", cost: "Validated w/ market", query: "Grand Central Market parking, 308 S Hill St, Los Angeles, CA" }, { name: "P3 · Metered street (Broadway/3rd)", cost: "Metered, time-limited", query: "Broadway and 3rd St, Los Angeles, CA" }] },
         { id: "olvera-street", name: "Olvera Street", option: "El Pueblo, Olvera Street, and Union Station", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0579, -118.2370] },
         { id: "union-station-la", name: "Los Angeles Union Station", option: "El Pueblo, Olvera Street, and Union Station", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0562, -118.2365] },
-        { id: "huntington-gardens", name: "The Huntington", option: "The Huntington gardens and San Marino walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1280, -118.1145] },
+        { id: "huntington-gardens", name: "The Huntington", option: "The Huntington gardens and San Marino walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1280, -118.1145], parking: [{ name: "P1 · Huntington visitor lots", cost: "Free", query: "The Huntington Library parking, San Marino, CA" }, { name: "P2 · Overflow lot (busy days)", cost: "Free", query: "The Huntington overflow parking, San Marino, CA" }] },
         { id: "descanso-gardens", name: "Descanso Gardens", option: "Descanso Gardens shaded walk", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.2015, -118.2110] },
         { id: "colorado-street-bridge", name: "Colorado Street Bridge", option: "Colorado Street Bridge, Lower Arroyo, and Old Pasadena", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1458, -118.1667] },
         { id: "old-pasadena", name: "Old Pasadena", option: "Colorado Street Bridge, Lower Arroyo, and Old Pasadena", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.1462, -118.1500] },
         { id: "echo-park-lake", name: "Echo Park Lake", option: "Echo Park Lake skyline walk or swan boats", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0740, -118.2606] },
         { id: "manhattan-beach-pier", name: "Manhattan Beach Pier", option: "Manhattan Beach Pier and The Strand", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [33.8847, -118.4125] },
-        { id: "point-dume", name: "Point Dume", option: "Point Dume and Malibu coastal viewpoints", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0010, -118.8064] },
+        { id: "point-dume", name: "Point Dume", option: "Point Dume and Malibu coastal viewpoints", category: "Scenic Walks and Viewpoints", region: "Los Angeles", coords: [34.0010, -118.8064], parking: [{ name: "P1 · Westward Beach / Point Dume lot", cost: "~$3-13/day", query: "Westward Beach parking lot, Point Dume, Malibu, CA" }, { name: "P2 · Cliffside Dr roadside", cost: "Free, limited (permit zones)", query: "Cliffside Dr, Point Dume, Malibu, CA" }, { name: "P3 · Birdview Ave roadside", cost: "Free, limited", query: "Birdview Ave, Point Dume, Malibu, CA" }] },
         { id: "urban-light", name: "Urban Light at LACMA", option: "LACMA Urban Light and Hancock Park icons", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0639, -118.3592] },
         { id: "levitated-mass", name: "Levitated Mass", option: "LACMA Urban Light and Hancock Park icons", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0646, -118.3590] },
         { id: "la-brea-tar-pits", name: "La Brea Tar Pits", option: "La Brea Tar Pits and Lake Pit mammoths", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0628, -118.3566] },
         { id: "farmers-market-la", name: "Original Farmers Market", option: "Original Farmers Market and Grove photo stop", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0721, -118.3607] },
         { id: "the-grove-la", name: "The Grove fountain / trolley", option: "Original Farmers Market and Grove photo stop", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0719, -118.3570] },
-        { id: "greystone-mansion", name: "Greystone Mansion", option: "Greystone Mansion and Gardens", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0917, -118.4014] },
+        { id: "greystone-mansion", name: "Greystone Mansion", option: "Greystone Mansion and Gardens", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.0917, -118.4014], parking: [{ name: "P1 · Greystone Park lot", cost: "Free", query: "Greystone Mansion and Gardens parking, Beverly Hills, CA" }, { name: "P2 · Loma Vista Dr roadside", cost: "Free, limited", query: "Loma Vista Dr, Beverly Hills, CA" }] },
         { id: "rose-bowl-stadium", name: "Rose Bowl Stadium", option: "Rose Bowl Stadium and Brookside Park", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.1613, -118.1676] },
         { id: "brookside-park", name: "Brookside Park", option: "Rose Bowl Stadium and Brookside Park", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.1547, -118.1660] },
         { id: "pasadena-city-hall", name: "Pasadena City Hall", option: "Pasadena City Hall and Civic Center", category: "Landmarks, Parks, and Architecture", region: "Los Angeles", coords: [34.1478, -118.1445] },
@@ -3390,7 +3394,7 @@
         { id: "alcatraz-night-tour", name: "Alcatraz Night Tour", option: "Alcatraz Night Tour or Behind the Scenes Tour", category: "Teen-Focused Split", region: "San Francisco", coords: [37.8267, -122.4230] },
         { id: "santa-cruz-boardwalk-teen", name: "Santa Cruz Beach Boardwalk", option: "Santa Cruz Beach Boardwalk ride and arcade block", category: "Teen-Focused Split", region: "Santa Cruz", coords: [36.9640, -122.0258] },
         { id: "santa-barbara-surf", name: "Santa Barbara surf / SUP lesson", option: "Santa Barbara surf or stand-up paddle lesson", category: "Teen-Focused Split", region: "Santa Barbara", coords: [34.4140, -119.6920] },
-        { id: "pacific-park", name: "Pacific Park", option: "Pacific Park at Santa Monica Pier ride block", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.0100, -118.4962] },
+        { id: "pacific-park", name: "Pacific Park", option: "Pacific Park at Santa Monica Pier ride block", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.0100, -118.4962], parking: [{ name: "P1 · Pier Deck", cost: "~$15/day beach rate", query: "Santa Monica Pier parking deck, CA" }, { name: "P2 · Santa Monica Place structure", cost: "Hourly; first 90 min free", query: "Santa Monica Place parking, CA" }, { name: "P3 · Beach Lot (PCH)", cost: "~$13-18/day", query: "Santa Monica State Beach parking lot, CA" }] },
         { id: "griffith-planetarium", name: "Griffith Observatory planetarium", option: "Griffith Observatory planetarium show", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.1184, -118.3004] },
         { id: "dodger-stadium", name: "Dodger Stadium", option: "Dodger Stadium tour or baseball sampler", category: "Teen-Focused Split", region: "Los Angeles", coords: [34.0739, -118.2400] },
         { id: "area15", name: "AREA15 / Omega Mart", option: "AREA15 and Meow Wolf Omega Mart", category: "Teen-Focused Split", region: "Las Vegas", coords: [36.1317, -115.1800] },
@@ -3685,9 +3689,8 @@
       return place.region ? `${place.name}, ${place.region}` : place.name;
     }
 
-    function renderParking(place) {
-      if (!place.parking || !place.parking.length) return "";
-      const rows = place.parking.map((p) => {
+    function renderParkingRows(list) {
+      return list.map((p) => {
         const q = encodeURIComponent(p.query || p.name);
         const nm = escapeHtml(p.name);
         return `<div class="parking-row">
@@ -3703,12 +3706,24 @@
           </span>
         </div>`;
       }).join("");
+    }
+
+    // Render a collapsible Parking control from an arbitrary list of
+    // { name, cost, query } areas (used by the potential options table, which
+    // aggregates the parking of an option's mapped places).
+    function renderParkingList(list) {
+      if (!list || !list.length) return "";
       return `<details class="parking-details">
-        <summary class="parking-summary">${icon("car")}<span>Parking</span><span class="parking-count">${place.parking.length}</span><span class="parking-chev" aria-hidden="true">${icon("chevron")}</span></summary>
+        <summary class="parking-summary">${icon("car")}<span>Parking</span><span class="parking-count">${list.length}</span><span class="parking-chev" aria-hidden="true">${icon("chevron")}</span></summary>
         <div class="parking-body">
-          ${rows}
+          ${renderParkingRows(list)}
         </div>
       </details>`;
+    }
+
+    function renderParking(place) {
+      if (!place.parking || !place.parking.length) return "";
+      return renderParkingList(place.parking);
     }
 
     function renderPlaceRows(places = []) {
@@ -3991,6 +4006,17 @@
       return tripData.potentialMapPlaces.filter((place) => place.option === row.option);
     }
 
+    // Combined parking for an option: flatten the parking of every mapped place
+    // belonging to the option. When the option spans more than one place, prefix
+    // each lot name with its place so the row stays unambiguous.
+    function optionParkingList(row) {
+      const places = potentialPlacesForOption(row).filter((place) => place.parking && place.parking.length);
+      const multi = places.length > 1;
+      return places.flatMap((place) =>
+        place.parking.map((p) => multi ? { ...p, name: `${place.name} · ${p.name}` } : p)
+      );
+    }
+
     // Trip lodging anchors (city centre / hotel coords) used as the origin for
     // the rough drive estimate shown next to a potential option's map buttons.
     const TRIP_BASES = {
@@ -4119,7 +4145,7 @@
                 <span class="map-place-category" style="--category-color: ${escapeHtml(categoryColor(row.category))};">${escapeHtml(row.category)}</span>
               </div>
             </td>
-            <td class="potential-map-cell" data-label="Map">${region ? `<span class="region-label map-region">${icon("pin")}${escapeHtml(region)}</span>` : ""}${potentialMapButtons(row)}</td>
+            <td class="potential-map-cell" data-label="Map">${region ? `<span class="region-label map-region">${icon("pin")}${escapeHtml(region)}</span>` : ""}${potentialMapButtons(row)}${renderParkingList(optionParkingList(row))}</td>
           </tr>
         `;
       }).join("");
@@ -4296,6 +4322,7 @@
             <div class="popup-meta"><span class="popup-cat-dot" style="--category-color: ${escapeHtml(categoryColor(place.category))};"></span>${escapeHtml(place.region)} · ${escapeHtml(place.category)}</div>
             ${est}
             ${geoButtonGroup(popupLoc, place.name)}
+            ${renderParking(place)}
             <div class="popup-fit"><span class="popup-label">Current fit / tradeoff</span>${escapeHtml(details.why)}</div>
           </div>
         `, { autoPan: false });
