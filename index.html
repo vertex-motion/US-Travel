@@ -724,19 +724,6 @@
       min-height: 44px;
       padding: 8px 13px;
     }
-    .potential-filters .range-filter {
-      background: transparent;
-      border-radius: 999px;
-      box-sizing: border-box;
-      box-shadow: inset 0 0 0 1px var(--filter-bd);
-      height: 44px;
-      min-height: 44px;
-      min-width: 248px;
-      padding: 8px 14px;
-    }
-    .potential-filters .range-filter:focus-within {
-      box-shadow: inset 0 0 0 1.5px var(--coral);
-    }
     .potential-filters .potential-count { margin-left: auto; }
 
     .filter-panel { display: grid; gap: 8px; min-width: 0; }
@@ -780,37 +767,41 @@
       margin-top: 12px;
     }
 
-    /* Max-drive range slider filter */
-    .range-filter {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      min-width: 190px;
-      max-width: 100%;
-    }
-    .range-filter .range-label {
+    /* Range filters: a compact dropdown toggle (DRIVE/STARS + value) that opens a
+       popover holding a vertical slider. The toggle reuses .ms-toggle sizing. */
+    .slider-name {
       flex: 0 0 auto;
       font-size: 0.7rem;
       font-weight: 750;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--muted);
-      white-space: nowrap;
     }
-    .range-filter .range-input {
+    .slider-dropdown .slider-cur {
       flex: 1 1 auto;
-      min-width: 70px;
+      text-align: right;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .slider-panel {
+      align-items: center;
+      gap: 8px;
+      padding: 12px 10px;
+      min-width: auto;
+      width: max-content;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .slider-cur-big { font-weight: 800; color: var(--ink); font-size: 0.95rem; }
+    .slider-tick { font-size: 0.68rem; color: var(--muted); font-weight: 600; }
+    .range-input.vertical {
+      writing-mode: vertical-lr;
+      direction: rtl; /* vertical track: min at bottom, max at top */
+      width: 8px;
+      height: 150px;
+      min-width: 0;
       accent-color: var(--coral);
       cursor: pointer;
-    }
-    .range-filter .range-value {
-      flex: 0 0 auto;
-      color: var(--ink-soft);
-      font-size: 0.85rem;
-      font-weight: 700;
-      white-space: nowrap;
-      min-width: 56px;
-      text-align: right;
     }
 
     /* Multi-select dropdown filters */
@@ -1768,7 +1759,6 @@
       }
       .filter-panel, .ms-dropdown { min-width: 100%; width: 100%; }
       .potential-filters .ms-dropdown,
-      .potential-filters .range-filter,
       .potential-filters .potential-count {
         flex: 0 0 100%;
         max-width: 100%;
@@ -3635,6 +3625,13 @@
       return geoButtonGroup(place.query || place.name, place.name);
     }
 
+    // Search string for a potential-map place's geo buttons. Prefer an explicit
+    // query; otherwise "Name, Region" so Maps opens the place card, not a raw pin.
+    function placeSearchQuery(place) {
+      if (place.query) return place.query;
+      return place.region ? `${place.name}, ${place.region}` : place.name;
+    }
+
     function renderParking(place) {
       if (!place.parking || !place.parking.length) return "";
       const rows = place.parking.map((p) => {
@@ -4026,7 +4023,7 @@
       const places = potentialPlacesForOption(row);
       if (!places.length) return '<span class="potential-map-none" aria-hidden="true">—</span>';
       const primary = places[0];
-      const loc = Array.isArray(primary.coords) ? `${primary.coords[0]},${primary.coords[1]}` : (primary.query || primary.name);
+      const loc = placeSearchQuery(primary);
       const est = potentialDriveEstimate(primary);
       return `${geoButtonGroup(loc, primary.name)}${est}`;
     }
@@ -4234,7 +4231,7 @@
       places.forEach((place) => {
         const details = potentialOptionDetails(place);
         const marker = L.marker(place.coords, { icon: potentialMarkerIcon(place.category) }).addTo(potentialMapState.layer);
-        const popupLoc = Array.isArray(place.coords) ? `${place.coords[0]},${place.coords[1]}` : (place.query || place.name);
+        const popupLoc = placeSearchQuery(place);
         const est = potentialDriveEstimate(place);
         marker.bindPopup(`
           <div class="map-popup">
@@ -4487,45 +4484,62 @@
       return { sync };
     }
 
-    // Single-handle "max drive minutes" slider. The top of the track means "Any"
-    // (no limit), stored as null on state[key]; any lower value is the max minutes.
-    function buildRangeSlider(container, { min, max, step = 5, state, key, label = "", onChange }) {
-      const initial = state[key] == null ? max : state[key];
-      const labelFn = (v) => (v >= max ? "Any" : `≤ ${v} min`);
-      container.classList.add("range-filter");
+    // Compact dropdown-style range control: a toggle showing the name + current value
+    // that opens a small popover with a VERTICAL slider. Mirrors buildMultiSelect's
+    // open/close + msInstances wiring so it closes on outside click / another open.
+    function buildVerticalSlider(container, { label, min, max, step, initial, format, onInput }) {
+      container.classList.add("ms-dropdown", "slider-dropdown");
       container.innerHTML = `
-        ${label ? `<span class="range-label">${escapeHtml(label)}</span>` : ""}
-        <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
-          aria-label="Maximum drive time in minutes">
-        <span class="range-value">${labelFn(initial)}</span>`;
+        <button type="button" class="ms-toggle" aria-haspopup="dialog" aria-expanded="false">
+          <span class="slider-name">${escapeHtml(label)}</span>
+          <span class="slider-cur ms-value"></span>
+          <span class="ms-caret">▾</span>
+        </button>
+        <div class="ms-panel slider-panel" hidden>
+          <span class="slider-cur-big"></span>
+          <span class="slider-tick">${escapeHtml(format(max))}</span>
+          <input type="range" class="range-input vertical" min="${min}" max="${max}" step="${step}"
+            value="${initial}" aria-label="${escapeHtml(label)}">
+          <span class="slider-tick">${escapeHtml(format(min))}</span>
+        </div>`;
+      const toggle = container.querySelector(".ms-toggle");
       const input = container.querySelector(".range-input");
-      const valueEl = container.querySelector(".range-value");
-      input.addEventListener("input", () => {
-        const v = Number(input.value);
-        state[key] = v >= max ? null : v;
-        valueEl.textContent = labelFn(v);
-        onChange();
+      const panel = container.querySelector(".ms-panel");
+      const curEls = container.querySelectorAll(".slider-cur, .slider-cur-big");
+      const sync = () => { const t = format(Number(input.value)); curEls.forEach((el) => { el.textContent = t; }); };
+      const close = () => { panel.hidden = true; container.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); };
+      const open = () => { panel.hidden = false; container.classList.add("open"); toggle.setAttribute("aria-expanded", "true"); };
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const wasOpen = !panel.hidden;
+        msInstances.forEach((d) => d.close());
+        if (!wasOpen) open();
+      });
+      panel.addEventListener("click", (e) => e.stopPropagation());
+      input.addEventListener("input", () => { onInput(Number(input.value)); sync(); });
+      msInstances.push({ close });
+      sync();
+    }
+
+    // "Max" slider: the top of the track means "Any" (no limit), stored as null on
+    // state[key]; any lower value is the max minutes.
+    function buildRangeSlider(container, { min, max, step = 5, state, key, label = "", onChange }) {
+      buildVerticalSlider(container, {
+        label, min, max, step,
+        initial: state[key] == null ? max : state[key],
+        format: (v) => (v >= max ? "Any" : `≤ ${v} min`),
+        onInput: (v) => { state[key] = v >= max ? null : v; onChange(); }
       });
     }
 
-    // Single-handle "minimum" slider. The bottom of the track (min) means "Any"
-    // (no threshold), stored as null on state[key]; any higher value is the minimum.
+    // "Min" slider: the bottom of the track (min) means "Any" (no threshold), stored as
+    // null on state[key]; any higher value is the minimum.
     function buildMinSlider(container, { min = 0, max, step = 1, state, key, unit = "", label = "", onChange }) {
-      const initial = state[key] == null ? min : state[key];
-      const labelFn = (v) => (v <= min ? "Any" : `≥ ${v}${unit}`);
-      container.classList.add("range-filter");
-      container.innerHTML = `
-        ${label ? `<span class="range-label">${escapeHtml(label)}</span>` : ""}
-        <input type="range" class="range-input" min="${min}" max="${max}" step="${step}" value="${initial}"
-          aria-label="Minimum interest stars">
-        <span class="range-value">${labelFn(initial)}</span>`;
-      const input = container.querySelector(".range-input");
-      const valueEl = container.querySelector(".range-value");
-      input.addEventListener("input", () => {
-        const v = Number(input.value);
-        state[key] = v <= min ? null : v;
-        valueEl.textContent = labelFn(v);
-        onChange();
+      buildVerticalSlider(container, {
+        label, min, max, step,
+        initial: state[key] == null ? min : state[key],
+        format: (v) => (v <= min ? "Any" : `≥ ${v}${unit}`),
+        onInput: (v) => { state[key] = v <= min ? null : v; onChange(); }
       });
     }
 
