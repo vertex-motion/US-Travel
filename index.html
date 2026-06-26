@@ -4388,6 +4388,9 @@
       function startWatch() {
         if (watching) return;
         watching = true;
+        // Center on the first fix so turning tracking on brings you into view
+        // from anywhere; later fixes won't recenter, so you can pan while tracked.
+        if (!lastLatLng) centerOnNextFix = true;
         toggleBtn.title = "Hide my live location";
         toggleBtn.setAttribute("aria-label", "Hide my live location");
         setToggleState();
