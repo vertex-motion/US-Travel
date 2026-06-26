@@ -2274,6 +2274,12 @@
               .road-rules-table .rr-col-action{width:25%}
               .road-rules-table td:nth-child(2){white-space:normal}
               .road-rules-table th,.road-rules-table td{overflow-wrap:break-word}
+              .drone-rules-table{table-layout:fixed}
+              .drone-rules-table .dr-col-area{width:18%}
+              .drone-rules-table .dr-col-rule{width:42%}
+              .drone-rules-table .dr-col-action{width:40%}
+              .drone-rules-table td:nth-child(2){white-space:normal}
+              .drone-rules-table th,.drone-rules-table td{overflow-wrap:break-word}
               .rt-tag{display:inline-block;margin-right:6px;padding:1px 7px;border-radius:999px;font-size:0.68rem;font-weight:700;white-space:nowrap}
               .rt-best{background:rgba(34,147,107,0.16);color:#1f8a5b}
               .rt-skip{background:rgba(201,80,80,0.16);color:#b94a4a}
@@ -2357,6 +2363,56 @@
                   </table>
                   <p style="margin: 12px 0 0; font-size: 0.8rem; color: var(--muted);">Sources checked: <a href="https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules" target="_blank" rel="noopener">NSW road safety and rules</a> &middot; <a href="https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/" target="_blank" rel="noopener">California Driver Handbook</a> &middot; <a href="https://dot.ca.gov/programs/traffic-operations/hov" target="_blank" rel="noopener">Caltrans HOV</a></p>
                   <a class="research-link" href="Research/road-rules-sydney-nsw-vs-california.md" target="_blank" rel="noopener">Read the full paper &rarr;</a>
+                </div>
+              </details>
+              <details class="research-item" id="research-california-drone-rules">
+                <summary><span class="research-title">California drone rules for DJI 2S Pro</span><span class="research-note">Bring only if FAA-ready</span></summary>
+                <div class="research-body">
+                  <p><strong>Decision:</strong> bring the DJI only if FAA registration, TRUST, exterior marking, Remote ID firmware/app setup, and B4UFLY / LAANC checks are complete. Treat it as a selective permission-first activity, not a default scenic-stop activity: no national parks, no LA city parks, no World Cup zones, no emergency / wildfire areas, no wildlife-heavy coast stops, and no airport-controlled airspace without FAA authorization.</p>
+                  <table class="research-table drone-rules-table">
+                    <colgroup>
+                      <col class="dr-col-area">
+                      <col class="dr-col-rule">
+                      <col class="dr-col-action">
+                    </colgroup>
+                    <thead>
+                      <tr><th>Area</th><th>Rule / fact</th><th>Trip action</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Drone setup</strong></td>
+                        <td>DJI Air 2S and Mavic 2 Pro are both over 0.55 lb (250 g). Recreational flyers must register, mark the drone, carry proof, take TRUST, and comply with Remote ID.</td>
+                        <td>Update DJI firmware/app, add the Remote ID serial in FAA DroneZone, carry TRUST + registration proof offline, and check B4UFLY / LAANC before every launch.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>FAA airspace</strong></td>
+                        <td>Fly only for personal enjoyment, keep visual line of sight, yield to aircraft, stay at or below 400 ft (122 m) in uncontrolled airspace, and get FAA authorization in controlled airport airspace.</td>
+                        <td>Expect LA, SF Bay Area, Monterey, Mammoth, and airport/heliport-adjacent spots to need live app checks. DJI unlock status is not legal permission.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>No-drone places</strong></td>
+                        <td>NPS land generally prohibits launching, landing, or operating drones; Yosemite and Death Valley are explicit no-drone parks. LA city parks prohibit drones. SF Rec &amp; Park requires permits.</td>
+                        <td>Do not fly at Yosemite, Death Valley, Golden Gate / Marin Headlands / Presidio / Alcatraz, Griffith Observatory / Griffith Park, LA city parks, or SF parks without permit approval.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>State parks</strong></td>
+                        <td>California State Parks allow drones only where no posted order or park classification prohibits them; natural preserves, cultural preserves, and state wilderness areas prohibit motorized equipment.</td>
+                        <td>Check the exact state park unit and district first. Avoid seal, nesting-bird, crowded beach, Big Sur, and preserve situations unless staff and posted rules clearly allow the flight.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Wildlife / privacy</strong></td>
+                        <td>CDFW says drones can disturb wildlife and CDFW lands need a Special Use Permit. California privacy law creates liability for intrusive recording of private, personal, or familial activity.</td>
+                        <td>Do not fly over homes, hotel windows, backyards, pools, people expecting privacy, wildlife, rookeries, nesting birds, or ecological reserves.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>World Cup / events</strong></td>
+                        <td>FAA World Cup 2026 no-drone zones apply to SoFi Stadium on Jun 28, Jul 2, and other LA match days; Levi's Stadium restrictions run through Jul 1. Fan-event restrictions can extend 1.2 mi (1.9 km; 1 NM) from sites and stadium restrictions can extend 3.5 mi (5.6 km; 3 NM).</td>
+                        <td>Do not bring or fly the drone near SoFi, Levi's, official World Cup events, team sites, base camps, stadiums, or major events unless current NOTAMs and land rules explicitly allow it.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p style="margin: 12px 0 0; font-size: 0.8rem; color: var(--muted);">Sources checked: <a href="https://www.faa.gov/uas/recreational_flyers" target="_blank" rel="noopener">FAA recreational flyers</a> &middot; <a href="https://www.parks.ca.gov/?page_id=29229" target="_blank" rel="noopener">California State Parks</a> &middot; <a href="https://www.nps.gov/articles/uncrewed-aircraft-in-the-national-parks.htm" target="_blank" rel="noopener">NPS uncrewed aircraft</a> &middot; <a href="https://www.faa.gov/fifaworldcup2026" target="_blank" rel="noopener">FAA World Cup no-drone zones</a></p>
+                  <a class="research-link" href="Research/california-drone-rules-dji-2s-pro.md" target="_blank" rel="noopener">Read the full paper &rarr;</a>
                 </div>
               </details>
               <details class="research-item">
