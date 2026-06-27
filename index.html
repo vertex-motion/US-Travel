@@ -3805,6 +3805,18 @@
         }
       }
     };
+    // Stop touch/scroll inside a popup from reaching the map's gesture handler,
+    // so scrolling popup content does not trigger the "two fingers" overlay.
+    function silencePopupGestures(map) {
+      map.on("popupopen", (e) => {
+        const el = e.popup.getElement();
+        const content = el && el.querySelector(".leaflet-popup-content");
+        if (!content) return;
+        L.DomEvent.disableScrollPropagation(content);
+        ["touchstart", "touchmove", "touchend"].forEach((ev) =>
+          L.DomEvent.on(content, ev, L.DomEvent.stopPropagation));
+      });
+    }
     // Multi-select filters for the Potential Options table. An empty set means "All".
     const planStatusFilterState = { statuses: new Set() };
     const potentialCategoryState = { categories: defaultPotentialCategories(tripData.potentialOptions) };
@@ -4613,6 +4625,7 @@
           attribution: "&copy; OpenStreetMap contributors"
         }).addTo(potentialMapState.map);
         potentialMapState.layer = L.layerGroup().addTo(potentialMapState.map);
+        silencePopupGestures(potentialMapState.map);
         addLiveLocation(potentialMapState.map);
       }
 
@@ -4840,6 +4853,7 @@
 
       const map = L.map("map", MAP_OPTIONS).setView([36.45, -120.35], 6);
       routeMap = map;
+      silencePopupGestures(map);
       addLiveLocation(map);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
