@@ -67,6 +67,7 @@ A day card is one day's plan in `04-daily-itinerary.md` (each `### Day`) and in 
 - `days[]` must not use a `backup` field. Place `role` values must describe the committed stop (e.g. `Morning anchor`), never `Alternative`, `Optional`, `swap`, or `backup`.
 - If conditions change (weather, closure, energy), rebuild the affected day card on request. Do not pre-list fallbacks.
 - When the traveler reports an option done, set its `Plan status` to `Visited` in `03-potential-options.md` and its `planStatus` to `Visited` in `index.html`, with the visit date in the fit note. Do not schedule a `Visited` option into a later day card.
+- `Plan status` / `planStatus` of `In the plan` must match a committed stop in the day cards. An option is `In the plan` only if it appears in a day card; otherwise it is `Potential option` (or `Visited` / `Rejected` / `Parked`). Booked route, lodging, and logistics anchors stay `In the plan`. Whenever a day card adds, drops, or swaps a stop, update that option's status in both `03-potential-options.md` and `index.html` in the same change.
 
 When building a day card, account for:
 
