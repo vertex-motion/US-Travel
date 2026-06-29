@@ -22,67 +22,66 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
-- Afternoon: Check in at 3:00 pm if the room is ready, unpack, nap, hotel pool, or a short pram-friendly Pasadena-area walk.
-- Evening (optional, low effort): Short Old Pasadena stroll near the hotel for dinner or dessert. Skip if jet lag is heavy.
+- Afternoon: Checked in at 3:00 pm, unpacked, then explored Pasadena.
+- Evening: Explored the whole of Pasadena — Old Pasadena, Colorado Street Bridge, and the Lower Arroyo. Pasadena is now done, so Days 2-6 cover the rest of Los Angeles.
 - Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
 - Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
 
-### Day 2: Monday, June 29 - Pasadena Recovery and Norton Simon
+### Day 2: Monday, June 29 - Beverly Hills and Greystone
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Slow start — hotel pool, Pasadena-area walk, or Kidspace Children's Museum. Keep the first full day gentle and pram-friendly.
-- Afternoon (basic plan): Norton Simon Museum, Pasadena. It opens at 12:00 pm, is close to the base, calm, and indoor; under-18 free, adults $20. Monday is the best window this week because the museum is closed Tuesday and Wednesday.
-- Alternatives (retained): The Huntington gardens and San Marino walk (opens 10:00 am, open Monday); Santa Monica beach path; Cayton Children's Museum; or hotel pool only.
-- Driving: Pasadena → Norton Simon Museum; Pasadena → The Huntington; Pasadena → Kidspace Children's Museum. Open the dashboard for live distance and time.
-- Reservations: None required for Norton Simon. Buy Huntington tickets ahead if chosen.
-- Note: The Broad is closed Mondays, so the Downtown LA day is scheduled later in the week.
-- Backup plan: If jet lag is heavy, make this a hotel, local walk, and early-dinner day only.
+- Morning: Drive to Beverly Hills. Beverly Gardens Park — Beverly Hills Sign and Lily Pond — then Rodeo Drive and Via Rodeo / Golden Triangle storefronts. Morning gives cleaner photos and easier parking.
+- Afternoon: Greystone Mansion and Gardens — formal gardens, terraces, and estate facade (free city-park grounds; interiors are special-program only). Lunch on or near Rodeo Drive.
+- Alternatives (retained): Petersen Automotive Museum (Museum Row) if the family prefers cars. Getty Center is closed Mondays, so it is held for Day 6.
+- Driving: Pasadena → Beverly Gardens Park; Beverly Hills → Greystone Mansion; Greystone → Pasadena. Open the dashboard for live distance and time.
+- Reservations: None. Check Greystone for private-event closures before going.
+- Note: The Broad, Griffith Observatory, and the Getty are all closed Mondays, so they are scheduled later in the week.
+- Backup plan: If still recovering, keep this to Beverly Gardens Park and Rodeo Drive only and add hotel pool time.
 
-### Day 3: Tuesday, June 30 - Pasadena Local Walk Buffer
-
-- Sleep: Booked Pasadena-area hotel.
-- Morning (basic plan): Colorado Street Bridge and Lower Arroyo walk, then Old Pasadena streets for coffee, food, or dessert. Low effort and near the base while still adjusting to the time zone. Supervise children closely near bridge traffic.
-- Afternoon: Errands — groceries, laundry — or hotel pool and rest.
-- Alternatives (retained): Griffith Observatory early-morning viewpoint to beat heat, parking, and crowds; or a Pasadena-area playground.
-- Note: Norton Simon and The Huntington are both closed Tuesday, so today stays outdoor and local.
-- Driving: Pasadena → Colorado Street Bridge / Old Pasadena (local); Pasadena → Griffith Observatory. Open the dashboard for live distance and time.
-- Reservations: None.
-- Backup plan: Treat this as a recovery and logistics day if the first two nights are rough.
-
-### Day 4: Wednesday, July 1 - Downtown LA Architecture and The Broad
+### Day 3: Tuesday, June 30 - Downtown LA Architecture and The Broad
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Drive to Bunker Hill, park once, and walk the Downtown LA architecture loop: Walt Disney Concert Hall exterior and stairs, Grand Park fountain and lawns, and the LA City Hall facade.
 - Midday: Grand Central Market for lunch, Angels Flight, and the Bradbury Building lobby if open. Keep the route tight.
-- Afternoon (timed): The Broad — free contemporary art (Warhol, Basquiat, Koons, and Yayoi Kusama's Infinity Mirrored Room). Reserve a timed slot in advance; open Wednesday. The Infinity Room needs a separate timed slot.
-- Alternatives (retained): Skip The Broad and keep the day to the architecture-and-market walk; or substitute a Museum Row stop (Petersen, Academy Museum, or Getty) if Downtown traffic is poor.
+- Afternoon (timed): The Broad — free contemporary art (Warhol, Basquiat, Koons, and Yayoi Kusama's Infinity Mirrored Room). Reserve a timed slot in advance; open Tuesday. The Infinity Room needs a separate timed slot.
+- Alternatives (retained): Skip The Broad and keep the day to the architecture-and-market walk; or substitute a Museum Row stop (Petersen or Academy Museum) if Downtown traffic is poor.
 - Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market. Open the dashboard for live distance and time.
 - Reservations: The Broad timed entry (reserve ahead; general admission is free but released monthly on the last Wednesday, with daily extras after ~4:30 pm). Separate Infinity Room slot.
-- Backup plan: If the family wants less city density, swap to a Pasadena-local day and move Downtown to the final LA stay.
+- Backup plan: If the family wants less city density, swap to a lighter day and move Downtown to the final LA stay.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
-### Day 5: Thursday, July 2 - Hollywood, Museum Row, and Griffith
+### Day 4: Wednesday, July 1 - Hollywood, Museum Row, and Griffith
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early; it is crowded and touristy.
 - Midday: Original Farmers Market (3rd and Fairfax) for lunch and a Grove fountain / trolley photo stop, with a pastry and coffee break at Ladurée — The Grove.
 - Afternoon to early evening: Griffith Observatory terraces for Downtown LA, basin, and Hollywood Sign views; a clear late afternoon into sunset is best. Keep the Mount Hollywood trail optional with the younger child.
-- Alternatives (retained): Petersen Automotive Museum (Museum Row, beside the Farmers Market) in place of Hollywood or Griffith; Getty Center or Academy Museum of Motion Pictures.
+- Alternatives (retained): Petersen Automotive Museum (Museum Row, beside the Farmers Market) in place of Hollywood or Griffith; Academy Museum of Motion Pictures.
 - Driving: Pasadena → Hollywood Blvd; Hollywood → Original Farmers Market / The Grove; The Grove → Griffith Observatory; Griffith → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None required for these stops; check Griffith planetarium tickets only if choosing a show.
 - Backup plan: If it is hot or crowded, drop Hollywood, keep the Farmers Market / Grove, and do an early-morning or sunset-only Griffith viewpoint.
 
-### Day 6: Friday, July 3 - Santa Monica, Venice, then Pack
+### Day 5: Thursday, July 2 - Santa Monica and Venice
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Leave early to beat July-3 beach traffic and heat. Venice Canals first for calm water and soft light, then a short Venice Ocean Front Walk sample — keep it brief, it is busy and eccentric.
+- Morning: Leave early to beat beach traffic and heat. Venice Canals first for calm water and soft light, then a short Venice Ocean Front Walk sample — keep it brief, it is busy and eccentric.
 - Midday: Santa Monica Pier and Pacific Park ride block; the 13-year-old rides the bigger rides and the 3-year-old does the smaller ones. Lunch on or near the pier.
-- Afternoon/evening: Return to Pasadena, pack, and confirm hotel parking / folio handling for the booked rental car before the 12:00 pm checkout on Day 7.
-- Alternatives (retained): Beverly Hills — Beverly Gardens Park, Rodeo Drive / Via Rodeo, and Greystone Mansion — instead of the beach; or keep the day Pasadena-local and rest before the holiday transfer.
+- Afternoon: Palisades Park bluff walk above the beach, more pier time, or head back to Pasadena to rest.
+- Alternatives (retained): Beverly Hills extension (if not done Day 2); or keep the beach block short and add hotel pool time.
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Pacific Park rides are pay-per-ride or wristband on site; no advance booking. Prepare for 12:00 pm checkout on Day 7.
-- Backup plan: If holiday beach traffic looks bad, swap to a Pasadena-local walk and make this a packing and rest day.
+- Reservations: Pacific Park rides are pay-per-ride or wristband on site; no advance booking.
+- Backup plan: If beach traffic looks bad, swap to a Westside museum (Getty) or keep the day local.
+
+### Day 6: Friday, July 3 - Norton Simon, then Pack
+
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Slow morning, hotel pool, pack, laundry, and confirm hotel parking / folio handling for the booked rental car before the 12:00 pm Day 7 checkout.
+- Afternoon: Norton Simon Museum near the base — July 3 is the first Friday, so general admission is free 4:00-7:00 pm and the museum is open until 7:00 pm. Under-18 always free. Easy and close to the hotel before the holiday transfer.
+- Alternatives (retained): Getty Center for a bigger Westside finish (open Friday); The Huntington gardens (San Marino); or keep the day a pure rest-and-pack day.
+- Driving: Pasadena → Norton Simon Museum (local). Open the dashboard for live distance and time.
+- Reservations: None; prepare for 12:00 pm checkout on Day 7.
+- Backup plan: If packing runs long or the family is tired, skip Norton Simon and rest before the holiday transfer.
 
 ### Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 
