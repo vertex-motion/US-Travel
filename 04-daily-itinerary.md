@@ -45,14 +45,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: The Broad timed entry (reserve ahead; general admission is free but released monthly on the last Wednesday, with daily extras after ~4:30 pm). Separate Infinity Room slot.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
-### Day 4: Wednesday, July 1 - Hollywood, Museum Row, and Griffith
+### Day 4: Wednesday, July 1 - Hollywood and the Original Farmers Market
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early; it is crowded and touristy.
-- Midday: Original Farmers Market (3rd and Fairfax) for lunch and a Grove fountain / trolley photo stop, with a pastry and coffee break at Ladurée — The Grove.
-- Afternoon to early evening: Griffith Observatory terraces for Downtown LA, basin, and Hollywood Sign views into sunset.
-- Driving: Pasadena → Hollywood Blvd; Hollywood → Original Farmers Market / The Grove; The Grove → Griffith Observatory; Griffith → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Check Griffith planetarium tickets only if you want a show.
+- Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
+- Midday: Drive ~15 min to the Original Farmers Market (3rd and Fairfax) for lunch and a Grove fountain / trolley photo stop, with a pastry and coffee break at Ladurée — The Grove.
+- Driving: Pasadena → Hollywood Blvd; Hollywood → Original Farmers Market / The Grove; The Grove → Pasadena. Open the dashboard for live distance and time.
+- Reservations: None.
 
 ### Day 5: Thursday, July 2 - Santa Monica and Venice
 

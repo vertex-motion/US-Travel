@@ -69,15 +69,18 @@ A day card is one day's plan in `04-daily-itinerary.md` (each `### Day`) and in 
 - When the traveler reports an option done, set its `Plan status` to `Visited` in `03-potential-options.md` and its `planStatus` to `Visited` in `index.html`, with the visit date in the fit note. Do not schedule a `Visited` option into a later day card.
 - `Plan status` / `planStatus` of `In the plan` must match a committed stop in the day cards. An option is `In the plan` only if it appears in a day card; otherwise it is `Potential option` (or `Visited` / `Rejected` / `Parked`). Booked route, lodging, and logistics anchors stay `In the plan`. Whenever a day card adds, drops, or swaps a stop, update that option's status in both `03-potential-options.md` and `index.html` in the same change.
 
-When building a day card, account for:
+When building a day card, apply these rules:
 
-1. Availability: opening hours, closed days, holiday hours, and reservation/timed-entry release windows. Place each stop on a day it is open.
-2. Crowds and light: pick the best day-of-week and time-of-day; sequence stops to avoid peak crowds, heat, and traffic.
-3. Reservations: name what must be booked and route the task to `07-checklist.md`.
-4. Season and weather: confirm the stop suits the travel-window climate (heat, fog, daylight).
-5. Pace and driving: one main stop per day, two only if adjacent; respect the driving and walking tolerances in `01-trip-purpose.md`.
-6. Family fit: pram access, child suitability, and meal timing.
-7. Parking: per the Parking rule below.
+1. One area per day. Every sightseeing stop must lie in a single compact area. Keep each drive between consecutive stops to 20 min or less; where stops are within 1 mi (1.6 km), park once and walk. Do not scatter anchors across the metro.
+2. Cap the day's driving. Total sightseeing driving must stay within the `01-trip-purpose.md` local tolerance (about 3 hr round trip from the base). Do not place a long (more than 1 hr each way) commute to the same far area on two consecutive days — fold that area into one day.
+3. Limit anchors. One primary stop per day; add at most one or two short same-area stops (café, photo stop, viewpoint). Three or more separated anchors, or anything that breaks rules 1-2, is over-packed — split it.
+4. Sequence for crowds, heat, and parking. Open the day at the hardest-parking or highest-crowd stop (rope-drop / opening) or a low-traffic window; keep indoor or shaded stops for midday heat; save viewpoints for golden hour only when parking and traffic are not worst then. If a stop's best-light window is its worst-parking window, take the easier window.
+5. Pick the lowest-crowd open day. Place each stop on a day it is open and least busy; avoid weekend museum peaks, market rush, and event closures.
+6. Reserve and route the task. Book timed or limited-entry stops and record each booking in `07-checklist.md`. Never schedule a stop you cannot reach before it closes.
+7. Match weather and season. Outdoor and coastal stops on clear, cooler windows; indoor or shaded stops during peak heat; check fog for coastal viewpoints and daylight for sunset plans.
+8. Keep buffer days light. Arrival days, pre-transfer days, and the day after a long drive carry at most one easy, base-near stop, or none.
+9. Fit the family. Confirm pram access and child stamina, leave rest and meal gaps, and keep walking within the `01-trip-purpose.md` tolerance.
+10. Fill by interest. Use limited day slots for the highest-interest starred options first; lower-rated or unscheduled options stay in Potential Options. Apply the Parking rule below to every stop.
 
 ## Parking (Mandatory)
 
