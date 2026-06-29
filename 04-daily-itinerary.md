@@ -26,18 +26,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Evening: Explored the whole of Pasadena — Old Pasadena, Colorado Street Bridge, and the Lower Arroyo. Pasadena is now done, so Days 2-6 cover the rest of Los Angeles.
 - Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
-- Backup plan: If rooms are not ready, use a low-effort cafe, Pasadena-area walk, or hotel lobby plan until check-in.
 
 ### Day 2: Monday, June 29 - Beverly Hills and Greystone
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Drive to Beverly Hills. Beverly Gardens Park — Beverly Hills Sign and Lily Pond — then Rodeo Drive and Via Rodeo / Golden Triangle storefronts. Morning gives cleaner photos and easier parking.
 - Afternoon: Greystone Mansion and Gardens — formal gardens, terraces, and estate facade (free city-park grounds; interiors are special-program only). Lunch on or near Rodeo Drive.
-- Alternatives (retained): Petersen Automotive Museum (Museum Row) if the family prefers cars. Getty Center is closed Mondays, so it is held for Day 6.
 - Driving: Pasadena → Beverly Gardens Park; Beverly Hills → Greystone Mansion; Greystone → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None. Check Greystone for private-event closures before going.
-- Note: The Broad, Griffith Observatory, and the Getty are all closed Mondays, so they are scheduled later in the week.
-- Backup plan: If still recovering, keep this to Beverly Gardens Park and Rodeo Drive only and add hotel pool time.
 
 ### Day 3: Tuesday, June 30 - Downtown LA Architecture and The Broad
 
@@ -45,10 +41,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Morning: Drive to Bunker Hill, park once, and walk the Downtown LA architecture loop: Walt Disney Concert Hall exterior and stairs, Grand Park fountain and lawns, and the LA City Hall facade.
 - Midday: Grand Central Market for lunch, Angels Flight, and the Bradbury Building lobby if open. Keep the route tight.
 - Afternoon (timed): The Broad — free contemporary art (Warhol, Basquiat, Koons, and Yayoi Kusama's Infinity Mirrored Room). Reserve a timed slot in advance; open Tuesday. The Infinity Room needs a separate timed slot.
-- Alternatives (retained): Skip The Broad and keep the day to the architecture-and-market walk; or substitute a Museum Row stop (Petersen or Academy Museum) if Downtown traffic is poor.
 - Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market. Open the dashboard for live distance and time.
 - Reservations: The Broad timed entry (reserve ahead; general admission is free but released monthly on the last Wednesday, with daily extras after ~4:30 pm). Separate Infinity Room slot.
-- Backup plan: If the family wants less city density, swap to a lighter day and move Downtown to the final LA stay.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
 ### Day 4: Wednesday, July 1 - Hollywood, Museum Row, and Griffith
@@ -56,70 +50,60 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early; it is crowded and touristy.
 - Midday: Original Farmers Market (3rd and Fairfax) for lunch and a Grove fountain / trolley photo stop, with a pastry and coffee break at Ladurée — The Grove.
-- Afternoon to early evening: Griffith Observatory terraces for Downtown LA, basin, and Hollywood Sign views; a clear late afternoon into sunset is best. Keep the Mount Hollywood trail optional with the younger child.
-- Alternatives (retained): Petersen Automotive Museum (Museum Row, beside the Farmers Market) in place of Hollywood or Griffith; Academy Museum of Motion Pictures.
+- Afternoon to early evening: Griffith Observatory terraces for Downtown LA, basin, and Hollywood Sign views into sunset.
 - Driving: Pasadena → Hollywood Blvd; Hollywood → Original Farmers Market / The Grove; The Grove → Griffith Observatory; Griffith → Pasadena. Open the dashboard for live distance and time.
-- Reservations: None required for these stops; check Griffith planetarium tickets only if choosing a show.
-- Backup plan: If it is hot or crowded, drop Hollywood, keep the Farmers Market / Grove, and do an early-morning or sunset-only Griffith viewpoint.
+- Reservations: Check Griffith planetarium tickets only if you want a show.
 
 ### Day 5: Thursday, July 2 - Santa Monica and Venice
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Leave early to beat beach traffic and heat. Venice Canals first for calm water and soft light, then a short Venice Ocean Front Walk sample — keep it brief, it is busy and eccentric.
 - Midday: Santa Monica Pier and Pacific Park ride block; the 13-year-old rides the bigger rides and the 3-year-old does the smaller ones. Lunch on or near the pier.
-- Afternoon: Palisades Park bluff walk above the beach, more pier time, or head back to Pasadena to rest.
-- Alternatives (retained): Beverly Hills extension (if not done Day 2); or keep the beach block short and add hotel pool time.
+- Afternoon: Palisades Park bluff walk above the beach, then head back to Pasadena.
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Pacific Park rides are pay-per-ride or wristband on site; no advance booking.
-- Backup plan: If beach traffic looks bad, swap to a Westside museum (Getty) or keep the day local.
 
 ### Day 6: Friday, July 3 - Norton Simon, then Pack
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Slow morning, hotel pool, pack, laundry, and confirm hotel parking / folio handling for the booked rental car before the 12:00 pm Day 7 checkout.
 - Afternoon: Norton Simon Museum near the base — July 3 is the first Friday, so general admission is free 4:00-7:00 pm and the museum is open until 7:00 pm. Under-18 always free. Easy and close to the hotel before the holiday transfer.
-- Alternatives (retained): Getty Center for a bigger Westside finish (open Friday); The Huntington gardens (San Marino); or keep the day a pure rest-and-pack day.
 - Driving: Pasadena → Norton Simon Museum (local). Open the dashboard for live distance and time.
 - Reservations: None; prepare for 12:00 pm checkout on Day 7.
-- Backup plan: If packing runs long or the family is tired, skip Norton Simon and rest before the holiday transfer.
 
 ### Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 
 - Sleep: Booked Historic Santa Maria Inn, Santa Maria.
-- Morning: Check out of the booked Pasadena-area hotel by 12:00 pm. Leave as early as practical if using CA-1 / Pacific Coast Highway segments through Malibu and the coast; otherwise use US-101 for reliability and join scenic Route 1 where it still helps.
-- Afternoon: Continue to the booked Santa Maria hotel, check in, rest, use the pool if available, or take a short Santa Maria / Pismo / Avila Beach-area stroll if timing is easy.
+- Morning: Check out of the booked Pasadena-area hotel by 12:00 pm and take US-101 toward Santa Maria, joining CA-1 / Pacific Coast Highway scenic segments where Caltrans shows them open.
+- Afternoon: Continue to the booked Santa Maria hotel and check in; stretch with a short Pismo or Avila Beach stroll on the way.
 - Driving: Pasadena → Santa Barbara; Santa Barbara → Pismo Beach; Pismo Beach → Santa Maria. Open the dashboard for live distance and time.
 - Reservations: Pasadena-area hotel checkout by 12:00 pm. See `05-trip-logistics.md` for Santa Maria lodging details.
-- Backup plan: If July 4 traffic or CA-1 conditions are poor, use US-101 and make the day a practical transfer rather than forcing every scenic segment.
 - Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
 
 ### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
 - Sleep: Booked Monterey-area hotel.
-- Morning: Leave Santa Maria after breakfast. Use US-101 for reliability, or cut west toward San Simeon and Highway 1 only if Caltrans still shows the route open and timing is comfortable.
-- Afternoon: San Simeon elephant seal viewing, a short Hearst Castle tour only if timing is easy, Big Sur viewpoints, or direct arrival and settle-in.
+- Morning: Leave Santa Maria after breakfast and take Highway 1 north past San Simeon; stop at the Piedras Blancas elephant-seal vista. Confirm Highway 1 is open on Caltrans before leaving.
+- Afternoon: Big Sur viewpoints (Bixby Creek Bridge), then into Monterey to check in.
 - Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
-- Reservations: Hearst Castle tour tickets only if the tour time protects a comfortable Monterey arrival from the Santa Maria start. See `05-trip-logistics.md` for Monterey lodging details.
-- Backup plan: Use US-101 and skip Hearst Castle / Big Sur viewpoints if Highway 1 conditions, fog, traffic, or family energy make the scenic route too slow.
+- Reservations: See `05-trip-logistics.md` for Monterey lodging details.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
 - Sleep: Booked Monterey-area hotel.
-- Morning: Monterey Bay Aquarium.
-- Afternoon: Pacific Grove coastal walk, Dennis the Menace Playground, Carmel Beach, or a short Big Sur reach if Highway 1 and energy allow.
+- Morning: Monterey Bay Aquarium at opening.
+- Afternoon: Pacific Grove coastal walk, then Carmel Beach.
 - Driving: Monterey → Monterey Bay Aquarium; Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
-- Backup plan: If aquarium crowds are heavy, go at opening and move playground/rest time earlier. Use 17-Mile Drive, Carmel Beach, and Pacific Grove if Highway 1 conditions are poor.
 
 ### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Check out of the booked Monterey-area hotel. Use a short Pacific Grove, Carmel Beach, 17-Mile Drive, Dennis the Menace Playground, or MY Museum stop only if the family is rested.
+- Morning: Check out and take a short Carmel-by-the-Sea / Ocean Ave stroll, then drive north.
 - Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
 - Driving: Monterey → Santa Cruz; Santa Cruz → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
-- Backup plan: If the Day 8 Route 1 transfer was slow, skip extra Monterey stops and make this a simple relocation day.
 
 ### Day 11: Wednesday, July 8 - California's Great America (Santa Clara)
 
@@ -128,90 +112,77 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Continue in the park with a midday break or water-play for the 3-year-old; leave when the toddler fades.
 - Driving: Mountain View → California's Great America, Santa Clara (~6 miles / 10 km). Open the dashboard for live distance and time.
 - Reservations: Buy dated tickets online ahead (cheaper and guarantees entry). Wednesday is chosen as the least-crowded flex day (Tue-Thu are quietest; Sat is busiest); no Levi's Stadium World Cup conflict in this window. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md).
-- Backup plan: If the family skips the park, fall back to a soft Bay Area day (hotel pool/rest, Stanford campus, or a San Francisco waterfront / Exploratorium outing). On a heat-spike day, swap to the cooler Santa Cruz Beach Boardwalk.
 
 ### Day 12: Thursday, July 9 - Golden Gate and Presidio
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Check the bridge fog forecast, then drive to Golden Gate Bridge viewpoints from Crissy Field or the Presidio and park there. Late morning to mid-afternoon is best for clear views.
-- Afternoon: Palace of Fine Arts, Presidio Tunnel Tops, or neighborhood walk.
-- Alternatives (retained): Short San Francisco City Hall stop in Civic Center for the Beaux-Arts dome — interior access is weekday-only, so today (Thursday) works; keep it brief and expect security screening.
+- Afternoon: Palace of Fine Arts and the Presidio Tunnel Tops for child-friendly views and play.
 - Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Mountain View. Open the dashboard for live distance and time.
 - Reservations: None required.
-- Backup plan: Exploratorium if fog, wind, or fatigue makes outdoor time hard, or keep the day hotel-base-local if the commute looks bad.
 
 ### Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Stanford campus focus: self-guided campus walk, Main Quad, Oval, Stanford Bookstore, and the engineering area if energy allows.
-- Afternoon: Google Visitor Experience in Mountain View plus Computer History Museum if the family wants a deeper tech block. Use Apple Park Visitor Center as the Cupertino swap if Apple is the stronger interest.
-- Driving: Mountain View → Stanford University; Mountain View → Computer History Museum; Mountain View → Apple Park Visitor Center. Open the dashboard for live distance and time.
-- Reservations: Check Stanford visitor schedule, Google Visitor Experience hours/events, Computer History Museum tickets and hours, and Apple Park Visitor Center hours before choosing the final mix.
-- Backup plan: The Tech Interactive in San Jose if the family wants a more hands-on indoor technology museum, or a lighter Stanford plus downtown Palo Alto day if everyone is tired.
+- Morning: Stanford campus — self-guided walk, Main Quad, Oval, Stanford Bookstore, and the engineering area.
+- Afternoon: Google Visitor Experience in Mountain View, then the Computer History Museum.
+- Driving: Mountain View → Stanford University; Mountain View → Computer History Museum. Open the dashboard for live distance and time.
+- Reservations: Check Stanford visitor schedule, Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
 - Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
 
-### Day 14: Saturday, July 11 - San Francisco Downtown / SoMa Day
+### Day 14: Saturday, July 11 - Exploratorium and the Embarcadero
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Drive to SoMa, park in a garage (weekend city parking is tight), and choose one timed indoor anchor:
-  - SFMOMA — seven floors of modern and contemporary art; book timed admission; adults $30, age 18 and under free; or
-  - Exploratorium (Pier 15) — hands-on science with the Tactile Dome and Life in Space; book timed reservations. Stronger for the teen and the 3-year-old.
+- Morning: Drive to Pier 15, park in an Embarcadero garage (weekend city parking is tight), and visit the Exploratorium on a timed entry — hands-on science with the Tactile Dome and Life in Space; strong for both the teen and the 3-year-old.
 - Afternoon: Ferry Building and Embarcadero waterfront walk for food and bay views; short and pram-friendly.
-- Alternatives (retained): Whichever museum is not chosen as the anchor; Golden Gate Park; a San Francisco City Hall exterior photo stop (interior is weekday-only, so closed Saturday); or keep the day Mountain View / Palo Alto-local.
-- Driving: Mountain View → SFMOMA / Exploratorium; → Ferry Building; → Mountain View. Open the dashboard for live distance and time.
-- Reservations: SFMOMA or Exploratorium timed tickets, booked ahead.
-- Backup plan: Treat this as a rest and laundry day before the Yosemite / Death Valley / Las Vegas push if the week has been busy.
+- Driving: Mountain View → Exploratorium; Exploratorium → Ferry Building; Ferry Building → Mountain View. Open the dashboard for live distance and time.
+- Reservations: Exploratorium timed tickets, booked ahead.
 
-### Day 15: Sunday, July 12 - Bay Area Tech, Redwood, or Rest Buffer
+### Day 15: Sunday, July 12 - Apple Park, then Pack for the Sierra
 
 - Sleep: Booked Mountain View hotel.
-- Morning (basic plan): Use the sixth Bay Area night for the second tech stop not used on Day 13 — Apple Park Visitor Center (Cupertino), The Tech Interactive (San Jose, open Sunday), or Computer History Museum (open Sunday). Muir Woods only if reservations and timing work, or a quiet hotel-base morning.
-- Afternoon: Pack for Yosemite, confirm route conditions, and keep the evening easy.
-- Driving: Mountain View → Apple Park Visitor Center; Mountain View → The Tech Interactive; Mountain View → Muir Woods National Monument. Open the dashboard for live distance and time.
-- Reservations: Check Muir Woods parking/shuttle reservations if used; re-check tech attraction hours if choosing a Sunday museum.
-- Backup plan: Skip new sightseeing and use the day to rest before the Yosemite transfer.
+- Morning: Apple Park Visitor Center, Cupertino — store, cafe, roof terrace, and the Apple Park model.
+- Afternoon: Pack for the Sierra, confirm Sonora Pass / US-395 conditions, and keep the evening easy.
+- Driving: Mountain View → Apple Park Visitor Center. Open the dashboard for live distance and time.
+- Reservations: Re-check Apple Park Visitor Center hours before going.
 
 ### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
 
 - Sleep: Booked Outbound Mammoth, Mammoth Lakes.
 - Plan: Do **not** enter Yosemite National Park (avoids the $35 entry and the new $100/person non-resident surcharge). Drive the free route around the Sierra on Highway 108 over Sonora Pass to US-395, then south to Mammoth. Scenic, but a long, demanding mountain day.
 - Morning: Leave Mountain View early; CA-120 then CA-108 east through Gold Country toward Sonora Pass.
-- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view), Sonora Pass summit (9,623 ft; picnic area, Pacific Crest Trail, photos); optional short Sardine Falls walk just east of the summit.
-- Afternoon: Descend to US-395 and head south — Mono Lake (South Tufa towers, ~$3/adult and kids free, or free viewpoints at Lee Vining / Old Marina), optional June Lake Loop (CA-158) scenic detour, then into Mammoth Lakes.
+- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view) and the Sonora Pass summit (9,623 ft; picnic area, Pacific Crest Trail, photos).
+- Afternoon: Descend to US-395 and head south to the Mono Lake South Tufa towers (~$3/adult, kids free), then into Mammoth Lakes.
 - Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (~7 hours without stops; plan a full day). Open the dashboard for live distance and time.
 - Reservations: None — not entering any national park. (Mono Lake South Tufa is a small per-person fee only.) See `05-trip-logistics.md` for Mammoth Lakes lodging details.
-- Route notes: Sonora Pass (CA-108) is steeper and narrower than Tioga and open in summer only — fine for the SUV but not relaxing. Confirm it is open via Caltrans the morning of Day 16. Easier free alternatives if preferred: Carson Pass (CA-88) or I-80 via Reno (both longer); all join US-395 for the Mono Lake / June Lake stops.
-- Backup plan: If CA-108 is closed, smoky, or the day runs long, use Carson Pass (CA-88) or the I-80 / Reno route to US-395 — both still reach Mammoth and pass Mono Lake.
+- Route notes: Sonora Pass (CA-108) is steeper and narrower than Tioga and open in summer only — fine for the SUV but not relaxing. Confirm it is open via Caltrans the morning of Day 16.
 
 ### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
 - Sleep: Booked Las Vegas Strip hotel.
-- Morning: Leave Mammoth Lakes early. Use US-395 toward Lone Pine and CA-190 / Death Valley only if the route remains open and safe.
-- Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, visitor center if timing works, then continue to Las Vegas.
-- Evening: Check in from 3:00 pm if arrival timing allows. Rest, pool time, or indoor hotel exploration only if everyone has energy.
+- Morning: Leave Mammoth Lakes early; take US-395 to Lone Pine, then CA-190 into Death Valley. Confirm road status and heat safety before entering.
+- Afternoon: Drive through Death Valley as a scenic transit, not a hiking day. Keep stops short and paved: viewpoint, restroom, fuel/water, and the visitor center, then continue to Las Vegas.
+- Evening: Check in from 3:00 pm and keep the evening easy with dinner and pool time.
 - Driving: Mammoth Lakes → Death Valley National Park; Death Valley National Park → Las Vegas. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Las Vegas lodging details.
-- Backup plan: If US-395, CA-190, Death Valley conditions, heat, smoke, or fatigue make the route unsafe, use a safer bypass or restore a midpoint overnight.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
 
 ### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
 - Sleep: Booked Las Vegas Strip hotel.
-- Morning: Slow hotel breakfast, pool, or a free, heat-safe Strip walk. Free options: Bellagio Conservatory (indoor, 24h) and Fountains, the Grand Canal Shoppes at the Venetian base hotel (indoor, zero transit), and the Forum Shops at Caesars Palace (indoor Roman streetscape; hourly free Fall of Atlantis show).
-- Afternoon: Rest during peak heat. Choose one ticketed indoor attraction such as Sphere (The Wizard of Oz), Shark Reef Aquarium, High Roller, AREA15 / Omega Mart, or a family-appropriate show after current age, price, and timing checks.
-- Evening: Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), the LINQ Promenade walk to the High Roller, or a short Strip walk if temperatures and crowds are manageable.
+- Morning: Slow hotel breakfast and pool, then the Bellagio Conservatory and Fountains, the Grand Canal Shoppes at the Venetian base hotel, and the Forum Shops at Caesars Palace (free hourly Fall of Atlantis show) — all indoor and heat-safe.
+- Afternoon: Rest during peak heat, then Shark Reef Aquarium at Mandalay Bay.
+- Evening: Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), and the LINQ Promenade walk to the High Roller once temperatures ease.
 - Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → Flamingo Wildlife Habitat. Open the dashboard for live distance and time.
-- Reservations: Book only one ticketed attraction or show for the day. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium).
-- Backup plan: If attraction prices are poor, make this a pool-and-free-sights day.
+- Reservations: Book Shark Reef Aquarium ahead. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md).
 
 ### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Hotel pool time and a slow start after the trip's long driving days.
-- Afternoon: Rest, packing buffer, indoor attraction, or low-key shopping near the hotel.
-- Evening: Final Bellagio fountains, Fremont Street only if the family explicitly wants a louder/crowded scene, or early night before the loop-closure drive.
+- Afternoon: Rest, packing buffer, and a low-key shop near the hotel.
+- Evening: Final Bellagio fountains, then an early night before the loop-closure drive.
 - Driving: None planned; keep the day Strip-based.
-- Backup plan: Add a second indoor attraction or a longer pool block if the family wants more structure.
 
 ### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
 
@@ -220,7 +191,6 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple.
 - Driving: Las Vegas → Barstow; Barstow → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Hotel checkout by 11:00 am in Las Vegas; hotel check-in at 3:00 pm in Pasadena. See `05-trip-logistics.md` for lodging details.
-- Backup plan: If traffic is poor, skip any final LA activity and focus on sleep, packing, and flight readiness.
 
 ### Day 21: Saturday, July 18 - Depart Los Angeles
 
@@ -230,7 +200,6 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Evening: Return the booked rental car at Los Angeles International Airport at 8:00 pm, then depart LAX on UA 839 at 10:45 pm.
 - Driving: Pasadena → LAX Airport. Open the dashboard for live distance and time.
 - Reservations: Rental car return at LAX at 8:00 pm; United UA 839 departs 10:45 pm. See `05-trip-logistics.md` for final hotel checkout details.
-- Backup plan: If traffic or rental return logistics look poor, return the car earlier on Day 21 and use an airport transfer or hotel shuttle for the final terminal move.
 
 ### Day 22: Sunday, July 19 - In Transit
 
@@ -239,7 +208,6 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Cross the date line.
 - Driving: None.
 - Reservations: None.
-- Backup plan: None.
 
 ### Day 23: Monday, July 20 - Arrive Sydney
 
@@ -248,7 +216,6 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Recovery day.
 - Driving: Sydney Airport → Sydney. Open the dashboard for live distance and time.
 - Reservations: Airport transfer if needed.
-- Backup plan: None.
 
 ## Sources
 

@@ -58,6 +58,26 @@ See [`metadata/content-tags.md`](metadata/content-tags.md) for tag definitions a
 
 The **Research** tab is bespoke (not generated from `01-07`). Each entry must be **self-contained**: a reader must be able to act on it without opening the research file — include the decision/recommendation and the key facts (e.g. options, costs, ages, links) that support it, as a table when comparing options. Keep it **summary-level, not exhaustive**: omit full reasoning, every source, and edge-case detail. Always keep the "Read the full paper" link for the complete write-up. When the linked research file changes, update the tab entry to match.
 
+## Day Cards (Mandatory)
+
+A day card is one day's plan in `04-daily-itinerary.md` (each `### Day`) and in `index.html` (`days[]`). It states a single committed plan: what to do and how, in time order.
+
+- A day card must not contain alternative options, "choose one" / "or" swaps, "if not used" cross-references, optional-attraction roles, weather or backup plans, or rain contingencies. State one plan only.
+- All alternatives, swaps, and fallbacks live only in `03-potential-options.md` and its `index.html` Potential Options and Potential Map tabs. Do not restate them in a day card.
+- `days[]` must not use a `backup` field. Place `role` values must describe the committed stop (e.g. `Morning anchor`), never `Alternative`, `Optional`, `swap`, or `backup`.
+- If conditions change (weather, closure, energy), rebuild the affected day card on request. Do not pre-list fallbacks.
+- When the traveler reports an option done, set its `Plan status` to `Visited` in `03-potential-options.md` and its `planStatus` to `Visited` in `index.html`, with the visit date in the fit note. Do not schedule a `Visited` option into a later day card.
+
+When building a day card, account for:
+
+1. Availability: opening hours, closed days, holiday hours, and reservation/timed-entry release windows. Place each stop on a day it is open.
+2. Crowds and light: pick the best day-of-week and time-of-day; sequence stops to avoid peak crowds, heat, and traffic.
+3. Reservations: name what must be booked and route the task to `07-checklist.md`.
+4. Season and weather: confirm the stop suits the travel-window climate (heat, fog, daylight).
+5. Pace and driving: one main stop per day, two only if adjacent; respect the driving and walking tolerances in `01-trip-purpose.md`.
+6. Family fit: pram access, child suitability, and meal timing.
+7. Parking: per the Parking rule below.
+
 ## Parking (Mandatory)
 
 Two place sets in `index.html` must carry a `parking` array:
