@@ -4650,18 +4650,23 @@
       if (!marker || !potentialMapState.map) return;
       const map = potentialMapState.map;
       const targetZoom = 14;
-      // The card opens upward from the dot, so seat the dot low in the view
-      // (~80% down) to give the card room above. Open the popup once movement
-      // settles; autoPan only steps in for unusually tall cards.
-      const dotFromTop = 0.8;
-      const mapSize = map.getSize();
-      const markerPoint = map.project(marker.getLatLng(), targetZoom);
-      const center = map.unproject([
-        markerPoint.x,
-        markerPoint.y - (dotFromTop - 0.5) * mapSize.y
-      ], targetZoom);
-      map.once("moveend", () => marker.openPopup());
-      map.flyTo(center, targetZoom, { duration: 0.4 });
+      // Fly the dot to center, then — once settled — open the card and seat the
+      // dot ~80% down so the upward-opening card has room above it. Measure the
+      // marker's real on-screen position (immune to stale map-size state) and
+      // pan the exact difference rather than computing from projection math.
+      map.flyTo(marker.getLatLng(), targetZoom, { duration: 0.4 });
+      map.once("moveend", () => {
+        marker.openPopup();
+        requestAnimationFrame(() => {
+          const iconEl = marker.getElement();
+          if (!iconEl) return;
+          const mapRect = map.getContainer().getBoundingClientRect();
+          const iconRect = iconEl.getBoundingClientRect();
+          const markerY = iconRect.top + iconRect.height / 2 - mapRect.top;
+          const move = mapRect.height * 0.8 - markerY; // +down toward 80%
+          if (Math.abs(move) > 3) map.panBy([0, -move], { animate: true, duration: 0.35 });
+        });
+      });
     }
 
     function renderPotentialMap() {
@@ -4704,14 +4709,7 @@
             ${renderViewpoints(details.viewpoints)}
             <div class="popup-fit"><span class="popup-label">Current fit / tradeoff</span>${escapeHtml(details.why)}</div>
           </div>
-        `, {
-          // Let Leaflet pan so the whole card fits: top padding clears the
-          // zoom controls, bottom padding keeps the dot off the edge. This
-          // handles any card height and the marker's anchor automatically.
-          autoPan: true,
-          autoPanPaddingTopLeft: [12, 56],
-          autoPanPaddingBottomRight: [12, 20]
-        });
+        `, { autoPan: false });
         marker.on("click", () => activatePotentialPlace(place.id));
         potentialMapState.markers.set(place.id, marker);
       });
