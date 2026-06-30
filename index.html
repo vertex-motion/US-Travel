@@ -944,9 +944,9 @@
     .potential-subview.active { display: block; }
 
     #potentialMap {
-      height: min(84vh, 760px);
-      height: min(84dvh, 760px); /* dvh: stable under Safari's collapsing toolbar */
-      min-height: 520px;
+      height: min(88vh, 800px);
+      height: min(88dvh, 800px); /* dvh: stable under Safari's collapsing toolbar */
+      min-height: 540px;
       width: 100%;
       background: var(--track);
       border: 1px solid var(--line);
@@ -967,8 +967,8 @@
     .potential-map-list {
       display: grid;
       gap: 8px;
-      max-height: min(84vh, 760px);
-      max-height: min(84dvh, 760px);
+      max-height: min(88vh, 800px);
+      max-height: min(88dvh, 800px);
       overflow: auto;
       -webkit-overflow-scrolling: touch;
       padding-right: 4px;
@@ -1680,7 +1680,7 @@
     }
 
     .leaflet-popup-tip { background: var(--panel-solid); }
-    .leaflet-popup-content { color: var(--ink); margin: 14px 16px; line-height: 1.5; min-width: 210px; max-height: min(38vh, 300px); max-height: min(38dvh, 300px); overflow-y: auto; overscroll-behavior: contain; }
+    .leaflet-popup-content { color: var(--ink); margin: 14px 16px; line-height: 1.5; min-width: 210px; max-height: min(72vh, 620px); max-height: min(72dvh, 620px); overflow-y: auto; overscroll-behavior: contain; }
     .map-popup { display: flex; flex-direction: column; gap: 9px; }
     .place-photo { margin: 0; border-radius: 10px; overflow: hidden; background: var(--line); line-height: 0; }
     .place-photo img { display: block; width: 100%; height: 132px; object-fit: cover; }
@@ -4652,7 +4652,7 @@
       const targetPoint = map.project(marker.getLatLng(), targetZoom);
       // Keep the dot a fixed gap above the bottom edge so the upward-opening
       // place card gets all of the map's extra height as room (full card visible).
-      const bottomGap = 170;
+      const bottomGap = 120;
       const targetCenter = map.unproject([
         targetPoint.x,
         targetPoint.y - (map.getSize().y / 2 - bottomGap)
