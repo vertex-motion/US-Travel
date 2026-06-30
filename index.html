@@ -945,7 +945,7 @@
 
     #potentialMap {
       height: min(88vh, 800px);
-      height: min(88dvh, 800px); /* dvh: stable under Safari's collapsing toolbar */
+      height: min(88svh, 800px); /* svh: fixed height, won't resize as Safari's toolbar collapses */
       min-height: 540px;
       width: 100%;
       background: var(--track);
@@ -968,7 +968,7 @@
       display: grid;
       gap: 8px;
       max-height: min(88vh, 800px);
-      max-height: min(88dvh, 800px);
+      max-height: min(88svh, 800px);
       overflow: auto;
       -webkit-overflow-scrolling: touch;
       padding-right: 4px;
@@ -1680,7 +1680,7 @@
     }
 
     .leaflet-popup-tip { background: var(--panel-solid); }
-    .leaflet-popup-content { color: var(--ink); margin: 14px 16px; line-height: 1.5; min-width: 210px; max-height: min(72vh, 620px); max-height: min(72dvh, 620px); overflow-y: auto; overscroll-behavior: contain; }
+    .leaflet-popup-content { color: var(--ink); margin: 14px 16px; line-height: 1.5; min-width: 210px; max-height: min(72vh, 620px); max-height: min(72svh, 620px); overflow-y: auto; overscroll-behavior: contain; }
     .map-popup { display: flex; flex-direction: column; gap: 9px; }
     .place-photo { margin: 0; border-radius: 10px; overflow: hidden; background: var(--line); line-height: 0; }
     .place-photo img { display: block; width: 100%; height: 132px; object-fit: cover; }
@@ -1841,7 +1841,8 @@
         justify-content: flex-start;
       }
 
-      #map, #potentialMap { min-height: 360px; height: 52vh; height: 52dvh; }
+      #map { min-height: 360px; height: 52vh; height: 52svh; }
+      #potentialMap { min-height: 480px; height: 80vh; height: 80svh; }
       .potential-map-list { max-height: none; }
 
       /* Bigger touch targets (Apple guidance ≥ 44px) */
@@ -4649,25 +4650,10 @@
       if (!marker || !potentialMapState.map) return;
       const map = potentialMapState.map;
       const targetZoom = 14;
-      marker.openPopup();
-      // The card opens upward from the dot, so its top — not the dot — is what
-      // gets clipped on tall cards. Measure the rendered popup and pan so its
-      // top sits just below the zoom controls; the dot (its bottom tip) trails
-      // lower. Measuring keeps short and tall cards both fully visible.
-      requestAnimationFrame(() => {
-        const mapSize = map.getSize();
-        const popup = marker.getPopup();
-        const popupEl = popup && popup.getElement();
-        const popupH = popupEl ? popupEl.offsetHeight : Math.round(mapSize.y * 0.7);
-        const topPad = 54; // clear the +/- zoom controls
-        const markerY = Math.min(topPad + popupH, mapSize.y - 24);
-        const markerPoint = map.project(marker.getLatLng(), targetZoom);
-        const center = map.unproject([
-          markerPoint.x,
-          markerPoint.y - (markerY - mapSize.y / 2)
-        ], targetZoom);
-        map.flyTo(center, targetZoom, { duration: 0.4 });
-      });
+      // Center the dot first, then open the popup once movement settles so
+      // Leaflet's autoPan nudges the full card into view from a stable state.
+      map.once("moveend", () => marker.openPopup());
+      map.flyTo(marker.getLatLng(), targetZoom, { duration: 0.4 });
     }
 
     function renderPotentialMap() {
@@ -4710,7 +4696,14 @@
             ${renderViewpoints(details.viewpoints)}
             <div class="popup-fit"><span class="popup-label">Current fit / tradeoff</span>${escapeHtml(details.why)}</div>
           </div>
-        `, { autoPan: false });
+        `, {
+          // Let Leaflet pan so the whole card fits: top padding clears the
+          // zoom controls, bottom padding keeps the dot off the edge. This
+          // handles any card height and the marker's anchor automatically.
+          autoPan: true,
+          autoPanPaddingTopLeft: [12, 56],
+          autoPanPaddingBottomRight: [12, 20]
+        });
         marker.on("click", () => activatePotentialPlace(place.id));
         potentialMapState.markers.set(place.id, marker);
       });
