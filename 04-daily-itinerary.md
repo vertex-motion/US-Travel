@@ -27,13 +27,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
 
-### Day 2: Monday, June 29 - Beverly Hills and Greystone
+### Day 2: Monday, June 29 - Griffith, Museum Row, and Beverly Hills (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Drive to Beverly Hills. Beverly Gardens Park — Beverly Hills Sign and Lily Pond — then Rodeo Drive and Via Rodeo / Golden Triangle storefronts. Morning gives cleaner photos and easier parking.
-- Afternoon: Greystone Mansion and Gardens — formal gardens, terraces, and estate facade (free city-park grounds; interiors are special-program only). Lunch on or near Rodeo Drive.
-- Driving: Pasadena → Beverly Gardens Park; Beverly Hills → Greystone Mansion; Greystone → Pasadena. Open the dashboard for live distance and time.
-- Reservations: None. Check Greystone for private-event closures before going.
+- Morning: Griffith Observatory — terraces and views over Downtown LA, the basin, and the Hollywood Sign (grounds only; no planetarium).
+- Midday: Petersen Automotive Museum on Museum Row, then lunch at the Original Farmers Market with the adjacent Grove fountain / trolley.
+- Afternoon: Beverly Hills — Beverly Gardens Park, the Beverly Hills Sign / Lily Pond, and Rodeo Drive / Via Rodeo storefronts, then Greystone Mansion and Gardens (formal gardens, terraces, and estate facade).
+- Driving: Pasadena → Griffith Observatory; Griffith → Petersen / Museum Row; Museum Row → Original Farmers Market; Farmers Market → Beverly Gardens Park; Beverly Hills → Greystone Mansion; Greystone → Pasadena. Open the dashboard for live distance and time.
+- Reservations: None.
 
 ### Day 3: Tuesday, June 30 - Downtown LA Architecture and The Broad
 
@@ -45,13 +46,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: The Broad timed entry (reserve ahead; general admission is free but released monthly on the last Wednesday, with daily extras after ~4:30 pm). Separate Infinity Room slot.
 - Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
 
-### Day 4: Wednesday, July 1 - Hollywood and the Original Farmers Market
+### Day 4: Wednesday, July 1 - Hollywood and the Academy Museum
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
-- Midday: Drive ~15 min to the Original Farmers Market (3rd and Fairfax) for lunch and a Grove fountain / trolley photo stop, with a pastry and coffee break at Ladurée — The Grove.
-- Driving: Pasadena → Hollywood Blvd; Hollywood → Original Farmers Market / The Grove; The Grove → Pasadena. Open the dashboard for live distance and time.
-- Reservations: None.
+- Midday: Drive ~15 min to Museum Row for the Academy Museum of Motion Pictures (timed entry) — indoor and heat-safe, film history for the teen and a quick Dolby Family Terrace view.
+- Afternoon: Walk ~0.6 mi (1 km) to Ladurée — The Grove for a short pastry and coffee break, then head back to Pasadena.
+- Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Pasadena. Open the dashboard for live distance and time.
+- Reservations: Academy Museum timed-entry tickets (open Wednesday; closed Tuesdays). Book ahead.
 
 ### Day 5: Thursday, July 2 - Santa Monica and Venice
 
