@@ -76,7 +76,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Historic Santa Maria Inn, Santa Maria.
 - Morning: Check out of the booked Pasadena-area hotel by 12:00 pm and take US-101 toward Santa Maria, joining CA-1 / Pacific Coast Highway scenic segments where Caltrans shows them open.
-- Afternoon: Continue to the booked Santa Maria hotel and check in; stretch with a short Pismo or Avila Beach stroll on the way.
+- Afternoon: Continue toward the booked Santa Maria hotel, stretching with a short sunset stroll on the Pismo Beach Pier promenade or the calmer, south-facing Avila Beach front before checking in.
 - Driving: Pasadena → Santa Barbara; Santa Barbara → Pismo Beach; Pismo Beach → Santa Maria. Open the dashboard for live distance and time.
 - Reservations: Pasadena-area hotel checkout by 12:00 pm. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Source notes: This replaces Santa Barbara by traveler request. Caltrans currently reports one-way controlled traffic on SR 1 near Jalama Road in Santa Barbara County, so re-check before choosing coastal segments.
@@ -85,7 +85,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Monterey-area hotel.
 - Morning: Leave Santa Maria after breakfast and take Highway 1 north past San Simeon; stop at the Piedras Blancas elephant-seal vista. Confirm Highway 1 is open on Caltrans before leaving.
-- Afternoon: Big Sur viewpoints (Bixby Creek Bridge), then into Monterey to check in.
+- Afternoon: Pull off at the Bixby Creek Bridge north overlook for the classic Big Sur span arcing over the canyon, then follow Highway 1's cliff curves into Monterey to check in.
 - Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Monterey lodging details.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
@@ -93,15 +93,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
 - Sleep: Booked Monterey-area hotel.
-- Morning: Monterey Bay Aquarium at opening.
-- Afternoon: Pacific Grove coastal walk, then Carmel Beach.
+- Morning: Monterey Bay Aquarium at opening — the kelp forest, sea otters, and the open-sea tank before the midday crowds build.
+- Afternoon: Pacific Grove's Ocean View Boulevard coast path past Lovers Point, then white-sand Carmel Beach below the Ocean Avenue village.
 - Driving: Monterey → Monterey Bay Aquarium; Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
 - Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
 
 ### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Check out and take a short Carmel-by-the-Sea / Ocean Ave stroll, then drive north.
+- Morning: Check out and take a short stroll down Carmel-by-the-Sea's Ocean Avenue — storybook cottages, galleries, and the beach view at the foot of the street — then drive north.
 - Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
 - Driving: Monterey → Santa Cruz; Santa Cruz → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
@@ -152,7 +152,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Outbound Mammoth, Mammoth Lakes.
 - Plan: Do **not** enter Yosemite National Park (avoids the $35 entry and the new $100/person non-resident surcharge). Drive the free route around the Sierra on Highway 108 over Sonora Pass to US-395, then south to Mammoth. Scenic, but a long, demanding mountain day.
 - Morning: Leave Mountain View early; CA-120 then CA-108 east through Gold Country toward Sonora Pass.
-- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view) and the Sonora Pass summit (9,623 ft; picnic area, Pacific Crest Trail, photos).
+- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view) and the Sonora Pass summit (9,623 ft / 2,933 m; picnic area, Pacific Crest Trail, photos).
 - Afternoon: Descend to US-395 and head south to the Mono Lake South Tufa towers (~$3/adult, kids free), then into Mammoth Lakes.
 - Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (~7 hours without stops; plan a full day). Open the dashboard for live distance and time.
 - Reservations: None — not entering any national park. (Mono Lake South Tufa is a small per-person fee only.) See `05-trip-logistics.md` for Mammoth Lakes lodging details.
