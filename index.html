@@ -4649,16 +4649,25 @@
       if (!marker || !potentialMapState.map) return;
       const map = potentialMapState.map;
       const targetZoom = 14;
-      const targetPoint = map.project(marker.getLatLng(), targetZoom);
-      // Keep the dot a fixed gap above the bottom edge so the upward-opening
-      // place card gets all of the map's extra height as room (full card visible).
-      const bottomGap = 120;
-      const targetCenter = map.unproject([
-        targetPoint.x,
-        targetPoint.y - (map.getSize().y / 2 - bottomGap)
-      ], targetZoom);
-      map.flyTo(targetCenter, targetZoom, { duration: 0.45 });
       marker.openPopup();
+      // The card opens upward from the dot, so its top — not the dot — is what
+      // gets clipped on tall cards. Measure the rendered popup and pan so its
+      // top sits just below the zoom controls; the dot (its bottom tip) trails
+      // lower. Measuring keeps short and tall cards both fully visible.
+      requestAnimationFrame(() => {
+        const mapSize = map.getSize();
+        const popup = marker.getPopup();
+        const popupEl = popup && popup.getElement();
+        const popupH = popupEl ? popupEl.offsetHeight : Math.round(mapSize.y * 0.7);
+        const topPad = 54; // clear the +/- zoom controls
+        const markerY = Math.min(topPad + popupH, mapSize.y - 24);
+        const markerPoint = map.project(marker.getLatLng(), targetZoom);
+        const center = map.unproject([
+          markerPoint.x,
+          markerPoint.y - (markerY - mapSize.y / 2)
+        ], targetZoom);
+        map.flyTo(center, targetZoom, { duration: 0.4 });
+      });
     }
 
     function renderPotentialMap() {
