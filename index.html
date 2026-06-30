@@ -4650,10 +4650,18 @@
       if (!marker || !potentialMapState.map) return;
       const map = potentialMapState.map;
       const targetZoom = 14;
-      // Center the dot first, then open the popup once movement settles so
-      // Leaflet's autoPan nudges the full card into view from a stable state.
+      // The card opens upward from the dot, so seat the dot low in the view
+      // (~80% down) to give the card room above. Open the popup once movement
+      // settles; autoPan only steps in for unusually tall cards.
+      const dotFromTop = 0.8;
+      const mapSize = map.getSize();
+      const markerPoint = map.project(marker.getLatLng(), targetZoom);
+      const center = map.unproject([
+        markerPoint.x,
+        markerPoint.y - (dotFromTop - 0.5) * mapSize.y
+      ], targetZoom);
       map.once("moveend", () => marker.openPopup());
-      map.flyTo(marker.getLatLng(), targetZoom, { duration: 0.4 });
+      map.flyTo(center, targetZoom, { duration: 0.4 });
     }
 
     function renderPotentialMap() {
