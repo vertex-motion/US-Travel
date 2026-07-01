@@ -29,7 +29,7 @@
 <!-- tag: to-confirm -->
 | Task | Target timing | Notes | Status |
 | --- | --- | --- | --- |
-| The Broad (Downtown LA, Day 3) | Last Wednesday before July (monthly release) | Reserve free timed admission as soon as the July block opens; book a separate Infinity Room slot. Daily extra tickets release after ~4:30 pm if the block sells out. | Open |
+| The Broad (Downtown LA, Day 3) | Done | Visited Day 3 (June 30, 2026): collection galleries and Yayoi Kusama's Infinity Mirrored Room. | Done |
 | SFMOMA or Exploratorium (Day 14) | When July 2026 tickets are available | Choose one SoMa anchor and book timed tickets: SFMOMA (adults $30, under-18 free) or Exploratorium (Pier 15). | Open |
 | Getty Center | When July 2026 calendar is available | Retained Day 6 Westside alternative to Norton Simon; check parking and any timed-entry rules if used. Closed Mondays. | Open |
 | Academy Museum of Motion Pictures (Day 4) | When July 2026 calendar is available | Committed Day 4 (July 1) midday anchor. Book timed-entry tickets; open Wednesday, closed Tuesdays. Pritzker Family Garage / Petersen garage for parking; walk ~0.6 mi (1 km) to Ladurée at The Grove. | Open |

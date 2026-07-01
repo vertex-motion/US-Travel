@@ -36,15 +36,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Griffith Observatory; Griffith → Petersen / Museum Row; Museum Row → Original Farmers Market; Farmers Market → Beverly Gardens Park; Beverly Hills → Greystone Mansion; Greystone → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None.
 
-### Day 3: Tuesday, June 30 - Downtown LA Architecture and The Broad
+### Day 3: Tuesday, June 30 - Downtown LA, Hollywood Bowl Overlook, and The Grove (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Drive to Bunker Hill, park once, and walk the Downtown LA architecture loop: Walt Disney Concert Hall exterior and stairs, Grand Park fountain and lawns, and the LA City Hall facade.
-- Midday: Grand Central Market for lunch, Angels Flight, and the Bradbury Building lobby if open. Keep the route tight.
-- Afternoon (timed): The Broad — free contemporary art (Warhol, Basquiat, Koons, and Yayoi Kusama's Infinity Mirrored Room). Reserve a timed slot in advance; open Tuesday. The Infinity Room needs a separate timed slot.
-- Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market. Open the dashboard for live distance and time.
-- Reservations: The Broad timed entry (reserve ahead; general admission is free but released monthly on the last Wednesday, with daily extras after ~4:30 pm). Separate Infinity Room slot.
-- Source notes: Warner Bros. Studio Tour remains unsuitable because children under 5 are not allowed.
+- Morning: Downtown LA architecture loop on Bunker Hill — Walt Disney Concert Hall exterior and stairs, Grand Park fountain and lawns, and the LA City Hall facade.
+- Midday: Grand Central Market lunch, Angels Flight, and the Bradbury Building lobby.
+- Afternoon: The Broad — free contemporary art (Warhol, Basquiat, Koons, and Yayoi Kusama's Infinity Mirrored Room), then drove up to the Jerome C. Daniel Overlook above the Hollywood Bowl for the Hollywood Sign, Bowl, and basin view, and returned to The Grove for a second visit before heading back to Pasadena.
+- Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market; Downtown → Jerome C. Daniel Overlook (Hollywood Bowl); Overlook → The Grove; The Grove → Pasadena. Open the dashboard for live distance and time.
+- Reservations: None outstanding — The Broad timed entry used.
 
 ### Day 4: Wednesday, July 1 - Hollywood and the Academy Museum
 
