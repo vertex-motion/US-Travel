@@ -45,16 +45,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market; Downtown → Jerome C. Daniel Overlook (Hollywood Bowl); Overlook → The Grove; The Grove → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None outstanding — The Broad timed entry used.
 
-### Day 4: Wednesday, July 1 - Hollywood and the Academy Museum
-
-- Sleep: Booked Pasadena-area hotel.
-- Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
-- Midday: Drive ~15 min to Museum Row for the Academy Museum of Motion Pictures (timed entry) — indoor and heat-safe, film history for the teen and a quick Dolby Family Terrace view.
-- Afternoon: Walk ~0.6 mi (1 km) to Ladurée — The Grove for a short pastry and coffee break, then head back to Pasadena.
-- Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Academy Museum timed-entry tickets (open Wednesday; closed Tuesdays). Book ahead.
-
-### Day 5: Thursday, July 2 - Santa Monica and Venice
+### Day 4: Wednesday, July 1 - Santa Monica and Venice
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Leave early to beat beach traffic and heat. Venice Canals first for calm water and soft light, then a short Venice Ocean Front Walk sample — keep it brief, it is busy and eccentric.
@@ -62,6 +53,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Palisades Park bluff walk above the beach, then head back to Pasadena.
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Pacific Park rides are pay-per-ride or wristband on site; no advance booking.
+
+### Day 5: Thursday, July 2 - Hollywood and the Academy Museum
+
+- Sleep: Booked Pasadena-area hotel.
+- Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
+- Midday: Drive ~15 min to Museum Row for the Academy Museum of Motion Pictures (timed entry) — indoor and heat-safe, film history for the teen and a quick Dolby Family Terrace view.
+- Afternoon: Walk ~0.6 mi (1 km) to Ladurée — The Grove for a short pastry and coffee break, then head back to Pasadena.
+- Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Pasadena. Open the dashboard for live distance and time.
+- Reservations: Academy Museum timed-entry tickets (open Thursday; closed Tuesdays). Book ahead.
 
 ### Day 6: Friday, July 3 - Norton Simon, then Pack
 
