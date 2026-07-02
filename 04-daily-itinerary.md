@@ -54,14 +54,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None outstanding — Pacific Park rides paid on site.
 
-### Day 5: Thursday, July 2 - Hollywood and the Academy Museum
+### Day 5: Thursday, July 2 - Hollywood, the Academy Museum, and Caltech
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
 - Midday: Drive ~15 min to Museum Row for the Academy Museum of Motion Pictures (timed entry) — indoor and heat-safe, film history for the teen and a quick Dolby Family Terrace view.
-- Afternoon: Walk ~0.6 mi (1 km) to Ladurée — The Grove for a short pastry and coffee break, then head back to Pasadena.
-- Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Academy Museum timed-entry tickets (open Thursday; closed Tuesdays). Book ahead.
+- Afternoon: Walk ~0.6 mi (1 km) to Ladurée — The Grove for a short pastry and coffee break.
+- Evening: Drive back toward Pasadena and finish with a 60-90 min self-guided walk of the open Caltech campus — Mediterranean/Spanish architecture, the Olive Walk, Throop Pond, and the Beckman "Gene Pool" reflecting pool. Arrive after 5:00 pm for free parking, cooler air, and golden light.
+- Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Caltech; Caltech → Pasadena. Open the dashboard for live distance and time.
+- Reservations: Academy Museum timed-entry tickets (open Thursday; closed Tuesdays). Book ahead. Caltech is a self-guided outdoor walk — no booking; visitor parking permit needed 7:00 am-5:00 pm weekdays ($9/day), free after 5:00 pm.
 
 ### Day 6: Friday, July 3 - Norton Simon, then Pack
 
