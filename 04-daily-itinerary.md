@@ -45,14 +45,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Walt Disney Concert Hall / Grand Central Market; Downtown → Jerome C. Daniel Overlook (Hollywood Bowl); Overlook → The Grove; The Grove → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None outstanding — The Broad timed entry used.
 
-### Day 4: Wednesday, July 1 - Santa Monica and Venice
+### Day 4: Wednesday, July 1 - Santa Monica and Venice (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Leave early to beat beach traffic and heat. Venice Canals first for calm water and soft light, then a short Venice Ocean Front Walk sample — keep it brief, it is busy and eccentric.
-- Midday: Santa Monica Pier and Pacific Park ride block; the 13-year-old rides the bigger rides and the 3-year-old does the smaller ones. Lunch on or near the pier.
-- Afternoon: Palisades Park bluff walk above the beach, then head back to Pasadena.
+- Morning: Venice Canals — canal bridges, walkways, and water reflections, then a short Venice Ocean Front Walk / Boardwalk sample.
+- Midday: Santa Monica Pier and Pacific Park ride block — the 13-year-old on the bigger rides and the 3-year-old on the smaller ones; lunch on the pier.
+- Afternoon: Palisades Park bluff walk above the beach, then back to Pasadena.
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Pacific Park rides are pay-per-ride or wristband on site; no advance booking.
+- Reservations: None outstanding — Pacific Park rides paid on site.
 
 ### Day 5: Thursday, July 2 - Hollywood and the Academy Museum
 
