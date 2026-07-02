@@ -18,7 +18,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 <!-- tag: traveler-notes -->
 
-### Day 1: Sunday, June 28 - Arrive Los Angeles
+### Day 1: Sunday, June 28 - Arrive Los Angeles (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
