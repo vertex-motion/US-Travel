@@ -23,7 +23,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Arrive LAX on UA 842 at 6:10 am. Clear immigration, collect bags, and pick up the booked rental car at Los Angeles International Airport at 8:00 am.
 - Afternoon: Checked in at 3:00 pm, unpacked, then explored Pasadena.
-- Evening: Explored Old Pasadena and the Colorado Street Bridge; the Lower Arroyo was not visited and stays a potential option. Days 2-6 cover the rest of Los Angeles.
+- Evening: Explored Old Pasadena; the Colorado Street Bridge and Lower Arroyo were not visited and stay a potential option. Days 2-6 cover the rest of Los Angeles.
 - Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
 
