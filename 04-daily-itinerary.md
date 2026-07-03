@@ -68,9 +68,11 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Slow morning, hotel pool, pack, laundry, and confirm hotel parking / folio handling for the booked rental car before the 12:00 pm Day 7 checkout.
+- Late morning: The Huntington in San Marino — gardens, galleries, and estate walk near base (opens 10:00 am; closed Tuesdays). Free visitor parking.
+- Midday: Getty Center on the Westside — tram, architecture, gardens, and city/ocean terraces. Cross-town from Pasadena (~25 mi / 40 km); parking is lower after 3:00 pm ($25/car, $20 after 3pm).
 - Afternoon: Norton Simon Museum near the base — July 3 is the first Friday, so general admission is free 4:00-7:00 pm and the museum is open until 7:00 pm. Under-18 always free. Easy and close to the hotel before the holiday transfer.
-- Driving: Pasadena → Norton Simon Museum (local). Open the dashboard for live distance and time.
-- Reservations: None; prepare for 12:00 pm checkout on Day 7.
+- Driving: Pasadena → The Huntington (San Marino, local); Pasadena → Getty Center (Westside, ~25 mi / 40 km each way); Pasadena → Norton Simon Museum (local). Open the dashboard for live distance and time.
+- Reservations: The Huntington date-specific timed tickets (book ahead; closed Tuesdays). Getty Center admission free (reserve a free timed entry if offered; closed Mondays). Prepare for 12:00 pm checkout on Day 7.
 
 ### Day 7: Saturday, July 4 - Los Angeles to Santa Maria / Central Coast
 

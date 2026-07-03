@@ -31,7 +31,8 @@
 | --- | --- | --- | --- |
 | The Broad (Downtown LA, Day 3) | Done | Visited Day 3 (June 30, 2026): collection galleries and Yayoi Kusama's Infinity Mirrored Room. | Done |
 | SFMOMA or Exploratorium (Day 14) | When July 2026 tickets are available | Choose one SoMa anchor and book timed tickets: SFMOMA (adults $30, under-18 free) or Exploratorium (Pier 15). | Open |
-| Getty Center | When July 2026 calendar is available | Retained Day 6 Westside alternative to Norton Simon; check parking and any timed-entry rules if used. Closed Mondays. | Open |
+| Getty Center (Day 6) | Before July 3 | Committed Day 6 (July 3) Westside stop. Admission free; no ticket needed. Reserve a free timed entry online if offered for the date; parking $25/car ($20 after 3pm). Closed Mondays (open Friday). | Open |
+| The Huntington (Day 6) | Before July 3 | Committed Day 6 (July 3) San Marino garden stop. Buy date-specific timed admission tickets in advance (adults ticketed; check child pricing). Opens 10:00 am; closed Tuesdays (open Friday). Free on-site parking. | Open |
 | Academy Museum of Motion Pictures (Day 5) | Done | Visited Day 5 (July 2, 2026): Museum Row midday anchor, then a short walk to Ladurée at The Grove. | Done |
 | Stanford campus visit | When July 2026 schedule is stable | Check guided tour availability, self-guided route, campus event closures, and parking rules. | Open |
 | Google Visitor Experience | Week before Bay Area stay | Re-check opening hours, events, parking, and whether any workshop needs RSVP. | Open |
