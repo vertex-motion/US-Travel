@@ -44,6 +44,27 @@ One canonical home per fact. Before editing, check for existing coverage.
 - Link to the canonical file; don't restate its content.
 - Intentional repetition must serve a distinct purpose (summary, checklist, rationale, evidence).
 
+## Categories (Mandatory)
+
+Every option in `03-potential-options.md` and every `index.html` `potentialOptions[]` / `potentialMapPlaces[]` entry carries one `Category` / `category`. The table and map filters build from the distinct category values in the data, so a category needs no separate list to appear as a filter.
+
+Assign category by the option's primary nature:
+
+- **Universities** — the whole option is a college or university campus visit (grounds, quads, campus landmarks). Current members: Caltech, Occidental, UCLA, Claremont Colleges, Stanford, UC Berkeley.
+- **Parks** — the whole option is a park, garden, open-space preserve, or national/state park. Includes city and urban parks, botanic gardens, and NPS/state units (national parks, monuments, preserves, conservation areas, state parks).
+- Keep a stop in **Scenic Walks and Viewpoints** when it is a viewpoint, overlook, beach walk, or coastal drive, even if it sits inside a park. Classify by what the stop is for, not by the land's designation.
+- Must not move an audience-split option (`Teen-Focused Split`, `Younger-Child Add-On`, `Dad-Focused Adventure`) or a `Route and Region` / `Logistics and Pacing` anchor into Universities or Parks. Those keep their category.
+
+Split mixed options:
+
+- An option must not bundle a park or campus with unrelated stops under one category. If it does, split it into two options: one for the park/campus (category `Parks` or `Universities`) and one for the rest (its original category).
+- On split, reassign each `potentialMapPlaces[]` marker to the matching new option and set its `category`. Carry `parking`, `interest`, and `Plan status` to the half each marker belongs to.
+- Apply the split in `03-potential-options.md` and `index.html` in the same change.
+
+Adding a category:
+
+- A new category must have a distinct color in the `categoryColors` map in `index.html`. No other list needs editing.
+
 ## Planning Files
 
 See [`metadata/repository-structure.md`](metadata/repository-structure.md) for per-file scope rules and routing.
