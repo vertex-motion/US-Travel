@@ -1733,6 +1733,7 @@
       text-transform: uppercase; letter-spacing: 0.05em; margin: 0;
     }
     .popup-meta .popup-cat-dot { width: 9px; height: 9px; border-radius: 999px; background: var(--category-color, var(--coral)); }
+    .popup-status { display: flex; }
     .popup-stays { display: grid; gap: 3px; margin: 0; }
     .popup-stay { color: var(--ink-soft); font-size: 0.85rem; line-height: 1.4; }
     .popup-stay b { color: var(--ink); font-weight: 700; }
@@ -4776,6 +4777,7 @@
             <div class="popup-head"><div class="popup-title">${escapeHtml(place.name)}</div>${renderRating(details.interest)}</div>
             <div class="popup-desc">${escapeHtml(details.desc)}</div>
             <div class="popup-meta"><span class="popup-cat-dot" style="--category-color: ${escapeHtml(categoryColor(place.category))};"></span>${escapeHtml(place.region)} · ${escapeHtml(place.category)}</div>
+            ${placeStatus(place) ? `<div class="popup-status">${planStatusTag(placeStatus(place))}</div>` : ""}
             ${est}
             ${geoButtonGroup(popupLoc, place.name)}
             ${renderParking(place)}
