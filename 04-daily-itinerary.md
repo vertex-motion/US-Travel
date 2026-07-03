@@ -54,7 +54,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Venice Canals; Venice → Santa Monica Pier; Santa Monica → Pasadena. Open the dashboard for live distance and time.
 - Reservations: None outstanding — Pacific Park rides paid on site.
 
-### Day 5: Thursday, July 2 - Hollywood, the Academy Museum, and Caltech
+### Day 5: Thursday, July 2 - Hollywood, the Academy Museum, and Caltech (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Hollywood Boulevard sampler, 45-75 minutes — selected Walk of Fame stars, TCL Chinese Theatre forecourt, and Ovation Hollywood's Sign-facing upper levels. Go early for easier parking and cooler air.
