@@ -271,6 +271,29 @@
       color: transparent;
     }
 
+    .hero-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 8px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(16px);
+      border-radius: 999px;
+      color: #fff;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s ease, border-color 0.18s ease;
+    }
+    .hero-toggle:hover { background: rgba(255, 255, 255, 0.24); border-color: rgba(255, 255, 255, 0.5); }
+    .hero-toggle-icon { transition: transform 0.2s ease; font-size: 0.8rem; line-height: 1; }
+    .hero-toggle[aria-expanded="true"] .hero-toggle-icon { transform: rotate(180deg); }
+    .hero-details[hidden] { display: none; }
+
+    .hero-details { margin-top: 28px; }
     .hero-copy {
       max-width: 680px;
       color: rgba(255, 255, 255, 0.94);
@@ -2047,6 +2070,10 @@
       <div class="hero-inner">
         <div class="eyebrow">June 28 – July 20, 2026 · First U.S. Trip</div>
         <h1>West Coast <span class="amp">+</span> Las Vegas Family Trip</h1>
+        <button type="button" class="hero-toggle" id="heroToggle" aria-expanded="false" aria-controls="heroDetails">
+          <span class="hero-toggle-icon" aria-hidden="true">▾</span><span class="hero-toggle-label">Show trip summary</span>
+        </button>
+        <div class="hero-details" id="heroDetails" hidden>
         <p class="hero-copy">A closed-circle first United States trip for a family of four: Los Angeles, the Pacific coast, Yosemite, Las Vegas, and a Pasadena return at a slow family pace.</p>
         <div class="hero-stats" aria-label="Trip summary">
           <div class="hero-stat"><strong>23</strong><span>calendar days Sydney to Sydney</span></div>
@@ -2070,6 +2097,7 @@
           <div class="timeline-chip"><strong>Las Vegas</strong><span class="nights">3n</span></div>
           <div class="timeline-arrow">→</div>
           <div class="timeline-chip"><strong>Pasadena</strong><span class="nights">1n</span></div>
+        </div>
         </div>
       </div>
     </header>
@@ -5240,6 +5268,20 @@
       });
     }
 
+    function wireHeroToggle() {
+      const btn = $("#heroToggle");
+      const details = $("#heroDetails");
+      if (!btn || !details) return;
+      const label = btn.querySelector(".hero-toggle-label");
+      btn.addEventListener("click", () => {
+        const open = details.hasAttribute("hidden");
+        if (open) details.removeAttribute("hidden");
+        else details.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", String(open));
+        if (label) label.textContent = open ? "Hide trip summary" : "Show trip summary";
+      });
+    }
+
     function wireDayToggle() {
       $("#toggleDays").addEventListener("click", () => {
         const cards = $$("#dayGrid details");
@@ -5329,6 +5371,7 @@
       wireTabs();
       wirePotentialSubtabs();
       wirePotentialMapControls();
+      wireHeroToggle();
       wireDayToggle();
       wireTheme();
       wireNavScroll();
