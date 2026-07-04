@@ -64,26 +64,25 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Hollywood Blvd; Hollywood → Academy Museum / Museum Row; Museum Row → Caltech; Caltech → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Academy Museum timed-entry tickets (open Thursday; closed Tuesdays). Book ahead. Caltech is a self-guided outdoor walk — no booking; visitor parking permit needed 7:00 am-5:00 pm weekdays ($9/day), free after 5:00 pm.
 
-### Day 6: Friday, July 3 - Norton Simon, then Pack
+### Day 6: Friday, July 3 - Mount Wilson Observatory and Norton Simon (Visited)
 
 - Sleep: Booked Pasadena-area hotel.
-- Morning: Slow morning, hotel pool, pack, laundry, and confirm hotel parking / folio handling for the booked rental car before the 12:00 pm Day 7 checkout.
-- Late morning: The Huntington in San Marino — gardens, galleries, and estate walk near base (opens 10:00 am; closed Tuesdays). Free visitor parking.
-- Midday: Getty Center on the Westside — tram, architecture, gardens, and city/ocean terraces. Cross-town from Pasadena (~25 mi / 40 km); parking is lower after 3:00 pm ($25/car, $20 after 3pm).
-- Afternoon: Norton Simon Museum near the base — July 3 is the first Friday, so general admission is free 4:00-7:00 pm and the museum is open until 7:00 pm. Under-18 always free. Easy and close to the hotel before the holiday transfer.
-- Driving: Pasadena → The Huntington (San Marino, local); Pasadena → Getty Center (Westside, ~25 mi / 40 km each way); Pasadena → Norton Simon Museum (local). Open the dashboard for live distance and time.
-- Reservations: The Huntington date-specific timed tickets (book ahead; closed Tuesdays). Getty Center admission free (reserve a free timed entry if offered; closed Mondays). Prepare for 12:00 pm checkout on Day 7.
+- Morning: Packed and prepped for the Day 7 checkout, then drove up to Mount Wilson Observatory — the drive-up San Gabriel summit above Pasadena (~30 mi / 48 km via CA-2 and Mount Wilson Rd), with the historic 100-inch Hooker and 60-inch telescopes, the astronomy museum, and cooler-air LA-basin overlooks.
+- Afternoon: Norton Simon Museum near the base — July 3 was the first Friday, so general admission was free 4:00-7:00 pm; the European painting galleries (Raphael, Rembrandt, Goya, Van Gogh, Degas, Cezanne, Picasso) and the pond sculpture garden. The Huntington and Getty Center were not visited and stay potential options.
+- Driving: Pasadena → Mount Wilson Observatory (CA-2 / Mount Wilson Rd, ~30 mi / 48 km each way); Mount Wilson → Norton Simon Museum (Pasadena, local). Open the dashboard for live distance and time.
+- Reservations: None outstanding — Mount Wilson $5 USFS Adventure Pass paid on site; Norton Simon first-Friday free.
 
 ### Day 7: Saturday, July 4 - Los Angeles to Santa Maria via Route 1 (Pacific Coast Highway)
 
 - Sleep: Booked Historic Santa Maria Inn, Santa Maria.
 - Morning: Check out of the booked Pasadena-area hotel early (by 12:00 pm) and drive to the coast at Santa Monica to pick up CA-1 / Pacific Coast Highway north. Short leg-stretch at Malibu — Malibu Pier and Surfrider Beach for the open coast and cool ocean air.
-- Midday: Lunch in Ventura — walk the Ventura Pier and historic Main Street past Mission San Buenaventura, an easy pram-friendly coastal town before the road turns inland. Continue past Santa Barbara without stopping.
+- Midday: Lunch in Ventura — walk the Ventura Pier and historic Main Street past Mission San Buenaventura, an easy pram-friendly coastal town.
+- Early afternoon: Santa Barbara waterfront, ~30 mi (48 km) on — walk Stearns Wharf over the harbor and the Cabrillo Boulevard palm-lined beachfront promenade, an easy pram-friendly ocean stop with the Spanish-style downtown behind it.
 - Afternoon: La Purísima Mission State Historic Park near Lompoc — the most completely restored of the California missions, with shaded adobe buildings, gardens, and livestock on flat, pram-friendly paths (grounds 9:00 am-5:00 pm; buildings close 4:00 pm).
 - Late afternoon: Rancho Guadalupe Dunes Preserve at Guadalupe — the tallest coastal dunes on the West Coast and the Santa Maria River estuary for a sunset walk (open 7:00 am-sunset), then about 15 min to check in at the booked Santa Maria hotel.
-- Driving: Pasadena → Malibu (CA-1 / PCH); Malibu → Ventura; Ventura → La Purísima Mission (Lompoc); La Purísima → Rancho Guadalupe Dunes (Guadalupe); Guadalupe → Santa Maria. Open the dashboard for live distance and time.
+- Driving: Pasadena → Malibu (CA-1 / PCH); Malibu → Ventura; Ventura → Santa Barbara (US-101, ~30 mi / 48 km); Santa Barbara → La Purísima Mission (Lompoc); La Purísima → Rancho Guadalupe Dunes (Guadalupe); Guadalupe → Santa Maria. This is a full transfer day with five stops — start early and keep each stop tight to reach the Guadalupe dunes by sunset. Open the dashboard for live distance and time.
 - Reservations: Pasadena-area hotel checkout by 12:00 pm; no timed-entry stops today. See `05-trip-logistics.md` for Santa Maria lodging details.
-- Source notes: Route follows Route 1 where it is the scenic draw — the open Santa Monica-Malibu PCH and the Lompoc-Guadalupe-Santa Maria CA-1 branch — joined by US-101 through Ventura. Santa Barbara stays a pass-through by traveler request. Caltrans reports one-way traffic control on SR 1 near Jalama Road (south of Lompoc), so reach Lompoc via US-101 and SR-246 and re-check Caltrans before departure.
+- Source notes: Route follows Route 1 where it is the scenic draw — the open Santa Monica-Malibu PCH and the Lompoc-Guadalupe-Santa Maria CA-1 branch — joined by US-101 through Ventura and Santa Barbara. Santa Barbara is a waterfront leg-stretch, not an overnight. Caltrans reports one-way traffic control on SR 1 near Jalama Road (south of Lompoc), so reach Lompoc via US-101 and SR-246 and re-check Caltrans before departure.
 
 ### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
