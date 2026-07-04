@@ -68,7 +68,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Pasadena-area hotel.
 - Morning: Packed and prepped for the Day 7 checkout, then drove up to Mount Wilson Observatory — the drive-up San Gabriel summit above Pasadena (~30 mi / 48 km via CA-2 and Mount Wilson Rd), with the historic 100-inch Hooker and 60-inch telescopes, the astronomy museum, and cooler-air LA-basin overlooks.
-- Afternoon: Norton Simon Museum near the base — July 3 was the first Friday, so general admission was free 4:00-7:00 pm; the European painting galleries (Raphael, Rembrandt, Goya, Van Gogh, Degas, Cezanne, Picasso) and the pond sculpture garden. The Huntington and Getty Center were not visited and stay potential options.
+- Afternoon: Norton Simon Museum near the base — July 3 was the first Friday, so general admission was free 4:00-7:00 pm; the European painting galleries (Raphael, Rembrandt, Goya, Van Gogh, Degas, Cezanne, Picasso) and the pond sculpture garden.
 - Driving: Pasadena → Mount Wilson Observatory (CA-2 / Mount Wilson Rd, ~30 mi / 48 km each way); Mount Wilson → Norton Simon Museum (Pasadena, local). Open the dashboard for live distance and time.
 - Reservations: None outstanding — Mount Wilson $5 USFS Adventure Pass paid on site; Norton Simon first-Friday free.
 
