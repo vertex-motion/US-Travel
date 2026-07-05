@@ -32,7 +32,7 @@ This repo is public. Never add personal data: contact details, document numbers,
 
 Sensitive personal files must never be committed. This includes tickets, insurance documents, IDs, passports, boarding passes, bookings, and any file containing the personal data listed above. Such files (and their folders) must be added to `.gitignore` and kept on disk only. Before any commit, verify no sensitive personal file is staged; if one is, unstage it, add it to `.gitignore`, and flag it.
 
-The `private/` folder is the canonical, gitignored home for confidential trip data: actual hotel addresses, confirmation numbers, booking references, room/rate codes, and contact details. The tracked planning files reference bookings by city and date only; their real values live in `private/confidential.md`. Read and update that file when confidential details are needed, but never copy its contents into a tracked file.
+The `private/` folder is the canonical, gitignored home for confidential trip data: actual hotel addresses, confirmation numbers, booking references, room/rate codes, and contact details. The tracked planning files may name the booked hotel, but must keep exact addresses, confirmation numbers, booking references, room/rate codes, and contact details out — those live in `private/confidential.md`. Read and update that file when confidential details are needed, but never copy its contents into a tracked file.
 
 ## Duplication
 
@@ -104,6 +104,15 @@ When building a day card, apply these rules:
 9. Fit the family. Confirm pram access and child stamina, leave rest and meal gaps, and keep walking within the `01-trip-purpose.md` tolerance.
 10. Fill by interest. Use limited day slots for the highest-interest starred options first; lower-rated or unscheduled options stay in Potential Options. Apply the Parking rule below to every stop.
 
+## Hotel Line (Mandatory)
+
+A base-change day is any day the traveler sleeps in a different hotel than the night before — every arrival and transfer day. On each base-change day, the last line of the day card must name the actual booked hotel and its parking.
+
+- Applies in `04-daily-itinerary.md` (the final bullet of the `### Day`) and `index.html` (the last entry in `days[].places[]`).
+- Name the actual booked hotel. Keep the exact street address in `private/confidential.md` only; the public `query` uses hotel name plus city, no street number.
+- The `index.html` hotel place must carry a full `parking` widget (`parking[]` with map buttons), the same as an attraction. This is the exception to the lodging-base parking exemption.
+- A same-base day (no hotel change) must not repeat the hotel line.
+
 ## Parking (Mandatory)
 
 Two place sets in `index.html` must carry a `parking` array:
@@ -116,7 +125,7 @@ Parking renders in the day card, the Potential Map marker popup, and the Potenti
 - Each `parking` entry must have a short `name` (a real lot name, or `P1`/`P2`/`P3` when none fits), a `cost`, and a `query` used for map links.
 - List up to three parking areas per place.
 - Each area must render four map buttons: Apple and Google, place (`P`) and route (`R`).
-- Do not add `parking` to lodging bases, airports, route corridors, or combined placeholder entries.
+- Do not add `parking` to airports, route corridors, combined placeholder entries, or a lodging base on a same-base day. Exception: the overnight hotel on a base-change day carries a full `parking` widget (see Hotel Line).
 
 ## Trip Change Impact Review
 

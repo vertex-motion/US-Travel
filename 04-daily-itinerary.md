@@ -26,6 +26,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Evening: Explored Old Pasadena; the Colorado Street Bridge and Lower Arroyo were not visited and stay a potential option. Days 2-6 cover the rest of Los Angeles.
 - Driving: LAX Airport → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Rental car pickup at 8:00 am; hotel check-in at 3:00 pm. See `05-trip-logistics.md` for lodging details.
+- Hotel: Hyatt Place Pasadena — on-site self-parking $35/night (in-and-out); Pasadena city garages (Paseo Colorado, De Lacey) free first 90 min.
 
 ### Day 2: Monday, June 29 - Griffith, Museum Row, and Beverly Hills (Visited)
 
@@ -83,6 +84,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Malibu (CA-1 / PCH); Malibu → Ventura; Ventura → Santa Barbara (US-101, ~30 mi / 48 km); Santa Barbara → La Purísima Mission (Lompoc); La Purísima → Rancho Guadalupe Dunes (Guadalupe); Guadalupe → Santa Maria. This is a full transfer day with five stops — start early and keep each stop tight to reach the Guadalupe dunes by sunset. Open the dashboard for live distance and time.
 - Reservations: Pasadena-area hotel checkout by 12:00 pm; no timed-entry stops today. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Source notes: Route follows Route 1 where it is the scenic draw — the open Santa Monica-Malibu PCH and the Lompoc-Guadalupe-Santa Maria CA-1 branch — joined by US-101 through Ventura and Santa Barbara. Santa Barbara is a waterfront leg-stretch, not an overnight. Caltrans reports one-way traffic control on SR 1 near Jalama Road (south of Lompoc), so reach Lompoc via US-101 and SR-246 and re-check Caltrans before departure.
+- Hotel: Historic Santa Maria Inn, Santa Maria — free on-site parking.
 
 ### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
 
@@ -92,6 +94,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Monterey lodging details.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
+- Hotel: Hyatt Regency Monterey Hotel & Spa — on-site self-parking (~$25/night) or valet.
 
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
@@ -108,6 +111,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
 - Driving: Monterey → Santa Cruz; Santa Cruz → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
+- Hotel: Hotel Avante (JdV by Hyatt), Mountain View — free on-site parking.
 
 ### Day 11: Wednesday, July 8 - California's Great America (Santa Clara)
 
@@ -160,6 +164,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (~7 hours without stops; plan a full day). Open the dashboard for live distance and time.
 - Reservations: None — not entering any national park. (Mono Lake South Tufa is a small per-person fee only.) See `05-trip-logistics.md` for Mammoth Lakes lodging details.
 - Route notes: Sonora Pass (CA-108) is steeper and narrower than Tioga and open in summer only — fine for the SUV but not relaxing. Confirm it is open via Caltrans the morning of Day 16.
+- Hotel: Outbound Mammoth, Mammoth Lakes — free on-site parking.
 
 ### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
 
@@ -170,6 +175,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mammoth Lakes → Death Valley National Park; Death Valley National Park → Las Vegas. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Las Vegas lodging details.
 - Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
+- Hotel: The Venetian Resort, Las Vegas Strip — self-parking garage (~$18-23/day) or valet.
 
 ### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
 
@@ -195,6 +201,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple.
 - Driving: Las Vegas → Barstow; Barstow → Pasadena. Open the dashboard for live distance and time.
 - Reservations: Hotel checkout by 11:00 am in Las Vegas; hotel check-in at 3:00 pm in Pasadena. See `05-trip-logistics.md` for lodging details.
+- Hotel: Hyatt Place Pasadena — on-site self-parking $35/night (in-and-out); Pasadena city garages (Paseo Colorado, De Lacey) free first 90 min.
 
 ### Day 21: Saturday, July 18 - Depart Los Angeles
 
