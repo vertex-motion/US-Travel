@@ -73,17 +73,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Pasadena → Mount Wilson Observatory (CA-2 / Mount Wilson Rd, ~30 mi / 48 km each way); Mount Wilson → Norton Simon Museum (Pasadena, local). Open the dashboard for live distance and time.
 - Reservations: None outstanding — Mount Wilson $5 USFS Adventure Pass paid on site; Norton Simon first-Friday free.
 
-### Day 7: Saturday, July 4 - Los Angeles to Santa Maria via Route 1 (Pacific Coast Highway)
+### Day 7: Saturday, July 4 - Los Angeles to Santa Maria via Route 1 (Pacific Coast Highway) (Visited)
 
 - Sleep: Booked Historic Santa Maria Inn, Santa Maria.
-- Morning: Check out of the booked Pasadena-area hotel early (by 12:00 pm) and drive to the coast at Santa Monica to pick up CA-1 / Pacific Coast Highway north. Short leg-stretch at Malibu — Malibu Pier and Surfrider Beach for the open coast and cool ocean air.
-- Midday: Lunch in Ventura — walk the Ventura Pier and historic Main Street past Mission San Buenaventura, an easy pram-friendly coastal town.
-- Early afternoon: Santa Barbara waterfront, ~30 mi (48 km) on — walk Stearns Wharf over the harbor and the Cabrillo Boulevard palm-lined beachfront promenade, an easy pram-friendly ocean stop with the Spanish-style downtown behind it.
-- Afternoon: La Purísima Mission State Historic Park near Lompoc — the most completely restored of the California missions, with shaded adobe buildings, gardens, and livestock on flat, pram-friendly paths (grounds 9:00 am-5:00 pm; buildings close 4:00 pm).
-- Late afternoon: Rancho Guadalupe Dunes Preserve at Guadalupe — the tallest coastal dunes on the West Coast and the Santa Maria River estuary for a sunset walk (open 7:00 am-sunset), then about 15 min to check in at the booked Santa Maria hotel.
-- Driving: Pasadena → Malibu (CA-1 / PCH); Malibu → Ventura; Ventura → Santa Barbara (US-101, ~30 mi / 48 km); Santa Barbara → La Purísima Mission (Lompoc); La Purísima → Rancho Guadalupe Dunes (Guadalupe); Guadalupe → Santa Maria. This is a full transfer day with five stops — start early and keep each stop tight to reach the Guadalupe dunes by sunset. Open the dashboard for live distance and time.
-- Reservations: Pasadena-area hotel checkout by 12:00 pm; no timed-entry stops today. See `05-trip-logistics.md` for Santa Maria lodging details.
-- Source notes: Route follows Route 1 where it is the scenic draw — the open Santa Monica-Malibu PCH and the Lompoc-Guadalupe-Santa Maria CA-1 branch — joined by US-101 through Ventura and Santa Barbara. Santa Barbara is a waterfront leg-stretch, not an overnight. Caltrans reports one-way traffic control on SR 1 near Jalama Road (south of Lompoc), so reach Lompoc via US-101 and SR-246 and re-check Caltrans before departure.
+- Morning: Checked out of the booked Pasadena-area hotel and drove to the coast at Santa Monica to pick up CA-1 / Pacific Coast Highway north. Leg-stretch at Malibu — Malibu Pier and Surfrider Beach for the open coast and cool ocean air.
+- Midday: Lunch in Ventura — walked the Ventura Pier and historic Main Street past Mission San Buenaventura.
+- Afternoon: Santa Barbara waterfront, ~30 mi (48 km) on — walked Stearns Wharf over the harbor and the Cabrillo Boulevard palm-lined beachfront promenade. La Purísima Mission and Rancho Guadalupe Dunes Preserve were not visited and stay potential options; drove on via US-101 to check in at the booked Santa Maria hotel.
+- Driving: Pasadena → Malibu (CA-1 / PCH); Malibu → Ventura; Ventura → Santa Barbara (US-101, ~30 mi / 48 km); Santa Barbara → Santa Maria (US-101). Open the dashboard for live distance and time.
+- Reservations: Pasadena-area hotel checkout; no timed-entry stops. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Hotel: Historic Santa Maria Inn, Santa Maria — free on-site parking.
 
 ### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
