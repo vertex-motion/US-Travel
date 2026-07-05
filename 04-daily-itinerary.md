@@ -91,7 +91,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Monterey lodging details.
 - Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
-- Hotel: Hyatt Regency Monterey Hotel & Spa — on-site self-parking (~$25/night) or valet.
+- Hotel: Hyatt Regency Monterey Hotel & Spa — $20/day self-parking or valet, in/out included, bundled into the mandatory ~$29/night resort fee (not an avoidable line item; no cheaper nearby option as the hotel is on the golf course, not downtown).
 
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
 
