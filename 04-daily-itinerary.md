@@ -187,9 +187,11 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Hotel pool time and a slow start after the trip's long driving days.
-- Afternoon: Rest, packing buffer, and a low-key shop near the hotel.
+- Midday: Drive ~10 min off the Strip to the National Atomic Testing Museum (Smithsonian affiliate) — indoor, heat-safe Nevada Test Site and Cold War history, strong for the 13-year-old; free on-site parking.
+- Afternoon: Back near the hotel for rest, the packing buffer, and a low-key shop.
 - Evening: Final Bellagio fountains, then an early night before the loop-closure drive.
-- Driving: None planned; keep the day Strip-based.
+- Driving: Las Vegas Strip → National Atomic Testing Museum and back (~10 min each way); otherwise Strip-based. Open the dashboard for live distance and time.
+- Reservations: Book or confirm National Atomic Testing Museum tickets (open Thursday, July 16). See `07-checklist.md`.
 
 ### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
 

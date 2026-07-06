@@ -41,6 +41,7 @@
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
 | Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. Ranked options and official links in [Vegas indoor attractions research](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium). | Open |
+| National Atomic Testing Museum (Day 19) | Before July 16 | Committed Day 19 (July 16) midday indoor stop. Confirm hours (open Thursday) and buy tickets; verify current adult/teen pricing. ~10 min off the Strip; free on-site parking. [Official site](https://www.atomictestingmuseum.org/). | Open |
 
 ## Pre-Departure Tasks
 
