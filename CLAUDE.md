@@ -61,6 +61,14 @@ Split mixed options:
 - On split, reassign each `potentialMapPlaces[]` marker to the matching new option and set its `category`. Carry `parking`, `interest`, and `Plan status` to the half each marker belongs to.
 - Apply the split in `03-potential-options.md` and `index.html` in the same change.
 
+Decompose regions into discrete places:
+
+- An option whose primary nature is a place (category `Attractions and Experiences`, `Scenic Walks and Viewpoints`, `Parks`, or `Universities`) must name one concrete, mappable place — one you can drop a single pin on and drive to. A region, corridor, whole park, or town (e.g. "Big Sur", "Death Valley") is a container, not a place.
+- Must not use a region or bundle word as the attraction in the name: no `or`, no plural stop list, no `reach`, `area`, `corridor`, or `loop`. One place, one row. `Route and Region` and `Logistics and Pacing` anchors are exempt — they describe corridors by design.
+- When a container is worth visiting, split it into one row per signature stop, each with its own `Category`, `interest`, `parking`, and `potentialMapPlaces[]` marker. Example: "Big Sur" → McWay Falls, Pfeiffer Beach, Bixby Creek Bridge, Pfeiffer Big Sur trail as separate rows.
+- Each such option's description must state what the place is for — its distinguishing feature (e.g. "purple-sand cove", "waterfall onto the beach", "arched span over the canyon") — not only its location. A description giving only location fails this rule.
+- Before recommending or adding a container, expand it to its named stops and web-check current access (road and lot status, closures, reservations); recommend the specific stops, not the container. This applies to day cards too: an itinerary stop must be a named place, never "a viewpoint" or "the visitor center".
+
 Adding a category:
 
 - A new category must have a distinct color in the `categoryColors` map in `index.html`. No other list needs editing.
