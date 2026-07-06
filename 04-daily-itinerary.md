@@ -83,14 +83,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: Pasadena-area hotel checkout; no timed-entry stops. See `05-trip-logistics.md` for Santa Maria lodging details.
 - Hotel: Historic Santa Maria Inn, Santa Maria — free on-site parking.
 
-### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1
+### Day 8: Sunday, July 5 - Santa Maria to Monterey / Carmel via Route 1 (Visited)
 
 - Sleep: Booked Monterey-area hotel.
-- Morning: Leave Santa Maria after breakfast and take Highway 1 north past San Simeon; stop at the Piedras Blancas elephant-seal vista. Confirm Highway 1 is open on Caltrans before leaving.
-- Afternoon: Pull off at the Bixby Creek Bridge north overlook for the classic Big Sur span arcing over the canyon, then follow Highway 1's cliff curves into Monterey to check in.
-- Driving: Santa Maria → Hearst Castle; Hearst Castle → Big Sur; Big Sur → Monterey. Open the dashboard for live distance and time.
+- Morning: Left Santa Maria after breakfast and took Highway 1 north past San Simeon; stopped at the Piedras Blancas elephant-seal vista for the rookery boardwalk.
+- Afternoon: Pulled off at the Bixby Creek Bridge north overlook for the classic Big Sur span arcing over the canyon, then followed Highway 1's cliff curves into Monterey to check in.
+- Driving: Santa Maria → Piedras Blancas elephant-seal vista; Piedras Blancas → Bixby Creek Bridge; Bixby Creek Bridge → Monterey. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Monterey lodging details.
-- Source notes: Caltrans currently reports one-way controlled traffic north of Big Sur through July 31, 2026, so keep the evening unstructured.
 - Hotel: Hyatt Regency Monterey Hotel & Spa — $20/day self-parking or valet, in/out included, bundled into the mandatory ~$29/night resort fee (not an avoidable line item; no cheaper nearby option as the hotel is on the golf course, not downtown).
 
 ### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
