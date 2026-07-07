@@ -103,8 +103,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 
 - Sleep: Booked Mountain View hotel.
 - Morning: Check out of the Monterey-area hotel and drive north toward the Bay Area.
-- Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
-- Driving: Monterey → Mountain View. Open the dashboard for live distance and time.
+- Afternoon: Arrive Mountain View and take an easy exploration walk at Shoreline Park — bayfront and lakeside trails in the evening light, about 2 mi (3 km) from the hotel — then check in from 4:00 pm.
+- Driving: Monterey → Shoreline Park; Shoreline Park → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Hotel: Hotel Avante (JdV by Hyatt), Mountain View — free on-site parking.
 
