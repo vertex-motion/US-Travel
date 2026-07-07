@@ -103,7 +103,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Check out and take a short stroll down Carmel-by-the-Sea's Ocean Avenue — storybook cottages, galleries, and the beach view at the foot of the street — then drive north.
+- Morning: Check out of the Monterey-area hotel and drive north toward the Bay Area.
 - Afternoon: Transfer to the booked Mountain View hotel, check in from 4:00 pm, and keep the first evening light.
 - Driving: Monterey → Santa Cruz; Santa Cruz → Mountain View. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
