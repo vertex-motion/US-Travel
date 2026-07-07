@@ -92,13 +92,12 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: See `05-trip-logistics.md` for Monterey lodging details.
 - Hotel: Hyatt Regency Monterey Hotel & Spa — $20/day self-parking or valet, in/out included, bundled into the mandatory ~$29/night resort fee (not an avoidable line item; no cheaper nearby option as the hotel is on the golf course, not downtown).
 
-### Day 9: Monday, July 6 - Monterey Bay Aquarium and Carmel Coast
+### Day 9: Monday, July 6 - Pacific Grove and Carmel Coast (Visited)
 
 - Sleep: Booked Monterey-area hotel.
-- Morning: Monterey Bay Aquarium at opening — the kelp forest, sea otters, and the open-sea tank before the midday crowds build.
-- Afternoon: Pacific Grove's Ocean View Boulevard coast path past Lovers Point, then white-sand Carmel Beach below the Ocean Avenue village.
-- Driving: Monterey → Monterey Bay Aquarium; Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
-- Reservations: Buy aquarium tickets ahead once 2026 ticketing is open.
+- Morning: Pacific Grove's Ocean View Boulevard coast path past Lovers Point.
+- Afternoon: White-sand Carmel Beach below the Ocean Avenue village. Did not visit the Monterey Bay Aquarium.
+- Driving: Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
 
 ### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
 

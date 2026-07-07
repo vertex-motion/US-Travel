@@ -37,7 +37,7 @@
 | Stanford campus visit | When July 2026 schedule is stable | Check guided tour availability, self-guided route, campus event closures, and parking rules. | Open |
 | Google Visitor Experience | Week before Bay Area stay | Re-check opening hours, events, parking, and whether any workshop needs RSVP. | Open |
 | Computer History Museum or Apple Park Visitor Center | Week before Bay Area stay | Choose the second tech anchor after checking CHM tickets/hours and Apple Park Visitor Center hours/sessions. | Open |
-| Monterey Bay Aquarium | When July 2026 tickets are available | Prefer opening-time entry. | Open |
+| Monterey Bay Aquarium | Done | Not visited — the family spent the July 6 Monterey day on the coast (Pacific Grove, Carmel Beach). Monterey base ended July 7, so no booking is needed. | Done |
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
 | Las Vegas ticketed attraction or show | After hotel is booked | Choose only one paid anchor at first; verify age rules, timing, prices, refund terms, and heat-safe logistics. Ranked options and official links in [Vegas indoor attractions research](Research/las-vegas-indoor-attractions-and-shows.md) (top pick: Shark Reef Aquarium). | Open |
