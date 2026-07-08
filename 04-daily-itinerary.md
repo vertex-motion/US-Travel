@@ -99,12 +99,12 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: White-sand Carmel Beach below the Ocean Avenue village. Did not visit the Monterey Bay Aquarium.
 - Driving: Monterey → Pacific Grove; Monterey → Carmel-by-the-Sea. Open the dashboard for live distance and time.
 
-### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View / Bay Area
+### Day 10: Tuesday, July 7 - Monterey / Carmel to Mountain View, and Stanford (Visited)
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Check out of the Monterey-area hotel and drive north toward the Bay Area.
-- Afternoon: Arrive Mountain View and take an easy exploration walk at Shoreline Park — bayfront and lakeside trails in the evening light, about 2 mi (3 km) from the hotel — then check in from 4:00 pm.
-- Driving: Monterey → Shoreline Park; Shoreline Park → Mountain View. Open the dashboard for live distance and time.
+- Morning: Checked out of the Monterey-area hotel, drove north to the Bay Area, and checked in to the Mountain View hotel.
+- Afternoon: Visited Stanford — self-guided campus walk: Main Quad, the Oval, Memorial Church, and the engineering area.
+- Driving: Monterey → Mountain View (check-in) → Stanford University. Open the dashboard for live distance and time.
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Hotel: Hotel Avante (JdV by Hyatt), Mountain View — free on-site parking.
 
@@ -124,14 +124,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Mountain View. Open the dashboard for live distance and time.
 - Reservations: None required.
 
-### Day 13: Friday, July 10 - Stanford and Silicon Valley Tech Day
+### Day 13: Friday, July 10 - Silicon Valley Tech Day
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Stanford campus — self-guided walk, Main Quad, Oval, Stanford Bookstore, and the engineering area.
-- Afternoon: Google Visitor Experience in Mountain View, then the Computer History Museum.
-- Driving: Mountain View → Stanford University; Mountain View → Computer History Museum. Open the dashboard for live distance and time.
-- Reservations: Check Stanford visitor schedule, Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
-- Source notes: Stanford Visitor Information confirms summer 2026 weekday visit programs and self-guided campus materials; Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday.
+- Morning: Google Visitor Experience in Mountain View — Google Store, cafe, public art, and self-guided exploration.
+- Afternoon: Computer History Museum in Mountain View — computing history, AI, software, and rare technology artifacts.
+- Driving: Mountain View → Google Visitor Experience; Mountain View → Computer History Museum. Open the dashboard for live distance and time.
+- Reservations: Check Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
+- Source notes: Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday. (Stanford was visited on Day 10.)
 
 ### Day 14: Saturday, July 11 - Exploratorium and the Embarcadero
 
