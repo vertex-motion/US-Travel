@@ -108,13 +108,12 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Reservations: See `05-trip-logistics.md` for Mountain View lodging details.
 - Hotel: Hotel Avante (JdV by Hyatt), Mountain View — free on-site parking.
 
-### Day 11: Wednesday, July 8 - California's Great America (Santa Clara)
+### Day 11: Wednesday, July 8 - California's Great America (Santa Clara) (Visited)
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Drive ~10-15 min to California's Great America in Santa Clara; arrive at opening (rope drop) to beat both crowds and afternoon heat. The 13-year-old rides the bigger coasters (Gold Striker, RailBlazer); the 3-year-old does Planet Snoopy / KidZville. Use rider swap for height-restricted rides.
-- Afternoon: Continue in the park with a midday break or water-play for the 3-year-old; leave when the toddler fades.
+- Morning: Drove ~10-15 min to California's Great America in Santa Clara and arrived at opening. The 13-year-old rode the bigger coasters (Gold Striker, RailBlazer); the 3-year-old did Planet Snoopy / KidZville. Used rider swap for height-restricted rides.
+- Afternoon: Continued in the park with a midday break and water-play for the 3-year-old; left when the toddler faded.
 - Driving: Mountain View → California's Great America, Santa Clara (~6 miles / 10 km). Open the dashboard for live distance and time.
-- Reservations: Buy dated tickets online ahead (cheaper and guarantees entry). Wednesday is chosen as the least-crowded flex day (Tue-Thu are quietest; Sat is busiest); no Levi's Stadium World Cup conflict in this window. See [`research/theme-parks-bay-area.md`](research/theme-parks-bay-area.md).
 
 ### Day 12: Thursday, July 9 - Golden Gate and Presidio
 
