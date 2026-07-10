@@ -115,14 +115,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Afternoon: Continued in the park with a midday break and water-play for the 3-year-old; left when the toddler faded.
 - Driving: Mountain View → California's Great America, Santa Clara (~6 miles / 10 km). Open the dashboard for live distance and time.
 
-### Day 12: Thursday, July 9 - Golden Gate and Presidio
+### Day 12: Thursday, July 9 - Golden Gate and Presidio (Visited)
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Check the bridge fog forecast, then drive to Golden Gate Bridge viewpoints from Crissy Field or the Presidio and park there. Late morning to mid-afternoon is best for clear views.
-- Afternoon: Palace of Fine Arts and the Presidio Tunnel Tops for child-friendly views and play.
-- Late afternoon: Short Lombard Street photo stop on Russian Hill (~2 mi / 3 km east) — the lower Leavenworth Street view looking uphill at the crooked switchbacks. Keep it brief and respect residents.
+- Morning: Drove to the Golden Gate Bridge and saw the bridge from Crissy Field / the Presidio, parking there.
+- Afternoon: Visited the Palace of Fine Arts and the Presidio Tunnel Tops for child-friendly views and play.
+- Late afternoon: Short Lombard Street photo stop on Russian Hill — the lower Leavenworth Street view looking uphill at the crooked switchbacks.
 - Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Lombard Street; Lombard Street → Mountain View. Open the dashboard for live distance and time.
-- Reservations: None required.
 
 ### Day 13: Friday, July 10 - Silicon Valley Tech Day
 
