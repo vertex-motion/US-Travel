@@ -126,11 +126,12 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 13: Friday, July 10 - Silicon Valley Tech Day
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Google Visitor Experience in Mountain View — Google Store, cafe, public art, and self-guided exploration.
-- Afternoon: Computer History Museum in Mountain View — computing history, AI, software, and rare technology artifacts.
-- Driving: Mountain View → Google Visitor Experience; Mountain View → Computer History Museum. Open the dashboard for live distance and time.
-- Reservations: Check Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
-- Source notes: Google Visitor Experience is public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday. (Stanford was visited on Day 10.)
+- Morning: Apple Park Visitor Center, Cupertino — store, cafe, roof terrace, and the augmented-reality Apple Park model. Take the open terrace earlier, before midday.
+- Midday: Google Visitor Experience in Mountain View — Google Store, cafe, public art, and self-guided exploration.
+- Afternoon: Computer History Museum in Mountain View — computing history, AI, software, and rare technology artifacts; the deepest, indoor stop for the afternoon.
+- Driving: Mountain View → Apple Park Visitor Center; Apple Park Visitor Center → Google Visitor Experience; Google Visitor Experience → Computer History Museum. Open the dashboard for live distance and time.
+- Reservations: Check Apple Park Visitor Center and Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
+- Source notes: Apple Park Visitor Center and Google Visitor Experience are public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday. Apple Park (Cupertino) and the two Mountain View stops sit within about 15 min of each other. (Stanford was visited on Day 10.)
 
 ### Day 14: Saturday, July 11 - Exploratorium and the Embarcadero
 
@@ -140,13 +141,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Exploratorium; Exploratorium → Ferry Building; Ferry Building → Mountain View. Open the dashboard for live distance and time.
 - Reservations: Exploratorium timed tickets, booked ahead.
 
-### Day 15: Sunday, July 12 - Apple Park, then Pack for the Sierra
+### Day 15: Sunday, July 12 - Downtown San Francisco Streets Walk
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Apple Park Visitor Center, Cupertino — store, cafe, roof terrace, and the Apple Park model.
-- Afternoon: Pack for the Sierra, confirm Sonora Pass / US-395 conditions, and keep the evening easy.
-- Driving: Mountain View → Apple Park Visitor Center. Open the dashboard for live distance and time.
-- Reservations: Re-check Apple Park Visitor Center hours before going.
+- Morning: Drive in, park once at the Union Square Garage, and start in Union Square plaza — palms, flower beds, the Dewey Monument column, and the city's flagship stores around the square.
+- Late morning: Maiden Lane, the car-free boutique promenade (gated to traffic 11:00 am-5:00 pm), past the Frank Lloyd Wright-designed V.C. Morris building at 140 Maiden Lane; then north on Grant Avenue through Chinatown's Dragon Gate with its dragon lampposts and red lanterns.
+- Afternoon: Walk down through the flat Financial District to the Ferry Building and Embarcadero for lunch and Bay Bridge views (marketplace shops open daily; no farmers market on Sundays), then loop back to the garage. About 2.5 mi (4 km) of flat, pram-friendly walking on foot.
+- Evening: Back at base, pack for the Sierra and confirm Sonora Pass / US-395 conditions for the Day 16 transfer.
+- Driving: Mountain View → Union Square. Open the dashboard for live distance and time. The downtown stops connect on foot from the Union Square garage.
+- Reservations: None — all stops are free and public. Maiden Lane is car-free 11:00 am-5:00 pm.
 
 ### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
 
