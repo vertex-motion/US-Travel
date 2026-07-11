@@ -123,15 +123,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Late afternoon: Short Lombard Street photo stop on Russian Hill — the lower Leavenworth Street view looking uphill at the crooked switchbacks.
 - Driving: Mountain View → Golden Gate Bridge; Golden Gate Bridge → Palace of Fine Arts; Palace of Fine Arts → Lombard Street; Lombard Street → Mountain View. Open the dashboard for live distance and time.
 
-### Day 13: Friday, July 10 - Silicon Valley Tech Day
+### Day 13: Friday, July 10 - Silicon Valley Tech Day (Visited)
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Apple Park Visitor Center, Cupertino — store, cafe, roof terrace, and the augmented-reality Apple Park model. Take the open terrace earlier, before midday.
+- Morning: Started at the Apple Park Visitor Center, Cupertino — store, cafe, roof terrace, and the augmented-reality Apple Park model.
 - Midday: Google Visitor Experience in Mountain View — Google Store, cafe, public art, and self-guided exploration.
-- Afternoon: Computer History Museum in Mountain View — computing history, AI, software, and rare technology artifacts; the deepest, indoor stop for the afternoon.
+- Afternoon: Computer History Museum in Mountain View — computing history, AI, software, and rare technology artifacts.
 - Driving: Mountain View → Apple Park Visitor Center; Apple Park Visitor Center → Google Visitor Experience; Google Visitor Experience → Computer History Museum. Open the dashboard for live distance and time.
-- Reservations: Check Apple Park Visitor Center and Google Visitor Experience hours/events, and Computer History Museum tickets and hours.
-- Source notes: Apple Park Visitor Center and Google Visitor Experience are public with no general RSVP requirement; Computer History Museum is normally open Wednesday-Sunday. Apple Park (Cupertino) and the two Mountain View stops sit within about 15 min of each other. (Stanford was visited on Day 10.)
 
 ### Day 14: Saturday, July 11 - Exploratorium and the Embarcadero
 
