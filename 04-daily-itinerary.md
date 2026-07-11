@@ -142,12 +142,12 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 ### Day 15: Sunday, July 12 - Downtown San Francisco Streets Walk
 
 - Sleep: Booked Mountain View hotel.
-- Morning: Drive in, park once at the Union Square Garage, and start in Union Square plaza — palms, flower beds, the Dewey Monument column, and the city's flagship stores around the square.
+- Morning: Drive in, park once at St. Mary's Square Garage ($8 Sat/Sun weekend flat rate, up to 12 hours), then walk two blocks to Union Square plaza — palms, flower beds, the Dewey Monument column, and the city's flagship stores around the square.
 - Late morning: Maiden Lane, the car-free boutique promenade (gated to traffic 11:00 am-5:00 pm), past the Frank Lloyd Wright-designed V.C. Morris building at 140 Maiden Lane; then north on Grant Avenue through Chinatown's Dragon Gate with its dragon lampposts and red lanterns.
 - Midday: East to Jackson Square — Hotaling Place, San Francisco's oldest alley, lined with restored 1850s brick storefronts and galleries; then one block to Transamerica Redwood Park (open 7:00 am-7:00 pm) for the reflecting pool, redwoods, and Lalanne animal sculptures beneath the Pyramid.
 - Afternoon: Walk down through the flat Financial District to the Ferry Building and Embarcadero for lunch and Bay Bridge views (marketplace shops open daily; no farmers market on Sundays), then ride the free gondola up to Salesforce Park, the rooftop garden above the transit center, before looping back to the garage. About 3.3 mi (5.3 km) of flat, pram-friendly walking on foot.
 - Evening: Back at base, pack for the Sierra and confirm Sonora Pass / US-395 conditions for the Day 16 transfer.
-- Driving: Mountain View → Union Square. Open the dashboard for live distance and time. The downtown stops connect on foot from the Union Square garage.
+- Driving: Mountain View → Union Square. Open the dashboard for live distance and time. The downtown stops connect on foot from St. Mary's Square Garage.
 - Reservations: None — all stops are free and public. Maiden Lane is car-free 11:00 am-5:00 pm; Salesforce Park closes 9:00 pm and Transamerica Redwood Park 7:00 pm.
 
 ### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
