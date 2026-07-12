@@ -142,14 +142,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Union Square. Open the dashboard for live distance and time. The downtown stops connect on foot from St. Mary's Square Garage.
 - Reservations: None — all stops are free and public. Maiden Lane is car-free 11:00 am-5:00 pm; Salesforce Park closes 9:00 pm and Transamerica Redwood Park 7:00 pm.
 
-### Day 15: Sunday, July 12 - Bay Area Rest and Sierra Prep
+### Day 15: Sunday, July 12 - Peninsula Homes: Old Palo Alto and Los Altos Hills (Visited)
 
+- Visited July 12, 2026. Self-guided architecture and mansion day on the Peninsula, close to the Mountain View base.
 - Sleep: Booked Mountain View hotel.
-- Morning: Slow hotel breakfast and an easy start; the San Francisco / Bay Area sightseeing is complete.
-- Afternoon: Rest at base; laundry and re-provision for the mountains (snacks, water, fuel up the SUV).
-- Evening: Pack for the Sierra and confirm Sonora Pass (CA-108) / US-395 are open via Caltrans for the Day 16 transfer to Mammoth Lakes.
-- Driving: None planned — rest day at base.
-- Reservations: None. Same base as the night before, so no hotel change.
+- Morning: Old Palo Alto and the Professorville historic district — walked and drove Ramona, Bryant, Waverley, Addison, and Kingsley among early-1900s Craftsman, Queen Anne, and Colonial Revival homes; passed the HP Garage (367 Addison Ave, "Birthplace of Silicon Valley"), the Steve Jobs family home on Waverley, and Zuckerberg's Crescent Park.
+- Afternoon: Los Altos Hills mansion drive — the hillside ridge roads (Page Mill, Moody, Elena, Robleda, Fremont) past contemporary Silicon Valley mega-mansions on view lots, with Bay and valley vistas.
+- Evening: Back at base, packed for the Sierra and confirmed Sonora Pass (CA-108) / US-395 conditions for the Day 16 transfer to Mammoth Lakes.
+- Driving: Mountain View → Old Palo Alto → Los Altos Hills → Mountain View. Open the dashboard for live distance and time.
+- Reservations: None — all self-guided public streets. Same base as the night before, so no hotel change.
 
 ### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
 
