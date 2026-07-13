@@ -180,8 +180,8 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Slow hotel breakfast and pool, then the Bellagio Conservatory and Fountains, the Grand Canal Shoppes at the Venetian base hotel, and the Forum Shops at Caesars Palace (free hourly Fall of Atlantis show) — all indoor and heat-safe.
 - Afternoon: Rest during peak heat, then Shark Reef Aquarium at Mandalay Bay.
-- Evening: Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), and the LINQ Promenade walk to the High Roller once temperatures ease.
-- Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → Flamingo Wildlife Habitat. Open the dashboard for live distance and time.
+- Evening: The Big Apple Coaster at New York-New York, next to the Mandalay Bay anchor — the 13-year-old rides with one parent (54 in / 137 cm minimum) while the other stays with the 3-year-old — then the Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), and the LINQ Promenade walk to the High Roller once temperatures ease.
+- Driving: Las Vegas Strip → Big Apple Coaster at New York-New York; Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → Flamingo Wildlife Habitat. Open the dashboard for live distance and time.
 - Reservations: Book Shark Reef Aquarium ahead. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md).
 
 ### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day
