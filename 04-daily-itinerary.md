@@ -152,16 +152,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Old Palo Alto → Los Altos Hills → Mountain View. Open the dashboard for live distance and time.
 - Reservations: None — all self-guided public streets. Same base as the night before, so no hotel change.
 
-### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes (around Yosemite via Sonora Pass)
+### Day 16: Monday, July 13 - Mountain View / Bay Area to Mammoth Lakes via Sonora Pass (visited)
 
-- Sleep: Booked Outbound Mammoth, Mammoth Lakes.
-- Plan: Do **not** enter Yosemite National Park (avoids the $35 entry and the new $100/person non-resident surcharge). Drive the free route around the Sierra on Highway 108 over Sonora Pass to US-395, then south to Mammoth. Scenic, but a long, demanding mountain day.
-- Morning: Leave Mountain View early; CA-120 then CA-108 east through Gold Country toward Sonora Pass.
-- Stops (free): Donnell Vista overlook (short walk to a dramatic reservoir/Dardanelles view) and the Sonora Pass summit (9,623 ft / 2,933 m; picnic area, Pacific Crest Trail, photos).
-- Afternoon: Descend to US-395 and head south to the Mono Lake South Tufa towers (~$3/adult, kids free), then into Mammoth Lakes.
-- Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (~7 hours without stops; plan a full day). Open the dashboard for live distance and time.
-- Reservations: None — not entering any national park. (Mono Lake South Tufa is a small per-person fee only.) See `05-trip-logistics.md` for Mammoth Lakes lodging details.
-- Route notes: Sonora Pass (CA-108) is steeper and narrower than Tioga and open in summer only — fine for the SUV but not relaxing. Confirm it is open via Caltrans the morning of Day 16.
+- Sleep: Outbound Mammoth, Mammoth Lakes.
+- Record of July 13 (visited): skipped Yosemite (no $35 entry, no $100/person non-resident surcharge) and drove the free Highway 108 / Sonora Pass route around the Sierra to US-395 and Mammoth Lakes.
+- Morning: Left Mountain View early; CA-120 then CA-108 east through Gold Country, stopping at Donnell Vista over the Stanislaus canyon and the Sonora Pass summit (9,623 ft / 2,933 m; picnic area, Pacific Crest Trail).
+- Afternoon: Descended to US-395, visited the Mono Lake South Tufa towers, then arrived in Mammoth Lakes.
+- Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (a full mountain drive day).
 - Hotel: Outbound Mammoth, Mammoth Lakes — free on-site parking.
 
 ### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
