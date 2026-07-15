@@ -161,15 +161,14 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mountain View → Sonora Pass → US-395 → Mammoth Lakes (a full mountain drive day).
 - Hotel: Outbound Mammoth, Mammoth Lakes — free on-site parking.
 
-### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley
+### Day 17: Tuesday, July 14 - Mammoth Lakes to Las Vegas via Death Valley (visited)
 
-- Sleep: Booked Las Vegas Strip hotel.
-- Morning: Leave Mammoth Lakes early; take US-395 to Lone Pine, then CA-190 east into Death Valley. Confirm CA-190 road status and heat safety before entering. First stop is Father Crowley Vista Point, 7.8 mi (12.6 km) west of Panamint Springs — a paved overlook into Rainbow ("Star Wars") Canyon at about 4,000 ft (1,220 m), the coolest and quickest Death Valley stop (paved lot, vault toilets).
-- Afternoon: Continue east to the Furnace Creek Visitor Center (open 8:00 am-5:00 pm) for air-conditioning, water, restrooms, and exhibits — the main paved services stop. Keep to these two named stops; no lower-elevation hiking. Exit on CA-190 to Death Valley Junction, then NV-160 to Las Vegas.
-- Evening: Check in from 3:00 pm and keep the evening easy with dinner and pool time.
-- Driving: Mammoth Lakes → Father Crowley Vista Point; Father Crowley Vista Point → Furnace Creek Visitor Center; Furnace Creek Visitor Center → Las Vegas. Open the dashboard for live distance and time.
-- Reservations: See `05-trip-logistics.md` for Las Vegas lodging details.
-- Source notes: Death Valley NPS warns that summer temperatures can reach 130 F / 54 C, that visitors should not hike in lower elevations when it is hot, and that travelers should check alerts, road status, and weather before visiting.
+- Sleep: The Venetian Resort, Las Vegas Strip.
+- Record of July 14 (visited): drove the direct Eastern Sierra-to-desert transfer, treating Death Valley as a paved scenic transit (no lower-elevation hiking) on the way to the booked Strip stay.
+- Morning: Left Mammoth Lakes early; US-395 to Lone Pine, then CA-190 east into Death Valley. First stop Father Crowley Vista Point, 7.8 mi (12.6 km) west of Panamint Springs — a paved overlook into Rainbow ("Star Wars") Canyon at about 4,000 ft (1,220 m), the coolest and quickest Death Valley stop.
+- Afternoon: Furnace Creek Visitor Center for air-conditioning, water, restrooms, and exhibits — the main paved services stop, then out on CA-190 to Death Valley Junction and NV-160 to Las Vegas.
+- Evening: Checked in and kept the evening easy with dinner and pool time.
+- Driving: Mammoth Lakes → Father Crowley Vista Point → Furnace Creek Visitor Center → Las Vegas.
 - Hotel: The Venetian Resort, Las Vegas Strip — self-parking garage (~$18-23/day) or valet.
 
 ### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
