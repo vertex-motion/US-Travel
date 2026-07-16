@@ -171,14 +171,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Mammoth Lakes → Father Crowley Vista Point → Furnace Creek Visitor Center → Las Vegas.
 - Hotel: The Venetian Resort, Las Vegas Strip — self-parking garage (~$18-23/day) or valet.
 
-### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day
+### Day 18: Wednesday, July 15 - Las Vegas Strip Family Day (Visited)
 
 - Sleep: Booked Las Vegas Strip hotel.
-- Morning: Slow hotel breakfast and pool, then the Bellagio Conservatory and Fountains, the Grand Canal Shoppes at the Venetian base hotel, and the Forum Shops at Caesars Palace (free hourly Fall of Atlantis show) — all indoor and heat-safe.
-- Afternoon: Rest during peak heat, then Shark Reef Aquarium at Mandalay Bay.
-- Evening: The Big Apple Coaster at New York-New York, next to the Mandalay Bay anchor — the 13-year-old rides with one parent (54 in / 137 cm minimum) while the other stays with the 3-year-old — then the Fountains of Bellagio, the Flamingo Wildlife Habitat (free outdoor garden), and the LINQ Promenade walk to the High Roller once temperatures ease.
-- Driving: Las Vegas Strip → Big Apple Coaster at New York-New York; Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → Flamingo Wildlife Habitat. Open the dashboard for live distance and time.
-- Reservations: Book Shark Reef Aquarium ahead. Ranked options, prices, age rules, and official links in [`Research/las-vegas-indoor-attractions-and-shows.md`](Research/las-vegas-indoor-attractions-and-shows.md).
+- Morning: Slow hotel breakfast, then the Grand Canal Shoppes at the Venetian base hotel — painted-sky canals and St. Mark's Square, zero transit.
+- Midday: Bellagio Conservatory and Fountains, then the Forum Shops at Caesars Palace for the free Fall of Atlantis show.
+- Afternoon: Drove about 10 min off the Strip to AREA15 for Omega Mart (Meow Wolf) as the day's paid anchor — the surreal interactive art world with portals, hidden passages, and a branching sci-fi story.
+- Evening: Back at the hotel to rest. Shark Reef Aquarium, the Big Apple Coaster, the Flamingo Wildlife Habitat, and the LINQ Promenade were not visited and stay potential options.
+- Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → AREA15 (Omega Mart). Open the dashboard for live distance and time.
+- Reservations: Omega Mart timed entry used.
 
 ### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day
 
@@ -186,7 +187,7 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Morning: Hotel pool time and a slow start after the trip's long driving days.
 - Midday: Drive ~10 min off the Strip to the National Atomic Testing Museum (Smithsonian affiliate) — indoor, heat-safe Nevada Test Site and Cold War history, strong for the 13-year-old; free on-site parking.
 - Afternoon: Back near the hotel for rest, the packing buffer, and a low-key shop.
-- Evening: Final Bellagio fountains, then an early night before the loop-closure drive.
+- Evening: Low-key hotel evening, then an early night before the loop-closure drive.
 - Driving: Las Vegas Strip → National Atomic Testing Museum and back (~10 min each way); otherwise Strip-based. Open the dashboard for live distance and time.
 - Reservations: Book or confirm National Atomic Testing Museum tickets (open Thursday, July 16). See `07-checklist.md`.
 
