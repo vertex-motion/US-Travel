@@ -191,13 +191,13 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Las Vegas Strip → National Atomic Testing Museum and back (~10 min each way); otherwise Strip-based. Open the dashboard for live distance and time.
 - Reservations: Book or confirm National Atomic Testing Museum tickets (open Thursday, July 16). See `07-checklist.md`.
 
-### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles
+### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles (Visited)
 
 - Sleep: Booked Pasadena-area final Los Angeles hotel.
-- Morning: Check out of the booked Las Vegas hotel by 11:00 am, pack, and leave after breakfast.
-- Afternoon: Arrive Los Angeles, check in from 3:00 pm, and keep the evening simple.
-- Driving: Las Vegas → Pasadena. Open the dashboard for live distance and time.
-- Reservations: Hotel checkout by 11:00 am in Las Vegas; hotel check-in at 3:00 pm in Pasadena. See `05-trip-logistics.md` for lodging details.
+- Morning: Checked out of the booked Las Vegas hotel, then stopped at Hoover Dam — the landmark Depression-era dam and visitor center on the Colorado River at the Nevada-Arizona border.
+- Afternoon: Continued on to Los Angeles, checked in, and kept the evening simple.
+- Driving: Las Vegas → Hoover Dam; Hoover Dam → Pasadena. Open the dashboard for live distance and time.
+- Reservations: Hotel checkout in Las Vegas; hotel check-in in Pasadena. See `05-trip-logistics.md` for lodging details.
 - Hotel: Hyatt Place Pasadena — on-site self-parking $35/night (in-and-out); Pasadena city garages (Paseo Colorado, De Lacey) free first 90 min.
 
 ### Day 21: Saturday, July 18 - Depart Los Angeles
