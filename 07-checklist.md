@@ -41,7 +41,7 @@
 | Hearst Castle | About 60 days before July 5 | Choose tour time only if it fits the Central Coast-to-Monterey transfer day without making arrival too late. | Open |
 | Death Valley route stops | Week before Day 17 | Choose only short paved stops after checking NPS road status, weather, heat, smoke, fuel/water stops, and route timing. | Open |
 | Las Vegas ticketed attraction or show | After hotel is booked | Done — Omega Mart (Meow Wolf at AREA15) visited Day 18 (July 15, 2026) as the paid anchor. Shark Reef Aquarium not used. | Done |
-| National Atomic Testing Museum (Day 19) | Before July 16 | Committed Day 19 (July 16) midday indoor stop. Confirm hours (open Thursday) and buy tickets; verify current adult/teen pricing. ~10 min off the Strip; free on-site parking. [Official site](https://www.atomictestingmuseum.org/). | Open |
+| National Atomic Testing Museum | — | Not visited — the family spent Day 19 (July 16, 2026) at the Flamingo Wildlife Habitat and the LINQ Promenade instead. No booking needed. | Done |
 
 ## Pre-Departure Tasks
 

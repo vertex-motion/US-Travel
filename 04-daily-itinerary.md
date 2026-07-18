@@ -181,15 +181,15 @@ Lodging dates, check-in/checkout times, and operating details are in `05-trip-lo
 - Driving: Las Vegas Strip → Bellagio; Las Vegas Strip → Forum Shops at Caesars Palace; Las Vegas Strip → AREA15 (Omega Mart). Open the dashboard for live distance and time.
 - Reservations: Omega Mart timed entry used.
 
-### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day
+### Day 19: Thursday, July 16 - Las Vegas Flex / Recovery Day (Visited)
 
 - Sleep: Booked Las Vegas Strip hotel.
 - Morning: Hotel pool time and a slow start after the trip's long driving days.
-- Midday: Drive ~10 min off the Strip to the National Atomic Testing Museum (Smithsonian affiliate) — indoor, heat-safe Nevada Test Site and Cold War history, strong for the 13-year-old; free on-site parking.
-- Afternoon: Back near the hotel for rest, the packing buffer, and a low-key shop.
-- Evening: Low-key hotel evening, then an early night before the loop-closure drive.
-- Driving: Las Vegas Strip → National Atomic Testing Museum and back (~10 min each way); otherwise Strip-based. Open the dashboard for live distance and time.
-- Reservations: Book or confirm National Atomic Testing Museum tickets (open Thursday, July 16). See `07-checklist.md`.
+- Midday: Flamingo Wildlife Habitat — the free outdoor garden with live flamingos, koi, and pelicans.
+- Afternoon: The LINQ Promenade — the open-air pedestrian walk past shops and dining.
+- Evening: Low-key hotel evening, then an early night before the loop-closure drive. The National Atomic Testing Museum was not visited and stays a potential option.
+- Driving: Las Vegas Strip → Flamingo Wildlife Habitat; Las Vegas Strip → LINQ Promenade. Open the dashboard for live distance and time.
+- Reservations: None outstanding.
 
 ### Day 20: Friday, July 17 - Las Vegas to Pasadena / Los Angeles (Visited)
 
